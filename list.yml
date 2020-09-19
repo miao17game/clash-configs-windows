@@ -1,0 +1,30 @@
+files:
+  - time: 1600515646874.yml
+    name: mahuateng.best
+    url: https://sub.bianyuan.xyz/sub?target=clash&new_name=true&url=https%3A%2F%2Fmahuateng.best%2Flink%2FKUyekNy6QLdOgnKG%3Fmu%3D2&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online.ini
+    selected:
+      - name: GLOBAL
+        now: 🇯🇵 日本-SVIP
+      - name: 🚀 节点选择
+        now: 🇸🇬 新加坡-SVIP
+      - name: 🌍 国外媒体
+        now: 🚀 节点选择
+      - name: 📲 电报信息
+        now: 🚀 节点选择
+      - name: Ⓜ️ 微软服务
+        now: 🚀 节点选择
+      - name: 🍎 苹果服务
+        now: 🚀 节点选择
+      - name: 📢 谷歌FCM
+        now: 🚀 节点选择
+      - name: 🎯 全球直连
+        now: DIRECT
+      - name: 🛑 全球拦截
+        now: REJECT
+      - name: 🍃 应用净化
+        now: REJECT
+      - name: 🐟 漏网之鱼
+        now: 🚀 节点选择
+    interval: 0
+    mode: rule
+index: 0
