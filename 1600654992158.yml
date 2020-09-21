@@ -2387,6 +2387,7 @@ rules:
   - DOMAIN-SUFFIX,cloudcone.com,🚀 节点选择
   - DOMAIN-SUFFIX,dubox.com,🚀 节点选择
   - DOMAIN-SUFFIX,gameloft.com,🚀 节点选择
+  - DOMAIN-SUFFIX,garena.com,🚀 节点选择
   - DOMAIN-SUFFIX,inoreader.com,🚀 节点选择
   - DOMAIN-SUFFIX,ip138.com,🚀 节点选择
   - DOMAIN-SUFFIX,ping.pe,🚀 节点选择
@@ -2580,6 +2581,8 @@ rules:
   - DOMAIN-SUFFIX,discord.media,🚀 节点选择
   - DOMAIN-SUFFIX,discordapp.com,🚀 节点选择
   - DOMAIN-SUFFIX,discordapp.net,🚀 节点选择
+  - DOMAIN-SUFFIX,dubox.com,🚀 节点选择
+  - DOMAIN-SUFFIX,duboxcdn.com,🚀 节点选择
   - DOMAIN-SUFFIX,facebook.com,🚀 节点选择
   - DOMAIN-SUFFIX,fb.com,🚀 节点选择
   - DOMAIN-SUFFIX,fb.me,🚀 节点选择
