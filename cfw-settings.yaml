@@ -5,8 +5,8 @@ mixinType: 1
 mixinCode: |-
   module.exports.parse = ({ content, name, url }, { yaml, axios, notify }) => {
     const rules = [
-      ...content.rules,
-      'DOMAIN-SUFFIX,qima-inc.com,🎯 全球直连'
+      'DOMAIN-SUFFIX,qima-inc.com,🎯 全球直连',
+      ...content.rules
     ];
     return { ...content, rules };
   }
