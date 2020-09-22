@@ -25,6 +25,6 @@ files:
         now: REJECT
       - name: 🐟 漏网之鱼
         now: 🚀 节点选择
-    interval: 24
+    interval: 0
     mode: rule
 index: 0
