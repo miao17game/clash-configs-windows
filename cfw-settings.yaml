@@ -5,3 +5,14 @@ mixinText: |
   mixin:
     rules:
       - DOMAIN-SUFFIX,qima-inc.com,🎯 全球直连
+mixinType: 1
+mixinCode: |-
+  module.exports.parse = ({ content, name, url }, { yaml, axios, notify }) => {
+    return {
+      ...content,
+      rules: [
+        ...content.rules,
+        'DOMAIN-SUFFIX,qima-inc.com,🎯 全球直连'
+      ]
+    };
+  }
