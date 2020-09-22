@@ -1,11 +1,11 @@
 theme: 2
 showNotifications: true
 fontFamily: TsangerJinKai01-27533
+mixinType: 1
 mixinText: |
   mixin:
     rules:
       - DOMAIN-SUFFIX,qima-inc.com,🎯 全球直连
-mixinType: 1
 mixinCode: |-
   module.exports.parse = ({ content, name, url }, { yaml, axios, notify }) => {
     const rules = {
