@@ -6,6 +6,7 @@ mixinCode: |-
   module.exports.parse = ({ content, name, url }, { yaml, axios, notify }) => {
     const rules = [
       'DOMAIN-SUFFIX,qima-inc.com,🎯 全球直连',
+      'DOMAIN-SUFFIX,delivery.mp.microsoft.com,🎯 全球直连',
       ...content.rules
     ];
     return { ...content, rules };
