@@ -2081,8 +2081,9 @@ rules:
  - DOMAIN-SUFFIX,sentry.io,🌍 国外媒体
  - DOMAIN-SUFFIX,deezer.com,🌍 国外媒体
  - DOMAIN-SUFFIX,dzcdn.net,🌍 国外媒体
- - DOMAIN,cdn.cdn.unid.go.com,🌍 国外媒体
  - DOMAIN,cdn.registerdisney.go.com,🌍 国外媒体
+ - DOMAIN,cdn.unid.go.com,🌍 国外媒体
+ - DOMAIN,disney.my.sentry.io,🌍 国外媒体
  - DOMAIN,global.edge.bamgrid.com,🌍 国外媒体
  - DOMAIN-SUFFIX,bamgrid.com,🌍 国外媒体
  - DOMAIN-SUFFIX,braze.com,🌍 国外媒体
