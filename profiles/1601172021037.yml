@@ -3,7 +3,7 @@ socks-port: 7891
 allow-lan: true
 mode: Rule
 log-level: info
-external-controller: :9090
+external-controller: 127.0.0.1:9090
 proxies:
   - {name: 🇷🇺 俄罗斯, server: zz.loli233.xyz, port: 80, type: vmess, uuid: 2feeffc7-60cf-3196-8c47-ce6afd597d52, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: ru.ljjdfxw.com}}
   - {name: 🇮🇳 印度 5x, server: tj.loli233.xyz, port: 80, type: vmess, uuid: 2feeffc7-60cf-3196-8c47-ce6afd597d52, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: yindu.ljjdfxw.com}}
@@ -11,7 +11,7 @@ proxies:
   - {name: 🇸🇬 新加坡②, server: tj.loli233.xyz, port: 80, type: vmess, uuid: 2feeffc7-60cf-3196-8c47-ce6afd597d52, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: sgp.ljjdfxw.com}}
   - {name: 🇯🇵 日本①, server: wh.loli233.xyz, port: 80, type: vmess, uuid: 2feeffc7-60cf-3196-8c47-ce6afd597d52, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: jp2.ljjdfxw.com}}
   - {name: 🇯🇵 日本②, server: wh.loli233.xyz, port: 80, type: vmess, uuid: 2feeffc7-60cf-3196-8c47-ce6afd597d52, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: jp.ljjdfxw.com}}
-  - {name: 🇺🇸 美国, server: tj.loli233.xyz, port: 80, type: vmess, uuid: 2feeffc7-60cf-3196-8c47-ce6afd597d52, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: mg.ljjdfxw.com}}
+  - {name: 🇺🇲 美国, server: tj.loli233.xyz, port: 80, type: vmess, uuid: 2feeffc7-60cf-3196-8c47-ce6afd597d52, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: mg.ljjdfxw.com}}
   - {name: 🇭🇰 香港, server: tj.loli233.xyz, port: 80, type: vmess, uuid: 2feeffc7-60cf-3196-8c47-ce6afd597d52, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: hk1.ljjdfxw.com}}
 proxy-groups:
   - name: 🚀 节点选择
@@ -25,7 +25,7 @@ proxy-groups:
       - 🇸🇬 新加坡②
       - 🇯🇵 日本①
       - 🇯🇵 日本②
-      - 🇺🇸 美国
+      - 🇺🇲 美国
       - 🇭🇰 香港
   - name: ♻️ 自动选择
     type: url-test
@@ -38,7 +38,7 @@ proxy-groups:
       - 🇸🇬 新加坡②
       - 🇯🇵 日本①
       - 🇯🇵 日本②
-      - 🇺🇸 美国
+      - 🇺🇲 美国
       - 🇭🇰 香港
   - name: 🌍 国外媒体
     type: select
@@ -52,7 +52,7 @@ proxy-groups:
       - 🇸🇬 新加坡②
       - 🇯🇵 日本①
       - 🇯🇵 日本②
-      - 🇺🇸 美国
+      - 🇺🇲 美国
       - 🇭🇰 香港
   - name: 📲 电报信息
     type: select
@@ -65,7 +65,7 @@ proxy-groups:
       - 🇸🇬 新加坡②
       - 🇯🇵 日本①
       - 🇯🇵 日本②
-      - 🇺🇸 美国
+      - 🇺🇲 美国
       - 🇭🇰 香港
   - name: Ⓜ️ 微软服务
     type: select
@@ -78,7 +78,7 @@ proxy-groups:
       - 🇸🇬 新加坡②
       - 🇯🇵 日本①
       - 🇯🇵 日本②
-      - 🇺🇸 美国
+      - 🇺🇲 美国
       - 🇭🇰 香港
   - name: 🍎 苹果服务
     type: select
@@ -91,7 +91,7 @@ proxy-groups:
       - 🇸🇬 新加坡②
       - 🇯🇵 日本①
       - 🇯🇵 日本②
-      - 🇺🇸 美国
+      - 🇺🇲 美国
       - 🇭🇰 香港
   - name: 📢 谷歌FCM
     type: select
@@ -105,7 +105,7 @@ proxy-groups:
       - 🇸🇬 新加坡②
       - 🇯🇵 日本①
       - 🇯🇵 日本②
-      - 🇺🇸 美国
+      - 🇺🇲 美国
       - 🇭🇰 香港
   - name: 🎯 全球直连
     type: select
@@ -135,7 +135,7 @@ proxy-groups:
       - 🇸🇬 新加坡②
       - 🇯🇵 日本①
       - 🇯🇵 日本②
-      - 🇺🇸 美国
+      - 🇺🇲 美国
       - 🇭🇰 香港
 rules:
  - DOMAIN-SUFFIX,acl4ssr,🎯 全球直连

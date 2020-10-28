@@ -1,12 +1,12 @@
 files:
   - time: 1601172021037.yml
     name: mahuateng.best
-    url: https://sub.bianyuan.xyz/sub?target=clash&new_name=true&url=https%3A%2F%2Fmahuateng.best%2Flink%2FKUyekNy6QLdOgnKG%3Fmu%3D2&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online.ini
+    url: https://subcon.py6.pw/sub?target=clash&new_name=true&url=https%3A%2F%2Fmahuateng.best%2Flink%2F3k5fIYbv40BsfUgu%3Fmu%3D2&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online.ini
     selected:
       - name: GLOBAL
         now: 🇯🇵 日本②
       - name: 🚀 节点选择
-        now: 🇯🇵 日本②
+        now: 🇯🇵 日本①
       - name: 🌍 国外媒体
         now: 🚀 节点选择
       - name: 📲 电报信息
@@ -26,5 +26,5 @@ files:
       - name: 🐟 漏网之鱼
         now: 🚀 节点选择
     interval: 0
-    mode: rule
+    mode: global
 index: 0
