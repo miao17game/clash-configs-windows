@@ -11,3 +11,4 @@ mixinCode: |-
     ];
     return { ...content, rules };
   }
+showNewVersionIcon: true

@@ -1,7 +1,7 @@
 files:
   - time: 1601172021037.yml
     name: mahuateng.best
-    url: https://subcon.py6.pw/sub?target=clash&new_name=true&url=https%3A%2F%2Fmahuateng.best%2Flink%2F3k5fIYbv40BsfUgu%3Fmu%3D2&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online.ini
+    url: https://subcon.py6.pw/sub?target=clash&new_name=true&url=https%3A%2F%2Fmahuateng.best%2Flink%2FEYnEdObRJLThZhBD%3Fmu%3D2&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online.ini
     selected:
       - name: GLOBAL
         now: 🇯🇵 日本②
@@ -26,5 +26,5 @@ files:
       - name: 🐟 漏网之鱼
         now: 🚀 节点选择
     interval: 0
-    mode: global
+    mode: rule
 index: 0
