@@ -1,12 +1,12 @@
 files:
   - time: 1601172021037.yml
     name: mahuateng.best
-    url: https://subcon.py6.pw/sub?target=clash&new_name=true&url=https%3A%2F%2Fmahuateng.best%2Flink%2F3k5fIYbv40BsfUgu%3Fmu%3D2&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online.ini
+    url: https://subcon.py6.pw/sub?target=clash&new_name=true&url=https%3A%2F%2Fmahuateng.best%2Flink%2FEYnEdObRJLThZhBD%3Fmu%3D2&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online.ini
     selected:
       - name: GLOBAL
         now: 🇯🇵 日本②
       - name: 🚀 节点选择
-        now: 🇯🇵 日本①
+        now: DIRECT
       - name: 🌍 国外媒体
         now: 🚀 节点选择
       - name: 📲 电报信息
@@ -26,5 +26,30 @@ files:
       - name: 🐟 漏网之鱼
         now: 🚀 节点选择
     interval: 0
-    mode: global
-index: 0
+    mode: rule
+  - time: 1607583151348.yml
+    name: Jinkela
+    url: https://subcon.dlj.tf/sub?target=clash&url=https%3A%2F%2Fwww.jinkela.site%2Flink%2FPyGoQIzZBf5SP2S1%3Fsub%3D3
+    selected:
+      - name: GLOBAL
+        now: DIRECT
+      - name: 🔰 节点选择
+        now: 🇯🇵 上海01→日本01 | 1.5x NF
+      - name: 🌍 国外媒体
+        now: 🔰 节点选择
+      - name: 🌏 国内媒体
+        now: 🎯 全球直连
+      - name: Ⓜ️ 微软服务
+        now: 🎯 全球直连
+      - name: 📲 电报信息
+        now: 🔰 节点选择
+      - name: 🍎 苹果服务
+        now: 🎯 全球直连
+      - name: 🎯 全球直连
+        now: DIRECT
+      - name: 🛑 全球拦截
+        now: REJECT
+      - name: 🐟 漏网之鱼
+        now: 🔰 节点选择
+    interval: 0
+index: 1

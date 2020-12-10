@@ -5,14 +5,14 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 🇷🇺 俄罗斯, server: zz.loli233.xyz, port: 80, type: vmess, uuid: 2feeffc7-60cf-3196-8c47-ce6afd597d52, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: ru.ljjdfxw.com}}
-  - {name: 🇮🇳 印度 5x, server: tj.loli233.xyz, port: 80, type: vmess, uuid: 2feeffc7-60cf-3196-8c47-ce6afd597d52, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: yindu.ljjdfxw.com}}
-  - {name: 🇸🇬 新加坡①, server: wh.loli233.xyz, port: 80, type: vmess, uuid: 2feeffc7-60cf-3196-8c47-ce6afd597d52, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: sgp3.ljjdfxw.com}}
-  - {name: 🇸🇬 新加坡②, server: tj.loli233.xyz, port: 80, type: vmess, uuid: 2feeffc7-60cf-3196-8c47-ce6afd597d52, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: sgp.ljjdfxw.com}}
-  - {name: 🇯🇵 日本①, server: wh.loli233.xyz, port: 80, type: vmess, uuid: 2feeffc7-60cf-3196-8c47-ce6afd597d52, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: jp2.ljjdfxw.com}}
-  - {name: 🇯🇵 日本②, server: wh.loli233.xyz, port: 80, type: vmess, uuid: 2feeffc7-60cf-3196-8c47-ce6afd597d52, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: jp.ljjdfxw.com}}
-  - {name: 🇺🇲 美国, server: tj.loli233.xyz, port: 80, type: vmess, uuid: 2feeffc7-60cf-3196-8c47-ce6afd597d52, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: mg.ljjdfxw.com}}
-  - {name: 🇭🇰 香港, server: tj.loli233.xyz, port: 80, type: vmess, uuid: 2feeffc7-60cf-3196-8c47-ce6afd597d52, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: hk1.ljjdfxw.com}}
+  - {name: 🇷🇺 俄罗斯, server: zz.loli233.xyz, port: 80, type: vmess, uuid: 24aaaa85-99eb-3a81-b141-fb9f09f34cf2, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: ru.ljjdfxw.com}}
+  - {name: 🇮🇳 印度 5x, server: tj.loli233.xyz, port: 80, type: vmess, uuid: 24aaaa85-99eb-3a81-b141-fb9f09f34cf2, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: yindu.ljjdfxw.com}}
+  - {name: 🇸🇬 新加坡①, server: wh.loli233.xyz, port: 80, type: vmess, uuid: 24aaaa85-99eb-3a81-b141-fb9f09f34cf2, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: sgp3.ljjdfxw.com}}
+  - {name: 🇸🇬 新加坡②, server: tj.loli233.xyz, port: 80, type: vmess, uuid: 24aaaa85-99eb-3a81-b141-fb9f09f34cf2, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: sgp.ljjdfxw.com}}
+  - {name: 🇯🇵 日本①, server: wh.loli233.xyz, port: 80, type: vmess, uuid: 24aaaa85-99eb-3a81-b141-fb9f09f34cf2, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: jp2.ljjdfxw.com}}
+  - {name: 🇯🇵 日本②, server: wh.loli233.xyz, port: 80, type: vmess, uuid: 24aaaa85-99eb-3a81-b141-fb9f09f34cf2, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: jp.ljjdfxw.com}}
+  - {name: 🇺🇲 美国, server: tj.loli233.xyz, port: 80, type: vmess, uuid: 24aaaa85-99eb-3a81-b141-fb9f09f34cf2, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: mg.ljjdfxw.com}}
+  - {name: 🇭🇰 香港, server: tj.loli233.xyz, port: 80, type: vmess, uuid: 24aaaa85-99eb-3a81-b141-fb9f09f34cf2, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: hk1.ljjdfxw.com}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -181,7 +181,6 @@ rules:
  - DOMAIN-KEYWORD,adsage,🛑 全球拦截
  - DOMAIN-KEYWORD,adsensor,🛑 全球拦截
  - DOMAIN-KEYWORD,adservice,🛑 全球拦截
- - DOMAIN-KEYWORD,adsh,🛑 全球拦截
  - DOMAIN-KEYWORD,adsmogo,🛑 全球拦截
  - DOMAIN-KEYWORD,adsrvmedia,🛑 全球拦截
  - DOMAIN-KEYWORD,adsserving,🛑 全球拦截
@@ -195,7 +194,6 @@ rules:
  - DOMAIN-KEYWORD,dwtrack,🛑 全球拦截
  - DOMAIN-KEYWORD,guanggao,🛑 全球拦截
  - DOMAIN-KEYWORD,lianmeng,🛑 全球拦截
- - DOMAIN-KEYWORD,monitor,🛑 全球拦截
  - DOMAIN-KEYWORD,omgmta,🛑 全球拦截
  - DOMAIN-KEYWORD,omniture,🛑 全球拦截
  - DOMAIN-KEYWORD,openx,🛑 全球拦截
@@ -494,7 +492,6 @@ rules:
  - DOMAIN-SUFFIX,optaim.com,🛑 全球拦截
  - DOMAIN-SUFFIX,optimix.asia,🛑 全球拦截
  - DOMAIN-SUFFIX,optimix.cn,🛑 全球拦截
- - DOMAIN-SUFFIX,optimizely.com,🛑 全球拦截
  - DOMAIN-SUFFIX,optimizelyapis.com,🛑 全球拦截
  - DOMAIN-SUFFIX,overture.com,🛑 全球拦截
  - DOMAIN-SUFFIX,p0y.cn,🛑 全球拦截
@@ -1795,7 +1792,6 @@ rules:
  - DOMAIN-SUFFIX,e.nexac.com,🍃 应用净化
  - DOMAIN-SUFFIX,eq.10jqka.com.cn,🍃 应用净化
  - DOMAIN-SUFFIX,exp.17wo.cn,🍃 应用净化
- - DOMAIN-SUFFIX,fund.10jqka.com.cn,🍃 应用净化
  - DOMAIN-SUFFIX,game.51yund.com,🍃 应用净化
  - DOMAIN-SUFFIX,ganjituiguang.ganji.com,🍃 应用净化
  - DOMAIN-SUFFIX,grand.ele.me,🍃 应用净化
@@ -2041,6 +2037,9 @@ rules:
  - DOMAIN-SUFFIX,hayabusa.io,🌍 国外媒体
  - DOMAIN-SUFFIX,c4assets.com,🌍 国外媒体
  - DOMAIN-SUFFIX,channel4.com,🌍 国外媒体
+ - DOMAIN, atv-ps.amazon.com,🌍 国外媒体
+ - DOMAIN, fls-na.amazon.com,🌍 国外媒体
+ - DOMAIN-SUFFIX, media-amazon.com,🌍 国外媒体
  - DOMAIN-SUFFIX,aiv-cdn.net,🌍 国外媒体
  - DOMAIN-SUFFIX,amazonaws.co.uk,🌍 国外媒体
  - DOMAIN-SUFFIX,amazonaws.com,🌍 国外媒体
@@ -2075,6 +2074,7 @@ rules:
  - DOMAIN-SUFFIX,dazn-api.com,🌍 国外媒体
  - DOMAIN-SUFFIX,dazn.com,🌍 国外媒体
  - DOMAIN-SUFFIX,dazndn.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,dcblivedazn.akamaized.net,🌍 国外媒体
  - DOMAIN-SUFFIX,indazn.com,🌍 国外媒体
  - DOMAIN-SUFFIX,indaznlab.com,🌍 国外媒体
  - DOMAIN-SUFFIX,intercom.io,🌍 国外媒体
@@ -2082,17 +2082,24 @@ rules:
  - DOMAIN-SUFFIX,deezer.com,🌍 国外媒体
  - DOMAIN-SUFFIX,dzcdn.net,🌍 国外媒体
  - DOMAIN,cdn.registerdisney.go.com,🌍 国外媒体
- - DOMAIN,cdn.unid.go.com,🌍 国外媒体
- - DOMAIN,disney.my.sentry.io,🌍 国外媒体
  - DOMAIN,global.edge.bamgrid.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,adobedtm.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,bam.nr-date.net,🌍 国外媒体
  - DOMAIN-SUFFIX,bamgrid.com,🌍 国外媒体
  - DOMAIN-SUFFIX,braze.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,cdn.registerdisney.go.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,cdn.unid.go.com,🌍 国外媒体
  - DOMAIN-SUFFIX,conviva.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,d9.flashtalking.com,🌍 国外媒体
  - DOMAIN-SUFFIX,disney-plus.net,🌍 国外媒体
+ - DOMAIN-SUFFIX,disney-portal.my.onetrust.com,🌍 国外媒体
  - DOMAIN-SUFFIX,disney.demdex.net,🌍 国外媒体
+ - DOMAIN-SUFFIX,disney.my.sentry.io,🌍 国外媒体
+ - DOMAIN-SUFFIX,disneyplus.bn5x.net,🌍 国外媒体
  - DOMAIN-SUFFIX,disneyplus.com,🌍 国外媒体
  - DOMAIN-SUFFIX,dssott.com,🌍 国外媒体
  - DOMAIN-SUFFIX,execute-api.us-east-1.amazonaws.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,js-agent.newrelic.com,🌍 国外媒体
  - DOMAIN,bcbolt446c5271-a.akamaihd.net,🌍 国外媒体
  - DOMAIN,content.jwplatform.com,🌍 国外媒体
  - DOMAIN,edge.api.brightcove.com,🌍 国外媒体
@@ -2165,6 +2172,7 @@ rules:
  - DOMAIN,d3c7rimkq79yfu.cloudfront.net,🌍 国外媒体
  - DOMAIN-SUFFIX,d3c7rimkq79yfu.cloudfront.net,🌍 国外媒体
  - DOMAIN-SUFFIX,linetv.tw,🌍 国外媒体
+ - DOMAIN-SUFFIX,profile.line-scdn.net,🌍 国外媒体
  - DOMAIN,d349g9zuie06uo.cloudfront.net,🌍 国外媒体
  - DOMAIN-SUFFIX,channel5.com,🌍 国外媒体
  - DOMAIN-SUFFIX,my5.tv,🌍 国外媒体
@@ -2649,6 +2657,7 @@ rules:
  - DOMAIN-SUFFIX,423down.com,🎯 全球直连
  - DOMAIN-SUFFIX,bokecc.com,🎯 全球直连
  - DOMAIN-SUFFIX,chaipip.com,🎯 全球直连
+ - DOMAIN-SUFFIX,chinaplay.store,🎯 全球直连
  - DOMAIN-SUFFIX,hrtsea.com,🎯 全球直连
  - DOMAIN-SUFFIX,kaikeba.com,🎯 全球直连
  - DOMAIN-SUFFIX,laomo.me,🎯 全球直连
