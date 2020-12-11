@@ -34,13 +34,13 @@ files:
       - name: GLOBAL
         now: DIRECT
       - name: 🔰 节点选择
-        now: 🇯🇵 上海01→日本01 | 1.5x NF
+        now: 🇯🇵 上海05→日本02 | 1.5x NF
       - name: 🌍 国外媒体
         now: 🔰 节点选择
       - name: 🌏 国内媒体
         now: 🎯 全球直连
       - name: Ⓜ️ 微软服务
-        now: 🎯 全球直连
+        now: 🔰 节点选择
       - name: 📲 电报信息
         now: 🔰 节点选择
       - name: 🍎 苹果服务
@@ -52,4 +52,5 @@ files:
       - name: 🐟 漏网之鱼
         now: 🔰 节点选择
     interval: 0
+    mode: rule
 index: 1
