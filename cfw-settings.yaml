@@ -7,6 +7,7 @@ mixinCode: |-
     const rules = [
       'DOMAIN-SUFFIX,qima-inc.com,🎯 全球直连',
       'DOMAIN-SUFFIX,delivery.mp.microsoft.com,🎯 全球直连',
+      'DOMAIN-SUFFIX,jinkela.red,🎯 全球直连',
       ...content.rules
     ];
     return { ...content, rules };
