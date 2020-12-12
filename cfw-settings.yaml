@@ -13,3 +13,4 @@ mixinCode: |-
     return { ...content, rules };
   }
 showNewVersionIcon: true
+editor: 1
