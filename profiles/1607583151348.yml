@@ -40,7 +40,6 @@ proxies:
   - {name: 🇭🇰 上海05→香港HKBN01 | 1.5x 原生, server: sh05.unicom.lay168.net, port: 61027, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: hkbn.vds.nbsd.us}}
   - {name: 🇭🇰 上海05→香港HKT01 | 1.5x 原生, server: sh05.unicom.lay168.net, port: 61033, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: hkt01.pqs-vds.lay168.net}}
   - {name: 🇲🇾 上海05→马来西亚01 | 1.5x 原生, server: sh05.unicom.lay168.net, port: 61040, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: my01.shinjiru.jinkela.icu}}
-  - {name: 🇸🇬 俄04 | 公益 | jinkela.pw | 请经常更新订阅, server: ru04.jh.nbsd.us, port: 80, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: ru04.jh.nbsd.us}}
   - {name: 🇷🇺 山东01→俄01 | 1.5x, server: qd01.unicom.lay168.net, port: 61019, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: ru01.jh.nbsd.us}}
   - {name: 🇷🇺 山东01→俄罗斯05 | 1.3x, server: qd01.unicom.lay168.net, port: 61042, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: ru05.jh.nbsd.us}}
   - {name: 🇷🇺 山东01→俄罗斯06 | 1.5x, server: qd01.unicom.lay168.net, port: 61022, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: ru06.jh.nbsd.us}}
@@ -188,7 +187,6 @@ proxy-groups:
       - 🇭🇰 上海05→香港HKBN01 | 1.5x 原生
       - 🇭🇰 上海05→香港HKT01 | 1.5x 原生
       - 🇲🇾 上海05→马来西亚01 | 1.5x 原生
-      - 🇸🇬 俄04 | 公益 | jinkela.pw | 请经常更新订阅
       - 🇷🇺 山东01→俄01 | 1.5x
       - 🇷🇺 山东01→俄罗斯05 | 1.3x
       - 🇷🇺 山东01→俄罗斯06 | 1.5x
@@ -335,7 +333,6 @@ proxy-groups:
       - 🇭🇰 上海05→香港HKBN01 | 1.5x 原生
       - 🇭🇰 上海05→香港HKT01 | 1.5x 原生
       - 🇲🇾 上海05→马来西亚01 | 1.5x 原生
-      - 🇸🇬 俄04 | 公益 | jinkela.pw | 请经常更新订阅
       - 🇷🇺 山东01→俄01 | 1.5x
       - 🇷🇺 山东01→俄罗斯05 | 1.3x
       - 🇷🇺 山东01→俄罗斯06 | 1.5x
@@ -483,7 +480,6 @@ proxy-groups:
       - 🇭🇰 上海05→香港HKBN01 | 1.5x 原生
       - 🇭🇰 上海05→香港HKT01 | 1.5x 原生
       - 🇲🇾 上海05→马来西亚01 | 1.5x 原生
-      - 🇸🇬 俄04 | 公益 | jinkela.pw | 请经常更新订阅
       - 🇷🇺 山东01→俄01 | 1.5x
       - 🇷🇺 山东01→俄罗斯05 | 1.3x
       - 🇷🇺 山东01→俄罗斯06 | 1.5x
@@ -630,7 +626,6 @@ proxy-groups:
       - 🇭🇰 上海05→香港HKBN01 | 1.5x 原生
       - 🇭🇰 上海05→香港HKT01 | 1.5x 原生
       - 🇲🇾 上海05→马来西亚01 | 1.5x 原生
-      - 🇸🇬 俄04 | 公益 | jinkela.pw | 请经常更新订阅
       - 🇷🇺 山东01→俄01 | 1.5x
       - 🇷🇺 山东01→俄罗斯05 | 1.3x
       - 🇷🇺 山东01→俄罗斯06 | 1.5x
@@ -777,7 +772,6 @@ proxy-groups:
       - 🇭🇰 上海05→香港HKBN01 | 1.5x 原生
       - 🇭🇰 上海05→香港HKT01 | 1.5x 原生
       - 🇲🇾 上海05→马来西亚01 | 1.5x 原生
-      - 🇸🇬 俄04 | 公益 | jinkela.pw | 请经常更新订阅
       - 🇷🇺 山东01→俄01 | 1.5x
       - 🇷🇺 山东01→俄罗斯05 | 1.3x
       - 🇷🇺 山东01→俄罗斯06 | 1.5x
@@ -924,7 +918,6 @@ proxy-groups:
       - 🇭🇰 上海05→香港HKBN01 | 1.5x 原生
       - 🇭🇰 上海05→香港HKT01 | 1.5x 原生
       - 🇲🇾 上海05→马来西亚01 | 1.5x 原生
-      - 🇸🇬 俄04 | 公益 | jinkela.pw | 请经常更新订阅
       - 🇷🇺 山东01→俄01 | 1.5x
       - 🇷🇺 山东01→俄罗斯05 | 1.3x
       - 🇷🇺 山东01→俄罗斯06 | 1.5x
@@ -1072,7 +1065,6 @@ proxy-groups:
       - 🇭🇰 上海05→香港HKBN01 | 1.5x 原生
       - 🇭🇰 上海05→香港HKT01 | 1.5x 原生
       - 🇲🇾 上海05→马来西亚01 | 1.5x 原生
-      - 🇸🇬 俄04 | 公益 | jinkela.pw | 请经常更新订阅
       - 🇷🇺 山东01→俄01 | 1.5x
       - 🇷🇺 山东01→俄罗斯05 | 1.3x
       - 🇷🇺 山东01→俄罗斯06 | 1.5x
@@ -1236,7 +1228,6 @@ proxy-groups:
       - 🇭🇰 上海05→香港HKBN01 | 1.5x 原生
       - 🇭🇰 上海05→香港HKT01 | 1.5x 原生
       - 🇲🇾 上海05→马来西亚01 | 1.5x 原生
-      - 🇸🇬 俄04 | 公益 | jinkela.pw | 请经常更新订阅
       - 🇷🇺 山东01→俄01 | 1.5x
       - 🇷🇺 山东01→俄罗斯05 | 1.3x
       - 🇷🇺 山东01→俄罗斯06 | 1.5x
@@ -3275,20 +3266,29 @@ rules:
  - DOMAIN-SUFFIX,hinet.net,🌍 国外媒体
  - DOMAIN-KEYWORD,voddazn,🌍 国外媒体
  - DOMAIN,d151l6v8er5bdm.cloudfront.net,🌍 国外媒体
+ - DOMAIN-SUFFIX,control.kochava.com,🌍 国外媒体
  - DOMAIN-SUFFIX,d151l6v8er5bdm.cloudfront.net,🌍 国外媒体
  - DOMAIN-SUFFIX,d1sgwhnao7452x.cloudfront.net,🌍 国外媒体
  - DOMAIN-SUFFIX,dazn-api.com,🌍 国外媒体
  - DOMAIN-SUFFIX,dazn.com,🌍 国外媒体
  - DOMAIN-SUFFIX,dazndn.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,dc2-vodhls-perform.secure.footprint.net,🌍 国外媒体
+ - DOMAIN-SUFFIX,dca-ll-livedazn-dznlivejp.s.llnwi.net,🌍 国外媒体
+ - DOMAIN-SUFFIX,dca-ll-voddazn-dznvodjp.s.llnwi.net,🌍 国外媒体
+ - DOMAIN-SUFFIX,dcalivedazn.akamaized.net,🌍 国外媒体
  - DOMAIN-SUFFIX,dcblivedazn.akamaized.net,🌍 国外媒体
  - DOMAIN-SUFFIX,indazn.com,🌍 国外媒体
  - DOMAIN-SUFFIX,indaznlab.com,🌍 国外媒体
  - DOMAIN-SUFFIX,intercom.io,🌍 国外媒体
+ - DOMAIN-SUFFIX,logx.optimizely.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,onboarding.indazn.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,pubby.indazn.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,rail.discovery.indazn.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,s.yimg.jp,🌍 国外媒体
  - DOMAIN-SUFFIX,sentry.io,🌍 国外媒体
  - DOMAIN-SUFFIX,deezer.com,🌍 国外媒体
  - DOMAIN-SUFFIX,dzcdn.net,🌍 国外媒体
  - DOMAIN,cdn.registerdisney.go.com,🌍 国外媒体
- - DOMAIN,global.edge.bamgrid.com,🌍 国外媒体
  - DOMAIN-SUFFIX,adobedtm.com,🌍 国外媒体
  - DOMAIN-SUFFIX,bam.nr-date.net,🌍 国外媒体
  - DOMAIN-SUFFIX,bamgrid.com,🌍 国外媒体
@@ -3303,6 +3303,7 @@ rules:
  - DOMAIN-SUFFIX,disney.my.sentry.io,🌍 国外媒体
  - DOMAIN-SUFFIX,disneyplus.bn5x.net,🌍 国外媒体
  - DOMAIN-SUFFIX,disneyplus.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,disneystreaming.com,🌍 国外媒体
  - DOMAIN-SUFFIX,dssott.com,🌍 国外媒体
  - DOMAIN-SUFFIX,execute-api.us-east-1.amazonaws.com,🌍 国外媒体
  - DOMAIN-SUFFIX,js-agent.newrelic.com,🌍 国外媒体
@@ -4102,12 +4103,15 @@ rules:
  - DOMAIN-SUFFIX,st.dl.eccdnx.com,🎯 全球直连
  - DOMAIN-SUFFIX,st.dl.pinyuncloud.com,🎯 全球直连
  - DOMAIN-SUFFIX,steamcdn-a.akamaihd.net,🎯 全球直连
+ - DOMAIN-SUFFIX,steamcommunity-a.akamaihd.net,🎯 全球直连
  - DOMAIN-SUFFIX,steamcontent.com,🎯 全球直连
  - DOMAIN-SUFFIX,steamgames.com,🎯 全球直连
  - DOMAIN-SUFFIX,steampowered.com.8686c.com,🎯 全球直连
  - DOMAIN-SUFFIX,steamstat.us,🎯 全球直连
  - DOMAIN-SUFFIX,steamstatic.com,🎯 全球直连
+ - DOMAIN-SUFFIX,steamstore-a.akamaihd.net,🎯 全球直连
  - DOMAIN-SUFFIX,steamusercontent.com,🎯 全球直连
+ - DOMAIN-SUFFIX,steamuserimages-a.akamaihd.net,🎯 全球直连
  - DOMAIN-SUFFIX,foxmail.com,🎯 全球直连
  - DOMAIN-SUFFIX,gtimg.com,🎯 全球直连
  - DOMAIN-SUFFIX,idqqimg.com,🎯 全球直连
