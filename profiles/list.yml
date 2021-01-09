@@ -6,7 +6,7 @@ files:
       - name: GLOBAL
         now: 🇯🇵 日本②
       - name: 🚀 节点选择
-        now: DIRECT
+        now: 🇯🇵 日本①
       - name: 🌍 国外媒体
         now: 🚀 节点选择
       - name: 📲 电报信息
@@ -34,7 +34,7 @@ files:
       - name: GLOBAL
         now: DIRECT
       - name: 🚀 节点选择
-        now: 🇯🇵 上海01→日本01 | 1.5x NF
+        now: 🇭🇰 上海01→香港01 | 1.5x NF
       - name: 🌍 国外媒体
         now: 🚀 节点选择
       - name: 📲 电报信息
