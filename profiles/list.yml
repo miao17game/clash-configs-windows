@@ -34,7 +34,7 @@ files:
       - name: GLOBAL
         now: DIRECT
       - name: 🚀 节点选择
-        now: 🇭🇰 上海01→香港01 | 1.5x NF
+        now: ♻️ 自动选择
       - name: 🌍 国外媒体
         now: 🚀 节点选择
       - name: 📲 电报信息
@@ -52,7 +52,7 @@ files:
       - name: 🍃 应用净化
         now: REJECT
       - name: 🐟 漏网之鱼
-        now: 🚀 节点选择
+        now: 🎯 全球直连
     interval: 0
     mode: rule
 index: 1

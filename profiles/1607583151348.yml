@@ -6,34 +6,32 @@ log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
   - {name: 🏳️‍🌈 过期时间：2021-04-09, server: jinkela.red, port: 10086, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇨🇳 上海01→台湾01 | 1.5x 原生, server: sh01.unicom.lay168.net, port: 61011, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: myfreecloud-tw-06.lay168.net}}
-  - {name: 🇸🇬 上海01→新加坡02 | 1.5x NF, server: sh01.unicom.lay168.net, port: 61009, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: sg02.li.jinkela.icu}}
-  - {name: 🇯🇵 上海01→日本02 | 1.5x NF, server: sh01.unicom.lay168.net, port: 61017, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: jp02.li.jinkela.icu}}
-  - {name: 🇺🇲 上海01→美国01 | 1.5.x NF, server: sh01.unicom.lay168.net, port: 61014, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: us01.az.jinkela.icu}}
-  - {name: 🇺🇲 上海01→美国04 | 1.3x | 备用, server: sh01.unicom.lay168.net, port: 61043, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: us04.backup.jinkela.icu}}
-  - {name: 🇬🇧 上海01→英国01 | 1.5x | NF BBC Chan4, server: sh01.unicom.lay168.net, port: 61021, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: uk01.az.jinkela.icu}}
-  - {name: 🇰🇷 上海01→韩国01 | 1.5x, server: sh01.unicom.lay168.net, port: 61004, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: kr01.az.jinkela.icu}}
-  - {name: 🇭🇰 上海01→香港01 | 1.5x NF, server: sh01.unicom.lay168.net, port: 61006, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: hk01.az.jinkela.icu}}
-  - {name: 🇨🇳 上海05→台湾01 | 1.5x 原生, server: sh05.unicom.lay168.net, port: 61011, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: myfreecloud-tw-06.lay168.net}}
-  - {name: 🇧🇷 上海05→巴西01 | 3.0x, server: sh05.unicom.lay168.net, port: 61041, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: br01.gcore.jinkela.icu}}
-  - {name: 🇸🇬 上海05→新加坡02 | 1.5x NF, server: sh05.unicom.lay168.net, port: 61009, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: sg02.li.jinkela.icu}}
-  - {name: 🇯🇵 上海05→日本02 | 1.5x NF, server: sh05.unicom.lay168.net, port: 61017, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: jp02.li.jinkela.icu}}
-  - {name: 🇨🇳 上海05→波兰01 | 1.2x, server: sh05.unicom.lay168.net, port: 61039, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: pl01.gcore.jinkela.icu}}
-  - {name: 🇨🇳 上海05→澳洲01 冷门 | 1.5x, server: sh05.unicom.lay168.net, port: 61035, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: au01.aws.jinkela.icu}}
-  - {name: 🇺🇲 上海05→美国01 | 1.5.x NF, server: sh05.unicom.lay168.net, port: 61014, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: us01.az.jinkela.icu}}
-  - {name: 🇺🇲 上海05→美国03 | 1.5x 原生, server: sh05.unicom.lay168.net, port: 61018, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: us03.he.nbsd.us}}
-  - {name: 🇺🇲 上海05→美国04 | 1.3x | 备用, server: sh05.unicom.lay168.net, port: 61043, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: us04.backup.jinkela.icu}}
-  - {name: 🇬🇧 上海05→英国01 | 1.5x | NF BBC Chan4, server: sh05.unicom.lay168.net, port: 61021, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: uk01.az.jinkela.icu}}
-  - {name: 🇳🇱 上海05→荷兰01 | 1.2x, server: sh05.unicom.lay168.net, port: 61037, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: nl01.gcore.jinkela.icu}}
-  - {name: 🇭🇰 上海05→香港01 | 1.5x NF, server: sh05.unicom.lay168.net, port: 61006, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: hk01.az.jinkela.icu}}
-  - {name: 🇭🇰 上海05→香港02 | 1.5x NF, server: sh05.unicom.lay168.net, port: 61022, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: hk02.az.jinkela.icu}}
-  - {name: 🇭🇰 上海05→香港04 | 1.5x NF, server: sh05.unicom.lay168.net, port: 61034, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: hk04.az.jinkela.icu}}
-  - {name: 🇭🇰 上海05→香港05 | 1.5x NF, server: sh05.unicom.lay168.net, port: 61032, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: hk05.az.jinkela.icu}}
-  - {name: 🇭🇰 上海05→香港HKBN01 | 1.5x 原生, server: sh05.unicom.lay168.net, port: 61027, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: hkbn.vds.nbsd.us}}
-  - {name: 🇭🇰 上海05→香港HKT01 | 1.5x 原生, server: sh05.unicom.lay168.net, port: 61033, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: hkt01.pqs-vds.lay168.net}}
-  - {name: 🇲🇾 上海05→马来西亚01 | 1.5x 原生, server: sh05.unicom.lay168.net, port: 61040, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: my01.shinjiru.jinkela.icu}}
+  - {name: 🇷🇺 安徽→俄罗斯01 | 1.5x, server: ah.cncu.lay168.net, port: 61019, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: ru01.jh.nbsd.us}}
+  - {name: "🇷🇺 安徽→俄罗斯05 | 1.3x\t", server: ah.cncu.lay168.net, port: 61042, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: ru05.jh.nbsd.us}}
+  - {name: 🇷🇺 安徽→俄罗斯06 | 1.3x, server: ah.cncu.lay168.net, port: 61044, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: ru06.jh.nbsd.us}}
+  - {name: 🇷🇺 安徽→俄罗斯07 | 1.5x, server: ah.cncu.lay168.net, port: 61020, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: ru07.jh.nbsd.us}}
+  - {name: 🇮🇳 安徽→印度01 | 1.5x, server: ah.cncu.lay168.net, port: 61026, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: in01.li.jinkela.icu}}
+  - {name: 🇨🇳 安徽→台湾01 | 1.5x 原生, server: ah.cncu.lay168.net, port: 61011, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: myfreecloud-tw-06.lay168.net}}
+  - {name: 🇨🇳 安徽→台湾02 | 1.5x 原生, server: ah.cncu.lay168.net, port: 61025, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: tw02.pqs.lay168.net}}
+  - {name: 🇸🇬 安徽→新加坡01 | 1.5x 原生, server: ah.cncu.lay168.net, port: 61013, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: sg01.az.jinkela.icu}}
+  - {name: 🇸🇬 安徽→新加坡02 | 1.5x NF, server: ah.cncu.lay168.net, port: 61009, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: sg02.li.jinkela.icu}}
+  - {name: 🇯🇵 安徽→日本01 | 1.5x NF, server: ah.cncu.lay168.net, port: 61012, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: jp01.az.jinkela.icu}}
+  - {name: 🇯🇵 安徽→日本02 | 1.5x NF, server: ah.cncu.lay168.net, port: 61017, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: jp02.li.jinkela.icu}}
+  - {name: 安徽→澳洲01 冷门 | 1.5x, server: ah.cncu.lay168.net, port: 61035, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: au01.aws.jinkela.icu}}
+  - {name: 🇺🇲 安徽→美国01 | 1.5.x NF, server: ah.cncu.lay168.net, port: 61014, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: us01.az.jinkela.icu}}
+  - {name: 🇺🇲 安徽→美国03 | 1.5x 原生, server: ah.cncu.lay168.net, port: 61018, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: us03.he.nbsd.us}}
+  - {name: 🇬🇧 安徽→英国01 | 1.5x | NF BBC Chan4, server: ah.cncu.lay168.net, port: 61021, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: uk01.az.jinkela.icu}}
+  - {name: 🇳🇱 安徽→荷兰01 冷门 | 1.2x, server: ah.cncu.lay168.net, port: 61037, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: nl01.gcore.jinkela.icu}}
+  - {name: 🇰🇷 安徽→韩国01 | 1.5x, server: ah.cncu.lay168.net, port: 61004, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: kr01.az.jinkela.icu}}
+  - {name: 🇭🇰 安徽→香港01 | 1.5x NF, server: ah.cncu.lay168.net, port: 61006, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: hk01.az.jinkela.icu}}
+  - {name: 🇭🇰 安徽→香港02 | 1.5x NF, server: ah.cncu.lay168.net, port: 61022, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: hk02.az.jinkela.icu}}
+  - {name: 🇭🇰 安徽→香港04 | 1.5x NF, server: ah.cncu.lay168.net, port: 61034, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: hk04.az.jinkela.icu}}
+  - {name: 🇭🇰 安徽→香港HKBN01 | 1.5x 原生, server: ah.cncu.lay168.net, port: 61027, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: hkbn.vds.nbsd.us}}
+  - {name: 🇭🇰 安徽→香港HKT01 | 1.5x 原生, server: ah.cncu.lay168.net, port: 61033, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: hkt01.pqs-vds.lay168.net}}
+  - {name: 🇲🇾 安徽→马来西亚01 | 1.5x 原生, server: ah.cncu.lay168.net, port: 61040, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: my01.shinjiru.jinkela.icu}}
   - {name: 🇷🇺 山东01→俄01 | 1.5x, server: qd01.unicom.lay168.net, port: 61019, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: ru01.jh.nbsd.us}}
   - {name: 🇷🇺 山东01→俄罗斯05 | 1.3x, server: qd01.unicom.lay168.net, port: 61042, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: ru05.jh.nbsd.us}}
+  - {name: "🇷🇺 山东01→俄罗斯05 | 1.3x\t显示\t", server: qd01.unicom.lay168.net, port: 61044, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: ru06.jh.nbsd.us}}
   - {name: 🇷🇺 山东01→俄罗斯07 | 1.5x, server: qd01.unicom.lay168.net, port: 61020, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: ru07.jh.nbsd.us}}
   - {name: 🇮🇳 山东01→印度01 | 1.5x, server: qd01.unicom.lay168.net, port: 61026, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: in01.aws.jinkela.icu}}
   - {name: 🇨🇳 山东01→台湾01 | 1.5x 原生, server: qd01.unicom.lay168.net, port: 61011, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: myfreecloud-tw-06.lay168.net}}
@@ -47,10 +45,15 @@ proxies:
   - {name: 🇬🇧 山东01→英国01 | 1.5x | NF BBC Chan4, server: qd01.unicom.lay168.net, port: 61021, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: uk01.az.jinkela.icu}}
   - {name: 🇰🇷 山东01→韩国01 | 1.5x, server: qd01.unicom.lay168.net, port: 61004, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: kr01.az.jinkela.icu}}
   - {name: 🇭🇰 山东01→香港01 | 1.5x NF, server: qd01.unicom.lay168.net, port: 61006, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: hk01.az.jinkela.icu}}
+  - {name: 🇭🇰 山东01→香港02 | 1.5x NF, server: qd01.unicom.lay168.net, port: 61022, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: hk02.az.jinkela.icu}}
+  - {name: 🇭🇰 山东01→香港04 | 1.5x NF, server: qd01.unicom.lay168.net, port: 61034, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: hk04.az.jinkela.icu}}
   - {name: 🇭🇰 山东01→香港HKBN01 | 1.5x 原生, server: qd01.unicom.lay168.net, port: 61027, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: hkbn.vds.nbsd.us}}
   - {name: 🇷🇺 广州01→俄罗斯05 | 1.3x, server: gz01.mobile.lay168.net, port: 61042, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: ru05.jh.nbsd.us}}
+  - {name: 🇮🇳 广州01→印度01 | 1.5x, server: gz01.mobile.lay168.net, port: 61026, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: in01.aws.jinkela.icu}}
   - {name: 🇨🇳 广州01→台湾01 | 1.5x 原生, server: gz01.mobile.lay168.net, port: 61011, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: myfreecloud-tw-06.lay168.net}}
   - {name: 🇨🇳 广州01→台湾02 | 1.5x 原生, server: gz01.mobile.lay168.net, port: 61025, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: tw02.pqs.lay168.net}}
+  - {name: 🇧🇷 广州01→巴西01 冷门 | 3.0x, server: gz01.mobile.lay168.net, port: 61041, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: br01.gcore.jinkela.icu}}
+  - {name: 🇩🇪 广州01→德国01 冷门 | 1.2x, server: gz01.mobile.lay168.net, port: 61008, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: de01.hetzner.jinkela.icu}}
   - {name: 🇸🇬 广州01→新加坡01 | 1.5x 原生, server: gz01.mobile.lay168.net, port: 61013, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: sg01.az.jinkela.icu}}
   - {name: 🇸🇬 广州01→新加坡02 | 1.5x NF, server: gz01.mobile.lay168.net, port: 61009, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: sg02.li.jinkela.icu}}
   - {name: 🇯🇵 广州01→日本01 | 1.5x NF, server: gz01.mobile.lay168.net, port: 61012, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: jp01.az.jinkela.icu}}
@@ -60,10 +63,11 @@ proxies:
   - {name: 🇺🇲 广州01→美国01 | 1.5.x NF, server: gz01.mobile.lay168.net, port: 61014, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: us01.az.jinkela.icu}}
   - {name: 🇺🇲 广州01→美国03 | 1.5x 原生, server: gz01.mobile.lay168.net, port: 61018, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: us03.he.nbsd.us}}
   - {name: 🇺🇲 广州01→美国04 | 1.3x | 备用, server: gz01.mobile.lay168.net, port: 61043, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: us04.backup.jinkela.icu}}
-  - {name: 🇳🇱 广州01→荷兰01 | 1.2x, server: gz01.mobile.lay168.net, port: 61037, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: nl01.gcore.jinkela.icu}}
+  - {name: 🇳🇱 广州01→荷兰01 冷门 | 1.2x, server: gz01.mobile.lay168.net, port: 61037, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: nl01.gcore.jinkela.icu}}
   - {name: 🇰🇷 广州01→韩国01 | 1.5x, server: gz01.mobile.lay168.net, port: 61004, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: kr01.az.jinkela.icu}}
   - {name: 🇭🇰 广州01→香港01 | 1.5x NF, server: gz01.mobile.lay168.net, port: 61006, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: hk01.az.jinkela.icu}}
   - {name: 🇭🇰 广州01→香港02 | 1.5x NF, server: gz01.mobile.lay168.net, port: 61022, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: hk02.az.jinkela.icu}}
+  - {name: 🇭🇰 广州01→香港04 | 1.5x NF, server: gz01.mobile.lay168.net, port: 61034, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: hk04.az.jinkela.icu}}
   - {name: 🇭🇰 广州01→香港HKBN01 | 1.5x 原生, server: gz01.mobile.lay168.net, port: 61027, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: hkbn.vds.nbsd.us}}
   - {name: 🇭🇰 广州01→香港HKT01 | 1.5x 原生, server: gz01.mobile.lay168.net, port: 61033, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: hkt01.pqs-vds.lay168.net}}
   - {name: 🇲🇾 广州01→马来西亚01 | 1.5x 原生, server: gz01.mobile.lay168.net, port: 61040, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: my01.shinjiru.jinkela.icu}}
@@ -71,7 +75,8 @@ proxies:
   - {name: 🇮🇳 广州02→印度01 | 1.5x, server: gz02.mobile.lay168.net, port: 61026, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: in01.aws.jinkela.icu}}
   - {name: 🇨🇳 广州02→台湾01 | 1.5x 原生, server: gz02.mobile.lay168.net, port: 61011, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: myfreecloud-tw-06.lay168.net}}
   - {name: 🇨🇳 广州02→台湾02 | 1.5x 原生, server: gz02.mobile.lay168.net, port: 61025, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: tw02.pqs.lay168.net}}
-  - {name: 🇧🇷 广州02→巴西01 | 3.0x, server: gz02.mobile.lay168.net, port: 61041, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: br01.gcore.jinkela.icu}}
+  - {name: 🇧🇷 广州02→巴西01 冷门 | 3.0x, server: gz02.mobile.lay168.net, port: 61041, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: br01.gcore.jinkela.icu}}
+  - {name: 🇩🇪 广州02→德国01 冷门 | 1.2x, server: gz02.mobile.lay168.net, port: 61008, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: de01.hetzner.jinkela.icu}}
   - {name: 🇸🇬 广州02→新加坡01 | 1.5x 原生, server: gz02.mobile.lay168.net, port: 61013, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: sg01.az.jinkela.icu}}
   - {name: 🇸🇬 广州02→新加坡02 | 1.5x NF, server: gz02.mobile.lay168.net, port: 61009, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: sg02.li.jinkela.icu}}
   - {name: 🇯🇵 广州02→日本01 | 1.5x NF, server: gz02.mobile.lay168.net, port: 61012, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: jp01.az.jinkela.icu}}
@@ -83,7 +88,8 @@ proxies:
   - {name: 🇺🇲 广州02→美国01 | 1.5.x NF, server: gz02.mobile.lay168.net, port: 61014, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: us01.az.jinkela.icu}}
   - {name: 🇺🇲 广州02→美国03 | 1.5x 原生, server: gz02.mobile.lay168.net, port: 61018, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: us03.he.nbsd.us}}
   - {name: 🇺🇲 广州02→美国04 | 1.3x | 备用, server: gz02.mobile.lay168.net, port: 61043, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: us04.backup.jinkela.icu}}
-  - {name: 🇳🇱 广州02→荷兰01 | 1.2x, server: gz02.mobile.lay168.net, port: 61037, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: nl01.gcore.jinkela.icu}}
+  - {name: 🇬🇧 广州02→英国01 | 1.5x | NF BBC Chan4, server: gz02.mobile.lay168.net, port: 61021, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: uk01.az.jinkela.icu}}
+  - {name: 🇳🇱 广州02→荷兰01 冷门 | 1.2x, server: gz02.mobile.lay168.net, port: 61037, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: nl01.gcore.jinkela.icu}}
   - {name: 🇰🇷 广州02→韩国01 | 1.5x, server: gz02.mobile.lay168.net, port: 61004, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: kr01.az.jinkela.icu}}
   - {name: 🇭🇰 广州02→香港01 | 1.5x NF, server: gz02.mobile.lay168.net, port: 61006, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: hk01.az.jinkela.icu}}
   - {name: 🇭🇰 广州02→香港02 | 1.5x NF, server: gz02.mobile.lay168.net, port: 61022, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: hk02.az.jinkela.icu}}
@@ -91,48 +97,56 @@ proxies:
   - {name: 🇭🇰 广州02→香港HKBN01 | 1.5x 原生, server: gz02.mobile.lay168.net, port: 61027, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: hkbn.vds.nbsd.us}}
   - {name: 🇭🇰 广州02→香港HKT01 | 1.5x 原生, server: gz02.mobile.lay168.net, port: 61033, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: hkt01.pqs-vds.lay168.net}}
   - {name: 🇲🇾 广州02→马来西亚01 | 1.5x 原生, server: gz02.mobile.lay168.net, port: 61040, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: my01.shinjiru.jinkela.icu}}
-  - {name: 🇷🇺 江苏BGP→俄罗斯01 | 1.5x, server: cz01.ddns168.com, port: 61019, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: ru01.jh.nbsd.us}}
-  - {name: 🇷🇺 江苏BGP→俄罗斯05 | 1.3x, server: cz01.ddns168.com, port: 61042, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: ru05.jh.nbsd.us}}
-  - {name: 🇷🇺 江苏BGP→俄罗斯07 | 1.5x, server: cz01.ddns168.com, port: 61020, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: ru07.jh.nbsd.us}}
-  - {name: 🇨🇳 江苏BGP→台湾01 | 1.5x 原生, server: cz01.ddns168.com, port: 61011, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: myfreecloud-tw-06.lay168.net}}
-  - {name: 🇨🇳 江苏BGP→台湾02 | 1.5x 原生, server: cz01.ddns168.com, port: 61025, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: tw02.pqs.lay168.net}}
-  - {name: 🇸🇬 江苏BGP→新加坡01 | 1.5x 原生, server: cz01.ddns168.com, port: 61013, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: sg01.az.jinkela.icu}}
-  - {name: 🇸🇬 江苏BGP→新加坡02 | 1.5x NF, server: cz01.ddns168.com, port: 61009, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: sg02.li.jinkela.icu}}
-  - {name: 🇯🇵 江苏BGP→日本01 | 1.5x NF, server: cz01.ddns168.com, port: 61012, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: jp01.az.jinkela.icu}}
-  - {name: 🇯🇵 江苏BGP→日本03 | 1.5x NF, server: cz01.ddns168.com, port: 61038, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: jp03.aws.jinkela.icu}}
-  - {name: 🇨🇳 江苏BGP→波兰01 | 1.2x, server: cz01.ddns168.com, port: 61039, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: pl01.gcore.jinkela.icu}}
-  - {name: 🇭🇰 江苏BGP→香港01 | 1.5x NF, server: cz01.ddns168.com, port: 61006, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: hk01.az.jinkela.icu}}
-  - {name: 🇭🇰 江苏BGP→香港HKBN01 | 1.5x 原生, server: cz01.ddns168.com, port: 61027, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: hkbn.vds.nbsd.us}}
-  - {name: 🇭🇰 江苏BGP→香港HKT01 | 1.5x 原生, server: cz01.ddns168.com, port: 61033, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: hkt01.pqs-vds.lay168.net}}
-  - {name: 🇲🇾 江苏BGP→马来西亚01 | 1.5x 原生, server: cz01.ddns168.com, port: 61040, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: my01.shinjiru.jinkela.icu}}
+  - {name: 🇷🇺 江苏BGP→俄罗斯01 | 1.5x, server: cn.jscz-01.node.cyou, port: 61019, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: ru01.jh.nbsd.us}}
+  - {name: 🇷🇺 江苏BGP→俄罗斯05 | 1.3x, server: cn.jscz-01.node.cyou, port: 61042, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: ru05.jh.nbsd.us}}
+  - {name: 🇷🇺 江苏BGP→俄罗斯07 | 1.5x, server: cn.jscz-01.node.cyou, port: 61020, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: ru07.jh.nbsd.us}}
+  - {name: 🇨🇳 江苏BGP→台湾01 | 1.5x 原生, server: cn.jscz-01.node.cyou, port: 61011, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: myfreecloud-tw-06.lay168.net}}
+  - {name: 🇨🇳 江苏BGP→台湾02 | 1.5x 原生, server: cn.jscz-01.node.cyou, port: 61025, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: tw02.pqs.lay168.net}}
+  - {name: 🇧🇷 江苏BGP→巴西01 冷门 | 3.0x, server: cn.jscz-01.node.cyou, port: 61041, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: br01.gcore.jinkela.icu}}
+  - {name: 🇩🇪 江苏BGP→德国01 冷门 | 1.2x, server: cn.jscz-01.node.cyou, port: 61008, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: de01.hetzner.jinkela.icu}}
+  - {name: 🇸🇬 江苏BGP→新加坡01 | 1.5x 原生, server: cn.jscz-01.node.cyou, port: 61013, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: sg01.az.jinkela.icu}}
+  - {name: 🇸🇬 江苏BGP→新加坡02 | 1.5x NF, server: cn.jscz-01.node.cyou, port: 61009, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: sg02.li.jinkela.icu}}
+  - {name: 🇯🇵 江苏BGP→日本01 | 1.5x NF, server: cn.jscz-01.node.cyou, port: 61012, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: jp01.az.jinkela.icu}}
+  - {name: 🇯🇵 江苏BGP→日本02 | 1.5x NF, server: cn.jscz-01.node.cyou, port: 61017, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: jp02.li.jinkela.icu}}
+  - {name: 🇯🇵 江苏BGP→日本03 | 1.5x NF, server: cn.jscz-01.node.cyou, port: 61038, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: jp03.aws.jinkela.icu}}
+  - {name: 🇨🇳 江苏BGP→波兰01 | 1.2x, server: cn.jscz-01.node.cyou, port: 61039, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: pl01.gcore.jinkela.icu}}
+  - {name: 🇨🇳 江苏BGP→澳洲01 冷门 | 1.5x, server: cn.jscz-01.node.cyou, port: 61035, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: au01.aws.jinkela.icu}}
+  - {name: 🇺🇲 江苏BGP→美国01 | 1.5.x NF, server: cn.jscz-01.node.cyou, port: 61014, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: us01.az.jinkela.icu}}
+  - {name: 🇬🇧 江苏BGP→英国01 | 1.5x | NF BBC Chan4, server: cn.jscz-01.node.cyou, port: 61021, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: uk01.az.jinkela.icu}}
+  - {name: 🇳🇱 江苏BGP→荷兰01 冷门 | 1.2x, server: cn.jscz-01.node.cyou, port: 61037, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: nl01.gcore.jinkela.icu}}
+  - {name: 🇭🇰 江苏BGP→香港01 | 1.5x NF, server: cn.jscz-01.node.cyou, port: 61006, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: hk01.az.jinkela.icu}}
+  - {name: 🇭🇰 江苏BGP→香港02 | 1.5x NF, server: cn.jscz-01.node.cyou, port: 61022, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: hk02.az.jinkela.icu}}
+  - {name: 🇭🇰 江苏BGP→香港04 | 1.5x NF, server: cn.jscz-01.node.cyou, port: 61034, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: hk04.az.jinkela.icu}}
+  - {name: 🇭🇰 江苏BGP→香港HKBN01 | 1.5x 原生, server: cn.jscz-01.node.cyou, port: 61027, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: hkbn.vds.nbsd.us}}
+  - {name: 🇭🇰 江苏BGP→香港HKT01 | 1.5x 原生, server: cn.jscz-01.node.cyou, port: 61033, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: hkt01.pqs-vds.lay168.net}}
+  - {name: 🇲🇾 江苏BGP→马来西亚01 | 1.5x 原生, server: cn.jscz-01.node.cyou, port: 61040, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: my01.shinjiru.jinkela.icu}}
   - {name: 🇸🇬 澳洲CDN | 实验 | 免费 | 1.0x | 请经常更新订阅, server: au01.az.pvpgames.net, port: 80, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: au01.az.pvpgames.net}}
-  - {name: 珠海01(测试机)→波兰01 | 1.2x, server: gz02.mobile.lay168.net, port: 61039, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: pl01.gcore.jinkela.icu}}
-  - {name: 🇸🇬 粤新03 IEPL专线 入口1 | 4x NF, server: aix.iplc01.node.cyou, port: 7041, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: sg03.li.nbsd.us}}
-  - {name: 🇸🇬 粤新03 IEPL专线 入口2 | 4x NF, server: aix.iplc02.node.cyou, port: 7041, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: sg03.li.nbsd.us}}
-  - {name: 🇸🇬 粤新03 IEPL专线 入口3 | 4x NF, server: aix.iplc03.node.cyou, port: 7041, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: sg03.li.nbsd.us}}
-  - {name: 🇸🇬 粤新03 IEPL专线 入口4 | 4x NF, server: aix.iplc04.node.cyou, port: 7041, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: sg03.li.nbsd.us}}
-  - {name: 🇸🇬 粤新03 IEPL专线 入口5 | 4x NF, server: aix.iplc05.node.cyou, port: 7041, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: sg03.li.nbsd.us}}
-  - {name: 🇯🇵 粤日04 IEPL专线 入口1 | 4x NF, server: aix.iplc01.node.cyou, port: 7011, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: jp04.li.nbsd.us}}
-  - {name: 🇯🇵 粤日04 IEPL专线 入口2 | 4x NF, server: aix.iplc02.node.cyou, port: 7011, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: jp04.li.nbsd.us}}
-  - {name: 🇯🇵 粤日04 IEPL专线 入口3 | 4x NF, server: aix.iplc03.node.cyou, port: 7011, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: jp04.li.nbsd.us}}
-  - {name: 🇯🇵 粤日04 IEPL专线 入口4 | 4x NF, server: aix.iplc04.node.cyou, port: 7011, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: jp04.li.nbsd.us}}
-  - {name: 🇯🇵 粤日04 IEPL专线 入口5 | 4x NF, server: aix.iplc05.node.cyou, port: 7011, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: jp04.li.nbsd.us}}
-  - {name: 🇭🇰 粤港03 IEPL专线 入口1 | 4x NF, server: aix.iplc01.node.cyou, port: 7021, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: hkbn.vds.nbsd.us}}
-  - {name: 🇭🇰 粤港03 IEPL专线 入口2 | 4x NF, server: aix.iplc02.node.cyou, port: 7021, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: hkbn.vds.nbsd.us}}
-  - {name: 🇭🇰 粤港03 IEPL专线 入口3 | 4x NF, server: aix.iplc03.node.cyou, port: 7021, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: hkbn.vds.nbsd.us}}
-  - {name: "🇭🇰 粤港03 IEPL专线 入口4 | 4x NF\t", server: aix.iplc04.node.cyou, port: 7021, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: hkbn.vds.nbsd.us}}
-  - {name: 🇭🇰 粤港03 IEPL专线 入口5 | 4x NF, server: aix.iplc05.node.cyou, port: 7021, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: hkbn.vds.nbsd.us}}
-  - {name: 🇺🇲 粤美02 IEPL专线 入口1 | 4x NF, server: aix.iplc01.node.cyou, port: 7031, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: us02.li.nbsd.us}}
-  - {name: 🇺🇲 粤美02 IEPL专线 入口2 | 4x NF, server: aix.iplc02.node.cyou, port: 7031, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: us02.li.nbsd.us}}
-  - {name: 🇺🇲 粤美02 IEPL专线 入口3 | 4x NF, server: aix.iplc03.node.cyou, port: 7031, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: us02.li.nbsd.us}}
-  - {name: 🇺🇲 粤美02 IEPL专线 入口4 | 4x NF, server: aix.iplc04.node.cyou, port: 7031, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: us02.li.nbsd.us}}
-  - {name: 🇺🇲 粤美02 IEPL专线 入口5 | 4x NF, server: aix.iplc05.node.cyou, port: 7031, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: us02.li.nbsd.us}}
+  - {name: 🇸🇬 粤新03 IEPL专线 入口1 | 4x NF, server: iplc01.kbttfmyxjwc4ng5a.node.cyou, port: 7041, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: sg03.li.nbsd.us}}
+  - {name: 🇸🇬 粤新03 IEPL专线 入口2 | 4x NF, server: iplc02.cejnsetxxsthp4fm.node.cyou, port: 7041, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: sg03.li.nbsd.us}}
+  - {name: 🇸🇬 粤新03 IEPL专线 入口3 | 4x NF, server: iplc03.y4hfcixy5gj2ppyy.node.cyou, port: 7041, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: sg03.li.nbsd.us}}
+  - {name: 🇸🇬 粤新03 IEPL专线 入口4 | 4x NF, server: iplc04.pcnzbydk6wxarhsh.node.cyou, port: 7041, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: sg03.li.nbsd.us}}
+  - {name: 🇸🇬 粤新03 IEPL专线 入口5 | 4x NF, server: iplc05.wx67ealssxibmmyt.node.cyou, port: 7041, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: sg03.li.nbsd.us}}
+  - {name: 🇯🇵 粤日04 IEPL专线 入口1 | 4x NF, server: iplc01.kbttfmyxjwc4ng5a.node.cyou, port: 7011, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: jp04.li.nbsd.us}}
+  - {name: 🇯🇵 粤日04 IEPL专线 入口2 | 4x NF, server: iplc02.cejnsetxxsthp4fm.node.cyou, port: 7011, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: jp04.li.nbsd.us}}
+  - {name: 🇯🇵 粤日04 IEPL专线 入口3 | 4x NF, server: iplc03.y4hfcixy5gj2ppyy.node.cyou, port: 7011, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: jp04.li.nbsd.us}}
+  - {name: 🇯🇵 粤日04 IEPL专线 入口4 | 4x NF, server: iplc04.pcnzbydk6wxarhsh.node.cyou, port: 7011, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: jp04.li.nbsd.us}}
+  - {name: 🇯🇵 粤日04 IEPL专线 入口5 | 4x NF, server: iplc05.wx67ealssxibmmyt.node.cyou, port: 7011, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: jp04.li.nbsd.us}}
+  - {name: 🇭🇰 粤港03 IEPL专线 入口1 | 4x NF, server: iplc01.kbttfmyxjwc4ng5a.node.cyou, port: 7021, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: hkbn.vds.nbsd.us}}
+  - {name: 🇭🇰 粤港03 IEPL专线 入口2 | 4x NF, server: iplc02.cejnsetxxsthp4fm.node.cyou, port: 7021, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: hkbn.vds.nbsd.us}}
+  - {name: 🇭🇰 粤港03 IEPL专线 入口3 | 4x NF, server: iplc03.y4hfcixy5gj2ppyy.node.cyou, port: 7021, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: hkbn.vds.nbsd.us}}
+  - {name: 🇭🇰 粤港03 IEPL专线 入口4 | 4x NF, server: iplc04.pcnzbydk6wxarhsh.node.cyou, port: 7021, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: hkbn.vds.nbsd.us}}
+  - {name: 🇭🇰 粤港03 IEPL专线 入口5 | 4x NF, server: iplc05.wx67ealssxibmmyt.node.cyou, port: 7021, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: hkbn.vds.nbsd.us}}
+  - {name: 🇺🇲 粤美02 IEPL专线 入口1 | 4x NF, server: iplc01.kbttfmyxjwc4ng5a.node.cyou, port: 7031, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: us02.li.nbsd.us}}
+  - {name: 🇺🇲 粤美02 IEPL专线 入口2 | 4x NF, server: iplc02.cejnsetxxsthp4fm.node.cyou, port: 7031, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: us02.li.nbsd.us}}
+  - {name: 🇺🇲 粤美02 IEPL专线 入口3 | 4x NF, server: iplc03.y4hfcixy5gj2ppyy.node.cyou, port: 7031, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: us02.li.nbsd.us}}
+  - {name: 🇺🇲 粤美02 IEPL专线 入口4 | 4x NF, server: iplc04.pcnzbydk6wxarhsh.node.cyou, port: 7031, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: us02.li.nbsd.us}}
+  - {name: 🇺🇲 粤美02 IEPL专线 入口5 | 4x NF, server: iplc05.wx67ealssxibmmyt.node.cyou, port: 7031, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: us02.li.nbsd.us}}
   - {name: 🇭🇰 香港az→印度01 | 1.5x, server: hk02.az.lay168.net, port: 61026, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: in01.aws.jinkela.icu}}
   - {name: 🇭🇰 香港az→台湾01 | 1.5x 原生, server: hk02.az.lay168.net, port: 61011, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: myfreecloud-tw-06.lay168.net}}
   - {name: 🇭🇰 香港az→台湾02 | 1.5x 原生, server: hk02.az.lay168.net, port: 61025, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: tw02.pqs.lay168.net}}
   - {name: 🇭🇰 香港az→土耳其01 | 1.5x, server: hk02.az.lay168.net, port: 61028, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: tr01.htigger.jinkela.icu}}
-  - {name: 🇧🇷 香港az→巴西01 | 3.0x, server: hk02.az.lay168.net, port: 61041, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: br01.gcore.jinkela.icu}}
-  - {name: 🇩🇪 香港az→德国01 | 1.2x, server: hk02.az.lay168.net, port: 61008, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: de01.hetzner.jinkela.icu}}
+  - {name: 🇧🇷 香港az→巴西01 冷门 | 3.0x, server: hk02.az.lay168.net, port: 61041, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: br01.gcore.jinkela.icu}}
+  - {name: 🇩🇪 香港az→德国01 冷门 | 1.2x, server: hk02.az.lay168.net, port: 61008, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: de01.hetzner.jinkela.icu}}
   - {name: 🇭🇰 香港az→新加坡01 | 1.5x 原生, server: hk02.az.lay168.net, port: 61013, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: sg01.az.jinkela.icu}}
   - {name: 🇭🇰 香港az→日本01 | 1.5x NF, server: hk02.az.lay168.net, port: 61012, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: jp01.az.jinkela.icu}}
   - {name: 🇭🇰 香港az→日本03 | 1.5x NF, server: hk02.az.lay168.net, port: 61038, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: jp03.aws.jinkela.icu}}
@@ -141,7 +155,7 @@ proxies:
   - {name: 🇭🇰 香港az→澳洲01 冷门 | 1.5x, server: hk02.az.lay168.net, port: 61035, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: au01.aws.jinkela.icu}}
   - {name: 🇭🇰 香港az→美国03 | 1.5x 原生, server: hk02.az.lay168.net, port: 61018, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: us03.he.nbsd.us}}
   - {name: 🇬🇧 香港az→英国01 | 1.5x | NF BBC Chan4, server: hk02.az.lay168.net, port: 61021, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: uk01.az.jinkela.icu}}
-  - {name: 🇭🇰 香港az→荷兰01 | 1.2x, server: hk02.az.lay168.net, port: 61037, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: nl01.gcore.jinkela.icu}}
+  - {name: 🇭🇰 香港az→荷兰01 冷门 | 1.2x, server: hk02.az.lay168.net, port: 61037, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: nl01.gcore.jinkela.icu}}
   - {name: 🇦🇷 香港az→阿根廷01 冷门+低速 | 2.0x, server: hk02.az.lay168.net, port: 61029, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: ar01.don.jinkela.icu}}
   - {name: 🇭🇰 香港az→韩01 | 1.5x, server: hk02.az.lay168.net, port: 61004, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: kr01.az.jinkela.icu}}
   - {name: 🇭🇰 香港az→香港HKBN01 | 1.5x 原生, server: hk02.az.lay168.net, port: 61027, type: vmess, uuid: a821299e-e717-3a43-8a11-649e8fa26b89, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: hkbn.vds.nbsd.us}}
@@ -154,34 +168,32 @@ proxy-groups:
       - ♻️ 自动选择
       - DIRECT
       - 🏳️‍🌈 过期时间：2021-04-09
-      - 🇨🇳 上海01→台湾01 | 1.5x 原生
-      - 🇸🇬 上海01→新加坡02 | 1.5x NF
-      - 🇯🇵 上海01→日本02 | 1.5x NF
-      - 🇺🇲 上海01→美国01 | 1.5.x NF
-      - 🇺🇲 上海01→美国04 | 1.3x | 备用
-      - 🇬🇧 上海01→英国01 | 1.5x | NF BBC Chan4
-      - 🇰🇷 上海01→韩国01 | 1.5x
-      - 🇭🇰 上海01→香港01 | 1.5x NF
-      - 🇨🇳 上海05→台湾01 | 1.5x 原生
-      - 🇧🇷 上海05→巴西01 | 3.0x
-      - 🇸🇬 上海05→新加坡02 | 1.5x NF
-      - 🇯🇵 上海05→日本02 | 1.5x NF
-      - 🇨🇳 上海05→波兰01 | 1.2x
-      - 🇨🇳 上海05→澳洲01 冷门 | 1.5x
-      - 🇺🇲 上海05→美国01 | 1.5.x NF
-      - 🇺🇲 上海05→美国03 | 1.5x 原生
-      - 🇺🇲 上海05→美国04 | 1.3x | 备用
-      - 🇬🇧 上海05→英国01 | 1.5x | NF BBC Chan4
-      - 🇳🇱 上海05→荷兰01 | 1.2x
-      - 🇭🇰 上海05→香港01 | 1.5x NF
-      - 🇭🇰 上海05→香港02 | 1.5x NF
-      - 🇭🇰 上海05→香港04 | 1.5x NF
-      - 🇭🇰 上海05→香港05 | 1.5x NF
-      - 🇭🇰 上海05→香港HKBN01 | 1.5x 原生
-      - 🇭🇰 上海05→香港HKT01 | 1.5x 原生
-      - 🇲🇾 上海05→马来西亚01 | 1.5x 原生
+      - 🇷🇺 安徽→俄罗斯01 | 1.5x
+      - "🇷🇺 安徽→俄罗斯05 | 1.3x\t"
+      - 🇷🇺 安徽→俄罗斯06 | 1.3x
+      - 🇷🇺 安徽→俄罗斯07 | 1.5x
+      - 🇮🇳 安徽→印度01 | 1.5x
+      - 🇨🇳 安徽→台湾01 | 1.5x 原生
+      - 🇨🇳 安徽→台湾02 | 1.5x 原生
+      - 🇸🇬 安徽→新加坡01 | 1.5x 原生
+      - 🇸🇬 安徽→新加坡02 | 1.5x NF
+      - 🇯🇵 安徽→日本01 | 1.5x NF
+      - 🇯🇵 安徽→日本02 | 1.5x NF
+      - 安徽→澳洲01 冷门 | 1.5x
+      - 🇺🇲 安徽→美国01 | 1.5.x NF
+      - 🇺🇲 安徽→美国03 | 1.5x 原生
+      - 🇬🇧 安徽→英国01 | 1.5x | NF BBC Chan4
+      - 🇳🇱 安徽→荷兰01 冷门 | 1.2x
+      - 🇰🇷 安徽→韩国01 | 1.5x
+      - 🇭🇰 安徽→香港01 | 1.5x NF
+      - 🇭🇰 安徽→香港02 | 1.5x NF
+      - 🇭🇰 安徽→香港04 | 1.5x NF
+      - 🇭🇰 安徽→香港HKBN01 | 1.5x 原生
+      - 🇭🇰 安徽→香港HKT01 | 1.5x 原生
+      - 🇲🇾 安徽→马来西亚01 | 1.5x 原生
       - 🇷🇺 山东01→俄01 | 1.5x
       - 🇷🇺 山东01→俄罗斯05 | 1.3x
+      - "🇷🇺 山东01→俄罗斯05 | 1.3x\t显示\t"
       - 🇷🇺 山东01→俄罗斯07 | 1.5x
       - 🇮🇳 山东01→印度01 | 1.5x
       - 🇨🇳 山东01→台湾01 | 1.5x 原生
@@ -195,10 +207,15 @@ proxy-groups:
       - 🇬🇧 山东01→英国01 | 1.5x | NF BBC Chan4
       - 🇰🇷 山东01→韩国01 | 1.5x
       - 🇭🇰 山东01→香港01 | 1.5x NF
+      - 🇭🇰 山东01→香港02 | 1.5x NF
+      - 🇭🇰 山东01→香港04 | 1.5x NF
       - 🇭🇰 山东01→香港HKBN01 | 1.5x 原生
       - 🇷🇺 广州01→俄罗斯05 | 1.3x
+      - 🇮🇳 广州01→印度01 | 1.5x
       - 🇨🇳 广州01→台湾01 | 1.5x 原生
       - 🇨🇳 广州01→台湾02 | 1.5x 原生
+      - 🇧🇷 广州01→巴西01 冷门 | 3.0x
+      - 🇩🇪 广州01→德国01 冷门 | 1.2x
       - 🇸🇬 广州01→新加坡01 | 1.5x 原生
       - 🇸🇬 广州01→新加坡02 | 1.5x NF
       - 🇯🇵 广州01→日本01 | 1.5x NF
@@ -208,10 +225,11 @@ proxy-groups:
       - 🇺🇲 广州01→美国01 | 1.5.x NF
       - 🇺🇲 广州01→美国03 | 1.5x 原生
       - 🇺🇲 广州01→美国04 | 1.3x | 备用
-      - 🇳🇱 广州01→荷兰01 | 1.2x
+      - 🇳🇱 广州01→荷兰01 冷门 | 1.2x
       - 🇰🇷 广州01→韩国01 | 1.5x
       - 🇭🇰 广州01→香港01 | 1.5x NF
       - 🇭🇰 广州01→香港02 | 1.5x NF
+      - 🇭🇰 广州01→香港04 | 1.5x NF
       - 🇭🇰 广州01→香港HKBN01 | 1.5x 原生
       - 🇭🇰 广州01→香港HKT01 | 1.5x 原生
       - 🇲🇾 广州01→马来西亚01 | 1.5x 原生
@@ -219,7 +237,8 @@ proxy-groups:
       - 🇮🇳 广州02→印度01 | 1.5x
       - 🇨🇳 广州02→台湾01 | 1.5x 原生
       - 🇨🇳 广州02→台湾02 | 1.5x 原生
-      - 🇧🇷 广州02→巴西01 | 3.0x
+      - 🇧🇷 广州02→巴西01 冷门 | 3.0x
+      - 🇩🇪 广州02→德国01 冷门 | 1.2x
       - 🇸🇬 广州02→新加坡01 | 1.5x 原生
       - 🇸🇬 广州02→新加坡02 | 1.5x NF
       - 🇯🇵 广州02→日本01 | 1.5x NF
@@ -231,7 +250,8 @@ proxy-groups:
       - 🇺🇲 广州02→美国01 | 1.5.x NF
       - 🇺🇲 广州02→美国03 | 1.5x 原生
       - 🇺🇲 广州02→美国04 | 1.3x | 备用
-      - 🇳🇱 广州02→荷兰01 | 1.2x
+      - 🇬🇧 广州02→英国01 | 1.5x | NF BBC Chan4
+      - 🇳🇱 广州02→荷兰01 冷门 | 1.2x
       - 🇰🇷 广州02→韩国01 | 1.5x
       - 🇭🇰 广州02→香港01 | 1.5x NF
       - 🇭🇰 广州02→香港02 | 1.5x NF
@@ -244,17 +264,25 @@ proxy-groups:
       - 🇷🇺 江苏BGP→俄罗斯07 | 1.5x
       - 🇨🇳 江苏BGP→台湾01 | 1.5x 原生
       - 🇨🇳 江苏BGP→台湾02 | 1.5x 原生
+      - 🇧🇷 江苏BGP→巴西01 冷门 | 3.0x
+      - 🇩🇪 江苏BGP→德国01 冷门 | 1.2x
       - 🇸🇬 江苏BGP→新加坡01 | 1.5x 原生
       - 🇸🇬 江苏BGP→新加坡02 | 1.5x NF
       - 🇯🇵 江苏BGP→日本01 | 1.5x NF
+      - 🇯🇵 江苏BGP→日本02 | 1.5x NF
       - 🇯🇵 江苏BGP→日本03 | 1.5x NF
       - 🇨🇳 江苏BGP→波兰01 | 1.2x
+      - 🇨🇳 江苏BGP→澳洲01 冷门 | 1.5x
+      - 🇺🇲 江苏BGP→美国01 | 1.5.x NF
+      - 🇬🇧 江苏BGP→英国01 | 1.5x | NF BBC Chan4
+      - 🇳🇱 江苏BGP→荷兰01 冷门 | 1.2x
       - 🇭🇰 江苏BGP→香港01 | 1.5x NF
+      - 🇭🇰 江苏BGP→香港02 | 1.5x NF
+      - 🇭🇰 江苏BGP→香港04 | 1.5x NF
       - 🇭🇰 江苏BGP→香港HKBN01 | 1.5x 原生
       - 🇭🇰 江苏BGP→香港HKT01 | 1.5x 原生
       - 🇲🇾 江苏BGP→马来西亚01 | 1.5x 原生
       - 🇸🇬 澳洲CDN | 实验 | 免费 | 1.0x | 请经常更新订阅
-      - 珠海01(测试机)→波兰01 | 1.2x
       - 🇸🇬 粤新03 IEPL专线 入口1 | 4x NF
       - 🇸🇬 粤新03 IEPL专线 入口2 | 4x NF
       - 🇸🇬 粤新03 IEPL专线 入口3 | 4x NF
@@ -268,7 +296,7 @@ proxy-groups:
       - 🇭🇰 粤港03 IEPL专线 入口1 | 4x NF
       - 🇭🇰 粤港03 IEPL专线 入口2 | 4x NF
       - 🇭🇰 粤港03 IEPL专线 入口3 | 4x NF
-      - "🇭🇰 粤港03 IEPL专线 入口4 | 4x NF\t"
+      - 🇭🇰 粤港03 IEPL专线 入口4 | 4x NF
       - 🇭🇰 粤港03 IEPL专线 入口5 | 4x NF
       - 🇺🇲 粤美02 IEPL专线 入口1 | 4x NF
       - 🇺🇲 粤美02 IEPL专线 入口2 | 4x NF
@@ -279,8 +307,8 @@ proxy-groups:
       - 🇭🇰 香港az→台湾01 | 1.5x 原生
       - 🇭🇰 香港az→台湾02 | 1.5x 原生
       - 🇭🇰 香港az→土耳其01 | 1.5x
-      - 🇧🇷 香港az→巴西01 | 3.0x
-      - 🇩🇪 香港az→德国01 | 1.2x
+      - 🇧🇷 香港az→巴西01 冷门 | 3.0x
+      - 🇩🇪 香港az→德国01 冷门 | 1.2x
       - 🇭🇰 香港az→新加坡01 | 1.5x 原生
       - 🇭🇰 香港az→日本01 | 1.5x NF
       - 🇭🇰 香港az→日本03 | 1.5x NF
@@ -289,7 +317,7 @@ proxy-groups:
       - 🇭🇰 香港az→澳洲01 冷门 | 1.5x
       - 🇭🇰 香港az→美国03 | 1.5x 原生
       - 🇬🇧 香港az→英国01 | 1.5x | NF BBC Chan4
-      - 🇭🇰 香港az→荷兰01 | 1.2x
+      - 🇭🇰 香港az→荷兰01 冷门 | 1.2x
       - 🇦🇷 香港az→阿根廷01 冷门+低速 | 2.0x
       - 🇭🇰 香港az→韩01 | 1.5x
       - 🇭🇰 香港az→香港HKBN01 | 1.5x 原生
@@ -302,34 +330,32 @@ proxy-groups:
     tolerance: 50
     proxies:
       - 🏳️‍🌈 过期时间：2021-04-09
-      - 🇨🇳 上海01→台湾01 | 1.5x 原生
-      - 🇸🇬 上海01→新加坡02 | 1.5x NF
-      - 🇯🇵 上海01→日本02 | 1.5x NF
-      - 🇺🇲 上海01→美国01 | 1.5.x NF
-      - 🇺🇲 上海01→美国04 | 1.3x | 备用
-      - 🇬🇧 上海01→英国01 | 1.5x | NF BBC Chan4
-      - 🇰🇷 上海01→韩国01 | 1.5x
-      - 🇭🇰 上海01→香港01 | 1.5x NF
-      - 🇨🇳 上海05→台湾01 | 1.5x 原生
-      - 🇧🇷 上海05→巴西01 | 3.0x
-      - 🇸🇬 上海05→新加坡02 | 1.5x NF
-      - 🇯🇵 上海05→日本02 | 1.5x NF
-      - 🇨🇳 上海05→波兰01 | 1.2x
-      - 🇨🇳 上海05→澳洲01 冷门 | 1.5x
-      - 🇺🇲 上海05→美国01 | 1.5.x NF
-      - 🇺🇲 上海05→美国03 | 1.5x 原生
-      - 🇺🇲 上海05→美国04 | 1.3x | 备用
-      - 🇬🇧 上海05→英国01 | 1.5x | NF BBC Chan4
-      - 🇳🇱 上海05→荷兰01 | 1.2x
-      - 🇭🇰 上海05→香港01 | 1.5x NF
-      - 🇭🇰 上海05→香港02 | 1.5x NF
-      - 🇭🇰 上海05→香港04 | 1.5x NF
-      - 🇭🇰 上海05→香港05 | 1.5x NF
-      - 🇭🇰 上海05→香港HKBN01 | 1.5x 原生
-      - 🇭🇰 上海05→香港HKT01 | 1.5x 原生
-      - 🇲🇾 上海05→马来西亚01 | 1.5x 原生
+      - 🇷🇺 安徽→俄罗斯01 | 1.5x
+      - "🇷🇺 安徽→俄罗斯05 | 1.3x\t"
+      - 🇷🇺 安徽→俄罗斯06 | 1.3x
+      - 🇷🇺 安徽→俄罗斯07 | 1.5x
+      - 🇮🇳 安徽→印度01 | 1.5x
+      - 🇨🇳 安徽→台湾01 | 1.5x 原生
+      - 🇨🇳 安徽→台湾02 | 1.5x 原生
+      - 🇸🇬 安徽→新加坡01 | 1.5x 原生
+      - 🇸🇬 安徽→新加坡02 | 1.5x NF
+      - 🇯🇵 安徽→日本01 | 1.5x NF
+      - 🇯🇵 安徽→日本02 | 1.5x NF
+      - 安徽→澳洲01 冷门 | 1.5x
+      - 🇺🇲 安徽→美国01 | 1.5.x NF
+      - 🇺🇲 安徽→美国03 | 1.5x 原生
+      - 🇬🇧 安徽→英国01 | 1.5x | NF BBC Chan4
+      - 🇳🇱 安徽→荷兰01 冷门 | 1.2x
+      - 🇰🇷 安徽→韩国01 | 1.5x
+      - 🇭🇰 安徽→香港01 | 1.5x NF
+      - 🇭🇰 安徽→香港02 | 1.5x NF
+      - 🇭🇰 安徽→香港04 | 1.5x NF
+      - 🇭🇰 安徽→香港HKBN01 | 1.5x 原生
+      - 🇭🇰 安徽→香港HKT01 | 1.5x 原生
+      - 🇲🇾 安徽→马来西亚01 | 1.5x 原生
       - 🇷🇺 山东01→俄01 | 1.5x
       - 🇷🇺 山东01→俄罗斯05 | 1.3x
+      - "🇷🇺 山东01→俄罗斯05 | 1.3x\t显示\t"
       - 🇷🇺 山东01→俄罗斯07 | 1.5x
       - 🇮🇳 山东01→印度01 | 1.5x
       - 🇨🇳 山东01→台湾01 | 1.5x 原生
@@ -343,10 +369,15 @@ proxy-groups:
       - 🇬🇧 山东01→英国01 | 1.5x | NF BBC Chan4
       - 🇰🇷 山东01→韩国01 | 1.5x
       - 🇭🇰 山东01→香港01 | 1.5x NF
+      - 🇭🇰 山东01→香港02 | 1.5x NF
+      - 🇭🇰 山东01→香港04 | 1.5x NF
       - 🇭🇰 山东01→香港HKBN01 | 1.5x 原生
       - 🇷🇺 广州01→俄罗斯05 | 1.3x
+      - 🇮🇳 广州01→印度01 | 1.5x
       - 🇨🇳 广州01→台湾01 | 1.5x 原生
       - 🇨🇳 广州01→台湾02 | 1.5x 原生
+      - 🇧🇷 广州01→巴西01 冷门 | 3.0x
+      - 🇩🇪 广州01→德国01 冷门 | 1.2x
       - 🇸🇬 广州01→新加坡01 | 1.5x 原生
       - 🇸🇬 广州01→新加坡02 | 1.5x NF
       - 🇯🇵 广州01→日本01 | 1.5x NF
@@ -356,10 +387,11 @@ proxy-groups:
       - 🇺🇲 广州01→美国01 | 1.5.x NF
       - 🇺🇲 广州01→美国03 | 1.5x 原生
       - 🇺🇲 广州01→美国04 | 1.3x | 备用
-      - 🇳🇱 广州01→荷兰01 | 1.2x
+      - 🇳🇱 广州01→荷兰01 冷门 | 1.2x
       - 🇰🇷 广州01→韩国01 | 1.5x
       - 🇭🇰 广州01→香港01 | 1.5x NF
       - 🇭🇰 广州01→香港02 | 1.5x NF
+      - 🇭🇰 广州01→香港04 | 1.5x NF
       - 🇭🇰 广州01→香港HKBN01 | 1.5x 原生
       - 🇭🇰 广州01→香港HKT01 | 1.5x 原生
       - 🇲🇾 广州01→马来西亚01 | 1.5x 原生
@@ -367,7 +399,8 @@ proxy-groups:
       - 🇮🇳 广州02→印度01 | 1.5x
       - 🇨🇳 广州02→台湾01 | 1.5x 原生
       - 🇨🇳 广州02→台湾02 | 1.5x 原生
-      - 🇧🇷 广州02→巴西01 | 3.0x
+      - 🇧🇷 广州02→巴西01 冷门 | 3.0x
+      - 🇩🇪 广州02→德国01 冷门 | 1.2x
       - 🇸🇬 广州02→新加坡01 | 1.5x 原生
       - 🇸🇬 广州02→新加坡02 | 1.5x NF
       - 🇯🇵 广州02→日本01 | 1.5x NF
@@ -379,7 +412,8 @@ proxy-groups:
       - 🇺🇲 广州02→美国01 | 1.5.x NF
       - 🇺🇲 广州02→美国03 | 1.5x 原生
       - 🇺🇲 广州02→美国04 | 1.3x | 备用
-      - 🇳🇱 广州02→荷兰01 | 1.2x
+      - 🇬🇧 广州02→英国01 | 1.5x | NF BBC Chan4
+      - 🇳🇱 广州02→荷兰01 冷门 | 1.2x
       - 🇰🇷 广州02→韩国01 | 1.5x
       - 🇭🇰 广州02→香港01 | 1.5x NF
       - 🇭🇰 广州02→香港02 | 1.5x NF
@@ -392,17 +426,25 @@ proxy-groups:
       - 🇷🇺 江苏BGP→俄罗斯07 | 1.5x
       - 🇨🇳 江苏BGP→台湾01 | 1.5x 原生
       - 🇨🇳 江苏BGP→台湾02 | 1.5x 原生
+      - 🇧🇷 江苏BGP→巴西01 冷门 | 3.0x
+      - 🇩🇪 江苏BGP→德国01 冷门 | 1.2x
       - 🇸🇬 江苏BGP→新加坡01 | 1.5x 原生
       - 🇸🇬 江苏BGP→新加坡02 | 1.5x NF
       - 🇯🇵 江苏BGP→日本01 | 1.5x NF
+      - 🇯🇵 江苏BGP→日本02 | 1.5x NF
       - 🇯🇵 江苏BGP→日本03 | 1.5x NF
       - 🇨🇳 江苏BGP→波兰01 | 1.2x
+      - 🇨🇳 江苏BGP→澳洲01 冷门 | 1.5x
+      - 🇺🇲 江苏BGP→美国01 | 1.5.x NF
+      - 🇬🇧 江苏BGP→英国01 | 1.5x | NF BBC Chan4
+      - 🇳🇱 江苏BGP→荷兰01 冷门 | 1.2x
       - 🇭🇰 江苏BGP→香港01 | 1.5x NF
+      - 🇭🇰 江苏BGP→香港02 | 1.5x NF
+      - 🇭🇰 江苏BGP→香港04 | 1.5x NF
       - 🇭🇰 江苏BGP→香港HKBN01 | 1.5x 原生
       - 🇭🇰 江苏BGP→香港HKT01 | 1.5x 原生
       - 🇲🇾 江苏BGP→马来西亚01 | 1.5x 原生
       - 🇸🇬 澳洲CDN | 实验 | 免费 | 1.0x | 请经常更新订阅
-      - 珠海01(测试机)→波兰01 | 1.2x
       - 🇸🇬 粤新03 IEPL专线 入口1 | 4x NF
       - 🇸🇬 粤新03 IEPL专线 入口2 | 4x NF
       - 🇸🇬 粤新03 IEPL专线 入口3 | 4x NF
@@ -416,7 +458,7 @@ proxy-groups:
       - 🇭🇰 粤港03 IEPL专线 入口1 | 4x NF
       - 🇭🇰 粤港03 IEPL专线 入口2 | 4x NF
       - 🇭🇰 粤港03 IEPL专线 入口3 | 4x NF
-      - "🇭🇰 粤港03 IEPL专线 入口4 | 4x NF\t"
+      - 🇭🇰 粤港03 IEPL专线 入口4 | 4x NF
       - 🇭🇰 粤港03 IEPL专线 入口5 | 4x NF
       - 🇺🇲 粤美02 IEPL专线 入口1 | 4x NF
       - 🇺🇲 粤美02 IEPL专线 入口2 | 4x NF
@@ -427,8 +469,8 @@ proxy-groups:
       - 🇭🇰 香港az→台湾01 | 1.5x 原生
       - 🇭🇰 香港az→台湾02 | 1.5x 原生
       - 🇭🇰 香港az→土耳其01 | 1.5x
-      - 🇧🇷 香港az→巴西01 | 3.0x
-      - 🇩🇪 香港az→德国01 | 1.2x
+      - 🇧🇷 香港az→巴西01 冷门 | 3.0x
+      - 🇩🇪 香港az→德国01 冷门 | 1.2x
       - 🇭🇰 香港az→新加坡01 | 1.5x 原生
       - 🇭🇰 香港az→日本01 | 1.5x NF
       - 🇭🇰 香港az→日本03 | 1.5x NF
@@ -437,7 +479,7 @@ proxy-groups:
       - 🇭🇰 香港az→澳洲01 冷门 | 1.5x
       - 🇭🇰 香港az→美国03 | 1.5x 原生
       - 🇬🇧 香港az→英国01 | 1.5x | NF BBC Chan4
-      - 🇭🇰 香港az→荷兰01 | 1.2x
+      - 🇭🇰 香港az→荷兰01 冷门 | 1.2x
       - 🇦🇷 香港az→阿根廷01 冷门+低速 | 2.0x
       - 🇭🇰 香港az→韩01 | 1.5x
       - 🇭🇰 香港az→香港HKBN01 | 1.5x 原生
@@ -450,34 +492,32 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - 🏳️‍🌈 过期时间：2021-04-09
-      - 🇨🇳 上海01→台湾01 | 1.5x 原生
-      - 🇸🇬 上海01→新加坡02 | 1.5x NF
-      - 🇯🇵 上海01→日本02 | 1.5x NF
-      - 🇺🇲 上海01→美国01 | 1.5.x NF
-      - 🇺🇲 上海01→美国04 | 1.3x | 备用
-      - 🇬🇧 上海01→英国01 | 1.5x | NF BBC Chan4
-      - 🇰🇷 上海01→韩国01 | 1.5x
-      - 🇭🇰 上海01→香港01 | 1.5x NF
-      - 🇨🇳 上海05→台湾01 | 1.5x 原生
-      - 🇧🇷 上海05→巴西01 | 3.0x
-      - 🇸🇬 上海05→新加坡02 | 1.5x NF
-      - 🇯🇵 上海05→日本02 | 1.5x NF
-      - 🇨🇳 上海05→波兰01 | 1.2x
-      - 🇨🇳 上海05→澳洲01 冷门 | 1.5x
-      - 🇺🇲 上海05→美国01 | 1.5.x NF
-      - 🇺🇲 上海05→美国03 | 1.5x 原生
-      - 🇺🇲 上海05→美国04 | 1.3x | 备用
-      - 🇬🇧 上海05→英国01 | 1.5x | NF BBC Chan4
-      - 🇳🇱 上海05→荷兰01 | 1.2x
-      - 🇭🇰 上海05→香港01 | 1.5x NF
-      - 🇭🇰 上海05→香港02 | 1.5x NF
-      - 🇭🇰 上海05→香港04 | 1.5x NF
-      - 🇭🇰 上海05→香港05 | 1.5x NF
-      - 🇭🇰 上海05→香港HKBN01 | 1.5x 原生
-      - 🇭🇰 上海05→香港HKT01 | 1.5x 原生
-      - 🇲🇾 上海05→马来西亚01 | 1.5x 原生
+      - 🇷🇺 安徽→俄罗斯01 | 1.5x
+      - "🇷🇺 安徽→俄罗斯05 | 1.3x\t"
+      - 🇷🇺 安徽→俄罗斯06 | 1.3x
+      - 🇷🇺 安徽→俄罗斯07 | 1.5x
+      - 🇮🇳 安徽→印度01 | 1.5x
+      - 🇨🇳 安徽→台湾01 | 1.5x 原生
+      - 🇨🇳 安徽→台湾02 | 1.5x 原生
+      - 🇸🇬 安徽→新加坡01 | 1.5x 原生
+      - 🇸🇬 安徽→新加坡02 | 1.5x NF
+      - 🇯🇵 安徽→日本01 | 1.5x NF
+      - 🇯🇵 安徽→日本02 | 1.5x NF
+      - 安徽→澳洲01 冷门 | 1.5x
+      - 🇺🇲 安徽→美国01 | 1.5.x NF
+      - 🇺🇲 安徽→美国03 | 1.5x 原生
+      - 🇬🇧 安徽→英国01 | 1.5x | NF BBC Chan4
+      - 🇳🇱 安徽→荷兰01 冷门 | 1.2x
+      - 🇰🇷 安徽→韩国01 | 1.5x
+      - 🇭🇰 安徽→香港01 | 1.5x NF
+      - 🇭🇰 安徽→香港02 | 1.5x NF
+      - 🇭🇰 安徽→香港04 | 1.5x NF
+      - 🇭🇰 安徽→香港HKBN01 | 1.5x 原生
+      - 🇭🇰 安徽→香港HKT01 | 1.5x 原生
+      - 🇲🇾 安徽→马来西亚01 | 1.5x 原生
       - 🇷🇺 山东01→俄01 | 1.5x
       - 🇷🇺 山东01→俄罗斯05 | 1.3x
+      - "🇷🇺 山东01→俄罗斯05 | 1.3x\t显示\t"
       - 🇷🇺 山东01→俄罗斯07 | 1.5x
       - 🇮🇳 山东01→印度01 | 1.5x
       - 🇨🇳 山东01→台湾01 | 1.5x 原生
@@ -491,10 +531,15 @@ proxy-groups:
       - 🇬🇧 山东01→英国01 | 1.5x | NF BBC Chan4
       - 🇰🇷 山东01→韩国01 | 1.5x
       - 🇭🇰 山东01→香港01 | 1.5x NF
+      - 🇭🇰 山东01→香港02 | 1.5x NF
+      - 🇭🇰 山东01→香港04 | 1.5x NF
       - 🇭🇰 山东01→香港HKBN01 | 1.5x 原生
       - 🇷🇺 广州01→俄罗斯05 | 1.3x
+      - 🇮🇳 广州01→印度01 | 1.5x
       - 🇨🇳 广州01→台湾01 | 1.5x 原生
       - 🇨🇳 广州01→台湾02 | 1.5x 原生
+      - 🇧🇷 广州01→巴西01 冷门 | 3.0x
+      - 🇩🇪 广州01→德国01 冷门 | 1.2x
       - 🇸🇬 广州01→新加坡01 | 1.5x 原生
       - 🇸🇬 广州01→新加坡02 | 1.5x NF
       - 🇯🇵 广州01→日本01 | 1.5x NF
@@ -504,10 +549,11 @@ proxy-groups:
       - 🇺🇲 广州01→美国01 | 1.5.x NF
       - 🇺🇲 广州01→美国03 | 1.5x 原生
       - 🇺🇲 广州01→美国04 | 1.3x | 备用
-      - 🇳🇱 广州01→荷兰01 | 1.2x
+      - 🇳🇱 广州01→荷兰01 冷门 | 1.2x
       - 🇰🇷 广州01→韩国01 | 1.5x
       - 🇭🇰 广州01→香港01 | 1.5x NF
       - 🇭🇰 广州01→香港02 | 1.5x NF
+      - 🇭🇰 广州01→香港04 | 1.5x NF
       - 🇭🇰 广州01→香港HKBN01 | 1.5x 原生
       - 🇭🇰 广州01→香港HKT01 | 1.5x 原生
       - 🇲🇾 广州01→马来西亚01 | 1.5x 原生
@@ -515,7 +561,8 @@ proxy-groups:
       - 🇮🇳 广州02→印度01 | 1.5x
       - 🇨🇳 广州02→台湾01 | 1.5x 原生
       - 🇨🇳 广州02→台湾02 | 1.5x 原生
-      - 🇧🇷 广州02→巴西01 | 3.0x
+      - 🇧🇷 广州02→巴西01 冷门 | 3.0x
+      - 🇩🇪 广州02→德国01 冷门 | 1.2x
       - 🇸🇬 广州02→新加坡01 | 1.5x 原生
       - 🇸🇬 广州02→新加坡02 | 1.5x NF
       - 🇯🇵 广州02→日本01 | 1.5x NF
@@ -527,7 +574,8 @@ proxy-groups:
       - 🇺🇲 广州02→美国01 | 1.5.x NF
       - 🇺🇲 广州02→美国03 | 1.5x 原生
       - 🇺🇲 广州02→美国04 | 1.3x | 备用
-      - 🇳🇱 广州02→荷兰01 | 1.2x
+      - 🇬🇧 广州02→英国01 | 1.5x | NF BBC Chan4
+      - 🇳🇱 广州02→荷兰01 冷门 | 1.2x
       - 🇰🇷 广州02→韩国01 | 1.5x
       - 🇭🇰 广州02→香港01 | 1.5x NF
       - 🇭🇰 广州02→香港02 | 1.5x NF
@@ -540,17 +588,25 @@ proxy-groups:
       - 🇷🇺 江苏BGP→俄罗斯07 | 1.5x
       - 🇨🇳 江苏BGP→台湾01 | 1.5x 原生
       - 🇨🇳 江苏BGP→台湾02 | 1.5x 原生
+      - 🇧🇷 江苏BGP→巴西01 冷门 | 3.0x
+      - 🇩🇪 江苏BGP→德国01 冷门 | 1.2x
       - 🇸🇬 江苏BGP→新加坡01 | 1.5x 原生
       - 🇸🇬 江苏BGP→新加坡02 | 1.5x NF
       - 🇯🇵 江苏BGP→日本01 | 1.5x NF
+      - 🇯🇵 江苏BGP→日本02 | 1.5x NF
       - 🇯🇵 江苏BGP→日本03 | 1.5x NF
       - 🇨🇳 江苏BGP→波兰01 | 1.2x
+      - 🇨🇳 江苏BGP→澳洲01 冷门 | 1.5x
+      - 🇺🇲 江苏BGP→美国01 | 1.5.x NF
+      - 🇬🇧 江苏BGP→英国01 | 1.5x | NF BBC Chan4
+      - 🇳🇱 江苏BGP→荷兰01 冷门 | 1.2x
       - 🇭🇰 江苏BGP→香港01 | 1.5x NF
+      - 🇭🇰 江苏BGP→香港02 | 1.5x NF
+      - 🇭🇰 江苏BGP→香港04 | 1.5x NF
       - 🇭🇰 江苏BGP→香港HKBN01 | 1.5x 原生
       - 🇭🇰 江苏BGP→香港HKT01 | 1.5x 原生
       - 🇲🇾 江苏BGP→马来西亚01 | 1.5x 原生
       - 🇸🇬 澳洲CDN | 实验 | 免费 | 1.0x | 请经常更新订阅
-      - 珠海01(测试机)→波兰01 | 1.2x
       - 🇸🇬 粤新03 IEPL专线 入口1 | 4x NF
       - 🇸🇬 粤新03 IEPL专线 入口2 | 4x NF
       - 🇸🇬 粤新03 IEPL专线 入口3 | 4x NF
@@ -564,7 +620,7 @@ proxy-groups:
       - 🇭🇰 粤港03 IEPL专线 入口1 | 4x NF
       - 🇭🇰 粤港03 IEPL专线 入口2 | 4x NF
       - 🇭🇰 粤港03 IEPL专线 入口3 | 4x NF
-      - "🇭🇰 粤港03 IEPL专线 入口4 | 4x NF\t"
+      - 🇭🇰 粤港03 IEPL专线 入口4 | 4x NF
       - 🇭🇰 粤港03 IEPL专线 入口5 | 4x NF
       - 🇺🇲 粤美02 IEPL专线 入口1 | 4x NF
       - 🇺🇲 粤美02 IEPL专线 入口2 | 4x NF
@@ -575,8 +631,8 @@ proxy-groups:
       - 🇭🇰 香港az→台湾01 | 1.5x 原生
       - 🇭🇰 香港az→台湾02 | 1.5x 原生
       - 🇭🇰 香港az→土耳其01 | 1.5x
-      - 🇧🇷 香港az→巴西01 | 3.0x
-      - 🇩🇪 香港az→德国01 | 1.2x
+      - 🇧🇷 香港az→巴西01 冷门 | 3.0x
+      - 🇩🇪 香港az→德国01 冷门 | 1.2x
       - 🇭🇰 香港az→新加坡01 | 1.5x 原生
       - 🇭🇰 香港az→日本01 | 1.5x NF
       - 🇭🇰 香港az→日本03 | 1.5x NF
@@ -585,7 +641,7 @@ proxy-groups:
       - 🇭🇰 香港az→澳洲01 冷门 | 1.5x
       - 🇭🇰 香港az→美国03 | 1.5x 原生
       - 🇬🇧 香港az→英国01 | 1.5x | NF BBC Chan4
-      - 🇭🇰 香港az→荷兰01 | 1.2x
+      - 🇭🇰 香港az→荷兰01 冷门 | 1.2x
       - 🇦🇷 香港az→阿根廷01 冷门+低速 | 2.0x
       - 🇭🇰 香港az→韩01 | 1.5x
       - 🇭🇰 香港az→香港HKBN01 | 1.5x 原生
@@ -597,34 +653,32 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - 🏳️‍🌈 过期时间：2021-04-09
-      - 🇨🇳 上海01→台湾01 | 1.5x 原生
-      - 🇸🇬 上海01→新加坡02 | 1.5x NF
-      - 🇯🇵 上海01→日本02 | 1.5x NF
-      - 🇺🇲 上海01→美国01 | 1.5.x NF
-      - 🇺🇲 上海01→美国04 | 1.3x | 备用
-      - 🇬🇧 上海01→英国01 | 1.5x | NF BBC Chan4
-      - 🇰🇷 上海01→韩国01 | 1.5x
-      - 🇭🇰 上海01→香港01 | 1.5x NF
-      - 🇨🇳 上海05→台湾01 | 1.5x 原生
-      - 🇧🇷 上海05→巴西01 | 3.0x
-      - 🇸🇬 上海05→新加坡02 | 1.5x NF
-      - 🇯🇵 上海05→日本02 | 1.5x NF
-      - 🇨🇳 上海05→波兰01 | 1.2x
-      - 🇨🇳 上海05→澳洲01 冷门 | 1.5x
-      - 🇺🇲 上海05→美国01 | 1.5.x NF
-      - 🇺🇲 上海05→美国03 | 1.5x 原生
-      - 🇺🇲 上海05→美国04 | 1.3x | 备用
-      - 🇬🇧 上海05→英国01 | 1.5x | NF BBC Chan4
-      - 🇳🇱 上海05→荷兰01 | 1.2x
-      - 🇭🇰 上海05→香港01 | 1.5x NF
-      - 🇭🇰 上海05→香港02 | 1.5x NF
-      - 🇭🇰 上海05→香港04 | 1.5x NF
-      - 🇭🇰 上海05→香港05 | 1.5x NF
-      - 🇭🇰 上海05→香港HKBN01 | 1.5x 原生
-      - 🇭🇰 上海05→香港HKT01 | 1.5x 原生
-      - 🇲🇾 上海05→马来西亚01 | 1.5x 原生
+      - 🇷🇺 安徽→俄罗斯01 | 1.5x
+      - "🇷🇺 安徽→俄罗斯05 | 1.3x\t"
+      - 🇷🇺 安徽→俄罗斯06 | 1.3x
+      - 🇷🇺 安徽→俄罗斯07 | 1.5x
+      - 🇮🇳 安徽→印度01 | 1.5x
+      - 🇨🇳 安徽→台湾01 | 1.5x 原生
+      - 🇨🇳 安徽→台湾02 | 1.5x 原生
+      - 🇸🇬 安徽→新加坡01 | 1.5x 原生
+      - 🇸🇬 安徽→新加坡02 | 1.5x NF
+      - 🇯🇵 安徽→日本01 | 1.5x NF
+      - 🇯🇵 安徽→日本02 | 1.5x NF
+      - 安徽→澳洲01 冷门 | 1.5x
+      - 🇺🇲 安徽→美国01 | 1.5.x NF
+      - 🇺🇲 安徽→美国03 | 1.5x 原生
+      - 🇬🇧 安徽→英国01 | 1.5x | NF BBC Chan4
+      - 🇳🇱 安徽→荷兰01 冷门 | 1.2x
+      - 🇰🇷 安徽→韩国01 | 1.5x
+      - 🇭🇰 安徽→香港01 | 1.5x NF
+      - 🇭🇰 安徽→香港02 | 1.5x NF
+      - 🇭🇰 安徽→香港04 | 1.5x NF
+      - 🇭🇰 安徽→香港HKBN01 | 1.5x 原生
+      - 🇭🇰 安徽→香港HKT01 | 1.5x 原生
+      - 🇲🇾 安徽→马来西亚01 | 1.5x 原生
       - 🇷🇺 山东01→俄01 | 1.5x
       - 🇷🇺 山东01→俄罗斯05 | 1.3x
+      - "🇷🇺 山东01→俄罗斯05 | 1.3x\t显示\t"
       - 🇷🇺 山东01→俄罗斯07 | 1.5x
       - 🇮🇳 山东01→印度01 | 1.5x
       - 🇨🇳 山东01→台湾01 | 1.5x 原生
@@ -638,10 +692,15 @@ proxy-groups:
       - 🇬🇧 山东01→英国01 | 1.5x | NF BBC Chan4
       - 🇰🇷 山东01→韩国01 | 1.5x
       - 🇭🇰 山东01→香港01 | 1.5x NF
+      - 🇭🇰 山东01→香港02 | 1.5x NF
+      - 🇭🇰 山东01→香港04 | 1.5x NF
       - 🇭🇰 山东01→香港HKBN01 | 1.5x 原生
       - 🇷🇺 广州01→俄罗斯05 | 1.3x
+      - 🇮🇳 广州01→印度01 | 1.5x
       - 🇨🇳 广州01→台湾01 | 1.5x 原生
       - 🇨🇳 广州01→台湾02 | 1.5x 原生
+      - 🇧🇷 广州01→巴西01 冷门 | 3.0x
+      - 🇩🇪 广州01→德国01 冷门 | 1.2x
       - 🇸🇬 广州01→新加坡01 | 1.5x 原生
       - 🇸🇬 广州01→新加坡02 | 1.5x NF
       - 🇯🇵 广州01→日本01 | 1.5x NF
@@ -651,10 +710,11 @@ proxy-groups:
       - 🇺🇲 广州01→美国01 | 1.5.x NF
       - 🇺🇲 广州01→美国03 | 1.5x 原生
       - 🇺🇲 广州01→美国04 | 1.3x | 备用
-      - 🇳🇱 广州01→荷兰01 | 1.2x
+      - 🇳🇱 广州01→荷兰01 冷门 | 1.2x
       - 🇰🇷 广州01→韩国01 | 1.5x
       - 🇭🇰 广州01→香港01 | 1.5x NF
       - 🇭🇰 广州01→香港02 | 1.5x NF
+      - 🇭🇰 广州01→香港04 | 1.5x NF
       - 🇭🇰 广州01→香港HKBN01 | 1.5x 原生
       - 🇭🇰 广州01→香港HKT01 | 1.5x 原生
       - 🇲🇾 广州01→马来西亚01 | 1.5x 原生
@@ -662,7 +722,8 @@ proxy-groups:
       - 🇮🇳 广州02→印度01 | 1.5x
       - 🇨🇳 广州02→台湾01 | 1.5x 原生
       - 🇨🇳 广州02→台湾02 | 1.5x 原生
-      - 🇧🇷 广州02→巴西01 | 3.0x
+      - 🇧🇷 广州02→巴西01 冷门 | 3.0x
+      - 🇩🇪 广州02→德国01 冷门 | 1.2x
       - 🇸🇬 广州02→新加坡01 | 1.5x 原生
       - 🇸🇬 广州02→新加坡02 | 1.5x NF
       - 🇯🇵 广州02→日本01 | 1.5x NF
@@ -674,7 +735,8 @@ proxy-groups:
       - 🇺🇲 广州02→美国01 | 1.5.x NF
       - 🇺🇲 广州02→美国03 | 1.5x 原生
       - 🇺🇲 广州02→美国04 | 1.3x | 备用
-      - 🇳🇱 广州02→荷兰01 | 1.2x
+      - 🇬🇧 广州02→英国01 | 1.5x | NF BBC Chan4
+      - 🇳🇱 广州02→荷兰01 冷门 | 1.2x
       - 🇰🇷 广州02→韩国01 | 1.5x
       - 🇭🇰 广州02→香港01 | 1.5x NF
       - 🇭🇰 广州02→香港02 | 1.5x NF
@@ -687,17 +749,25 @@ proxy-groups:
       - 🇷🇺 江苏BGP→俄罗斯07 | 1.5x
       - 🇨🇳 江苏BGP→台湾01 | 1.5x 原生
       - 🇨🇳 江苏BGP→台湾02 | 1.5x 原生
+      - 🇧🇷 江苏BGP→巴西01 冷门 | 3.0x
+      - 🇩🇪 江苏BGP→德国01 冷门 | 1.2x
       - 🇸🇬 江苏BGP→新加坡01 | 1.5x 原生
       - 🇸🇬 江苏BGP→新加坡02 | 1.5x NF
       - 🇯🇵 江苏BGP→日本01 | 1.5x NF
+      - 🇯🇵 江苏BGP→日本02 | 1.5x NF
       - 🇯🇵 江苏BGP→日本03 | 1.5x NF
       - 🇨🇳 江苏BGP→波兰01 | 1.2x
+      - 🇨🇳 江苏BGP→澳洲01 冷门 | 1.5x
+      - 🇺🇲 江苏BGP→美国01 | 1.5.x NF
+      - 🇬🇧 江苏BGP→英国01 | 1.5x | NF BBC Chan4
+      - 🇳🇱 江苏BGP→荷兰01 冷门 | 1.2x
       - 🇭🇰 江苏BGP→香港01 | 1.5x NF
+      - 🇭🇰 江苏BGP→香港02 | 1.5x NF
+      - 🇭🇰 江苏BGP→香港04 | 1.5x NF
       - 🇭🇰 江苏BGP→香港HKBN01 | 1.5x 原生
       - 🇭🇰 江苏BGP→香港HKT01 | 1.5x 原生
       - 🇲🇾 江苏BGP→马来西亚01 | 1.5x 原生
       - 🇸🇬 澳洲CDN | 实验 | 免费 | 1.0x | 请经常更新订阅
-      - 珠海01(测试机)→波兰01 | 1.2x
       - 🇸🇬 粤新03 IEPL专线 入口1 | 4x NF
       - 🇸🇬 粤新03 IEPL专线 入口2 | 4x NF
       - 🇸🇬 粤新03 IEPL专线 入口3 | 4x NF
@@ -711,7 +781,7 @@ proxy-groups:
       - 🇭🇰 粤港03 IEPL专线 入口1 | 4x NF
       - 🇭🇰 粤港03 IEPL专线 入口2 | 4x NF
       - 🇭🇰 粤港03 IEPL专线 入口3 | 4x NF
-      - "🇭🇰 粤港03 IEPL专线 入口4 | 4x NF\t"
+      - 🇭🇰 粤港03 IEPL专线 入口4 | 4x NF
       - 🇭🇰 粤港03 IEPL专线 入口5 | 4x NF
       - 🇺🇲 粤美02 IEPL专线 入口1 | 4x NF
       - 🇺🇲 粤美02 IEPL专线 入口2 | 4x NF
@@ -722,8 +792,8 @@ proxy-groups:
       - 🇭🇰 香港az→台湾01 | 1.5x 原生
       - 🇭🇰 香港az→台湾02 | 1.5x 原生
       - 🇭🇰 香港az→土耳其01 | 1.5x
-      - 🇧🇷 香港az→巴西01 | 3.0x
-      - 🇩🇪 香港az→德国01 | 1.2x
+      - 🇧🇷 香港az→巴西01 冷门 | 3.0x
+      - 🇩🇪 香港az→德国01 冷门 | 1.2x
       - 🇭🇰 香港az→新加坡01 | 1.5x 原生
       - 🇭🇰 香港az→日本01 | 1.5x NF
       - 🇭🇰 香港az→日本03 | 1.5x NF
@@ -732,7 +802,7 @@ proxy-groups:
       - 🇭🇰 香港az→澳洲01 冷门 | 1.5x
       - 🇭🇰 香港az→美国03 | 1.5x 原生
       - 🇬🇧 香港az→英国01 | 1.5x | NF BBC Chan4
-      - 🇭🇰 香港az→荷兰01 | 1.2x
+      - 🇭🇰 香港az→荷兰01 冷门 | 1.2x
       - 🇦🇷 香港az→阿根廷01 冷门+低速 | 2.0x
       - 🇭🇰 香港az→韩01 | 1.5x
       - 🇭🇰 香港az→香港HKBN01 | 1.5x 原生
@@ -744,34 +814,32 @@ proxy-groups:
       - 🎯 全球直连
       - 🚀 节点选择
       - 🏳️‍🌈 过期时间：2021-04-09
-      - 🇨🇳 上海01→台湾01 | 1.5x 原生
-      - 🇸🇬 上海01→新加坡02 | 1.5x NF
-      - 🇯🇵 上海01→日本02 | 1.5x NF
-      - 🇺🇲 上海01→美国01 | 1.5.x NF
-      - 🇺🇲 上海01→美国04 | 1.3x | 备用
-      - 🇬🇧 上海01→英国01 | 1.5x | NF BBC Chan4
-      - 🇰🇷 上海01→韩国01 | 1.5x
-      - 🇭🇰 上海01→香港01 | 1.5x NF
-      - 🇨🇳 上海05→台湾01 | 1.5x 原生
-      - 🇧🇷 上海05→巴西01 | 3.0x
-      - 🇸🇬 上海05→新加坡02 | 1.5x NF
-      - 🇯🇵 上海05→日本02 | 1.5x NF
-      - 🇨🇳 上海05→波兰01 | 1.2x
-      - 🇨🇳 上海05→澳洲01 冷门 | 1.5x
-      - 🇺🇲 上海05→美国01 | 1.5.x NF
-      - 🇺🇲 上海05→美国03 | 1.5x 原生
-      - 🇺🇲 上海05→美国04 | 1.3x | 备用
-      - 🇬🇧 上海05→英国01 | 1.5x | NF BBC Chan4
-      - 🇳🇱 上海05→荷兰01 | 1.2x
-      - 🇭🇰 上海05→香港01 | 1.5x NF
-      - 🇭🇰 上海05→香港02 | 1.5x NF
-      - 🇭🇰 上海05→香港04 | 1.5x NF
-      - 🇭🇰 上海05→香港05 | 1.5x NF
-      - 🇭🇰 上海05→香港HKBN01 | 1.5x 原生
-      - 🇭🇰 上海05→香港HKT01 | 1.5x 原生
-      - 🇲🇾 上海05→马来西亚01 | 1.5x 原生
+      - 🇷🇺 安徽→俄罗斯01 | 1.5x
+      - "🇷🇺 安徽→俄罗斯05 | 1.3x\t"
+      - 🇷🇺 安徽→俄罗斯06 | 1.3x
+      - 🇷🇺 安徽→俄罗斯07 | 1.5x
+      - 🇮🇳 安徽→印度01 | 1.5x
+      - 🇨🇳 安徽→台湾01 | 1.5x 原生
+      - 🇨🇳 安徽→台湾02 | 1.5x 原生
+      - 🇸🇬 安徽→新加坡01 | 1.5x 原生
+      - 🇸🇬 安徽→新加坡02 | 1.5x NF
+      - 🇯🇵 安徽→日本01 | 1.5x NF
+      - 🇯🇵 安徽→日本02 | 1.5x NF
+      - 安徽→澳洲01 冷门 | 1.5x
+      - 🇺🇲 安徽→美国01 | 1.5.x NF
+      - 🇺🇲 安徽→美国03 | 1.5x 原生
+      - 🇬🇧 安徽→英国01 | 1.5x | NF BBC Chan4
+      - 🇳🇱 安徽→荷兰01 冷门 | 1.2x
+      - 🇰🇷 安徽→韩国01 | 1.5x
+      - 🇭🇰 安徽→香港01 | 1.5x NF
+      - 🇭🇰 安徽→香港02 | 1.5x NF
+      - 🇭🇰 安徽→香港04 | 1.5x NF
+      - 🇭🇰 安徽→香港HKBN01 | 1.5x 原生
+      - 🇭🇰 安徽→香港HKT01 | 1.5x 原生
+      - 🇲🇾 安徽→马来西亚01 | 1.5x 原生
       - 🇷🇺 山东01→俄01 | 1.5x
       - 🇷🇺 山东01→俄罗斯05 | 1.3x
+      - "🇷🇺 山东01→俄罗斯05 | 1.3x\t显示\t"
       - 🇷🇺 山东01→俄罗斯07 | 1.5x
       - 🇮🇳 山东01→印度01 | 1.5x
       - 🇨🇳 山东01→台湾01 | 1.5x 原生
@@ -785,10 +853,15 @@ proxy-groups:
       - 🇬🇧 山东01→英国01 | 1.5x | NF BBC Chan4
       - 🇰🇷 山东01→韩国01 | 1.5x
       - 🇭🇰 山东01→香港01 | 1.5x NF
+      - 🇭🇰 山东01→香港02 | 1.5x NF
+      - 🇭🇰 山东01→香港04 | 1.5x NF
       - 🇭🇰 山东01→香港HKBN01 | 1.5x 原生
       - 🇷🇺 广州01→俄罗斯05 | 1.3x
+      - 🇮🇳 广州01→印度01 | 1.5x
       - 🇨🇳 广州01→台湾01 | 1.5x 原生
       - 🇨🇳 广州01→台湾02 | 1.5x 原生
+      - 🇧🇷 广州01→巴西01 冷门 | 3.0x
+      - 🇩🇪 广州01→德国01 冷门 | 1.2x
       - 🇸🇬 广州01→新加坡01 | 1.5x 原生
       - 🇸🇬 广州01→新加坡02 | 1.5x NF
       - 🇯🇵 广州01→日本01 | 1.5x NF
@@ -798,10 +871,11 @@ proxy-groups:
       - 🇺🇲 广州01→美国01 | 1.5.x NF
       - 🇺🇲 广州01→美国03 | 1.5x 原生
       - 🇺🇲 广州01→美国04 | 1.3x | 备用
-      - 🇳🇱 广州01→荷兰01 | 1.2x
+      - 🇳🇱 广州01→荷兰01 冷门 | 1.2x
       - 🇰🇷 广州01→韩国01 | 1.5x
       - 🇭🇰 广州01→香港01 | 1.5x NF
       - 🇭🇰 广州01→香港02 | 1.5x NF
+      - 🇭🇰 广州01→香港04 | 1.5x NF
       - 🇭🇰 广州01→香港HKBN01 | 1.5x 原生
       - 🇭🇰 广州01→香港HKT01 | 1.5x 原生
       - 🇲🇾 广州01→马来西亚01 | 1.5x 原生
@@ -809,7 +883,8 @@ proxy-groups:
       - 🇮🇳 广州02→印度01 | 1.5x
       - 🇨🇳 广州02→台湾01 | 1.5x 原生
       - 🇨🇳 广州02→台湾02 | 1.5x 原生
-      - 🇧🇷 广州02→巴西01 | 3.0x
+      - 🇧🇷 广州02→巴西01 冷门 | 3.0x
+      - 🇩🇪 广州02→德国01 冷门 | 1.2x
       - 🇸🇬 广州02→新加坡01 | 1.5x 原生
       - 🇸🇬 广州02→新加坡02 | 1.5x NF
       - 🇯🇵 广州02→日本01 | 1.5x NF
@@ -821,7 +896,8 @@ proxy-groups:
       - 🇺🇲 广州02→美国01 | 1.5.x NF
       - 🇺🇲 广州02→美国03 | 1.5x 原生
       - 🇺🇲 广州02→美国04 | 1.3x | 备用
-      - 🇳🇱 广州02→荷兰01 | 1.2x
+      - 🇬🇧 广州02→英国01 | 1.5x | NF BBC Chan4
+      - 🇳🇱 广州02→荷兰01 冷门 | 1.2x
       - 🇰🇷 广州02→韩国01 | 1.5x
       - 🇭🇰 广州02→香港01 | 1.5x NF
       - 🇭🇰 广州02→香港02 | 1.5x NF
@@ -834,17 +910,25 @@ proxy-groups:
       - 🇷🇺 江苏BGP→俄罗斯07 | 1.5x
       - 🇨🇳 江苏BGP→台湾01 | 1.5x 原生
       - 🇨🇳 江苏BGP→台湾02 | 1.5x 原生
+      - 🇧🇷 江苏BGP→巴西01 冷门 | 3.0x
+      - 🇩🇪 江苏BGP→德国01 冷门 | 1.2x
       - 🇸🇬 江苏BGP→新加坡01 | 1.5x 原生
       - 🇸🇬 江苏BGP→新加坡02 | 1.5x NF
       - 🇯🇵 江苏BGP→日本01 | 1.5x NF
+      - 🇯🇵 江苏BGP→日本02 | 1.5x NF
       - 🇯🇵 江苏BGP→日本03 | 1.5x NF
       - 🇨🇳 江苏BGP→波兰01 | 1.2x
+      - 🇨🇳 江苏BGP→澳洲01 冷门 | 1.5x
+      - 🇺🇲 江苏BGP→美国01 | 1.5.x NF
+      - 🇬🇧 江苏BGP→英国01 | 1.5x | NF BBC Chan4
+      - 🇳🇱 江苏BGP→荷兰01 冷门 | 1.2x
       - 🇭🇰 江苏BGP→香港01 | 1.5x NF
+      - 🇭🇰 江苏BGP→香港02 | 1.5x NF
+      - 🇭🇰 江苏BGP→香港04 | 1.5x NF
       - 🇭🇰 江苏BGP→香港HKBN01 | 1.5x 原生
       - 🇭🇰 江苏BGP→香港HKT01 | 1.5x 原生
       - 🇲🇾 江苏BGP→马来西亚01 | 1.5x 原生
       - 🇸🇬 澳洲CDN | 实验 | 免费 | 1.0x | 请经常更新订阅
-      - 珠海01(测试机)→波兰01 | 1.2x
       - 🇸🇬 粤新03 IEPL专线 入口1 | 4x NF
       - 🇸🇬 粤新03 IEPL专线 入口2 | 4x NF
       - 🇸🇬 粤新03 IEPL专线 入口3 | 4x NF
@@ -858,7 +942,7 @@ proxy-groups:
       - 🇭🇰 粤港03 IEPL专线 入口1 | 4x NF
       - 🇭🇰 粤港03 IEPL专线 入口2 | 4x NF
       - 🇭🇰 粤港03 IEPL专线 入口3 | 4x NF
-      - "🇭🇰 粤港03 IEPL专线 入口4 | 4x NF\t"
+      - 🇭🇰 粤港03 IEPL专线 入口4 | 4x NF
       - 🇭🇰 粤港03 IEPL专线 入口5 | 4x NF
       - 🇺🇲 粤美02 IEPL专线 入口1 | 4x NF
       - 🇺🇲 粤美02 IEPL专线 入口2 | 4x NF
@@ -869,8 +953,8 @@ proxy-groups:
       - 🇭🇰 香港az→台湾01 | 1.5x 原生
       - 🇭🇰 香港az→台湾02 | 1.5x 原生
       - 🇭🇰 香港az→土耳其01 | 1.5x
-      - 🇧🇷 香港az→巴西01 | 3.0x
-      - 🇩🇪 香港az→德国01 | 1.2x
+      - 🇧🇷 香港az→巴西01 冷门 | 3.0x
+      - 🇩🇪 香港az→德国01 冷门 | 1.2x
       - 🇭🇰 香港az→新加坡01 | 1.5x 原生
       - 🇭🇰 香港az→日本01 | 1.5x NF
       - 🇭🇰 香港az→日本03 | 1.5x NF
@@ -879,7 +963,7 @@ proxy-groups:
       - 🇭🇰 香港az→澳洲01 冷门 | 1.5x
       - 🇭🇰 香港az→美国03 | 1.5x 原生
       - 🇬🇧 香港az→英国01 | 1.5x | NF BBC Chan4
-      - 🇭🇰 香港az→荷兰01 | 1.2x
+      - 🇭🇰 香港az→荷兰01 冷门 | 1.2x
       - 🇦🇷 香港az→阿根廷01 冷门+低速 | 2.0x
       - 🇭🇰 香港az→韩01 | 1.5x
       - 🇭🇰 香港az→香港HKBN01 | 1.5x 原生
@@ -891,34 +975,32 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - 🏳️‍🌈 过期时间：2021-04-09
-      - 🇨🇳 上海01→台湾01 | 1.5x 原生
-      - 🇸🇬 上海01→新加坡02 | 1.5x NF
-      - 🇯🇵 上海01→日本02 | 1.5x NF
-      - 🇺🇲 上海01→美国01 | 1.5.x NF
-      - 🇺🇲 上海01→美国04 | 1.3x | 备用
-      - 🇬🇧 上海01→英国01 | 1.5x | NF BBC Chan4
-      - 🇰🇷 上海01→韩国01 | 1.5x
-      - 🇭🇰 上海01→香港01 | 1.5x NF
-      - 🇨🇳 上海05→台湾01 | 1.5x 原生
-      - 🇧🇷 上海05→巴西01 | 3.0x
-      - 🇸🇬 上海05→新加坡02 | 1.5x NF
-      - 🇯🇵 上海05→日本02 | 1.5x NF
-      - 🇨🇳 上海05→波兰01 | 1.2x
-      - 🇨🇳 上海05→澳洲01 冷门 | 1.5x
-      - 🇺🇲 上海05→美国01 | 1.5.x NF
-      - 🇺🇲 上海05→美国03 | 1.5x 原生
-      - 🇺🇲 上海05→美国04 | 1.3x | 备用
-      - 🇬🇧 上海05→英国01 | 1.5x | NF BBC Chan4
-      - 🇳🇱 上海05→荷兰01 | 1.2x
-      - 🇭🇰 上海05→香港01 | 1.5x NF
-      - 🇭🇰 上海05→香港02 | 1.5x NF
-      - 🇭🇰 上海05→香港04 | 1.5x NF
-      - 🇭🇰 上海05→香港05 | 1.5x NF
-      - 🇭🇰 上海05→香港HKBN01 | 1.5x 原生
-      - 🇭🇰 上海05→香港HKT01 | 1.5x 原生
-      - 🇲🇾 上海05→马来西亚01 | 1.5x 原生
+      - 🇷🇺 安徽→俄罗斯01 | 1.5x
+      - "🇷🇺 安徽→俄罗斯05 | 1.3x\t"
+      - 🇷🇺 安徽→俄罗斯06 | 1.3x
+      - 🇷🇺 安徽→俄罗斯07 | 1.5x
+      - 🇮🇳 安徽→印度01 | 1.5x
+      - 🇨🇳 安徽→台湾01 | 1.5x 原生
+      - 🇨🇳 安徽→台湾02 | 1.5x 原生
+      - 🇸🇬 安徽→新加坡01 | 1.5x 原生
+      - 🇸🇬 安徽→新加坡02 | 1.5x NF
+      - 🇯🇵 安徽→日本01 | 1.5x NF
+      - 🇯🇵 安徽→日本02 | 1.5x NF
+      - 安徽→澳洲01 冷门 | 1.5x
+      - 🇺🇲 安徽→美国01 | 1.5.x NF
+      - 🇺🇲 安徽→美国03 | 1.5x 原生
+      - 🇬🇧 安徽→英国01 | 1.5x | NF BBC Chan4
+      - 🇳🇱 安徽→荷兰01 冷门 | 1.2x
+      - 🇰🇷 安徽→韩国01 | 1.5x
+      - 🇭🇰 安徽→香港01 | 1.5x NF
+      - 🇭🇰 安徽→香港02 | 1.5x NF
+      - 🇭🇰 安徽→香港04 | 1.5x NF
+      - 🇭🇰 安徽→香港HKBN01 | 1.5x 原生
+      - 🇭🇰 安徽→香港HKT01 | 1.5x 原生
+      - 🇲🇾 安徽→马来西亚01 | 1.5x 原生
       - 🇷🇺 山东01→俄01 | 1.5x
       - 🇷🇺 山东01→俄罗斯05 | 1.3x
+      - "🇷🇺 山东01→俄罗斯05 | 1.3x\t显示\t"
       - 🇷🇺 山东01→俄罗斯07 | 1.5x
       - 🇮🇳 山东01→印度01 | 1.5x
       - 🇨🇳 山东01→台湾01 | 1.5x 原生
@@ -932,10 +1014,15 @@ proxy-groups:
       - 🇬🇧 山东01→英国01 | 1.5x | NF BBC Chan4
       - 🇰🇷 山东01→韩国01 | 1.5x
       - 🇭🇰 山东01→香港01 | 1.5x NF
+      - 🇭🇰 山东01→香港02 | 1.5x NF
+      - 🇭🇰 山东01→香港04 | 1.5x NF
       - 🇭🇰 山东01→香港HKBN01 | 1.5x 原生
       - 🇷🇺 广州01→俄罗斯05 | 1.3x
+      - 🇮🇳 广州01→印度01 | 1.5x
       - 🇨🇳 广州01→台湾01 | 1.5x 原生
       - 🇨🇳 广州01→台湾02 | 1.5x 原生
+      - 🇧🇷 广州01→巴西01 冷门 | 3.0x
+      - 🇩🇪 广州01→德国01 冷门 | 1.2x
       - 🇸🇬 广州01→新加坡01 | 1.5x 原生
       - 🇸🇬 广州01→新加坡02 | 1.5x NF
       - 🇯🇵 广州01→日本01 | 1.5x NF
@@ -945,10 +1032,11 @@ proxy-groups:
       - 🇺🇲 广州01→美国01 | 1.5.x NF
       - 🇺🇲 广州01→美国03 | 1.5x 原生
       - 🇺🇲 广州01→美国04 | 1.3x | 备用
-      - 🇳🇱 广州01→荷兰01 | 1.2x
+      - 🇳🇱 广州01→荷兰01 冷门 | 1.2x
       - 🇰🇷 广州01→韩国01 | 1.5x
       - 🇭🇰 广州01→香港01 | 1.5x NF
       - 🇭🇰 广州01→香港02 | 1.5x NF
+      - 🇭🇰 广州01→香港04 | 1.5x NF
       - 🇭🇰 广州01→香港HKBN01 | 1.5x 原生
       - 🇭🇰 广州01→香港HKT01 | 1.5x 原生
       - 🇲🇾 广州01→马来西亚01 | 1.5x 原生
@@ -956,7 +1044,8 @@ proxy-groups:
       - 🇮🇳 广州02→印度01 | 1.5x
       - 🇨🇳 广州02→台湾01 | 1.5x 原生
       - 🇨🇳 广州02→台湾02 | 1.5x 原生
-      - 🇧🇷 广州02→巴西01 | 3.0x
+      - 🇧🇷 广州02→巴西01 冷门 | 3.0x
+      - 🇩🇪 广州02→德国01 冷门 | 1.2x
       - 🇸🇬 广州02→新加坡01 | 1.5x 原生
       - 🇸🇬 广州02→新加坡02 | 1.5x NF
       - 🇯🇵 广州02→日本01 | 1.5x NF
@@ -968,7 +1057,8 @@ proxy-groups:
       - 🇺🇲 广州02→美国01 | 1.5.x NF
       - 🇺🇲 广州02→美国03 | 1.5x 原生
       - 🇺🇲 广州02→美国04 | 1.3x | 备用
-      - 🇳🇱 广州02→荷兰01 | 1.2x
+      - 🇬🇧 广州02→英国01 | 1.5x | NF BBC Chan4
+      - 🇳🇱 广州02→荷兰01 冷门 | 1.2x
       - 🇰🇷 广州02→韩国01 | 1.5x
       - 🇭🇰 广州02→香港01 | 1.5x NF
       - 🇭🇰 广州02→香港02 | 1.5x NF
@@ -981,17 +1071,25 @@ proxy-groups:
       - 🇷🇺 江苏BGP→俄罗斯07 | 1.5x
       - 🇨🇳 江苏BGP→台湾01 | 1.5x 原生
       - 🇨🇳 江苏BGP→台湾02 | 1.5x 原生
+      - 🇧🇷 江苏BGP→巴西01 冷门 | 3.0x
+      - 🇩🇪 江苏BGP→德国01 冷门 | 1.2x
       - 🇸🇬 江苏BGP→新加坡01 | 1.5x 原生
       - 🇸🇬 江苏BGP→新加坡02 | 1.5x NF
       - 🇯🇵 江苏BGP→日本01 | 1.5x NF
+      - 🇯🇵 江苏BGP→日本02 | 1.5x NF
       - 🇯🇵 江苏BGP→日本03 | 1.5x NF
       - 🇨🇳 江苏BGP→波兰01 | 1.2x
+      - 🇨🇳 江苏BGP→澳洲01 冷门 | 1.5x
+      - 🇺🇲 江苏BGP→美国01 | 1.5.x NF
+      - 🇬🇧 江苏BGP→英国01 | 1.5x | NF BBC Chan4
+      - 🇳🇱 江苏BGP→荷兰01 冷门 | 1.2x
       - 🇭🇰 江苏BGP→香港01 | 1.5x NF
+      - 🇭🇰 江苏BGP→香港02 | 1.5x NF
+      - 🇭🇰 江苏BGP→香港04 | 1.5x NF
       - 🇭🇰 江苏BGP→香港HKBN01 | 1.5x 原生
       - 🇭🇰 江苏BGP→香港HKT01 | 1.5x 原生
       - 🇲🇾 江苏BGP→马来西亚01 | 1.5x 原生
       - 🇸🇬 澳洲CDN | 实验 | 免费 | 1.0x | 请经常更新订阅
-      - 珠海01(测试机)→波兰01 | 1.2x
       - 🇸🇬 粤新03 IEPL专线 入口1 | 4x NF
       - 🇸🇬 粤新03 IEPL专线 入口2 | 4x NF
       - 🇸🇬 粤新03 IEPL专线 入口3 | 4x NF
@@ -1005,7 +1103,7 @@ proxy-groups:
       - 🇭🇰 粤港03 IEPL专线 入口1 | 4x NF
       - 🇭🇰 粤港03 IEPL专线 入口2 | 4x NF
       - 🇭🇰 粤港03 IEPL专线 入口3 | 4x NF
-      - "🇭🇰 粤港03 IEPL专线 入口4 | 4x NF\t"
+      - 🇭🇰 粤港03 IEPL专线 入口4 | 4x NF
       - 🇭🇰 粤港03 IEPL专线 入口5 | 4x NF
       - 🇺🇲 粤美02 IEPL专线 入口1 | 4x NF
       - 🇺🇲 粤美02 IEPL专线 入口2 | 4x NF
@@ -1016,8 +1114,8 @@ proxy-groups:
       - 🇭🇰 香港az→台湾01 | 1.5x 原生
       - 🇭🇰 香港az→台湾02 | 1.5x 原生
       - 🇭🇰 香港az→土耳其01 | 1.5x
-      - 🇧🇷 香港az→巴西01 | 3.0x
-      - 🇩🇪 香港az→德国01 | 1.2x
+      - 🇧🇷 香港az→巴西01 冷门 | 3.0x
+      - 🇩🇪 香港az→德国01 冷门 | 1.2x
       - 🇭🇰 香港az→新加坡01 | 1.5x 原生
       - 🇭🇰 香港az→日本01 | 1.5x NF
       - 🇭🇰 香港az→日本03 | 1.5x NF
@@ -1026,7 +1124,7 @@ proxy-groups:
       - 🇭🇰 香港az→澳洲01 冷门 | 1.5x
       - 🇭🇰 香港az→美国03 | 1.5x 原生
       - 🇬🇧 香港az→英国01 | 1.5x | NF BBC Chan4
-      - 🇭🇰 香港az→荷兰01 | 1.2x
+      - 🇭🇰 香港az→荷兰01 冷门 | 1.2x
       - 🇦🇷 香港az→阿根廷01 冷门+低速 | 2.0x
       - 🇭🇰 香港az→韩01 | 1.5x
       - 🇭🇰 香港az→香港HKBN01 | 1.5x 原生
@@ -1039,34 +1137,32 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 🏳️‍🌈 过期时间：2021-04-09
-      - 🇨🇳 上海01→台湾01 | 1.5x 原生
-      - 🇸🇬 上海01→新加坡02 | 1.5x NF
-      - 🇯🇵 上海01→日本02 | 1.5x NF
-      - 🇺🇲 上海01→美国01 | 1.5.x NF
-      - 🇺🇲 上海01→美国04 | 1.3x | 备用
-      - 🇬🇧 上海01→英国01 | 1.5x | NF BBC Chan4
-      - 🇰🇷 上海01→韩国01 | 1.5x
-      - 🇭🇰 上海01→香港01 | 1.5x NF
-      - 🇨🇳 上海05→台湾01 | 1.5x 原生
-      - 🇧🇷 上海05→巴西01 | 3.0x
-      - 🇸🇬 上海05→新加坡02 | 1.5x NF
-      - 🇯🇵 上海05→日本02 | 1.5x NF
-      - 🇨🇳 上海05→波兰01 | 1.2x
-      - 🇨🇳 上海05→澳洲01 冷门 | 1.5x
-      - 🇺🇲 上海05→美国01 | 1.5.x NF
-      - 🇺🇲 上海05→美国03 | 1.5x 原生
-      - 🇺🇲 上海05→美国04 | 1.3x | 备用
-      - 🇬🇧 上海05→英国01 | 1.5x | NF BBC Chan4
-      - 🇳🇱 上海05→荷兰01 | 1.2x
-      - 🇭🇰 上海05→香港01 | 1.5x NF
-      - 🇭🇰 上海05→香港02 | 1.5x NF
-      - 🇭🇰 上海05→香港04 | 1.5x NF
-      - 🇭🇰 上海05→香港05 | 1.5x NF
-      - 🇭🇰 上海05→香港HKBN01 | 1.5x 原生
-      - 🇭🇰 上海05→香港HKT01 | 1.5x 原生
-      - 🇲🇾 上海05→马来西亚01 | 1.5x 原生
+      - 🇷🇺 安徽→俄罗斯01 | 1.5x
+      - "🇷🇺 安徽→俄罗斯05 | 1.3x\t"
+      - 🇷🇺 安徽→俄罗斯06 | 1.3x
+      - 🇷🇺 安徽→俄罗斯07 | 1.5x
+      - 🇮🇳 安徽→印度01 | 1.5x
+      - 🇨🇳 安徽→台湾01 | 1.5x 原生
+      - 🇨🇳 安徽→台湾02 | 1.5x 原生
+      - 🇸🇬 安徽→新加坡01 | 1.5x 原生
+      - 🇸🇬 安徽→新加坡02 | 1.5x NF
+      - 🇯🇵 安徽→日本01 | 1.5x NF
+      - 🇯🇵 安徽→日本02 | 1.5x NF
+      - 安徽→澳洲01 冷门 | 1.5x
+      - 🇺🇲 安徽→美国01 | 1.5.x NF
+      - 🇺🇲 安徽→美国03 | 1.5x 原生
+      - 🇬🇧 安徽→英国01 | 1.5x | NF BBC Chan4
+      - 🇳🇱 安徽→荷兰01 冷门 | 1.2x
+      - 🇰🇷 安徽→韩国01 | 1.5x
+      - 🇭🇰 安徽→香港01 | 1.5x NF
+      - 🇭🇰 安徽→香港02 | 1.5x NF
+      - 🇭🇰 安徽→香港04 | 1.5x NF
+      - 🇭🇰 安徽→香港HKBN01 | 1.5x 原生
+      - 🇭🇰 安徽→香港HKT01 | 1.5x 原生
+      - 🇲🇾 安徽→马来西亚01 | 1.5x 原生
       - 🇷🇺 山东01→俄01 | 1.5x
       - 🇷🇺 山东01→俄罗斯05 | 1.3x
+      - "🇷🇺 山东01→俄罗斯05 | 1.3x\t显示\t"
       - 🇷🇺 山东01→俄罗斯07 | 1.5x
       - 🇮🇳 山东01→印度01 | 1.5x
       - 🇨🇳 山东01→台湾01 | 1.5x 原生
@@ -1080,10 +1176,15 @@ proxy-groups:
       - 🇬🇧 山东01→英国01 | 1.5x | NF BBC Chan4
       - 🇰🇷 山东01→韩国01 | 1.5x
       - 🇭🇰 山东01→香港01 | 1.5x NF
+      - 🇭🇰 山东01→香港02 | 1.5x NF
+      - 🇭🇰 山东01→香港04 | 1.5x NF
       - 🇭🇰 山东01→香港HKBN01 | 1.5x 原生
       - 🇷🇺 广州01→俄罗斯05 | 1.3x
+      - 🇮🇳 广州01→印度01 | 1.5x
       - 🇨🇳 广州01→台湾01 | 1.5x 原生
       - 🇨🇳 广州01→台湾02 | 1.5x 原生
+      - 🇧🇷 广州01→巴西01 冷门 | 3.0x
+      - 🇩🇪 广州01→德国01 冷门 | 1.2x
       - 🇸🇬 广州01→新加坡01 | 1.5x 原生
       - 🇸🇬 广州01→新加坡02 | 1.5x NF
       - 🇯🇵 广州01→日本01 | 1.5x NF
@@ -1093,10 +1194,11 @@ proxy-groups:
       - 🇺🇲 广州01→美国01 | 1.5.x NF
       - 🇺🇲 广州01→美国03 | 1.5x 原生
       - 🇺🇲 广州01→美国04 | 1.3x | 备用
-      - 🇳🇱 广州01→荷兰01 | 1.2x
+      - 🇳🇱 广州01→荷兰01 冷门 | 1.2x
       - 🇰🇷 广州01→韩国01 | 1.5x
       - 🇭🇰 广州01→香港01 | 1.5x NF
       - 🇭🇰 广州01→香港02 | 1.5x NF
+      - 🇭🇰 广州01→香港04 | 1.5x NF
       - 🇭🇰 广州01→香港HKBN01 | 1.5x 原生
       - 🇭🇰 广州01→香港HKT01 | 1.5x 原生
       - 🇲🇾 广州01→马来西亚01 | 1.5x 原生
@@ -1104,7 +1206,8 @@ proxy-groups:
       - 🇮🇳 广州02→印度01 | 1.5x
       - 🇨🇳 广州02→台湾01 | 1.5x 原生
       - 🇨🇳 广州02→台湾02 | 1.5x 原生
-      - 🇧🇷 广州02→巴西01 | 3.0x
+      - 🇧🇷 广州02→巴西01 冷门 | 3.0x
+      - 🇩🇪 广州02→德国01 冷门 | 1.2x
       - 🇸🇬 广州02→新加坡01 | 1.5x 原生
       - 🇸🇬 广州02→新加坡02 | 1.5x NF
       - 🇯🇵 广州02→日本01 | 1.5x NF
@@ -1116,7 +1219,8 @@ proxy-groups:
       - 🇺🇲 广州02→美国01 | 1.5.x NF
       - 🇺🇲 广州02→美国03 | 1.5x 原生
       - 🇺🇲 广州02→美国04 | 1.3x | 备用
-      - 🇳🇱 广州02→荷兰01 | 1.2x
+      - 🇬🇧 广州02→英国01 | 1.5x | NF BBC Chan4
+      - 🇳🇱 广州02→荷兰01 冷门 | 1.2x
       - 🇰🇷 广州02→韩国01 | 1.5x
       - 🇭🇰 广州02→香港01 | 1.5x NF
       - 🇭🇰 广州02→香港02 | 1.5x NF
@@ -1129,17 +1233,25 @@ proxy-groups:
       - 🇷🇺 江苏BGP→俄罗斯07 | 1.5x
       - 🇨🇳 江苏BGP→台湾01 | 1.5x 原生
       - 🇨🇳 江苏BGP→台湾02 | 1.5x 原生
+      - 🇧🇷 江苏BGP→巴西01 冷门 | 3.0x
+      - 🇩🇪 江苏BGP→德国01 冷门 | 1.2x
       - 🇸🇬 江苏BGP→新加坡01 | 1.5x 原生
       - 🇸🇬 江苏BGP→新加坡02 | 1.5x NF
       - 🇯🇵 江苏BGP→日本01 | 1.5x NF
+      - 🇯🇵 江苏BGP→日本02 | 1.5x NF
       - 🇯🇵 江苏BGP→日本03 | 1.5x NF
       - 🇨🇳 江苏BGP→波兰01 | 1.2x
+      - 🇨🇳 江苏BGP→澳洲01 冷门 | 1.5x
+      - 🇺🇲 江苏BGP→美国01 | 1.5.x NF
+      - 🇬🇧 江苏BGP→英国01 | 1.5x | NF BBC Chan4
+      - 🇳🇱 江苏BGP→荷兰01 冷门 | 1.2x
       - 🇭🇰 江苏BGP→香港01 | 1.5x NF
+      - 🇭🇰 江苏BGP→香港02 | 1.5x NF
+      - 🇭🇰 江苏BGP→香港04 | 1.5x NF
       - 🇭🇰 江苏BGP→香港HKBN01 | 1.5x 原生
       - 🇭🇰 江苏BGP→香港HKT01 | 1.5x 原生
       - 🇲🇾 江苏BGP→马来西亚01 | 1.5x 原生
       - 🇸🇬 澳洲CDN | 实验 | 免费 | 1.0x | 请经常更新订阅
-      - 珠海01(测试机)→波兰01 | 1.2x
       - 🇸🇬 粤新03 IEPL专线 入口1 | 4x NF
       - 🇸🇬 粤新03 IEPL专线 入口2 | 4x NF
       - 🇸🇬 粤新03 IEPL专线 入口3 | 4x NF
@@ -1153,7 +1265,7 @@ proxy-groups:
       - 🇭🇰 粤港03 IEPL专线 入口1 | 4x NF
       - 🇭🇰 粤港03 IEPL专线 入口2 | 4x NF
       - 🇭🇰 粤港03 IEPL专线 入口3 | 4x NF
-      - "🇭🇰 粤港03 IEPL专线 入口4 | 4x NF\t"
+      - 🇭🇰 粤港03 IEPL专线 入口4 | 4x NF
       - 🇭🇰 粤港03 IEPL专线 入口5 | 4x NF
       - 🇺🇲 粤美02 IEPL专线 入口1 | 4x NF
       - 🇺🇲 粤美02 IEPL专线 入口2 | 4x NF
@@ -1164,8 +1276,8 @@ proxy-groups:
       - 🇭🇰 香港az→台湾01 | 1.5x 原生
       - 🇭🇰 香港az→台湾02 | 1.5x 原生
       - 🇭🇰 香港az→土耳其01 | 1.5x
-      - 🇧🇷 香港az→巴西01 | 3.0x
-      - 🇩🇪 香港az→德国01 | 1.2x
+      - 🇧🇷 香港az→巴西01 冷门 | 3.0x
+      - 🇩🇪 香港az→德国01 冷门 | 1.2x
       - 🇭🇰 香港az→新加坡01 | 1.5x 原生
       - 🇭🇰 香港az→日本01 | 1.5x NF
       - 🇭🇰 香港az→日本03 | 1.5x NF
@@ -1174,7 +1286,7 @@ proxy-groups:
       - 🇭🇰 香港az→澳洲01 冷门 | 1.5x
       - 🇭🇰 香港az→美国03 | 1.5x 原生
       - 🇬🇧 香港az→英国01 | 1.5x | NF BBC Chan4
-      - 🇭🇰 香港az→荷兰01 | 1.2x
+      - 🇭🇰 香港az→荷兰01 冷门 | 1.2x
       - 🇦🇷 香港az→阿根廷01 冷门+低速 | 2.0x
       - 🇭🇰 香港az→韩01 | 1.5x
       - 🇭🇰 香港az→香港HKBN01 | 1.5x 原生
@@ -1203,34 +1315,32 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 🏳️‍🌈 过期时间：2021-04-09
-      - 🇨🇳 上海01→台湾01 | 1.5x 原生
-      - 🇸🇬 上海01→新加坡02 | 1.5x NF
-      - 🇯🇵 上海01→日本02 | 1.5x NF
-      - 🇺🇲 上海01→美国01 | 1.5.x NF
-      - 🇺🇲 上海01→美国04 | 1.3x | 备用
-      - 🇬🇧 上海01→英国01 | 1.5x | NF BBC Chan4
-      - 🇰🇷 上海01→韩国01 | 1.5x
-      - 🇭🇰 上海01→香港01 | 1.5x NF
-      - 🇨🇳 上海05→台湾01 | 1.5x 原生
-      - 🇧🇷 上海05→巴西01 | 3.0x
-      - 🇸🇬 上海05→新加坡02 | 1.5x NF
-      - 🇯🇵 上海05→日本02 | 1.5x NF
-      - 🇨🇳 上海05→波兰01 | 1.2x
-      - 🇨🇳 上海05→澳洲01 冷门 | 1.5x
-      - 🇺🇲 上海05→美国01 | 1.5.x NF
-      - 🇺🇲 上海05→美国03 | 1.5x 原生
-      - 🇺🇲 上海05→美国04 | 1.3x | 备用
-      - 🇬🇧 上海05→英国01 | 1.5x | NF BBC Chan4
-      - 🇳🇱 上海05→荷兰01 | 1.2x
-      - 🇭🇰 上海05→香港01 | 1.5x NF
-      - 🇭🇰 上海05→香港02 | 1.5x NF
-      - 🇭🇰 上海05→香港04 | 1.5x NF
-      - 🇭🇰 上海05→香港05 | 1.5x NF
-      - 🇭🇰 上海05→香港HKBN01 | 1.5x 原生
-      - 🇭🇰 上海05→香港HKT01 | 1.5x 原生
-      - 🇲🇾 上海05→马来西亚01 | 1.5x 原生
+      - 🇷🇺 安徽→俄罗斯01 | 1.5x
+      - "🇷🇺 安徽→俄罗斯05 | 1.3x\t"
+      - 🇷🇺 安徽→俄罗斯06 | 1.3x
+      - 🇷🇺 安徽→俄罗斯07 | 1.5x
+      - 🇮🇳 安徽→印度01 | 1.5x
+      - 🇨🇳 安徽→台湾01 | 1.5x 原生
+      - 🇨🇳 安徽→台湾02 | 1.5x 原生
+      - 🇸🇬 安徽→新加坡01 | 1.5x 原生
+      - 🇸🇬 安徽→新加坡02 | 1.5x NF
+      - 🇯🇵 安徽→日本01 | 1.5x NF
+      - 🇯🇵 安徽→日本02 | 1.5x NF
+      - 安徽→澳洲01 冷门 | 1.5x
+      - 🇺🇲 安徽→美国01 | 1.5.x NF
+      - 🇺🇲 安徽→美国03 | 1.5x 原生
+      - 🇬🇧 安徽→英国01 | 1.5x | NF BBC Chan4
+      - 🇳🇱 安徽→荷兰01 冷门 | 1.2x
+      - 🇰🇷 安徽→韩国01 | 1.5x
+      - 🇭🇰 安徽→香港01 | 1.5x NF
+      - 🇭🇰 安徽→香港02 | 1.5x NF
+      - 🇭🇰 安徽→香港04 | 1.5x NF
+      - 🇭🇰 安徽→香港HKBN01 | 1.5x 原生
+      - 🇭🇰 安徽→香港HKT01 | 1.5x 原生
+      - 🇲🇾 安徽→马来西亚01 | 1.5x 原生
       - 🇷🇺 山东01→俄01 | 1.5x
       - 🇷🇺 山东01→俄罗斯05 | 1.3x
+      - "🇷🇺 山东01→俄罗斯05 | 1.3x\t显示\t"
       - 🇷🇺 山东01→俄罗斯07 | 1.5x
       - 🇮🇳 山东01→印度01 | 1.5x
       - 🇨🇳 山东01→台湾01 | 1.5x 原生
@@ -1244,10 +1354,15 @@ proxy-groups:
       - 🇬🇧 山东01→英国01 | 1.5x | NF BBC Chan4
       - 🇰🇷 山东01→韩国01 | 1.5x
       - 🇭🇰 山东01→香港01 | 1.5x NF
+      - 🇭🇰 山东01→香港02 | 1.5x NF
+      - 🇭🇰 山东01→香港04 | 1.5x NF
       - 🇭🇰 山东01→香港HKBN01 | 1.5x 原生
       - 🇷🇺 广州01→俄罗斯05 | 1.3x
+      - 🇮🇳 广州01→印度01 | 1.5x
       - 🇨🇳 广州01→台湾01 | 1.5x 原生
       - 🇨🇳 广州01→台湾02 | 1.5x 原生
+      - 🇧🇷 广州01→巴西01 冷门 | 3.0x
+      - 🇩🇪 广州01→德国01 冷门 | 1.2x
       - 🇸🇬 广州01→新加坡01 | 1.5x 原生
       - 🇸🇬 广州01→新加坡02 | 1.5x NF
       - 🇯🇵 广州01→日本01 | 1.5x NF
@@ -1257,10 +1372,11 @@ proxy-groups:
       - 🇺🇲 广州01→美国01 | 1.5.x NF
       - 🇺🇲 广州01→美国03 | 1.5x 原生
       - 🇺🇲 广州01→美国04 | 1.3x | 备用
-      - 🇳🇱 广州01→荷兰01 | 1.2x
+      - 🇳🇱 广州01→荷兰01 冷门 | 1.2x
       - 🇰🇷 广州01→韩国01 | 1.5x
       - 🇭🇰 广州01→香港01 | 1.5x NF
       - 🇭🇰 广州01→香港02 | 1.5x NF
+      - 🇭🇰 广州01→香港04 | 1.5x NF
       - 🇭🇰 广州01→香港HKBN01 | 1.5x 原生
       - 🇭🇰 广州01→香港HKT01 | 1.5x 原生
       - 🇲🇾 广州01→马来西亚01 | 1.5x 原生
@@ -1268,7 +1384,8 @@ proxy-groups:
       - 🇮🇳 广州02→印度01 | 1.5x
       - 🇨🇳 广州02→台湾01 | 1.5x 原生
       - 🇨🇳 广州02→台湾02 | 1.5x 原生
-      - 🇧🇷 广州02→巴西01 | 3.0x
+      - 🇧🇷 广州02→巴西01 冷门 | 3.0x
+      - 🇩🇪 广州02→德国01 冷门 | 1.2x
       - 🇸🇬 广州02→新加坡01 | 1.5x 原生
       - 🇸🇬 广州02→新加坡02 | 1.5x NF
       - 🇯🇵 广州02→日本01 | 1.5x NF
@@ -1280,7 +1397,8 @@ proxy-groups:
       - 🇺🇲 广州02→美国01 | 1.5.x NF
       - 🇺🇲 广州02→美国03 | 1.5x 原生
       - 🇺🇲 广州02→美国04 | 1.3x | 备用
-      - 🇳🇱 广州02→荷兰01 | 1.2x
+      - 🇬🇧 广州02→英国01 | 1.5x | NF BBC Chan4
+      - 🇳🇱 广州02→荷兰01 冷门 | 1.2x
       - 🇰🇷 广州02→韩国01 | 1.5x
       - 🇭🇰 广州02→香港01 | 1.5x NF
       - 🇭🇰 广州02→香港02 | 1.5x NF
@@ -1293,17 +1411,25 @@ proxy-groups:
       - 🇷🇺 江苏BGP→俄罗斯07 | 1.5x
       - 🇨🇳 江苏BGP→台湾01 | 1.5x 原生
       - 🇨🇳 江苏BGP→台湾02 | 1.5x 原生
+      - 🇧🇷 江苏BGP→巴西01 冷门 | 3.0x
+      - 🇩🇪 江苏BGP→德国01 冷门 | 1.2x
       - 🇸🇬 江苏BGP→新加坡01 | 1.5x 原生
       - 🇸🇬 江苏BGP→新加坡02 | 1.5x NF
       - 🇯🇵 江苏BGP→日本01 | 1.5x NF
+      - 🇯🇵 江苏BGP→日本02 | 1.5x NF
       - 🇯🇵 江苏BGP→日本03 | 1.5x NF
       - 🇨🇳 江苏BGP→波兰01 | 1.2x
+      - 🇨🇳 江苏BGP→澳洲01 冷门 | 1.5x
+      - 🇺🇲 江苏BGP→美国01 | 1.5.x NF
+      - 🇬🇧 江苏BGP→英国01 | 1.5x | NF BBC Chan4
+      - 🇳🇱 江苏BGP→荷兰01 冷门 | 1.2x
       - 🇭🇰 江苏BGP→香港01 | 1.5x NF
+      - 🇭🇰 江苏BGP→香港02 | 1.5x NF
+      - 🇭🇰 江苏BGP→香港04 | 1.5x NF
       - 🇭🇰 江苏BGP→香港HKBN01 | 1.5x 原生
       - 🇭🇰 江苏BGP→香港HKT01 | 1.5x 原生
       - 🇲🇾 江苏BGP→马来西亚01 | 1.5x 原生
       - 🇸🇬 澳洲CDN | 实验 | 免费 | 1.0x | 请经常更新订阅
-      - 珠海01(测试机)→波兰01 | 1.2x
       - 🇸🇬 粤新03 IEPL专线 入口1 | 4x NF
       - 🇸🇬 粤新03 IEPL专线 入口2 | 4x NF
       - 🇸🇬 粤新03 IEPL专线 入口3 | 4x NF
@@ -1317,7 +1443,7 @@ proxy-groups:
       - 🇭🇰 粤港03 IEPL专线 入口1 | 4x NF
       - 🇭🇰 粤港03 IEPL专线 入口2 | 4x NF
       - 🇭🇰 粤港03 IEPL专线 入口3 | 4x NF
-      - "🇭🇰 粤港03 IEPL专线 入口4 | 4x NF\t"
+      - 🇭🇰 粤港03 IEPL专线 入口4 | 4x NF
       - 🇭🇰 粤港03 IEPL专线 入口5 | 4x NF
       - 🇺🇲 粤美02 IEPL专线 入口1 | 4x NF
       - 🇺🇲 粤美02 IEPL专线 入口2 | 4x NF
@@ -1328,8 +1454,8 @@ proxy-groups:
       - 🇭🇰 香港az→台湾01 | 1.5x 原生
       - 🇭🇰 香港az→台湾02 | 1.5x 原生
       - 🇭🇰 香港az→土耳其01 | 1.5x
-      - 🇧🇷 香港az→巴西01 | 3.0x
-      - 🇩🇪 香港az→德国01 | 1.2x
+      - 🇧🇷 香港az→巴西01 冷门 | 3.0x
+      - 🇩🇪 香港az→德国01 冷门 | 1.2x
       - 🇭🇰 香港az→新加坡01 | 1.5x 原生
       - 🇭🇰 香港az→日本01 | 1.5x NF
       - 🇭🇰 香港az→日本03 | 1.5x NF
@@ -1338,7 +1464,7 @@ proxy-groups:
       - 🇭🇰 香港az→澳洲01 冷门 | 1.5x
       - 🇭🇰 香港az→美国03 | 1.5x 原生
       - 🇬🇧 香港az→英国01 | 1.5x | NF BBC Chan4
-      - 🇭🇰 香港az→荷兰01 | 1.2x
+      - 🇭🇰 香港az→荷兰01 冷门 | 1.2x
       - 🇦🇷 香港az→阿根廷01 冷门+低速 | 2.0x
       - 🇭🇰 香港az→韩01 | 1.5x
       - 🇭🇰 香港az→香港HKBN01 | 1.5x 原生
@@ -1355,6 +1481,7 @@ rules:
  - IP-CIDR,127.0.0.0/8,🎯 全球直连,no-resolve
  - IP-CIDR,172.16.0.0/12,🎯 全球直连,no-resolve
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
+ - IP-CIDR,198.18.0.0/16,🎯 全球直连,no-resolve
  - IP-CIDR6,::1/128,🎯 全球直连,no-resolve
  - IP-CIDR6,fc00::/7,🎯 全球直连,no-resolve
  - IP-CIDR6,fe80::/10,🎯 全球直连,no-resolve
@@ -1371,9 +1498,11 @@ rules:
  - DOMAIN-SUFFIX,tendawifi.com,🎯 全球直连
  - DOMAIN-SUFFIX,zte.home,🎯 全球直连
  - DOMAIN-SUFFIX,ol.epicgames.com,🎯 全球直连
+ - DOMAIN-SUFFIX,dizhensubao.getui.com,🎯 全球直连
  - DOMAIN,dl.google.com,🎯 全球直连
  - DOMAIN-SUFFIX,googletraveladservices.com,🎯 全球直连
  - DOMAIN-SUFFIX,tracking-protection.cdn.mozilla.net,🎯 全球直连
+ - DOMAIN,origin-a.akamaihd.net,🎯 全球直连
  - DOMAIN,livew.l.qq.com,🎯 全球直连
  - DOMAIN,vd.l.qq.com,🎯 全球直连
  - DOMAIN,analytics.strava.com,🎯 全球直连
@@ -2261,7 +2390,6 @@ rules:
  - DOMAIN-SUFFIX,mobads.baidu.cn,🍃 应用净化
  - DOMAIN-SUFFIX,mobads.baidu.com,🍃 应用净化
  - DOMAIN-SUFFIX,mpro.baidu.com,🍃 应用净化
- - DOMAIN-SUFFIX,msite.baidu.com,🍃 应用净化
  - DOMAIN-SUFFIX,mtj.baidu.cn,🍃 应用净化
  - DOMAIN-SUFFIX,mtj.baidu.com,🍃 应用净化
  - DOMAIN-SUFFIX,neirong.baidu.com,🍃 应用净化
@@ -3092,19 +3220,6 @@ rules:
  - DOMAIN-SUFFIX,googletagservices.com,🎯 全球直连
  - DOMAIN-SUFFIX,gtm.oasisfeng.com,🎯 全球直连
  - DOMAIN-SUFFIX,imasdk.googleapis.com,🎯 全球直连
- - DOMAIN-SUFFIX,kh.google.com,🎯 全球直连
- - DOMAIN-SUFFIX,khm.google.com,🎯 全球直连
- - DOMAIN-SUFFIX,khm.googleapis.com,🎯 全球直连
- - DOMAIN-SUFFIX,khm0.google.com,🎯 全球直连
- - DOMAIN-SUFFIX,khm0.googleapis.com,🎯 全球直连
- - DOMAIN-SUFFIX,khm1.google.com,🎯 全球直连
- - DOMAIN-SUFFIX,khm1.googleapis.com,🎯 全球直连
- - DOMAIN-SUFFIX,khm2.google.com,🎯 全球直连
- - DOMAIN-SUFFIX,khm2.googleapis.com,🎯 全球直连
- - DOMAIN-SUFFIX,khm3.google.com,🎯 全球直连
- - DOMAIN-SUFFIX,khm3.googleapis.com,🎯 全球直连
- - DOMAIN-SUFFIX,khmdb.google.com,🎯 全球直连
- - DOMAIN-SUFFIX,khmdb.googleapis.com,🎯 全球直连
  - DOMAIN-SUFFIX,mtalk.google.com,🎯 全球直连
  - DOMAIN-SUFFIX,ocsp.pki.goog,🎯 全球直连
  - DOMAIN-SUFFIX,recaptcha.net,🎯 全球直连
@@ -3271,33 +3386,18 @@ rules:
  - DOMAIN-SUFFIX,bahamut.com.tw,🌍 国外媒体
  - DOMAIN-SUFFIX,gamer.com.tw,🌍 国外媒体
  - DOMAIN-SUFFIX,hinet.net,🌍 国外媒体
+ - DOMAIN-KEYWORD,livedazn,🌍 国外媒体
  - DOMAIN-KEYWORD,voddazn,🌍 国外媒体
  - DOMAIN,d151l6v8er5bdm.cloudfront.net,🌍 国外媒体
- - DOMAIN-SUFFIX,amplify.outbrain.com,🌍 国外媒体
- - DOMAIN-SUFFIX,bluekai.com,🌍 国外媒体
- - DOMAIN-SUFFIX,cdn.cookielaw.org,🌍 国外媒体
- - DOMAIN-SUFFIX,control.kochava.com,🌍 国外媒体
  - DOMAIN-SUFFIX,d151l6v8er5bdm.cloudfront.net,🌍 国外媒体
  - DOMAIN-SUFFIX,d1sgwhnao7452x.cloudfront.net,🌍 国外媒体
  - DOMAIN-SUFFIX,dazn-api.com,🌍 国外媒体
  - DOMAIN-SUFFIX,dazn.com,🌍 国外媒体
  - DOMAIN-SUFFIX,dazndn.com,🌍 国外媒体
- - DOMAIN-SUFFIX,dc2-vodhls-perform.secure.footprint.net,🌍 国外媒体
- - DOMAIN-SUFFIX,dca-ll-livedazn-dznlivejp.s.llnwi.net,🌍 国外媒体
- - DOMAIN-SUFFIX,dca-ll-voddazn-dznvodjp.s.llnwi.net,🌍 国外媒体
- - DOMAIN-SUFFIX,dcalivedazn.akamaized.net,🌍 国外媒体
  - DOMAIN-SUFFIX,dcblivedazn.akamaized.net,🌍 国外媒体
- - DOMAIN-SUFFIX,docomo.ne.jp,🌍 国外媒体
  - DOMAIN-SUFFIX,indazn.com,🌍 国外媒体
  - DOMAIN-SUFFIX,indaznlab.com,🌍 国外媒体
- - DOMAIN-SUFFIX,intercom.io,🌍 国外媒体
- - DOMAIN-SUFFIX,pause-confirmed-marketing-images-prod.s3.eu-central-1.amazonaws.com,🌍 国外媒体
- - DOMAIN-SUFFIX,perfops.doracdn.com,🌍 国外媒体
- - DOMAIN-SUFFIX,rest.zuora.com,🌍 国外媒体
- - DOMAIN-SUFFIX,s.yimg.jp,🌍 国外媒体
  - DOMAIN-SUFFIX,sentry.io,🌍 国外媒体
- - DOMAIN-SUFFIX,vjs.zencdn.net,🌍 国外媒体
- - DOMAIN-SUFFIX,yahoo.co.jp,🌍 国外媒体
  - DOMAIN-SUFFIX,deezer.com,🌍 国外媒体
  - DOMAIN-SUFFIX,dzcdn.net,🌍 国外媒体
  - DOMAIN,cdn.registerdisney.go.com,🌍 国外媒体
@@ -3338,19 +3438,23 @@ rules:
  - DOMAIN-SUFFIX,akamaized.net,🌍 国外媒体
  - DOMAIN-SUFFIX,foxplus.com,🌍 国外媒体
  - DOMAIN-SUFFIX,theplatform.com,🌍 国外媒体
- - DOMAIN-SUFFIX,bcbolthboa-a.akamaihd.net,🌍 国外媒体
- - DOMAIN-SUFFIX,cf-images.ap-southeast-1.prod.boltdns.net,🌍 国外媒体
- - DOMAIN-SUFFIX,execute-api.ap-southeast-1.amazonaws.com,🌍 国外媒体
- - DOMAIN-SUFFIX,execute-api.us-east-1.amazonaws.com,🌍 国外媒体
+ - DOMAIN,44wilhpljf.execute-api.ap-southeast-1.amazonaws.com,🌍 国外媒体
+ - DOMAIN,bcbolthboa-a.akamaihd.net,🌍 国外媒体
+ - DOMAIN,cf-images.ap-southeast-1.prod.boltdns.net,🌍 国外媒体
+ - DOMAIN,dai3fd1oh325y.cloudfront.net,🌍 国外媒体
+ - DOMAIN,hboasia1-i.akamaihd.net,🌍 国外媒体
+ - DOMAIN,hboasia2-i.akamaihd.net,🌍 国外媒体
+ - DOMAIN,hboasia3-i.akamaihd.net,🌍 国外媒体
+ - DOMAIN,hboasia4-i.akamaihd.net,🌍 国外媒体
+ - DOMAIN,hboasia5-i.akamaihd.net,🌍 国外媒体
+ - DOMAIN,players.brightcove.net,🌍 国外媒体
+ - DOMAIN,s3-ap-southeast-1.amazonaws.com,🌍 国外媒体
  - DOMAIN-SUFFIX,hbo.com,🌍 国外媒体
- - DOMAIN-SUFFIX,hboasia.com,🌍 国外媒体
  - DOMAIN-SUFFIX,hbogo.com,🌍 国外媒体
  - DOMAIN-SUFFIX,hbogoasia.com,🌍 国外媒体
  - DOMAIN-SUFFIX,hbogoasia.hk,🌍 国外媒体
  - DOMAIN-SUFFIX,hbomax.com,🌍 国外媒体
  - DOMAIN-SUFFIX,hbonow.com,🌍 国外媒体
- - DOMAIN-SUFFIX,manifest.prod.boltdns.net,🌍 国外媒体
- - DOMAIN-SUFFIX,s3-ap-southeast-1.amazonaws.com,🌍 国外媒体
  - DOMAIN,44wilhpljf.execute-api.ap-southeast-1.amazonaws.com,🌍 国外媒体
  - DOMAIN,bcbolthboa-a.akamaihd.net,🌍 国外媒体
  - DOMAIN,cf-images.ap-southeast-1.prod.boltdns.net,🌍 国外媒体
@@ -3412,6 +3516,8 @@ rules:
  - DOMAIN,mytvsuperlimited.sc.omtrdc.net,🌍 国外媒体
  - DOMAIN-SUFFIX,mytvsuper.com,🌍 国外媒体
  - DOMAIN-SUFFIX,tvb.com,🌍 国外媒体
+ - DOMAIN-KEYWORD,dualstack.apiproxy-device-prod-nlb-,🌍 国外媒体
+ - DOMAIN-KEYWORD,dualstack.ichnaea-web-,🌍 国外媒体
  - DOMAIN,netflix.com.edgesuite.net,🌍 国外媒体
  - DOMAIN-SUFFIX,fast.com,🌍 国外媒体
  - DOMAIN-SUFFIX,netflix.com,🌍 国外媒体
@@ -3454,7 +3560,6 @@ rules:
  - DOMAIN-SUFFIX,dmc.nico,🌍 国外媒体
  - DOMAIN-SUFFIX,nicovideo.jp,🌍 国外媒体
  - DOMAIN-SUFFIX,nimg.jp,🌍 国外媒体
- - DOMAIN-SUFFIX,socdm.com,🌍 国外媒体
  - DOMAIN-SUFFIX,pbs.org,🌍 国外媒体
  - DOMAIN-SUFFIX,pandora.com,🌍 国外媒体
  - DOMAIN-SUFFIX,phncdn.com,🌍 国外媒体
@@ -3765,6 +3870,24 @@ rules:
  - DOMAIN-SUFFIX,ytimg.com,🚀 节点选择
  - IP-CIDR,74.125.0.0/16,🚀 节点选择,no-resolve
  - IP-CIDR,173.194.0.0/16,🚀 节点选择,no-resolve
+ - IP-CIDR,120.232.181.162/32,🚀 节点选择,no-resolve
+ - IP-CIDR,120.241.147.226/32,🚀 节点选择,no-resolve
+ - IP-CIDR,120.253.253.226/32,🚀 节点选择,no-resolve
+ - IP-CIDR,120.253.255.162/32,🚀 节点选择,no-resolve
+ - IP-CIDR,120.253.255.34/32,🚀 节点选择,no-resolve
+ - IP-CIDR,120.253.255.98/32,🚀 节点选择,no-resolve
+ - IP-CIDR,180.163.150.162/32,🚀 节点选择,no-resolve
+ - IP-CIDR,180.163.150.34/32,🚀 节点选择,no-resolve
+ - IP-CIDR,180.163.151.162/32,🚀 节点选择,no-resolve
+ - IP-CIDR,180.163.151.34/32,🚀 节点选择,no-resolve
+ - IP-CIDR,203.208.39.0/24,🚀 节点选择,no-resolve
+ - IP-CIDR,203.208.40.0/24,🚀 节点选择,no-resolve
+ - IP-CIDR,203.208.41.0/24,🚀 节点选择,no-resolve
+ - IP-CIDR,203.208.43.0/24,🚀 节点选择,no-resolve
+ - IP-CIDR,203.208.50.0/24,🚀 节点选择,no-resolve
+ - IP-CIDR,220.181.174.162/32,🚀 节点选择,no-resolve
+ - IP-CIDR,220.181.174.226/32,🚀 节点选择,no-resolve
+ - IP-CIDR,220.181.174.34/32,🚀 节点选择,no-resolve
  - DOMAIN-SUFFIX,cdninstagram.com,🚀 节点选择
  - DOMAIN-SUFFIX,instagram.com,🚀 节点选择
  - DOMAIN-SUFFIX,instagr.am,🚀 节点选择
