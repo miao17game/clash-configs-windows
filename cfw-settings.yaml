@@ -12,6 +12,7 @@ mixinCode: |-
       'DOMAIN-SUFFIX,jinkela.red,🎯 全球直连', // 梯子
       'DOMAIN-SUFFIX,reddit.com,🌍 国外媒体',
       'DOMAIN-SUFFIX,redditstatic.com,🌍 国外媒体',
+      'DOMAIN-SUFFIX,redditmedia.com,🌍 国外媒体',
     ];
     return { ...content, rules };
   }
