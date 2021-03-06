@@ -6,13 +6,13 @@ mixinCode: |-
   module.exports.parse = ({ content, name, url }, { yaml, axios, notify }) => {
     const rules = [
       ...content.rules,
-      'DOMAIN-SUFFIX,qima-inc.com,🎯 全球直连', // 公司内网
-      'DOMAIN-SUFFIX,delivery.mp.microsoft.com,🎯 全球直连', // 应用商店智能分发
-      'DOMAIN-SUFFIX,xvcf1.xboxlive.com,🎯 全球直连', // xbox下载
-      'DOMAIN-SUFFIX,jinkela.red,🎯 全球直连', // 梯子
-      'DOMAIN-SUFFIX,reddit.com,🌍 国外媒体',
-      'DOMAIN-SUFFIX,redditstatic.com,🌍 国外媒体',
-      'DOMAIN-SUFFIX,redditmedia.com,🌍 国外媒体',
+      'DOMAIN-SUFFIX,qima-inc.com,🚀直接连接', // 公司内网
+      'DOMAIN-SUFFIX,delivery.mp.microsoft.com,🚀直接连接', // 应用商店智能分发
+      'DOMAIN-SUFFIX,xvcf1.xboxlive.com,🚀直接连接', // xbox下载
+      'DOMAIN-SUFFIX,jinkela.red,🚀直接连接', // 梯子
+      // 'DOMAIN-SUFFIX,reddit.com,🌍 国外媒体',
+      // 'DOMAIN-SUFFIX,redditstatic.com,🌍 国外媒体',
+      // 'DOMAIN-SUFFIX,redditmedia.com,🌍 国外媒体',
     ];
     return { ...content, rules };
   }
@@ -20,3 +20,5 @@ showNewVersionIcon: true
 editor: 1
 hideAfterStartup: true
 randomControllerPort: true
+mixinText: |
+  mixin: # object
