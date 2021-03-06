@@ -1,29 +1,36 @@
+#!MANAGED-CONFIG https://jinkela.red/link/PyGoQIzZBf5SP2S1?clash=1
+
+#---------------------------------------------------#
+## 上次更新于：2021-03-06 06:12:04
+#---------------------------------------------------#
+
 port: 7890
 socks-port: 7891
 redir-port: 7892
 allow-lan: false
 mode: rule
 log-level: silent
-external-controller: 0.0.0.0:9090
-secret: ""
+external-controller: '0.0.0.0:9090'
+secret: ''
 dns:
   enable: true
   ipv6: false
-  listen: 0.0.0.0:53
+  listen: '0.0.0.0:53'
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   nameserver:
     - 114.114.114.114
-    - tcp://223.5.5.5
+    - 'tcp://223.5.5.5'
   fallback:
-    - tls://223.5.5.5:853
-    - https://223.5.5.5/dns-query
+    - 'tls://223.5.5.5:853'
+    - 'https://223.5.5.5/dns-query'
   fallback-filter:
     geoip: true
     ipcidr:
       - 240.0.0.0/4
 proxies:
-  - name: IEPL专线 粤新03 入口#1 | 4x NF
+  -
+    name: 'IEPL专线 粤新03 入口#1 | 4x NF'
     type: vmess
     server: iplc01.cncm.lay168.net
     port: 9041
@@ -35,7 +42,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: sg03.li.nbsd.us
-  - name: IEPL专线 粤新03 入口#2 | 4x NF
+  -
+    name: 'IEPL专线 粤新03 入口#2 | 4x NF'
     type: vmess
     server: iplc02.cncm.lay168.net
     port: 9041
@@ -47,7 +55,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: sg03.li.nbsd.us
-  - name: IEPL专线 粤新03 入口#3 | 4x NF
+  -
+    name: 'IEPL专线 粤新03 入口#3 | 4x NF'
     type: vmess
     server: iplc03.cncm.lay168.net
     port: 9041
@@ -59,7 +68,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: sg03.li.nbsd.us
-  - name: IEPL专线 粤新03 入口#4 | 4x NF
+  -
+    name: 'IEPL专线 粤新03 入口#4 | 4x NF'
     type: vmess
     server: iplc04.cncm.lay168.net
     port: 9041
@@ -71,7 +81,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: sg03.li.nbsd.us
-  - name: IEPL专线 粤新03 入口#5 | 4x NF
+  -
+    name: 'IEPL专线 粤新03 入口#5 | 4x NF'
     type: vmess
     server: iplc05.cncm.lay168.net
     port: 9041
@@ -83,7 +94,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: sg03.li.nbsd.us
-  - name: IEPL专线 粤日04 入口#1 | 4x NF
+  -
+    name: 'IEPL专线 粤日04 入口#1 | 4x NF'
     type: vmess
     server: iplc01.cncm.lay168.net
     port: 9011
@@ -95,7 +107,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: jp04.li.nbsd.us
-  - name: IEPL专线 粤日04 入口#2 | 4x NF
+  -
+    name: 'IEPL专线 粤日04 入口#2 | 4x NF'
     type: vmess
     server: iplc02.cncm.lay168.net
     port: 9011
@@ -107,7 +120,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: jp04.li.nbsd.us
-  - name: IEPL专线 粤日04 入口#3 | 4x NF
+  -
+    name: 'IEPL专线 粤日04 入口#3 | 4x NF'
     type: vmess
     server: iplc03.cncm.lay168.net
     port: 9011
@@ -119,7 +133,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: jp04.li.nbsd.us
-  - name: IEPL专线 粤日04 入口#4 | 4x NF
+  -
+    name: 'IEPL专线 粤日04 入口#4 | 4x NF'
     type: vmess
     server: iplc04.cncm.lay168.net
     port: 9011
@@ -131,7 +146,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: jp04.li.nbsd.us
-  - name: IEPL专线 粤日04 入口#5 | 4x NF
+  -
+    name: 'IEPL专线 粤日04 入口#5 | 4x NF'
     type: vmess
     server: iplc05.cncm.lay168.net
     port: 9011
@@ -143,7 +159,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: jp04.li.nbsd.us
-  - name: IEPL专线 粤港03 入口#1 | 4x NF
+  -
+    name: 'IEPL专线 粤港03 入口#1 | 4x NF'
     type: vmess
     server: iplc01.cncm.lay168.net
     port: 9021
@@ -155,7 +172,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: hkbn.vds.nbsd.us
-  - name: IEPL专线 粤港03 入口#2 | 4x NF
+  -
+    name: 'IEPL专线 粤港03 入口#2 | 4x NF'
     type: vmess
     server: iplc02.cncm.lay168.net
     port: 9021
@@ -167,7 +185,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: hkbn.vds.nbsd.us
-  - name: IEPL专线 粤港03 入口#3 | 4x NF
+  -
+    name: 'IEPL专线 粤港03 入口#3 | 4x NF'
     type: vmess
     server: iplc03.cncm.lay168.net
     port: 9021
@@ -179,7 +198,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: hkbn.vds.nbsd.us
-  - name: IEPL专线 粤港03 入口#4 | 4x NF
+  -
+    name: 'IEPL专线 粤港03 入口#4 | 4x NF'
     type: vmess
     server: iplc04.cncm.lay168.net
     port: 9021
@@ -191,7 +211,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: hkbn.vds.nbsd.us
-  - name: IEPL专线 粤港03 入口#5 | 4x NF
+  -
+    name: 'IEPL专线 粤港03 入口#5 | 4x NF'
     type: vmess
     server: iplc05.cncm.lay168.net
     port: 9021
@@ -203,7 +224,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: hkbn.vds.nbsd.us
-  - name: IEPL专线 粤美02 入口#1 | 4x NF
+  -
+    name: 'IEPL专线 粤美02 入口#1 | 4x NF'
     type: vmess
     server: iplc01.cncm.lay168.net
     port: 9031
@@ -215,7 +237,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: us02.li.nbsd.us
-  - name: IEPL专线 粤美02 入口#2 | 4x NF
+  -
+    name: 'IEPL专线 粤美02 入口#2 | 4x NF'
     type: vmess
     server: iplc02.cncm.lay168.net
     port: 9031
@@ -227,7 +250,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: us02.li.nbsd.us
-  - name: IEPL专线 粤美02 入口#3 | 4x NF
+  -
+    name: 'IEPL专线 粤美02 入口#3 | 4x NF'
     type: vmess
     server: iplc03.cncm.lay168.net
     port: 9031
@@ -239,7 +263,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: us02.li.nbsd.us
-  - name: IEPL专线 粤美02 入口#4 | 4x NF
+  -
+    name: 'IEPL专线 粤美02 入口#4 | 4x NF'
     type: vmess
     server: iplc04.cncm.lay168.net
     port: 9031
@@ -251,7 +276,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: us02.li.nbsd.us
-  - name: IEPL专线 粤美02 入口#5 | 4x NF
+  -
+    name: 'IEPL专线 粤美02 入口#5 | 4x NF'
     type: vmess
     server: iplc05.cncm.lay168.net
     port: 9031
@@ -263,7 +289,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: us02.li.nbsd.us
-  - name: 俄罗斯01 入口#2 | 冷门 1.5x
+  -
+    name: '俄罗斯01 入口#2 | 冷门 1.5x'
     type: vmess
     server: gz02.mobile.lay168.net
     port: 61019
@@ -275,7 +302,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: ru01.jh.nbsd.us
-  - name: 俄罗斯01 入口#3 | 冷门 1.5x
+  -
+    name: '俄罗斯01 入口#3 | 冷门 1.5x'
     type: vmess
     server: cn.jscz-01.node.cyou
     port: 61019
@@ -287,7 +315,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: ru01.jh.nbsd.us
-  - name: 俄罗斯01 入口#4 | 冷门 1.5x
+  -
+    name: '俄罗斯01 入口#4 | 冷门 1.5x'
     type: vmess
     server: qd01.unicom.lay168.net
     port: 61019
@@ -299,7 +328,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: ru01.jh.nbsd.us
-  - name: 俄罗斯01 入口#5 | 冷门 1.5x
+  -
+    name: '俄罗斯01 入口#5 | 冷门 1.5x'
     type: vmess
     server: cn-east01.lay168.net
     port: 61019
@@ -311,7 +341,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: ru01.jh.nbsd.us
-  - name: 俄罗斯05 入口#1 | 冷门 1.3x
+  -
+    name: '俄罗斯05 入口#1 | 冷门 1.3x'
     type: vmess
     server: gz01.mobile.lay168.net
     port: 61042
@@ -323,7 +354,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: ru05.jh.nbsd.us
-  - name: 俄罗斯05 入口#2 | 冷门 1.3x
+  -
+    name: '俄罗斯05 入口#2 | 冷门 1.3x'
     type: vmess
     server: gz02.mobile.lay168.net
     port: 61042
@@ -335,7 +367,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: ru05.jh.nbsd.us
-  - name: 俄罗斯05 入口#3 | 冷门 1.3x
+  -
+    name: '俄罗斯05 入口#3 | 冷门 1.3x'
     type: vmess
     server: cn.jscz-01.node.cyou
     port: 61042
@@ -347,7 +380,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: ru05.jh.nbsd.us
-  - name: 俄罗斯05 入口#4 | 冷门 1.3x
+  -
+    name: '俄罗斯05 入口#4 | 冷门 1.3x'
     type: vmess
     server: qd01.unicom.lay168.net
     port: 61042
@@ -359,7 +393,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: ru05.jh.nbsd.us
-  - name: 俄罗斯05 入口#5 | 冷门 1.3x
+  -
+    name: '俄罗斯05 入口#5 | 冷门 1.3x'
     type: vmess
     server: cn-east01.lay168.net
     port: 61042
@@ -371,7 +406,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: ru05.jh.nbsd.us
-  - name: 印度01 入口#1 | 1.5x
+  -
+    name: '印度01 入口#1 | 1.5x'
     type: vmess
     server: gz01.mobile.lay168.net
     port: 61026
@@ -383,7 +419,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: in01.aws.jinkela.icu
-  - name: 印度01 入口#2 | 1.5x
+  -
+    name: '印度01 入口#2 | 1.5x'
     type: vmess
     server: gz02.mobile.lay168.net
     port: 61026
@@ -395,7 +432,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: in01.aws.jinkela.icu
-  - name: 印度01 入口#3 | 1.5x
+  -
+    name: '印度01 入口#3 | 1.5x'
     type: vmess
     server: cn.jscz-01.node.cyou
     port: 61026
@@ -407,7 +445,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: in01.aws.jinkela.icu
-  - name: 印度01 入口#4 | 1.5x
+  -
+    name: '印度01 入口#4 | 1.5x'
     type: vmess
     server: qd01.unicom.lay168.net
     port: 61026
@@ -419,7 +458,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: in01.aws.jinkela.icu
-  - name: 印度01 入口#5 | 1.5x
+  -
+    name: '印度01 入口#5 | 1.5x'
     type: vmess
     server: cn-east01.lay168.net
     port: 61026
@@ -431,7 +471,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: in01.li.jinkela.icu
-  - name: 印度01 香港转发 | 1.5x
+  -
+    name: '印度01 香港转发 | 1.5x'
     type: vmess
     server: hk02.az.lay168.net
     port: 61026
@@ -443,7 +484,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: in01.aws.jinkela.icu
-  - name: 台湾02 入口#1 | 原生 1.5x
+  -
+    name: '台湾02 入口#1 | 原生 1.5x'
     type: vmess
     server: gz01.mobile.lay168.net
     port: 61025
@@ -455,7 +497,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: tw02.pqs.lay168.net
-  - name: 台湾02 入口#2 | 原生 1.5x
+  -
+    name: '台湾02 入口#2 | 原生 1.5x'
     type: vmess
     server: gz02.mobile.lay168.net
     port: 61025
@@ -467,7 +510,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: tw02.pqs.lay168.net
-  - name: 台湾02 入口#3 | 原生 1.5x
+  -
+    name: '台湾02 入口#3 | 原生 1.5x'
     type: vmess
     server: cn.jscz-01.node.cyou
     port: 61025
@@ -479,7 +523,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: tw02.pqs.lay168.net
-  - name: 台湾02 入口#4 | 原生 1.5x
+  -
+    name: '台湾02 入口#4 | 原生 1.5x'
     type: vmess
     server: qd01.unicom.lay168.net
     port: 61025
@@ -491,7 +536,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: tw02.pqs.lay168.net
-  - name: 台湾02 入口#5 | 原生 1.5x
+  -
+    name: '台湾02 入口#5 | 原生 1.5x'
     type: vmess
     server: cn-east01.lay168.net
     port: 61025
@@ -503,7 +549,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: tw02.pqs.lay168.net
-  - name: 台湾02 香港转发 | 原生 1.5x
+  -
+    name: '台湾02 香港转发 | 原生 1.5x'
     type: vmess
     server: hk02.az.lay168.net
     port: 61025
@@ -515,7 +562,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: tw02.pqs.lay168.net
-  - name: 土耳其01 入口#1 | 冷门 2.0x
+  -
+    name: '土耳其01 入口#1 | 冷门 2.0x'
     type: vmess
     server: gz01.mobile.lay168.net
     port: 61028
@@ -527,7 +575,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: tr01.htigger.jinkela.icu
-  - name: 土耳其01 入口#2 | 冷门 2.0x
+  -
+    name: '土耳其01 入口#2 | 冷门 2.0x'
     type: vmess
     server: gz02.mobile.lay168.net
     port: 61028
@@ -539,7 +588,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: tr01.htigger.jinkela.icu
-  - name: 土耳其01 入口#3 | 冷门 2.0x
+  -
+    name: '土耳其01 入口#3 | 冷门 2.0x'
     type: vmess
     server: cn.jscz-01.node.cyou
     port: 61028
@@ -551,7 +601,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: tr01.htigger.jinkela.icu
-  - name: 土耳其01 入口#4 | 冷门 2.0x
+  -
+    name: '土耳其01 入口#4 | 冷门 2.0x'
     type: vmess
     server: qd01.unicom.lay168.net
     port: 61028
@@ -563,7 +614,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: tr01.htigger.jinkela.icu
-  - name: 土耳其01 香港转发 | 冷门 2.0x
+  -
+    name: '土耳其01 香港转发 | 冷门 2.0x'
     type: vmess
     server: hk02.az.lay168.net
     port: 61028
@@ -575,7 +627,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: tr01.htigger.jinkela.icu
-  - name: 巴西01 入口#1 | 冷门 3.0x
+  -
+    name: '巴西01 入口#1 | 冷门 3.0x'
     type: vmess
     server: gz01.mobile.lay168.net
     port: 61041
@@ -587,7 +640,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: br01.gcore.jinkela.icu
-  - name: 巴西01 入口#2 | 冷门 3.0x
+  -
+    name: '巴西01 入口#2 | 冷门 3.0x'
     type: vmess
     server: gz02.mobile.lay168.net
     port: 61041
@@ -599,7 +653,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: br01.gcore.jinkela.icu
-  - name: 巴西01 入口#3 | 冷门 3.0x
+  -
+    name: '巴西01 入口#3 | 冷门 3.0x'
     type: vmess
     server: cn.jscz-01.node.cyou
     port: 61041
@@ -611,7 +666,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: br01.gcore.jinkela.icu
-  - name: 巴西01 香港转发 | 冷门 3.0x
+  -
+    name: '巴西01 香港转发 | 冷门 3.0x'
     type: vmess
     server: hk02.az.lay168.net
     port: 61041
@@ -623,7 +679,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: br01.gcore.jinkela.icu
-  - name: 德国01 入口#1 | 冷门 1.2x
+  -
+    name: '德国01 入口#1 | 冷门 1.2x'
     type: vmess
     server: gz01.mobile.lay168.net
     port: 61008
@@ -635,7 +692,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: de01.hetzner.jinkela.icu
-  - name: 德国01 入口#2 | 冷门 1.2x
+  -
+    name: '德国01 入口#2 | 冷门 1.2x'
     type: vmess
     server: gz02.mobile.lay168.net
     port: 61008
@@ -647,7 +705,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: de01.hetzner.jinkela.icu
-  - name: 德国01 入口#3 | 冷门 1.2x
+  -
+    name: '德国01 入口#3 | 冷门 1.2x'
     type: vmess
     server: cn.jscz-01.node.cyou
     port: 61008
@@ -659,7 +718,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: de01.hetzner.jinkela.icu
-  - name: 德国01 入口#5 | 冷门 1.2x
+  -
+    name: '德国01 入口#5 | 冷门 1.2x'
     type: vmess
     server: ah.cncu.lay168.net
     port: 61008
@@ -671,7 +731,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: de01.hetzner.jinkela.icu
-  - name: 德国01 香港转发 | 冷门 1.2x
+  -
+    name: '德国01 香港转发 | 冷门 1.2x'
     type: vmess
     server: hk02.az.lay168.net
     port: 61008
@@ -683,7 +744,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: de01.hetzner.jinkela.icu
-  - name: 新加坡01 入口#1 | 原生 1.5x
+  -
+    name: '新加坡01 入口#1 | 原生 1.5x'
     type: vmess
     server: gz01.mobile.lay168.net
     port: 61013
@@ -695,7 +757,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: sg01.az.jinkela.icu
-  - name: 新加坡01 入口#2 | 原生 1.5x
+  -
+    name: '新加坡01 入口#2 | 原生 1.5x'
     type: vmess
     server: gz02.mobile.lay168.net
     port: 61013
@@ -707,7 +770,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: sg01.az.jinkela.icu
-  - name: 新加坡01 入口#3 | 原生 1.5x
+  -
+    name: '新加坡01 入口#3 | 原生 1.5x'
     type: vmess
     server: cn.jscz-01.node.cyou
     port: 61013
@@ -719,7 +783,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: sg01.az.jinkela.icu
-  - name: 新加坡01 入口#4 | 原生 1.5x
+  -
+    name: '新加坡01 入口#4 | 原生 1.5x'
     type: vmess
     server: qd01.unicom.lay168.net
     port: 61013
@@ -731,7 +796,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: sg01.az.jinkela.icu
-  - name: 新加坡01 入口#5 | 原生 1.5x
+  -
+    name: '新加坡01 入口#5 | 原生 1.5x'
     type: vmess
     server: cn-east01.lay168.net
     port: 61013
@@ -743,7 +809,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: sg01.az.jinkela.icu
-  - name: 新加坡01 香港转发 | 原生 1.5x
+  -
+    name: '新加坡01 香港转发 | 原生 1.5x'
     type: vmess
     server: hk02.az.lay168.net
     port: 61013
@@ -755,7 +822,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: sg01.az.jinkela.icu
-  - name: 新加坡02 入口#1 | 原生 1.5x
+  -
+    name: '新加坡02 入口#1 | 原生 1.5x'
     type: vmess
     server: gz01.mobile.lay168.net
     port: 61009
@@ -767,7 +835,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: sg02.li.jinkela.icu
-  - name: 新加坡02 入口#2 | 原生 1.5x
+  -
+    name: '新加坡02 入口#2 | 原生 1.5x'
     type: vmess
     server: gz02.mobile.lay168.net
     port: 61009
@@ -779,7 +848,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: sg02.li.jinkela.icu
-  - name: 新加坡02 入口#3 | 原生 1.5x
+  -
+    name: '新加坡02 入口#3 | 原生 1.5x'
     type: vmess
     server: cn.jscz-01.node.cyou
     port: 61009
@@ -791,7 +861,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: sg02.li.jinkela.icu
-  - name: 新加坡02 入口#4 | 原生 1.5x
+  -
+    name: '新加坡02 入口#4 | 原生 1.5x'
     type: vmess
     server: qd01.unicom.lay168.net
     port: 61009
@@ -803,7 +874,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: sg02.li.jinkela.icu
-  - name: 新加坡02 入口#5 | 原生 1.5x
+  -
+    name: '新加坡02 入口#5 | 原生 1.5x'
     type: vmess
     server: cn-east01.lay168.net
     port: 61009
@@ -815,7 +887,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: sg02.li.jinkela.icu
-  - name: 新加坡04 入口#1 | NF 1.5x
+  -
+    name: '新加坡04 入口#1 | NF 1.5x'
     type: vmess
     server: gz01.mobile.lay168.net
     port: 61045
@@ -827,7 +900,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: sg04.jinkela.icu
-  - name: 新加坡04 入口#2 | NF 1.5x
+  -
+    name: '新加坡04 入口#2 | NF 1.5x'
     type: vmess
     server: gz02.mobile.lay168.net
     port: 61045
@@ -839,7 +913,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: sg04.jinkela.icu
-  - name: 新加坡04 入口#3 | NF 1.5x
+  -
+    name: '新加坡04 入口#3 | NF 1.5x'
     type: vmess
     server: cn.jscz-01.node.cyou
     port: 61045
@@ -851,7 +926,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: sg04.jinkela.icu
-  - name: 新加坡04 入口#4 | NF 1.5x
+  -
+    name: '新加坡04 入口#4 | NF 1.5x'
     type: vmess
     server: qd01.unicom.lay168.net
     port: 61045
@@ -863,7 +939,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: sg04.jinkela.icu
-  - name: 新加坡04 入口#5 | NF 1.5x
+  -
+    name: '新加坡04 入口#5 | NF 1.5x'
     type: vmess
     server: ah.cncu.lay168.net
     port: 61045
@@ -875,7 +952,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: sg04.jinkela.icu
-  - name: 日本01 入口#1 | NF 1.5x
+  -
+    name: '日本01 入口#1 | NF 1.5x'
     type: vmess
     server: gz01.mobile.lay168.net
     port: 61012
@@ -887,7 +965,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: jp01.az.jinkela.icu
-  - name: 日本01 入口#2 | NF 1.5x
+  -
+    name: '日本01 入口#2 | NF 1.5x'
     type: vmess
     server: gz02.mobile.lay168.net
     port: 61012
@@ -899,7 +978,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: jp01.az.jinkela.icu
-  - name: 日本01 入口#3 | NF 1.5x
+  -
+    name: '日本01 入口#3 | NF 1.5x'
     type: vmess
     server: cn.jscz-01.node.cyou
     port: 61012
@@ -911,7 +991,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: jp01.az.jinkela.icu
-  - name: 日本01 入口#4 | NF 1.5x
+  -
+    name: '日本01 入口#4 | NF 1.5x'
     type: vmess
     server: qd01.unicom.lay168.net
     port: 61012
@@ -923,7 +1004,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: jp01.az.jinkela.icu
-  - name: 日本01 入口#5 | NF 1.5x
+  -
+    name: '日本01 入口#5 | NF 1.5x'
     type: vmess
     server: cn-east01.lay168.net
     port: 61012
@@ -935,7 +1017,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: jp01.az.jinkela.icu
-  - name: 日本02 入口#1 | NF 1.5x
+  -
+    name: '日本02 入口#1 | NF 1.5x'
     type: vmess
     server: gz01.mobile.lay168.net
     port: 61017
@@ -947,7 +1030,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: jp02.li.jinkela.icu
-  - name: 日本02 入口#2 | NF 1.5x
+  -
+    name: '日本02 入口#2 | NF 1.5x'
     type: vmess
     server: gz02.mobile.lay168.net
     port: 61017
@@ -959,7 +1043,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: jp02.li.jinkela.icu
-  - name: 日本02 入口#3 | NF 1.5x
+  -
+    name: '日本02 入口#3 | NF 1.5x'
     type: vmess
     server: cn.jscz-01.node.cyou
     port: 61017
@@ -971,7 +1056,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: jp02.li.jinkela.icu
-  - name: 日本02 入口#4 | NF 1.5x
+  -
+    name: '日本02 入口#4 | NF 1.5x'
     type: vmess
     server: qd01.unicom.lay168.net
     port: 61017
@@ -983,7 +1069,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: jp02.li.jinkela.icu
-  - name: 日本02 入口#5 | NF 1.5x
+  -
+    name: '日本02 入口#5 | NF 1.5x'
     type: vmess
     server: cn-east01.lay168.net
     port: 61017
@@ -995,7 +1082,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: jp02.li.jinkela.icu
-  - name: 日本03 入口#1 | NF 1.5x
+  -
+    name: '日本03 入口#1 | NF 1.5x'
     type: vmess
     server: gz01.mobile.lay168.net
     port: 61038
@@ -1007,7 +1095,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: jp03.aws.jinkela.icu
-  - name: 日本03 入口#2 | NF 1.5x
+  -
+    name: '日本03 入口#2 | NF 1.5x'
     type: vmess
     server: gz02.mobile.lay168.net
     port: 61038
@@ -1019,7 +1108,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: jp03.aws.jinkela.icu
-  - name: 日本03 入口#3 | NF 1.5x
+  -
+    name: '日本03 入口#3 | NF 1.5x'
     type: vmess
     server: cn.jscz-01.node.cyou
     port: 61038
@@ -1031,7 +1121,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: jp03.aws.jinkela.icu
-  - name: 日本03 入口#4 | NF 1.5x
+  -
+    name: '日本03 入口#4 | NF 1.5x'
     type: vmess
     server: qd01.unicom.lay168.net
     port: 61038
@@ -1043,7 +1134,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: jp03.aws.jinkela.icu
-  - name: 日本03 入口#5 | NF 1.5x
+  -
+    name: '日本03 入口#5 | NF 1.5x'
     type: vmess
     server: cn-east01.lay168.net
     port: 61038
@@ -1055,7 +1147,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: jp03.aws.jinkela.icu
-  - name: 更多节点请购买-官网jinkela.wtf-白嫖-俄04
+  -
+    name: 更多节点请购买-官网jinkela.wtf-白嫖-俄04
     type: vmess
     server: ru04.jh.nbsd.us
     port: 80
@@ -1067,7 +1160,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: ru04.jh.nbsd.us
-  - name: 波兰01 入口#1 | 冷门 1.2x
+  -
+    name: '波兰01 入口#1 | 冷门 1.2x'
     type: vmess
     server: gz01.mobile.lay168.net
     port: 61039
@@ -1079,7 +1173,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: pl01.gcore.jinkela.icu
-  - name: 波兰01 入口#2 | 冷门 1.2x
+  -
+    name: '波兰01 入口#2 | 冷门 1.2x'
     type: vmess
     server: gz02.mobile.lay168.net
     port: 61039
@@ -1091,7 +1186,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: pl01.gcore.jinkela.icu
-  - name: 波兰01 入口#3 | 冷门 1.2x
+  -
+    name: '波兰01 入口#3 | 冷门 1.2x'
     type: vmess
     server: cn.jscz-01.node.cyou
     port: 61039
@@ -1103,7 +1199,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: pl01.gcore.jinkela.icu
-  - name: 波兰01 入口#4 | 冷门 1.2x
+  -
+    name: '波兰01 入口#4 | 冷门 1.2x'
     type: vmess
     server: qd01.unicom.lay168.net
     port: 61039
@@ -1115,7 +1212,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: pl01.gcore.jinkela.icu
-  - name: 波兰01 香港转发 | 冷门 1.2x
+  -
+    name: '波兰01 香港转发 | 冷门 1.2x'
     type: vmess
     server: hk02.az.lay168.net
     port: 61039
@@ -1127,7 +1225,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: pl01.gcore.jinkela.icu
-  - name: 澳洲01 入口#1 | 冷门 1.5x
+  -
+    name: '澳洲01 入口#1 | 冷门 1.5x'
     type: vmess
     server: gz01.mobile.lay168.net
     port: 61035
@@ -1139,7 +1238,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: au01.aws.jinkela.icu
-  - name: 澳洲01 入口#2 | 冷门 1.5x
+  -
+    name: '澳洲01 入口#2 | 冷门 1.5x'
     type: vmess
     server: gz02.mobile.lay168.net
     port: 61035
@@ -1151,7 +1251,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: au01.aws.jinkela.icu
-  - name: 澳洲01 入口#3 | 冷门 1.5x
+  -
+    name: '澳洲01 入口#3 | 冷门 1.5x'
     type: vmess
     server: cn.jscz-01.node.cyou
     port: 61035
@@ -1163,7 +1264,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: au01.aws.jinkela.icu
-  - name: 澳洲01 入口#5 | 冷门 1.5x
+  -
+    name: '澳洲01 入口#5 | 冷门 1.5x'
     type: vmess
     server: cn-east01.lay168.net
     port: 61035
@@ -1175,7 +1277,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: au01.aws.jinkela.icu
-  - name: 澳洲01 香港转发 | 冷门 1.5x
+  -
+    name: '澳洲01 香港转发 | 冷门 1.5x'
     type: vmess
     server: hk02.az.lay168.net
     port: 61035
@@ -1187,7 +1290,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: au01.aws.jinkela.icu
-  - name: 澳洲CDN | 实验 | 免费 | 1.0x | 请经常更新订阅
+  -
+    name: '澳洲CDN | 实验 | 免费 | 1.0x | 请经常更新订阅'
     type: vmess
     server: au01.az.pvpgames.net
     port: 80
@@ -1199,7 +1303,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: au01.az.pvpgames.net
-  - name: 美国01 入口01 | NF 1.5x
+  -
+    name: '美国01 入口01 | NF 1.5x'
     type: vmess
     server: gz01.mobile.lay168.net
     port: 61014
@@ -1211,7 +1316,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: us01.az.jinkela.icu
-  - name: 美国01 入口02 | NF 1.5x
+  -
+    name: '美国01 入口02 | NF 1.5x'
     type: vmess
     server: gz02.mobile.lay168.net
     port: 61014
@@ -1223,7 +1329,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: us01.az.jinkela.icu
-  - name: 美国01 入口03 | NF 1.5x
+  -
+    name: '美国01 入口03 | NF 1.5x'
     type: vmess
     server: cn.jscz-01.node.cyou
     port: 61014
@@ -1235,7 +1342,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: us01.az.jinkela.icu
-  - name: 美国01 入口04 | NF 1.5x
+  -
+    name: '美国01 入口04 | NF 1.5x'
     type: vmess
     server: qd01.unicom.lay168.net
     port: 61014
@@ -1247,7 +1355,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: us01.az.jinkela.icu
-  - name: 美国01 入口05 | NF 1.5x
+  -
+    name: '美国01 入口05 | NF 1.5x'
     type: vmess
     server: cn-east01.lay168.net
     port: 61014
@@ -1259,7 +1368,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: us01.az.jinkela.icu
-  - name: 美国03 入口#1 | 原生 1.5x
+  -
+    name: '美国03 入口#1 | 原生 1.5x'
     type: vmess
     server: gz01.mobile.lay168.net
     port: 61018
@@ -1271,7 +1381,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: us03.he.nbsd.us
-  - name: 美国03 入口#2 | 原生 1.5x
+  -
+    name: '美国03 入口#2 | 原生 1.5x'
     type: vmess
     server: gz02.mobile.lay168.net
     port: 61018
@@ -1283,7 +1394,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: us03.he.nbsd.us
-  - name: 美国03 入口#5 | 原生 1.5x
+  -
+    name: '美国03 入口#5 | 原生 1.5x'
     type: vmess
     server: cn-east01.lay168.net
     port: 61018
@@ -1295,7 +1407,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: us03.he.nbsd.us
-  - name: 美国03 香港转发 | 原生 1.5x
+  -
+    name: '美国03 香港转发 | 原生 1.5x'
     type: vmess
     server: hk02.az.lay168.net
     port: 61018
@@ -1307,7 +1420,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: us03.he.nbsd.us
-  - name: 美国04 入口#1 | 备用 1.3x
+  -
+    name: '美国04 入口#1 | 备用 1.3x'
     type: vmess
     server: gz01.mobile.lay168.net
     port: 61043
@@ -1319,7 +1433,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: us04.backup.jinkela.icu
-  - name: 美国04 入口#2 | 备用 1.3x
+  -
+    name: '美国04 入口#2 | 备用 1.3x'
     type: vmess
     server: gz02.mobile.lay168.net
     port: 61043
@@ -1331,7 +1446,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: us04.backup.jinkela.icu
-  - name: 美国04 入口#3 | 备用 1.3x
+  -
+    name: '美国04 入口#3 | 备用 1.3x'
     type: vmess
     server: cn.jscz-01.node.cyou
     port: 61043
@@ -1343,7 +1459,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: us04.backup.jinkela.icu
-  - name: 美国04 入口#4 | 备用 1.3x
+  -
+    name: '美国04 入口#4 | 备用 1.3x'
     type: vmess
     server: qd01.unicom.lay168.net
     port: 61043
@@ -1355,7 +1472,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: us04.backup.jinkela.icu
-  - name: 英国01 入口#1 | NF BBC Chan4 1.5x
+  -
+    name: '英国01 入口#1 | NF BBC Chan4 1.5x'
     type: vmess
     server: gz01.mobile.lay168.net
     port: 61021
@@ -1367,7 +1485,8 @@ proxies:
     ws-path: /video/mp4
     ws-headers:
       Host: uk01.az.jinkela.icu
-  - name: 英国01 入口#2 | NF BBC Chan4 1.5x
+  -
+    name: '英国01 入口#2 | NF BBC Chan4 1.5x'
     type: vmess
     server: gz02.mobile.lay168.net
     port: 61021
@@ -1379,7 +1498,8 @@ proxies:
     ws-path: /video/mp4
     ws-headers:
       Host: uk01.az.jinkela.icu
-  - name: 英国01 入口#3 | NF BBC Chan4 1.5x
+  -
+    name: '英国01 入口#3 | NF BBC Chan4 1.5x'
     type: vmess
     server: cn.jscz-01.node.cyou
     port: 61021
@@ -1391,7 +1511,8 @@ proxies:
     ws-path: /video/mp4
     ws-headers:
       Host: uk01.az.jinkela.icu
-  - name: 英国01 入口#4 | NF BBC Chan4 1.5x
+  -
+    name: '英国01 入口#4 | NF BBC Chan4 1.5x'
     type: vmess
     server: qd01.unicom.lay168.net
     port: 61021
@@ -1403,7 +1524,8 @@ proxies:
     ws-path: /video/mp4
     ws-headers:
       Host: uk01.az.jinkela.icu
-  - name: 英国01 香港转发 | NF BBC Chan4 1.5x
+  -
+    name: '英国01 香港转发 | NF BBC Chan4 1.5x'
     type: vmess
     server: hk02.az.lay168.net
     port: 61021
@@ -1415,7 +1537,8 @@ proxies:
     ws-path: /video/mp4
     ws-headers:
       Host: uk01.az.jinkela.icu
-  - name: 荷兰01 入口#1 | 冷门 1.2x
+  -
+    name: '荷兰01 入口#1 | 冷门 1.2x'
     type: vmess
     server: gz01.mobile.lay168.net
     port: 61037
@@ -1427,7 +1550,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: nl01.gcore.jinkela.icu
-  - name: 荷兰01 入口#2 | 冷门 1.2x
+  -
+    name: '荷兰01 入口#2 | 冷门 1.2x'
     type: vmess
     server: gz02.mobile.lay168.net
     port: 61037
@@ -1439,7 +1563,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: nl01.gcore.jinkela.icu
-  - name: 荷兰01 入口#3 | 冷门 1.2x
+  -
+    name: '荷兰01 入口#3 | 冷门 1.2x'
     type: vmess
     server: cn.jscz-01.node.cyou
     port: 61037
@@ -1451,7 +1576,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: nl01.gcore.jinkela.icu
-  - name: 荷兰01 入口#5 | 冷门 1.2x
+  -
+    name: '荷兰01 入口#5 | 冷门 1.2x'
     type: vmess
     server: cn-east01.lay168.net
     port: 61037
@@ -1463,7 +1589,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: nl01.gcore.jinkela.icu
-  - name: 荷兰01 香港转发 | 冷门 1.2x
+  -
+    name: '荷兰01 香港转发 | 冷门 1.2x'
     type: vmess
     server: hk02.az.lay168.net
     port: 61037
@@ -1475,7 +1602,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: nl01.gcore.jinkela.icu
-  - name: 阿根廷01 入口#1 | 冷门 低速 2.0x
+  -
+    name: '阿根廷01 入口#1 | 冷门 低速 2.0x'
     type: vmess
     server: gz01.mobile.lay168.net
     port: 61029
@@ -1487,7 +1615,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: ar01.don.jinkela.icu
-  - name: 阿根廷01 入口#2 | 冷门 低速 2.0x
+  -
+    name: '阿根廷01 入口#2 | 冷门 低速 2.0x'
     type: vmess
     server: gz02.mobile.lay168.net
     port: 61029
@@ -1499,7 +1628,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: ar01.don.jinkela.icu
-  - name: 阿根廷01 入口#3 | 冷门 低速 2.0x
+  -
+    name: '阿根廷01 入口#3 | 冷门 低速 2.0x'
     type: vmess
     server: cn.jscz-01.node.cyou
     port: 61029
@@ -1511,7 +1641,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: ar01.don.jinkela.icu
-  - name: 阿根廷01 香港转发 | 冷门 低速 2.0x
+  -
+    name: '阿根廷01 香港转发 | 冷门 低速 2.0x'
     type: vmess
     server: hk02.az.lay168.net
     port: 61029
@@ -1523,7 +1654,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: ar01.don.jinkela.icu
-  - name: 韩国01 入口#1 | 1.5x
+  -
+    name: '韩国01 入口#1 | 1.5x'
     type: vmess
     server: gz01.mobile.lay168.net
     port: 61004
@@ -1535,7 +1667,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: kr01.jinkela.icu
-  - name: 韩国01 入口#2 | 1.5x
+  -
+    name: '韩国01 入口#2 | 1.5x'
     type: vmess
     server: gz02.mobile.lay168.net
     port: 61004
@@ -1547,7 +1680,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: kr01.jinkela.icu
-  - name: 韩国01 入口#4 | 1.5x
+  -
+    name: '韩国01 入口#4 | 1.5x'
     type: vmess
     server: qd01.unicom.lay168.net
     port: 61004
@@ -1559,7 +1693,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: kr01.jinkela.icu
-  - name: 韩国01 入口#5 | 1.5x
+  -
+    name: '韩国01 入口#5 | 1.5x'
     type: vmess
     server: cn-east01.lay168.net
     port: 61004
@@ -1571,7 +1706,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: kr01.jinkela.icu
-  - name: 韩国01 香港转发 | 1.5x
+  -
+    name: '韩国01 香港转发 | 1.5x'
     type: vmess
     server: hk02.az.lay168.net
     port: 61004
@@ -1583,7 +1719,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: kr01.jinkela.icu
-  - name: 香港01 入口#1 | NF 1.5x
+  -
+    name: '香港01 入口#1 | NF 1.5x'
     type: vmess
     server: gz01.mobile.lay168.net
     port: 61046
@@ -1595,7 +1732,8 @@ proxies:
     ws-path: /cctv
     ws-headers:
       Host: hk01.jinkela.icu
-  - name: 香港01 入口#2 | NF 1.5x
+  -
+    name: '香港01 入口#2 | NF 1.5x'
     type: vmess
     server: gz02.mobile.lay168.net
     port: 61046
@@ -1607,7 +1745,8 @@ proxies:
     ws-path: /cctv
     ws-headers:
       Host: hk01.jinkela.icu
-  - name: 香港01 入口#3 | NF 1.5x
+  -
+    name: '香港01 入口#3 | NF 1.5x'
     type: vmess
     server: cn.jscz-01.node.cyou
     port: 61046
@@ -1619,7 +1758,8 @@ proxies:
     ws-path: /cctv
     ws-headers:
       Host: hk01.jinkela.icu
-  - name: 香港01 入口#4 | NF 1.5x
+  -
+    name: '香港01 入口#4 | NF 1.5x'
     type: vmess
     server: qd01.unicom.lay168.net
     port: 61046
@@ -1631,7 +1771,8 @@ proxies:
     ws-path: /cctv
     ws-headers:
       Host: hk01.jinkela.icu
-  - name: 香港01 入口#5 | NF 1.5x
+  -
+    name: '香港01 入口#5 | NF 1.5x'
     type: vmess
     server: cn-east01.lay168.net
     port: 61046
@@ -1643,7 +1784,8 @@ proxies:
     ws-path: /cctv
     ws-headers:
       Host: hk01.jinkela.icu
-  - name: 香港02 入口#1 | NF 1.5x
+  -
+    name: '香港02 入口#1 | NF 1.5x'
     type: vmess
     server: gz01.mobile.lay168.net
     port: 61022
@@ -1655,7 +1797,8 @@ proxies:
     ws-path: /webcam
     ws-headers:
       Host: hk02-jinkela.ddns168.com
-  - name: 香港02 入口#2 | NF 1.5x
+  -
+    name: '香港02 入口#2 | NF 1.5x'
     type: vmess
     server: gz02.mobile.lay168.net
     port: 61022
@@ -1667,7 +1810,8 @@ proxies:
     ws-path: /webcam
     ws-headers:
       Host: hk02-jinkela.ddns168.com
-  - name: 香港02 入口#3 | NF 1.5x
+  -
+    name: '香港02 入口#3 | NF 1.5x'
     type: vmess
     server: cn.jscz-01.node.cyou
     port: 61022
@@ -1679,7 +1823,8 @@ proxies:
     ws-path: /webcam
     ws-headers:
       Host: hk02-jinkela.ddns168.com
-  - name: 香港02 入口#4 | NF 1.5x
+  -
+    name: '香港02 入口#4 | NF 1.5x'
     type: vmess
     server: qd01.unicom.lay168.net
     port: 61022
@@ -1691,7 +1836,8 @@ proxies:
     ws-path: /webcam
     ws-headers:
       Host: hk02-jinkela.ddns168.com
-  - name: 香港02 入口#5 | NF 1.5x
+  -
+    name: '香港02 入口#5 | NF 1.5x'
     type: vmess
     server: cn-east01.lay168.net
     port: 61022
@@ -1703,7 +1849,8 @@ proxies:
     ws-path: /webcam
     ws-headers:
       Host: hk02-jinkela.ddns168.com
-  - name: 香港03 入口#1 | NF 1.5x
+  -
+    name: '香港03 入口#1 | NF 1.5x'
     type: vmess
     server: gz01.mobile.lay168.net
     port: 61031
@@ -1715,7 +1862,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: hk03.az.jinkela.icu
-  - name: 香港03 入口#2 | NF 1.5x
+  -
+    name: '香港03 入口#2 | NF 1.5x'
     type: vmess
     server: gz02.mobile.lay168.net
     port: 61031
@@ -1727,7 +1875,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: hk03.az.jinkela.icu
-  - name: 香港03 入口#3 | NF 1.5x
+  -
+    name: '香港03 入口#3 | NF 1.5x'
     type: vmess
     server: cn.jscz-01.node.cyou
     port: 61031
@@ -1739,7 +1888,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: hk03.az.jinkela.icu
-  - name: 香港03 入口#4 | NF 1.5x
+  -
+    name: '香港03 入口#4 | NF 1.5x'
     type: vmess
     server: qd01.unicom.lay168.net
     port: 61031
@@ -1751,7 +1901,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: hk03.az.jinkela.icu
-  - name: 香港03 入口#5 | NF 1.5x
+  -
+    name: '香港03 入口#5 | NF 1.5x'
     type: vmess
     server: cn-east01.lay168.net
     port: 61031
@@ -1763,7 +1914,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: hk03.az.jinkela.icu
-  - name: 香港HGC01 入口#1 | 原生 1.5x
+  -
+    name: '香港HGC01 入口#1 | 原生 1.5x'
     type: vmess
     server: gz01.mobile.lay168.net
     port: 61027
@@ -1775,7 +1927,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: hkbn.vds.nbsd.us
-  - name: 香港HGC01 入口#2 | 原生 1.5x
+  -
+    name: '香港HGC01 入口#2 | 原生 1.5x'
     type: vmess
     server: gz02.mobile.lay168.net
     port: 61027
@@ -1787,7 +1940,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: hkbn.vds.nbsd.us
-  - name: 香港HGC01 入口#3 | 原生 1.5x
+  -
+    name: '香港HGC01 入口#3 | 原生 1.5x'
     type: vmess
     server: cn.jscz-01.node.cyou
     port: 61027
@@ -1799,7 +1953,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: hkbn.vds.nbsd.us
-  - name: 香港HGC01 入口#4 | 原生 1.5x
+  -
+    name: '香港HGC01 入口#4 | 原生 1.5x'
     type: vmess
     server: qd01.unicom.lay168.net
     port: 61027
@@ -1811,7 +1966,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: hkbn.vds.nbsd.us
-  - name: 香港HGC01 入口#5 | 原生 1.5x
+  -
+    name: '香港HGC01 入口#5 | 原生 1.5x'
     type: vmess
     server: cn-east01.lay168.net
     port: 61027
@@ -1823,7 +1979,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: hkbn.vds.nbsd.us
-  - name: 香港HGC01 香港转发 | 原生 1.5x
+  -
+    name: '香港HGC01 香港转发 | 原生 1.5x'
     type: vmess
     server: hk02.az.lay168.net
     port: 61027
@@ -1835,7 +1992,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: hkbn.vds.nbsd.us
-  - name: 香港HKT01 入口#1 | 原生 1.5x
+  -
+    name: '香港HKT01 入口#1 | 原生 1.5x'
     type: vmess
     server: gz01.mobile.lay168.net
     port: 61033
@@ -1847,7 +2005,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: hkt01.pqs-vds.lay168.net
-  - name: 香港HKT01 入口#2 | 原生 1.5x
+  -
+    name: '香港HKT01 入口#2 | 原生 1.5x'
     type: vmess
     server: gz02.mobile.lay168.net
     port: 61033
@@ -1859,7 +2018,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: hkt01.pqs-vds.lay168.net
-  - name: 香港HKT01 入口#3 | 原生 1.5x
+  -
+    name: '香港HKT01 入口#3 | 原生 1.5x'
     type: vmess
     server: cn.jscz-01.node.cyou
     port: 61033
@@ -1871,7 +2031,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: hkt01.pqs-vds.lay168.net
-  - name: 香港HKT01 入口#5 | 原生 1.5x
+  -
+    name: '香港HKT01 入口#5 | 原生 1.5x'
     type: vmess
     server: cn-east01.lay168.net
     port: 61033
@@ -1883,7 +2044,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: hkt01.pqs-vds.lay168.net
-  - name: 香港HKT01 香港转发 | 原生 1.5x
+  -
+    name: '香港HKT01 香港转发 | 原生 1.5x'
     type: vmess
     server: hk02.az.lay168.net
     port: 61033
@@ -1895,7 +2057,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: hkt01.pqs-vds.lay168.net
-  - name: 马来西亚01 入口#1 | 原生 1.5x
+  -
+    name: '马来西亚01 入口#1 | 原生 1.5x'
     type: vmess
     server: gz01.mobile.lay168.net
     port: 61040
@@ -1907,7 +2070,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: my01.shinjiru.jinkela.icu
-  - name: 马来西亚01 入口#2 | 原生 1.5x
+  -
+    name: '马来西亚01 入口#2 | 原生 1.5x'
     type: vmess
     server: gz02.mobile.lay168.net
     port: 61040
@@ -1919,7 +2083,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: my01.shinjiru.jinkela.icu
-  - name: 马来西亚01 入口#3 | 原生 1.5x
+  -
+    name: '马来西亚01 入口#3 | 原生 1.5x'
     type: vmess
     server: cn.jscz-01.node.cyou
     port: 61040
@@ -1931,7 +2096,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: my01.shinjiru.jinkela.icu
-  - name: 马来西亚01 入口#5 | 原生 1.5x
+  -
+    name: '马来西亚01 入口#5 | 原生 1.5x'
     type: vmess
     server: cn-east01.lay168.net
     port: 61040
@@ -1943,7 +2109,8 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: my01.shinjiru.jinkela.icu
-  - name: 马来西亚01 香港转发 | 原生 1.5x
+  -
+    name: '马来西亚01 香港转发 | 原生 1.5x'
     type: vmess
     server: hk02.az.lay168.net
     port: 61040
@@ -1956,1013 +2123,1025 @@ proxies:
     ws-headers:
       Host: my01.shinjiru.jinkela.icu
 proxy-groups:
-  - name: 🔰国外流量
+  -
+    name: 🔰国外流量
     type: select
     proxies:
-      - IEPL专线 粤新03 入口#1 | 4x NF
-      - IEPL专线 粤新03 入口#2 | 4x NF
-      - IEPL专线 粤新03 入口#3 | 4x NF
-      - IEPL专线 粤新03 入口#4 | 4x NF
-      - IEPL专线 粤新03 入口#5 | 4x NF
-      - IEPL专线 粤日04 入口#1 | 4x NF
-      - IEPL专线 粤日04 入口#2 | 4x NF
-      - IEPL专线 粤日04 入口#3 | 4x NF
-      - IEPL专线 粤日04 入口#4 | 4x NF
-      - IEPL专线 粤日04 入口#5 | 4x NF
-      - IEPL专线 粤港03 入口#1 | 4x NF
-      - IEPL专线 粤港03 入口#2 | 4x NF
-      - IEPL专线 粤港03 入口#3 | 4x NF
-      - IEPL专线 粤港03 入口#4 | 4x NF
-      - IEPL专线 粤港03 入口#5 | 4x NF
-      - IEPL专线 粤美02 入口#1 | 4x NF
-      - IEPL专线 粤美02 入口#2 | 4x NF
-      - IEPL专线 粤美02 入口#3 | 4x NF
-      - IEPL专线 粤美02 入口#4 | 4x NF
-      - IEPL专线 粤美02 入口#5 | 4x NF
-      - 俄罗斯01 入口#2 | 冷门 1.5x
-      - 俄罗斯01 入口#3 | 冷门 1.5x
-      - 俄罗斯01 入口#4 | 冷门 1.5x
-      - 俄罗斯01 入口#5 | 冷门 1.5x
-      - 俄罗斯05 入口#1 | 冷门 1.3x
-      - 俄罗斯05 入口#2 | 冷门 1.3x
-      - 俄罗斯05 入口#3 | 冷门 1.3x
-      - 俄罗斯05 入口#4 | 冷门 1.3x
-      - 俄罗斯05 入口#5 | 冷门 1.3x
-      - 印度01 入口#1 | 1.5x
-      - 印度01 入口#2 | 1.5x
-      - 印度01 入口#3 | 1.5x
-      - 印度01 入口#4 | 1.5x
-      - 印度01 入口#5 | 1.5x
-      - 印度01 香港转发 | 1.5x
-      - 台湾02 入口#1 | 原生 1.5x
-      - 台湾02 入口#2 | 原生 1.5x
-      - 台湾02 入口#3 | 原生 1.5x
-      - 台湾02 入口#4 | 原生 1.5x
-      - 台湾02 入口#5 | 原生 1.5x
-      - 台湾02 香港转发 | 原生 1.5x
-      - 土耳其01 入口#1 | 冷门 2.0x
-      - 土耳其01 入口#2 | 冷门 2.0x
-      - 土耳其01 入口#3 | 冷门 2.0x
-      - 土耳其01 入口#4 | 冷门 2.0x
-      - 土耳其01 香港转发 | 冷门 2.0x
-      - 巴西01 入口#1 | 冷门 3.0x
-      - 巴西01 入口#2 | 冷门 3.0x
-      - 巴西01 入口#3 | 冷门 3.0x
-      - 巴西01 香港转发 | 冷门 3.0x
-      - 德国01 入口#1 | 冷门 1.2x
-      - 德国01 入口#2 | 冷门 1.2x
-      - 德国01 入口#3 | 冷门 1.2x
-      - 德国01 入口#5 | 冷门 1.2x
-      - 德国01 香港转发 | 冷门 1.2x
-      - 新加坡01 入口#1 | 原生 1.5x
-      - 新加坡01 入口#2 | 原生 1.5x
-      - 新加坡01 入口#3 | 原生 1.5x
-      - 新加坡01 入口#4 | 原生 1.5x
-      - 新加坡01 入口#5 | 原生 1.5x
-      - 新加坡01 香港转发 | 原生 1.5x
-      - 新加坡02 入口#1 | 原生 1.5x
-      - 新加坡02 入口#2 | 原生 1.5x
-      - 新加坡02 入口#3 | 原生 1.5x
-      - 新加坡02 入口#4 | 原生 1.5x
-      - 新加坡02 入口#5 | 原生 1.5x
-      - 新加坡04 入口#1 | NF 1.5x
-      - 新加坡04 入口#2 | NF 1.5x
-      - 新加坡04 入口#3 | NF 1.5x
-      - 新加坡04 入口#4 | NF 1.5x
-      - 新加坡04 入口#5 | NF 1.5x
-      - 日本01 入口#1 | NF 1.5x
-      - 日本01 入口#2 | NF 1.5x
-      - 日本01 入口#3 | NF 1.5x
-      - 日本01 入口#4 | NF 1.5x
-      - 日本01 入口#5 | NF 1.5x
-      - 日本02 入口#1 | NF 1.5x
-      - 日本02 入口#2 | NF 1.5x
-      - 日本02 入口#3 | NF 1.5x
-      - 日本02 入口#4 | NF 1.5x
-      - 日本02 入口#5 | NF 1.5x
-      - 日本03 入口#1 | NF 1.5x
-      - 日本03 入口#2 | NF 1.5x
-      - 日本03 入口#3 | NF 1.5x
-      - 日本03 入口#4 | NF 1.5x
-      - 日本03 入口#5 | NF 1.5x
+      - 'IEPL专线 粤新03 入口#1 | 4x NF'
+      - 'IEPL专线 粤新03 入口#2 | 4x NF'
+      - 'IEPL专线 粤新03 入口#3 | 4x NF'
+      - 'IEPL专线 粤新03 入口#4 | 4x NF'
+      - 'IEPL专线 粤新03 入口#5 | 4x NF'
+      - 'IEPL专线 粤日04 入口#1 | 4x NF'
+      - 'IEPL专线 粤日04 入口#2 | 4x NF'
+      - 'IEPL专线 粤日04 入口#3 | 4x NF'
+      - 'IEPL专线 粤日04 入口#4 | 4x NF'
+      - 'IEPL专线 粤日04 入口#5 | 4x NF'
+      - 'IEPL专线 粤港03 入口#1 | 4x NF'
+      - 'IEPL专线 粤港03 入口#2 | 4x NF'
+      - 'IEPL专线 粤港03 入口#3 | 4x NF'
+      - 'IEPL专线 粤港03 入口#4 | 4x NF'
+      - 'IEPL专线 粤港03 入口#5 | 4x NF'
+      - 'IEPL专线 粤美02 入口#1 | 4x NF'
+      - 'IEPL专线 粤美02 入口#2 | 4x NF'
+      - 'IEPL专线 粤美02 入口#3 | 4x NF'
+      - 'IEPL专线 粤美02 入口#4 | 4x NF'
+      - 'IEPL专线 粤美02 入口#5 | 4x NF'
+      - '俄罗斯01 入口#2 | 冷门 1.5x'
+      - '俄罗斯01 入口#3 | 冷门 1.5x'
+      - '俄罗斯01 入口#4 | 冷门 1.5x'
+      - '俄罗斯01 入口#5 | 冷门 1.5x'
+      - '俄罗斯05 入口#1 | 冷门 1.3x'
+      - '俄罗斯05 入口#2 | 冷门 1.3x'
+      - '俄罗斯05 入口#3 | 冷门 1.3x'
+      - '俄罗斯05 入口#4 | 冷门 1.3x'
+      - '俄罗斯05 入口#5 | 冷门 1.3x'
+      - '印度01 入口#1 | 1.5x'
+      - '印度01 入口#2 | 1.5x'
+      - '印度01 入口#3 | 1.5x'
+      - '印度01 入口#4 | 1.5x'
+      - '印度01 入口#5 | 1.5x'
+      - '印度01 香港转发 | 1.5x'
+      - '台湾02 入口#1 | 原生 1.5x'
+      - '台湾02 入口#2 | 原生 1.5x'
+      - '台湾02 入口#3 | 原生 1.5x'
+      - '台湾02 入口#4 | 原生 1.5x'
+      - '台湾02 入口#5 | 原生 1.5x'
+      - '台湾02 香港转发 | 原生 1.5x'
+      - '土耳其01 入口#1 | 冷门 2.0x'
+      - '土耳其01 入口#2 | 冷门 2.0x'
+      - '土耳其01 入口#3 | 冷门 2.0x'
+      - '土耳其01 入口#4 | 冷门 2.0x'
+      - '土耳其01 香港转发 | 冷门 2.0x'
+      - '巴西01 入口#1 | 冷门 3.0x'
+      - '巴西01 入口#2 | 冷门 3.0x'
+      - '巴西01 入口#3 | 冷门 3.0x'
+      - '巴西01 香港转发 | 冷门 3.0x'
+      - '德国01 入口#1 | 冷门 1.2x'
+      - '德国01 入口#2 | 冷门 1.2x'
+      - '德国01 入口#3 | 冷门 1.2x'
+      - '德国01 入口#5 | 冷门 1.2x'
+      - '德国01 香港转发 | 冷门 1.2x'
+      - '新加坡01 入口#1 | 原生 1.5x'
+      - '新加坡01 入口#2 | 原生 1.5x'
+      - '新加坡01 入口#3 | 原生 1.5x'
+      - '新加坡01 入口#4 | 原生 1.5x'
+      - '新加坡01 入口#5 | 原生 1.5x'
+      - '新加坡01 香港转发 | 原生 1.5x'
+      - '新加坡02 入口#1 | 原生 1.5x'
+      - '新加坡02 入口#2 | 原生 1.5x'
+      - '新加坡02 入口#3 | 原生 1.5x'
+      - '新加坡02 入口#4 | 原生 1.5x'
+      - '新加坡02 入口#5 | 原生 1.5x'
+      - '新加坡04 入口#1 | NF 1.5x'
+      - '新加坡04 入口#2 | NF 1.5x'
+      - '新加坡04 入口#3 | NF 1.5x'
+      - '新加坡04 入口#4 | NF 1.5x'
+      - '新加坡04 入口#5 | NF 1.5x'
+      - '日本01 入口#1 | NF 1.5x'
+      - '日本01 入口#2 | NF 1.5x'
+      - '日本01 入口#3 | NF 1.5x'
+      - '日本01 入口#4 | NF 1.5x'
+      - '日本01 入口#5 | NF 1.5x'
+      - '日本02 入口#1 | NF 1.5x'
+      - '日本02 入口#2 | NF 1.5x'
+      - '日本02 入口#3 | NF 1.5x'
+      - '日本02 入口#4 | NF 1.5x'
+      - '日本02 入口#5 | NF 1.5x'
+      - '日本03 入口#1 | NF 1.5x'
+      - '日本03 入口#2 | NF 1.5x'
+      - '日本03 入口#3 | NF 1.5x'
+      - '日本03 入口#4 | NF 1.5x'
+      - '日本03 入口#5 | NF 1.5x'
       - 更多节点请购买-官网jinkela.wtf-白嫖-俄04
-      - 波兰01 入口#1 | 冷门 1.2x
-      - 波兰01 入口#2 | 冷门 1.2x
-      - 波兰01 入口#3 | 冷门 1.2x
-      - 波兰01 入口#4 | 冷门 1.2x
-      - 波兰01 香港转发 | 冷门 1.2x
-      - 澳洲01 入口#1 | 冷门 1.5x
-      - 澳洲01 入口#2 | 冷门 1.5x
-      - 澳洲01 入口#3 | 冷门 1.5x
-      - 澳洲01 入口#5 | 冷门 1.5x
-      - 澳洲01 香港转发 | 冷门 1.5x
-      - 澳洲CDN | 实验 | 免费 | 1.0x | 请经常更新订阅
-      - 美国01 入口01 | NF 1.5x
-      - 美国01 入口02 | NF 1.5x
-      - 美国01 入口03 | NF 1.5x
-      - 美国01 入口04 | NF 1.5x
-      - 美国01 入口05 | NF 1.5x
-      - 美国03 入口#1 | 原生 1.5x
-      - 美国03 入口#2 | 原生 1.5x
-      - 美国03 入口#5 | 原生 1.5x
-      - 美国03 香港转发 | 原生 1.5x
-      - 美国04 入口#1 | 备用 1.3x
-      - 美国04 入口#2 | 备用 1.3x
-      - 美国04 入口#3 | 备用 1.3x
-      - 美国04 入口#4 | 备用 1.3x
-      - 英国01 入口#1 | NF BBC Chan4 1.5x
-      - 英国01 入口#2 | NF BBC Chan4 1.5x
-      - 英国01 入口#3 | NF BBC Chan4 1.5x
-      - 英国01 入口#4 | NF BBC Chan4 1.5x
-      - 英国01 香港转发 | NF BBC Chan4 1.5x
-      - 荷兰01 入口#1 | 冷门 1.2x
-      - 荷兰01 入口#2 | 冷门 1.2x
-      - 荷兰01 入口#3 | 冷门 1.2x
-      - 荷兰01 入口#5 | 冷门 1.2x
-      - 荷兰01 香港转发 | 冷门 1.2x
-      - 阿根廷01 入口#1 | 冷门 低速 2.0x
-      - 阿根廷01 入口#2 | 冷门 低速 2.0x
-      - 阿根廷01 入口#3 | 冷门 低速 2.0x
-      - 阿根廷01 香港转发 | 冷门 低速 2.0x
-      - 韩国01 入口#1 | 1.5x
-      - 韩国01 入口#2 | 1.5x
-      - 韩国01 入口#4 | 1.5x
-      - 韩国01 入口#5 | 1.5x
-      - 韩国01 香港转发 | 1.5x
-      - 香港01 入口#1 | NF 1.5x
-      - 香港01 入口#2 | NF 1.5x
-      - 香港01 入口#3 | NF 1.5x
-      - 香港01 入口#4 | NF 1.5x
-      - 香港01 入口#5 | NF 1.5x
-      - 香港02 入口#1 | NF 1.5x
-      - 香港02 入口#2 | NF 1.5x
-      - 香港02 入口#3 | NF 1.5x
-      - 香港02 入口#4 | NF 1.5x
-      - 香港02 入口#5 | NF 1.5x
-      - 香港03 入口#1 | NF 1.5x
-      - 香港03 入口#2 | NF 1.5x
-      - 香港03 入口#3 | NF 1.5x
-      - 香港03 入口#4 | NF 1.5x
-      - 香港03 入口#5 | NF 1.5x
-      - 香港HGC01 入口#1 | 原生 1.5x
-      - 香港HGC01 入口#2 | 原生 1.5x
-      - 香港HGC01 入口#3 | 原生 1.5x
-      - 香港HGC01 入口#4 | 原生 1.5x
-      - 香港HGC01 入口#5 | 原生 1.5x
-      - 香港HGC01 香港转发 | 原生 1.5x
-      - 香港HKT01 入口#1 | 原生 1.5x
-      - 香港HKT01 入口#2 | 原生 1.5x
-      - 香港HKT01 入口#3 | 原生 1.5x
-      - 香港HKT01 入口#5 | 原生 1.5x
-      - 香港HKT01 香港转发 | 原生 1.5x
-      - 马来西亚01 入口#1 | 原生 1.5x
-      - 马来西亚01 入口#2 | 原生 1.5x
-      - 马来西亚01 入口#3 | 原生 1.5x
-      - 马来西亚01 入口#5 | 原生 1.5x
-      - 马来西亚01 香港转发 | 原生 1.5x
+      - '波兰01 入口#1 | 冷门 1.2x'
+      - '波兰01 入口#2 | 冷门 1.2x'
+      - '波兰01 入口#3 | 冷门 1.2x'
+      - '波兰01 入口#4 | 冷门 1.2x'
+      - '波兰01 香港转发 | 冷门 1.2x'
+      - '澳洲01 入口#1 | 冷门 1.5x'
+      - '澳洲01 入口#2 | 冷门 1.5x'
+      - '澳洲01 入口#3 | 冷门 1.5x'
+      - '澳洲01 入口#5 | 冷门 1.5x'
+      - '澳洲01 香港转发 | 冷门 1.5x'
+      - '澳洲CDN | 实验 | 免费 | 1.0x | 请经常更新订阅'
+      - '美国01 入口01 | NF 1.5x'
+      - '美国01 入口02 | NF 1.5x'
+      - '美国01 入口03 | NF 1.5x'
+      - '美国01 入口04 | NF 1.5x'
+      - '美国01 入口05 | NF 1.5x'
+      - '美国03 入口#1 | 原生 1.5x'
+      - '美国03 入口#2 | 原生 1.5x'
+      - '美国03 入口#5 | 原生 1.5x'
+      - '美国03 香港转发 | 原生 1.5x'
+      - '美国04 入口#1 | 备用 1.3x'
+      - '美国04 入口#2 | 备用 1.3x'
+      - '美国04 入口#3 | 备用 1.3x'
+      - '美国04 入口#4 | 备用 1.3x'
+      - '英国01 入口#1 | NF BBC Chan4 1.5x'
+      - '英国01 入口#2 | NF BBC Chan4 1.5x'
+      - '英国01 入口#3 | NF BBC Chan4 1.5x'
+      - '英国01 入口#4 | NF BBC Chan4 1.5x'
+      - '英国01 香港转发 | NF BBC Chan4 1.5x'
+      - '荷兰01 入口#1 | 冷门 1.2x'
+      - '荷兰01 入口#2 | 冷门 1.2x'
+      - '荷兰01 入口#3 | 冷门 1.2x'
+      - '荷兰01 入口#5 | 冷门 1.2x'
+      - '荷兰01 香港转发 | 冷门 1.2x'
+      - '阿根廷01 入口#1 | 冷门 低速 2.0x'
+      - '阿根廷01 入口#2 | 冷门 低速 2.0x'
+      - '阿根廷01 入口#3 | 冷门 低速 2.0x'
+      - '阿根廷01 香港转发 | 冷门 低速 2.0x'
+      - '韩国01 入口#1 | 1.5x'
+      - '韩国01 入口#2 | 1.5x'
+      - '韩国01 入口#4 | 1.5x'
+      - '韩国01 入口#5 | 1.5x'
+      - '韩国01 香港转发 | 1.5x'
+      - '香港01 入口#1 | NF 1.5x'
+      - '香港01 入口#2 | NF 1.5x'
+      - '香港01 入口#3 | NF 1.5x'
+      - '香港01 入口#4 | NF 1.5x'
+      - '香港01 入口#5 | NF 1.5x'
+      - '香港02 入口#1 | NF 1.5x'
+      - '香港02 入口#2 | NF 1.5x'
+      - '香港02 入口#3 | NF 1.5x'
+      - '香港02 入口#4 | NF 1.5x'
+      - '香港02 入口#5 | NF 1.5x'
+      - '香港03 入口#1 | NF 1.5x'
+      - '香港03 入口#2 | NF 1.5x'
+      - '香港03 入口#3 | NF 1.5x'
+      - '香港03 入口#4 | NF 1.5x'
+      - '香港03 入口#5 | NF 1.5x'
+      - '香港HGC01 入口#1 | 原生 1.5x'
+      - '香港HGC01 入口#2 | 原生 1.5x'
+      - '香港HGC01 入口#3 | 原生 1.5x'
+      - '香港HGC01 入口#4 | 原生 1.5x'
+      - '香港HGC01 入口#5 | 原生 1.5x'
+      - '香港HGC01 香港转发 | 原生 1.5x'
+      - '香港HKT01 入口#1 | 原生 1.5x'
+      - '香港HKT01 入口#2 | 原生 1.5x'
+      - '香港HKT01 入口#3 | 原生 1.5x'
+      - '香港HKT01 入口#5 | 原生 1.5x'
+      - '香港HKT01 香港转发 | 原生 1.5x'
+      - '马来西亚01 入口#1 | 原生 1.5x'
+      - '马来西亚01 入口#2 | 原生 1.5x'
+      - '马来西亚01 入口#3 | 原生 1.5x'
+      - '马来西亚01 入口#5 | 原生 1.5x'
+      - '马来西亚01 香港转发 | 原生 1.5x'
       - 🚀直接连接
-  - name: ⚓️其他流量
+  -
+    name: ⚓️其他流量
     type: select
     proxies:
       - 🔰国外流量
       - 🚀直接连接
-  - name: ✈️Telegram
+  -
+    name: ✈️Telegram
     type: select
     proxies:
       - 🔰国外流量
-      - IEPL专线 粤新03 入口#1 | 4x NF
-      - IEPL专线 粤新03 入口#2 | 4x NF
-      - IEPL专线 粤新03 入口#3 | 4x NF
-      - IEPL专线 粤新03 入口#4 | 4x NF
-      - IEPL专线 粤新03 入口#5 | 4x NF
-      - IEPL专线 粤日04 入口#1 | 4x NF
-      - IEPL专线 粤日04 入口#2 | 4x NF
-      - IEPL专线 粤日04 入口#3 | 4x NF
-      - IEPL专线 粤日04 入口#4 | 4x NF
-      - IEPL专线 粤日04 入口#5 | 4x NF
-      - IEPL专线 粤港03 入口#1 | 4x NF
-      - IEPL专线 粤港03 入口#2 | 4x NF
-      - IEPL专线 粤港03 入口#3 | 4x NF
-      - IEPL专线 粤港03 入口#4 | 4x NF
-      - IEPL专线 粤港03 入口#5 | 4x NF
-      - IEPL专线 粤美02 入口#1 | 4x NF
-      - IEPL专线 粤美02 入口#2 | 4x NF
-      - IEPL专线 粤美02 入口#3 | 4x NF
-      - IEPL专线 粤美02 入口#4 | 4x NF
-      - IEPL专线 粤美02 入口#5 | 4x NF
-      - 俄罗斯01 入口#2 | 冷门 1.5x
-      - 俄罗斯01 入口#3 | 冷门 1.5x
-      - 俄罗斯01 入口#4 | 冷门 1.5x
-      - 俄罗斯01 入口#5 | 冷门 1.5x
-      - 俄罗斯05 入口#1 | 冷门 1.3x
-      - 俄罗斯05 入口#2 | 冷门 1.3x
-      - 俄罗斯05 入口#3 | 冷门 1.3x
-      - 俄罗斯05 入口#4 | 冷门 1.3x
-      - 俄罗斯05 入口#5 | 冷门 1.3x
-      - 印度01 入口#1 | 1.5x
-      - 印度01 入口#2 | 1.5x
-      - 印度01 入口#3 | 1.5x
-      - 印度01 入口#4 | 1.5x
-      - 印度01 入口#5 | 1.5x
-      - 印度01 香港转发 | 1.5x
-      - 台湾02 入口#1 | 原生 1.5x
-      - 台湾02 入口#2 | 原生 1.5x
-      - 台湾02 入口#3 | 原生 1.5x
-      - 台湾02 入口#4 | 原生 1.5x
-      - 台湾02 入口#5 | 原生 1.5x
-      - 台湾02 香港转发 | 原生 1.5x
-      - 土耳其01 入口#1 | 冷门 2.0x
-      - 土耳其01 入口#2 | 冷门 2.0x
-      - 土耳其01 入口#3 | 冷门 2.0x
-      - 土耳其01 入口#4 | 冷门 2.0x
-      - 土耳其01 香港转发 | 冷门 2.0x
-      - 巴西01 入口#1 | 冷门 3.0x
-      - 巴西01 入口#2 | 冷门 3.0x
-      - 巴西01 入口#3 | 冷门 3.0x
-      - 巴西01 香港转发 | 冷门 3.0x
-      - 德国01 入口#1 | 冷门 1.2x
-      - 德国01 入口#2 | 冷门 1.2x
-      - 德国01 入口#3 | 冷门 1.2x
-      - 德国01 入口#5 | 冷门 1.2x
-      - 德国01 香港转发 | 冷门 1.2x
-      - 新加坡01 入口#1 | 原生 1.5x
-      - 新加坡01 入口#2 | 原生 1.5x
-      - 新加坡01 入口#3 | 原生 1.5x
-      - 新加坡01 入口#4 | 原生 1.5x
-      - 新加坡01 入口#5 | 原生 1.5x
-      - 新加坡01 香港转发 | 原生 1.5x
-      - 新加坡02 入口#1 | 原生 1.5x
-      - 新加坡02 入口#2 | 原生 1.5x
-      - 新加坡02 入口#3 | 原生 1.5x
-      - 新加坡02 入口#4 | 原生 1.5x
-      - 新加坡02 入口#5 | 原生 1.5x
-      - 新加坡04 入口#1 | NF 1.5x
-      - 新加坡04 入口#2 | NF 1.5x
-      - 新加坡04 入口#3 | NF 1.5x
-      - 新加坡04 入口#4 | NF 1.5x
-      - 新加坡04 入口#5 | NF 1.5x
-      - 日本01 入口#1 | NF 1.5x
-      - 日本01 入口#2 | NF 1.5x
-      - 日本01 入口#3 | NF 1.5x
-      - 日本01 入口#4 | NF 1.5x
-      - 日本01 入口#5 | NF 1.5x
-      - 日本02 入口#1 | NF 1.5x
-      - 日本02 入口#2 | NF 1.5x
-      - 日本02 入口#3 | NF 1.5x
-      - 日本02 入口#4 | NF 1.5x
-      - 日本02 入口#5 | NF 1.5x
-      - 日本03 入口#1 | NF 1.5x
-      - 日本03 入口#2 | NF 1.5x
-      - 日本03 入口#3 | NF 1.5x
-      - 日本03 入口#4 | NF 1.5x
-      - 日本03 入口#5 | NF 1.5x
+      - 'IEPL专线 粤新03 入口#1 | 4x NF'
+      - 'IEPL专线 粤新03 入口#2 | 4x NF'
+      - 'IEPL专线 粤新03 入口#3 | 4x NF'
+      - 'IEPL专线 粤新03 入口#4 | 4x NF'
+      - 'IEPL专线 粤新03 入口#5 | 4x NF'
+      - 'IEPL专线 粤日04 入口#1 | 4x NF'
+      - 'IEPL专线 粤日04 入口#2 | 4x NF'
+      - 'IEPL专线 粤日04 入口#3 | 4x NF'
+      - 'IEPL专线 粤日04 入口#4 | 4x NF'
+      - 'IEPL专线 粤日04 入口#5 | 4x NF'
+      - 'IEPL专线 粤港03 入口#1 | 4x NF'
+      - 'IEPL专线 粤港03 入口#2 | 4x NF'
+      - 'IEPL专线 粤港03 入口#3 | 4x NF'
+      - 'IEPL专线 粤港03 入口#4 | 4x NF'
+      - 'IEPL专线 粤港03 入口#5 | 4x NF'
+      - 'IEPL专线 粤美02 入口#1 | 4x NF'
+      - 'IEPL专线 粤美02 入口#2 | 4x NF'
+      - 'IEPL专线 粤美02 入口#3 | 4x NF'
+      - 'IEPL专线 粤美02 入口#4 | 4x NF'
+      - 'IEPL专线 粤美02 入口#5 | 4x NF'
+      - '俄罗斯01 入口#2 | 冷门 1.5x'
+      - '俄罗斯01 入口#3 | 冷门 1.5x'
+      - '俄罗斯01 入口#4 | 冷门 1.5x'
+      - '俄罗斯01 入口#5 | 冷门 1.5x'
+      - '俄罗斯05 入口#1 | 冷门 1.3x'
+      - '俄罗斯05 入口#2 | 冷门 1.3x'
+      - '俄罗斯05 入口#3 | 冷门 1.3x'
+      - '俄罗斯05 入口#4 | 冷门 1.3x'
+      - '俄罗斯05 入口#5 | 冷门 1.3x'
+      - '印度01 入口#1 | 1.5x'
+      - '印度01 入口#2 | 1.5x'
+      - '印度01 入口#3 | 1.5x'
+      - '印度01 入口#4 | 1.5x'
+      - '印度01 入口#5 | 1.5x'
+      - '印度01 香港转发 | 1.5x'
+      - '台湾02 入口#1 | 原生 1.5x'
+      - '台湾02 入口#2 | 原生 1.5x'
+      - '台湾02 入口#3 | 原生 1.5x'
+      - '台湾02 入口#4 | 原生 1.5x'
+      - '台湾02 入口#5 | 原生 1.5x'
+      - '台湾02 香港转发 | 原生 1.5x'
+      - '土耳其01 入口#1 | 冷门 2.0x'
+      - '土耳其01 入口#2 | 冷门 2.0x'
+      - '土耳其01 入口#3 | 冷门 2.0x'
+      - '土耳其01 入口#4 | 冷门 2.0x'
+      - '土耳其01 香港转发 | 冷门 2.0x'
+      - '巴西01 入口#1 | 冷门 3.0x'
+      - '巴西01 入口#2 | 冷门 3.0x'
+      - '巴西01 入口#3 | 冷门 3.0x'
+      - '巴西01 香港转发 | 冷门 3.0x'
+      - '德国01 入口#1 | 冷门 1.2x'
+      - '德国01 入口#2 | 冷门 1.2x'
+      - '德国01 入口#3 | 冷门 1.2x'
+      - '德国01 入口#5 | 冷门 1.2x'
+      - '德国01 香港转发 | 冷门 1.2x'
+      - '新加坡01 入口#1 | 原生 1.5x'
+      - '新加坡01 入口#2 | 原生 1.5x'
+      - '新加坡01 入口#3 | 原生 1.5x'
+      - '新加坡01 入口#4 | 原生 1.5x'
+      - '新加坡01 入口#5 | 原生 1.5x'
+      - '新加坡01 香港转发 | 原生 1.5x'
+      - '新加坡02 入口#1 | 原生 1.5x'
+      - '新加坡02 入口#2 | 原生 1.5x'
+      - '新加坡02 入口#3 | 原生 1.5x'
+      - '新加坡02 入口#4 | 原生 1.5x'
+      - '新加坡02 入口#5 | 原生 1.5x'
+      - '新加坡04 入口#1 | NF 1.5x'
+      - '新加坡04 入口#2 | NF 1.5x'
+      - '新加坡04 入口#3 | NF 1.5x'
+      - '新加坡04 入口#4 | NF 1.5x'
+      - '新加坡04 入口#5 | NF 1.5x'
+      - '日本01 入口#1 | NF 1.5x'
+      - '日本01 入口#2 | NF 1.5x'
+      - '日本01 入口#3 | NF 1.5x'
+      - '日本01 入口#4 | NF 1.5x'
+      - '日本01 入口#5 | NF 1.5x'
+      - '日本02 入口#1 | NF 1.5x'
+      - '日本02 入口#2 | NF 1.5x'
+      - '日本02 入口#3 | NF 1.5x'
+      - '日本02 入口#4 | NF 1.5x'
+      - '日本02 入口#5 | NF 1.5x'
+      - '日本03 入口#1 | NF 1.5x'
+      - '日本03 入口#2 | NF 1.5x'
+      - '日本03 入口#3 | NF 1.5x'
+      - '日本03 入口#4 | NF 1.5x'
+      - '日本03 入口#5 | NF 1.5x'
       - 更多节点请购买-官网jinkela.wtf-白嫖-俄04
-      - 波兰01 入口#1 | 冷门 1.2x
-      - 波兰01 入口#2 | 冷门 1.2x
-      - 波兰01 入口#3 | 冷门 1.2x
-      - 波兰01 入口#4 | 冷门 1.2x
-      - 波兰01 香港转发 | 冷门 1.2x
-      - 澳洲01 入口#1 | 冷门 1.5x
-      - 澳洲01 入口#2 | 冷门 1.5x
-      - 澳洲01 入口#3 | 冷门 1.5x
-      - 澳洲01 入口#5 | 冷门 1.5x
-      - 澳洲01 香港转发 | 冷门 1.5x
-      - 澳洲CDN | 实验 | 免费 | 1.0x | 请经常更新订阅
-      - 美国01 入口01 | NF 1.5x
-      - 美国01 入口02 | NF 1.5x
-      - 美国01 入口03 | NF 1.5x
-      - 美国01 入口04 | NF 1.5x
-      - 美国01 入口05 | NF 1.5x
-      - 美国03 入口#1 | 原生 1.5x
-      - 美国03 入口#2 | 原生 1.5x
-      - 美国03 入口#5 | 原生 1.5x
-      - 美国03 香港转发 | 原生 1.5x
-      - 美国04 入口#1 | 备用 1.3x
-      - 美国04 入口#2 | 备用 1.3x
-      - 美国04 入口#3 | 备用 1.3x
-      - 美国04 入口#4 | 备用 1.3x
-      - 英国01 入口#1 | NF BBC Chan4 1.5x
-      - 英国01 入口#2 | NF BBC Chan4 1.5x
-      - 英国01 入口#3 | NF BBC Chan4 1.5x
-      - 英国01 入口#4 | NF BBC Chan4 1.5x
-      - 英国01 香港转发 | NF BBC Chan4 1.5x
-      - 荷兰01 入口#1 | 冷门 1.2x
-      - 荷兰01 入口#2 | 冷门 1.2x
-      - 荷兰01 入口#3 | 冷门 1.2x
-      - 荷兰01 入口#5 | 冷门 1.2x
-      - 荷兰01 香港转发 | 冷门 1.2x
-      - 阿根廷01 入口#1 | 冷门 低速 2.0x
-      - 阿根廷01 入口#2 | 冷门 低速 2.0x
-      - 阿根廷01 入口#3 | 冷门 低速 2.0x
-      - 阿根廷01 香港转发 | 冷门 低速 2.0x
-      - 韩国01 入口#1 | 1.5x
-      - 韩国01 入口#2 | 1.5x
-      - 韩国01 入口#4 | 1.5x
-      - 韩国01 入口#5 | 1.5x
-      - 韩国01 香港转发 | 1.5x
-      - 香港01 入口#1 | NF 1.5x
-      - 香港01 入口#2 | NF 1.5x
-      - 香港01 入口#3 | NF 1.5x
-      - 香港01 入口#4 | NF 1.5x
-      - 香港01 入口#5 | NF 1.5x
-      - 香港02 入口#1 | NF 1.5x
-      - 香港02 入口#2 | NF 1.5x
-      - 香港02 入口#3 | NF 1.5x
-      - 香港02 入口#4 | NF 1.5x
-      - 香港02 入口#5 | NF 1.5x
-      - 香港03 入口#1 | NF 1.5x
-      - 香港03 入口#2 | NF 1.5x
-      - 香港03 入口#3 | NF 1.5x
-      - 香港03 入口#4 | NF 1.5x
-      - 香港03 入口#5 | NF 1.5x
-      - 香港HGC01 入口#1 | 原生 1.5x
-      - 香港HGC01 入口#2 | 原生 1.5x
-      - 香港HGC01 入口#3 | 原生 1.5x
-      - 香港HGC01 入口#4 | 原生 1.5x
-      - 香港HGC01 入口#5 | 原生 1.5x
-      - 香港HGC01 香港转发 | 原生 1.5x
-      - 香港HKT01 入口#1 | 原生 1.5x
-      - 香港HKT01 入口#2 | 原生 1.5x
-      - 香港HKT01 入口#3 | 原生 1.5x
-      - 香港HKT01 入口#5 | 原生 1.5x
-      - 香港HKT01 香港转发 | 原生 1.5x
-      - 马来西亚01 入口#1 | 原生 1.5x
-      - 马来西亚01 入口#2 | 原生 1.5x
-      - 马来西亚01 入口#3 | 原生 1.5x
-      - 马来西亚01 入口#5 | 原生 1.5x
-      - 马来西亚01 香港转发 | 原生 1.5x
-  - name: 🎬Youtube
+      - '波兰01 入口#1 | 冷门 1.2x'
+      - '波兰01 入口#2 | 冷门 1.2x'
+      - '波兰01 入口#3 | 冷门 1.2x'
+      - '波兰01 入口#4 | 冷门 1.2x'
+      - '波兰01 香港转发 | 冷门 1.2x'
+      - '澳洲01 入口#1 | 冷门 1.5x'
+      - '澳洲01 入口#2 | 冷门 1.5x'
+      - '澳洲01 入口#3 | 冷门 1.5x'
+      - '澳洲01 入口#5 | 冷门 1.5x'
+      - '澳洲01 香港转发 | 冷门 1.5x'
+      - '澳洲CDN | 实验 | 免费 | 1.0x | 请经常更新订阅'
+      - '美国01 入口01 | NF 1.5x'
+      - '美国01 入口02 | NF 1.5x'
+      - '美国01 入口03 | NF 1.5x'
+      - '美国01 入口04 | NF 1.5x'
+      - '美国01 入口05 | NF 1.5x'
+      - '美国03 入口#1 | 原生 1.5x'
+      - '美国03 入口#2 | 原生 1.5x'
+      - '美国03 入口#5 | 原生 1.5x'
+      - '美国03 香港转发 | 原生 1.5x'
+      - '美国04 入口#1 | 备用 1.3x'
+      - '美国04 入口#2 | 备用 1.3x'
+      - '美国04 入口#3 | 备用 1.3x'
+      - '美国04 入口#4 | 备用 1.3x'
+      - '英国01 入口#1 | NF BBC Chan4 1.5x'
+      - '英国01 入口#2 | NF BBC Chan4 1.5x'
+      - '英国01 入口#3 | NF BBC Chan4 1.5x'
+      - '英国01 入口#4 | NF BBC Chan4 1.5x'
+      - '英国01 香港转发 | NF BBC Chan4 1.5x'
+      - '荷兰01 入口#1 | 冷门 1.2x'
+      - '荷兰01 入口#2 | 冷门 1.2x'
+      - '荷兰01 入口#3 | 冷门 1.2x'
+      - '荷兰01 入口#5 | 冷门 1.2x'
+      - '荷兰01 香港转发 | 冷门 1.2x'
+      - '阿根廷01 入口#1 | 冷门 低速 2.0x'
+      - '阿根廷01 入口#2 | 冷门 低速 2.0x'
+      - '阿根廷01 入口#3 | 冷门 低速 2.0x'
+      - '阿根廷01 香港转发 | 冷门 低速 2.0x'
+      - '韩国01 入口#1 | 1.5x'
+      - '韩国01 入口#2 | 1.5x'
+      - '韩国01 入口#4 | 1.5x'
+      - '韩国01 入口#5 | 1.5x'
+      - '韩国01 香港转发 | 1.5x'
+      - '香港01 入口#1 | NF 1.5x'
+      - '香港01 入口#2 | NF 1.5x'
+      - '香港01 入口#3 | NF 1.5x'
+      - '香港01 入口#4 | NF 1.5x'
+      - '香港01 入口#5 | NF 1.5x'
+      - '香港02 入口#1 | NF 1.5x'
+      - '香港02 入口#2 | NF 1.5x'
+      - '香港02 入口#3 | NF 1.5x'
+      - '香港02 入口#4 | NF 1.5x'
+      - '香港02 入口#5 | NF 1.5x'
+      - '香港03 入口#1 | NF 1.5x'
+      - '香港03 入口#2 | NF 1.5x'
+      - '香港03 入口#3 | NF 1.5x'
+      - '香港03 入口#4 | NF 1.5x'
+      - '香港03 入口#5 | NF 1.5x'
+      - '香港HGC01 入口#1 | 原生 1.5x'
+      - '香港HGC01 入口#2 | 原生 1.5x'
+      - '香港HGC01 入口#3 | 原生 1.5x'
+      - '香港HGC01 入口#4 | 原生 1.5x'
+      - '香港HGC01 入口#5 | 原生 1.5x'
+      - '香港HGC01 香港转发 | 原生 1.5x'
+      - '香港HKT01 入口#1 | 原生 1.5x'
+      - '香港HKT01 入口#2 | 原生 1.5x'
+      - '香港HKT01 入口#3 | 原生 1.5x'
+      - '香港HKT01 入口#5 | 原生 1.5x'
+      - '香港HKT01 香港转发 | 原生 1.5x'
+      - '马来西亚01 入口#1 | 原生 1.5x'
+      - '马来西亚01 入口#2 | 原生 1.5x'
+      - '马来西亚01 入口#3 | 原生 1.5x'
+      - '马来西亚01 入口#5 | 原生 1.5x'
+      - '马来西亚01 香港转发 | 原生 1.5x'
+  -
+    name: 🎬Youtube
     type: select
     proxies:
       - 🔰国外流量
-      - IEPL专线 粤新03 入口#1 | 4x NF
-      - IEPL专线 粤新03 入口#2 | 4x NF
-      - IEPL专线 粤新03 入口#3 | 4x NF
-      - IEPL专线 粤新03 入口#4 | 4x NF
-      - IEPL专线 粤新03 入口#5 | 4x NF
-      - IEPL专线 粤日04 入口#1 | 4x NF
-      - IEPL专线 粤日04 入口#2 | 4x NF
-      - IEPL专线 粤日04 入口#3 | 4x NF
-      - IEPL专线 粤日04 入口#4 | 4x NF
-      - IEPL专线 粤日04 入口#5 | 4x NF
-      - IEPL专线 粤港03 入口#1 | 4x NF
-      - IEPL专线 粤港03 入口#2 | 4x NF
-      - IEPL专线 粤港03 入口#3 | 4x NF
-      - IEPL专线 粤港03 入口#4 | 4x NF
-      - IEPL专线 粤港03 入口#5 | 4x NF
-      - IEPL专线 粤美02 入口#1 | 4x NF
-      - IEPL专线 粤美02 入口#2 | 4x NF
-      - IEPL专线 粤美02 入口#3 | 4x NF
-      - IEPL专线 粤美02 入口#4 | 4x NF
-      - IEPL专线 粤美02 入口#5 | 4x NF
-      - 俄罗斯01 入口#2 | 冷门 1.5x
-      - 俄罗斯01 入口#3 | 冷门 1.5x
-      - 俄罗斯01 入口#4 | 冷门 1.5x
-      - 俄罗斯01 入口#5 | 冷门 1.5x
-      - 俄罗斯05 入口#1 | 冷门 1.3x
-      - 俄罗斯05 入口#2 | 冷门 1.3x
-      - 俄罗斯05 入口#3 | 冷门 1.3x
-      - 俄罗斯05 入口#4 | 冷门 1.3x
-      - 俄罗斯05 入口#5 | 冷门 1.3x
-      - 印度01 入口#1 | 1.5x
-      - 印度01 入口#2 | 1.5x
-      - 印度01 入口#3 | 1.5x
-      - 印度01 入口#4 | 1.5x
-      - 印度01 入口#5 | 1.5x
-      - 印度01 香港转发 | 1.5x
-      - 台湾02 入口#1 | 原生 1.5x
-      - 台湾02 入口#2 | 原生 1.5x
-      - 台湾02 入口#3 | 原生 1.5x
-      - 台湾02 入口#4 | 原生 1.5x
-      - 台湾02 入口#5 | 原生 1.5x
-      - 台湾02 香港转发 | 原生 1.5x
-      - 土耳其01 入口#1 | 冷门 2.0x
-      - 土耳其01 入口#2 | 冷门 2.0x
-      - 土耳其01 入口#3 | 冷门 2.0x
-      - 土耳其01 入口#4 | 冷门 2.0x
-      - 土耳其01 香港转发 | 冷门 2.0x
-      - 巴西01 入口#1 | 冷门 3.0x
-      - 巴西01 入口#2 | 冷门 3.0x
-      - 巴西01 入口#3 | 冷门 3.0x
-      - 巴西01 香港转发 | 冷门 3.0x
-      - 德国01 入口#1 | 冷门 1.2x
-      - 德国01 入口#2 | 冷门 1.2x
-      - 德国01 入口#3 | 冷门 1.2x
-      - 德国01 入口#5 | 冷门 1.2x
-      - 德国01 香港转发 | 冷门 1.2x
-      - 新加坡01 入口#1 | 原生 1.5x
-      - 新加坡01 入口#2 | 原生 1.5x
-      - 新加坡01 入口#3 | 原生 1.5x
-      - 新加坡01 入口#4 | 原生 1.5x
-      - 新加坡01 入口#5 | 原生 1.5x
-      - 新加坡01 香港转发 | 原生 1.5x
-      - 新加坡02 入口#1 | 原生 1.5x
-      - 新加坡02 入口#2 | 原生 1.5x
-      - 新加坡02 入口#3 | 原生 1.5x
-      - 新加坡02 入口#4 | 原生 1.5x
-      - 新加坡02 入口#5 | 原生 1.5x
-      - 新加坡04 入口#1 | NF 1.5x
-      - 新加坡04 入口#2 | NF 1.5x
-      - 新加坡04 入口#3 | NF 1.5x
-      - 新加坡04 入口#4 | NF 1.5x
-      - 新加坡04 入口#5 | NF 1.5x
-      - 日本01 入口#1 | NF 1.5x
-      - 日本01 入口#2 | NF 1.5x
-      - 日本01 入口#3 | NF 1.5x
-      - 日本01 入口#4 | NF 1.5x
-      - 日本01 入口#5 | NF 1.5x
-      - 日本02 入口#1 | NF 1.5x
-      - 日本02 入口#2 | NF 1.5x
-      - 日本02 入口#3 | NF 1.5x
-      - 日本02 入口#4 | NF 1.5x
-      - 日本02 入口#5 | NF 1.5x
-      - 日本03 入口#1 | NF 1.5x
-      - 日本03 入口#2 | NF 1.5x
-      - 日本03 入口#3 | NF 1.5x
-      - 日本03 入口#4 | NF 1.5x
-      - 日本03 入口#5 | NF 1.5x
+      - 'IEPL专线 粤新03 入口#1 | 4x NF'
+      - 'IEPL专线 粤新03 入口#2 | 4x NF'
+      - 'IEPL专线 粤新03 入口#3 | 4x NF'
+      - 'IEPL专线 粤新03 入口#4 | 4x NF'
+      - 'IEPL专线 粤新03 入口#5 | 4x NF'
+      - 'IEPL专线 粤日04 入口#1 | 4x NF'
+      - 'IEPL专线 粤日04 入口#2 | 4x NF'
+      - 'IEPL专线 粤日04 入口#3 | 4x NF'
+      - 'IEPL专线 粤日04 入口#4 | 4x NF'
+      - 'IEPL专线 粤日04 入口#5 | 4x NF'
+      - 'IEPL专线 粤港03 入口#1 | 4x NF'
+      - 'IEPL专线 粤港03 入口#2 | 4x NF'
+      - 'IEPL专线 粤港03 入口#3 | 4x NF'
+      - 'IEPL专线 粤港03 入口#4 | 4x NF'
+      - 'IEPL专线 粤港03 入口#5 | 4x NF'
+      - 'IEPL专线 粤美02 入口#1 | 4x NF'
+      - 'IEPL专线 粤美02 入口#2 | 4x NF'
+      - 'IEPL专线 粤美02 入口#3 | 4x NF'
+      - 'IEPL专线 粤美02 入口#4 | 4x NF'
+      - 'IEPL专线 粤美02 入口#5 | 4x NF'
+      - '俄罗斯01 入口#2 | 冷门 1.5x'
+      - '俄罗斯01 入口#3 | 冷门 1.5x'
+      - '俄罗斯01 入口#4 | 冷门 1.5x'
+      - '俄罗斯01 入口#5 | 冷门 1.5x'
+      - '俄罗斯05 入口#1 | 冷门 1.3x'
+      - '俄罗斯05 入口#2 | 冷门 1.3x'
+      - '俄罗斯05 入口#3 | 冷门 1.3x'
+      - '俄罗斯05 入口#4 | 冷门 1.3x'
+      - '俄罗斯05 入口#5 | 冷门 1.3x'
+      - '印度01 入口#1 | 1.5x'
+      - '印度01 入口#2 | 1.5x'
+      - '印度01 入口#3 | 1.5x'
+      - '印度01 入口#4 | 1.5x'
+      - '印度01 入口#5 | 1.5x'
+      - '印度01 香港转发 | 1.5x'
+      - '台湾02 入口#1 | 原生 1.5x'
+      - '台湾02 入口#2 | 原生 1.5x'
+      - '台湾02 入口#3 | 原生 1.5x'
+      - '台湾02 入口#4 | 原生 1.5x'
+      - '台湾02 入口#5 | 原生 1.5x'
+      - '台湾02 香港转发 | 原生 1.5x'
+      - '土耳其01 入口#1 | 冷门 2.0x'
+      - '土耳其01 入口#2 | 冷门 2.0x'
+      - '土耳其01 入口#3 | 冷门 2.0x'
+      - '土耳其01 入口#4 | 冷门 2.0x'
+      - '土耳其01 香港转发 | 冷门 2.0x'
+      - '巴西01 入口#1 | 冷门 3.0x'
+      - '巴西01 入口#2 | 冷门 3.0x'
+      - '巴西01 入口#3 | 冷门 3.0x'
+      - '巴西01 香港转发 | 冷门 3.0x'
+      - '德国01 入口#1 | 冷门 1.2x'
+      - '德国01 入口#2 | 冷门 1.2x'
+      - '德国01 入口#3 | 冷门 1.2x'
+      - '德国01 入口#5 | 冷门 1.2x'
+      - '德国01 香港转发 | 冷门 1.2x'
+      - '新加坡01 入口#1 | 原生 1.5x'
+      - '新加坡01 入口#2 | 原生 1.5x'
+      - '新加坡01 入口#3 | 原生 1.5x'
+      - '新加坡01 入口#4 | 原生 1.5x'
+      - '新加坡01 入口#5 | 原生 1.5x'
+      - '新加坡01 香港转发 | 原生 1.5x'
+      - '新加坡02 入口#1 | 原生 1.5x'
+      - '新加坡02 入口#2 | 原生 1.5x'
+      - '新加坡02 入口#3 | 原生 1.5x'
+      - '新加坡02 入口#4 | 原生 1.5x'
+      - '新加坡02 入口#5 | 原生 1.5x'
+      - '新加坡04 入口#1 | NF 1.5x'
+      - '新加坡04 入口#2 | NF 1.5x'
+      - '新加坡04 入口#3 | NF 1.5x'
+      - '新加坡04 入口#4 | NF 1.5x'
+      - '新加坡04 入口#5 | NF 1.5x'
+      - '日本01 入口#1 | NF 1.5x'
+      - '日本01 入口#2 | NF 1.5x'
+      - '日本01 入口#3 | NF 1.5x'
+      - '日本01 入口#4 | NF 1.5x'
+      - '日本01 入口#5 | NF 1.5x'
+      - '日本02 入口#1 | NF 1.5x'
+      - '日本02 入口#2 | NF 1.5x'
+      - '日本02 入口#3 | NF 1.5x'
+      - '日本02 入口#4 | NF 1.5x'
+      - '日本02 入口#5 | NF 1.5x'
+      - '日本03 入口#1 | NF 1.5x'
+      - '日本03 入口#2 | NF 1.5x'
+      - '日本03 入口#3 | NF 1.5x'
+      - '日本03 入口#4 | NF 1.5x'
+      - '日本03 入口#5 | NF 1.5x'
       - 更多节点请购买-官网jinkela.wtf-白嫖-俄04
-      - 波兰01 入口#1 | 冷门 1.2x
-      - 波兰01 入口#2 | 冷门 1.2x
-      - 波兰01 入口#3 | 冷门 1.2x
-      - 波兰01 入口#4 | 冷门 1.2x
-      - 波兰01 香港转发 | 冷门 1.2x
-      - 澳洲01 入口#1 | 冷门 1.5x
-      - 澳洲01 入口#2 | 冷门 1.5x
-      - 澳洲01 入口#3 | 冷门 1.5x
-      - 澳洲01 入口#5 | 冷门 1.5x
-      - 澳洲01 香港转发 | 冷门 1.5x
-      - 澳洲CDN | 实验 | 免费 | 1.0x | 请经常更新订阅
-      - 美国01 入口01 | NF 1.5x
-      - 美国01 入口02 | NF 1.5x
-      - 美国01 入口03 | NF 1.5x
-      - 美国01 入口04 | NF 1.5x
-      - 美国01 入口05 | NF 1.5x
-      - 美国03 入口#1 | 原生 1.5x
-      - 美国03 入口#2 | 原生 1.5x
-      - 美国03 入口#5 | 原生 1.5x
-      - 美国03 香港转发 | 原生 1.5x
-      - 美国04 入口#1 | 备用 1.3x
-      - 美国04 入口#2 | 备用 1.3x
-      - 美国04 入口#3 | 备用 1.3x
-      - 美国04 入口#4 | 备用 1.3x
-      - 英国01 入口#1 | NF BBC Chan4 1.5x
-      - 英国01 入口#2 | NF BBC Chan4 1.5x
-      - 英国01 入口#3 | NF BBC Chan4 1.5x
-      - 英国01 入口#4 | NF BBC Chan4 1.5x
-      - 英国01 香港转发 | NF BBC Chan4 1.5x
-      - 荷兰01 入口#1 | 冷门 1.2x
-      - 荷兰01 入口#2 | 冷门 1.2x
-      - 荷兰01 入口#3 | 冷门 1.2x
-      - 荷兰01 入口#5 | 冷门 1.2x
-      - 荷兰01 香港转发 | 冷门 1.2x
-      - 阿根廷01 入口#1 | 冷门 低速 2.0x
-      - 阿根廷01 入口#2 | 冷门 低速 2.0x
-      - 阿根廷01 入口#3 | 冷门 低速 2.0x
-      - 阿根廷01 香港转发 | 冷门 低速 2.0x
-      - 韩国01 入口#1 | 1.5x
-      - 韩国01 入口#2 | 1.5x
-      - 韩国01 入口#4 | 1.5x
-      - 韩国01 入口#5 | 1.5x
-      - 韩国01 香港转发 | 1.5x
-      - 香港01 入口#1 | NF 1.5x
-      - 香港01 入口#2 | NF 1.5x
-      - 香港01 入口#3 | NF 1.5x
-      - 香港01 入口#4 | NF 1.5x
-      - 香港01 入口#5 | NF 1.5x
-      - 香港02 入口#1 | NF 1.5x
-      - 香港02 入口#2 | NF 1.5x
-      - 香港02 入口#3 | NF 1.5x
-      - 香港02 入口#4 | NF 1.5x
-      - 香港02 入口#5 | NF 1.5x
-      - 香港03 入口#1 | NF 1.5x
-      - 香港03 入口#2 | NF 1.5x
-      - 香港03 入口#3 | NF 1.5x
-      - 香港03 入口#4 | NF 1.5x
-      - 香港03 入口#5 | NF 1.5x
-      - 香港HGC01 入口#1 | 原生 1.5x
-      - 香港HGC01 入口#2 | 原生 1.5x
-      - 香港HGC01 入口#3 | 原生 1.5x
-      - 香港HGC01 入口#4 | 原生 1.5x
-      - 香港HGC01 入口#5 | 原生 1.5x
-      - 香港HGC01 香港转发 | 原生 1.5x
-      - 香港HKT01 入口#1 | 原生 1.5x
-      - 香港HKT01 入口#2 | 原生 1.5x
-      - 香港HKT01 入口#3 | 原生 1.5x
-      - 香港HKT01 入口#5 | 原生 1.5x
-      - 香港HKT01 香港转发 | 原生 1.5x
-      - 马来西亚01 入口#1 | 原生 1.5x
-      - 马来西亚01 入口#2 | 原生 1.5x
-      - 马来西亚01 入口#3 | 原生 1.5x
-      - 马来西亚01 入口#5 | 原生 1.5x
-      - 马来西亚01 香港转发 | 原生 1.5x
-  - name: 🎬Netflix
+      - '波兰01 入口#1 | 冷门 1.2x'
+      - '波兰01 入口#2 | 冷门 1.2x'
+      - '波兰01 入口#3 | 冷门 1.2x'
+      - '波兰01 入口#4 | 冷门 1.2x'
+      - '波兰01 香港转发 | 冷门 1.2x'
+      - '澳洲01 入口#1 | 冷门 1.5x'
+      - '澳洲01 入口#2 | 冷门 1.5x'
+      - '澳洲01 入口#3 | 冷门 1.5x'
+      - '澳洲01 入口#5 | 冷门 1.5x'
+      - '澳洲01 香港转发 | 冷门 1.5x'
+      - '澳洲CDN | 实验 | 免费 | 1.0x | 请经常更新订阅'
+      - '美国01 入口01 | NF 1.5x'
+      - '美国01 入口02 | NF 1.5x'
+      - '美国01 入口03 | NF 1.5x'
+      - '美国01 入口04 | NF 1.5x'
+      - '美国01 入口05 | NF 1.5x'
+      - '美国03 入口#1 | 原生 1.5x'
+      - '美国03 入口#2 | 原生 1.5x'
+      - '美国03 入口#5 | 原生 1.5x'
+      - '美国03 香港转发 | 原生 1.5x'
+      - '美国04 入口#1 | 备用 1.3x'
+      - '美国04 入口#2 | 备用 1.3x'
+      - '美国04 入口#3 | 备用 1.3x'
+      - '美国04 入口#4 | 备用 1.3x'
+      - '英国01 入口#1 | NF BBC Chan4 1.5x'
+      - '英国01 入口#2 | NF BBC Chan4 1.5x'
+      - '英国01 入口#3 | NF BBC Chan4 1.5x'
+      - '英国01 入口#4 | NF BBC Chan4 1.5x'
+      - '英国01 香港转发 | NF BBC Chan4 1.5x'
+      - '荷兰01 入口#1 | 冷门 1.2x'
+      - '荷兰01 入口#2 | 冷门 1.2x'
+      - '荷兰01 入口#3 | 冷门 1.2x'
+      - '荷兰01 入口#5 | 冷门 1.2x'
+      - '荷兰01 香港转发 | 冷门 1.2x'
+      - '阿根廷01 入口#1 | 冷门 低速 2.0x'
+      - '阿根廷01 入口#2 | 冷门 低速 2.0x'
+      - '阿根廷01 入口#3 | 冷门 低速 2.0x'
+      - '阿根廷01 香港转发 | 冷门 低速 2.0x'
+      - '韩国01 入口#1 | 1.5x'
+      - '韩国01 入口#2 | 1.5x'
+      - '韩国01 入口#4 | 1.5x'
+      - '韩国01 入口#5 | 1.5x'
+      - '韩国01 香港转发 | 1.5x'
+      - '香港01 入口#1 | NF 1.5x'
+      - '香港01 入口#2 | NF 1.5x'
+      - '香港01 入口#3 | NF 1.5x'
+      - '香港01 入口#4 | NF 1.5x'
+      - '香港01 入口#5 | NF 1.5x'
+      - '香港02 入口#1 | NF 1.5x'
+      - '香港02 入口#2 | NF 1.5x'
+      - '香港02 入口#3 | NF 1.5x'
+      - '香港02 入口#4 | NF 1.5x'
+      - '香港02 入口#5 | NF 1.5x'
+      - '香港03 入口#1 | NF 1.5x'
+      - '香港03 入口#2 | NF 1.5x'
+      - '香港03 入口#3 | NF 1.5x'
+      - '香港03 入口#4 | NF 1.5x'
+      - '香港03 入口#5 | NF 1.5x'
+      - '香港HGC01 入口#1 | 原生 1.5x'
+      - '香港HGC01 入口#2 | 原生 1.5x'
+      - '香港HGC01 入口#3 | 原生 1.5x'
+      - '香港HGC01 入口#4 | 原生 1.5x'
+      - '香港HGC01 入口#5 | 原生 1.5x'
+      - '香港HGC01 香港转发 | 原生 1.5x'
+      - '香港HKT01 入口#1 | 原生 1.5x'
+      - '香港HKT01 入口#2 | 原生 1.5x'
+      - '香港HKT01 入口#3 | 原生 1.5x'
+      - '香港HKT01 入口#5 | 原生 1.5x'
+      - '香港HKT01 香港转发 | 原生 1.5x'
+      - '马来西亚01 入口#1 | 原生 1.5x'
+      - '马来西亚01 入口#2 | 原生 1.5x'
+      - '马来西亚01 入口#3 | 原生 1.5x'
+      - '马来西亚01 入口#5 | 原生 1.5x'
+      - '马来西亚01 香港转发 | 原生 1.5x'
+  -
+    name: 🎬Netflix
     type: select
     proxies:
       - 🔰国外流量
-      - IEPL专线 粤新03 入口#1 | 4x NF
-      - IEPL专线 粤新03 入口#2 | 4x NF
-      - IEPL专线 粤新03 入口#3 | 4x NF
-      - IEPL专线 粤新03 入口#4 | 4x NF
-      - IEPL专线 粤新03 入口#5 | 4x NF
-      - IEPL专线 粤日04 入口#1 | 4x NF
-      - IEPL专线 粤日04 入口#2 | 4x NF
-      - IEPL专线 粤日04 入口#3 | 4x NF
-      - IEPL专线 粤日04 入口#4 | 4x NF
-      - IEPL专线 粤日04 入口#5 | 4x NF
-      - IEPL专线 粤港03 入口#1 | 4x NF
-      - IEPL专线 粤港03 入口#2 | 4x NF
-      - IEPL专线 粤港03 入口#3 | 4x NF
-      - IEPL专线 粤港03 入口#4 | 4x NF
-      - IEPL专线 粤港03 入口#5 | 4x NF
-      - IEPL专线 粤美02 入口#1 | 4x NF
-      - IEPL专线 粤美02 入口#2 | 4x NF
-      - IEPL专线 粤美02 入口#3 | 4x NF
-      - IEPL专线 粤美02 入口#4 | 4x NF
-      - IEPL专线 粤美02 入口#5 | 4x NF
-      - 俄罗斯01 入口#2 | 冷门 1.5x
-      - 俄罗斯01 入口#3 | 冷门 1.5x
-      - 俄罗斯01 入口#4 | 冷门 1.5x
-      - 俄罗斯01 入口#5 | 冷门 1.5x
-      - 俄罗斯05 入口#1 | 冷门 1.3x
-      - 俄罗斯05 入口#2 | 冷门 1.3x
-      - 俄罗斯05 入口#3 | 冷门 1.3x
-      - 俄罗斯05 入口#4 | 冷门 1.3x
-      - 俄罗斯05 入口#5 | 冷门 1.3x
-      - 印度01 入口#1 | 1.5x
-      - 印度01 入口#2 | 1.5x
-      - 印度01 入口#3 | 1.5x
-      - 印度01 入口#4 | 1.5x
-      - 印度01 入口#5 | 1.5x
-      - 印度01 香港转发 | 1.5x
-      - 台湾02 入口#1 | 原生 1.5x
-      - 台湾02 入口#2 | 原生 1.5x
-      - 台湾02 入口#3 | 原生 1.5x
-      - 台湾02 入口#4 | 原生 1.5x
-      - 台湾02 入口#5 | 原生 1.5x
-      - 台湾02 香港转发 | 原生 1.5x
-      - 土耳其01 入口#1 | 冷门 2.0x
-      - 土耳其01 入口#2 | 冷门 2.0x
-      - 土耳其01 入口#3 | 冷门 2.0x
-      - 土耳其01 入口#4 | 冷门 2.0x
-      - 土耳其01 香港转发 | 冷门 2.0x
-      - 巴西01 入口#1 | 冷门 3.0x
-      - 巴西01 入口#2 | 冷门 3.0x
-      - 巴西01 入口#3 | 冷门 3.0x
-      - 巴西01 香港转发 | 冷门 3.0x
-      - 德国01 入口#1 | 冷门 1.2x
-      - 德国01 入口#2 | 冷门 1.2x
-      - 德国01 入口#3 | 冷门 1.2x
-      - 德国01 入口#5 | 冷门 1.2x
-      - 德国01 香港转发 | 冷门 1.2x
-      - 新加坡01 入口#1 | 原生 1.5x
-      - 新加坡01 入口#2 | 原生 1.5x
-      - 新加坡01 入口#3 | 原生 1.5x
-      - 新加坡01 入口#4 | 原生 1.5x
-      - 新加坡01 入口#5 | 原生 1.5x
-      - 新加坡01 香港转发 | 原生 1.5x
-      - 新加坡02 入口#1 | 原生 1.5x
-      - 新加坡02 入口#2 | 原生 1.5x
-      - 新加坡02 入口#3 | 原生 1.5x
-      - 新加坡02 入口#4 | 原生 1.5x
-      - 新加坡02 入口#5 | 原生 1.5x
-      - 新加坡04 入口#1 | NF 1.5x
-      - 新加坡04 入口#2 | NF 1.5x
-      - 新加坡04 入口#3 | NF 1.5x
-      - 新加坡04 入口#4 | NF 1.5x
-      - 新加坡04 入口#5 | NF 1.5x
-      - 日本01 入口#1 | NF 1.5x
-      - 日本01 入口#2 | NF 1.5x
-      - 日本01 入口#3 | NF 1.5x
-      - 日本01 入口#4 | NF 1.5x
-      - 日本01 入口#5 | NF 1.5x
-      - 日本02 入口#1 | NF 1.5x
-      - 日本02 入口#2 | NF 1.5x
-      - 日本02 入口#3 | NF 1.5x
-      - 日本02 入口#4 | NF 1.5x
-      - 日本02 入口#5 | NF 1.5x
-      - 日本03 入口#1 | NF 1.5x
-      - 日本03 入口#2 | NF 1.5x
-      - 日本03 入口#3 | NF 1.5x
-      - 日本03 入口#4 | NF 1.5x
-      - 日本03 入口#5 | NF 1.5x
+      - 'IEPL专线 粤新03 入口#1 | 4x NF'
+      - 'IEPL专线 粤新03 入口#2 | 4x NF'
+      - 'IEPL专线 粤新03 入口#3 | 4x NF'
+      - 'IEPL专线 粤新03 入口#4 | 4x NF'
+      - 'IEPL专线 粤新03 入口#5 | 4x NF'
+      - 'IEPL专线 粤日04 入口#1 | 4x NF'
+      - 'IEPL专线 粤日04 入口#2 | 4x NF'
+      - 'IEPL专线 粤日04 入口#3 | 4x NF'
+      - 'IEPL专线 粤日04 入口#4 | 4x NF'
+      - 'IEPL专线 粤日04 入口#5 | 4x NF'
+      - 'IEPL专线 粤港03 入口#1 | 4x NF'
+      - 'IEPL专线 粤港03 入口#2 | 4x NF'
+      - 'IEPL专线 粤港03 入口#3 | 4x NF'
+      - 'IEPL专线 粤港03 入口#4 | 4x NF'
+      - 'IEPL专线 粤港03 入口#5 | 4x NF'
+      - 'IEPL专线 粤美02 入口#1 | 4x NF'
+      - 'IEPL专线 粤美02 入口#2 | 4x NF'
+      - 'IEPL专线 粤美02 入口#3 | 4x NF'
+      - 'IEPL专线 粤美02 入口#4 | 4x NF'
+      - 'IEPL专线 粤美02 入口#5 | 4x NF'
+      - '俄罗斯01 入口#2 | 冷门 1.5x'
+      - '俄罗斯01 入口#3 | 冷门 1.5x'
+      - '俄罗斯01 入口#4 | 冷门 1.5x'
+      - '俄罗斯01 入口#5 | 冷门 1.5x'
+      - '俄罗斯05 入口#1 | 冷门 1.3x'
+      - '俄罗斯05 入口#2 | 冷门 1.3x'
+      - '俄罗斯05 入口#3 | 冷门 1.3x'
+      - '俄罗斯05 入口#4 | 冷门 1.3x'
+      - '俄罗斯05 入口#5 | 冷门 1.3x'
+      - '印度01 入口#1 | 1.5x'
+      - '印度01 入口#2 | 1.5x'
+      - '印度01 入口#3 | 1.5x'
+      - '印度01 入口#4 | 1.5x'
+      - '印度01 入口#5 | 1.5x'
+      - '印度01 香港转发 | 1.5x'
+      - '台湾02 入口#1 | 原生 1.5x'
+      - '台湾02 入口#2 | 原生 1.5x'
+      - '台湾02 入口#3 | 原生 1.5x'
+      - '台湾02 入口#4 | 原生 1.5x'
+      - '台湾02 入口#5 | 原生 1.5x'
+      - '台湾02 香港转发 | 原生 1.5x'
+      - '土耳其01 入口#1 | 冷门 2.0x'
+      - '土耳其01 入口#2 | 冷门 2.0x'
+      - '土耳其01 入口#3 | 冷门 2.0x'
+      - '土耳其01 入口#4 | 冷门 2.0x'
+      - '土耳其01 香港转发 | 冷门 2.0x'
+      - '巴西01 入口#1 | 冷门 3.0x'
+      - '巴西01 入口#2 | 冷门 3.0x'
+      - '巴西01 入口#3 | 冷门 3.0x'
+      - '巴西01 香港转发 | 冷门 3.0x'
+      - '德国01 入口#1 | 冷门 1.2x'
+      - '德国01 入口#2 | 冷门 1.2x'
+      - '德国01 入口#3 | 冷门 1.2x'
+      - '德国01 入口#5 | 冷门 1.2x'
+      - '德国01 香港转发 | 冷门 1.2x'
+      - '新加坡01 入口#1 | 原生 1.5x'
+      - '新加坡01 入口#2 | 原生 1.5x'
+      - '新加坡01 入口#3 | 原生 1.5x'
+      - '新加坡01 入口#4 | 原生 1.5x'
+      - '新加坡01 入口#5 | 原生 1.5x'
+      - '新加坡01 香港转发 | 原生 1.5x'
+      - '新加坡02 入口#1 | 原生 1.5x'
+      - '新加坡02 入口#2 | 原生 1.5x'
+      - '新加坡02 入口#3 | 原生 1.5x'
+      - '新加坡02 入口#4 | 原生 1.5x'
+      - '新加坡02 入口#5 | 原生 1.5x'
+      - '新加坡04 入口#1 | NF 1.5x'
+      - '新加坡04 入口#2 | NF 1.5x'
+      - '新加坡04 入口#3 | NF 1.5x'
+      - '新加坡04 入口#4 | NF 1.5x'
+      - '新加坡04 入口#5 | NF 1.5x'
+      - '日本01 入口#1 | NF 1.5x'
+      - '日本01 入口#2 | NF 1.5x'
+      - '日本01 入口#3 | NF 1.5x'
+      - '日本01 入口#4 | NF 1.5x'
+      - '日本01 入口#5 | NF 1.5x'
+      - '日本02 入口#1 | NF 1.5x'
+      - '日本02 入口#2 | NF 1.5x'
+      - '日本02 入口#3 | NF 1.5x'
+      - '日本02 入口#4 | NF 1.5x'
+      - '日本02 入口#5 | NF 1.5x'
+      - '日本03 入口#1 | NF 1.5x'
+      - '日本03 入口#2 | NF 1.5x'
+      - '日本03 入口#3 | NF 1.5x'
+      - '日本03 入口#4 | NF 1.5x'
+      - '日本03 入口#5 | NF 1.5x'
       - 更多节点请购买-官网jinkela.wtf-白嫖-俄04
-      - 波兰01 入口#1 | 冷门 1.2x
-      - 波兰01 入口#2 | 冷门 1.2x
-      - 波兰01 入口#3 | 冷门 1.2x
-      - 波兰01 入口#4 | 冷门 1.2x
-      - 波兰01 香港转发 | 冷门 1.2x
-      - 澳洲01 入口#1 | 冷门 1.5x
-      - 澳洲01 入口#2 | 冷门 1.5x
-      - 澳洲01 入口#3 | 冷门 1.5x
-      - 澳洲01 入口#5 | 冷门 1.5x
-      - 澳洲01 香港转发 | 冷门 1.5x
-      - 澳洲CDN | 实验 | 免费 | 1.0x | 请经常更新订阅
-      - 美国01 入口01 | NF 1.5x
-      - 美国01 入口02 | NF 1.5x
-      - 美国01 入口03 | NF 1.5x
-      - 美国01 入口04 | NF 1.5x
-      - 美国01 入口05 | NF 1.5x
-      - 美国03 入口#1 | 原生 1.5x
-      - 美国03 入口#2 | 原生 1.5x
-      - 美国03 入口#5 | 原生 1.5x
-      - 美国03 香港转发 | 原生 1.5x
-      - 美国04 入口#1 | 备用 1.3x
-      - 美国04 入口#2 | 备用 1.3x
-      - 美国04 入口#3 | 备用 1.3x
-      - 美国04 入口#4 | 备用 1.3x
-      - 英国01 入口#1 | NF BBC Chan4 1.5x
-      - 英国01 入口#2 | NF BBC Chan4 1.5x
-      - 英国01 入口#3 | NF BBC Chan4 1.5x
-      - 英国01 入口#4 | NF BBC Chan4 1.5x
-      - 英国01 香港转发 | NF BBC Chan4 1.5x
-      - 荷兰01 入口#1 | 冷门 1.2x
-      - 荷兰01 入口#2 | 冷门 1.2x
-      - 荷兰01 入口#3 | 冷门 1.2x
-      - 荷兰01 入口#5 | 冷门 1.2x
-      - 荷兰01 香港转发 | 冷门 1.2x
-      - 阿根廷01 入口#1 | 冷门 低速 2.0x
-      - 阿根廷01 入口#2 | 冷门 低速 2.0x
-      - 阿根廷01 入口#3 | 冷门 低速 2.0x
-      - 阿根廷01 香港转发 | 冷门 低速 2.0x
-      - 韩国01 入口#1 | 1.5x
-      - 韩国01 入口#2 | 1.5x
-      - 韩国01 入口#4 | 1.5x
-      - 韩国01 入口#5 | 1.5x
-      - 韩国01 香港转发 | 1.5x
-      - 香港01 入口#1 | NF 1.5x
-      - 香港01 入口#2 | NF 1.5x
-      - 香港01 入口#3 | NF 1.5x
-      - 香港01 入口#4 | NF 1.5x
-      - 香港01 入口#5 | NF 1.5x
-      - 香港02 入口#1 | NF 1.5x
-      - 香港02 入口#2 | NF 1.5x
-      - 香港02 入口#3 | NF 1.5x
-      - 香港02 入口#4 | NF 1.5x
-      - 香港02 入口#5 | NF 1.5x
-      - 香港03 入口#1 | NF 1.5x
-      - 香港03 入口#2 | NF 1.5x
-      - 香港03 入口#3 | NF 1.5x
-      - 香港03 入口#4 | NF 1.5x
-      - 香港03 入口#5 | NF 1.5x
-      - 香港HGC01 入口#1 | 原生 1.5x
-      - 香港HGC01 入口#2 | 原生 1.5x
-      - 香港HGC01 入口#3 | 原生 1.5x
-      - 香港HGC01 入口#4 | 原生 1.5x
-      - 香港HGC01 入口#5 | 原生 1.5x
-      - 香港HGC01 香港转发 | 原生 1.5x
-      - 香港HKT01 入口#1 | 原生 1.5x
-      - 香港HKT01 入口#2 | 原生 1.5x
-      - 香港HKT01 入口#3 | 原生 1.5x
-      - 香港HKT01 入口#5 | 原生 1.5x
-      - 香港HKT01 香港转发 | 原生 1.5x
-      - 马来西亚01 入口#1 | 原生 1.5x
-      - 马来西亚01 入口#2 | 原生 1.5x
-      - 马来西亚01 入口#3 | 原生 1.5x
-      - 马来西亚01 入口#5 | 原生 1.5x
-      - 马来西亚01 香港转发 | 原生 1.5x
-  - name: 🎬哔哩哔哩
-    type: select
-    proxies:
-      - 🚀直接连接
-      - IEPL专线 粤新03 入口#1 | 4x NF
-      - IEPL专线 粤新03 入口#2 | 4x NF
-      - IEPL专线 粤新03 入口#3 | 4x NF
-      - IEPL专线 粤新03 入口#4 | 4x NF
-      - IEPL专线 粤新03 入口#5 | 4x NF
-      - IEPL专线 粤日04 入口#1 | 4x NF
-      - IEPL专线 粤日04 入口#2 | 4x NF
-      - IEPL专线 粤日04 入口#3 | 4x NF
-      - IEPL专线 粤日04 入口#4 | 4x NF
-      - IEPL专线 粤日04 入口#5 | 4x NF
-      - IEPL专线 粤港03 入口#1 | 4x NF
-      - IEPL专线 粤港03 入口#2 | 4x NF
-      - IEPL专线 粤港03 入口#3 | 4x NF
-      - IEPL专线 粤港03 入口#4 | 4x NF
-      - IEPL专线 粤港03 入口#5 | 4x NF
-      - IEPL专线 粤美02 入口#1 | 4x NF
-      - IEPL专线 粤美02 入口#2 | 4x NF
-      - IEPL专线 粤美02 入口#3 | 4x NF
-      - IEPL专线 粤美02 入口#4 | 4x NF
-      - IEPL专线 粤美02 入口#5 | 4x NF
-      - 俄罗斯01 入口#2 | 冷门 1.5x
-      - 俄罗斯01 入口#3 | 冷门 1.5x
-      - 俄罗斯01 入口#4 | 冷门 1.5x
-      - 俄罗斯01 入口#5 | 冷门 1.5x
-      - 俄罗斯05 入口#1 | 冷门 1.3x
-      - 俄罗斯05 入口#2 | 冷门 1.3x
-      - 俄罗斯05 入口#3 | 冷门 1.3x
-      - 俄罗斯05 入口#4 | 冷门 1.3x
-      - 俄罗斯05 入口#5 | 冷门 1.3x
-      - 印度01 入口#1 | 1.5x
-      - 印度01 入口#2 | 1.5x
-      - 印度01 入口#3 | 1.5x
-      - 印度01 入口#4 | 1.5x
-      - 印度01 入口#5 | 1.5x
-      - 印度01 香港转发 | 1.5x
-      - 台湾02 入口#1 | 原生 1.5x
-      - 台湾02 入口#2 | 原生 1.5x
-      - 台湾02 入口#3 | 原生 1.5x
-      - 台湾02 入口#4 | 原生 1.5x
-      - 台湾02 入口#5 | 原生 1.5x
-      - 台湾02 香港转发 | 原生 1.5x
-      - 土耳其01 入口#1 | 冷门 2.0x
-      - 土耳其01 入口#2 | 冷门 2.0x
-      - 土耳其01 入口#3 | 冷门 2.0x
-      - 土耳其01 入口#4 | 冷门 2.0x
-      - 土耳其01 香港转发 | 冷门 2.0x
-      - 巴西01 入口#1 | 冷门 3.0x
-      - 巴西01 入口#2 | 冷门 3.0x
-      - 巴西01 入口#3 | 冷门 3.0x
-      - 巴西01 香港转发 | 冷门 3.0x
-      - 德国01 入口#1 | 冷门 1.2x
-      - 德国01 入口#2 | 冷门 1.2x
-      - 德国01 入口#3 | 冷门 1.2x
-      - 德国01 入口#5 | 冷门 1.2x
-      - 德国01 香港转发 | 冷门 1.2x
-      - 新加坡01 入口#1 | 原生 1.5x
-      - 新加坡01 入口#2 | 原生 1.5x
-      - 新加坡01 入口#3 | 原生 1.5x
-      - 新加坡01 入口#4 | 原生 1.5x
-      - 新加坡01 入口#5 | 原生 1.5x
-      - 新加坡01 香港转发 | 原生 1.5x
-      - 新加坡02 入口#1 | 原生 1.5x
-      - 新加坡02 入口#2 | 原生 1.5x
-      - 新加坡02 入口#3 | 原生 1.5x
-      - 新加坡02 入口#4 | 原生 1.5x
-      - 新加坡02 入口#5 | 原生 1.5x
-      - 新加坡04 入口#1 | NF 1.5x
-      - 新加坡04 入口#2 | NF 1.5x
-      - 新加坡04 入口#3 | NF 1.5x
-      - 新加坡04 入口#4 | NF 1.5x
-      - 新加坡04 入口#5 | NF 1.5x
-      - 日本01 入口#1 | NF 1.5x
-      - 日本01 入口#2 | NF 1.5x
-      - 日本01 入口#3 | NF 1.5x
-      - 日本01 入口#4 | NF 1.5x
-      - 日本01 入口#5 | NF 1.5x
-      - 日本02 入口#1 | NF 1.5x
-      - 日本02 入口#2 | NF 1.5x
-      - 日本02 入口#3 | NF 1.5x
-      - 日本02 入口#4 | NF 1.5x
-      - 日本02 入口#5 | NF 1.5x
-      - 日本03 入口#1 | NF 1.5x
-      - 日本03 入口#2 | NF 1.5x
-      - 日本03 入口#3 | NF 1.5x
-      - 日本03 入口#4 | NF 1.5x
-      - 日本03 入口#5 | NF 1.5x
-      - 更多节点请购买-官网jinkela.wtf-白嫖-俄04
-      - 波兰01 入口#1 | 冷门 1.2x
-      - 波兰01 入口#2 | 冷门 1.2x
-      - 波兰01 入口#3 | 冷门 1.2x
-      - 波兰01 入口#4 | 冷门 1.2x
-      - 波兰01 香港转发 | 冷门 1.2x
-      - 澳洲01 入口#1 | 冷门 1.5x
-      - 澳洲01 入口#2 | 冷门 1.5x
-      - 澳洲01 入口#3 | 冷门 1.5x
-      - 澳洲01 入口#5 | 冷门 1.5x
-      - 澳洲01 香港转发 | 冷门 1.5x
-      - 澳洲CDN | 实验 | 免费 | 1.0x | 请经常更新订阅
-      - 美国01 入口01 | NF 1.5x
-      - 美国01 入口02 | NF 1.5x
-      - 美国01 入口03 | NF 1.5x
-      - 美国01 入口04 | NF 1.5x
-      - 美国01 入口05 | NF 1.5x
-      - 美国03 入口#1 | 原生 1.5x
-      - 美国03 入口#2 | 原生 1.5x
-      - 美国03 入口#5 | 原生 1.5x
-      - 美国03 香港转发 | 原生 1.5x
-      - 美国04 入口#1 | 备用 1.3x
-      - 美国04 入口#2 | 备用 1.3x
-      - 美国04 入口#3 | 备用 1.3x
-      - 美国04 入口#4 | 备用 1.3x
-      - 英国01 入口#1 | NF BBC Chan4 1.5x
-      - 英国01 入口#2 | NF BBC Chan4 1.5x
-      - 英国01 入口#3 | NF BBC Chan4 1.5x
-      - 英国01 入口#4 | NF BBC Chan4 1.5x
-      - 英国01 香港转发 | NF BBC Chan4 1.5x
-      - 荷兰01 入口#1 | 冷门 1.2x
-      - 荷兰01 入口#2 | 冷门 1.2x
-      - 荷兰01 入口#3 | 冷门 1.2x
-      - 荷兰01 入口#5 | 冷门 1.2x
-      - 荷兰01 香港转发 | 冷门 1.2x
-      - 阿根廷01 入口#1 | 冷门 低速 2.0x
-      - 阿根廷01 入口#2 | 冷门 低速 2.0x
-      - 阿根廷01 入口#3 | 冷门 低速 2.0x
-      - 阿根廷01 香港转发 | 冷门 低速 2.0x
-      - 韩国01 入口#1 | 1.5x
-      - 韩国01 入口#2 | 1.5x
-      - 韩国01 入口#4 | 1.5x
-      - 韩国01 入口#5 | 1.5x
-      - 韩国01 香港转发 | 1.5x
-      - 香港01 入口#1 | NF 1.5x
-      - 香港01 入口#2 | NF 1.5x
-      - 香港01 入口#3 | NF 1.5x
-      - 香港01 入口#4 | NF 1.5x
-      - 香港01 入口#5 | NF 1.5x
-      - 香港02 入口#1 | NF 1.5x
-      - 香港02 入口#2 | NF 1.5x
-      - 香港02 入口#3 | NF 1.5x
-      - 香港02 入口#4 | NF 1.5x
-      - 香港02 入口#5 | NF 1.5x
-      - 香港03 入口#1 | NF 1.5x
-      - 香港03 入口#2 | NF 1.5x
-      - 香港03 入口#3 | NF 1.5x
-      - 香港03 入口#4 | NF 1.5x
-      - 香港03 入口#5 | NF 1.5x
-      - 香港HGC01 入口#1 | 原生 1.5x
-      - 香港HGC01 入口#2 | 原生 1.5x
-      - 香港HGC01 入口#3 | 原生 1.5x
-      - 香港HGC01 入口#4 | 原生 1.5x
-      - 香港HGC01 入口#5 | 原生 1.5x
-      - 香港HGC01 香港转发 | 原生 1.5x
-      - 香港HKT01 入口#1 | 原生 1.5x
-      - 香港HKT01 入口#2 | 原生 1.5x
-      - 香港HKT01 入口#3 | 原生 1.5x
-      - 香港HKT01 入口#5 | 原生 1.5x
-      - 香港HKT01 香港转发 | 原生 1.5x
-      - 马来西亚01 入口#1 | 原生 1.5x
-      - 马来西亚01 入口#2 | 原生 1.5x
-      - 马来西亚01 入口#3 | 原生 1.5x
-      - 马来西亚01 入口#5 | 原生 1.5x
-      - 马来西亚01 香港转发 | 原生 1.5x
-  - name: 🎬国外媒体
-    type: select
-    proxies:
-      - 🔰国外流量
-      - IEPL专线 粤新03 入口#1 | 4x NF
-      - IEPL专线 粤新03 入口#2 | 4x NF
-      - IEPL专线 粤新03 入口#3 | 4x NF
-      - IEPL专线 粤新03 入口#4 | 4x NF
-      - IEPL专线 粤新03 入口#5 | 4x NF
-      - IEPL专线 粤日04 入口#1 | 4x NF
-      - IEPL专线 粤日04 入口#2 | 4x NF
-      - IEPL专线 粤日04 入口#3 | 4x NF
-      - IEPL专线 粤日04 入口#4 | 4x NF
-      - IEPL专线 粤日04 入口#5 | 4x NF
-      - IEPL专线 粤港03 入口#1 | 4x NF
-      - IEPL专线 粤港03 入口#2 | 4x NF
-      - IEPL专线 粤港03 入口#3 | 4x NF
-      - IEPL专线 粤港03 入口#4 | 4x NF
-      - IEPL专线 粤港03 入口#5 | 4x NF
-      - IEPL专线 粤美02 入口#1 | 4x NF
-      - IEPL专线 粤美02 入口#2 | 4x NF
-      - IEPL专线 粤美02 入口#3 | 4x NF
-      - IEPL专线 粤美02 入口#4 | 4x NF
-      - IEPL专线 粤美02 入口#5 | 4x NF
-      - 俄罗斯01 入口#2 | 冷门 1.5x
-      - 俄罗斯01 入口#3 | 冷门 1.5x
-      - 俄罗斯01 入口#4 | 冷门 1.5x
-      - 俄罗斯01 入口#5 | 冷门 1.5x
-      - 俄罗斯05 入口#1 | 冷门 1.3x
-      - 俄罗斯05 入口#2 | 冷门 1.3x
-      - 俄罗斯05 入口#3 | 冷门 1.3x
-      - 俄罗斯05 入口#4 | 冷门 1.3x
-      - 俄罗斯05 入口#5 | 冷门 1.3x
-      - 印度01 入口#1 | 1.5x
-      - 印度01 入口#2 | 1.5x
-      - 印度01 入口#3 | 1.5x
-      - 印度01 入口#4 | 1.5x
-      - 印度01 入口#5 | 1.5x
-      - 印度01 香港转发 | 1.5x
-      - 台湾02 入口#1 | 原生 1.5x
-      - 台湾02 入口#2 | 原生 1.5x
-      - 台湾02 入口#3 | 原生 1.5x
-      - 台湾02 入口#4 | 原生 1.5x
-      - 台湾02 入口#5 | 原生 1.5x
-      - 台湾02 香港转发 | 原生 1.5x
-      - 土耳其01 入口#1 | 冷门 2.0x
-      - 土耳其01 入口#2 | 冷门 2.0x
-      - 土耳其01 入口#3 | 冷门 2.0x
-      - 土耳其01 入口#4 | 冷门 2.0x
-      - 土耳其01 香港转发 | 冷门 2.0x
-      - 巴西01 入口#1 | 冷门 3.0x
-      - 巴西01 入口#2 | 冷门 3.0x
-      - 巴西01 入口#3 | 冷门 3.0x
-      - 巴西01 香港转发 | 冷门 3.0x
-      - 德国01 入口#1 | 冷门 1.2x
-      - 德国01 入口#2 | 冷门 1.2x
-      - 德国01 入口#3 | 冷门 1.2x
-      - 德国01 入口#5 | 冷门 1.2x
-      - 德国01 香港转发 | 冷门 1.2x
-      - 新加坡01 入口#1 | 原生 1.5x
-      - 新加坡01 入口#2 | 原生 1.5x
-      - 新加坡01 入口#3 | 原生 1.5x
-      - 新加坡01 入口#4 | 原生 1.5x
-      - 新加坡01 入口#5 | 原生 1.5x
-      - 新加坡01 香港转发 | 原生 1.5x
-      - 新加坡02 入口#1 | 原生 1.5x
-      - 新加坡02 入口#2 | 原生 1.5x
-      - 新加坡02 入口#3 | 原生 1.5x
-      - 新加坡02 入口#4 | 原生 1.5x
-      - 新加坡02 入口#5 | 原生 1.5x
-      - 新加坡04 入口#1 | NF 1.5x
-      - 新加坡04 入口#2 | NF 1.5x
-      - 新加坡04 入口#3 | NF 1.5x
-      - 新加坡04 入口#4 | NF 1.5x
-      - 新加坡04 入口#5 | NF 1.5x
-      - 日本01 入口#1 | NF 1.5x
-      - 日本01 入口#2 | NF 1.5x
-      - 日本01 入口#3 | NF 1.5x
-      - 日本01 入口#4 | NF 1.5x
-      - 日本01 入口#5 | NF 1.5x
-      - 日本02 入口#1 | NF 1.5x
-      - 日本02 入口#2 | NF 1.5x
-      - 日本02 入口#3 | NF 1.5x
-      - 日本02 入口#4 | NF 1.5x
-      - 日本02 入口#5 | NF 1.5x
-      - 日本03 入口#1 | NF 1.5x
-      - 日本03 入口#2 | NF 1.5x
-      - 日本03 入口#3 | NF 1.5x
-      - 日本03 入口#4 | NF 1.5x
-      - 日本03 入口#5 | NF 1.5x
-      - 更多节点请购买-官网jinkela.wtf-白嫖-俄04
-      - 波兰01 入口#1 | 冷门 1.2x
-      - 波兰01 入口#2 | 冷门 1.2x
-      - 波兰01 入口#3 | 冷门 1.2x
-      - 波兰01 入口#4 | 冷门 1.2x
-      - 波兰01 香港转发 | 冷门 1.2x
-      - 澳洲01 入口#1 | 冷门 1.5x
-      - 澳洲01 入口#2 | 冷门 1.5x
-      - 澳洲01 入口#3 | 冷门 1.5x
-      - 澳洲01 入口#5 | 冷门 1.5x
-      - 澳洲01 香港转发 | 冷门 1.5x
-      - 澳洲CDN | 实验 | 免费 | 1.0x | 请经常更新订阅
-      - 美国01 入口01 | NF 1.5x
-      - 美国01 入口02 | NF 1.5x
-      - 美国01 入口03 | NF 1.5x
-      - 美国01 入口04 | NF 1.5x
-      - 美国01 入口05 | NF 1.5x
-      - 美国03 入口#1 | 原生 1.5x
-      - 美国03 入口#2 | 原生 1.5x
-      - 美国03 入口#5 | 原生 1.5x
-      - 美国03 香港转发 | 原生 1.5x
-      - 美国04 入口#1 | 备用 1.3x
-      - 美国04 入口#2 | 备用 1.3x
-      - 美国04 入口#3 | 备用 1.3x
-      - 美国04 入口#4 | 备用 1.3x
-      - 英国01 入口#1 | NF BBC Chan4 1.5x
-      - 英国01 入口#2 | NF BBC Chan4 1.5x
-      - 英国01 入口#3 | NF BBC Chan4 1.5x
-      - 英国01 入口#4 | NF BBC Chan4 1.5x
-      - 英国01 香港转发 | NF BBC Chan4 1.5x
-      - 荷兰01 入口#1 | 冷门 1.2x
-      - 荷兰01 入口#2 | 冷门 1.2x
-      - 荷兰01 入口#3 | 冷门 1.2x
-      - 荷兰01 入口#5 | 冷门 1.2x
-      - 荷兰01 香港转发 | 冷门 1.2x
-      - 阿根廷01 入口#1 | 冷门 低速 2.0x
-      - 阿根廷01 入口#2 | 冷门 低速 2.0x
-      - 阿根廷01 入口#3 | 冷门 低速 2.0x
-      - 阿根廷01 香港转发 | 冷门 低速 2.0x
-      - 韩国01 入口#1 | 1.5x
-      - 韩国01 入口#2 | 1.5x
-      - 韩国01 入口#4 | 1.5x
-      - 韩国01 入口#5 | 1.5x
-      - 韩国01 香港转发 | 1.5x
-      - 香港01 入口#1 | NF 1.5x
-      - 香港01 入口#2 | NF 1.5x
-      - 香港01 入口#3 | NF 1.5x
-      - 香港01 入口#4 | NF 1.5x
-      - 香港01 入口#5 | NF 1.5x
-      - 香港02 入口#1 | NF 1.5x
-      - 香港02 入口#2 | NF 1.5x
-      - 香港02 入口#3 | NF 1.5x
-      - 香港02 入口#4 | NF 1.5x
-      - 香港02 入口#5 | NF 1.5x
-      - 香港03 入口#1 | NF 1.5x
-      - 香港03 入口#2 | NF 1.5x
-      - 香港03 入口#3 | NF 1.5x
-      - 香港03 入口#4 | NF 1.5x
-      - 香港03 入口#5 | NF 1.5x
-      - 香港HGC01 入口#1 | 原生 1.5x
-      - 香港HGC01 入口#2 | 原生 1.5x
-      - 香港HGC01 入口#3 | 原生 1.5x
-      - 香港HGC01 入口#4 | 原生 1.5x
-      - 香港HGC01 入口#5 | 原生 1.5x
-      - 香港HGC01 香港转发 | 原生 1.5x
-      - 香港HKT01 入口#1 | 原生 1.5x
-      - 香港HKT01 入口#2 | 原生 1.5x
-      - 香港HKT01 入口#3 | 原生 1.5x
-      - 香港HKT01 入口#5 | 原生 1.5x
-      - 香港HKT01 香港转发 | 原生 1.5x
-      - 马来西亚01 入口#1 | 原生 1.5x
-      - 马来西亚01 入口#2 | 原生 1.5x
-      - 马来西亚01 入口#3 | 原生 1.5x
-      - 马来西亚01 入口#5 | 原生 1.5x
-      - 马来西亚01 香港转发 | 原生 1.5x
-  - name: 🍎苹果服务
+      - '波兰01 入口#1 | 冷门 1.2x'
+      - '波兰01 入口#2 | 冷门 1.2x'
+      - '波兰01 入口#3 | 冷门 1.2x'
+      - '波兰01 入口#4 | 冷门 1.2x'
+      - '波兰01 香港转发 | 冷门 1.2x'
+      - '澳洲01 入口#1 | 冷门 1.5x'
+      - '澳洲01 入口#2 | 冷门 1.5x'
+      - '澳洲01 入口#3 | 冷门 1.5x'
+      - '澳洲01 入口#5 | 冷门 1.5x'
+      - '澳洲01 香港转发 | 冷门 1.5x'
+      - '澳洲CDN | 实验 | 免费 | 1.0x | 请经常更新订阅'
+      - '美国01 入口01 | NF 1.5x'
+      - '美国01 入口02 | NF 1.5x'
+      - '美国01 入口03 | NF 1.5x'
+      - '美国01 入口04 | NF 1.5x'
+      - '美国01 入口05 | NF 1.5x'
+      - '美国03 入口#1 | 原生 1.5x'
+      - '美国03 入口#2 | 原生 1.5x'
+      - '美国03 入口#5 | 原生 1.5x'
+      - '美国03 香港转发 | 原生 1.5x'
+      - '美国04 入口#1 | 备用 1.3x'
+      - '美国04 入口#2 | 备用 1.3x'
+      - '美国04 入口#3 | 备用 1.3x'
+      - '美国04 入口#4 | 备用 1.3x'
+      - '英国01 入口#1 | NF BBC Chan4 1.5x'
+      - '英国01 入口#2 | NF BBC Chan4 1.5x'
+      - '英国01 入口#3 | NF BBC Chan4 1.5x'
+      - '英国01 入口#4 | NF BBC Chan4 1.5x'
+      - '英国01 香港转发 | NF BBC Chan4 1.5x'
+      - '荷兰01 入口#1 | 冷门 1.2x'
+      - '荷兰01 入口#2 | 冷门 1.2x'
+      - '荷兰01 入口#3 | 冷门 1.2x'
+      - '荷兰01 入口#5 | 冷门 1.2x'
+      - '荷兰01 香港转发 | 冷门 1.2x'
+      - '阿根廷01 入口#1 | 冷门 低速 2.0x'
+      - '阿根廷01 入口#2 | 冷门 低速 2.0x'
+      - '阿根廷01 入口#3 | 冷门 低速 2.0x'
+      - '阿根廷01 香港转发 | 冷门 低速 2.0x'
+      - '韩国01 入口#1 | 1.5x'
+      - '韩国01 入口#2 | 1.5x'
+      - '韩国01 入口#4 | 1.5x'
+      - '韩国01 入口#5 | 1.5x'
+      - '韩国01 香港转发 | 1.5x'
+      - '香港01 入口#1 | NF 1.5x'
+      - '香港01 入口#2 | NF 1.5x'
+      - '香港01 入口#3 | NF 1.5x'
+      - '香港01 入口#4 | NF 1.5x'
+      - '香港01 入口#5 | NF 1.5x'
+      - '香港02 入口#1 | NF 1.5x'
+      - '香港02 入口#2 | NF 1.5x'
+      - '香港02 入口#3 | NF 1.5x'
+      - '香港02 入口#4 | NF 1.5x'
+      - '香港02 入口#5 | NF 1.5x'
+      - '香港03 入口#1 | NF 1.5x'
+      - '香港03 入口#2 | NF 1.5x'
+      - '香港03 入口#3 | NF 1.5x'
+      - '香港03 入口#4 | NF 1.5x'
+      - '香港03 入口#5 | NF 1.5x'
+      - '香港HGC01 入口#1 | 原生 1.5x'
+      - '香港HGC01 入口#2 | 原生 1.5x'
+      - '香港HGC01 入口#3 | 原生 1.5x'
+      - '香港HGC01 入口#4 | 原生 1.5x'
+      - '香港HGC01 入口#5 | 原生 1.5x'
+      - '香港HGC01 香港转发 | 原生 1.5x'
+      - '香港HKT01 入口#1 | 原生 1.5x'
+      - '香港HKT01 入口#2 | 原生 1.5x'
+      - '香港HKT01 入口#3 | 原生 1.5x'
+      - '香港HKT01 入口#5 | 原生 1.5x'
+      - '香港HKT01 香港转发 | 原生 1.5x'
+      - '马来西亚01 入口#1 | 原生 1.5x'
+      - '马来西亚01 入口#2 | 原生 1.5x'
+      - '马来西亚01 入口#3 | 原生 1.5x'
+      - '马来西亚01 入口#5 | 原生 1.5x'
+      - '马来西亚01 香港转发 | 原生 1.5x'
+  -
+    name: 🎬哔哩哔哩
     type: select
     proxies:
       - 🚀直接连接
+      - 'IEPL专线 粤新03 入口#1 | 4x NF'
+      - 'IEPL专线 粤新03 入口#2 | 4x NF'
+      - 'IEPL专线 粤新03 入口#3 | 4x NF'
+      - 'IEPL专线 粤新03 入口#4 | 4x NF'
+      - 'IEPL专线 粤新03 入口#5 | 4x NF'
+      - 'IEPL专线 粤日04 入口#1 | 4x NF'
+      - 'IEPL专线 粤日04 入口#2 | 4x NF'
+      - 'IEPL专线 粤日04 入口#3 | 4x NF'
+      - 'IEPL专线 粤日04 入口#4 | 4x NF'
+      - 'IEPL专线 粤日04 入口#5 | 4x NF'
+      - 'IEPL专线 粤港03 入口#1 | 4x NF'
+      - 'IEPL专线 粤港03 入口#2 | 4x NF'
+      - 'IEPL专线 粤港03 入口#3 | 4x NF'
+      - 'IEPL专线 粤港03 入口#4 | 4x NF'
+      - 'IEPL专线 粤港03 入口#5 | 4x NF'
+      - 'IEPL专线 粤美02 入口#1 | 4x NF'
+      - 'IEPL专线 粤美02 入口#2 | 4x NF'
+      - 'IEPL专线 粤美02 入口#3 | 4x NF'
+      - 'IEPL专线 粤美02 入口#4 | 4x NF'
+      - 'IEPL专线 粤美02 入口#5 | 4x NF'
+      - '俄罗斯01 入口#2 | 冷门 1.5x'
+      - '俄罗斯01 入口#3 | 冷门 1.5x'
+      - '俄罗斯01 入口#4 | 冷门 1.5x'
+      - '俄罗斯01 入口#5 | 冷门 1.5x'
+      - '俄罗斯05 入口#1 | 冷门 1.3x'
+      - '俄罗斯05 入口#2 | 冷门 1.3x'
+      - '俄罗斯05 入口#3 | 冷门 1.3x'
+      - '俄罗斯05 入口#4 | 冷门 1.3x'
+      - '俄罗斯05 入口#5 | 冷门 1.3x'
+      - '印度01 入口#1 | 1.5x'
+      - '印度01 入口#2 | 1.5x'
+      - '印度01 入口#3 | 1.5x'
+      - '印度01 入口#4 | 1.5x'
+      - '印度01 入口#5 | 1.5x'
+      - '印度01 香港转发 | 1.5x'
+      - '台湾02 入口#1 | 原生 1.5x'
+      - '台湾02 入口#2 | 原生 1.5x'
+      - '台湾02 入口#3 | 原生 1.5x'
+      - '台湾02 入口#4 | 原生 1.5x'
+      - '台湾02 入口#5 | 原生 1.5x'
+      - '台湾02 香港转发 | 原生 1.5x'
+      - '土耳其01 入口#1 | 冷门 2.0x'
+      - '土耳其01 入口#2 | 冷门 2.0x'
+      - '土耳其01 入口#3 | 冷门 2.0x'
+      - '土耳其01 入口#4 | 冷门 2.0x'
+      - '土耳其01 香港转发 | 冷门 2.0x'
+      - '巴西01 入口#1 | 冷门 3.0x'
+      - '巴西01 入口#2 | 冷门 3.0x'
+      - '巴西01 入口#3 | 冷门 3.0x'
+      - '巴西01 香港转发 | 冷门 3.0x'
+      - '德国01 入口#1 | 冷门 1.2x'
+      - '德国01 入口#2 | 冷门 1.2x'
+      - '德国01 入口#3 | 冷门 1.2x'
+      - '德国01 入口#5 | 冷门 1.2x'
+      - '德国01 香港转发 | 冷门 1.2x'
+      - '新加坡01 入口#1 | 原生 1.5x'
+      - '新加坡01 入口#2 | 原生 1.5x'
+      - '新加坡01 入口#3 | 原生 1.5x'
+      - '新加坡01 入口#4 | 原生 1.5x'
+      - '新加坡01 入口#5 | 原生 1.5x'
+      - '新加坡01 香港转发 | 原生 1.5x'
+      - '新加坡02 入口#1 | 原生 1.5x'
+      - '新加坡02 入口#2 | 原生 1.5x'
+      - '新加坡02 入口#3 | 原生 1.5x'
+      - '新加坡02 入口#4 | 原生 1.5x'
+      - '新加坡02 入口#5 | 原生 1.5x'
+      - '新加坡04 入口#1 | NF 1.5x'
+      - '新加坡04 入口#2 | NF 1.5x'
+      - '新加坡04 入口#3 | NF 1.5x'
+      - '新加坡04 入口#4 | NF 1.5x'
+      - '新加坡04 入口#5 | NF 1.5x'
+      - '日本01 入口#1 | NF 1.5x'
+      - '日本01 入口#2 | NF 1.5x'
+      - '日本01 入口#3 | NF 1.5x'
+      - '日本01 入口#4 | NF 1.5x'
+      - '日本01 入口#5 | NF 1.5x'
+      - '日本02 入口#1 | NF 1.5x'
+      - '日本02 入口#2 | NF 1.5x'
+      - '日本02 入口#3 | NF 1.5x'
+      - '日本02 入口#4 | NF 1.5x'
+      - '日本02 入口#5 | NF 1.5x'
+      - '日本03 入口#1 | NF 1.5x'
+      - '日本03 入口#2 | NF 1.5x'
+      - '日本03 入口#3 | NF 1.5x'
+      - '日本03 入口#4 | NF 1.5x'
+      - '日本03 入口#5 | NF 1.5x'
+      - 更多节点请购买-官网jinkela.wtf-白嫖-俄04
+      - '波兰01 入口#1 | 冷门 1.2x'
+      - '波兰01 入口#2 | 冷门 1.2x'
+      - '波兰01 入口#3 | 冷门 1.2x'
+      - '波兰01 入口#4 | 冷门 1.2x'
+      - '波兰01 香港转发 | 冷门 1.2x'
+      - '澳洲01 入口#1 | 冷门 1.5x'
+      - '澳洲01 入口#2 | 冷门 1.5x'
+      - '澳洲01 入口#3 | 冷门 1.5x'
+      - '澳洲01 入口#5 | 冷门 1.5x'
+      - '澳洲01 香港转发 | 冷门 1.5x'
+      - '澳洲CDN | 实验 | 免费 | 1.0x | 请经常更新订阅'
+      - '美国01 入口01 | NF 1.5x'
+      - '美国01 入口02 | NF 1.5x'
+      - '美国01 入口03 | NF 1.5x'
+      - '美国01 入口04 | NF 1.5x'
+      - '美国01 入口05 | NF 1.5x'
+      - '美国03 入口#1 | 原生 1.5x'
+      - '美国03 入口#2 | 原生 1.5x'
+      - '美国03 入口#5 | 原生 1.5x'
+      - '美国03 香港转发 | 原生 1.5x'
+      - '美国04 入口#1 | 备用 1.3x'
+      - '美国04 入口#2 | 备用 1.3x'
+      - '美国04 入口#3 | 备用 1.3x'
+      - '美国04 入口#4 | 备用 1.3x'
+      - '英国01 入口#1 | NF BBC Chan4 1.5x'
+      - '英国01 入口#2 | NF BBC Chan4 1.5x'
+      - '英国01 入口#3 | NF BBC Chan4 1.5x'
+      - '英国01 入口#4 | NF BBC Chan4 1.5x'
+      - '英国01 香港转发 | NF BBC Chan4 1.5x'
+      - '荷兰01 入口#1 | 冷门 1.2x'
+      - '荷兰01 入口#2 | 冷门 1.2x'
+      - '荷兰01 入口#3 | 冷门 1.2x'
+      - '荷兰01 入口#5 | 冷门 1.2x'
+      - '荷兰01 香港转发 | 冷门 1.2x'
+      - '阿根廷01 入口#1 | 冷门 低速 2.0x'
+      - '阿根廷01 入口#2 | 冷门 低速 2.0x'
+      - '阿根廷01 入口#3 | 冷门 低速 2.0x'
+      - '阿根廷01 香港转发 | 冷门 低速 2.0x'
+      - '韩国01 入口#1 | 1.5x'
+      - '韩国01 入口#2 | 1.5x'
+      - '韩国01 入口#4 | 1.5x'
+      - '韩国01 入口#5 | 1.5x'
+      - '韩国01 香港转发 | 1.5x'
+      - '香港01 入口#1 | NF 1.5x'
+      - '香港01 入口#2 | NF 1.5x'
+      - '香港01 入口#3 | NF 1.5x'
+      - '香港01 入口#4 | NF 1.5x'
+      - '香港01 入口#5 | NF 1.5x'
+      - '香港02 入口#1 | NF 1.5x'
+      - '香港02 入口#2 | NF 1.5x'
+      - '香港02 入口#3 | NF 1.5x'
+      - '香港02 入口#4 | NF 1.5x'
+      - '香港02 入口#5 | NF 1.5x'
+      - '香港03 入口#1 | NF 1.5x'
+      - '香港03 入口#2 | NF 1.5x'
+      - '香港03 入口#3 | NF 1.5x'
+      - '香港03 入口#4 | NF 1.5x'
+      - '香港03 入口#5 | NF 1.5x'
+      - '香港HGC01 入口#1 | 原生 1.5x'
+      - '香港HGC01 入口#2 | 原生 1.5x'
+      - '香港HGC01 入口#3 | 原生 1.5x'
+      - '香港HGC01 入口#4 | 原生 1.5x'
+      - '香港HGC01 入口#5 | 原生 1.5x'
+      - '香港HGC01 香港转发 | 原生 1.5x'
+      - '香港HKT01 入口#1 | 原生 1.5x'
+      - '香港HKT01 入口#2 | 原生 1.5x'
+      - '香港HKT01 入口#3 | 原生 1.5x'
+      - '香港HKT01 入口#5 | 原生 1.5x'
+      - '香港HKT01 香港转发 | 原生 1.5x'
+      - '马来西亚01 入口#1 | 原生 1.5x'
+      - '马来西亚01 入口#2 | 原生 1.5x'
+      - '马来西亚01 入口#3 | 原生 1.5x'
+      - '马来西亚01 入口#5 | 原生 1.5x'
+      - '马来西亚01 香港转发 | 原生 1.5x'
+  -
+    name: 🎬国外媒体
+    type: select
+    proxies:
       - 🔰国外流量
-  - name: 🚀直接连接
+      - 'IEPL专线 粤新03 入口#1 | 4x NF'
+      - 'IEPL专线 粤新03 入口#2 | 4x NF'
+      - 'IEPL专线 粤新03 入口#3 | 4x NF'
+      - 'IEPL专线 粤新03 入口#4 | 4x NF'
+      - 'IEPL专线 粤新03 入口#5 | 4x NF'
+      - 'IEPL专线 粤日04 入口#1 | 4x NF'
+      - 'IEPL专线 粤日04 入口#2 | 4x NF'
+      - 'IEPL专线 粤日04 入口#3 | 4x NF'
+      - 'IEPL专线 粤日04 入口#4 | 4x NF'
+      - 'IEPL专线 粤日04 入口#5 | 4x NF'
+      - 'IEPL专线 粤港03 入口#1 | 4x NF'
+      - 'IEPL专线 粤港03 入口#2 | 4x NF'
+      - 'IEPL专线 粤港03 入口#3 | 4x NF'
+      - 'IEPL专线 粤港03 入口#4 | 4x NF'
+      - 'IEPL专线 粤港03 入口#5 | 4x NF'
+      - 'IEPL专线 粤美02 入口#1 | 4x NF'
+      - 'IEPL专线 粤美02 入口#2 | 4x NF'
+      - 'IEPL专线 粤美02 入口#3 | 4x NF'
+      - 'IEPL专线 粤美02 入口#4 | 4x NF'
+      - 'IEPL专线 粤美02 入口#5 | 4x NF'
+      - '俄罗斯01 入口#2 | 冷门 1.5x'
+      - '俄罗斯01 入口#3 | 冷门 1.5x'
+      - '俄罗斯01 入口#4 | 冷门 1.5x'
+      - '俄罗斯01 入口#5 | 冷门 1.5x'
+      - '俄罗斯05 入口#1 | 冷门 1.3x'
+      - '俄罗斯05 入口#2 | 冷门 1.3x'
+      - '俄罗斯05 入口#3 | 冷门 1.3x'
+      - '俄罗斯05 入口#4 | 冷门 1.3x'
+      - '俄罗斯05 入口#5 | 冷门 1.3x'
+      - '印度01 入口#1 | 1.5x'
+      - '印度01 入口#2 | 1.5x'
+      - '印度01 入口#3 | 1.5x'
+      - '印度01 入口#4 | 1.5x'
+      - '印度01 入口#5 | 1.5x'
+      - '印度01 香港转发 | 1.5x'
+      - '台湾02 入口#1 | 原生 1.5x'
+      - '台湾02 入口#2 | 原生 1.5x'
+      - '台湾02 入口#3 | 原生 1.5x'
+      - '台湾02 入口#4 | 原生 1.5x'
+      - '台湾02 入口#5 | 原生 1.5x'
+      - '台湾02 香港转发 | 原生 1.5x'
+      - '土耳其01 入口#1 | 冷门 2.0x'
+      - '土耳其01 入口#2 | 冷门 2.0x'
+      - '土耳其01 入口#3 | 冷门 2.0x'
+      - '土耳其01 入口#4 | 冷门 2.0x'
+      - '土耳其01 香港转发 | 冷门 2.0x'
+      - '巴西01 入口#1 | 冷门 3.0x'
+      - '巴西01 入口#2 | 冷门 3.0x'
+      - '巴西01 入口#3 | 冷门 3.0x'
+      - '巴西01 香港转发 | 冷门 3.0x'
+      - '德国01 入口#1 | 冷门 1.2x'
+      - '德国01 入口#2 | 冷门 1.2x'
+      - '德国01 入口#3 | 冷门 1.2x'
+      - '德国01 入口#5 | 冷门 1.2x'
+      - '德国01 香港转发 | 冷门 1.2x'
+      - '新加坡01 入口#1 | 原生 1.5x'
+      - '新加坡01 入口#2 | 原生 1.5x'
+      - '新加坡01 入口#3 | 原生 1.5x'
+      - '新加坡01 入口#4 | 原生 1.5x'
+      - '新加坡01 入口#5 | 原生 1.5x'
+      - '新加坡01 香港转发 | 原生 1.5x'
+      - '新加坡02 入口#1 | 原生 1.5x'
+      - '新加坡02 入口#2 | 原生 1.5x'
+      - '新加坡02 入口#3 | 原生 1.5x'
+      - '新加坡02 入口#4 | 原生 1.5x'
+      - '新加坡02 入口#5 | 原生 1.5x'
+      - '新加坡04 入口#1 | NF 1.5x'
+      - '新加坡04 入口#2 | NF 1.5x'
+      - '新加坡04 入口#3 | NF 1.5x'
+      - '新加坡04 入口#4 | NF 1.5x'
+      - '新加坡04 入口#5 | NF 1.5x'
+      - '日本01 入口#1 | NF 1.5x'
+      - '日本01 入口#2 | NF 1.5x'
+      - '日本01 入口#3 | NF 1.5x'
+      - '日本01 入口#4 | NF 1.5x'
+      - '日本01 入口#5 | NF 1.5x'
+      - '日本02 入口#1 | NF 1.5x'
+      - '日本02 入口#2 | NF 1.5x'
+      - '日本02 入口#3 | NF 1.5x'
+      - '日本02 入口#4 | NF 1.5x'
+      - '日本02 入口#5 | NF 1.5x'
+      - '日本03 入口#1 | NF 1.5x'
+      - '日本03 入口#2 | NF 1.5x'
+      - '日本03 入口#3 | NF 1.5x'
+      - '日本03 入口#4 | NF 1.5x'
+      - '日本03 入口#5 | NF 1.5x'
+      - 更多节点请购买-官网jinkela.wtf-白嫖-俄04
+      - '波兰01 入口#1 | 冷门 1.2x'
+      - '波兰01 入口#2 | 冷门 1.2x'
+      - '波兰01 入口#3 | 冷门 1.2x'
+      - '波兰01 入口#4 | 冷门 1.2x'
+      - '波兰01 香港转发 | 冷门 1.2x'
+      - '澳洲01 入口#1 | 冷门 1.5x'
+      - '澳洲01 入口#2 | 冷门 1.5x'
+      - '澳洲01 入口#3 | 冷门 1.5x'
+      - '澳洲01 入口#5 | 冷门 1.5x'
+      - '澳洲01 香港转发 | 冷门 1.5x'
+      - '澳洲CDN | 实验 | 免费 | 1.0x | 请经常更新订阅'
+      - '美国01 入口01 | NF 1.5x'
+      - '美国01 入口02 | NF 1.5x'
+      - '美国01 入口03 | NF 1.5x'
+      - '美国01 入口04 | NF 1.5x'
+      - '美国01 入口05 | NF 1.5x'
+      - '美国03 入口#1 | 原生 1.5x'
+      - '美国03 入口#2 | 原生 1.5x'
+      - '美国03 入口#5 | 原生 1.5x'
+      - '美国03 香港转发 | 原生 1.5x'
+      - '美国04 入口#1 | 备用 1.3x'
+      - '美国04 入口#2 | 备用 1.3x'
+      - '美国04 入口#3 | 备用 1.3x'
+      - '美国04 入口#4 | 备用 1.3x'
+      - '英国01 入口#1 | NF BBC Chan4 1.5x'
+      - '英国01 入口#2 | NF BBC Chan4 1.5x'
+      - '英国01 入口#3 | NF BBC Chan4 1.5x'
+      - '英国01 入口#4 | NF BBC Chan4 1.5x'
+      - '英国01 香港转发 | NF BBC Chan4 1.5x'
+      - '荷兰01 入口#1 | 冷门 1.2x'
+      - '荷兰01 入口#2 | 冷门 1.2x'
+      - '荷兰01 入口#3 | 冷门 1.2x'
+      - '荷兰01 入口#5 | 冷门 1.2x'
+      - '荷兰01 香港转发 | 冷门 1.2x'
+      - '阿根廷01 入口#1 | 冷门 低速 2.0x'
+      - '阿根廷01 入口#2 | 冷门 低速 2.0x'
+      - '阿根廷01 入口#3 | 冷门 低速 2.0x'
+      - '阿根廷01 香港转发 | 冷门 低速 2.0x'
+      - '韩国01 入口#1 | 1.5x'
+      - '韩国01 入口#2 | 1.5x'
+      - '韩国01 入口#4 | 1.5x'
+      - '韩国01 入口#5 | 1.5x'
+      - '韩国01 香港转发 | 1.5x'
+      - '香港01 入口#1 | NF 1.5x'
+      - '香港01 入口#2 | NF 1.5x'
+      - '香港01 入口#3 | NF 1.5x'
+      - '香港01 入口#4 | NF 1.5x'
+      - '香港01 入口#5 | NF 1.5x'
+      - '香港02 入口#1 | NF 1.5x'
+      - '香港02 入口#2 | NF 1.5x'
+      - '香港02 入口#3 | NF 1.5x'
+      - '香港02 入口#4 | NF 1.5x'
+      - '香港02 入口#5 | NF 1.5x'
+      - '香港03 入口#1 | NF 1.5x'
+      - '香港03 入口#2 | NF 1.5x'
+      - '香港03 入口#3 | NF 1.5x'
+      - '香港03 入口#4 | NF 1.5x'
+      - '香港03 入口#5 | NF 1.5x'
+      - '香港HGC01 入口#1 | 原生 1.5x'
+      - '香港HGC01 入口#2 | 原生 1.5x'
+      - '香港HGC01 入口#3 | 原生 1.5x'
+      - '香港HGC01 入口#4 | 原生 1.5x'
+      - '香港HGC01 入口#5 | 原生 1.5x'
+      - '香港HGC01 香港转发 | 原生 1.5x'
+      - '香港HKT01 入口#1 | 原生 1.5x'
+      - '香港HKT01 入口#2 | 原生 1.5x'
+      - '香港HKT01 入口#3 | 原生 1.5x'
+      - '香港HKT01 入口#5 | 原生 1.5x'
+      - '香港HKT01 香港转发 | 原生 1.5x'
+      - '马来西亚01 入口#1 | 原生 1.5x'
+      - '马来西亚01 入口#2 | 原生 1.5x'
+      - '马来西亚01 入口#3 | 原生 1.5x'
+      - '马来西亚01 入口#5 | 原生 1.5x'
+      - '马来西亚01 香港转发 | 原生 1.5x'
+  -
+    name: 🍎苹果服务
+    type: select
+    proxies:
+      - 🚀直接连接
+      - 🔰国外流量
+  -
+    name: 🚀直接连接
     type: select
     proxies:
       - DIRECT
+
+
 rules:
   - DOMAIN-SUFFIX,smtp,DIRECT
   - DOMAIN-KEYWORD,aria2,DIRECT
+
   - DOMAIN-SUFFIX,ampproject.org,🔰国外流量
   - DOMAIN-SUFFIX,appspot.com,🔰国外流量
   - DOMAIN-SUFFIX,blogger.com,🔰国外流量
@@ -3506,6 +3685,7 @@ rules:
   - DOMAIN-SUFFIX,yimg.com,🔰国外流量
   - DOMAIN,api.steampowered.com,🔰国外流量
   - DOMAIN,store.steampowered.com,🔰国外流量
+
   - DOMAIN-SUFFIX,aaplimg.com,🍎苹果服务
   - DOMAIN-SUFFIX,apple.co,🍎苹果服务
   - DOMAIN-SUFFIX,apple.com,🍎苹果服务
@@ -3518,6 +3698,7 @@ rules:
   - DOMAIN-SUFFIX,me.com,🍎苹果服务
   - DOMAIN-SUFFIX,mzstatic.com,🍎苹果服务
   - DOMAIN,www-cdn.icloud.com.akadns.net,🍎苹果服务
+
   - DOMAIN-SUFFIX,t.me,✈️Telegram
   - DOMAIN-SUFFIX,tdesktop.com,✈️Telegram
   - DOMAIN-SUFFIX,telegra.ph,✈️Telegram
@@ -3532,9 +3713,11 @@ rules:
   - IP-CIDR6,2001:b28:f23d::/48,✈️Telegram,no-resolve
   - IP-CIDR6,2001:b28:f23f::/48,✈️Telegram,no-resolve
   - IP-CIDR6,2001:67c:4e8::/48,✈️Telegram,no-resolve
+
   - DOMAIN-SUFFIX,googlevideo.com,🎬Youtube
   - DOMAIN-SUFFIX,youtube.com,🎬Youtube
   - DOMAIN,youtubei.googleapis.com,🎬Youtube
+
   - DOMAIN-SUFFIX,netflix.com,🎬Netflix
   - DOMAIN-SUFFIX,netflix.net,🎬Netflix
   - DOMAIN-SUFFIX,nflxext.com,🎬Netflix
@@ -3561,6 +3744,7 @@ rules:
   - IP-CIDR,192.173.64.0/18,🎬Netflix,no-resolve
   - IP-CIDR,198.38.96.0/19,🎬Netflix,no-resolve
   - IP-CIDR,198.45.48.0/20,🎬Netflix,no-resolve
+
   - DOMAIN-SUFFIX,deezer.com,🎬国外媒体
   - DOMAIN-SUFFIX,dzcdn.net,🎬国外媒体
   - DOMAIN-SUFFIX,kkbox.com,🎬国外媒体
@@ -3709,6 +3893,7 @@ rules:
   - DOMAIN-SUFFIX,googlevideo.com,🎬国外媒体
   - DOMAIN-SUFFIX,youtube.com,🎬国外媒体
   - DOMAIN,youtubei.googleapis.com,🎬国外媒体
+
   - DOMAIN-SUFFIX,local,DIRECT
   - IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
   - IP-CIDR,10.0.0.0/8,DIRECT,no-resolve
@@ -4068,4 +4253,5 @@ rules:
   - DOMAIN,images-cn.ssl-images-amazon.com,DIRECT
   - IP-CIDR,119.28.28.28/32,DIRECT,no-resolve
   - GEOIP,CN,DIRECT
+
   - MATCH,⚓️其他流量
