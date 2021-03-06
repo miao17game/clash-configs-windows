@@ -2,20 +2,22 @@ theme: 2
 showNotifications: true
 fontFamily: TsangerJinKai01-27533
 mixinType: 1
-mixinCode: |-
+mixinCode: |
   module.exports.parse = ({ content, name, url }, { yaml, axios, notify }) => {
-    const rules = [
-      ...content.rules,
-      'DOMAIN-SUFFIX,qima-inc.com,🚀直接连接', // 公司内网
-      'DOMAIN-SUFFIX,delivery.mp.microsoft.com,🚀直接连接', // 应用商店智能分发
-      'DOMAIN-SUFFIX,xvcf1.xboxlive.com,🚀直接连接', // xbox下载
-      'DOMAIN-SUFFIX,jinkela.red,🚀直接连接', // 梯子
-      'DOMAIN-SUFFIX,reddit.com,🔰国外流量',
-      'DOMAIN-SUFFIX,redditstatic.com,🔰国外流量',
-      'DOMAIN-SUFFIX,redditmedia.com,🔰国外流量',
-    ];
-    return { ...content, rules };
-  }
+    const rules = content.rules;
+    rules.unshift(
+      ...[
+        "DOMAIN-SUFFIX,qima-inc.com,🚀直接连接", // 公司内网
+        "DOMAIN-SUFFIX,delivery.mp.microsoft.com,🚀直接连接", // 应用商店智能分发
+        "DOMAIN-SUFFIX,xvcf1.xboxlive.com,🚀直接连接", // xbox下载
+        "DOMAIN-SUFFIX,jinkela.red,🚀直接连接", // 梯子
+        "DOMAIN-SUFFIX,reddit.com,🔰国外流量",
+        "DOMAIN-SUFFIX,redditstatic.com,🔰国外流量",
+        "DOMAIN-SUFFIX,redditmedia.com,🔰国外流量",
+      ]
+    );
+    return content;
+  };
 showNewVersionIcon: true
 editor: 1
 hideAfterStartup: true
