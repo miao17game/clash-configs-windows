@@ -52,4 +52,5 @@ files:
       - name: 🚀直接连接
         now: DIRECT
     interval: 0
+    mode: rule
 index: 1

@@ -10,9 +10,9 @@ mixinCode: |-
       'DOMAIN-SUFFIX,delivery.mp.microsoft.com,🚀直接连接', // 应用商店智能分发
       'DOMAIN-SUFFIX,xvcf1.xboxlive.com,🚀直接连接', // xbox下载
       'DOMAIN-SUFFIX,jinkela.red,🚀直接连接', // 梯子
-      // 'DOMAIN-SUFFIX,reddit.com,🌍 国外媒体',
-      // 'DOMAIN-SUFFIX,redditstatic.com,🌍 国外媒体',
-      // 'DOMAIN-SUFFIX,redditmedia.com,🌍 国外媒体',
+      'DOMAIN-SUFFIX,reddit.com,🔰国外流量',
+      'DOMAIN-SUFFIX,redditstatic.com,🔰国外流量',
+      'DOMAIN-SUFFIX,redditmedia.com,🔰国外流量',
     ];
     return { ...content, rules };
   }
