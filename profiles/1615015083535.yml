@@ -1,7 +1,7 @@
 #!MANAGED-CONFIG https://jinkela.red/link/PyGoQIzZBf5SP2S1?clash=1
 
 #---------------------------------------------------#
-## 上次更新于：2021-03-06 06:31:30
+## 上次更新于：2021-03-16 12:57:35
 #---------------------------------------------------#
 
 port: 7890
@@ -30,7 +30,7 @@ dns:
       - 240.0.0.0/4
 proxies:
   -
-    name: 'IEPL专线 粤新03 入口#1 | 4x NF'
+    name: 'IEPL专线 粤新03 入#1 | 6x NF'
     type: vmess
     server: iplc01.cncm.lay168.net
     port: 9041
@@ -43,7 +43,7 @@ proxies:
     ws-headers:
       Host: sg03.li.nbsd.us
   -
-    name: 'IEPL专线 粤新03 入口#2 | 4x NF'
+    name: 'IEPL专线 粤新03 入#2 | 6x NF'
     type: vmess
     server: iplc02.cncm.lay168.net
     port: 9041
@@ -56,7 +56,7 @@ proxies:
     ws-headers:
       Host: sg03.li.nbsd.us
   -
-    name: 'IEPL专线 粤新03 入口#3 | 4x NF'
+    name: 'IEPL专线 粤新03 入#3 | 6x NF'
     type: vmess
     server: iplc03.cncm.lay168.net
     port: 9041
@@ -69,33 +69,7 @@ proxies:
     ws-headers:
       Host: sg03.li.nbsd.us
   -
-    name: 'IEPL专线 粤新03 入口#4 | 4x NF'
-    type: vmess
-    server: iplc04.cncm.lay168.net
-    port: 9041
-    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /hls
-    ws-headers:
-      Host: sg03.li.nbsd.us
-  -
-    name: 'IEPL专线 粤新03 入口#5 | 4x NF'
-    type: vmess
-    server: iplc05.cncm.lay168.net
-    port: 9041
-    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /hls
-    ws-headers:
-      Host: sg03.li.nbsd.us
-  -
-    name: 'IEPL专线 粤日04 入口#1 | 4x NF'
+    name: 'IEPL专线 粤日04 入#1 | 6x NF'
     type: vmess
     server: iplc01.cncm.lay168.net
     port: 9011
@@ -108,7 +82,7 @@ proxies:
     ws-headers:
       Host: jp04.li.nbsd.us
   -
-    name: 'IEPL专线 粤日04 入口#2 | 4x NF'
+    name: 'IEPL专线 粤日04 入#2 | 6x NF'
     type: vmess
     server: iplc02.cncm.lay168.net
     port: 9011
@@ -121,7 +95,7 @@ proxies:
     ws-headers:
       Host: jp04.li.nbsd.us
   -
-    name: 'IEPL专线 粤日04 入口#3 | 4x NF'
+    name: 'IEPL专线 粤日04 入#3 | 6x NF'
     type: vmess
     server: iplc03.cncm.lay168.net
     port: 9011
@@ -134,33 +108,7 @@ proxies:
     ws-headers:
       Host: jp04.li.nbsd.us
   -
-    name: 'IEPL专线 粤日04 入口#4 | 4x NF'
-    type: vmess
-    server: iplc04.cncm.lay168.net
-    port: 9011
-    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /hls
-    ws-headers:
-      Host: jp04.li.nbsd.us
-  -
-    name: 'IEPL专线 粤日04 入口#5 | 4x NF'
-    type: vmess
-    server: iplc05.cncm.lay168.net
-    port: 9011
-    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /hls
-    ws-headers:
-      Host: jp04.li.nbsd.us
-  -
-    name: 'IEPL专线 粤港03 入口#1 | 4x NF'
+    name: 'IEPL专线 粤港03 入#1 | 6x NF'
     type: vmess
     server: iplc01.cncm.lay168.net
     port: 9021
@@ -173,7 +121,7 @@ proxies:
     ws-headers:
       Host: hkbn.vds.nbsd.us
   -
-    name: 'IEPL专线 粤港03 入口#2 | 4x NF'
+    name: 'IEPL专线 粤港03 入#2 | 6x NF'
     type: vmess
     server: iplc02.cncm.lay168.net
     port: 9021
@@ -186,7 +134,7 @@ proxies:
     ws-headers:
       Host: hkbn.vds.nbsd.us
   -
-    name: 'IEPL专线 粤港03 入口#3 | 4x NF'
+    name: 'IEPL专线 粤港03 入#3 | 6x NF'
     type: vmess
     server: iplc03.cncm.lay168.net
     port: 9021
@@ -199,33 +147,7 @@ proxies:
     ws-headers:
       Host: hkbn.vds.nbsd.us
   -
-    name: 'IEPL专线 粤港03 入口#4 | 4x NF'
-    type: vmess
-    server: iplc04.cncm.lay168.net
-    port: 9021
-    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /hls
-    ws-headers:
-      Host: hkbn.vds.nbsd.us
-  -
-    name: 'IEPL专线 粤港03 入口#5 | 4x NF'
-    type: vmess
-    server: iplc05.cncm.lay168.net
-    port: 9021
-    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /hls
-    ws-headers:
-      Host: hkbn.vds.nbsd.us
-  -
-    name: 'IEPL专线 粤美02 入口#1 | 4x NF'
+    name: 'IEPL专线 粤美02 入#1 | 6x NF'
     type: vmess
     server: iplc01.cncm.lay168.net
     port: 9031
@@ -238,7 +160,7 @@ proxies:
     ws-headers:
       Host: us02.li.nbsd.us
   -
-    name: 'IEPL专线 粤美02 入口#2 | 4x NF'
+    name: 'IEPL专线 粤美02 入#2 | 6x NF'
     type: vmess
     server: iplc02.cncm.lay168.net
     port: 9031
@@ -251,7 +173,7 @@ proxies:
     ws-headers:
       Host: us02.li.nbsd.us
   -
-    name: 'IEPL专线 粤美02 入口#3 | 4x NF'
+    name: 'IEPL专线 粤美02 入#3 | 6x NF'
     type: vmess
     server: iplc03.cncm.lay168.net
     port: 9031
@@ -264,35 +186,9 @@ proxies:
     ws-headers:
       Host: us02.li.nbsd.us
   -
-    name: 'IEPL专线 粤美02 入口#4 | 4x NF'
+    name: '俄罗斯01 广州移动2 | 冷门 1.5x'
     type: vmess
-    server: iplc04.cncm.lay168.net
-    port: 9031
-    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /hls
-    ws-headers:
-      Host: us02.li.nbsd.us
-  -
-    name: 'IEPL专线 粤美02 入口#5 | 4x NF'
-    type: vmess
-    server: iplc05.cncm.lay168.net
-    port: 9031
-    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /hls
-    ws-headers:
-      Host: us02.li.nbsd.us
-  -
-    name: '俄罗斯01 入口#2 | 冷门 1.5x'
-    type: vmess
-    server: gz02.mobile.lay168.net
+    server: cn02.lay168.net
     port: 61019
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -303,9 +199,9 @@ proxies:
     ws-headers:
       Host: ru01.jh.nbsd.us
   -
-    name: '俄罗斯01 入口#3 | 冷门 1.5x'
+    name: '俄罗斯01 杭州联通 | 冷门 1.5x'
     type: vmess
-    server: cn.jscz-01.node.cyou
+    server: cn05.lay168.net
     port: 61019
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -316,9 +212,9 @@ proxies:
     ws-headers:
       Host: ru01.jh.nbsd.us
   -
-    name: '俄罗斯01 入口#4 | 冷门 1.5x'
+    name: '俄罗斯01 江西电信CN2 | 冷门 1.5x'
     type: vmess
-    server: qd01.unicom.lay168.net
+    server: cn03.lay168.net
     port: 61019
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -329,9 +225,9 @@ proxies:
     ws-headers:
       Host: ru01.jh.nbsd.us
   -
-    name: '俄罗斯01 入口#5 | 冷门 1.5x'
+    name: '俄罗斯01 湖南联通 | 冷门 1.5x'
     type: vmess
-    server: cn-east01.lay168.net
+    server: cn04.lay168.net
     port: 61019
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -342,10 +238,10 @@ proxies:
     ws-headers:
       Host: ru01.jh.nbsd.us
   -
-    name: '俄罗斯05 入口#1 | 冷门 1.3x'
+    name: '俄罗斯04 广州移动1 | 冷门 1.3x'
     type: vmess
-    server: gz01.mobile.lay168.net
-    port: 61042
+    server: cn01.lay168.net
+    port: 61048
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
     cipher: auto
@@ -353,12 +249,12 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: ru05.jh.nbsd.us
+      Host: ru04.jh.nbsd.us
   -
-    name: '俄罗斯05 入口#2 | 冷门 1.3x'
+    name: '俄罗斯04 广州移动2 | 冷门 1.3x'
     type: vmess
-    server: gz02.mobile.lay168.net
-    port: 61042
+    server: cn02.lay168.net
+    port: 61048
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
     cipher: auto
@@ -366,12 +262,12 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: ru05.jh.nbsd.us
+      Host: ru04.jh.nbsd.us
   -
-    name: '俄罗斯05 入口#3 | 冷门 1.3x'
+    name: '俄罗斯04 杭州联通 | 冷门 1.3x'
     type: vmess
-    server: cn.jscz-01.node.cyou
-    port: 61042
+    server: cn05.lay168.net
+    port: 61048
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
     cipher: auto
@@ -379,12 +275,12 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: ru05.jh.nbsd.us
+      Host: ru04.jh.nbsd.us
   -
-    name: '俄罗斯05 入口#4 | 冷门 1.3x'
+    name: '俄罗斯04 江西电信CN2 | 冷门 1.3x'
     type: vmess
-    server: qd01.unicom.lay168.net
-    port: 61042
+    server: cn03.lay168.net
+    port: 61048
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
     cipher: auto
@@ -392,12 +288,12 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: ru05.jh.nbsd.us
+      Host: ru04.jh.nbsd.us
   -
-    name: '俄罗斯05 入口#5 | 冷门 1.3x'
+    name: '俄罗斯04 湖南联通 | 冷门 1.3x'
     type: vmess
-    server: cn-east01.lay168.net
-    port: 61042
+    server: cn04.lay168.net
+    port: 61048
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
     cipher: auto
@@ -405,11 +301,11 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: ru05.jh.nbsd.us
+      Host: ru04.jh.nbsd.us
   -
-    name: '印度01 入口#1 | 1.5x'
+    name: '印度01 广州移动1 | 1.5x'
     type: vmess
-    server: gz01.mobile.lay168.net
+    server: cn01.lay168.net
     port: 61026
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -420,9 +316,9 @@ proxies:
     ws-headers:
       Host: in01.aws.jinkela.icu
   -
-    name: '印度01 入口#2 | 1.5x'
+    name: '印度01 广州移动2 | 1.5x'
     type: vmess
-    server: gz02.mobile.lay168.net
+    server: cn02.lay168.net
     port: 61026
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -433,35 +329,9 @@ proxies:
     ws-headers:
       Host: in01.aws.jinkela.icu
   -
-    name: '印度01 入口#3 | 1.5x'
+    name: '印度01 杭州联通 | 1.5x'
     type: vmess
-    server: cn.jscz-01.node.cyou
-    port: 61026
-    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /hls
-    ws-headers:
-      Host: in01.aws.jinkela.icu
-  -
-    name: '印度01 入口#4 | 1.5x'
-    type: vmess
-    server: qd01.unicom.lay168.net
-    port: 61026
-    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /hls
-    ws-headers:
-      Host: in01.aws.jinkela.icu
-  -
-    name: '印度01 入口#5 | 1.5x'
-    type: vmess
-    server: cn-east01.lay168.net
+    server: cn05.lay168.net
     port: 61026
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -471,6 +341,32 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: in01.li.jinkela.icu
+  -
+    name: '印度01 江西电信CN2 | 1.5x'
+    type: vmess
+    server: cn03.lay168.net
+    port: 61026
+    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
+    alterId: 2
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /hls
+    ws-headers:
+      Host: in01.aws.jinkela.icu
+  -
+    name: '印度01 湖南联通 | 1.5x'
+    type: vmess
+    server: cn04.lay168.net
+    port: 61026
+    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
+    alterId: 2
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /hls
+    ws-headers:
+      Host: in01.aws.jinkela.icu
   -
     name: '印度01 香港转发 | 1.5x'
     type: vmess
@@ -485,9 +381,9 @@ proxies:
     ws-headers:
       Host: in01.aws.jinkela.icu
   -
-    name: '台湾02 入口#1 | 原生 1.5x'
+    name: '台湾02 广州移动1 | 原生 1.5x'
     type: vmess
-    server: gz01.mobile.lay168.net
+    server: cn01.lay168.net
     port: 61025
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -498,9 +394,9 @@ proxies:
     ws-headers:
       Host: tw02.pqs.lay168.net
   -
-    name: '台湾02 入口#2 | 原生 1.5x'
+    name: '台湾02 广州移动2 | 原生 1.5x'
     type: vmess
-    server: gz02.mobile.lay168.net
+    server: cn02.lay168.net
     port: 61025
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -511,9 +407,9 @@ proxies:
     ws-headers:
       Host: tw02.pqs.lay168.net
   -
-    name: '台湾02 入口#3 | 原生 1.5x'
+    name: '台湾02 杭州联通 | 原生 1.5x'
     type: vmess
-    server: cn.jscz-01.node.cyou
+    server: cn05.lay168.net
     port: 61025
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -524,9 +420,9 @@ proxies:
     ws-headers:
       Host: tw02.pqs.lay168.net
   -
-    name: '台湾02 入口#4 | 原生 1.5x'
+    name: '台湾02 江西电信CN2 | 原生 1.5x'
     type: vmess
-    server: qd01.unicom.lay168.net
+    server: cn03.lay168.net
     port: 61025
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -537,9 +433,9 @@ proxies:
     ws-headers:
       Host: tw02.pqs.lay168.net
   -
-    name: '台湾02 入口#5 | 原生 1.5x'
+    name: '台湾02 湖南联通 | 原生 1.5x'
     type: vmess
-    server: cn-east01.lay168.net
+    server: cn04.lay168.net
     port: 61025
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -563,9 +459,9 @@ proxies:
     ws-headers:
       Host: tw02.pqs.lay168.net
   -
-    name: '土耳其01 入口#1 | 冷门 2.0x'
+    name: '土耳其01 广州移动1 | 冷门 2.0x'
     type: vmess
-    server: gz01.mobile.lay168.net
+    server: cn01.lay168.net
     port: 61028
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -576,9 +472,9 @@ proxies:
     ws-headers:
       Host: tr01.htigger.jinkela.icu
   -
-    name: '土耳其01 入口#2 | 冷门 2.0x'
+    name: '土耳其01 广州移动2 | 冷门 2.0x'
     type: vmess
-    server: gz02.mobile.lay168.net
+    server: cn02.lay168.net
     port: 61028
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -589,9 +485,9 @@ proxies:
     ws-headers:
       Host: tr01.htigger.jinkela.icu
   -
-    name: '土耳其01 入口#3 | 冷门 2.0x'
+    name: '土耳其01 江西电信CN2 | 冷门 2.0x'
     type: vmess
-    server: cn.jscz-01.node.cyou
+    server: cn03.lay168.net
     port: 61028
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -602,9 +498,9 @@ proxies:
     ws-headers:
       Host: tr01.htigger.jinkela.icu
   -
-    name: '土耳其01 入口#4 | 冷门 2.0x'
+    name: '土耳其01 湖南联通 | 冷门 2.0x'
     type: vmess
-    server: qd01.unicom.lay168.net
+    server: cn04.lay168.net
     port: 61028
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -628,9 +524,22 @@ proxies:
     ws-headers:
       Host: tr01.htigger.jinkela.icu
   -
-    name: '巴西01 入口#1 | 冷门 3.0x'
+    name: 官网开全局jinkela.wtf-德国CDN-免费白嫖-x0.5倍率
     type: vmess
-    server: gz01.mobile.lay168.net
+    server: free.cf.jinkela.pvpgames.net
+    port: 80
+    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
+    alterId: 2
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /hls
+    ws-headers:
+      Host: free.cf.jinkela.pvpgames.net
+  -
+    name: '巴西01 广州移动1 | 冷门 3.0x'
+    type: vmess
+    server: cn01.lay168.net
     port: 61041
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 3
@@ -641,9 +550,9 @@ proxies:
     ws-headers:
       Host: br01.gcore.jinkela.icu
   -
-    name: '巴西01 入口#2 | 冷门 3.0x'
+    name: '巴西01 广州移动2 | 冷门 3.0x'
     type: vmess
-    server: gz02.mobile.lay168.net
+    server: cn02.lay168.net
     port: 61041
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 3
@@ -654,9 +563,9 @@ proxies:
     ws-headers:
       Host: br01.gcore.jinkela.icu
   -
-    name: '巴西01 入口#3 | 冷门 3.0x'
+    name: '巴西01 江西电信CN2 | 冷门 3.0x'
     type: vmess
-    server: cn.jscz-01.node.cyou
+    server: cn03.lay168.net
     port: 61041
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 3
@@ -680,9 +589,9 @@ proxies:
     ws-headers:
       Host: br01.gcore.jinkela.icu
   -
-    name: '德国01 入口#1 | 冷门 1.2x'
+    name: '德国01 广州移动1 | 冷门 1.2x'
     type: vmess
-    server: gz01.mobile.lay168.net
+    server: cn01.lay168.net
     port: 61008
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -693,9 +602,9 @@ proxies:
     ws-headers:
       Host: de01.hetzner.jinkela.icu
   -
-    name: '德国01 入口#2 | 冷门 1.2x'
+    name: '德国01 广州移动2 | 冷门 1.2x'
     type: vmess
-    server: gz02.mobile.lay168.net
+    server: cn02.lay168.net
     port: 61008
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -706,9 +615,9 @@ proxies:
     ws-headers:
       Host: de01.hetzner.jinkela.icu
   -
-    name: '德国01 入口#3 | 冷门 1.2x'
+    name: '德国01 杭州联通 | 冷门 1.2x'
     type: vmess
-    server: cn.jscz-01.node.cyou
+    server: cn05.lay168.net
     port: 61008
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -719,9 +628,9 @@ proxies:
     ws-headers:
       Host: de01.hetzner.jinkela.icu
   -
-    name: '德国01 入口#5 | 冷门 1.2x'
+    name: '德国01 江西电信CN2 | 冷门 1.2x'
     type: vmess
-    server: ah.cncu.lay168.net
+    server: cn03.lay168.net
     port: 61008
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -745,9 +654,9 @@ proxies:
     ws-headers:
       Host: de01.hetzner.jinkela.icu
   -
-    name: '新加坡01 入口#1 | 原生 1.5x'
+    name: '新加坡01 广州移动1 | 原生 1.5x'
     type: vmess
-    server: gz01.mobile.lay168.net
+    server: cn01.lay168.net
     port: 61013
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -758,9 +667,9 @@ proxies:
     ws-headers:
       Host: sg01.az.jinkela.icu
   -
-    name: '新加坡01 入口#2 | 原生 1.5x'
+    name: '新加坡01 广州移动2 | 原生 1.5x'
     type: vmess
-    server: gz02.mobile.lay168.net
+    server: cn02.lay168.net
     port: 61013
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -771,9 +680,9 @@ proxies:
     ws-headers:
       Host: sg01.az.jinkela.icu
   -
-    name: '新加坡01 入口#3 | 原生 1.5x'
+    name: '新加坡01 杭州联通 | 原生 1.5x'
     type: vmess
-    server: cn.jscz-01.node.cyou
+    server: cn05.lay168.net
     port: 61013
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -784,9 +693,9 @@ proxies:
     ws-headers:
       Host: sg01.az.jinkela.icu
   -
-    name: '新加坡01 入口#4 | 原生 1.5x'
+    name: '新加坡01 江西电信CN2 | 原生 1.5x'
     type: vmess
-    server: qd01.unicom.lay168.net
+    server: cn03.lay168.net
     port: 61013
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -797,9 +706,9 @@ proxies:
     ws-headers:
       Host: sg01.az.jinkela.icu
   -
-    name: '新加坡01 入口#5 | 原生 1.5x'
+    name: '新加坡01 湖南联通 | 原生 1.5x'
     type: vmess
-    server: cn-east01.lay168.net
+    server: cn04.lay168.net
     port: 61013
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -823,9 +732,9 @@ proxies:
     ws-headers:
       Host: sg01.az.jinkela.icu
   -
-    name: '新加坡02 入口#1 | 原生 1.5x'
+    name: '新加坡02 广州移动1 | 原生 1.5x'
     type: vmess
-    server: gz01.mobile.lay168.net
+    server: cn01.lay168.net
     port: 61009
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -836,9 +745,9 @@ proxies:
     ws-headers:
       Host: sg02.li.jinkela.icu
   -
-    name: '新加坡02 入口#2 | 原生 1.5x'
+    name: '新加坡02 广州移动2 | 原生 1.5x'
     type: vmess
-    server: gz02.mobile.lay168.net
+    server: cn02.lay168.net
     port: 61009
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -849,9 +758,9 @@ proxies:
     ws-headers:
       Host: sg02.li.jinkela.icu
   -
-    name: '新加坡02 入口#3 | 原生 1.5x'
+    name: '新加坡02 杭州联通 | 原生 1.5x'
     type: vmess
-    server: cn.jscz-01.node.cyou
+    server: cn05.lay168.net
     port: 61009
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -862,9 +771,9 @@ proxies:
     ws-headers:
       Host: sg02.li.jinkela.icu
   -
-    name: '新加坡02 入口#4 | 原生 1.5x'
+    name: '新加坡02 江西电信CN2 | 原生 1.5x'
     type: vmess
-    server: qd01.unicom.lay168.net
+    server: cn03.lay168.net
     port: 61009
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -875,9 +784,9 @@ proxies:
     ws-headers:
       Host: sg02.li.jinkela.icu
   -
-    name: '新加坡02 入口#5 | 原生 1.5x'
+    name: '新加坡02 湖南联通 | 原生 1.5x'
     type: vmess
-    server: cn-east01.lay168.net
+    server: cn04.lay168.net
     port: 61009
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -888,9 +797,9 @@ proxies:
     ws-headers:
       Host: sg02.li.jinkela.icu
   -
-    name: '新加坡04 入口#1 | NF 1.5x'
+    name: '新加坡04 广州移动1 | NF 1.5x'
     type: vmess
-    server: gz01.mobile.lay168.net
+    server: cn01.lay168.net
     port: 61045
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -901,9 +810,9 @@ proxies:
     ws-headers:
       Host: sg04.jinkela.icu
   -
-    name: '新加坡04 入口#2 | NF 1.5x'
+    name: '新加坡04 广州移动2 | NF 1.5x'
     type: vmess
-    server: gz02.mobile.lay168.net
+    server: cn02.lay168.net
     port: 61045
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -914,9 +823,9 @@ proxies:
     ws-headers:
       Host: sg04.jinkela.icu
   -
-    name: '新加坡04 入口#3 | NF 1.5x'
+    name: '新加坡04 杭州联通 | NF 1.5x'
     type: vmess
-    server: cn.jscz-01.node.cyou
+    server: cn05.lay168.net
     port: 61045
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -927,9 +836,9 @@ proxies:
     ws-headers:
       Host: sg04.jinkela.icu
   -
-    name: '新加坡04 入口#4 | NF 1.5x'
+    name: '新加坡04 江西电信CN2 | NF 1.5x'
     type: vmess
-    server: qd01.unicom.lay168.net
+    server: cn03.lay168.net
     port: 61045
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -940,9 +849,9 @@ proxies:
     ws-headers:
       Host: sg04.jinkela.icu
   -
-    name: '新加坡04 入口#5 | NF 1.5x'
+    name: '新加坡04 湖南联通 | NF 1.5x'
     type: vmess
-    server: ah.cncu.lay168.net
+    server: cn04.lay168.net
     port: 61045
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -953,9 +862,9 @@ proxies:
     ws-headers:
       Host: sg04.jinkela.icu
   -
-    name: '日本01 入口#1 | NF 1.5x'
+    name: '日本01 广州移动1 | NF 1.5x'
     type: vmess
-    server: gz01.mobile.lay168.net
+    server: cn01.lay168.net
     port: 61012
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -966,9 +875,9 @@ proxies:
     ws-headers:
       Host: jp01.az.jinkela.icu
   -
-    name: '日本01 入口#2 | NF 1.5x'
+    name: '日本01 广州移动2 | NF 1.5x'
     type: vmess
-    server: gz02.mobile.lay168.net
+    server: cn02.lay168.net
     port: 61012
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -979,9 +888,9 @@ proxies:
     ws-headers:
       Host: jp01.az.jinkela.icu
   -
-    name: '日本01 入口#3 | NF 1.5x'
+    name: '日本01 杭州联通 | NF 1.5x'
     type: vmess
-    server: cn.jscz-01.node.cyou
+    server: cn05.lay168.net
     port: 61012
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -992,9 +901,9 @@ proxies:
     ws-headers:
       Host: jp01.az.jinkela.icu
   -
-    name: '日本01 入口#4 | NF 1.5x'
+    name: '日本01 江西电信CN2 | NF 1.5x'
     type: vmess
-    server: qd01.unicom.lay168.net
+    server: cn03.lay168.net
     port: 61012
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -1005,9 +914,9 @@ proxies:
     ws-headers:
       Host: jp01.az.jinkela.icu
   -
-    name: '日本01 入口#5 | NF 1.5x'
+    name: '日本01 湖南联通 | NF 1.5x'
     type: vmess
-    server: cn-east01.lay168.net
+    server: cn04.lay168.net
     port: 61012
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -1018,9 +927,9 @@ proxies:
     ws-headers:
       Host: jp01.az.jinkela.icu
   -
-    name: '日本02 入口#1 | NF 1.5x'
+    name: '日本02 广州移动1 | NF 1.5x'
     type: vmess
-    server: gz01.mobile.lay168.net
+    server: cn01.lay168.net
     port: 61017
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -1031,9 +940,9 @@ proxies:
     ws-headers:
       Host: jp02.li.jinkela.icu
   -
-    name: '日本02 入口#2 | NF 1.5x'
+    name: '日本02 广州移动2 | NF 1.5x'
     type: vmess
-    server: gz02.mobile.lay168.net
+    server: cn02.lay168.net
     port: 61017
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -1044,9 +953,9 @@ proxies:
     ws-headers:
       Host: jp02.li.jinkela.icu
   -
-    name: '日本02 入口#3 | NF 1.5x'
+    name: '日本02 杭州联通 | NF 1.5x'
     type: vmess
-    server: cn.jscz-01.node.cyou
+    server: cn05.lay168.net
     port: 61017
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -1057,9 +966,9 @@ proxies:
     ws-headers:
       Host: jp02.li.jinkela.icu
   -
-    name: '日本02 入口#4 | NF 1.5x'
+    name: '日本02 江西电信CN2 | NF 1.5x'
     type: vmess
-    server: qd01.unicom.lay168.net
+    server: cn03.lay168.net
     port: 61017
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -1070,9 +979,9 @@ proxies:
     ws-headers:
       Host: jp02.li.jinkela.icu
   -
-    name: '日本02 入口#5 | NF 1.5x'
+    name: '日本02 湖南联通 | NF 1.5x'
     type: vmess
-    server: cn-east01.lay168.net
+    server: cn04.lay168.net
     port: 61017
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -1083,9 +992,9 @@ proxies:
     ws-headers:
       Host: jp02.li.jinkela.icu
   -
-    name: '日本03 入口#1 | NF 1.5x'
+    name: '日本03 广州移动1 | NF 1.5x'
     type: vmess
-    server: gz01.mobile.lay168.net
+    server: cn01.lay168.net
     port: 61038
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -1096,9 +1005,9 @@ proxies:
     ws-headers:
       Host: jp03.aws.jinkela.icu
   -
-    name: '日本03 入口#2 | NF 1.5x'
+    name: '日本03 广州移动2 | NF 1.5x'
     type: vmess
-    server: gz02.mobile.lay168.net
+    server: cn02.lay168.net
     port: 61038
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -1109,9 +1018,9 @@ proxies:
     ws-headers:
       Host: jp03.aws.jinkela.icu
   -
-    name: '日本03 入口#3 | NF 1.5x'
+    name: '日本03 杭州联通 | NF 1.5x'
     type: vmess
-    server: cn.jscz-01.node.cyou
+    server: cn05.lay168.net
     port: 61038
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -1122,9 +1031,9 @@ proxies:
     ws-headers:
       Host: jp03.aws.jinkela.icu
   -
-    name: '日本03 入口#4 | NF 1.5x'
+    name: '日本03 江西电信CN2 | NF 1.5x'
     type: vmess
-    server: qd01.unicom.lay168.net
+    server: cn03.lay168.net
     port: 61038
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -1135,9 +1044,9 @@ proxies:
     ws-headers:
       Host: jp03.aws.jinkela.icu
   -
-    name: '日本03 入口#5 | NF 1.5x'
+    name: '日本03 湖南联通 | NF 1.5x'
     type: vmess
-    server: cn-east01.lay168.net
+    server: cn04.lay168.net
     port: 61038
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -1148,22 +1057,9 @@ proxies:
     ws-headers:
       Host: jp03.aws.jinkela.icu
   -
-    name: 更多节点请购买-官网jinkela.wtf-白嫖-俄04
+    name: '波兰01 广州移动1 | 冷门 1.2x'
     type: vmess
-    server: ru04.jh.nbsd.us
-    port: 80
-    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /hls
-    ws-headers:
-      Host: ru04.jh.nbsd.us
-  -
-    name: '波兰01 入口#1 | 冷门 1.2x'
-    type: vmess
-    server: gz01.mobile.lay168.net
+    server: cn01.lay168.net
     port: 61039
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -1174,9 +1070,9 @@ proxies:
     ws-headers:
       Host: pl01.gcore.jinkela.icu
   -
-    name: '波兰01 入口#2 | 冷门 1.2x'
+    name: '波兰01 广州移动2 | 冷门 1.2x'
     type: vmess
-    server: gz02.mobile.lay168.net
+    server: cn02.lay168.net
     port: 61039
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -1187,9 +1083,9 @@ proxies:
     ws-headers:
       Host: pl01.gcore.jinkela.icu
   -
-    name: '波兰01 入口#3 | 冷门 1.2x'
+    name: '波兰01 江西电信CN2 | 冷门 1.2x'
     type: vmess
-    server: cn.jscz-01.node.cyou
+    server: cn03.lay168.net
     port: 61039
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -1200,9 +1096,9 @@ proxies:
     ws-headers:
       Host: pl01.gcore.jinkela.icu
   -
-    name: '波兰01 入口#4 | 冷门 1.2x'
+    name: '波兰01 湖南联通 | 冷门 1.2x'
     type: vmess
-    server: qd01.unicom.lay168.net
+    server: cn04.lay168.net
     port: 61039
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -1226,9 +1122,9 @@ proxies:
     ws-headers:
       Host: pl01.gcore.jinkela.icu
   -
-    name: '澳洲01 入口#1 | 冷门 1.5x'
+    name: '澳洲01 广州移动1 | 冷门 1.5x'
     type: vmess
-    server: gz01.mobile.lay168.net
+    server: cn01.lay168.net
     port: 61035
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -1239,9 +1135,9 @@ proxies:
     ws-headers:
       Host: au01.aws.jinkela.icu
   -
-    name: '澳洲01 入口#2 | 冷门 1.5x'
+    name: '澳洲01 广州移动2 | 冷门 1.5x'
     type: vmess
-    server: gz02.mobile.lay168.net
+    server: cn02.lay168.net
     port: 61035
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -1252,9 +1148,9 @@ proxies:
     ws-headers:
       Host: au01.aws.jinkela.icu
   -
-    name: '澳洲01 入口#3 | 冷门 1.5x'
+    name: '澳洲01 杭州联通 | 冷门 1.5x'
     type: vmess
-    server: cn.jscz-01.node.cyou
+    server: cn05.lay168.net
     port: 61035
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -1265,9 +1161,9 @@ proxies:
     ws-headers:
       Host: au01.aws.jinkela.icu
   -
-    name: '澳洲01 入口#5 | 冷门 1.5x'
+    name: '澳洲01 江西电信CN2 | 冷门 1.5x'
     type: vmess
-    server: cn-east01.lay168.net
+    server: cn03.lay168.net
     port: 61035
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -1291,22 +1187,9 @@ proxies:
     ws-headers:
       Host: au01.aws.jinkela.icu
   -
-    name: '澳洲CDN | 实验 | 免费 | 1.0x | 请经常更新订阅'
-    type: vmess
-    server: au01.az.pvpgames.net
-    port: 80
-    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /hls
-    ws-headers:
-      Host: au01.az.pvpgames.net
-  -
     name: '美国01 入口01 | NF 1.5x'
     type: vmess
-    server: gz01.mobile.lay168.net
+    server: cn01.lay168.net
     port: 61014
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -1319,7 +1202,7 @@ proxies:
   -
     name: '美国01 入口02 | NF 1.5x'
     type: vmess
-    server: gz02.mobile.lay168.net
+    server: cn02.lay168.net
     port: 61014
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -1332,7 +1215,7 @@ proxies:
   -
     name: '美国01 入口03 | NF 1.5x'
     type: vmess
-    server: cn.jscz-01.node.cyou
+    server: cn03.lay168.net
     port: 61014
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -1345,7 +1228,7 @@ proxies:
   -
     name: '美国01 入口04 | NF 1.5x'
     type: vmess
-    server: qd01.unicom.lay168.net
+    server: cn04.lay168.net
     port: 61014
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -1358,7 +1241,7 @@ proxies:
   -
     name: '美国01 入口05 | NF 1.5x'
     type: vmess
-    server: cn-east01.lay168.net
+    server: cn05.lay168.net
     port: 61014
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -1369,9 +1252,9 @@ proxies:
     ws-headers:
       Host: us01.az.jinkela.icu
   -
-    name: '美国03 入口#1 | 原生 1.5x'
+    name: '美国03 广州移动1 | 原生 1.5x'
     type: vmess
-    server: gz01.mobile.lay168.net
+    server: cn01.lay168.net
     port: 61018
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -1382,9 +1265,9 @@ proxies:
     ws-headers:
       Host: us03.he.nbsd.us
   -
-    name: '美国03 入口#2 | 原生 1.5x'
+    name: '美国03 广州移动2 | 原生 1.5x'
     type: vmess
-    server: gz02.mobile.lay168.net
+    server: cn02.lay168.net
     port: 61018
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -1395,9 +1278,9 @@ proxies:
     ws-headers:
       Host: us03.he.nbsd.us
   -
-    name: '美国03 入口#5 | 原生 1.5x'
+    name: '美国03 杭州联通 | 原生 1.5x'
     type: vmess
-    server: cn-east01.lay168.net
+    server: cn05.lay168.net
     port: 61018
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -1421,9 +1304,9 @@ proxies:
     ws-headers:
       Host: us03.he.nbsd.us
   -
-    name: '美国04 入口#1 | 备用 1.3x'
+    name: '美国04 广州移动1 | 备用 1.3x'
     type: vmess
-    server: gz01.mobile.lay168.net
+    server: cn01.lay168.net
     port: 61043
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -1434,9 +1317,9 @@ proxies:
     ws-headers:
       Host: us04.backup.jinkela.icu
   -
-    name: '美国04 入口#2 | 备用 1.3x'
+    name: '美国04 广州移动2 | 备用 1.3x'
     type: vmess
-    server: gz02.mobile.lay168.net
+    server: cn02.lay168.net
     port: 61043
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -1447,9 +1330,9 @@ proxies:
     ws-headers:
       Host: us04.backup.jinkela.icu
   -
-    name: '美国04 入口#3 | 备用 1.3x'
+    name: '美国04 江西电信CN2 | 备用 1.3x'
     type: vmess
-    server: cn.jscz-01.node.cyou
+    server: cn03.lay168.net
     port: 61043
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -1460,9 +1343,9 @@ proxies:
     ws-headers:
       Host: us04.backup.jinkela.icu
   -
-    name: '美国04 入口#4 | 备用 1.3x'
+    name: '美国04 湖南联通 | 备用 1.3x'
     type: vmess
-    server: qd01.unicom.lay168.net
+    server: cn04.lay168.net
     port: 61043
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -1473,9 +1356,9 @@ proxies:
     ws-headers:
       Host: us04.backup.jinkela.icu
   -
-    name: '英国01 入口#1 | NF BBC Chan4 1.5x'
+    name: '英国01 广州移动1 | NF BBC Chan4 1.5x'
     type: vmess
-    server: gz01.mobile.lay168.net
+    server: cn01.lay168.net
     port: 61021
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -1486,9 +1369,9 @@ proxies:
     ws-headers:
       Host: uk01.az.jinkela.icu
   -
-    name: '英国01 入口#2 | NF BBC Chan4 1.5x'
+    name: '英国01 广州移动2 | NF BBC Chan4 1.5x'
     type: vmess
-    server: gz02.mobile.lay168.net
+    server: cn02.lay168.net
     port: 61021
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -1499,9 +1382,9 @@ proxies:
     ws-headers:
       Host: uk01.az.jinkela.icu
   -
-    name: '英国01 入口#3 | NF BBC Chan4 1.5x'
+    name: '英国01 江西电信CN2 | NF BBC Chan4 1.5x'
     type: vmess
-    server: cn.jscz-01.node.cyou
+    server: cn03.lay168.net
     port: 61021
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -1512,9 +1395,9 @@ proxies:
     ws-headers:
       Host: uk01.az.jinkela.icu
   -
-    name: '英国01 入口#4 | NF BBC Chan4 1.5x'
+    name: '英国01 湖南联通 | NF BBC Chan4 1.5x'
     type: vmess
-    server: qd01.unicom.lay168.net
+    server: cn04.lay168.net
     port: 61021
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -1538,9 +1421,9 @@ proxies:
     ws-headers:
       Host: uk01.az.jinkela.icu
   -
-    name: '荷兰01 入口#1 | 冷门 1.2x'
+    name: '荷兰01 广州移动1 | 冷门 1.2x'
     type: vmess
-    server: gz01.mobile.lay168.net
+    server: cn01.lay168.net
     port: 61037
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -1551,9 +1434,9 @@ proxies:
     ws-headers:
       Host: nl01.gcore.jinkela.icu
   -
-    name: '荷兰01 入口#2 | 冷门 1.2x'
+    name: '荷兰01 广州移动2 | 冷门 1.2x'
     type: vmess
-    server: gz02.mobile.lay168.net
+    server: cn02.lay168.net
     port: 61037
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -1564,9 +1447,9 @@ proxies:
     ws-headers:
       Host: nl01.gcore.jinkela.icu
   -
-    name: '荷兰01 入口#3 | 冷门 1.2x'
+    name: '荷兰01 杭州联通 | 冷门 1.2x'
     type: vmess
-    server: cn.jscz-01.node.cyou
+    server: cn05.lay168.net
     port: 61037
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -1577,9 +1460,9 @@ proxies:
     ws-headers:
       Host: nl01.gcore.jinkela.icu
   -
-    name: '荷兰01 入口#5 | 冷门 1.2x'
+    name: '荷兰01 江西电信CN2 | 冷门 1.2x'
     type: vmess
-    server: cn-east01.lay168.net
+    server: cn03.lay168.net
     port: 61037
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -1603,9 +1486,9 @@ proxies:
     ws-headers:
       Host: nl01.gcore.jinkela.icu
   -
-    name: '阿根廷01 入口#1 | 冷门 低速 2.0x'
+    name: '阿根廷01 广州移动1 | 冷门 低速 2.0x'
     type: vmess
-    server: gz01.mobile.lay168.net
+    server: cn01.lay168.net
     port: 61029
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -1616,9 +1499,9 @@ proxies:
     ws-headers:
       Host: ar01.don.jinkela.icu
   -
-    name: '阿根廷01 入口#2 | 冷门 低速 2.0x'
+    name: '阿根廷01 广州移动2 | 冷门 低速 2.0x'
     type: vmess
-    server: gz02.mobile.lay168.net
+    server: cn02.lay168.net
     port: 61029
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -1629,9 +1512,9 @@ proxies:
     ws-headers:
       Host: ar01.don.jinkela.icu
   -
-    name: '阿根廷01 入口#3 | 冷门 低速 2.0x'
+    name: '阿根廷01 江西电信CN2 | 冷门 低速 2.0x'
     type: vmess
-    server: cn.jscz-01.node.cyou
+    server: cn03.lay168.net
     port: 61029
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -1655,9 +1538,9 @@ proxies:
     ws-headers:
       Host: ar01.don.jinkela.icu
   -
-    name: '韩国01 入口#1 | 1.5x'
+    name: '韩国01 广州移动1 | 1.5x'
     type: vmess
-    server: gz01.mobile.lay168.net
+    server: cn01.lay168.net
     port: 61004
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -1668,9 +1551,9 @@ proxies:
     ws-headers:
       Host: kr01.jinkela.icu
   -
-    name: '韩国01 入口#2 | 1.5x'
+    name: '韩国01 广州移动2 | 1.5x'
     type: vmess
-    server: gz02.mobile.lay168.net
+    server: cn02.lay168.net
     port: 61004
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -1681,9 +1564,9 @@ proxies:
     ws-headers:
       Host: kr01.jinkela.icu
   -
-    name: '韩国01 入口#4 | 1.5x'
+    name: '韩国01 杭州联通 | 1.5x'
     type: vmess
-    server: qd01.unicom.lay168.net
+    server: cn05.lay168.net
     port: 61004
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -1694,9 +1577,9 @@ proxies:
     ws-headers:
       Host: kr01.jinkela.icu
   -
-    name: '韩国01 入口#5 | 1.5x'
+    name: '韩国01 湖南联通 | 1.5x'
     type: vmess
-    server: cn-east01.lay168.net
+    server: cn04.lay168.net
     port: 61004
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -1720,9 +1603,9 @@ proxies:
     ws-headers:
       Host: kr01.jinkela.icu
   -
-    name: '香港01 入口#1 | NF 1.5x'
+    name: '香港01 广州移动1 | NF 1.5x'
     type: vmess
-    server: gz01.mobile.lay168.net
+    server: cn01.lay168.net
     port: 61046
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -1733,9 +1616,9 @@ proxies:
     ws-headers:
       Host: hk01.jinkela.icu
   -
-    name: '香港01 入口#2 | NF 1.5x'
+    name: '香港01 广州移动2 | NF 1.5x'
     type: vmess
-    server: gz02.mobile.lay168.net
+    server: cn02.lay168.net
     port: 61046
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -1746,9 +1629,9 @@ proxies:
     ws-headers:
       Host: hk01.jinkela.icu
   -
-    name: '香港01 入口#3 | NF 1.5x'
+    name: '香港01 杭州联通 | NF 1.5x'
     type: vmess
-    server: cn.jscz-01.node.cyou
+    server: cn05.lay168.net
     port: 61046
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -1759,9 +1642,9 @@ proxies:
     ws-headers:
       Host: hk01.jinkela.icu
   -
-    name: '香港01 入口#4 | NF 1.5x'
+    name: '香港01 江西电信CN2 | NF 1.5x'
     type: vmess
-    server: qd01.unicom.lay168.net
+    server: cn03.lay168.net
     port: 61046
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -1772,9 +1655,9 @@ proxies:
     ws-headers:
       Host: hk01.jinkela.icu
   -
-    name: '香港01 入口#5 | NF 1.5x'
+    name: '香港01 湖南联通 | NF 1.5x'
     type: vmess
-    server: cn-east01.lay168.net
+    server: cn04.lay168.net
     port: 61046
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -1785,12 +1668,12 @@ proxies:
     ws-headers:
       Host: hk01.jinkela.icu
   -
-    name: '香港02 入口#1 | NF 1.5x'
+    name: '香港02 广州移动1 | NF 1.5x'
     type: vmess
-    server: gz01.mobile.lay168.net
-    port: 61022
+    server: cn01.lay168.net
+    port: 61047
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
+    alterId: 3
     cipher: auto
     udp: true
     network: ws
@@ -1798,12 +1681,12 @@ proxies:
     ws-headers:
       Host: hk02-jinkela.ddns168.com
   -
-    name: '香港02 入口#2 | NF 1.5x'
+    name: '香港02 广州移动2 | NF 1.5x'
     type: vmess
-    server: gz02.mobile.lay168.net
-    port: 61022
+    server: cn02.lay168.net
+    port: 61047
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
+    alterId: 3
     cipher: auto
     udp: true
     network: ws
@@ -1811,12 +1694,12 @@ proxies:
     ws-headers:
       Host: hk02-jinkela.ddns168.com
   -
-    name: '香港02 入口#3 | NF 1.5x'
+    name: '香港02 杭州联通 | NF 1.5x'
     type: vmess
-    server: cn.jscz-01.node.cyou
-    port: 61022
+    server: cn05.lay168.net
+    port: 61047
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
+    alterId: 3
     cipher: auto
     udp: true
     network: ws
@@ -1824,12 +1707,12 @@ proxies:
     ws-headers:
       Host: hk02-jinkela.ddns168.com
   -
-    name: '香港02 入口#4 | NF 1.5x'
+    name: '香港02 江西电信CN2 | NF 1.5x'
     type: vmess
-    server: qd01.unicom.lay168.net
-    port: 61022
+    server: cn03.lay168.net
+    port: 61047
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
+    alterId: 3
     cipher: auto
     udp: true
     network: ws
@@ -1837,12 +1720,12 @@ proxies:
     ws-headers:
       Host: hk02-jinkela.ddns168.com
   -
-    name: '香港02 入口#5 | NF 1.5x'
+    name: '香港02 湖南联通 | NF 1.5x'
     type: vmess
-    server: cn-east01.lay168.net
-    port: 61022
+    server: cn04.lay168.net
+    port: 61047
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
+    alterId: 3
     cipher: auto
     udp: true
     network: ws
@@ -1850,9 +1733,9 @@ proxies:
     ws-headers:
       Host: hk02-jinkela.ddns168.com
   -
-    name: '香港03 入口#1 | NF 1.5x'
+    name: '香港03 广州移动1 | NF 1.5x'
     type: vmess
-    server: gz01.mobile.lay168.net
+    server: cn01.lay168.net
     port: 61031
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -1863,9 +1746,9 @@ proxies:
     ws-headers:
       Host: hk03.az.jinkela.icu
   -
-    name: '香港03 入口#2 | NF 1.5x'
+    name: '香港03 广州移动2 | NF 1.5x'
     type: vmess
-    server: gz02.mobile.lay168.net
+    server: cn02.lay168.net
     port: 61031
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 3
@@ -1876,9 +1759,9 @@ proxies:
     ws-headers:
       Host: hk03.az.jinkela.icu
   -
-    name: '香港03 入口#3 | NF 1.5x'
+    name: '香港03 杭州联通 | NF 1.5x'
     type: vmess
-    server: cn.jscz-01.node.cyou
+    server: cn05.lay168.net
     port: 61031
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 3
@@ -1889,9 +1772,9 @@ proxies:
     ws-headers:
       Host: hk03.az.jinkela.icu
   -
-    name: '香港03 入口#4 | NF 1.5x'
+    name: '香港03 江西电信CN2 | NF 1.5x'
     type: vmess
-    server: qd01.unicom.lay168.net
+    server: cn03.lay168.net
     port: 61031
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 3
@@ -1902,9 +1785,9 @@ proxies:
     ws-headers:
       Host: hk03.az.jinkela.icu
   -
-    name: '香港03 入口#5 | NF 1.5x'
+    name: '香港03 湖南联通 | NF 1.5x'
     type: vmess
-    server: cn-east01.lay168.net
+    server: cn04.lay168.net
     port: 61031
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 3
@@ -1915,9 +1798,9 @@ proxies:
     ws-headers:
       Host: hk03.az.jinkela.icu
   -
-    name: '香港HGC01 入口#1 | 原生 1.5x'
+    name: '香港HGC01 广州移动1 | 原生 1.5x'
     type: vmess
-    server: gz01.mobile.lay168.net
+    server: cn01.lay168.net
     port: 61027
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -1928,9 +1811,9 @@ proxies:
     ws-headers:
       Host: hkbn.vds.nbsd.us
   -
-    name: '香港HGC01 入口#2 | 原生 1.5x'
+    name: '香港HGC01 广州移动2 | 原生 1.5x'
     type: vmess
-    server: gz02.mobile.lay168.net
+    server: cn02.lay168.net
     port: 61027
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -1941,9 +1824,9 @@ proxies:
     ws-headers:
       Host: hkbn.vds.nbsd.us
   -
-    name: '香港HGC01 入口#3 | 原生 1.5x'
+    name: '香港HGC01 杭州联通 | 原生 1.5x'
     type: vmess
-    server: cn.jscz-01.node.cyou
+    server: cn05.lay168.net
     port: 61027
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -1954,9 +1837,9 @@ proxies:
     ws-headers:
       Host: hkbn.vds.nbsd.us
   -
-    name: '香港HGC01 入口#4 | 原生 1.5x'
+    name: '香港HGC01 江西电信CN2 | 原生 1.5x'
     type: vmess
-    server: qd01.unicom.lay168.net
+    server: cn03.lay168.net
     port: 61027
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -1967,9 +1850,9 @@ proxies:
     ws-headers:
       Host: hkbn.vds.nbsd.us
   -
-    name: '香港HGC01 入口#5 | 原生 1.5x'
+    name: '香港HGC01 湖南联通 | 原生 1.5x'
     type: vmess
-    server: cn-east01.lay168.net
+    server: cn04.lay168.net
     port: 61027
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -1993,9 +1876,9 @@ proxies:
     ws-headers:
       Host: hkbn.vds.nbsd.us
   -
-    name: '香港HKT01 入口#1 | 原生 1.5x'
+    name: '香港HKT01 广州移动1 | 原生 1.5x'
     type: vmess
-    server: gz01.mobile.lay168.net
+    server: cn01.lay168.net
     port: 61033
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -2006,9 +1889,9 @@ proxies:
     ws-headers:
       Host: hkt01.pqs-vds.lay168.net
   -
-    name: '香港HKT01 入口#2 | 原生 1.5x'
+    name: '香港HKT01 广州移动2 | 原生 1.5x'
     type: vmess
-    server: gz02.mobile.lay168.net
+    server: cn02.lay168.net
     port: 61033
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -2019,9 +1902,9 @@ proxies:
     ws-headers:
       Host: hkt01.pqs-vds.lay168.net
   -
-    name: '香港HKT01 入口#3 | 原生 1.5x'
+    name: '香港HKT01 杭州联通 | 原生 1.5x'
     type: vmess
-    server: cn.jscz-01.node.cyou
+    server: cn05.lay168.net
     port: 61033
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -2032,9 +1915,9 @@ proxies:
     ws-headers:
       Host: hkt01.pqs-vds.lay168.net
   -
-    name: '香港HKT01 入口#5 | 原生 1.5x'
+    name: '香港HKT01 江西电信CN2 | 原生 1.5x'
     type: vmess
-    server: cn-east01.lay168.net
+    server: cn03.lay168.net
     port: 61033
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -2058,9 +1941,9 @@ proxies:
     ws-headers:
       Host: hkt01.pqs-vds.lay168.net
   -
-    name: '马来西亚01 入口#1 | 原生 1.5x'
+    name: '马来西亚01 广州移动1 | 原生 1.5x'
     type: vmess
-    server: gz01.mobile.lay168.net
+    server: cn01.lay168.net
     port: 61040
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -2071,9 +1954,9 @@ proxies:
     ws-headers:
       Host: my01.shinjiru.jinkela.icu
   -
-    name: '马来西亚01 入口#2 | 原生 1.5x'
+    name: '马来西亚01 广州移动2 | 原生 1.5x'
     type: vmess
-    server: gz02.mobile.lay168.net
+    server: cn02.lay168.net
     port: 61040
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -2084,9 +1967,9 @@ proxies:
     ws-headers:
       Host: my01.shinjiru.jinkela.icu
   -
-    name: '马来西亚01 入口#3 | 原生 1.5x'
+    name: '马来西亚01 杭州联通 | 原生 1.5x'
     type: vmess
-    server: cn.jscz-01.node.cyou
+    server: cn05.lay168.net
     port: 61040
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -2097,9 +1980,9 @@ proxies:
     ws-headers:
       Host: my01.shinjiru.jinkela.icu
   -
-    name: '马来西亚01 入口#5 | 原生 1.5x'
+    name: '马来西亚01 江西电信CN2 | 原生 1.5x'
     type: vmess
-    server: cn-east01.lay168.net
+    server: cn03.lay168.net
     port: 61040
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -2127,166 +2010,157 @@ proxy-groups:
     name: 🔰国外流量
     type: select
     proxies:
-      - 'IEPL专线 粤新03 入口#1 | 4x NF'
-      - 'IEPL专线 粤新03 入口#2 | 4x NF'
-      - 'IEPL专线 粤新03 入口#3 | 4x NF'
-      - 'IEPL专线 粤新03 入口#4 | 4x NF'
-      - 'IEPL专线 粤新03 入口#5 | 4x NF'
-      - 'IEPL专线 粤日04 入口#1 | 4x NF'
-      - 'IEPL专线 粤日04 入口#2 | 4x NF'
-      - 'IEPL专线 粤日04 入口#3 | 4x NF'
-      - 'IEPL专线 粤日04 入口#4 | 4x NF'
-      - 'IEPL专线 粤日04 入口#5 | 4x NF'
-      - 'IEPL专线 粤港03 入口#1 | 4x NF'
-      - 'IEPL专线 粤港03 入口#2 | 4x NF'
-      - 'IEPL专线 粤港03 入口#3 | 4x NF'
-      - 'IEPL专线 粤港03 入口#4 | 4x NF'
-      - 'IEPL专线 粤港03 入口#5 | 4x NF'
-      - 'IEPL专线 粤美02 入口#1 | 4x NF'
-      - 'IEPL专线 粤美02 入口#2 | 4x NF'
-      - 'IEPL专线 粤美02 入口#3 | 4x NF'
-      - 'IEPL专线 粤美02 入口#4 | 4x NF'
-      - 'IEPL专线 粤美02 入口#5 | 4x NF'
-      - '俄罗斯01 入口#2 | 冷门 1.5x'
-      - '俄罗斯01 入口#3 | 冷门 1.5x'
-      - '俄罗斯01 入口#4 | 冷门 1.5x'
-      - '俄罗斯01 入口#5 | 冷门 1.5x'
-      - '俄罗斯05 入口#1 | 冷门 1.3x'
-      - '俄罗斯05 入口#2 | 冷门 1.3x'
-      - '俄罗斯05 入口#3 | 冷门 1.3x'
-      - '俄罗斯05 入口#4 | 冷门 1.3x'
-      - '俄罗斯05 入口#5 | 冷门 1.3x'
-      - '印度01 入口#1 | 1.5x'
-      - '印度01 入口#2 | 1.5x'
-      - '印度01 入口#3 | 1.5x'
-      - '印度01 入口#4 | 1.5x'
-      - '印度01 入口#5 | 1.5x'
+      - 'IEPL专线 粤新03 入#1 | 6x NF'
+      - 'IEPL专线 粤新03 入#2 | 6x NF'
+      - 'IEPL专线 粤新03 入#3 | 6x NF'
+      - 'IEPL专线 粤日04 入#1 | 6x NF'
+      - 'IEPL专线 粤日04 入#2 | 6x NF'
+      - 'IEPL专线 粤日04 入#3 | 6x NF'
+      - 'IEPL专线 粤港03 入#1 | 6x NF'
+      - 'IEPL专线 粤港03 入#2 | 6x NF'
+      - 'IEPL专线 粤港03 入#3 | 6x NF'
+      - 'IEPL专线 粤美02 入#1 | 6x NF'
+      - 'IEPL专线 粤美02 入#2 | 6x NF'
+      - 'IEPL专线 粤美02 入#3 | 6x NF'
+      - '俄罗斯01 广州移动2 | 冷门 1.5x'
+      - '俄罗斯01 杭州联通 | 冷门 1.5x'
+      - '俄罗斯01 江西电信CN2 | 冷门 1.5x'
+      - '俄罗斯01 湖南联通 | 冷门 1.5x'
+      - '俄罗斯04 广州移动1 | 冷门 1.3x'
+      - '俄罗斯04 广州移动2 | 冷门 1.3x'
+      - '俄罗斯04 杭州联通 | 冷门 1.3x'
+      - '俄罗斯04 江西电信CN2 | 冷门 1.3x'
+      - '俄罗斯04 湖南联通 | 冷门 1.3x'
+      - '印度01 广州移动1 | 1.5x'
+      - '印度01 广州移动2 | 1.5x'
+      - '印度01 杭州联通 | 1.5x'
+      - '印度01 江西电信CN2 | 1.5x'
+      - '印度01 湖南联通 | 1.5x'
       - '印度01 香港转发 | 1.5x'
-      - '台湾02 入口#1 | 原生 1.5x'
-      - '台湾02 入口#2 | 原生 1.5x'
-      - '台湾02 入口#3 | 原生 1.5x'
-      - '台湾02 入口#4 | 原生 1.5x'
-      - '台湾02 入口#5 | 原生 1.5x'
+      - '台湾02 广州移动1 | 原生 1.5x'
+      - '台湾02 广州移动2 | 原生 1.5x'
+      - '台湾02 杭州联通 | 原生 1.5x'
+      - '台湾02 江西电信CN2 | 原生 1.5x'
+      - '台湾02 湖南联通 | 原生 1.5x'
       - '台湾02 香港转发 | 原生 1.5x'
-      - '土耳其01 入口#1 | 冷门 2.0x'
-      - '土耳其01 入口#2 | 冷门 2.0x'
-      - '土耳其01 入口#3 | 冷门 2.0x'
-      - '土耳其01 入口#4 | 冷门 2.0x'
+      - '土耳其01 广州移动1 | 冷门 2.0x'
+      - '土耳其01 广州移动2 | 冷门 2.0x'
+      - '土耳其01 江西电信CN2 | 冷门 2.0x'
+      - '土耳其01 湖南联通 | 冷门 2.0x'
       - '土耳其01 香港转发 | 冷门 2.0x'
-      - '巴西01 入口#1 | 冷门 3.0x'
-      - '巴西01 入口#2 | 冷门 3.0x'
-      - '巴西01 入口#3 | 冷门 3.0x'
+      - 官网开全局jinkela.wtf-德国CDN-免费白嫖-x0.5倍率
+      - '巴西01 广州移动1 | 冷门 3.0x'
+      - '巴西01 广州移动2 | 冷门 3.0x'
+      - '巴西01 江西电信CN2 | 冷门 3.0x'
       - '巴西01 香港转发 | 冷门 3.0x'
-      - '德国01 入口#1 | 冷门 1.2x'
-      - '德国01 入口#2 | 冷门 1.2x'
-      - '德国01 入口#3 | 冷门 1.2x'
-      - '德国01 入口#5 | 冷门 1.2x'
+      - '德国01 广州移动1 | 冷门 1.2x'
+      - '德国01 广州移动2 | 冷门 1.2x'
+      - '德国01 杭州联通 | 冷门 1.2x'
+      - '德国01 江西电信CN2 | 冷门 1.2x'
       - '德国01 香港转发 | 冷门 1.2x'
-      - '新加坡01 入口#1 | 原生 1.5x'
-      - '新加坡01 入口#2 | 原生 1.5x'
-      - '新加坡01 入口#3 | 原生 1.5x'
-      - '新加坡01 入口#4 | 原生 1.5x'
-      - '新加坡01 入口#5 | 原生 1.5x'
+      - '新加坡01 广州移动1 | 原生 1.5x'
+      - '新加坡01 广州移动2 | 原生 1.5x'
+      - '新加坡01 杭州联通 | 原生 1.5x'
+      - '新加坡01 江西电信CN2 | 原生 1.5x'
+      - '新加坡01 湖南联通 | 原生 1.5x'
       - '新加坡01 香港转发 | 原生 1.5x'
-      - '新加坡02 入口#1 | 原生 1.5x'
-      - '新加坡02 入口#2 | 原生 1.5x'
-      - '新加坡02 入口#3 | 原生 1.5x'
-      - '新加坡02 入口#4 | 原生 1.5x'
-      - '新加坡02 入口#5 | 原生 1.5x'
-      - '新加坡04 入口#1 | NF 1.5x'
-      - '新加坡04 入口#2 | NF 1.5x'
-      - '新加坡04 入口#3 | NF 1.5x'
-      - '新加坡04 入口#4 | NF 1.5x'
-      - '新加坡04 入口#5 | NF 1.5x'
-      - '日本01 入口#1 | NF 1.5x'
-      - '日本01 入口#2 | NF 1.5x'
-      - '日本01 入口#3 | NF 1.5x'
-      - '日本01 入口#4 | NF 1.5x'
-      - '日本01 入口#5 | NF 1.5x'
-      - '日本02 入口#1 | NF 1.5x'
-      - '日本02 入口#2 | NF 1.5x'
-      - '日本02 入口#3 | NF 1.5x'
-      - '日本02 入口#4 | NF 1.5x'
-      - '日本02 入口#5 | NF 1.5x'
-      - '日本03 入口#1 | NF 1.5x'
-      - '日本03 入口#2 | NF 1.5x'
-      - '日本03 入口#3 | NF 1.5x'
-      - '日本03 入口#4 | NF 1.5x'
-      - '日本03 入口#5 | NF 1.5x'
-      - 更多节点请购买-官网jinkela.wtf-白嫖-俄04
-      - '波兰01 入口#1 | 冷门 1.2x'
-      - '波兰01 入口#2 | 冷门 1.2x'
-      - '波兰01 入口#3 | 冷门 1.2x'
-      - '波兰01 入口#4 | 冷门 1.2x'
+      - '新加坡02 广州移动1 | 原生 1.5x'
+      - '新加坡02 广州移动2 | 原生 1.5x'
+      - '新加坡02 杭州联通 | 原生 1.5x'
+      - '新加坡02 江西电信CN2 | 原生 1.5x'
+      - '新加坡02 湖南联通 | 原生 1.5x'
+      - '新加坡04 广州移动1 | NF 1.5x'
+      - '新加坡04 广州移动2 | NF 1.5x'
+      - '新加坡04 杭州联通 | NF 1.5x'
+      - '新加坡04 江西电信CN2 | NF 1.5x'
+      - '新加坡04 湖南联通 | NF 1.5x'
+      - '日本01 广州移动1 | NF 1.5x'
+      - '日本01 广州移动2 | NF 1.5x'
+      - '日本01 杭州联通 | NF 1.5x'
+      - '日本01 江西电信CN2 | NF 1.5x'
+      - '日本01 湖南联通 | NF 1.5x'
+      - '日本02 广州移动1 | NF 1.5x'
+      - '日本02 广州移动2 | NF 1.5x'
+      - '日本02 杭州联通 | NF 1.5x'
+      - '日本02 江西电信CN2 | NF 1.5x'
+      - '日本02 湖南联通 | NF 1.5x'
+      - '日本03 广州移动1 | NF 1.5x'
+      - '日本03 广州移动2 | NF 1.5x'
+      - '日本03 杭州联通 | NF 1.5x'
+      - '日本03 江西电信CN2 | NF 1.5x'
+      - '日本03 湖南联通 | NF 1.5x'
+      - '波兰01 广州移动1 | 冷门 1.2x'
+      - '波兰01 广州移动2 | 冷门 1.2x'
+      - '波兰01 江西电信CN2 | 冷门 1.2x'
+      - '波兰01 湖南联通 | 冷门 1.2x'
       - '波兰01 香港转发 | 冷门 1.2x'
-      - '澳洲01 入口#1 | 冷门 1.5x'
-      - '澳洲01 入口#2 | 冷门 1.5x'
-      - '澳洲01 入口#3 | 冷门 1.5x'
-      - '澳洲01 入口#5 | 冷门 1.5x'
+      - '澳洲01 广州移动1 | 冷门 1.5x'
+      - '澳洲01 广州移动2 | 冷门 1.5x'
+      - '澳洲01 杭州联通 | 冷门 1.5x'
+      - '澳洲01 江西电信CN2 | 冷门 1.5x'
       - '澳洲01 香港转发 | 冷门 1.5x'
-      - '澳洲CDN | 实验 | 免费 | 1.0x | 请经常更新订阅'
       - '美国01 入口01 | NF 1.5x'
       - '美国01 入口02 | NF 1.5x'
       - '美国01 入口03 | NF 1.5x'
       - '美国01 入口04 | NF 1.5x'
       - '美国01 入口05 | NF 1.5x'
-      - '美国03 入口#1 | 原生 1.5x'
-      - '美国03 入口#2 | 原生 1.5x'
-      - '美国03 入口#5 | 原生 1.5x'
+      - '美国03 广州移动1 | 原生 1.5x'
+      - '美国03 广州移动2 | 原生 1.5x'
+      - '美国03 杭州联通 | 原生 1.5x'
       - '美国03 香港转发 | 原生 1.5x'
-      - '美国04 入口#1 | 备用 1.3x'
-      - '美国04 入口#2 | 备用 1.3x'
-      - '美国04 入口#3 | 备用 1.3x'
-      - '美国04 入口#4 | 备用 1.3x'
-      - '英国01 入口#1 | NF BBC Chan4 1.5x'
-      - '英国01 入口#2 | NF BBC Chan4 1.5x'
-      - '英国01 入口#3 | NF BBC Chan4 1.5x'
-      - '英国01 入口#4 | NF BBC Chan4 1.5x'
+      - '美国04 广州移动1 | 备用 1.3x'
+      - '美国04 广州移动2 | 备用 1.3x'
+      - '美国04 江西电信CN2 | 备用 1.3x'
+      - '美国04 湖南联通 | 备用 1.3x'
+      - '英国01 广州移动1 | NF BBC Chan4 1.5x'
+      - '英国01 广州移动2 | NF BBC Chan4 1.5x'
+      - '英国01 江西电信CN2 | NF BBC Chan4 1.5x'
+      - '英国01 湖南联通 | NF BBC Chan4 1.5x'
       - '英国01 香港转发 | NF BBC Chan4 1.5x'
-      - '荷兰01 入口#1 | 冷门 1.2x'
-      - '荷兰01 入口#2 | 冷门 1.2x'
-      - '荷兰01 入口#3 | 冷门 1.2x'
-      - '荷兰01 入口#5 | 冷门 1.2x'
+      - '荷兰01 广州移动1 | 冷门 1.2x'
+      - '荷兰01 广州移动2 | 冷门 1.2x'
+      - '荷兰01 杭州联通 | 冷门 1.2x'
+      - '荷兰01 江西电信CN2 | 冷门 1.2x'
       - '荷兰01 香港转发 | 冷门 1.2x'
-      - '阿根廷01 入口#1 | 冷门 低速 2.0x'
-      - '阿根廷01 入口#2 | 冷门 低速 2.0x'
-      - '阿根廷01 入口#3 | 冷门 低速 2.0x'
+      - '阿根廷01 广州移动1 | 冷门 低速 2.0x'
+      - '阿根廷01 广州移动2 | 冷门 低速 2.0x'
+      - '阿根廷01 江西电信CN2 | 冷门 低速 2.0x'
       - '阿根廷01 香港转发 | 冷门 低速 2.0x'
-      - '韩国01 入口#1 | 1.5x'
-      - '韩国01 入口#2 | 1.5x'
-      - '韩国01 入口#4 | 1.5x'
-      - '韩国01 入口#5 | 1.5x'
+      - '韩国01 广州移动1 | 1.5x'
+      - '韩国01 广州移动2 | 1.5x'
+      - '韩国01 杭州联通 | 1.5x'
+      - '韩国01 湖南联通 | 1.5x'
       - '韩国01 香港转发 | 1.5x'
-      - '香港01 入口#1 | NF 1.5x'
-      - '香港01 入口#2 | NF 1.5x'
-      - '香港01 入口#3 | NF 1.5x'
-      - '香港01 入口#4 | NF 1.5x'
-      - '香港01 入口#5 | NF 1.5x'
-      - '香港02 入口#1 | NF 1.5x'
-      - '香港02 入口#2 | NF 1.5x'
-      - '香港02 入口#3 | NF 1.5x'
-      - '香港02 入口#4 | NF 1.5x'
-      - '香港02 入口#5 | NF 1.5x'
-      - '香港03 入口#1 | NF 1.5x'
-      - '香港03 入口#2 | NF 1.5x'
-      - '香港03 入口#3 | NF 1.5x'
-      - '香港03 入口#4 | NF 1.5x'
-      - '香港03 入口#5 | NF 1.5x'
-      - '香港HGC01 入口#1 | 原生 1.5x'
-      - '香港HGC01 入口#2 | 原生 1.5x'
-      - '香港HGC01 入口#3 | 原生 1.5x'
-      - '香港HGC01 入口#4 | 原生 1.5x'
-      - '香港HGC01 入口#5 | 原生 1.5x'
+      - '香港01 广州移动1 | NF 1.5x'
+      - '香港01 广州移动2 | NF 1.5x'
+      - '香港01 杭州联通 | NF 1.5x'
+      - '香港01 江西电信CN2 | NF 1.5x'
+      - '香港01 湖南联通 | NF 1.5x'
+      - '香港02 广州移动1 | NF 1.5x'
+      - '香港02 广州移动2 | NF 1.5x'
+      - '香港02 杭州联通 | NF 1.5x'
+      - '香港02 江西电信CN2 | NF 1.5x'
+      - '香港02 湖南联通 | NF 1.5x'
+      - '香港03 广州移动1 | NF 1.5x'
+      - '香港03 广州移动2 | NF 1.5x'
+      - '香港03 杭州联通 | NF 1.5x'
+      - '香港03 江西电信CN2 | NF 1.5x'
+      - '香港03 湖南联通 | NF 1.5x'
+      - '香港HGC01 广州移动1 | 原生 1.5x'
+      - '香港HGC01 广州移动2 | 原生 1.5x'
+      - '香港HGC01 杭州联通 | 原生 1.5x'
+      - '香港HGC01 江西电信CN2 | 原生 1.5x'
+      - '香港HGC01 湖南联通 | 原生 1.5x'
       - '香港HGC01 香港转发 | 原生 1.5x'
-      - '香港HKT01 入口#1 | 原生 1.5x'
-      - '香港HKT01 入口#2 | 原生 1.5x'
-      - '香港HKT01 入口#3 | 原生 1.5x'
-      - '香港HKT01 入口#5 | 原生 1.5x'
+      - '香港HKT01 广州移动1 | 原生 1.5x'
+      - '香港HKT01 广州移动2 | 原生 1.5x'
+      - '香港HKT01 杭州联通 | 原生 1.5x'
+      - '香港HKT01 江西电信CN2 | 原生 1.5x'
       - '香港HKT01 香港转发 | 原生 1.5x'
-      - '马来西亚01 入口#1 | 原生 1.5x'
-      - '马来西亚01 入口#2 | 原生 1.5x'
-      - '马来西亚01 入口#3 | 原生 1.5x'
-      - '马来西亚01 入口#5 | 原生 1.5x'
+      - '马来西亚01 广州移动1 | 原生 1.5x'
+      - '马来西亚01 广州移动2 | 原生 1.5x'
+      - '马来西亚01 杭州联通 | 原生 1.5x'
+      - '马来西亚01 江西电信CN2 | 原生 1.5x'
       - '马来西亚01 香港转发 | 原生 1.5x'
       - 🚀直接连接
   -
@@ -2300,830 +2174,785 @@ proxy-groups:
     type: select
     proxies:
       - 🔰国外流量
-      - 'IEPL专线 粤新03 入口#1 | 4x NF'
-      - 'IEPL专线 粤新03 入口#2 | 4x NF'
-      - 'IEPL专线 粤新03 入口#3 | 4x NF'
-      - 'IEPL专线 粤新03 入口#4 | 4x NF'
-      - 'IEPL专线 粤新03 入口#5 | 4x NF'
-      - 'IEPL专线 粤日04 入口#1 | 4x NF'
-      - 'IEPL专线 粤日04 入口#2 | 4x NF'
-      - 'IEPL专线 粤日04 入口#3 | 4x NF'
-      - 'IEPL专线 粤日04 入口#4 | 4x NF'
-      - 'IEPL专线 粤日04 入口#5 | 4x NF'
-      - 'IEPL专线 粤港03 入口#1 | 4x NF'
-      - 'IEPL专线 粤港03 入口#2 | 4x NF'
-      - 'IEPL专线 粤港03 入口#3 | 4x NF'
-      - 'IEPL专线 粤港03 入口#4 | 4x NF'
-      - 'IEPL专线 粤港03 入口#5 | 4x NF'
-      - 'IEPL专线 粤美02 入口#1 | 4x NF'
-      - 'IEPL专线 粤美02 入口#2 | 4x NF'
-      - 'IEPL专线 粤美02 入口#3 | 4x NF'
-      - 'IEPL专线 粤美02 入口#4 | 4x NF'
-      - 'IEPL专线 粤美02 入口#5 | 4x NF'
-      - '俄罗斯01 入口#2 | 冷门 1.5x'
-      - '俄罗斯01 入口#3 | 冷门 1.5x'
-      - '俄罗斯01 入口#4 | 冷门 1.5x'
-      - '俄罗斯01 入口#5 | 冷门 1.5x'
-      - '俄罗斯05 入口#1 | 冷门 1.3x'
-      - '俄罗斯05 入口#2 | 冷门 1.3x'
-      - '俄罗斯05 入口#3 | 冷门 1.3x'
-      - '俄罗斯05 入口#4 | 冷门 1.3x'
-      - '俄罗斯05 入口#5 | 冷门 1.3x'
-      - '印度01 入口#1 | 1.5x'
-      - '印度01 入口#2 | 1.5x'
-      - '印度01 入口#3 | 1.5x'
-      - '印度01 入口#4 | 1.5x'
-      - '印度01 入口#5 | 1.5x'
+      - 'IEPL专线 粤新03 入#1 | 6x NF'
+      - 'IEPL专线 粤新03 入#2 | 6x NF'
+      - 'IEPL专线 粤新03 入#3 | 6x NF'
+      - 'IEPL专线 粤日04 入#1 | 6x NF'
+      - 'IEPL专线 粤日04 入#2 | 6x NF'
+      - 'IEPL专线 粤日04 入#3 | 6x NF'
+      - 'IEPL专线 粤港03 入#1 | 6x NF'
+      - 'IEPL专线 粤港03 入#2 | 6x NF'
+      - 'IEPL专线 粤港03 入#3 | 6x NF'
+      - 'IEPL专线 粤美02 入#1 | 6x NF'
+      - 'IEPL专线 粤美02 入#2 | 6x NF'
+      - 'IEPL专线 粤美02 入#3 | 6x NF'
+      - '俄罗斯01 广州移动2 | 冷门 1.5x'
+      - '俄罗斯01 杭州联通 | 冷门 1.5x'
+      - '俄罗斯01 江西电信CN2 | 冷门 1.5x'
+      - '俄罗斯01 湖南联通 | 冷门 1.5x'
+      - '俄罗斯04 广州移动1 | 冷门 1.3x'
+      - '俄罗斯04 广州移动2 | 冷门 1.3x'
+      - '俄罗斯04 杭州联通 | 冷门 1.3x'
+      - '俄罗斯04 江西电信CN2 | 冷门 1.3x'
+      - '俄罗斯04 湖南联通 | 冷门 1.3x'
+      - '印度01 广州移动1 | 1.5x'
+      - '印度01 广州移动2 | 1.5x'
+      - '印度01 杭州联通 | 1.5x'
+      - '印度01 江西电信CN2 | 1.5x'
+      - '印度01 湖南联通 | 1.5x'
       - '印度01 香港转发 | 1.5x'
-      - '台湾02 入口#1 | 原生 1.5x'
-      - '台湾02 入口#2 | 原生 1.5x'
-      - '台湾02 入口#3 | 原生 1.5x'
-      - '台湾02 入口#4 | 原生 1.5x'
-      - '台湾02 入口#5 | 原生 1.5x'
+      - '台湾02 广州移动1 | 原生 1.5x'
+      - '台湾02 广州移动2 | 原生 1.5x'
+      - '台湾02 杭州联通 | 原生 1.5x'
+      - '台湾02 江西电信CN2 | 原生 1.5x'
+      - '台湾02 湖南联通 | 原生 1.5x'
       - '台湾02 香港转发 | 原生 1.5x'
-      - '土耳其01 入口#1 | 冷门 2.0x'
-      - '土耳其01 入口#2 | 冷门 2.0x'
-      - '土耳其01 入口#3 | 冷门 2.0x'
-      - '土耳其01 入口#4 | 冷门 2.0x'
+      - '土耳其01 广州移动1 | 冷门 2.0x'
+      - '土耳其01 广州移动2 | 冷门 2.0x'
+      - '土耳其01 江西电信CN2 | 冷门 2.0x'
+      - '土耳其01 湖南联通 | 冷门 2.0x'
       - '土耳其01 香港转发 | 冷门 2.0x'
-      - '巴西01 入口#1 | 冷门 3.0x'
-      - '巴西01 入口#2 | 冷门 3.0x'
-      - '巴西01 入口#3 | 冷门 3.0x'
+      - 官网开全局jinkela.wtf-德国CDN-免费白嫖-x0.5倍率
+      - '巴西01 广州移动1 | 冷门 3.0x'
+      - '巴西01 广州移动2 | 冷门 3.0x'
+      - '巴西01 江西电信CN2 | 冷门 3.0x'
       - '巴西01 香港转发 | 冷门 3.0x'
-      - '德国01 入口#1 | 冷门 1.2x'
-      - '德国01 入口#2 | 冷门 1.2x'
-      - '德国01 入口#3 | 冷门 1.2x'
-      - '德国01 入口#5 | 冷门 1.2x'
+      - '德国01 广州移动1 | 冷门 1.2x'
+      - '德国01 广州移动2 | 冷门 1.2x'
+      - '德国01 杭州联通 | 冷门 1.2x'
+      - '德国01 江西电信CN2 | 冷门 1.2x'
       - '德国01 香港转发 | 冷门 1.2x'
-      - '新加坡01 入口#1 | 原生 1.5x'
-      - '新加坡01 入口#2 | 原生 1.5x'
-      - '新加坡01 入口#3 | 原生 1.5x'
-      - '新加坡01 入口#4 | 原生 1.5x'
-      - '新加坡01 入口#5 | 原生 1.5x'
+      - '新加坡01 广州移动1 | 原生 1.5x'
+      - '新加坡01 广州移动2 | 原生 1.5x'
+      - '新加坡01 杭州联通 | 原生 1.5x'
+      - '新加坡01 江西电信CN2 | 原生 1.5x'
+      - '新加坡01 湖南联通 | 原生 1.5x'
       - '新加坡01 香港转发 | 原生 1.5x'
-      - '新加坡02 入口#1 | 原生 1.5x'
-      - '新加坡02 入口#2 | 原生 1.5x'
-      - '新加坡02 入口#3 | 原生 1.5x'
-      - '新加坡02 入口#4 | 原生 1.5x'
-      - '新加坡02 入口#5 | 原生 1.5x'
-      - '新加坡04 入口#1 | NF 1.5x'
-      - '新加坡04 入口#2 | NF 1.5x'
-      - '新加坡04 入口#3 | NF 1.5x'
-      - '新加坡04 入口#4 | NF 1.5x'
-      - '新加坡04 入口#5 | NF 1.5x'
-      - '日本01 入口#1 | NF 1.5x'
-      - '日本01 入口#2 | NF 1.5x'
-      - '日本01 入口#3 | NF 1.5x'
-      - '日本01 入口#4 | NF 1.5x'
-      - '日本01 入口#5 | NF 1.5x'
-      - '日本02 入口#1 | NF 1.5x'
-      - '日本02 入口#2 | NF 1.5x'
-      - '日本02 入口#3 | NF 1.5x'
-      - '日本02 入口#4 | NF 1.5x'
-      - '日本02 入口#5 | NF 1.5x'
-      - '日本03 入口#1 | NF 1.5x'
-      - '日本03 入口#2 | NF 1.5x'
-      - '日本03 入口#3 | NF 1.5x'
-      - '日本03 入口#4 | NF 1.5x'
-      - '日本03 入口#5 | NF 1.5x'
-      - 更多节点请购买-官网jinkela.wtf-白嫖-俄04
-      - '波兰01 入口#1 | 冷门 1.2x'
-      - '波兰01 入口#2 | 冷门 1.2x'
-      - '波兰01 入口#3 | 冷门 1.2x'
-      - '波兰01 入口#4 | 冷门 1.2x'
+      - '新加坡02 广州移动1 | 原生 1.5x'
+      - '新加坡02 广州移动2 | 原生 1.5x'
+      - '新加坡02 杭州联通 | 原生 1.5x'
+      - '新加坡02 江西电信CN2 | 原生 1.5x'
+      - '新加坡02 湖南联通 | 原生 1.5x'
+      - '新加坡04 广州移动1 | NF 1.5x'
+      - '新加坡04 广州移动2 | NF 1.5x'
+      - '新加坡04 杭州联通 | NF 1.5x'
+      - '新加坡04 江西电信CN2 | NF 1.5x'
+      - '新加坡04 湖南联通 | NF 1.5x'
+      - '日本01 广州移动1 | NF 1.5x'
+      - '日本01 广州移动2 | NF 1.5x'
+      - '日本01 杭州联通 | NF 1.5x'
+      - '日本01 江西电信CN2 | NF 1.5x'
+      - '日本01 湖南联通 | NF 1.5x'
+      - '日本02 广州移动1 | NF 1.5x'
+      - '日本02 广州移动2 | NF 1.5x'
+      - '日本02 杭州联通 | NF 1.5x'
+      - '日本02 江西电信CN2 | NF 1.5x'
+      - '日本02 湖南联通 | NF 1.5x'
+      - '日本03 广州移动1 | NF 1.5x'
+      - '日本03 广州移动2 | NF 1.5x'
+      - '日本03 杭州联通 | NF 1.5x'
+      - '日本03 江西电信CN2 | NF 1.5x'
+      - '日本03 湖南联通 | NF 1.5x'
+      - '波兰01 广州移动1 | 冷门 1.2x'
+      - '波兰01 广州移动2 | 冷门 1.2x'
+      - '波兰01 江西电信CN2 | 冷门 1.2x'
+      - '波兰01 湖南联通 | 冷门 1.2x'
       - '波兰01 香港转发 | 冷门 1.2x'
-      - '澳洲01 入口#1 | 冷门 1.5x'
-      - '澳洲01 入口#2 | 冷门 1.5x'
-      - '澳洲01 入口#3 | 冷门 1.5x'
-      - '澳洲01 入口#5 | 冷门 1.5x'
+      - '澳洲01 广州移动1 | 冷门 1.5x'
+      - '澳洲01 广州移动2 | 冷门 1.5x'
+      - '澳洲01 杭州联通 | 冷门 1.5x'
+      - '澳洲01 江西电信CN2 | 冷门 1.5x'
       - '澳洲01 香港转发 | 冷门 1.5x'
-      - '澳洲CDN | 实验 | 免费 | 1.0x | 请经常更新订阅'
       - '美国01 入口01 | NF 1.5x'
       - '美国01 入口02 | NF 1.5x'
       - '美国01 入口03 | NF 1.5x'
       - '美国01 入口04 | NF 1.5x'
       - '美国01 入口05 | NF 1.5x'
-      - '美国03 入口#1 | 原生 1.5x'
-      - '美国03 入口#2 | 原生 1.5x'
-      - '美国03 入口#5 | 原生 1.5x'
+      - '美国03 广州移动1 | 原生 1.5x'
+      - '美国03 广州移动2 | 原生 1.5x'
+      - '美国03 杭州联通 | 原生 1.5x'
       - '美国03 香港转发 | 原生 1.5x'
-      - '美国04 入口#1 | 备用 1.3x'
-      - '美国04 入口#2 | 备用 1.3x'
-      - '美国04 入口#3 | 备用 1.3x'
-      - '美国04 入口#4 | 备用 1.3x'
-      - '英国01 入口#1 | NF BBC Chan4 1.5x'
-      - '英国01 入口#2 | NF BBC Chan4 1.5x'
-      - '英国01 入口#3 | NF BBC Chan4 1.5x'
-      - '英国01 入口#4 | NF BBC Chan4 1.5x'
+      - '美国04 广州移动1 | 备用 1.3x'
+      - '美国04 广州移动2 | 备用 1.3x'
+      - '美国04 江西电信CN2 | 备用 1.3x'
+      - '美国04 湖南联通 | 备用 1.3x'
+      - '英国01 广州移动1 | NF BBC Chan4 1.5x'
+      - '英国01 广州移动2 | NF BBC Chan4 1.5x'
+      - '英国01 江西电信CN2 | NF BBC Chan4 1.5x'
+      - '英国01 湖南联通 | NF BBC Chan4 1.5x'
       - '英国01 香港转发 | NF BBC Chan4 1.5x'
-      - '荷兰01 入口#1 | 冷门 1.2x'
-      - '荷兰01 入口#2 | 冷门 1.2x'
-      - '荷兰01 入口#3 | 冷门 1.2x'
-      - '荷兰01 入口#5 | 冷门 1.2x'
+      - '荷兰01 广州移动1 | 冷门 1.2x'
+      - '荷兰01 广州移动2 | 冷门 1.2x'
+      - '荷兰01 杭州联通 | 冷门 1.2x'
+      - '荷兰01 江西电信CN2 | 冷门 1.2x'
       - '荷兰01 香港转发 | 冷门 1.2x'
-      - '阿根廷01 入口#1 | 冷门 低速 2.0x'
-      - '阿根廷01 入口#2 | 冷门 低速 2.0x'
-      - '阿根廷01 入口#3 | 冷门 低速 2.0x'
+      - '阿根廷01 广州移动1 | 冷门 低速 2.0x'
+      - '阿根廷01 广州移动2 | 冷门 低速 2.0x'
+      - '阿根廷01 江西电信CN2 | 冷门 低速 2.0x'
       - '阿根廷01 香港转发 | 冷门 低速 2.0x'
-      - '韩国01 入口#1 | 1.5x'
-      - '韩国01 入口#2 | 1.5x'
-      - '韩国01 入口#4 | 1.5x'
-      - '韩国01 入口#5 | 1.5x'
+      - '韩国01 广州移动1 | 1.5x'
+      - '韩国01 广州移动2 | 1.5x'
+      - '韩国01 杭州联通 | 1.5x'
+      - '韩国01 湖南联通 | 1.5x'
       - '韩国01 香港转发 | 1.5x'
-      - '香港01 入口#1 | NF 1.5x'
-      - '香港01 入口#2 | NF 1.5x'
-      - '香港01 入口#3 | NF 1.5x'
-      - '香港01 入口#4 | NF 1.5x'
-      - '香港01 入口#5 | NF 1.5x'
-      - '香港02 入口#1 | NF 1.5x'
-      - '香港02 入口#2 | NF 1.5x'
-      - '香港02 入口#3 | NF 1.5x'
-      - '香港02 入口#4 | NF 1.5x'
-      - '香港02 入口#5 | NF 1.5x'
-      - '香港03 入口#1 | NF 1.5x'
-      - '香港03 入口#2 | NF 1.5x'
-      - '香港03 入口#3 | NF 1.5x'
-      - '香港03 入口#4 | NF 1.5x'
-      - '香港03 入口#5 | NF 1.5x'
-      - '香港HGC01 入口#1 | 原生 1.5x'
-      - '香港HGC01 入口#2 | 原生 1.5x'
-      - '香港HGC01 入口#3 | 原生 1.5x'
-      - '香港HGC01 入口#4 | 原生 1.5x'
-      - '香港HGC01 入口#5 | 原生 1.5x'
+      - '香港01 广州移动1 | NF 1.5x'
+      - '香港01 广州移动2 | NF 1.5x'
+      - '香港01 杭州联通 | NF 1.5x'
+      - '香港01 江西电信CN2 | NF 1.5x'
+      - '香港01 湖南联通 | NF 1.5x'
+      - '香港02 广州移动1 | NF 1.5x'
+      - '香港02 广州移动2 | NF 1.5x'
+      - '香港02 杭州联通 | NF 1.5x'
+      - '香港02 江西电信CN2 | NF 1.5x'
+      - '香港02 湖南联通 | NF 1.5x'
+      - '香港03 广州移动1 | NF 1.5x'
+      - '香港03 广州移动2 | NF 1.5x'
+      - '香港03 杭州联通 | NF 1.5x'
+      - '香港03 江西电信CN2 | NF 1.5x'
+      - '香港03 湖南联通 | NF 1.5x'
+      - '香港HGC01 广州移动1 | 原生 1.5x'
+      - '香港HGC01 广州移动2 | 原生 1.5x'
+      - '香港HGC01 杭州联通 | 原生 1.5x'
+      - '香港HGC01 江西电信CN2 | 原生 1.5x'
+      - '香港HGC01 湖南联通 | 原生 1.5x'
       - '香港HGC01 香港转发 | 原生 1.5x'
-      - '香港HKT01 入口#1 | 原生 1.5x'
-      - '香港HKT01 入口#2 | 原生 1.5x'
-      - '香港HKT01 入口#3 | 原生 1.5x'
-      - '香港HKT01 入口#5 | 原生 1.5x'
+      - '香港HKT01 广州移动1 | 原生 1.5x'
+      - '香港HKT01 广州移动2 | 原生 1.5x'
+      - '香港HKT01 杭州联通 | 原生 1.5x'
+      - '香港HKT01 江西电信CN2 | 原生 1.5x'
       - '香港HKT01 香港转发 | 原生 1.5x'
-      - '马来西亚01 入口#1 | 原生 1.5x'
-      - '马来西亚01 入口#2 | 原生 1.5x'
-      - '马来西亚01 入口#3 | 原生 1.5x'
-      - '马来西亚01 入口#5 | 原生 1.5x'
+      - '马来西亚01 广州移动1 | 原生 1.5x'
+      - '马来西亚01 广州移动2 | 原生 1.5x'
+      - '马来西亚01 杭州联通 | 原生 1.5x'
+      - '马来西亚01 江西电信CN2 | 原生 1.5x'
       - '马来西亚01 香港转发 | 原生 1.5x'
   -
     name: 🎬Youtube
     type: select
     proxies:
       - 🔰国外流量
-      - 'IEPL专线 粤新03 入口#1 | 4x NF'
-      - 'IEPL专线 粤新03 入口#2 | 4x NF'
-      - 'IEPL专线 粤新03 入口#3 | 4x NF'
-      - 'IEPL专线 粤新03 入口#4 | 4x NF'
-      - 'IEPL专线 粤新03 入口#5 | 4x NF'
-      - 'IEPL专线 粤日04 入口#1 | 4x NF'
-      - 'IEPL专线 粤日04 入口#2 | 4x NF'
-      - 'IEPL专线 粤日04 入口#3 | 4x NF'
-      - 'IEPL专线 粤日04 入口#4 | 4x NF'
-      - 'IEPL专线 粤日04 入口#5 | 4x NF'
-      - 'IEPL专线 粤港03 入口#1 | 4x NF'
-      - 'IEPL专线 粤港03 入口#2 | 4x NF'
-      - 'IEPL专线 粤港03 入口#3 | 4x NF'
-      - 'IEPL专线 粤港03 入口#4 | 4x NF'
-      - 'IEPL专线 粤港03 入口#5 | 4x NF'
-      - 'IEPL专线 粤美02 入口#1 | 4x NF'
-      - 'IEPL专线 粤美02 入口#2 | 4x NF'
-      - 'IEPL专线 粤美02 入口#3 | 4x NF'
-      - 'IEPL专线 粤美02 入口#4 | 4x NF'
-      - 'IEPL专线 粤美02 入口#5 | 4x NF'
-      - '俄罗斯01 入口#2 | 冷门 1.5x'
-      - '俄罗斯01 入口#3 | 冷门 1.5x'
-      - '俄罗斯01 入口#4 | 冷门 1.5x'
-      - '俄罗斯01 入口#5 | 冷门 1.5x'
-      - '俄罗斯05 入口#1 | 冷门 1.3x'
-      - '俄罗斯05 入口#2 | 冷门 1.3x'
-      - '俄罗斯05 入口#3 | 冷门 1.3x'
-      - '俄罗斯05 入口#4 | 冷门 1.3x'
-      - '俄罗斯05 入口#5 | 冷门 1.3x'
-      - '印度01 入口#1 | 1.5x'
-      - '印度01 入口#2 | 1.5x'
-      - '印度01 入口#3 | 1.5x'
-      - '印度01 入口#4 | 1.5x'
-      - '印度01 入口#5 | 1.5x'
+      - 'IEPL专线 粤新03 入#1 | 6x NF'
+      - 'IEPL专线 粤新03 入#2 | 6x NF'
+      - 'IEPL专线 粤新03 入#3 | 6x NF'
+      - 'IEPL专线 粤日04 入#1 | 6x NF'
+      - 'IEPL专线 粤日04 入#2 | 6x NF'
+      - 'IEPL专线 粤日04 入#3 | 6x NF'
+      - 'IEPL专线 粤港03 入#1 | 6x NF'
+      - 'IEPL专线 粤港03 入#2 | 6x NF'
+      - 'IEPL专线 粤港03 入#3 | 6x NF'
+      - 'IEPL专线 粤美02 入#1 | 6x NF'
+      - 'IEPL专线 粤美02 入#2 | 6x NF'
+      - 'IEPL专线 粤美02 入#3 | 6x NF'
+      - '俄罗斯01 广州移动2 | 冷门 1.5x'
+      - '俄罗斯01 杭州联通 | 冷门 1.5x'
+      - '俄罗斯01 江西电信CN2 | 冷门 1.5x'
+      - '俄罗斯01 湖南联通 | 冷门 1.5x'
+      - '俄罗斯04 广州移动1 | 冷门 1.3x'
+      - '俄罗斯04 广州移动2 | 冷门 1.3x'
+      - '俄罗斯04 杭州联通 | 冷门 1.3x'
+      - '俄罗斯04 江西电信CN2 | 冷门 1.3x'
+      - '俄罗斯04 湖南联通 | 冷门 1.3x'
+      - '印度01 广州移动1 | 1.5x'
+      - '印度01 广州移动2 | 1.5x'
+      - '印度01 杭州联通 | 1.5x'
+      - '印度01 江西电信CN2 | 1.5x'
+      - '印度01 湖南联通 | 1.5x'
       - '印度01 香港转发 | 1.5x'
-      - '台湾02 入口#1 | 原生 1.5x'
-      - '台湾02 入口#2 | 原生 1.5x'
-      - '台湾02 入口#3 | 原生 1.5x'
-      - '台湾02 入口#4 | 原生 1.5x'
-      - '台湾02 入口#5 | 原生 1.5x'
+      - '台湾02 广州移动1 | 原生 1.5x'
+      - '台湾02 广州移动2 | 原生 1.5x'
+      - '台湾02 杭州联通 | 原生 1.5x'
+      - '台湾02 江西电信CN2 | 原生 1.5x'
+      - '台湾02 湖南联通 | 原生 1.5x'
       - '台湾02 香港转发 | 原生 1.5x'
-      - '土耳其01 入口#1 | 冷门 2.0x'
-      - '土耳其01 入口#2 | 冷门 2.0x'
-      - '土耳其01 入口#3 | 冷门 2.0x'
-      - '土耳其01 入口#4 | 冷门 2.0x'
+      - '土耳其01 广州移动1 | 冷门 2.0x'
+      - '土耳其01 广州移动2 | 冷门 2.0x'
+      - '土耳其01 江西电信CN2 | 冷门 2.0x'
+      - '土耳其01 湖南联通 | 冷门 2.0x'
       - '土耳其01 香港转发 | 冷门 2.0x'
-      - '巴西01 入口#1 | 冷门 3.0x'
-      - '巴西01 入口#2 | 冷门 3.0x'
-      - '巴西01 入口#3 | 冷门 3.0x'
+      - 官网开全局jinkela.wtf-德国CDN-免费白嫖-x0.5倍率
+      - '巴西01 广州移动1 | 冷门 3.0x'
+      - '巴西01 广州移动2 | 冷门 3.0x'
+      - '巴西01 江西电信CN2 | 冷门 3.0x'
       - '巴西01 香港转发 | 冷门 3.0x'
-      - '德国01 入口#1 | 冷门 1.2x'
-      - '德国01 入口#2 | 冷门 1.2x'
-      - '德国01 入口#3 | 冷门 1.2x'
-      - '德国01 入口#5 | 冷门 1.2x'
+      - '德国01 广州移动1 | 冷门 1.2x'
+      - '德国01 广州移动2 | 冷门 1.2x'
+      - '德国01 杭州联通 | 冷门 1.2x'
+      - '德国01 江西电信CN2 | 冷门 1.2x'
       - '德国01 香港转发 | 冷门 1.2x'
-      - '新加坡01 入口#1 | 原生 1.5x'
-      - '新加坡01 入口#2 | 原生 1.5x'
-      - '新加坡01 入口#3 | 原生 1.5x'
-      - '新加坡01 入口#4 | 原生 1.5x'
-      - '新加坡01 入口#5 | 原生 1.5x'
+      - '新加坡01 广州移动1 | 原生 1.5x'
+      - '新加坡01 广州移动2 | 原生 1.5x'
+      - '新加坡01 杭州联通 | 原生 1.5x'
+      - '新加坡01 江西电信CN2 | 原生 1.5x'
+      - '新加坡01 湖南联通 | 原生 1.5x'
       - '新加坡01 香港转发 | 原生 1.5x'
-      - '新加坡02 入口#1 | 原生 1.5x'
-      - '新加坡02 入口#2 | 原生 1.5x'
-      - '新加坡02 入口#3 | 原生 1.5x'
-      - '新加坡02 入口#4 | 原生 1.5x'
-      - '新加坡02 入口#5 | 原生 1.5x'
-      - '新加坡04 入口#1 | NF 1.5x'
-      - '新加坡04 入口#2 | NF 1.5x'
-      - '新加坡04 入口#3 | NF 1.5x'
-      - '新加坡04 入口#4 | NF 1.5x'
-      - '新加坡04 入口#5 | NF 1.5x'
-      - '日本01 入口#1 | NF 1.5x'
-      - '日本01 入口#2 | NF 1.5x'
-      - '日本01 入口#3 | NF 1.5x'
-      - '日本01 入口#4 | NF 1.5x'
-      - '日本01 入口#5 | NF 1.5x'
-      - '日本02 入口#1 | NF 1.5x'
-      - '日本02 入口#2 | NF 1.5x'
-      - '日本02 入口#3 | NF 1.5x'
-      - '日本02 入口#4 | NF 1.5x'
-      - '日本02 入口#5 | NF 1.5x'
-      - '日本03 入口#1 | NF 1.5x'
-      - '日本03 入口#2 | NF 1.5x'
-      - '日本03 入口#3 | NF 1.5x'
-      - '日本03 入口#4 | NF 1.5x'
-      - '日本03 入口#5 | NF 1.5x'
-      - 更多节点请购买-官网jinkela.wtf-白嫖-俄04
-      - '波兰01 入口#1 | 冷门 1.2x'
-      - '波兰01 入口#2 | 冷门 1.2x'
-      - '波兰01 入口#3 | 冷门 1.2x'
-      - '波兰01 入口#4 | 冷门 1.2x'
+      - '新加坡02 广州移动1 | 原生 1.5x'
+      - '新加坡02 广州移动2 | 原生 1.5x'
+      - '新加坡02 杭州联通 | 原生 1.5x'
+      - '新加坡02 江西电信CN2 | 原生 1.5x'
+      - '新加坡02 湖南联通 | 原生 1.5x'
+      - '新加坡04 广州移动1 | NF 1.5x'
+      - '新加坡04 广州移动2 | NF 1.5x'
+      - '新加坡04 杭州联通 | NF 1.5x'
+      - '新加坡04 江西电信CN2 | NF 1.5x'
+      - '新加坡04 湖南联通 | NF 1.5x'
+      - '日本01 广州移动1 | NF 1.5x'
+      - '日本01 广州移动2 | NF 1.5x'
+      - '日本01 杭州联通 | NF 1.5x'
+      - '日本01 江西电信CN2 | NF 1.5x'
+      - '日本01 湖南联通 | NF 1.5x'
+      - '日本02 广州移动1 | NF 1.5x'
+      - '日本02 广州移动2 | NF 1.5x'
+      - '日本02 杭州联通 | NF 1.5x'
+      - '日本02 江西电信CN2 | NF 1.5x'
+      - '日本02 湖南联通 | NF 1.5x'
+      - '日本03 广州移动1 | NF 1.5x'
+      - '日本03 广州移动2 | NF 1.5x'
+      - '日本03 杭州联通 | NF 1.5x'
+      - '日本03 江西电信CN2 | NF 1.5x'
+      - '日本03 湖南联通 | NF 1.5x'
+      - '波兰01 广州移动1 | 冷门 1.2x'
+      - '波兰01 广州移动2 | 冷门 1.2x'
+      - '波兰01 江西电信CN2 | 冷门 1.2x'
+      - '波兰01 湖南联通 | 冷门 1.2x'
       - '波兰01 香港转发 | 冷门 1.2x'
-      - '澳洲01 入口#1 | 冷门 1.5x'
-      - '澳洲01 入口#2 | 冷门 1.5x'
-      - '澳洲01 入口#3 | 冷门 1.5x'
-      - '澳洲01 入口#5 | 冷门 1.5x'
+      - '澳洲01 广州移动1 | 冷门 1.5x'
+      - '澳洲01 广州移动2 | 冷门 1.5x'
+      - '澳洲01 杭州联通 | 冷门 1.5x'
+      - '澳洲01 江西电信CN2 | 冷门 1.5x'
       - '澳洲01 香港转发 | 冷门 1.5x'
-      - '澳洲CDN | 实验 | 免费 | 1.0x | 请经常更新订阅'
       - '美国01 入口01 | NF 1.5x'
       - '美国01 入口02 | NF 1.5x'
       - '美国01 入口03 | NF 1.5x'
       - '美国01 入口04 | NF 1.5x'
       - '美国01 入口05 | NF 1.5x'
-      - '美国03 入口#1 | 原生 1.5x'
-      - '美国03 入口#2 | 原生 1.5x'
-      - '美国03 入口#5 | 原生 1.5x'
+      - '美国03 广州移动1 | 原生 1.5x'
+      - '美国03 广州移动2 | 原生 1.5x'
+      - '美国03 杭州联通 | 原生 1.5x'
       - '美国03 香港转发 | 原生 1.5x'
-      - '美国04 入口#1 | 备用 1.3x'
-      - '美国04 入口#2 | 备用 1.3x'
-      - '美国04 入口#3 | 备用 1.3x'
-      - '美国04 入口#4 | 备用 1.3x'
-      - '英国01 入口#1 | NF BBC Chan4 1.5x'
-      - '英国01 入口#2 | NF BBC Chan4 1.5x'
-      - '英国01 入口#3 | NF BBC Chan4 1.5x'
-      - '英国01 入口#4 | NF BBC Chan4 1.5x'
+      - '美国04 广州移动1 | 备用 1.3x'
+      - '美国04 广州移动2 | 备用 1.3x'
+      - '美国04 江西电信CN2 | 备用 1.3x'
+      - '美国04 湖南联通 | 备用 1.3x'
+      - '英国01 广州移动1 | NF BBC Chan4 1.5x'
+      - '英国01 广州移动2 | NF BBC Chan4 1.5x'
+      - '英国01 江西电信CN2 | NF BBC Chan4 1.5x'
+      - '英国01 湖南联通 | NF BBC Chan4 1.5x'
       - '英国01 香港转发 | NF BBC Chan4 1.5x'
-      - '荷兰01 入口#1 | 冷门 1.2x'
-      - '荷兰01 入口#2 | 冷门 1.2x'
-      - '荷兰01 入口#3 | 冷门 1.2x'
-      - '荷兰01 入口#5 | 冷门 1.2x'
+      - '荷兰01 广州移动1 | 冷门 1.2x'
+      - '荷兰01 广州移动2 | 冷门 1.2x'
+      - '荷兰01 杭州联通 | 冷门 1.2x'
+      - '荷兰01 江西电信CN2 | 冷门 1.2x'
       - '荷兰01 香港转发 | 冷门 1.2x'
-      - '阿根廷01 入口#1 | 冷门 低速 2.0x'
-      - '阿根廷01 入口#2 | 冷门 低速 2.0x'
-      - '阿根廷01 入口#3 | 冷门 低速 2.0x'
+      - '阿根廷01 广州移动1 | 冷门 低速 2.0x'
+      - '阿根廷01 广州移动2 | 冷门 低速 2.0x'
+      - '阿根廷01 江西电信CN2 | 冷门 低速 2.0x'
       - '阿根廷01 香港转发 | 冷门 低速 2.0x'
-      - '韩国01 入口#1 | 1.5x'
-      - '韩国01 入口#2 | 1.5x'
-      - '韩国01 入口#4 | 1.5x'
-      - '韩国01 入口#5 | 1.5x'
+      - '韩国01 广州移动1 | 1.5x'
+      - '韩国01 广州移动2 | 1.5x'
+      - '韩国01 杭州联通 | 1.5x'
+      - '韩国01 湖南联通 | 1.5x'
       - '韩国01 香港转发 | 1.5x'
-      - '香港01 入口#1 | NF 1.5x'
-      - '香港01 入口#2 | NF 1.5x'
-      - '香港01 入口#3 | NF 1.5x'
-      - '香港01 入口#4 | NF 1.5x'
-      - '香港01 入口#5 | NF 1.5x'
-      - '香港02 入口#1 | NF 1.5x'
-      - '香港02 入口#2 | NF 1.5x'
-      - '香港02 入口#3 | NF 1.5x'
-      - '香港02 入口#4 | NF 1.5x'
-      - '香港02 入口#5 | NF 1.5x'
-      - '香港03 入口#1 | NF 1.5x'
-      - '香港03 入口#2 | NF 1.5x'
-      - '香港03 入口#3 | NF 1.5x'
-      - '香港03 入口#4 | NF 1.5x'
-      - '香港03 入口#5 | NF 1.5x'
-      - '香港HGC01 入口#1 | 原生 1.5x'
-      - '香港HGC01 入口#2 | 原生 1.5x'
-      - '香港HGC01 入口#3 | 原生 1.5x'
-      - '香港HGC01 入口#4 | 原生 1.5x'
-      - '香港HGC01 入口#5 | 原生 1.5x'
+      - '香港01 广州移动1 | NF 1.5x'
+      - '香港01 广州移动2 | NF 1.5x'
+      - '香港01 杭州联通 | NF 1.5x'
+      - '香港01 江西电信CN2 | NF 1.5x'
+      - '香港01 湖南联通 | NF 1.5x'
+      - '香港02 广州移动1 | NF 1.5x'
+      - '香港02 广州移动2 | NF 1.5x'
+      - '香港02 杭州联通 | NF 1.5x'
+      - '香港02 江西电信CN2 | NF 1.5x'
+      - '香港02 湖南联通 | NF 1.5x'
+      - '香港03 广州移动1 | NF 1.5x'
+      - '香港03 广州移动2 | NF 1.5x'
+      - '香港03 杭州联通 | NF 1.5x'
+      - '香港03 江西电信CN2 | NF 1.5x'
+      - '香港03 湖南联通 | NF 1.5x'
+      - '香港HGC01 广州移动1 | 原生 1.5x'
+      - '香港HGC01 广州移动2 | 原生 1.5x'
+      - '香港HGC01 杭州联通 | 原生 1.5x'
+      - '香港HGC01 江西电信CN2 | 原生 1.5x'
+      - '香港HGC01 湖南联通 | 原生 1.5x'
       - '香港HGC01 香港转发 | 原生 1.5x'
-      - '香港HKT01 入口#1 | 原生 1.5x'
-      - '香港HKT01 入口#2 | 原生 1.5x'
-      - '香港HKT01 入口#3 | 原生 1.5x'
-      - '香港HKT01 入口#5 | 原生 1.5x'
+      - '香港HKT01 广州移动1 | 原生 1.5x'
+      - '香港HKT01 广州移动2 | 原生 1.5x'
+      - '香港HKT01 杭州联通 | 原生 1.5x'
+      - '香港HKT01 江西电信CN2 | 原生 1.5x'
       - '香港HKT01 香港转发 | 原生 1.5x'
-      - '马来西亚01 入口#1 | 原生 1.5x'
-      - '马来西亚01 入口#2 | 原生 1.5x'
-      - '马来西亚01 入口#3 | 原生 1.5x'
-      - '马来西亚01 入口#5 | 原生 1.5x'
+      - '马来西亚01 广州移动1 | 原生 1.5x'
+      - '马来西亚01 广州移动2 | 原生 1.5x'
+      - '马来西亚01 杭州联通 | 原生 1.5x'
+      - '马来西亚01 江西电信CN2 | 原生 1.5x'
       - '马来西亚01 香港转发 | 原生 1.5x'
   -
     name: 🎬Netflix
     type: select
     proxies:
       - 🔰国外流量
-      - 'IEPL专线 粤新03 入口#1 | 4x NF'
-      - 'IEPL专线 粤新03 入口#2 | 4x NF'
-      - 'IEPL专线 粤新03 入口#3 | 4x NF'
-      - 'IEPL专线 粤新03 入口#4 | 4x NF'
-      - 'IEPL专线 粤新03 入口#5 | 4x NF'
-      - 'IEPL专线 粤日04 入口#1 | 4x NF'
-      - 'IEPL专线 粤日04 入口#2 | 4x NF'
-      - 'IEPL专线 粤日04 入口#3 | 4x NF'
-      - 'IEPL专线 粤日04 入口#4 | 4x NF'
-      - 'IEPL专线 粤日04 入口#5 | 4x NF'
-      - 'IEPL专线 粤港03 入口#1 | 4x NF'
-      - 'IEPL专线 粤港03 入口#2 | 4x NF'
-      - 'IEPL专线 粤港03 入口#3 | 4x NF'
-      - 'IEPL专线 粤港03 入口#4 | 4x NF'
-      - 'IEPL专线 粤港03 入口#5 | 4x NF'
-      - 'IEPL专线 粤美02 入口#1 | 4x NF'
-      - 'IEPL专线 粤美02 入口#2 | 4x NF'
-      - 'IEPL专线 粤美02 入口#3 | 4x NF'
-      - 'IEPL专线 粤美02 入口#4 | 4x NF'
-      - 'IEPL专线 粤美02 入口#5 | 4x NF'
-      - '俄罗斯01 入口#2 | 冷门 1.5x'
-      - '俄罗斯01 入口#3 | 冷门 1.5x'
-      - '俄罗斯01 入口#4 | 冷门 1.5x'
-      - '俄罗斯01 入口#5 | 冷门 1.5x'
-      - '俄罗斯05 入口#1 | 冷门 1.3x'
-      - '俄罗斯05 入口#2 | 冷门 1.3x'
-      - '俄罗斯05 入口#3 | 冷门 1.3x'
-      - '俄罗斯05 入口#4 | 冷门 1.3x'
-      - '俄罗斯05 入口#5 | 冷门 1.3x'
-      - '印度01 入口#1 | 1.5x'
-      - '印度01 入口#2 | 1.5x'
-      - '印度01 入口#3 | 1.5x'
-      - '印度01 入口#4 | 1.5x'
-      - '印度01 入口#5 | 1.5x'
+      - 'IEPL专线 粤新03 入#1 | 6x NF'
+      - 'IEPL专线 粤新03 入#2 | 6x NF'
+      - 'IEPL专线 粤新03 入#3 | 6x NF'
+      - 'IEPL专线 粤日04 入#1 | 6x NF'
+      - 'IEPL专线 粤日04 入#2 | 6x NF'
+      - 'IEPL专线 粤日04 入#3 | 6x NF'
+      - 'IEPL专线 粤港03 入#1 | 6x NF'
+      - 'IEPL专线 粤港03 入#2 | 6x NF'
+      - 'IEPL专线 粤港03 入#3 | 6x NF'
+      - 'IEPL专线 粤美02 入#1 | 6x NF'
+      - 'IEPL专线 粤美02 入#2 | 6x NF'
+      - 'IEPL专线 粤美02 入#3 | 6x NF'
+      - '俄罗斯01 广州移动2 | 冷门 1.5x'
+      - '俄罗斯01 杭州联通 | 冷门 1.5x'
+      - '俄罗斯01 江西电信CN2 | 冷门 1.5x'
+      - '俄罗斯01 湖南联通 | 冷门 1.5x'
+      - '俄罗斯04 广州移动1 | 冷门 1.3x'
+      - '俄罗斯04 广州移动2 | 冷门 1.3x'
+      - '俄罗斯04 杭州联通 | 冷门 1.3x'
+      - '俄罗斯04 江西电信CN2 | 冷门 1.3x'
+      - '俄罗斯04 湖南联通 | 冷门 1.3x'
+      - '印度01 广州移动1 | 1.5x'
+      - '印度01 广州移动2 | 1.5x'
+      - '印度01 杭州联通 | 1.5x'
+      - '印度01 江西电信CN2 | 1.5x'
+      - '印度01 湖南联通 | 1.5x'
       - '印度01 香港转发 | 1.5x'
-      - '台湾02 入口#1 | 原生 1.5x'
-      - '台湾02 入口#2 | 原生 1.5x'
-      - '台湾02 入口#3 | 原生 1.5x'
-      - '台湾02 入口#4 | 原生 1.5x'
-      - '台湾02 入口#5 | 原生 1.5x'
+      - '台湾02 广州移动1 | 原生 1.5x'
+      - '台湾02 广州移动2 | 原生 1.5x'
+      - '台湾02 杭州联通 | 原生 1.5x'
+      - '台湾02 江西电信CN2 | 原生 1.5x'
+      - '台湾02 湖南联通 | 原生 1.5x'
       - '台湾02 香港转发 | 原生 1.5x'
-      - '土耳其01 入口#1 | 冷门 2.0x'
-      - '土耳其01 入口#2 | 冷门 2.0x'
-      - '土耳其01 入口#3 | 冷门 2.0x'
-      - '土耳其01 入口#4 | 冷门 2.0x'
+      - '土耳其01 广州移动1 | 冷门 2.0x'
+      - '土耳其01 广州移动2 | 冷门 2.0x'
+      - '土耳其01 江西电信CN2 | 冷门 2.0x'
+      - '土耳其01 湖南联通 | 冷门 2.0x'
       - '土耳其01 香港转发 | 冷门 2.0x'
-      - '巴西01 入口#1 | 冷门 3.0x'
-      - '巴西01 入口#2 | 冷门 3.0x'
-      - '巴西01 入口#3 | 冷门 3.0x'
+      - 官网开全局jinkela.wtf-德国CDN-免费白嫖-x0.5倍率
+      - '巴西01 广州移动1 | 冷门 3.0x'
+      - '巴西01 广州移动2 | 冷门 3.0x'
+      - '巴西01 江西电信CN2 | 冷门 3.0x'
       - '巴西01 香港转发 | 冷门 3.0x'
-      - '德国01 入口#1 | 冷门 1.2x'
-      - '德国01 入口#2 | 冷门 1.2x'
-      - '德国01 入口#3 | 冷门 1.2x'
-      - '德国01 入口#5 | 冷门 1.2x'
+      - '德国01 广州移动1 | 冷门 1.2x'
+      - '德国01 广州移动2 | 冷门 1.2x'
+      - '德国01 杭州联通 | 冷门 1.2x'
+      - '德国01 江西电信CN2 | 冷门 1.2x'
       - '德国01 香港转发 | 冷门 1.2x'
-      - '新加坡01 入口#1 | 原生 1.5x'
-      - '新加坡01 入口#2 | 原生 1.5x'
-      - '新加坡01 入口#3 | 原生 1.5x'
-      - '新加坡01 入口#4 | 原生 1.5x'
-      - '新加坡01 入口#5 | 原生 1.5x'
+      - '新加坡01 广州移动1 | 原生 1.5x'
+      - '新加坡01 广州移动2 | 原生 1.5x'
+      - '新加坡01 杭州联通 | 原生 1.5x'
+      - '新加坡01 江西电信CN2 | 原生 1.5x'
+      - '新加坡01 湖南联通 | 原生 1.5x'
       - '新加坡01 香港转发 | 原生 1.5x'
-      - '新加坡02 入口#1 | 原生 1.5x'
-      - '新加坡02 入口#2 | 原生 1.5x'
-      - '新加坡02 入口#3 | 原生 1.5x'
-      - '新加坡02 入口#4 | 原生 1.5x'
-      - '新加坡02 入口#5 | 原生 1.5x'
-      - '新加坡04 入口#1 | NF 1.5x'
-      - '新加坡04 入口#2 | NF 1.5x'
-      - '新加坡04 入口#3 | NF 1.5x'
-      - '新加坡04 入口#4 | NF 1.5x'
-      - '新加坡04 入口#5 | NF 1.5x'
-      - '日本01 入口#1 | NF 1.5x'
-      - '日本01 入口#2 | NF 1.5x'
-      - '日本01 入口#3 | NF 1.5x'
-      - '日本01 入口#4 | NF 1.5x'
-      - '日本01 入口#5 | NF 1.5x'
-      - '日本02 入口#1 | NF 1.5x'
-      - '日本02 入口#2 | NF 1.5x'
-      - '日本02 入口#3 | NF 1.5x'
-      - '日本02 入口#4 | NF 1.5x'
-      - '日本02 入口#5 | NF 1.5x'
-      - '日本03 入口#1 | NF 1.5x'
-      - '日本03 入口#2 | NF 1.5x'
-      - '日本03 入口#3 | NF 1.5x'
-      - '日本03 入口#4 | NF 1.5x'
-      - '日本03 入口#5 | NF 1.5x'
-      - 更多节点请购买-官网jinkela.wtf-白嫖-俄04
-      - '波兰01 入口#1 | 冷门 1.2x'
-      - '波兰01 入口#2 | 冷门 1.2x'
-      - '波兰01 入口#3 | 冷门 1.2x'
-      - '波兰01 入口#4 | 冷门 1.2x'
+      - '新加坡02 广州移动1 | 原生 1.5x'
+      - '新加坡02 广州移动2 | 原生 1.5x'
+      - '新加坡02 杭州联通 | 原生 1.5x'
+      - '新加坡02 江西电信CN2 | 原生 1.5x'
+      - '新加坡02 湖南联通 | 原生 1.5x'
+      - '新加坡04 广州移动1 | NF 1.5x'
+      - '新加坡04 广州移动2 | NF 1.5x'
+      - '新加坡04 杭州联通 | NF 1.5x'
+      - '新加坡04 江西电信CN2 | NF 1.5x'
+      - '新加坡04 湖南联通 | NF 1.5x'
+      - '日本01 广州移动1 | NF 1.5x'
+      - '日本01 广州移动2 | NF 1.5x'
+      - '日本01 杭州联通 | NF 1.5x'
+      - '日本01 江西电信CN2 | NF 1.5x'
+      - '日本01 湖南联通 | NF 1.5x'
+      - '日本02 广州移动1 | NF 1.5x'
+      - '日本02 广州移动2 | NF 1.5x'
+      - '日本02 杭州联通 | NF 1.5x'
+      - '日本02 江西电信CN2 | NF 1.5x'
+      - '日本02 湖南联通 | NF 1.5x'
+      - '日本03 广州移动1 | NF 1.5x'
+      - '日本03 广州移动2 | NF 1.5x'
+      - '日本03 杭州联通 | NF 1.5x'
+      - '日本03 江西电信CN2 | NF 1.5x'
+      - '日本03 湖南联通 | NF 1.5x'
+      - '波兰01 广州移动1 | 冷门 1.2x'
+      - '波兰01 广州移动2 | 冷门 1.2x'
+      - '波兰01 江西电信CN2 | 冷门 1.2x'
+      - '波兰01 湖南联通 | 冷门 1.2x'
       - '波兰01 香港转发 | 冷门 1.2x'
-      - '澳洲01 入口#1 | 冷门 1.5x'
-      - '澳洲01 入口#2 | 冷门 1.5x'
-      - '澳洲01 入口#3 | 冷门 1.5x'
-      - '澳洲01 入口#5 | 冷门 1.5x'
+      - '澳洲01 广州移动1 | 冷门 1.5x'
+      - '澳洲01 广州移动2 | 冷门 1.5x'
+      - '澳洲01 杭州联通 | 冷门 1.5x'
+      - '澳洲01 江西电信CN2 | 冷门 1.5x'
       - '澳洲01 香港转发 | 冷门 1.5x'
-      - '澳洲CDN | 实验 | 免费 | 1.0x | 请经常更新订阅'
       - '美国01 入口01 | NF 1.5x'
       - '美国01 入口02 | NF 1.5x'
       - '美国01 入口03 | NF 1.5x'
       - '美国01 入口04 | NF 1.5x'
       - '美国01 入口05 | NF 1.5x'
-      - '美国03 入口#1 | 原生 1.5x'
-      - '美国03 入口#2 | 原生 1.5x'
-      - '美国03 入口#5 | 原生 1.5x'
+      - '美国03 广州移动1 | 原生 1.5x'
+      - '美国03 广州移动2 | 原生 1.5x'
+      - '美国03 杭州联通 | 原生 1.5x'
       - '美国03 香港转发 | 原生 1.5x'
-      - '美国04 入口#1 | 备用 1.3x'
-      - '美国04 入口#2 | 备用 1.3x'
-      - '美国04 入口#3 | 备用 1.3x'
-      - '美国04 入口#4 | 备用 1.3x'
-      - '英国01 入口#1 | NF BBC Chan4 1.5x'
-      - '英国01 入口#2 | NF BBC Chan4 1.5x'
-      - '英国01 入口#3 | NF BBC Chan4 1.5x'
-      - '英国01 入口#4 | NF BBC Chan4 1.5x'
+      - '美国04 广州移动1 | 备用 1.3x'
+      - '美国04 广州移动2 | 备用 1.3x'
+      - '美国04 江西电信CN2 | 备用 1.3x'
+      - '美国04 湖南联通 | 备用 1.3x'
+      - '英国01 广州移动1 | NF BBC Chan4 1.5x'
+      - '英国01 广州移动2 | NF BBC Chan4 1.5x'
+      - '英国01 江西电信CN2 | NF BBC Chan4 1.5x'
+      - '英国01 湖南联通 | NF BBC Chan4 1.5x'
       - '英国01 香港转发 | NF BBC Chan4 1.5x'
-      - '荷兰01 入口#1 | 冷门 1.2x'
-      - '荷兰01 入口#2 | 冷门 1.2x'
-      - '荷兰01 入口#3 | 冷门 1.2x'
-      - '荷兰01 入口#5 | 冷门 1.2x'
+      - '荷兰01 广州移动1 | 冷门 1.2x'
+      - '荷兰01 广州移动2 | 冷门 1.2x'
+      - '荷兰01 杭州联通 | 冷门 1.2x'
+      - '荷兰01 江西电信CN2 | 冷门 1.2x'
       - '荷兰01 香港转发 | 冷门 1.2x'
-      - '阿根廷01 入口#1 | 冷门 低速 2.0x'
-      - '阿根廷01 入口#2 | 冷门 低速 2.0x'
-      - '阿根廷01 入口#3 | 冷门 低速 2.0x'
+      - '阿根廷01 广州移动1 | 冷门 低速 2.0x'
+      - '阿根廷01 广州移动2 | 冷门 低速 2.0x'
+      - '阿根廷01 江西电信CN2 | 冷门 低速 2.0x'
       - '阿根廷01 香港转发 | 冷门 低速 2.0x'
-      - '韩国01 入口#1 | 1.5x'
-      - '韩国01 入口#2 | 1.5x'
-      - '韩国01 入口#4 | 1.5x'
-      - '韩国01 入口#5 | 1.5x'
+      - '韩国01 广州移动1 | 1.5x'
+      - '韩国01 广州移动2 | 1.5x'
+      - '韩国01 杭州联通 | 1.5x'
+      - '韩国01 湖南联通 | 1.5x'
       - '韩国01 香港转发 | 1.5x'
-      - '香港01 入口#1 | NF 1.5x'
-      - '香港01 入口#2 | NF 1.5x'
-      - '香港01 入口#3 | NF 1.5x'
-      - '香港01 入口#4 | NF 1.5x'
-      - '香港01 入口#5 | NF 1.5x'
-      - '香港02 入口#1 | NF 1.5x'
-      - '香港02 入口#2 | NF 1.5x'
-      - '香港02 入口#3 | NF 1.5x'
-      - '香港02 入口#4 | NF 1.5x'
-      - '香港02 入口#5 | NF 1.5x'
-      - '香港03 入口#1 | NF 1.5x'
-      - '香港03 入口#2 | NF 1.5x'
-      - '香港03 入口#3 | NF 1.5x'
-      - '香港03 入口#4 | NF 1.5x'
-      - '香港03 入口#5 | NF 1.5x'
-      - '香港HGC01 入口#1 | 原生 1.5x'
-      - '香港HGC01 入口#2 | 原生 1.5x'
-      - '香港HGC01 入口#3 | 原生 1.5x'
-      - '香港HGC01 入口#4 | 原生 1.5x'
-      - '香港HGC01 入口#5 | 原生 1.5x'
+      - '香港01 广州移动1 | NF 1.5x'
+      - '香港01 广州移动2 | NF 1.5x'
+      - '香港01 杭州联通 | NF 1.5x'
+      - '香港01 江西电信CN2 | NF 1.5x'
+      - '香港01 湖南联通 | NF 1.5x'
+      - '香港02 广州移动1 | NF 1.5x'
+      - '香港02 广州移动2 | NF 1.5x'
+      - '香港02 杭州联通 | NF 1.5x'
+      - '香港02 江西电信CN2 | NF 1.5x'
+      - '香港02 湖南联通 | NF 1.5x'
+      - '香港03 广州移动1 | NF 1.5x'
+      - '香港03 广州移动2 | NF 1.5x'
+      - '香港03 杭州联通 | NF 1.5x'
+      - '香港03 江西电信CN2 | NF 1.5x'
+      - '香港03 湖南联通 | NF 1.5x'
+      - '香港HGC01 广州移动1 | 原生 1.5x'
+      - '香港HGC01 广州移动2 | 原生 1.5x'
+      - '香港HGC01 杭州联通 | 原生 1.5x'
+      - '香港HGC01 江西电信CN2 | 原生 1.5x'
+      - '香港HGC01 湖南联通 | 原生 1.5x'
       - '香港HGC01 香港转发 | 原生 1.5x'
-      - '香港HKT01 入口#1 | 原生 1.5x'
-      - '香港HKT01 入口#2 | 原生 1.5x'
-      - '香港HKT01 入口#3 | 原生 1.5x'
-      - '香港HKT01 入口#5 | 原生 1.5x'
+      - '香港HKT01 广州移动1 | 原生 1.5x'
+      - '香港HKT01 广州移动2 | 原生 1.5x'
+      - '香港HKT01 杭州联通 | 原生 1.5x'
+      - '香港HKT01 江西电信CN2 | 原生 1.5x'
       - '香港HKT01 香港转发 | 原生 1.5x'
-      - '马来西亚01 入口#1 | 原生 1.5x'
-      - '马来西亚01 入口#2 | 原生 1.5x'
-      - '马来西亚01 入口#3 | 原生 1.5x'
-      - '马来西亚01 入口#5 | 原生 1.5x'
+      - '马来西亚01 广州移动1 | 原生 1.5x'
+      - '马来西亚01 广州移动2 | 原生 1.5x'
+      - '马来西亚01 杭州联通 | 原生 1.5x'
+      - '马来西亚01 江西电信CN2 | 原生 1.5x'
       - '马来西亚01 香港转发 | 原生 1.5x'
   -
     name: 🎬哔哩哔哩
     type: select
     proxies:
       - 🚀直接连接
-      - 'IEPL专线 粤新03 入口#1 | 4x NF'
-      - 'IEPL专线 粤新03 入口#2 | 4x NF'
-      - 'IEPL专线 粤新03 入口#3 | 4x NF'
-      - 'IEPL专线 粤新03 入口#4 | 4x NF'
-      - 'IEPL专线 粤新03 入口#5 | 4x NF'
-      - 'IEPL专线 粤日04 入口#1 | 4x NF'
-      - 'IEPL专线 粤日04 入口#2 | 4x NF'
-      - 'IEPL专线 粤日04 入口#3 | 4x NF'
-      - 'IEPL专线 粤日04 入口#4 | 4x NF'
-      - 'IEPL专线 粤日04 入口#5 | 4x NF'
-      - 'IEPL专线 粤港03 入口#1 | 4x NF'
-      - 'IEPL专线 粤港03 入口#2 | 4x NF'
-      - 'IEPL专线 粤港03 入口#3 | 4x NF'
-      - 'IEPL专线 粤港03 入口#4 | 4x NF'
-      - 'IEPL专线 粤港03 入口#5 | 4x NF'
-      - 'IEPL专线 粤美02 入口#1 | 4x NF'
-      - 'IEPL专线 粤美02 入口#2 | 4x NF'
-      - 'IEPL专线 粤美02 入口#3 | 4x NF'
-      - 'IEPL专线 粤美02 入口#4 | 4x NF'
-      - 'IEPL专线 粤美02 入口#5 | 4x NF'
-      - '俄罗斯01 入口#2 | 冷门 1.5x'
-      - '俄罗斯01 入口#3 | 冷门 1.5x'
-      - '俄罗斯01 入口#4 | 冷门 1.5x'
-      - '俄罗斯01 入口#5 | 冷门 1.5x'
-      - '俄罗斯05 入口#1 | 冷门 1.3x'
-      - '俄罗斯05 入口#2 | 冷门 1.3x'
-      - '俄罗斯05 入口#3 | 冷门 1.3x'
-      - '俄罗斯05 入口#4 | 冷门 1.3x'
-      - '俄罗斯05 入口#5 | 冷门 1.3x'
-      - '印度01 入口#1 | 1.5x'
-      - '印度01 入口#2 | 1.5x'
-      - '印度01 入口#3 | 1.5x'
-      - '印度01 入口#4 | 1.5x'
-      - '印度01 入口#5 | 1.5x'
+      - 'IEPL专线 粤新03 入#1 | 6x NF'
+      - 'IEPL专线 粤新03 入#2 | 6x NF'
+      - 'IEPL专线 粤新03 入#3 | 6x NF'
+      - 'IEPL专线 粤日04 入#1 | 6x NF'
+      - 'IEPL专线 粤日04 入#2 | 6x NF'
+      - 'IEPL专线 粤日04 入#3 | 6x NF'
+      - 'IEPL专线 粤港03 入#1 | 6x NF'
+      - 'IEPL专线 粤港03 入#2 | 6x NF'
+      - 'IEPL专线 粤港03 入#3 | 6x NF'
+      - 'IEPL专线 粤美02 入#1 | 6x NF'
+      - 'IEPL专线 粤美02 入#2 | 6x NF'
+      - 'IEPL专线 粤美02 入#3 | 6x NF'
+      - '俄罗斯01 广州移动2 | 冷门 1.5x'
+      - '俄罗斯01 杭州联通 | 冷门 1.5x'
+      - '俄罗斯01 江西电信CN2 | 冷门 1.5x'
+      - '俄罗斯01 湖南联通 | 冷门 1.5x'
+      - '俄罗斯04 广州移动1 | 冷门 1.3x'
+      - '俄罗斯04 广州移动2 | 冷门 1.3x'
+      - '俄罗斯04 杭州联通 | 冷门 1.3x'
+      - '俄罗斯04 江西电信CN2 | 冷门 1.3x'
+      - '俄罗斯04 湖南联通 | 冷门 1.3x'
+      - '印度01 广州移动1 | 1.5x'
+      - '印度01 广州移动2 | 1.5x'
+      - '印度01 杭州联通 | 1.5x'
+      - '印度01 江西电信CN2 | 1.5x'
+      - '印度01 湖南联通 | 1.5x'
       - '印度01 香港转发 | 1.5x'
-      - '台湾02 入口#1 | 原生 1.5x'
-      - '台湾02 入口#2 | 原生 1.5x'
-      - '台湾02 入口#3 | 原生 1.5x'
-      - '台湾02 入口#4 | 原生 1.5x'
-      - '台湾02 入口#5 | 原生 1.5x'
+      - '台湾02 广州移动1 | 原生 1.5x'
+      - '台湾02 广州移动2 | 原生 1.5x'
+      - '台湾02 杭州联通 | 原生 1.5x'
+      - '台湾02 江西电信CN2 | 原生 1.5x'
+      - '台湾02 湖南联通 | 原生 1.5x'
       - '台湾02 香港转发 | 原生 1.5x'
-      - '土耳其01 入口#1 | 冷门 2.0x'
-      - '土耳其01 入口#2 | 冷门 2.0x'
-      - '土耳其01 入口#3 | 冷门 2.0x'
-      - '土耳其01 入口#4 | 冷门 2.0x'
+      - '土耳其01 广州移动1 | 冷门 2.0x'
+      - '土耳其01 广州移动2 | 冷门 2.0x'
+      - '土耳其01 江西电信CN2 | 冷门 2.0x'
+      - '土耳其01 湖南联通 | 冷门 2.0x'
       - '土耳其01 香港转发 | 冷门 2.0x'
-      - '巴西01 入口#1 | 冷门 3.0x'
-      - '巴西01 入口#2 | 冷门 3.0x'
-      - '巴西01 入口#3 | 冷门 3.0x'
+      - 官网开全局jinkela.wtf-德国CDN-免费白嫖-x0.5倍率
+      - '巴西01 广州移动1 | 冷门 3.0x'
+      - '巴西01 广州移动2 | 冷门 3.0x'
+      - '巴西01 江西电信CN2 | 冷门 3.0x'
       - '巴西01 香港转发 | 冷门 3.0x'
-      - '德国01 入口#1 | 冷门 1.2x'
-      - '德国01 入口#2 | 冷门 1.2x'
-      - '德国01 入口#3 | 冷门 1.2x'
-      - '德国01 入口#5 | 冷门 1.2x'
+      - '德国01 广州移动1 | 冷门 1.2x'
+      - '德国01 广州移动2 | 冷门 1.2x'
+      - '德国01 杭州联通 | 冷门 1.2x'
+      - '德国01 江西电信CN2 | 冷门 1.2x'
       - '德国01 香港转发 | 冷门 1.2x'
-      - '新加坡01 入口#1 | 原生 1.5x'
-      - '新加坡01 入口#2 | 原生 1.5x'
-      - '新加坡01 入口#3 | 原生 1.5x'
-      - '新加坡01 入口#4 | 原生 1.5x'
-      - '新加坡01 入口#5 | 原生 1.5x'
+      - '新加坡01 广州移动1 | 原生 1.5x'
+      - '新加坡01 广州移动2 | 原生 1.5x'
+      - '新加坡01 杭州联通 | 原生 1.5x'
+      - '新加坡01 江西电信CN2 | 原生 1.5x'
+      - '新加坡01 湖南联通 | 原生 1.5x'
       - '新加坡01 香港转发 | 原生 1.5x'
-      - '新加坡02 入口#1 | 原生 1.5x'
-      - '新加坡02 入口#2 | 原生 1.5x'
-      - '新加坡02 入口#3 | 原生 1.5x'
-      - '新加坡02 入口#4 | 原生 1.5x'
-      - '新加坡02 入口#5 | 原生 1.5x'
-      - '新加坡04 入口#1 | NF 1.5x'
-      - '新加坡04 入口#2 | NF 1.5x'
-      - '新加坡04 入口#3 | NF 1.5x'
-      - '新加坡04 入口#4 | NF 1.5x'
-      - '新加坡04 入口#5 | NF 1.5x'
-      - '日本01 入口#1 | NF 1.5x'
-      - '日本01 入口#2 | NF 1.5x'
-      - '日本01 入口#3 | NF 1.5x'
-      - '日本01 入口#4 | NF 1.5x'
-      - '日本01 入口#5 | NF 1.5x'
-      - '日本02 入口#1 | NF 1.5x'
-      - '日本02 入口#2 | NF 1.5x'
-      - '日本02 入口#3 | NF 1.5x'
-      - '日本02 入口#4 | NF 1.5x'
-      - '日本02 入口#5 | NF 1.5x'
-      - '日本03 入口#1 | NF 1.5x'
-      - '日本03 入口#2 | NF 1.5x'
-      - '日本03 入口#3 | NF 1.5x'
-      - '日本03 入口#4 | NF 1.5x'
-      - '日本03 入口#5 | NF 1.5x'
-      - 更多节点请购买-官网jinkela.wtf-白嫖-俄04
-      - '波兰01 入口#1 | 冷门 1.2x'
-      - '波兰01 入口#2 | 冷门 1.2x'
-      - '波兰01 入口#3 | 冷门 1.2x'
-      - '波兰01 入口#4 | 冷门 1.2x'
+      - '新加坡02 广州移动1 | 原生 1.5x'
+      - '新加坡02 广州移动2 | 原生 1.5x'
+      - '新加坡02 杭州联通 | 原生 1.5x'
+      - '新加坡02 江西电信CN2 | 原生 1.5x'
+      - '新加坡02 湖南联通 | 原生 1.5x'
+      - '新加坡04 广州移动1 | NF 1.5x'
+      - '新加坡04 广州移动2 | NF 1.5x'
+      - '新加坡04 杭州联通 | NF 1.5x'
+      - '新加坡04 江西电信CN2 | NF 1.5x'
+      - '新加坡04 湖南联通 | NF 1.5x'
+      - '日本01 广州移动1 | NF 1.5x'
+      - '日本01 广州移动2 | NF 1.5x'
+      - '日本01 杭州联通 | NF 1.5x'
+      - '日本01 江西电信CN2 | NF 1.5x'
+      - '日本01 湖南联通 | NF 1.5x'
+      - '日本02 广州移动1 | NF 1.5x'
+      - '日本02 广州移动2 | NF 1.5x'
+      - '日本02 杭州联通 | NF 1.5x'
+      - '日本02 江西电信CN2 | NF 1.5x'
+      - '日本02 湖南联通 | NF 1.5x'
+      - '日本03 广州移动1 | NF 1.5x'
+      - '日本03 广州移动2 | NF 1.5x'
+      - '日本03 杭州联通 | NF 1.5x'
+      - '日本03 江西电信CN2 | NF 1.5x'
+      - '日本03 湖南联通 | NF 1.5x'
+      - '波兰01 广州移动1 | 冷门 1.2x'
+      - '波兰01 广州移动2 | 冷门 1.2x'
+      - '波兰01 江西电信CN2 | 冷门 1.2x'
+      - '波兰01 湖南联通 | 冷门 1.2x'
       - '波兰01 香港转发 | 冷门 1.2x'
-      - '澳洲01 入口#1 | 冷门 1.5x'
-      - '澳洲01 入口#2 | 冷门 1.5x'
-      - '澳洲01 入口#3 | 冷门 1.5x'
-      - '澳洲01 入口#5 | 冷门 1.5x'
+      - '澳洲01 广州移动1 | 冷门 1.5x'
+      - '澳洲01 广州移动2 | 冷门 1.5x'
+      - '澳洲01 杭州联通 | 冷门 1.5x'
+      - '澳洲01 江西电信CN2 | 冷门 1.5x'
       - '澳洲01 香港转发 | 冷门 1.5x'
-      - '澳洲CDN | 实验 | 免费 | 1.0x | 请经常更新订阅'
       - '美国01 入口01 | NF 1.5x'
       - '美国01 入口02 | NF 1.5x'
       - '美国01 入口03 | NF 1.5x'
       - '美国01 入口04 | NF 1.5x'
       - '美国01 入口05 | NF 1.5x'
-      - '美国03 入口#1 | 原生 1.5x'
-      - '美国03 入口#2 | 原生 1.5x'
-      - '美国03 入口#5 | 原生 1.5x'
+      - '美国03 广州移动1 | 原生 1.5x'
+      - '美国03 广州移动2 | 原生 1.5x'
+      - '美国03 杭州联通 | 原生 1.5x'
       - '美国03 香港转发 | 原生 1.5x'
-      - '美国04 入口#1 | 备用 1.3x'
-      - '美国04 入口#2 | 备用 1.3x'
-      - '美国04 入口#3 | 备用 1.3x'
-      - '美国04 入口#4 | 备用 1.3x'
-      - '英国01 入口#1 | NF BBC Chan4 1.5x'
-      - '英国01 入口#2 | NF BBC Chan4 1.5x'
-      - '英国01 入口#3 | NF BBC Chan4 1.5x'
-      - '英国01 入口#4 | NF BBC Chan4 1.5x'
+      - '美国04 广州移动1 | 备用 1.3x'
+      - '美国04 广州移动2 | 备用 1.3x'
+      - '美国04 江西电信CN2 | 备用 1.3x'
+      - '美国04 湖南联通 | 备用 1.3x'
+      - '英国01 广州移动1 | NF BBC Chan4 1.5x'
+      - '英国01 广州移动2 | NF BBC Chan4 1.5x'
+      - '英国01 江西电信CN2 | NF BBC Chan4 1.5x'
+      - '英国01 湖南联通 | NF BBC Chan4 1.5x'
       - '英国01 香港转发 | NF BBC Chan4 1.5x'
-      - '荷兰01 入口#1 | 冷门 1.2x'
-      - '荷兰01 入口#2 | 冷门 1.2x'
-      - '荷兰01 入口#3 | 冷门 1.2x'
-      - '荷兰01 入口#5 | 冷门 1.2x'
+      - '荷兰01 广州移动1 | 冷门 1.2x'
+      - '荷兰01 广州移动2 | 冷门 1.2x'
+      - '荷兰01 杭州联通 | 冷门 1.2x'
+      - '荷兰01 江西电信CN2 | 冷门 1.2x'
       - '荷兰01 香港转发 | 冷门 1.2x'
-      - '阿根廷01 入口#1 | 冷门 低速 2.0x'
-      - '阿根廷01 入口#2 | 冷门 低速 2.0x'
-      - '阿根廷01 入口#3 | 冷门 低速 2.0x'
+      - '阿根廷01 广州移动1 | 冷门 低速 2.0x'
+      - '阿根廷01 广州移动2 | 冷门 低速 2.0x'
+      - '阿根廷01 江西电信CN2 | 冷门 低速 2.0x'
       - '阿根廷01 香港转发 | 冷门 低速 2.0x'
-      - '韩国01 入口#1 | 1.5x'
-      - '韩国01 入口#2 | 1.5x'
-      - '韩国01 入口#4 | 1.5x'
-      - '韩国01 入口#5 | 1.5x'
+      - '韩国01 广州移动1 | 1.5x'
+      - '韩国01 广州移动2 | 1.5x'
+      - '韩国01 杭州联通 | 1.5x'
+      - '韩国01 湖南联通 | 1.5x'
       - '韩国01 香港转发 | 1.5x'
-      - '香港01 入口#1 | NF 1.5x'
-      - '香港01 入口#2 | NF 1.5x'
-      - '香港01 入口#3 | NF 1.5x'
-      - '香港01 入口#4 | NF 1.5x'
-      - '香港01 入口#5 | NF 1.5x'
-      - '香港02 入口#1 | NF 1.5x'
-      - '香港02 入口#2 | NF 1.5x'
-      - '香港02 入口#3 | NF 1.5x'
-      - '香港02 入口#4 | NF 1.5x'
-      - '香港02 入口#5 | NF 1.5x'
-      - '香港03 入口#1 | NF 1.5x'
-      - '香港03 入口#2 | NF 1.5x'
-      - '香港03 入口#3 | NF 1.5x'
-      - '香港03 入口#4 | NF 1.5x'
-      - '香港03 入口#5 | NF 1.5x'
-      - '香港HGC01 入口#1 | 原生 1.5x'
-      - '香港HGC01 入口#2 | 原生 1.5x'
-      - '香港HGC01 入口#3 | 原生 1.5x'
-      - '香港HGC01 入口#4 | 原生 1.5x'
-      - '香港HGC01 入口#5 | 原生 1.5x'
+      - '香港01 广州移动1 | NF 1.5x'
+      - '香港01 广州移动2 | NF 1.5x'
+      - '香港01 杭州联通 | NF 1.5x'
+      - '香港01 江西电信CN2 | NF 1.5x'
+      - '香港01 湖南联通 | NF 1.5x'
+      - '香港02 广州移动1 | NF 1.5x'
+      - '香港02 广州移动2 | NF 1.5x'
+      - '香港02 杭州联通 | NF 1.5x'
+      - '香港02 江西电信CN2 | NF 1.5x'
+      - '香港02 湖南联通 | NF 1.5x'
+      - '香港03 广州移动1 | NF 1.5x'
+      - '香港03 广州移动2 | NF 1.5x'
+      - '香港03 杭州联通 | NF 1.5x'
+      - '香港03 江西电信CN2 | NF 1.5x'
+      - '香港03 湖南联通 | NF 1.5x'
+      - '香港HGC01 广州移动1 | 原生 1.5x'
+      - '香港HGC01 广州移动2 | 原生 1.5x'
+      - '香港HGC01 杭州联通 | 原生 1.5x'
+      - '香港HGC01 江西电信CN2 | 原生 1.5x'
+      - '香港HGC01 湖南联通 | 原生 1.5x'
       - '香港HGC01 香港转发 | 原生 1.5x'
-      - '香港HKT01 入口#1 | 原生 1.5x'
-      - '香港HKT01 入口#2 | 原生 1.5x'
-      - '香港HKT01 入口#3 | 原生 1.5x'
-      - '香港HKT01 入口#5 | 原生 1.5x'
+      - '香港HKT01 广州移动1 | 原生 1.5x'
+      - '香港HKT01 广州移动2 | 原生 1.5x'
+      - '香港HKT01 杭州联通 | 原生 1.5x'
+      - '香港HKT01 江西电信CN2 | 原生 1.5x'
       - '香港HKT01 香港转发 | 原生 1.5x'
-      - '马来西亚01 入口#1 | 原生 1.5x'
-      - '马来西亚01 入口#2 | 原生 1.5x'
-      - '马来西亚01 入口#3 | 原生 1.5x'
-      - '马来西亚01 入口#5 | 原生 1.5x'
+      - '马来西亚01 广州移动1 | 原生 1.5x'
+      - '马来西亚01 广州移动2 | 原生 1.5x'
+      - '马来西亚01 杭州联通 | 原生 1.5x'
+      - '马来西亚01 江西电信CN2 | 原生 1.5x'
       - '马来西亚01 香港转发 | 原生 1.5x'
   -
     name: 🎬国外媒体
     type: select
     proxies:
       - 🔰国外流量
-      - 'IEPL专线 粤新03 入口#1 | 4x NF'
-      - 'IEPL专线 粤新03 入口#2 | 4x NF'
-      - 'IEPL专线 粤新03 入口#3 | 4x NF'
-      - 'IEPL专线 粤新03 入口#4 | 4x NF'
-      - 'IEPL专线 粤新03 入口#5 | 4x NF'
-      - 'IEPL专线 粤日04 入口#1 | 4x NF'
-      - 'IEPL专线 粤日04 入口#2 | 4x NF'
-      - 'IEPL专线 粤日04 入口#3 | 4x NF'
-      - 'IEPL专线 粤日04 入口#4 | 4x NF'
-      - 'IEPL专线 粤日04 入口#5 | 4x NF'
-      - 'IEPL专线 粤港03 入口#1 | 4x NF'
-      - 'IEPL专线 粤港03 入口#2 | 4x NF'
-      - 'IEPL专线 粤港03 入口#3 | 4x NF'
-      - 'IEPL专线 粤港03 入口#4 | 4x NF'
-      - 'IEPL专线 粤港03 入口#5 | 4x NF'
-      - 'IEPL专线 粤美02 入口#1 | 4x NF'
-      - 'IEPL专线 粤美02 入口#2 | 4x NF'
-      - 'IEPL专线 粤美02 入口#3 | 4x NF'
-      - 'IEPL专线 粤美02 入口#4 | 4x NF'
-      - 'IEPL专线 粤美02 入口#5 | 4x NF'
-      - '俄罗斯01 入口#2 | 冷门 1.5x'
-      - '俄罗斯01 入口#3 | 冷门 1.5x'
-      - '俄罗斯01 入口#4 | 冷门 1.5x'
-      - '俄罗斯01 入口#5 | 冷门 1.5x'
-      - '俄罗斯05 入口#1 | 冷门 1.3x'
-      - '俄罗斯05 入口#2 | 冷门 1.3x'
-      - '俄罗斯05 入口#3 | 冷门 1.3x'
-      - '俄罗斯05 入口#4 | 冷门 1.3x'
-      - '俄罗斯05 入口#5 | 冷门 1.3x'
-      - '印度01 入口#1 | 1.5x'
-      - '印度01 入口#2 | 1.5x'
-      - '印度01 入口#3 | 1.5x'
-      - '印度01 入口#4 | 1.5x'
-      - '印度01 入口#5 | 1.5x'
+      - 'IEPL专线 粤新03 入#1 | 6x NF'
+      - 'IEPL专线 粤新03 入#2 | 6x NF'
+      - 'IEPL专线 粤新03 入#3 | 6x NF'
+      - 'IEPL专线 粤日04 入#1 | 6x NF'
+      - 'IEPL专线 粤日04 入#2 | 6x NF'
+      - 'IEPL专线 粤日04 入#3 | 6x NF'
+      - 'IEPL专线 粤港03 入#1 | 6x NF'
+      - 'IEPL专线 粤港03 入#2 | 6x NF'
+      - 'IEPL专线 粤港03 入#3 | 6x NF'
+      - 'IEPL专线 粤美02 入#1 | 6x NF'
+      - 'IEPL专线 粤美02 入#2 | 6x NF'
+      - 'IEPL专线 粤美02 入#3 | 6x NF'
+      - '俄罗斯01 广州移动2 | 冷门 1.5x'
+      - '俄罗斯01 杭州联通 | 冷门 1.5x'
+      - '俄罗斯01 江西电信CN2 | 冷门 1.5x'
+      - '俄罗斯01 湖南联通 | 冷门 1.5x'
+      - '俄罗斯04 广州移动1 | 冷门 1.3x'
+      - '俄罗斯04 广州移动2 | 冷门 1.3x'
+      - '俄罗斯04 杭州联通 | 冷门 1.3x'
+      - '俄罗斯04 江西电信CN2 | 冷门 1.3x'
+      - '俄罗斯04 湖南联通 | 冷门 1.3x'
+      - '印度01 广州移动1 | 1.5x'
+      - '印度01 广州移动2 | 1.5x'
+      - '印度01 杭州联通 | 1.5x'
+      - '印度01 江西电信CN2 | 1.5x'
+      - '印度01 湖南联通 | 1.5x'
       - '印度01 香港转发 | 1.5x'
-      - '台湾02 入口#1 | 原生 1.5x'
-      - '台湾02 入口#2 | 原生 1.5x'
-      - '台湾02 入口#3 | 原生 1.5x'
-      - '台湾02 入口#4 | 原生 1.5x'
-      - '台湾02 入口#5 | 原生 1.5x'
+      - '台湾02 广州移动1 | 原生 1.5x'
+      - '台湾02 广州移动2 | 原生 1.5x'
+      - '台湾02 杭州联通 | 原生 1.5x'
+      - '台湾02 江西电信CN2 | 原生 1.5x'
+      - '台湾02 湖南联通 | 原生 1.5x'
       - '台湾02 香港转发 | 原生 1.5x'
-      - '土耳其01 入口#1 | 冷门 2.0x'
-      - '土耳其01 入口#2 | 冷门 2.0x'
-      - '土耳其01 入口#3 | 冷门 2.0x'
-      - '土耳其01 入口#4 | 冷门 2.0x'
+      - '土耳其01 广州移动1 | 冷门 2.0x'
+      - '土耳其01 广州移动2 | 冷门 2.0x'
+      - '土耳其01 江西电信CN2 | 冷门 2.0x'
+      - '土耳其01 湖南联通 | 冷门 2.0x'
       - '土耳其01 香港转发 | 冷门 2.0x'
-      - '巴西01 入口#1 | 冷门 3.0x'
-      - '巴西01 入口#2 | 冷门 3.0x'
-      - '巴西01 入口#3 | 冷门 3.0x'
+      - 官网开全局jinkela.wtf-德国CDN-免费白嫖-x0.5倍率
+      - '巴西01 广州移动1 | 冷门 3.0x'
+      - '巴西01 广州移动2 | 冷门 3.0x'
+      - '巴西01 江西电信CN2 | 冷门 3.0x'
       - '巴西01 香港转发 | 冷门 3.0x'
-      - '德国01 入口#1 | 冷门 1.2x'
-      - '德国01 入口#2 | 冷门 1.2x'
-      - '德国01 入口#3 | 冷门 1.2x'
-      - '德国01 入口#5 | 冷门 1.2x'
+      - '德国01 广州移动1 | 冷门 1.2x'
+      - '德国01 广州移动2 | 冷门 1.2x'
+      - '德国01 杭州联通 | 冷门 1.2x'
+      - '德国01 江西电信CN2 | 冷门 1.2x'
       - '德国01 香港转发 | 冷门 1.2x'
-      - '新加坡01 入口#1 | 原生 1.5x'
-      - '新加坡01 入口#2 | 原生 1.5x'
-      - '新加坡01 入口#3 | 原生 1.5x'
-      - '新加坡01 入口#4 | 原生 1.5x'
-      - '新加坡01 入口#5 | 原生 1.5x'
+      - '新加坡01 广州移动1 | 原生 1.5x'
+      - '新加坡01 广州移动2 | 原生 1.5x'
+      - '新加坡01 杭州联通 | 原生 1.5x'
+      - '新加坡01 江西电信CN2 | 原生 1.5x'
+      - '新加坡01 湖南联通 | 原生 1.5x'
       - '新加坡01 香港转发 | 原生 1.5x'
-      - '新加坡02 入口#1 | 原生 1.5x'
-      - '新加坡02 入口#2 | 原生 1.5x'
-      - '新加坡02 入口#3 | 原生 1.5x'
-      - '新加坡02 入口#4 | 原生 1.5x'
-      - '新加坡02 入口#5 | 原生 1.5x'
-      - '新加坡04 入口#1 | NF 1.5x'
-      - '新加坡04 入口#2 | NF 1.5x'
-      - '新加坡04 入口#3 | NF 1.5x'
-      - '新加坡04 入口#4 | NF 1.5x'
-      - '新加坡04 入口#5 | NF 1.5x'
-      - '日本01 入口#1 | NF 1.5x'
-      - '日本01 入口#2 | NF 1.5x'
-      - '日本01 入口#3 | NF 1.5x'
-      - '日本01 入口#4 | NF 1.5x'
-      - '日本01 入口#5 | NF 1.5x'
-      - '日本02 入口#1 | NF 1.5x'
-      - '日本02 入口#2 | NF 1.5x'
-      - '日本02 入口#3 | NF 1.5x'
-      - '日本02 入口#4 | NF 1.5x'
-      - '日本02 入口#5 | NF 1.5x'
-      - '日本03 入口#1 | NF 1.5x'
-      - '日本03 入口#2 | NF 1.5x'
-      - '日本03 入口#3 | NF 1.5x'
-      - '日本03 入口#4 | NF 1.5x'
-      - '日本03 入口#5 | NF 1.5x'
-      - 更多节点请购买-官网jinkela.wtf-白嫖-俄04
-      - '波兰01 入口#1 | 冷门 1.2x'
-      - '波兰01 入口#2 | 冷门 1.2x'
-      - '波兰01 入口#3 | 冷门 1.2x'
-      - '波兰01 入口#4 | 冷门 1.2x'
+      - '新加坡02 广州移动1 | 原生 1.5x'
+      - '新加坡02 广州移动2 | 原生 1.5x'
+      - '新加坡02 杭州联通 | 原生 1.5x'
+      - '新加坡02 江西电信CN2 | 原生 1.5x'
+      - '新加坡02 湖南联通 | 原生 1.5x'
+      - '新加坡04 广州移动1 | NF 1.5x'
+      - '新加坡04 广州移动2 | NF 1.5x'
+      - '新加坡04 杭州联通 | NF 1.5x'
+      - '新加坡04 江西电信CN2 | NF 1.5x'
+      - '新加坡04 湖南联通 | NF 1.5x'
+      - '日本01 广州移动1 | NF 1.5x'
+      - '日本01 广州移动2 | NF 1.5x'
+      - '日本01 杭州联通 | NF 1.5x'
+      - '日本01 江西电信CN2 | NF 1.5x'
+      - '日本01 湖南联通 | NF 1.5x'
+      - '日本02 广州移动1 | NF 1.5x'
+      - '日本02 广州移动2 | NF 1.5x'
+      - '日本02 杭州联通 | NF 1.5x'
+      - '日本02 江西电信CN2 | NF 1.5x'
+      - '日本02 湖南联通 | NF 1.5x'
+      - '日本03 广州移动1 | NF 1.5x'
+      - '日本03 广州移动2 | NF 1.5x'
+      - '日本03 杭州联通 | NF 1.5x'
+      - '日本03 江西电信CN2 | NF 1.5x'
+      - '日本03 湖南联通 | NF 1.5x'
+      - '波兰01 广州移动1 | 冷门 1.2x'
+      - '波兰01 广州移动2 | 冷门 1.2x'
+      - '波兰01 江西电信CN2 | 冷门 1.2x'
+      - '波兰01 湖南联通 | 冷门 1.2x'
       - '波兰01 香港转发 | 冷门 1.2x'
-      - '澳洲01 入口#1 | 冷门 1.5x'
-      - '澳洲01 入口#2 | 冷门 1.5x'
-      - '澳洲01 入口#3 | 冷门 1.5x'
-      - '澳洲01 入口#5 | 冷门 1.5x'
+      - '澳洲01 广州移动1 | 冷门 1.5x'
+      - '澳洲01 广州移动2 | 冷门 1.5x'
+      - '澳洲01 杭州联通 | 冷门 1.5x'
+      - '澳洲01 江西电信CN2 | 冷门 1.5x'
       - '澳洲01 香港转发 | 冷门 1.5x'
-      - '澳洲CDN | 实验 | 免费 | 1.0x | 请经常更新订阅'
       - '美国01 入口01 | NF 1.5x'
       - '美国01 入口02 | NF 1.5x'
       - '美国01 入口03 | NF 1.5x'
       - '美国01 入口04 | NF 1.5x'
       - '美国01 入口05 | NF 1.5x'
-      - '美国03 入口#1 | 原生 1.5x'
-      - '美国03 入口#2 | 原生 1.5x'
-      - '美国03 入口#5 | 原生 1.5x'
+      - '美国03 广州移动1 | 原生 1.5x'
+      - '美国03 广州移动2 | 原生 1.5x'
+      - '美国03 杭州联通 | 原生 1.5x'
       - '美国03 香港转发 | 原生 1.5x'
-      - '美国04 入口#1 | 备用 1.3x'
-      - '美国04 入口#2 | 备用 1.3x'
-      - '美国04 入口#3 | 备用 1.3x'
-      - '美国04 入口#4 | 备用 1.3x'
-      - '英国01 入口#1 | NF BBC Chan4 1.5x'
-      - '英国01 入口#2 | NF BBC Chan4 1.5x'
-      - '英国01 入口#3 | NF BBC Chan4 1.5x'
-      - '英国01 入口#4 | NF BBC Chan4 1.5x'
+      - '美国04 广州移动1 | 备用 1.3x'
+      - '美国04 广州移动2 | 备用 1.3x'
+      - '美国04 江西电信CN2 | 备用 1.3x'
+      - '美国04 湖南联通 | 备用 1.3x'
+      - '英国01 广州移动1 | NF BBC Chan4 1.5x'
+      - '英国01 广州移动2 | NF BBC Chan4 1.5x'
+      - '英国01 江西电信CN2 | NF BBC Chan4 1.5x'
+      - '英国01 湖南联通 | NF BBC Chan4 1.5x'
       - '英国01 香港转发 | NF BBC Chan4 1.5x'
-      - '荷兰01 入口#1 | 冷门 1.2x'
-      - '荷兰01 入口#2 | 冷门 1.2x'
-      - '荷兰01 入口#3 | 冷门 1.2x'
-      - '荷兰01 入口#5 | 冷门 1.2x'
+      - '荷兰01 广州移动1 | 冷门 1.2x'
+      - '荷兰01 广州移动2 | 冷门 1.2x'
+      - '荷兰01 杭州联通 | 冷门 1.2x'
+      - '荷兰01 江西电信CN2 | 冷门 1.2x'
       - '荷兰01 香港转发 | 冷门 1.2x'
-      - '阿根廷01 入口#1 | 冷门 低速 2.0x'
-      - '阿根廷01 入口#2 | 冷门 低速 2.0x'
-      - '阿根廷01 入口#3 | 冷门 低速 2.0x'
+      - '阿根廷01 广州移动1 | 冷门 低速 2.0x'
+      - '阿根廷01 广州移动2 | 冷门 低速 2.0x'
+      - '阿根廷01 江西电信CN2 | 冷门 低速 2.0x'
       - '阿根廷01 香港转发 | 冷门 低速 2.0x'
-      - '韩国01 入口#1 | 1.5x'
-      - '韩国01 入口#2 | 1.5x'
-      - '韩国01 入口#4 | 1.5x'
-      - '韩国01 入口#5 | 1.5x'
+      - '韩国01 广州移动1 | 1.5x'
+      - '韩国01 广州移动2 | 1.5x'
+      - '韩国01 杭州联通 | 1.5x'
+      - '韩国01 湖南联通 | 1.5x'
       - '韩国01 香港转发 | 1.5x'
-      - '香港01 入口#1 | NF 1.5x'
-      - '香港01 入口#2 | NF 1.5x'
-      - '香港01 入口#3 | NF 1.5x'
-      - '香港01 入口#4 | NF 1.5x'
-      - '香港01 入口#5 | NF 1.5x'
-      - '香港02 入口#1 | NF 1.5x'
-      - '香港02 入口#2 | NF 1.5x'
-      - '香港02 入口#3 | NF 1.5x'
-      - '香港02 入口#4 | NF 1.5x'
-      - '香港02 入口#5 | NF 1.5x'
-      - '香港03 入口#1 | NF 1.5x'
-      - '香港03 入口#2 | NF 1.5x'
-      - '香港03 入口#3 | NF 1.5x'
-      - '香港03 入口#4 | NF 1.5x'
-      - '香港03 入口#5 | NF 1.5x'
-      - '香港HGC01 入口#1 | 原生 1.5x'
-      - '香港HGC01 入口#2 | 原生 1.5x'
-      - '香港HGC01 入口#3 | 原生 1.5x'
-      - '香港HGC01 入口#4 | 原生 1.5x'
-      - '香港HGC01 入口#5 | 原生 1.5x'
+      - '香港01 广州移动1 | NF 1.5x'
+      - '香港01 广州移动2 | NF 1.5x'
+      - '香港01 杭州联通 | NF 1.5x'
+      - '香港01 江西电信CN2 | NF 1.5x'
+      - '香港01 湖南联通 | NF 1.5x'
+      - '香港02 广州移动1 | NF 1.5x'
+      - '香港02 广州移动2 | NF 1.5x'
+      - '香港02 杭州联通 | NF 1.5x'
+      - '香港02 江西电信CN2 | NF 1.5x'
+      - '香港02 湖南联通 | NF 1.5x'
+      - '香港03 广州移动1 | NF 1.5x'
+      - '香港03 广州移动2 | NF 1.5x'
+      - '香港03 杭州联通 | NF 1.5x'
+      - '香港03 江西电信CN2 | NF 1.5x'
+      - '香港03 湖南联通 | NF 1.5x'
+      - '香港HGC01 广州移动1 | 原生 1.5x'
+      - '香港HGC01 广州移动2 | 原生 1.5x'
+      - '香港HGC01 杭州联通 | 原生 1.5x'
+      - '香港HGC01 江西电信CN2 | 原生 1.5x'
+      - '香港HGC01 湖南联通 | 原生 1.5x'
       - '香港HGC01 香港转发 | 原生 1.5x'
-      - '香港HKT01 入口#1 | 原生 1.5x'
-      - '香港HKT01 入口#2 | 原生 1.5x'
-      - '香港HKT01 入口#3 | 原生 1.5x'
-      - '香港HKT01 入口#5 | 原生 1.5x'
+      - '香港HKT01 广州移动1 | 原生 1.5x'
+      - '香港HKT01 广州移动2 | 原生 1.5x'
+      - '香港HKT01 杭州联通 | 原生 1.5x'
+      - '香港HKT01 江西电信CN2 | 原生 1.5x'
       - '香港HKT01 香港转发 | 原生 1.5x'
-      - '马来西亚01 入口#1 | 原生 1.5x'
-      - '马来西亚01 入口#2 | 原生 1.5x'
-      - '马来西亚01 入口#3 | 原生 1.5x'
-      - '马来西亚01 入口#5 | 原生 1.5x'
+      - '马来西亚01 广州移动1 | 原生 1.5x'
+      - '马来西亚01 广州移动2 | 原生 1.5x'
+      - '马来西亚01 杭州联通 | 原生 1.5x'
+      - '马来西亚01 江西电信CN2 | 原生 1.5x'
       - '马来西亚01 香港转发 | 原生 1.5x'
   -
     name: 🍎苹果服务

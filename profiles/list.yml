@@ -34,7 +34,7 @@ files:
       - name: GLOBAL
         now: DIRECT
       - name: 🔰国外流量
-        now: 台湾02 入口#1 | 原生 1.5x
+        now: 日本01 广州移动2 | NF 1.5x
       - name: ⚓️其他流量
         now: 🔰国外流量
       - name: ✈️Telegram
