@@ -1,56 +1,16 @@
 files:
-  - time: 1607583151348.yml
-    name: Jinkela
-    url: https://subcon.py6.pw/sub?target=clash&new_name=true&url=https%3A%2F%2Fwww.jinkela.site%2Flink%2FPyGoQIzZBf5SP2S1%3Fsub%3D3&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online.ini
-    selected:
-      - name: GLOBAL
-        now: DIRECT
-      - name: 🚀 节点选择
-        now: ♻️ 自动选择
-      - name: 🌍 国外媒体
-        now: 🚀 节点选择
-      - name: 📲 电报信息
-        now: 🚀 节点选择
-      - name: Ⓜ️ 微软服务
-        now: 🎯 全球直连
-      - name: 🍎 苹果服务
-        now: 🎯 全球直连
-      - name: 📢 谷歌FCM
-        now: 🚀 节点选择
-      - name: 🎯 全球直连
-        now: DIRECT
-      - name: 🛑 全球拦截
-        now: REJECT
-      - name: 🍃 应用净化
-        now: REJECT
-      - name: 🐟 漏网之鱼
-        now: 🎯 全球直连
-    interval: 0
-    mode: direct
   - time: 1615015083535.yml
     name: JINKELA.clash
     url: https://www.jinkela.site/link/PyGoQIzZBf5SP2S1?clash=1
     selected:
       - name: GLOBAL
         now: DIRECT
-      - name: 🔰国外流量
+      - name: 🍃 JINKELA
         now: 日本01 广州移动2 | NF 1.5x
-      - name: ⚓️其他流量
-        now: 🔰国外流量
-      - name: ✈️Telegram
-        now: 🔰国外流量
-      - name: 🎬Youtube
-        now: 🔰国外流量
-      - name: 🎬Netflix
-        now: 🔰国外流量
-      - name: 🎬哔哩哔哩
-        now: 🚀直接连接
-      - name: 🎬国外媒体
-        now: 🔰国外流量
-      - name: 🍎苹果服务
-        now: 🚀直接连接
-      - name: 🚀直接连接
-        now: DIRECT
+      - name: 🍂 国内网络
+        now: 🚀 绕过代理
+      - name: ☁️ 其他流量
+        now: 🍃 JINKELA
     interval: 0
     mode: rule
-index: 1
+index: 0
