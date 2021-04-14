@@ -7,14 +7,14 @@ mixinCode: |
     const rules = content.rules;
     rules.unshift(
       ...[
-        "DOMAIN-SUFFIX,qima-inc.com,🚀绕过代理", // 公司内网
-        "DOMAIN-SUFFIX,delivery.mp.microsoft.com,🚀绕过代理", // 应用商店智能分发
-        "DOMAIN-SUFFIX,xvcf1.xboxlive.com,🚀绕过代理", // xbox下载
-        "DOMAIN-SUFFIX,jinkela.red,🚀绕过代理", // 梯子
-        "DOMAIN-SUFFIX,epicgames-download1.akamaized.net,🚀绕过代理", // epic games
-        "DOMAIN-SUFFIX,reddit.com,☁️其他流量",
-        "DOMAIN-SUFFIX,redditstatic.com,☁️其他流量",
-        "DOMAIN-SUFFIX,redditmedia.com,☁️其他流量",
+        "DOMAIN-SUFFIX,qima-inc.com,🚀 绕过代理", // 公司内网
+        "DOMAIN-SUFFIX,delivery.mp.microsoft.com,🚀 绕过代理", // 应用商店智能分发
+        "DOMAIN-SUFFIX,xvcf1.xboxlive.com,🚀 绕过代理", // xbox下载
+        "DOMAIN-SUFFIX,jinkela.red,🚀 绕过代理", // 梯子
+        "DOMAIN-SUFFIX,epicgames-download1.akamaized.net,🚀 绕过代理", // epic games
+        "DOMAIN-SUFFIX,reddit.com,☁️ 其他流量",
+        "DOMAIN-SUFFIX,redditstatic.com,☁️ 其他流量",
+        "DOMAIN-SUFFIX,redditmedia.com,☁️ 其他流量",
       ]
     );
     return content;
