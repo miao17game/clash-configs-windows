@@ -6,11 +6,12 @@ files:
       - name: GLOBAL
         now: DIRECT
       - name: 🍃 JINKELA
-        now: 日本01 广州移动2 | NF 1.5x
+        now: 台湾02 香港转发 | 原生 1.5x
       - name: 🍂 国内网络
         now: 🚀 绕过代理
       - name: ☁️ 其他流量
         now: 🍃 JINKELA
     interval: 0
     mode: rule
+    m: rule
 index: 0

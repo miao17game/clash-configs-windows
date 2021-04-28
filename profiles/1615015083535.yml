@@ -1,7 +1,7 @@
-#!MANAGED-CONFIG https://v2.jinkela.link/link/PyGoQIzZBf5SP2S1?clash=1
+#!MANAGED-CONFIG https://www.jinkela.site/link/PyGoQIzZBf5SP2S1?clash=1
 
 #---------------------------------------------------#
-## 上次更新于：2021-04-14 10:16:58
+## 上次更新于：2021-04-22 08:52:41
 #---------------------------------------------------#
 
 port: 7890
@@ -1083,7 +1083,7 @@ proxies:
     ws-headers:
       Host: au01.aws.jinkela.icu
   -
-    name: '美国01 入口01 | NF 1.5x'
+    name: '美国01 广州移动1 | NF 1.5x'
     type: vmess
     server: in01.ddns168.com
     port: 61014
@@ -1096,7 +1096,7 @@ proxies:
     ws-headers:
       Host: us01.az.jinkela.icu
   -
-    name: '美国01 入口02 | NF 1.5x'
+    name: '美国01 广州移动2 | NF 1.5x'
     type: vmess
     server: in02.ddns168.com
     port: 61014
@@ -1109,7 +1109,20 @@ proxies:
     ws-headers:
       Host: us01.az.jinkela.icu
   -
-    name: '美国01 入口03 | NF 1.5x'
+    name: '美国01 杭州联通 | NF 1.5x'
+    type: vmess
+    server: in05.ddns168.com
+    port: 61014
+    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
+    alterId: 2
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /hls
+    ws-headers:
+      Host: us01.az.jinkela.icu
+  -
+    name: '美国01 江西电信CN2 | NF 1.5x'
     type: vmess
     server: in03.ddns168.com
     port: 61014
@@ -1122,22 +1135,9 @@ proxies:
     ws-headers:
       Host: us01.az.jinkela.icu
   -
-    name: '美国01 入口04 | NF 1.5x'
+    name: '美国01 镇江联通| NF 1.5x'
     type: vmess
     server: in04.ddns168.com
-    port: 61014
-    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /hls
-    ws-headers:
-      Host: us01.az.jinkela.icu
-  -
-    name: '美国01 入口05 | NF 1.5x'
-    type: vmess
-    server: in05.ddns168.com
     port: 61014
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -1988,11 +1988,11 @@ proxy-groups:
       - '澳洲01 杭州联通 | 冷门 1.5x'
       - '澳洲01 江西电信CN2 | 冷门 1.5x'
       - '澳洲01 香港转发 | 冷门 1.5x'
-      - '美国01 入口01 | NF 1.5x'
-      - '美国01 入口02 | NF 1.5x'
-      - '美国01 入口03 | NF 1.5x'
-      - '美国01 入口04 | NF 1.5x'
-      - '美国01 入口05 | NF 1.5x'
+      - '美国01 广州移动1 | NF 1.5x'
+      - '美国01 广州移动2 | NF 1.5x'
+      - '美国01 杭州联通 | NF 1.5x'
+      - '美国01 江西电信CN2 | NF 1.5x'
+      - '美国01 镇江联通| NF 1.5x'
       - '美国03 广州移动1 | 原生 1.5x'
       - '美国03 广州移动2 | 原生 1.5x'
       - '美国03 杭州联通 | 原生 1.5x'
@@ -2135,11 +2135,11 @@ proxy-groups:
       - '澳洲01 杭州联通 | 冷门 1.5x'
       - '澳洲01 江西电信CN2 | 冷门 1.5x'
       - '澳洲01 香港转发 | 冷门 1.5x'
-      - '美国01 入口01 | NF 1.5x'
-      - '美国01 入口02 | NF 1.5x'
-      - '美国01 入口03 | NF 1.5x'
-      - '美国01 入口04 | NF 1.5x'
-      - '美国01 入口05 | NF 1.5x'
+      - '美国01 广州移动1 | NF 1.5x'
+      - '美国01 广州移动2 | NF 1.5x'
+      - '美国01 杭州联通 | NF 1.5x'
+      - '美国01 江西电信CN2 | NF 1.5x'
+      - '美国01 镇江联通| NF 1.5x'
       - '美国03 广州移动1 | 原生 1.5x'
       - '美国03 广州移动2 | 原生 1.5x'
       - '美国03 杭州联通 | 原生 1.5x'
@@ -2207,7 +2207,8 @@ proxy-groups:
 
 rules:
 - DOMAIN,www.jinkela.site,DIRECT
-- DOMAIN,v2.jinkela.link,DIRECT
+- DOMAIN-KEYWORD,jinkela,🍃 JINKELA
+
 
 # (Global_TV)
 # > ABC
@@ -3000,6 +3001,7 @@ rules:
 - IP-CIDR,199.96.56.0/21,🍃 JINKELA
 - IP-CIDR,202.160.128.0/22,🍃 JINKELA
 - IP-CIDR,209.237.192.0/19,🍃 JINKELA
+
 
 # GeoIP China
 - GEOIP,CN,🍂 国内网络
