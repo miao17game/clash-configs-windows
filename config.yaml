@@ -1,7 +1,7 @@
 mixed-port: 7890
-allow-lan: false
+allow-lan: true
 log-level: info
-external-controller: 127.0.0.1:51984
+external-controller: 127.0.0.1:49836
 secret: ''
 ipv6: false
 
