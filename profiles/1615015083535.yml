@@ -1,7 +1,7 @@
 #!MANAGED-CONFIG https://www.jinkela.site/link/PyGoQIzZBf5SP2S1?clash=1
 
 #---------------------------------------------------#
-## 上次更新于：2021-05-05 12:29:07
+## 上次更新于：2021-06-12 03:14:24
 #---------------------------------------------------#
 
 port: 7890
@@ -30,59 +30,43 @@ dns:
       - 240.0.0.0/4
 proxies:
   -
-    name: 'IEPL专线 粤新03 入#1 | 6x NF'
+    name: 'IEPL专线 粤新03 | 4x NF'
     type: vmess
-    server: sh04-140.clashcloud.org
-    port: 9041
+    server: iplc01.ddns168.com
+    port: 3041
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
     cipher: auto
     udp: true
-    network: ws
-    ws-path: /hls
-    ws-headers:
-      Host: sg03.li.nbsd.us
   -
-    name: 'IEPL专线 粤日04 入#1 | 6x NF'
+    name: 'IEPL专线 粤日04 | 4x NF'
     type: vmess
-    server: sh04-140.clashcloud.org
-    port: 9011
+    server: iplc01.ddns168.com
+    port: 3011
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
     cipher: auto
     udp: true
-    network: ws
-    ws-path: /hls
-    ws-headers:
-      Host: jp04.li.nbsd.us
   -
-    name: 'IEPL专线 粤港03 入#1 | 6x NF'
+    name: 'IEPL专线 粤港03 | 4x NF'
     type: vmess
-    server: sh04-140.clashcloud.org
-    port: 9021
+    server: iplc01.ddns168.com
+    port: 3021
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
     cipher: auto
     udp: true
-    network: ws
-    ws-path: /hls
-    ws-headers:
-      Host: hkbn.vds.nbsd.us
   -
-    name: 'IEPL专线 粤美02 入#1 | 6x NF'
+    name: 'IEPL专线 粤美02 | 4x NF'
     type: vmess
-    server: sh04-140.clashcloud.org
-    port: 9031
+    server: iplc01.ddns168.com
+    port: 3031
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
     cipher: auto
     udp: true
-    network: ws
-    ws-path: /hls
-    ws-headers:
-      Host: us02.li.nbsd.us
   -
-    name: '俄罗斯01 广州移动2 | 冷门 1.5x'
+    name: '俄罗斯01 中继B | 冷门 1.5x'
     type: vmess
     server: in02.ddns168.com
     port: 61019
@@ -93,22 +77,9 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: ru01.jh.nbsd.us
+      Host: cdn.bootcdn.net
   -
-    name: '俄罗斯01 杭州联通 | 冷门 1.5x'
-    type: vmess
-    server: in05.ddns168.com
-    port: 61019
-    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /hls
-    ws-headers:
-      Host: ru01.jh.nbsd.us
-  -
-    name: '俄罗斯01 江西电信CN2 | 冷门 1.5x'
+    name: '俄罗斯01 中继C | 冷门 1.5x'
     type: vmess
     server: in03.ddns168.com
     port: 61019
@@ -119,9 +90,9 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: ru01.jh.nbsd.us
+      Host: cdn.bootcdn.net
   -
-    name: '俄罗斯01 镇江联通 | 冷门 1.5x'
+    name: '俄罗斯01 中继D | 冷门 1.5x'
     type: vmess
     server: in04.ddns168.com
     port: 61019
@@ -132,9 +103,22 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: ru01.jh.nbsd.us
+      Host: cdn.bootcdn.net
   -
-    name: '俄罗斯04 广州移动1 | 冷门 1.3x'
+    name: '俄罗斯01 中继E | 冷门 1.5x'
+    type: vmess
+    server: in05.ddns168.com
+    port: 61019
+    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
+    alterId: 2
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /hls
+    ws-headers:
+      Host: cdn.bootcdn.net
+  -
+    name: '俄罗斯04 中继A | 冷门 1.3x'
     type: vmess
     server: in01.ddns168.com
     port: 61048
@@ -145,9 +129,9 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: ru04.jh.nbsd.us
+      Host: cdn.bootcdn.net
   -
-    name: '俄罗斯04 广州移动2 | 冷门 1.3x'
+    name: '俄罗斯04 中继B | 冷门 1.3x'
     type: vmess
     server: in02.ddns168.com
     port: 61048
@@ -158,22 +142,9 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: ru04.jh.nbsd.us
+      Host: cdn.bootcdn.net
   -
-    name: '俄罗斯04 杭州联通 | 冷门 1.3x'
-    type: vmess
-    server: in05.ddns168.com
-    port: 61048
-    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /hls
-    ws-headers:
-      Host: ru04.jh.nbsd.us
-  -
-    name: '俄罗斯04 江西电信CN2 | 冷门 1.3x'
+    name: '俄罗斯04 中继C | 冷门 1.3x'
     type: vmess
     server: in03.ddns168.com
     port: 61048
@@ -184,9 +155,9 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: ru04.jh.nbsd.us
+      Host: cdn.bootcdn.net
   -
-    name: '俄罗斯04 镇江联通 | 冷门 1.3x'
+    name: '俄罗斯04 中继D | 冷门 1.3x'
     type: vmess
     server: in04.ddns168.com
     port: 61048
@@ -197,9 +168,22 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: ru04.jh.nbsd.us
+      Host: cdn.bootcdn.net
   -
-    name: '印度01 广州移动1 | 1.5x'
+    name: '俄罗斯04 中继E | 冷门 1.3x'
+    type: vmess
+    server: in05.ddns168.com
+    port: 61048
+    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
+    alterId: 2
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /hls
+    ws-headers:
+      Host: cdn.bootcdn.net
+  -
+    name: '印度01 中继A | 1.5x'
     type: vmess
     server: in01.ddns168.com
     port: 61051
@@ -210,9 +194,9 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: in01.aws.jinkela.icu
+      Host: cdn.bootcdn.net
   -
-    name: '印度01 广州移动2 | 1.5x'
+    name: '印度01 中继B | 1.5x'
     type: vmess
     server: in02.ddns168.com
     port: 61051
@@ -223,9 +207,35 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: in01.aws.jinkela.icu
+      Host: cdn.bootcdn.net
   -
-    name: '印度01 杭州联通 | 1.5x'
+    name: '印度01 中继C | 1.5x'
+    type: vmess
+    server: in03.ddns168.com
+    port: 61051
+    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
+    alterId: 2
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /hls
+    ws-headers:
+      Host: cdn.bootcdn.net
+  -
+    name: '印度01 中继D | 1.5x'
+    type: vmess
+    server: in04.ddns168.com
+    port: 61051
+    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
+    alterId: 2
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /hls
+    ws-headers:
+      Host: cdn.bootcdn.net
+  -
+    name: '印度01 中继E | 1.5x'
     type: vmess
     server: in05.ddns168.com
     port: 61051
@@ -238,32 +248,6 @@ proxies:
     ws-headers:
       Host: in01.li.jinkela.icu
   -
-    name: '印度01 江西电信CN2 | 1.5x'
-    type: vmess
-    server: in03.ddns168.com
-    port: 61051
-    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /hls
-    ws-headers:
-      Host: in01.aws.jinkela.icu
-  -
-    name: '印度01 镇江联通 | 1.5x'
-    type: vmess
-    server: in04.ddns168.com
-    port: 61051
-    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /hls
-    ws-headers:
-      Host: in01.aws.jinkela.icu
-  -
     name: '印度01 香港转发 | 1.5x'
     type: vmess
     server: hk02.az.lay168.net
@@ -275,9 +259,74 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: in01.aws.jinkela.icu
+      Host: cdn.bootcdn.net
   -
-    name: '台湾02 广州移动1 | 原生 1.5x'
+    name: '台湾01 中继A | 原生 1.5x'
+    type: vmess
+    server: in01.ddns168.com
+    port: 61054
+    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
+    alterId: 2
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /hls
+    ws-headers:
+      Host: cdn.bootcdn.net
+  -
+    name: '台湾01 中继B | 原生 1.5x'
+    type: vmess
+    server: in02.ddns168.com
+    port: 61054
+    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
+    alterId: 2
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /hls
+    ws-headers:
+      Host: cdn.bootcdn.net
+  -
+    name: '台湾01 中继C | 原生 1.5x'
+    type: vmess
+    server: in03.ddns168.com
+    port: 61054
+    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
+    alterId: 2
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /hls
+    ws-headers:
+      Host: cdn.bootcdn.net
+  -
+    name: '台湾01 中继D | 原生 1.5x'
+    type: vmess
+    server: in04.ddns168.com
+    port: 61054
+    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
+    alterId: 2
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /hls
+    ws-headers:
+      Host: cdn.bootcdn.net
+  -
+    name: '台湾01 中继E | 原生 1.5x'
+    type: vmess
+    server: in05.ddns168.com
+    port: 61054
+    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
+    alterId: 2
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /hls
+    ws-headers:
+      Host: cdn.bootcdn.net
+  -
+    name: '台湾02 中继A | 原生 1.5x'
     type: vmess
     server: in01.ddns168.com
     port: 61025
@@ -288,9 +337,9 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: tw02.pqs.lay168.net
+      Host: cdn.bootcdn.net
   -
-    name: '台湾02 广州移动2 | 原生 1.5x'
+    name: '台湾02 中继B | 原生 1.5x'
     type: vmess
     server: in02.ddns168.com
     port: 61025
@@ -301,22 +350,9 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: tw02.pqs.lay168.net
+      Host: cdn.bootcdn.net
   -
-    name: '台湾02 杭州联通 | 原生 1.5x'
-    type: vmess
-    server: in05.ddns168.com
-    port: 61025
-    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /hls
-    ws-headers:
-      Host: tw02.pqs.lay168.net
-  -
-    name: '台湾02 江西电信CN2 | 原生 1.5x'
+    name: '台湾02 中继C | 原生 1.5x'
     type: vmess
     server: in03.ddns168.com
     port: 61025
@@ -327,9 +363,9 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: tw02.pqs.lay168.net
+      Host: cdn.bootcdn.net
   -
-    name: '台湾02 镇江联通 | 原生 1.5x'
+    name: '台湾02 中继D | 原生 1.5x'
     type: vmess
     server: in04.ddns168.com
     port: 61025
@@ -340,7 +376,20 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: tw02.pqs.lay168.net
+      Host: cdn.bootcdn.net
+  -
+    name: '台湾02 中继E | 原生 1.5x'
+    type: vmess
+    server: in05.ddns168.com
+    port: 61025
+    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
+    alterId: 2
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /hls
+    ws-headers:
+      Host: cdn.bootcdn.net
   -
     name: '台湾02 香港转发 | 原生 1.5x'
     type: vmess
@@ -353,9 +402,9 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: tw02.pqs.lay168.net
+      Host: cdn.bootcdn.net
   -
-    name: '土耳其01 广州移动1 | 冷门 2.0x'
+    name: '土耳其01 中继A | 冷门 2.0x'
     type: vmess
     server: in01.ddns168.com
     port: 61028
@@ -366,9 +415,9 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: tr01.htigger.jinkela.icu
+      Host: cdn.bootcdn.net
   -
-    name: '土耳其01 广州移动2 | 冷门 2.0x'
+    name: '土耳其01 中继B | 冷门 2.0x'
     type: vmess
     server: in02.ddns168.com
     port: 61028
@@ -379,9 +428,9 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: tr01.htigger.jinkela.icu
+      Host: cdn.bootcdn.net
   -
-    name: '土耳其01 江西电信CN2 | 冷门 2.0x'
+    name: '土耳其01 中继C | 冷门 2.0x'
     type: vmess
     server: in03.ddns168.com
     port: 61028
@@ -392,9 +441,9 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: tr01.htigger.jinkela.icu
+      Host: cdn.bootcdn.net
   -
-    name: '土耳其01 镇江联通 | 冷门 2.0x'
+    name: '土耳其01 中继D | 冷门 2.0x'
     type: vmess
     server: in04.ddns168.com
     port: 61028
@@ -405,7 +454,7 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: tr01.htigger.jinkela.icu
+      Host: cdn.bootcdn.net
   -
     name: '土耳其01 香港转发 | 冷门 2.0x'
     type: vmess
@@ -418,22 +467,9 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: tr01.htigger.jinkela.icu
+      Host: cdn.bootcdn.net
   -
-    name: 官网开全局jinkela.wtf-德国CDN-免费白嫖-x0.5倍率
-    type: vmess
-    server: free.cf.jinkela.pvpgames.net
-    port: 80
-    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /hls
-    ws-headers:
-      Host: free.cf.jinkela.pvpgames.net
-  -
-    name: '巴西01 广州移动1 | 冷门 3.0x'
+    name: '巴西01 中继A | 冷门 3.0x'
     type: vmess
     server: in01.ddns168.com
     port: 61041
@@ -444,9 +480,9 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: br01.gcore.jinkela.icu
+      Host: cdn.bootcdn.net
   -
-    name: '巴西01 广州移动2 | 冷门 3.0x'
+    name: '巴西01 中继B | 冷门 3.0x'
     type: vmess
     server: in02.ddns168.com
     port: 61041
@@ -457,9 +493,9 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: br01.gcore.jinkela.icu
+      Host: cdn.bootcdn.net
   -
-    name: '巴西01 江西电信CN2 | 冷门 3.0x'
+    name: '巴西01 中继C | 冷门 3.0x'
     type: vmess
     server: in03.ddns168.com
     port: 61041
@@ -470,7 +506,7 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: br01.gcore.jinkela.icu
+      Host: cdn.bootcdn.net
   -
     name: '巴西01 香港转发 | 冷门 3.0x'
     type: vmess
@@ -483,9 +519,9 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: br01.gcore.jinkela.icu
+      Host: cdn.bootcdn.net
   -
-    name: '德国01 广州移动1 | 冷门 1.2x'
+    name: '德国01 中继A | 冷门 1.2x'
     type: vmess
     server: in01.ddns168.com
     port: 61008
@@ -496,9 +532,9 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: de01.hetzner.jinkela.icu
+      Host: cdn.bootcdn.net
   -
-    name: '德国01 广州移动2 | 冷门 1.2x'
+    name: '德国01 中继B | 冷门 1.2x'
     type: vmess
     server: in02.ddns168.com
     port: 61008
@@ -509,22 +545,9 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: de01.hetzner.jinkela.icu
+      Host: cdn.bootcdn.net
   -
-    name: '德国01 杭州联通 | 冷门 1.2x'
-    type: vmess
-    server: in05.ddns168.com
-    port: 61008
-    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /hls
-    ws-headers:
-      Host: de01.hetzner.jinkela.icu
-  -
-    name: '德国01 江西电信CN2 | 冷门 1.2x'
+    name: '德国01 中继C | 冷门 1.2x'
     type: vmess
     server: in03.ddns168.com
     port: 61008
@@ -535,7 +558,20 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: de01.hetzner.jinkela.icu
+      Host: cdn.bootcdn.net
+  -
+    name: '德国01 中继E | 冷门 1.2x'
+    type: vmess
+    server: in05.ddns168.com
+    port: 61008
+    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
+    alterId: 2
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /hls
+    ws-headers:
+      Host: cdn.bootcdn.net
   -
     name: '德国01 香港转发 | 冷门 1.2x'
     type: vmess
@@ -548,9 +584,9 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: de01.hetzner.jinkela.icu
+      Host: cdn.bootcdn.net
   -
-    name: '新加坡01 广州移动1 | 原生 1.5x'
+    name: '新加坡01 中继A | 原生 1.5x'
     type: vmess
     server: in01.ddns168.com
     port: 61013
@@ -561,9 +597,9 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: sg01.az.jinkela.icu
+      Host: cdn.bootcdn.net
   -
-    name: '新加坡01 广州移动2 | 原生 1.5x'
+    name: '新加坡01 中继B | 原生 1.5x'
     type: vmess
     server: in02.ddns168.com
     port: 61013
@@ -574,22 +610,9 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: sg01.az.jinkela.icu
+      Host: cdn.bootcdn.net
   -
-    name: '新加坡01 杭州联通 | 原生 1.5x'
-    type: vmess
-    server: in05.ddns168.com
-    port: 61013
-    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /hls
-    ws-headers:
-      Host: sg01.az.jinkela.icu
-  -
-    name: '新加坡01 江西电信CN2 | 原生 1.5x'
+    name: '新加坡01 中继C | 原生 1.5x'
     type: vmess
     server: in03.ddns168.com
     port: 61013
@@ -600,9 +623,9 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: sg01.az.jinkela.icu
+      Host: cdn.bootcdn.net
   -
-    name: '新加坡01 镇江联通 | 原生 1.5x'
+    name: '新加坡01 中继D | 原生 1.5x'
     type: vmess
     server: in04.ddns168.com
     port: 61013
@@ -613,7 +636,20 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: sg01.az.jinkela.icu
+      Host: cdn.bootcdn.net
+  -
+    name: '新加坡01 中继E | 原生 1.5x'
+    type: vmess
+    server: in05.ddns168.com
+    port: 61013
+    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
+    alterId: 2
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /hls
+    ws-headers:
+      Host: cdn.bootcdn.net
   -
     name: '新加坡01 香港转发 | 原生 1.5x'
     type: vmess
@@ -626,12 +662,12 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: sg01.az.jinkela.icu
+      Host: cdn.bootcdn.net
   -
-    name: '新加坡02 广州移动1 | 原生 1.5x'
+    name: '新加坡02 中继A | 1.5x'
     type: vmess
     server: in01.ddns168.com
-    port: 61009
+    port: 61052
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
     cipher: auto
@@ -639,12 +675,12 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: sg02.li.jinkela.icu
+      Host: cdn.bootcdn.net
   -
-    name: '新加坡02 广州移动2 | 原生 1.5x'
+    name: '新加坡02 中继B | 1.5x'
     type: vmess
     server: in02.ddns168.com
-    port: 61009
+    port: 61052
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
     cipher: auto
@@ -652,25 +688,12 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: sg02.li.jinkela.icu
+      Host: cdn.bootcdn.net
   -
-    name: '新加坡02 杭州联通 | 原生 1.5x'
-    type: vmess
-    server: in05.ddns168.com
-    port: 61009
-    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /hls
-    ws-headers:
-      Host: sg02.li.jinkela.icu
-  -
-    name: '新加坡02 江西电信CN2 | 原生 1.5x'
+    name: '新加坡02 中继C | 1.5x'
     type: vmess
     server: in03.ddns168.com
-    port: 61009
+    port: 61052
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
     cipher: auto
@@ -678,12 +701,12 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: sg02.li.jinkela.icu
+      Host: cdn.bootcdn.net
   -
-    name: '新加坡02 镇江联通 | 原生 1.5x'
+    name: '新加坡02 中继D | 1.5x'
     type: vmess
     server: in04.ddns168.com
-    port: 61009
+    port: 61052
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
     cipher: auto
@@ -691,9 +714,22 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: sg02.li.jinkela.icu
+      Host: cdn.bootcdn.net
   -
-    name: '新加坡04 广州移动1 | NF 1.5x'
+    name: '新加坡02 中继E | 1.5x'
+    type: vmess
+    server: in05.ddns168.com
+    port: 61052
+    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
+    alterId: 2
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /hls
+    ws-headers:
+      Host: cdn.bootcdn.net
+  -
+    name: '新加坡04 中继A | NF 1.5x'
     type: vmess
     server: in01.ddns168.com
     port: 61045
@@ -704,9 +740,9 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: sg04.jinkela.icu
+      Host: cdn.bootcdn.net
   -
-    name: '新加坡04 广州移动2 | NF 1.5x'
+    name: '新加坡04 中继B | NF 1.5x'
     type: vmess
     server: in02.ddns168.com
     port: 61045
@@ -717,22 +753,9 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: sg04.jinkela.icu
+      Host: cdn.bootcdn.net
   -
-    name: '新加坡04 杭州联通 | NF 1.5x'
-    type: vmess
-    server: in05.ddns168.com
-    port: 61045
-    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /hls
-    ws-headers:
-      Host: sg04.jinkela.icu
-  -
-    name: '新加坡04 江西电信CN2 | NF 1.5x'
+    name: '新加坡04 中继C | NF 1.5x'
     type: vmess
     server: in03.ddns168.com
     port: 61045
@@ -743,9 +766,9 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: sg04.jinkela.icu
+      Host: cdn.bootcdn.net
   -
-    name: '新加坡04 镇江联通 | NF 1.5x'
+    name: '新加坡04 中继D | NF 1.5x'
     type: vmess
     server: in04.ddns168.com
     port: 61045
@@ -756,9 +779,48 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: sg04.jinkela.icu
+      Host: cdn.bootcdn.net
   -
-    name: '日本01 广州移动1 | NF 1.5x'
+    name: '新加坡04 中继E | NF 1.5x'
+    type: vmess
+    server: in05.ddns168.com
+    port: 61045
+    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
+    alterId: 2
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /hls
+    ws-headers:
+      Host: cdn.bootcdn.net
+  -
+    name: '新加坡11 AWS直连 速度随缘 0.5x'
+    type: vmess
+    server: mugua-sg11-direct.node168.com
+    port: 443
+    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
+    alterId: 2
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /hls
+    ws-headers:
+      Host: mon.snssdk.com
+  -
+    name: "新加坡11 AWS直连AGA 速度随缘 0.5x\t"
+    type: vmess
+    server: ab4eb394af0bc9e4a.awsglobalaccelerator.com
+    port: 443
+    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
+    alterId: 2
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /hls
+    ws-headers:
+      Host: mon.snssdk.com
+  -
+    name: '日本01 中继A | NF 1.5x'
     type: vmess
     server: in01.ddns168.com
     port: 61012
@@ -769,9 +831,9 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: jp01.az.jinkela.icu
+      Host: cdn.bootcdn.net
   -
-    name: '日本01 广州移动2 | NF 1.5x'
+    name: '日本01 中继B | NF 1.5x'
     type: vmess
     server: in02.ddns168.com
     port: 61012
@@ -782,22 +844,9 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: jp01.az.jinkela.icu
+      Host: cdn.bootcdn.net
   -
-    name: '日本01 杭州联通 | NF 1.5x'
-    type: vmess
-    server: in05.ddns168.com
-    port: 61012
-    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /hls
-    ws-headers:
-      Host: jp01.az.jinkela.icu
-  -
-    name: '日本01 江西电信CN2 | NF 1.5x'
+    name: '日本01 中继C | NF 1.5x'
     type: vmess
     server: in03.ddns168.com
     port: 61012
@@ -808,9 +857,9 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: jp01.az.jinkela.icu
+      Host: cdn.bootcdn.net
   -
-    name: '日本01 镇江联通 | NF 1.5x'
+    name: '日本01 中继D | NF 1.5x'
     type: vmess
     server: in04.ddns168.com
     port: 61012
@@ -821,9 +870,22 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: jp01.az.jinkela.icu
+      Host: cdn.bootcdn.net
   -
-    name: '日本02 广州移动1 | NF 1.5x'
+    name: '日本01 中继E | NF 1.5x'
+    type: vmess
+    server: in05.ddns168.com
+    port: 61012
+    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
+    alterId: 2
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /hls
+    ws-headers:
+      Host: cdn.bootcdn.net
+  -
+    name: '日本02 中继A | NF 1.5x'
     type: vmess
     server: in01.ddns168.com
     port: 61017
@@ -834,9 +896,9 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: jp02.li.jinkela.icu
+      Host: cdn.bootcdn.net
   -
-    name: '日本02 广州移动2 | NF 1.5x'
+    name: '日本02 中继B | NF 1.5x'
     type: vmess
     server: in02.ddns168.com
     port: 61017
@@ -847,22 +909,9 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: jp02.li.jinkela.icu
+      Host: cdn.bootcdn.net
   -
-    name: '日本02 杭州联通 | NF 1.5x'
-    type: vmess
-    server: in05.ddns168.com
-    port: 61017
-    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /hls
-    ws-headers:
-      Host: jp02.li.jinkela.icu
-  -
-    name: '日本02 江西电信CN2 | NF 1.5x'
+    name: '日本02 中继C | NF 1.5x'
     type: vmess
     server: in03.ddns168.com
     port: 61017
@@ -873,9 +922,9 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: jp02.li.jinkela.icu
+      Host: cdn.bootcdn.net
   -
-    name: '日本02 镇江联通 | NF 1.5x'
+    name: '日本02 中继D | NF 1.5x'
     type: vmess
     server: in04.ddns168.com
     port: 61017
@@ -886,9 +935,22 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: jp02.li.jinkela.icu
+      Host: cdn.bootcdn.net
   -
-    name: '日本03 广州移动1 | NF 1.5x'
+    name: '日本02 中继E | NF 1.5x'
+    type: vmess
+    server: in05.ddns168.com
+    port: 61017
+    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
+    alterId: 2
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /hls
+    ws-headers:
+      Host: cdn.bootcdn.net
+  -
+    name: '日本03 中继A | NF 1.5x'
     type: vmess
     server: in01.ddns168.com
     port: 61038
@@ -899,9 +961,9 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: jp03.aws.jinkela.icu
+      Host: cdn.bootcdn.net
   -
-    name: '日本03 广州移动2 | NF 1.5x'
+    name: '日本03 中继B | NF 1.5x'
     type: vmess
     server: in02.ddns168.com
     port: 61038
@@ -912,22 +974,9 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: jp03.aws.jinkela.icu
+      Host: cdn.bootcdn.net
   -
-    name: '日本03 杭州联通 | NF 1.5x'
-    type: vmess
-    server: in05.ddns168.com
-    port: 61038
-    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /hls
-    ws-headers:
-      Host: jp03.aws.jinkela.icu
-  -
-    name: '日本03 江西电信CN2 | NF 1.5x'
+    name: '日本03 中继C | NF 1.5x'
     type: vmess
     server: in03.ddns168.com
     port: 61038
@@ -938,9 +987,9 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: jp03.aws.jinkela.icu
+      Host: cdn.bootcdn.net
   -
-    name: '日本03 镇江联通 | NF 1.5x'
+    name: '日本03 中继D | NF 1.5x'
     type: vmess
     server: in04.ddns168.com
     port: 61038
@@ -951,9 +1000,22 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: jp03.aws.jinkela.icu
+      Host: cdn.bootcdn.net
   -
-    name: '波兰01 广州移动1 | 冷门 1.2x'
+    name: '日本03 中继E | NF 1.5x'
+    type: vmess
+    server: in05.ddns168.com
+    port: 61038
+    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
+    alterId: 2
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /hls
+    ws-headers:
+      Host: cdn.bootcdn.net
+  -
+    name: '波兰01 中继A | 冷门 1.2x'
     type: vmess
     server: in01.ddns168.com
     port: 61039
@@ -964,9 +1026,9 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: pl01.gcore.jinkela.icu
+      Host: cdn.bootcdn.net
   -
-    name: '波兰01 广州移动2 | 冷门 1.2x'
+    name: '波兰01 中继B | 冷门 1.2x'
     type: vmess
     server: in02.ddns168.com
     port: 61039
@@ -977,9 +1039,9 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: pl01.gcore.jinkela.icu
+      Host: cdn.bootcdn.net
   -
-    name: '波兰01 江西电信CN2 | 冷门 1.2x'
+    name: '波兰01 中继C | 冷门 1.2x'
     type: vmess
     server: in03.ddns168.com
     port: 61039
@@ -990,9 +1052,9 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: pl01.gcore.jinkela.icu
+      Host: cdn.bootcdn.net
   -
-    name: '波兰01 镇江联通 | 冷门 1.2x'
+    name: '波兰01 中继D | 冷门 1.2x'
     type: vmess
     server: in04.ddns168.com
     port: 61039
@@ -1003,7 +1065,7 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: pl01.gcore.jinkela.icu
+      Host: cdn.bootcdn.net
   -
     name: '波兰01 香港转发 | 冷门 1.2x'
     type: vmess
@@ -1016,9 +1078,9 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: pl01.gcore.jinkela.icu
+      Host: cdn.bootcdn.net
   -
-    name: '澳洲01 广州移动1 | 冷门 1.5x'
+    name: '澳洲01 中继A | 冷门 1.5x'
     type: vmess
     server: in01.ddns168.com
     port: 61035
@@ -1029,9 +1091,9 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: au01.aws.jinkela.icu
+      Host: cdn.bootcdn.net
   -
-    name: '澳洲01 广州移动2 | 冷门 1.5x'
+    name: '澳洲01 中继B | 冷门 1.5x'
     type: vmess
     server: in02.ddns168.com
     port: 61035
@@ -1042,22 +1104,9 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: au01.aws.jinkela.icu
+      Host: cdn.bootcdn.net
   -
-    name: '澳洲01 杭州联通 | 冷门 1.5x'
-    type: vmess
-    server: in05.ddns168.com
-    port: 61035
-    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /hls
-    ws-headers:
-      Host: au01.aws.jinkela.icu
-  -
-    name: '澳洲01 江西电信CN2 | 冷门 1.5x'
+    name: '澳洲01 中继C | 冷门 1.5x'
     type: vmess
     server: in03.ddns168.com
     port: 61035
@@ -1068,7 +1117,20 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: au01.aws.jinkela.icu
+      Host: cdn.bootcdn.net
+  -
+    name: '澳洲01 中继E | 冷门 1.5x'
+    type: vmess
+    server: in05.ddns168.com
+    port: 61035
+    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
+    alterId: 2
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /hls
+    ws-headers:
+      Host: cdn.bootcdn.net
   -
     name: '澳洲01 香港转发 | 冷门 1.5x'
     type: vmess
@@ -1081,9 +1143,9 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: au01.aws.jinkela.icu
+      Host: cdn.bootcdn.net
   -
-    name: '美国01 广州移动1 | NF 1.5x'
+    name: '美国01 中继A | NF 1.5x'
     type: vmess
     server: in01.ddns168.com
     port: 61014
@@ -1094,9 +1156,9 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: us01.az.jinkela.icu
+      Host: cdn.bootcdn.net
   -
-    name: '美国01 广州移动2 | NF 1.5x'
+    name: '美国01 中继B | NF 1.5x'
     type: vmess
     server: in02.ddns168.com
     port: 61014
@@ -1107,22 +1169,9 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: us01.az.jinkela.icu
+      Host: cdn.bootcdn.net
   -
-    name: '美国01 杭州联通 | NF 1.5x'
-    type: vmess
-    server: in05.ddns168.com
-    port: 61014
-    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /hls
-    ws-headers:
-      Host: us01.az.jinkela.icu
-  -
-    name: '美国01 江西电信CN2 | NF 1.5x'
+    name: '美国01 中继C | NF 1.5x'
     type: vmess
     server: in03.ddns168.com
     port: 61014
@@ -1133,9 +1182,9 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: us01.az.jinkela.icu
+      Host: cdn.bootcdn.net
   -
-    name: '美国01 镇江联通| NF 1.5x'
+    name: '美国01 中继D| NF 1.5x'
     type: vmess
     server: in04.ddns168.com
     port: 61014
@@ -1146,9 +1195,22 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: us01.az.jinkela.icu
+      Host: cdn.bootcdn.net
   -
-    name: '美国03 广州移动1 | 原生 1.5x'
+    name: '美国01 中继E | NF 1.5x'
+    type: vmess
+    server: in05.ddns168.com
+    port: 61014
+    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
+    alterId: 2
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /hls
+    ws-headers:
+      Host: cdn.bootcdn.net
+  -
+    name: '美国03 中继A | 1.5x'
     type: vmess
     server: in01.ddns168.com
     port: 61018
@@ -1159,9 +1221,9 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: us03.he.nbsd.us
+      Host: cdn.bootcdn.net
   -
-    name: '美国03 广州移动2 | 原生 1.5x'
+    name: '美国03 中继B | 1.5x'
     type: vmess
     server: in02.ddns168.com
     port: 61018
@@ -1172,9 +1234,35 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: us03.he.nbsd.us
+      Host: cdn.bootcdn.net
   -
-    name: '美国03 杭州联通 | 原生 1.5x'
+    name: '美国03 中继C | 1.5x'
+    type: vmess
+    server: in03.ddns168.com
+    port: 61018
+    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
+    alterId: 2
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /hls
+    ws-headers:
+      Host: cdn.bootcdn.net
+  -
+    name: '美国03 中继D | 1.5x'
+    type: vmess
+    server: in04.ddns168.com
+    port: 61018
+    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
+    alterId: 2
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /hls
+    ws-headers:
+      Host: cdn.bootcdn.net
+  -
+    name: '美国03 中继E | 1.5x'
     type: vmess
     server: in05.ddns168.com
     port: 61018
@@ -1185,9 +1273,9 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: us03.he.nbsd.us
+      Host: cdn.bootcdn.net
   -
-    name: '美国03 香港转发 | 原生 1.5x'
+    name: '美国03 香港转发 | 1.5x'
     type: vmess
     server: hk02.az.lay168.net
     port: 61018
@@ -1198,9 +1286,9 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: us03.he.nbsd.us
+      Host: cdn.bootcdn.net
   -
-    name: '美国04 广州移动1 | 备用 1.3x'
+    name: '美国04 中继A | 备用 1.3x'
     type: vmess
     server: in01.ddns168.com
     port: 61043
@@ -1211,9 +1299,9 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: us04.backup.jinkela.icu
+      Host: cdn.bootcdn.net
   -
-    name: '美国04 广州移动2 | 备用 1.3x'
+    name: '美国04 中继B | 备用 1.3x'
     type: vmess
     server: in02.ddns168.com
     port: 61043
@@ -1224,9 +1312,9 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: us04.backup.jinkela.icu
+      Host: cdn.bootcdn.net
   -
-    name: '美国04 江西电信CN2 | 备用 1.3x'
+    name: '美国04 中继C | 备用 1.3x'
     type: vmess
     server: in03.ddns168.com
     port: 61043
@@ -1237,9 +1325,9 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: us04.backup.jinkela.icu
+      Host: cdn.bootcdn.net
   -
-    name: '美国04 镇江联通 | 备用 1.3x'
+    name: '美国04 中继D | 备用 1.3x'
     type: vmess
     server: in04.ddns168.com
     port: 61043
@@ -1250,9 +1338,9 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: us04.backup.jinkela.icu
+      Host: cdn.bootcdn.net
   -
-    name: '英国01 广州移动1 | NF BBC Chan4 1.5x'
+    name: '英国01 中继A | NF BBC Chan4 1.5x'
     type: vmess
     server: in01.ddns168.com
     port: 61021
@@ -1263,9 +1351,9 @@ proxies:
     network: ws
     ws-path: /video/mp4
     ws-headers:
-      Host: uk01.az.jinkela.icu
+      Host: cdn.bootcdn.net
   -
-    name: '英国01 广州移动2 | NF BBC Chan4 1.5x'
+    name: '英国01 中继B | NF BBC Chan4 1.5x'
     type: vmess
     server: in02.ddns168.com
     port: 61021
@@ -1276,9 +1364,9 @@ proxies:
     network: ws
     ws-path: /video/mp4
     ws-headers:
-      Host: uk01.az.jinkela.icu
+      Host: cdn.bootcdn.net
   -
-    name: '英国01 江西电信CN2 | NF BBC Chan4 1.5x'
+    name: '英国01 中继C | NF BBC Chan4 1.5x'
     type: vmess
     server: in03.ddns168.com
     port: 61021
@@ -1289,9 +1377,9 @@ proxies:
     network: ws
     ws-path: /video/mp4
     ws-headers:
-      Host: uk01.az.jinkela.icu
+      Host: cdn.bootcdn.net
   -
-    name: '英国01 镇江联通 | NF BBC Chan4 1.5x'
+    name: '英国01 中继D | NF BBC Chan4 1.5x'
     type: vmess
     server: in04.ddns168.com
     port: 61021
@@ -1302,7 +1390,7 @@ proxies:
     network: ws
     ws-path: /video/mp4
     ws-headers:
-      Host: uk01.az.jinkela.icu
+      Host: cdn.bootcdn.net
   -
     name: '英国01 香港转发 | NF BBC Chan4 1.5x'
     type: vmess
@@ -1315,9 +1403,9 @@ proxies:
     network: ws
     ws-path: /video/mp4
     ws-headers:
-      Host: uk01.az.jinkela.icu
+      Host: cdn.bootcdn.net
   -
-    name: '荷兰01 广州移动1 | 冷门 1.2x'
+    name: '荷兰01 中继A | 冷门 1.2x'
     type: vmess
     server: in01.ddns168.com
     port: 61037
@@ -1328,9 +1416,9 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: nl01.gcore.jinkela.icu
+      Host: cdn.bootcdn.net
   -
-    name: '荷兰01 广州移动2 | 冷门 1.2x'
+    name: '荷兰01 中继B | 冷门 1.2x'
     type: vmess
     server: in02.ddns168.com
     port: 61037
@@ -1341,22 +1429,9 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: nl01.gcore.jinkela.icu
+      Host: cdn.bootcdn.net
   -
-    name: '荷兰01 杭州联通 | 冷门 1.2x'
-    type: vmess
-    server: in05.ddns168.com
-    port: 61037
-    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /hls
-    ws-headers:
-      Host: nl01.gcore.jinkela.icu
-  -
-    name: '荷兰01 江西电信CN2 | 冷门 1.2x'
+    name: '荷兰01 中继C | 冷门 1.2x'
     type: vmess
     server: in03.ddns168.com
     port: 61037
@@ -1367,7 +1442,20 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: nl01.gcore.jinkela.icu
+      Host: cdn.bootcdn.net
+  -
+    name: '荷兰01 中继E | 冷门 1.2x'
+    type: vmess
+    server: in05.ddns168.com
+    port: 61037
+    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
+    alterId: 2
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /hls
+    ws-headers:
+      Host: cdn.bootcdn.net
   -
     name: '荷兰01 香港转发 | 冷门 1.2x'
     type: vmess
@@ -1380,9 +1468,9 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: nl01.gcore.jinkela.icu
+      Host: cdn.bootcdn.net
   -
-    name: '阿根廷01 广州移动1 | 冷门 低速 5.0x'
+    name: '阿根廷01 中继A | 冷门 低速 5.0x'
     type: vmess
     server: in01.ddns168.com
     port: 61029
@@ -1393,9 +1481,9 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: ar01.don.jinkela.icu
+      Host: cdn.bootcdn.net
   -
-    name: '阿根廷01 广州移动2 | 冷门 低速 5.0x'
+    name: '阿根廷01 中继B | 冷门 低速 5.0x'
     type: vmess
     server: in02.ddns168.com
     port: 61029
@@ -1406,9 +1494,9 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: ar01.don.jinkela.icu
+      Host: cdn.bootcdn.net
   -
-    name: '阿根廷01 江西电信CN2 | 冷门 低速 5.0x'
+    name: '阿根廷01 中继C | 冷门 低速 5.0x'
     type: vmess
     server: in03.ddns168.com
     port: 61029
@@ -1419,7 +1507,7 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: ar01.don.jinkela.icu
+      Host: cdn.bootcdn.net
   -
     name: '阿根廷01 香港转发 | 冷门 低速 5.0x'
     type: vmess
@@ -1432,12 +1520,12 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: ar01.don.jinkela.icu
+      Host: cdn.bootcdn.net
   -
-    name: '韩国01 广州移动1 | 1.5x'
+    name: '韩国01 中继A | 1.5x'
     type: vmess
     server: in01.ddns168.com
-    port: 61004
+    port: 61056
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
     cipher: auto
@@ -1445,12 +1533,12 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: kr01.jinkela.icu
+      Host: cdn.bootcdn.net
   -
-    name: '韩国01 广州移动2 | 1.5x'
+    name: '韩国01 中继B | 1.5x'
     type: vmess
     server: in02.ddns168.com
-    port: 61004
+    port: 61056
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
     cipher: auto
@@ -1458,25 +1546,12 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: kr01.jinkela.icu
+      Host: cdn.bootcdn.net
   -
-    name: '韩国01 杭州联通 | 1.5x'
-    type: vmess
-    server: in05.ddns168.com
-    port: 61004
-    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /hls
-    ws-headers:
-      Host: kr01.jinkela.icu
-  -
-    name: '韩国01 镇江联通 | 1.5x'
+    name: '韩国01 中继D | 1.5x'
     type: vmess
     server: in04.ddns168.com
-    port: 61004
+    port: 61056
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
     cipher: auto
@@ -1484,51 +1559,51 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: kr01.jinkela.icu
+      Host: cdn.bootcdn.net
   -
-    name: '韩国01 香港转发 | 1.5x'
-    type: vmess
-    server: hk02.az.lay168.net
-    port: 61004
-    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /hls
-    ws-headers:
-      Host: kr01.jinkela.icu
-  -
-    name: '香港01 广州移动1 | NF 1.5x'
-    type: vmess
-    server: in01.ddns168.com
-    port: 61046
-    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /cctv
-    ws-headers:
-      Host: hk01.jinkela.icu
-  -
-    name: '香港01 广州移动2 | NF 1.5x'
-    type: vmess
-    server: in02.ddns168.com
-    port: 61046
-    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /cctv
-    ws-headers:
-      Host: hk01.jinkela.icu
-  -
-    name: '香港01 杭州联通 | NF 1.5x'
+    name: '韩国01 中继E | 1.5x'
     type: vmess
     server: in05.ddns168.com
-    port: 61046
+    port: 61056
+    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
+    alterId: 2
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /hls
+    ws-headers:
+      Host: cdn.bootcdn.net
+  -
+    name: '韩国11 AWS直连 速度随缘 0.5x'
+    type: vmess
+    server: mugua-kr11-direct.node168.com
+    port: 443
+    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
+    alterId: 2
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /hls
+    ws-headers:
+      Host: new.vip.weibo.cn
+  -
+    name: '韩国11 AWS直连AGA 速度随缘 0.5x'
+    type: vmess
+    server: a3030a4d1e9e724d6.awsglobalaccelerator.com
+    port: 443
+    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
+    alterId: 2
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /hls
+    ws-headers:
+      Host: new.vip.weibo.cn
+  -
+    name: '香港01 中继A | NF 1.5x '
+    type: vmess
+    server: in01.ddns168.com
+    port: 61055
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
     cipher: auto
@@ -1536,12 +1611,25 @@ proxies:
     network: ws
     ws-path: /cctv
     ws-headers:
-      Host: hk01.jinkela.icu
+      Host: cdn.bootcdn.net
   -
-    name: '香港01 江西电信CN2 | NF 1.5x'
+    name: '香港01 中继B | NF 1.5x '
+    type: vmess
+    server: in02.ddns168.com
+    port: 61055
+    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
+    alterId: 2
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /cctv
+    ws-headers:
+      Host: cdn.bootcdn.net
+  -
+    name: '香港01 中继C | NF 1.5x '
     type: vmess
     server: in03.ddns168.com
-    port: 61046
+    port: 61055
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
     cipher: auto
@@ -1549,12 +1637,12 @@ proxies:
     network: ws
     ws-path: /cctv
     ws-headers:
-      Host: hk01.jinkela.icu
+      Host: cdn.bootcdn.net
   -
-    name: '香港01 镇江联通 | NF 1.5x'
+    name: '香港01 中继D | NF 1.5x '
     type: vmess
     server: in04.ddns168.com
-    port: 61046
+    port: 61055
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
     cipher: auto
@@ -1562,9 +1650,22 @@ proxies:
     network: ws
     ws-path: /cctv
     ws-headers:
-      Host: hk01.jinkela.icu
+      Host: cdn.bootcdn.net
   -
-    name: '香港02 广州移动1 | NF 1.5x'
+    name: '香港01 中继E | NF 1.5x '
+    type: vmess
+    server: in05.ddns168.com
+    port: 61055
+    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
+    alterId: 2
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /cctv
+    ws-headers:
+      Host: cdn.bootcdn.net
+  -
+    name: '香港02 中继A | NF 1.5x '
     type: vmess
     server: in01.ddns168.com
     port: 61050
@@ -1575,9 +1676,9 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: hk02.jinkela.icu
+      Host: cdn.bootcdn.net
   -
-    name: '香港02 广州移动2 | NF 1.5x'
+    name: '香港02 中继B | NF 1.5x '
     type: vmess
     server: in02.ddns168.com
     port: 61050
@@ -1588,22 +1689,9 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: hk02.jinkela.icu
+      Host: cdn.bootcdn.net
   -
-    name: '香港02 杭州联通 | NF 1.5x'
-    type: vmess
-    server: in05.ddns168.com
-    port: 61050
-    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 3
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /hls
-    ws-headers:
-      Host: hk02.jinkela.icu
-  -
-    name: '香港02 江西电信CN2 | NF 1.5x'
+    name: '香港02 中继C | NF 1.5x '
     type: vmess
     server: in03.ddns168.com
     port: 61050
@@ -1614,9 +1702,9 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: hk02.jinkela.icu
+      Host: cdn.bootcdn.net
   -
-    name: '香港02 镇江联通 | NF 1.5x'
+    name: '香港02 中继D | NF 1.5x '
     type: vmess
     server: in04.ddns168.com
     port: 61050
@@ -1627,9 +1715,22 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: hk02.jinkela.icu
+      Host: cdn.bootcdn.net
   -
-    name: '香港03 广州移动1 | NF 1.5x'
+    name: '香港02 中继E | NF 1.5x '
+    type: vmess
+    server: in05.ddns168.com
+    port: 61050
+    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
+    alterId: 3
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /hls
+    ws-headers:
+      Host: cdn.bootcdn.net
+  -
+    name: '香港03 中继A | NF 1.5x'
     type: vmess
     server: in01.ddns168.com
     port: 61031
@@ -1640,9 +1741,9 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: hk03.az.jinkela.icu
+      Host: host=cdn.bootcdn.net
   -
-    name: '香港03 广州移动2 | NF 1.5x'
+    name: '香港03 中继B | NF 1.5x'
     type: vmess
     server: in02.ddns168.com
     port: 61031
@@ -1653,22 +1754,9 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: hk03.az.jinkela.icu
+      Host: host=cdn.bootcdn.net
   -
-    name: '香港03 杭州联通 | NF 1.5x'
-    type: vmess
-    server: in05.ddns168.com
-    port: 61031
-    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 3
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /hls
-    ws-headers:
-      Host: hk03.az.jinkela.icu
-  -
-    name: '香港03 江西电信CN2 | NF 1.5x'
+    name: '香港03 中继C | NF 1.5x'
     type: vmess
     server: in03.ddns168.com
     port: 61031
@@ -1679,9 +1767,9 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: hk03.az.jinkela.icu
+      Host: host=cdn.bootcdn.net
   -
-    name: '香港03 镇江联通 | NF 1.5x'
+    name: '香港03 中继D | NF 1.5x'
     type: vmess
     server: in04.ddns168.com
     port: 61031
@@ -1692,9 +1780,139 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: hk03.az.jinkela.icu
+      Host: host=cdn.bootcdn.net
   -
-    name: '香港HGC01 广州移动1 | 原生 1.5x'
+    name: '香港03 中继E | NF 1.5x'
+    type: vmess
+    server: in05.ddns168.com
+    port: 61031
+    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
+    alterId: 2
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /hls
+    ws-headers:
+      Host: host=cdn.bootcdn.net
+  -
+    name: '香港04 中继A | NF 1.5x'
+    type: vmess
+    server: in01.ddns168.com
+    port: 61053
+    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
+    alterId: 2
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /hls
+    ws-headers:
+      Host: host=cdn.bootcdn.net
+  -
+    name: '香港04 中继B | NF 1.5x'
+    type: vmess
+    server: in02.ddns168.com
+    port: 61053
+    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
+    alterId: 2
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /hls
+    ws-headers:
+      Host: host=cdn.bootcdn.net
+  -
+    name: '香港04 中继C | NF 1.5x'
+    type: vmess
+    server: in03.ddns168.com
+    port: 61053
+    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
+    alterId: 2
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /hls
+    ws-headers:
+      Host: host=cdn.bootcdn.net
+  -
+    name: '香港04 中继D | NF 1.5x'
+    type: vmess
+    server: in04.ddns168.com
+    port: 61053
+    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
+    alterId: 2
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /hls
+    ws-headers:
+      Host: host=cdn.bootcdn.net
+  -
+    name: '香港04 中继E | NF 1.5x'
+    type: vmess
+    server: in05.ddns168.com
+    port: 61053
+    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
+    alterId: 2
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /hls
+    ws-headers:
+      Host: host=cdn.bootcdn.net
+  -
+    name: '香港11 AWS直连 速度随缘 0.5x'
+    type: vmess
+    server: mugua-hk11-direct.node168.com
+    port: 443
+    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
+    alterId: 2
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /hls
+    ws-headers:
+      Host: mon.snssdk.com
+  -
+    name: '香港11 AWS直连AGA 速度随缘 0.5x'
+    type: vmess
+    server: a07a2eb82cfe636d2.awsglobalaccelerator.com
+    port: 443
+    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
+    alterId: 2
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /hls
+    ws-headers:
+      Host: mon.snssdk.com
+  -
+    name: '香港12 AWS直连 速度随缘'
+    type: vmess
+    server: mugua-hk12-direct.node168.com
+    port: 443
+    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
+    alterId: 2
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /hls
+    ws-headers:
+      Host: mon.snssdk.com
+  -
+    name: '香港12 AWS直连AGA 速度随缘 0.5x'
+    type: vmess
+    server: afe6a6c642a63c2b7.awsglobalaccelerator.com
+    port: 443
+    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
+    alterId: 2
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /hls
+    ws-headers:
+      Host: mon.snssdk.com
+  -
+    name: '香港HGC01 中继A | 原生 1.5x'
     type: vmess
     server: in01.ddns168.com
     port: 61027
@@ -1705,9 +1923,9 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: hkbn.vds.nbsd.us
+      Host: cdn.bootcdn.net
   -
-    name: '香港HGC01 广州移动2 | 原生 1.5x'
+    name: '香港HGC01 中继B | 原生 1.5x'
     type: vmess
     server: in02.ddns168.com
     port: 61027
@@ -1718,22 +1936,9 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: hkbn.vds.nbsd.us
+      Host: cdn.bootcdn.net
   -
-    name: '香港HGC01 杭州联通 | 原生 1.5x'
-    type: vmess
-    server: in05.ddns168.com
-    port: 61027
-    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /hls
-    ws-headers:
-      Host: hkbn.vds.nbsd.us
-  -
-    name: '香港HGC01 江西电信CN2 | 原生 1.5x'
+    name: '香港HGC01 中继C | 原生 1.5x'
     type: vmess
     server: in03.ddns168.com
     port: 61027
@@ -1744,9 +1949,9 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: hkbn.vds.nbsd.us
+      Host: cdn.bootcdn.net
   -
-    name: '香港HGC01 镇江联通 | 原生 1.5x'
+    name: '香港HGC01 中继D | 原生 1.5x'
     type: vmess
     server: in04.ddns168.com
     port: 61027
@@ -1757,7 +1962,20 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: hkbn.vds.nbsd.us
+      Host: cdn.bootcdn.net
+  -
+    name: '香港HGC01 中继E | 原生 1.5x'
+    type: vmess
+    server: in05.ddns168.com
+    port: 61027
+    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
+    alterId: 2
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /hls
+    ws-headers:
+      Host: cdn.bootcdn.net
   -
     name: '香港HGC01 香港转发 | 原生 1.5x'
     type: vmess
@@ -1770,9 +1988,9 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: hkbn.vds.nbsd.us
+      Host: cdn.bootcdn.net
   -
-    name: '香港HKT01 广州移动1 | 原生 1.5x'
+    name: '香港HKT01 中继A | 原生 1.5x'
     type: vmess
     server: in01.ddns168.com
     port: 61033
@@ -1783,9 +2001,9 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: hkt01.pqs-vds.lay168.net
+      Host: cdn.bootcdn.net
   -
-    name: '香港HKT01 广州移动2 | 原生 1.5x'
+    name: '香港HKT01 中继B | 原生 1.5x'
     type: vmess
     server: in02.ddns168.com
     port: 61033
@@ -1796,22 +2014,9 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: hkt01.pqs-vds.lay168.net
+      Host: cdn.bootcdn.net
   -
-    name: '香港HKT01 杭州联通 | 原生 1.5x'
-    type: vmess
-    server: in05.ddns168.com
-    port: 61033
-    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /hls
-    ws-headers:
-      Host: hkt01.pqs-vds.lay168.net
-  -
-    name: '香港HKT01 江西电信CN2 | 原生 1.5x'
+    name: '香港HKT01 中继C | 原生 1.5x'
     type: vmess
     server: in03.ddns168.com
     port: 61033
@@ -1822,7 +2027,20 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: hkt01.pqs-vds.lay168.net
+      Host: cdn.bootcdn.net
+  -
+    name: '香港HKT01 中继E | 原生 1.5x'
+    type: vmess
+    server: in05.ddns168.com
+    port: 61033
+    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
+    alterId: 2
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /hls
+    ws-headers:
+      Host: cdn.bootcdn.net
   -
     name: '香港HKT01 香港转发 | 原生 1.5x'
     type: vmess
@@ -1835,9 +2053,9 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: hkt01.pqs-vds.lay168.net
+      Host: cdn.bootcdn.net
   -
-    name: '马来西亚01 广州移动1 | 原生 1.5x'
+    name: '马来西亚01 中继A | 原生 1.5x'
     type: vmess
     server: in01.ddns168.com
     port: 61040
@@ -1848,9 +2066,9 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: my01.shinjiru.jinkela.icu
+      Host: cdn.bootcdn.net
   -
-    name: '马来西亚01 广州移动2 | 原生 1.5x'
+    name: '马来西亚01 中继B | 原生 1.5x'
     type: vmess
     server: in02.ddns168.com
     port: 61040
@@ -1861,22 +2079,9 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: my01.shinjiru.jinkela.icu
+      Host: cdn.bootcdn.net
   -
-    name: '马来西亚01 杭州联通 | 原生 1.5x'
-    type: vmess
-    server: in05.ddns168.com
-    port: 61040
-    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /hls
-    ws-headers:
-      Host: my01.shinjiru.jinkela.icu
-  -
-    name: '马来西亚01 江西电信CN2 | 原生 1.5x'
+    name: '马来西亚01 中继C | 原生 1.5x'
     type: vmess
     server: in03.ddns168.com
     port: 61040
@@ -1887,7 +2092,20 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: my01.shinjiru.jinkela.icu
+      Host: cdn.bootcdn.net
+  -
+    name: '马来西亚01 中继E | 原生 1.5x'
+    type: vmess
+    server: in05.ddns168.com
+    port: 61040
+    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
+    alterId: 2
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /hls
+    ws-headers:
+      Host: cdn.bootcdn.net
   -
     name: '马来西亚01 香港转发 | 原生 1.5x'
     type: vmess
@@ -1900,156 +2118,174 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: my01.shinjiru.jinkela.icu
+      Host: cdn.bootcdn.net
 proxy-groups:
   -
     name: '🍃 JINKELA'
     type: select
     proxies:
       - '⭐️ 自动选择'
-      - 'IEPL专线 粤新03 入#1 | 6x NF'
-      - 'IEPL专线 粤日04 入#1 | 6x NF'
-      - 'IEPL专线 粤港03 入#1 | 6x NF'
-      - 'IEPL专线 粤美02 入#1 | 6x NF'
-      - '俄罗斯01 广州移动2 | 冷门 1.5x'
-      - '俄罗斯01 杭州联通 | 冷门 1.5x'
-      - '俄罗斯01 江西电信CN2 | 冷门 1.5x'
-      - '俄罗斯01 镇江联通 | 冷门 1.5x'
-      - '俄罗斯04 广州移动1 | 冷门 1.3x'
-      - '俄罗斯04 广州移动2 | 冷门 1.3x'
-      - '俄罗斯04 杭州联通 | 冷门 1.3x'
-      - '俄罗斯04 江西电信CN2 | 冷门 1.3x'
-      - '俄罗斯04 镇江联通 | 冷门 1.3x'
-      - '印度01 广州移动1 | 1.5x'
-      - '印度01 广州移动2 | 1.5x'
-      - '印度01 杭州联通 | 1.5x'
-      - '印度01 江西电信CN2 | 1.5x'
-      - '印度01 镇江联通 | 1.5x'
+      - 'IEPL专线 粤新03 | 4x NF'
+      - 'IEPL专线 粤日04 | 4x NF'
+      - 'IEPL专线 粤港03 | 4x NF'
+      - 'IEPL专线 粤美02 | 4x NF'
+      - '俄罗斯01 中继B | 冷门 1.5x'
+      - '俄罗斯01 中继C | 冷门 1.5x'
+      - '俄罗斯01 中继D | 冷门 1.5x'
+      - '俄罗斯01 中继E | 冷门 1.5x'
+      - '俄罗斯04 中继A | 冷门 1.3x'
+      - '俄罗斯04 中继B | 冷门 1.3x'
+      - '俄罗斯04 中继C | 冷门 1.3x'
+      - '俄罗斯04 中继D | 冷门 1.3x'
+      - '俄罗斯04 中继E | 冷门 1.3x'
+      - '印度01 中继A | 1.5x'
+      - '印度01 中继B | 1.5x'
+      - '印度01 中继C | 1.5x'
+      - '印度01 中继D | 1.5x'
+      - '印度01 中继E | 1.5x'
       - '印度01 香港转发 | 1.5x'
-      - '台湾02 广州移动1 | 原生 1.5x'
-      - '台湾02 广州移动2 | 原生 1.5x'
-      - '台湾02 杭州联通 | 原生 1.5x'
-      - '台湾02 江西电信CN2 | 原生 1.5x'
-      - '台湾02 镇江联通 | 原生 1.5x'
+      - '台湾01 中继A | 原生 1.5x'
+      - '台湾01 中继B | 原生 1.5x'
+      - '台湾01 中继C | 原生 1.5x'
+      - '台湾01 中继D | 原生 1.5x'
+      - '台湾01 中继E | 原生 1.5x'
+      - '台湾02 中继A | 原生 1.5x'
+      - '台湾02 中继B | 原生 1.5x'
+      - '台湾02 中继C | 原生 1.5x'
+      - '台湾02 中继D | 原生 1.5x'
+      - '台湾02 中继E | 原生 1.5x'
       - '台湾02 香港转发 | 原生 1.5x'
-      - '土耳其01 广州移动1 | 冷门 2.0x'
-      - '土耳其01 广州移动2 | 冷门 2.0x'
-      - '土耳其01 江西电信CN2 | 冷门 2.0x'
-      - '土耳其01 镇江联通 | 冷门 2.0x'
+      - '土耳其01 中继A | 冷门 2.0x'
+      - '土耳其01 中继B | 冷门 2.0x'
+      - '土耳其01 中继C | 冷门 2.0x'
+      - '土耳其01 中继D | 冷门 2.0x'
       - '土耳其01 香港转发 | 冷门 2.0x'
-      - 官网开全局jinkela.wtf-德国CDN-免费白嫖-x0.5倍率
-      - '巴西01 广州移动1 | 冷门 3.0x'
-      - '巴西01 广州移动2 | 冷门 3.0x'
-      - '巴西01 江西电信CN2 | 冷门 3.0x'
+      - '巴西01 中继A | 冷门 3.0x'
+      - '巴西01 中继B | 冷门 3.0x'
+      - '巴西01 中继C | 冷门 3.0x'
       - '巴西01 香港转发 | 冷门 3.0x'
-      - '德国01 广州移动1 | 冷门 1.2x'
-      - '德国01 广州移动2 | 冷门 1.2x'
-      - '德国01 杭州联通 | 冷门 1.2x'
-      - '德国01 江西电信CN2 | 冷门 1.2x'
+      - '德国01 中继A | 冷门 1.2x'
+      - '德国01 中继B | 冷门 1.2x'
+      - '德国01 中继C | 冷门 1.2x'
+      - '德国01 中继E | 冷门 1.2x'
       - '德国01 香港转发 | 冷门 1.2x'
-      - '新加坡01 广州移动1 | 原生 1.5x'
-      - '新加坡01 广州移动2 | 原生 1.5x'
-      - '新加坡01 杭州联通 | 原生 1.5x'
-      - '新加坡01 江西电信CN2 | 原生 1.5x'
-      - '新加坡01 镇江联通 | 原生 1.5x'
+      - '新加坡01 中继A | 原生 1.5x'
+      - '新加坡01 中继B | 原生 1.5x'
+      - '新加坡01 中继C | 原生 1.5x'
+      - '新加坡01 中继D | 原生 1.5x'
+      - '新加坡01 中继E | 原生 1.5x'
       - '新加坡01 香港转发 | 原生 1.5x'
-      - '新加坡02 广州移动1 | 原生 1.5x'
-      - '新加坡02 广州移动2 | 原生 1.5x'
-      - '新加坡02 杭州联通 | 原生 1.5x'
-      - '新加坡02 江西电信CN2 | 原生 1.5x'
-      - '新加坡02 镇江联通 | 原生 1.5x'
-      - '新加坡04 广州移动1 | NF 1.5x'
-      - '新加坡04 广州移动2 | NF 1.5x'
-      - '新加坡04 杭州联通 | NF 1.5x'
-      - '新加坡04 江西电信CN2 | NF 1.5x'
-      - '新加坡04 镇江联通 | NF 1.5x'
-      - '日本01 广州移动1 | NF 1.5x'
-      - '日本01 广州移动2 | NF 1.5x'
-      - '日本01 杭州联通 | NF 1.5x'
-      - '日本01 江西电信CN2 | NF 1.5x'
-      - '日本01 镇江联通 | NF 1.5x'
-      - '日本02 广州移动1 | NF 1.5x'
-      - '日本02 广州移动2 | NF 1.5x'
-      - '日本02 杭州联通 | NF 1.5x'
-      - '日本02 江西电信CN2 | NF 1.5x'
-      - '日本02 镇江联通 | NF 1.5x'
-      - '日本03 广州移动1 | NF 1.5x'
-      - '日本03 广州移动2 | NF 1.5x'
-      - '日本03 杭州联通 | NF 1.5x'
-      - '日本03 江西电信CN2 | NF 1.5x'
-      - '日本03 镇江联通 | NF 1.5x'
-      - '波兰01 广州移动1 | 冷门 1.2x'
-      - '波兰01 广州移动2 | 冷门 1.2x'
-      - '波兰01 江西电信CN2 | 冷门 1.2x'
-      - '波兰01 镇江联通 | 冷门 1.2x'
+      - '新加坡02 中继A | 1.5x'
+      - '新加坡02 中继B | 1.5x'
+      - '新加坡02 中继C | 1.5x'
+      - '新加坡02 中继D | 1.5x'
+      - '新加坡02 中继E | 1.5x'
+      - '新加坡04 中继A | NF 1.5x'
+      - '新加坡04 中继B | NF 1.5x'
+      - '新加坡04 中继C | NF 1.5x'
+      - '新加坡04 中继D | NF 1.5x'
+      - '新加坡04 中继E | NF 1.5x'
+      - '新加坡11 AWS直连 速度随缘 0.5x'
+      - "新加坡11 AWS直连AGA 速度随缘 0.5x\t"
+      - '日本01 中继A | NF 1.5x'
+      - '日本01 中继B | NF 1.5x'
+      - '日本01 中继C | NF 1.5x'
+      - '日本01 中继D | NF 1.5x'
+      - '日本01 中继E | NF 1.5x'
+      - '日本02 中继A | NF 1.5x'
+      - '日本02 中继B | NF 1.5x'
+      - '日本02 中继C | NF 1.5x'
+      - '日本02 中继D | NF 1.5x'
+      - '日本02 中继E | NF 1.5x'
+      - '日本03 中继A | NF 1.5x'
+      - '日本03 中继B | NF 1.5x'
+      - '日本03 中继C | NF 1.5x'
+      - '日本03 中继D | NF 1.5x'
+      - '日本03 中继E | NF 1.5x'
+      - '波兰01 中继A | 冷门 1.2x'
+      - '波兰01 中继B | 冷门 1.2x'
+      - '波兰01 中继C | 冷门 1.2x'
+      - '波兰01 中继D | 冷门 1.2x'
       - '波兰01 香港转发 | 冷门 1.2x'
-      - '澳洲01 广州移动1 | 冷门 1.5x'
-      - '澳洲01 广州移动2 | 冷门 1.5x'
-      - '澳洲01 杭州联通 | 冷门 1.5x'
-      - '澳洲01 江西电信CN2 | 冷门 1.5x'
+      - '澳洲01 中继A | 冷门 1.5x'
+      - '澳洲01 中继B | 冷门 1.5x'
+      - '澳洲01 中继C | 冷门 1.5x'
+      - '澳洲01 中继E | 冷门 1.5x'
       - '澳洲01 香港转发 | 冷门 1.5x'
-      - '美国01 广州移动1 | NF 1.5x'
-      - '美国01 广州移动2 | NF 1.5x'
-      - '美国01 杭州联通 | NF 1.5x'
-      - '美国01 江西电信CN2 | NF 1.5x'
-      - '美国01 镇江联通| NF 1.5x'
-      - '美国03 广州移动1 | 原生 1.5x'
-      - '美国03 广州移动2 | 原生 1.5x'
-      - '美国03 杭州联通 | 原生 1.5x'
-      - '美国03 香港转发 | 原生 1.5x'
-      - '美国04 广州移动1 | 备用 1.3x'
-      - '美国04 广州移动2 | 备用 1.3x'
-      - '美国04 江西电信CN2 | 备用 1.3x'
-      - '美国04 镇江联通 | 备用 1.3x'
-      - '英国01 广州移动1 | NF BBC Chan4 1.5x'
-      - '英国01 广州移动2 | NF BBC Chan4 1.5x'
-      - '英国01 江西电信CN2 | NF BBC Chan4 1.5x'
-      - '英国01 镇江联通 | NF BBC Chan4 1.5x'
+      - '美国01 中继A | NF 1.5x'
+      - '美国01 中继B | NF 1.5x'
+      - '美国01 中继C | NF 1.5x'
+      - '美国01 中继D| NF 1.5x'
+      - '美国01 中继E | NF 1.5x'
+      - '美国03 中继A | 1.5x'
+      - '美国03 中继B | 1.5x'
+      - '美国03 中继C | 1.5x'
+      - '美国03 中继D | 1.5x'
+      - '美国03 中继E | 1.5x'
+      - '美国03 香港转发 | 1.5x'
+      - '美国04 中继A | 备用 1.3x'
+      - '美国04 中继B | 备用 1.3x'
+      - '美国04 中继C | 备用 1.3x'
+      - '美国04 中继D | 备用 1.3x'
+      - '英国01 中继A | NF BBC Chan4 1.5x'
+      - '英国01 中继B | NF BBC Chan4 1.5x'
+      - '英国01 中继C | NF BBC Chan4 1.5x'
+      - '英国01 中继D | NF BBC Chan4 1.5x'
       - '英国01 香港转发 | NF BBC Chan4 1.5x'
-      - '荷兰01 广州移动1 | 冷门 1.2x'
-      - '荷兰01 广州移动2 | 冷门 1.2x'
-      - '荷兰01 杭州联通 | 冷门 1.2x'
-      - '荷兰01 江西电信CN2 | 冷门 1.2x'
+      - '荷兰01 中继A | 冷门 1.2x'
+      - '荷兰01 中继B | 冷门 1.2x'
+      - '荷兰01 中继C | 冷门 1.2x'
+      - '荷兰01 中继E | 冷门 1.2x'
       - '荷兰01 香港转发 | 冷门 1.2x'
-      - '阿根廷01 广州移动1 | 冷门 低速 5.0x'
-      - '阿根廷01 广州移动2 | 冷门 低速 5.0x'
-      - '阿根廷01 江西电信CN2 | 冷门 低速 5.0x'
+      - '阿根廷01 中继A | 冷门 低速 5.0x'
+      - '阿根廷01 中继B | 冷门 低速 5.0x'
+      - '阿根廷01 中继C | 冷门 低速 5.0x'
       - '阿根廷01 香港转发 | 冷门 低速 5.0x'
-      - '韩国01 广州移动1 | 1.5x'
-      - '韩国01 广州移动2 | 1.5x'
-      - '韩国01 杭州联通 | 1.5x'
-      - '韩国01 镇江联通 | 1.5x'
-      - '韩国01 香港转发 | 1.5x'
-      - '香港01 广州移动1 | NF 1.5x'
-      - '香港01 广州移动2 | NF 1.5x'
-      - '香港01 杭州联通 | NF 1.5x'
-      - '香港01 江西电信CN2 | NF 1.5x'
-      - '香港01 镇江联通 | NF 1.5x'
-      - '香港02 广州移动1 | NF 1.5x'
-      - '香港02 广州移动2 | NF 1.5x'
-      - '香港02 杭州联通 | NF 1.5x'
-      - '香港02 江西电信CN2 | NF 1.5x'
-      - '香港02 镇江联通 | NF 1.5x'
-      - '香港03 广州移动1 | NF 1.5x'
-      - '香港03 广州移动2 | NF 1.5x'
-      - '香港03 杭州联通 | NF 1.5x'
-      - '香港03 江西电信CN2 | NF 1.5x'
-      - '香港03 镇江联通 | NF 1.5x'
-      - '香港HGC01 广州移动1 | 原生 1.5x'
-      - '香港HGC01 广州移动2 | 原生 1.5x'
-      - '香港HGC01 杭州联通 | 原生 1.5x'
-      - '香港HGC01 江西电信CN2 | 原生 1.5x'
-      - '香港HGC01 镇江联通 | 原生 1.5x'
+      - '韩国01 中继A | 1.5x'
+      - '韩国01 中继B | 1.5x'
+      - '韩国01 中继D | 1.5x'
+      - '韩国01 中继E | 1.5x'
+      - '韩国11 AWS直连 速度随缘 0.5x'
+      - '韩国11 AWS直连AGA 速度随缘 0.5x'
+      - '香港01 中继A | NF 1.5x '
+      - '香港01 中继B | NF 1.5x '
+      - '香港01 中继C | NF 1.5x '
+      - '香港01 中继D | NF 1.5x '
+      - '香港01 中继E | NF 1.5x '
+      - '香港02 中继A | NF 1.5x '
+      - '香港02 中继B | NF 1.5x '
+      - '香港02 中继C | NF 1.5x '
+      - '香港02 中继D | NF 1.5x '
+      - '香港02 中继E | NF 1.5x '
+      - '香港03 中继A | NF 1.5x'
+      - '香港03 中继B | NF 1.5x'
+      - '香港03 中继C | NF 1.5x'
+      - '香港03 中继D | NF 1.5x'
+      - '香港03 中继E | NF 1.5x'
+      - '香港04 中继A | NF 1.5x'
+      - '香港04 中继B | NF 1.5x'
+      - '香港04 中继C | NF 1.5x'
+      - '香港04 中继D | NF 1.5x'
+      - '香港04 中继E | NF 1.5x'
+      - '香港11 AWS直连 速度随缘 0.5x'
+      - '香港11 AWS直连AGA 速度随缘 0.5x'
+      - '香港12 AWS直连 速度随缘'
+      - '香港12 AWS直连AGA 速度随缘 0.5x'
+      - '香港HGC01 中继A | 原生 1.5x'
+      - '香港HGC01 中继B | 原生 1.5x'
+      - '香港HGC01 中继C | 原生 1.5x'
+      - '香港HGC01 中继D | 原生 1.5x'
+      - '香港HGC01 中继E | 原生 1.5x'
       - '香港HGC01 香港转发 | 原生 1.5x'
-      - '香港HKT01 广州移动1 | 原生 1.5x'
-      - '香港HKT01 广州移动2 | 原生 1.5x'
-      - '香港HKT01 杭州联通 | 原生 1.5x'
-      - '香港HKT01 江西电信CN2 | 原生 1.5x'
+      - '香港HKT01 中继A | 原生 1.5x'
+      - '香港HKT01 中继B | 原生 1.5x'
+      - '香港HKT01 中继C | 原生 1.5x'
+      - '香港HKT01 中继E | 原生 1.5x'
       - '香港HKT01 香港转发 | 原生 1.5x'
-      - '马来西亚01 广州移动1 | 原生 1.5x'
-      - '马来西亚01 广州移动2 | 原生 1.5x'
-      - '马来西亚01 杭州联通 | 原生 1.5x'
-      - '马来西亚01 江西电信CN2 | 原生 1.5x'
+      - '马来西亚01 中继A | 原生 1.5x'
+      - '马来西亚01 中继B | 原生 1.5x'
+      - '马来西亚01 中继C | 原生 1.5x'
+      - '马来西亚01 中继E | 原生 1.5x'
       - '马来西亚01 香港转发 | 原生 1.5x'
   -
     name: '🍂 国内网络'
@@ -2067,132 +2303,150 @@ proxy-groups:
     name: '⭐️ 自动选择'
     type: url-test
     proxies:
-      - '俄罗斯01 广州移动2 | 冷门 1.5x'
-      - '俄罗斯01 杭州联通 | 冷门 1.5x'
-      - '俄罗斯01 江西电信CN2 | 冷门 1.5x'
-      - '俄罗斯01 镇江联通 | 冷门 1.5x'
-      - '俄罗斯04 广州移动1 | 冷门 1.3x'
-      - '俄罗斯04 广州移动2 | 冷门 1.3x'
-      - '俄罗斯04 杭州联通 | 冷门 1.3x'
-      - '俄罗斯04 江西电信CN2 | 冷门 1.3x'
-      - '俄罗斯04 镇江联通 | 冷门 1.3x'
-      - '印度01 广州移动1 | 1.5x'
-      - '印度01 广州移动2 | 1.5x'
-      - '印度01 杭州联通 | 1.5x'
-      - '印度01 江西电信CN2 | 1.5x'
-      - '印度01 镇江联通 | 1.5x'
+      - '俄罗斯01 中继B | 冷门 1.5x'
+      - '俄罗斯01 中继C | 冷门 1.5x'
+      - '俄罗斯01 中继D | 冷门 1.5x'
+      - '俄罗斯01 中继E | 冷门 1.5x'
+      - '俄罗斯04 中继A | 冷门 1.3x'
+      - '俄罗斯04 中继B | 冷门 1.3x'
+      - '俄罗斯04 中继C | 冷门 1.3x'
+      - '俄罗斯04 中继D | 冷门 1.3x'
+      - '俄罗斯04 中继E | 冷门 1.3x'
+      - '印度01 中继A | 1.5x'
+      - '印度01 中继B | 1.5x'
+      - '印度01 中继C | 1.5x'
+      - '印度01 中继D | 1.5x'
+      - '印度01 中继E | 1.5x'
       - '印度01 香港转发 | 1.5x'
-      - '台湾02 广州移动1 | 原生 1.5x'
-      - '台湾02 广州移动2 | 原生 1.5x'
-      - '台湾02 杭州联通 | 原生 1.5x'
-      - '台湾02 江西电信CN2 | 原生 1.5x'
-      - '台湾02 镇江联通 | 原生 1.5x'
+      - '台湾01 中继A | 原生 1.5x'
+      - '台湾01 中继B | 原生 1.5x'
+      - '台湾01 中继C | 原生 1.5x'
+      - '台湾01 中继D | 原生 1.5x'
+      - '台湾01 中继E | 原生 1.5x'
+      - '台湾02 中继A | 原生 1.5x'
+      - '台湾02 中继B | 原生 1.5x'
+      - '台湾02 中继C | 原生 1.5x'
+      - '台湾02 中继D | 原生 1.5x'
+      - '台湾02 中继E | 原生 1.5x'
       - '台湾02 香港转发 | 原生 1.5x'
-      - 官网开全局jinkela.wtf-德国CDN-免费白嫖-x0.5倍率
-      - '德国01 广州移动1 | 冷门 1.2x'
-      - '德国01 广州移动2 | 冷门 1.2x'
-      - '德国01 杭州联通 | 冷门 1.2x'
-      - '德国01 江西电信CN2 | 冷门 1.2x'
+      - '德国01 中继A | 冷门 1.2x'
+      - '德国01 中继B | 冷门 1.2x'
+      - '德国01 中继C | 冷门 1.2x'
+      - '德国01 中继E | 冷门 1.2x'
       - '德国01 香港转发 | 冷门 1.2x'
-      - '新加坡01 广州移动1 | 原生 1.5x'
-      - '新加坡01 广州移动2 | 原生 1.5x'
-      - '新加坡01 杭州联通 | 原生 1.5x'
-      - '新加坡01 江西电信CN2 | 原生 1.5x'
-      - '新加坡01 镇江联通 | 原生 1.5x'
+      - '新加坡01 中继A | 原生 1.5x'
+      - '新加坡01 中继B | 原生 1.5x'
+      - '新加坡01 中继C | 原生 1.5x'
+      - '新加坡01 中继D | 原生 1.5x'
+      - '新加坡01 中继E | 原生 1.5x'
       - '新加坡01 香港转发 | 原生 1.5x'
-      - '新加坡02 广州移动1 | 原生 1.5x'
-      - '新加坡02 广州移动2 | 原生 1.5x'
-      - '新加坡02 杭州联通 | 原生 1.5x'
-      - '新加坡02 江西电信CN2 | 原生 1.5x'
-      - '新加坡02 镇江联通 | 原生 1.5x'
-      - '新加坡04 广州移动1 | NF 1.5x'
-      - '新加坡04 广州移动2 | NF 1.5x'
-      - '新加坡04 杭州联通 | NF 1.5x'
-      - '新加坡04 江西电信CN2 | NF 1.5x'
-      - '新加坡04 镇江联通 | NF 1.5x'
-      - '日本01 广州移动1 | NF 1.5x'
-      - '日本01 广州移动2 | NF 1.5x'
-      - '日本01 杭州联通 | NF 1.5x'
-      - '日本01 江西电信CN2 | NF 1.5x'
-      - '日本01 镇江联通 | NF 1.5x'
-      - '日本02 广州移动1 | NF 1.5x'
-      - '日本02 广州移动2 | NF 1.5x'
-      - '日本02 杭州联通 | NF 1.5x'
-      - '日本02 江西电信CN2 | NF 1.5x'
-      - '日本02 镇江联通 | NF 1.5x'
-      - '日本03 广州移动1 | NF 1.5x'
-      - '日本03 广州移动2 | NF 1.5x'
-      - '日本03 杭州联通 | NF 1.5x'
-      - '日本03 江西电信CN2 | NF 1.5x'
-      - '日本03 镇江联通 | NF 1.5x'
-      - '波兰01 广州移动1 | 冷门 1.2x'
-      - '波兰01 广州移动2 | 冷门 1.2x'
-      - '波兰01 江西电信CN2 | 冷门 1.2x'
-      - '波兰01 镇江联通 | 冷门 1.2x'
+      - '新加坡02 中继A | 1.5x'
+      - '新加坡02 中继B | 1.5x'
+      - '新加坡02 中继C | 1.5x'
+      - '新加坡02 中继D | 1.5x'
+      - '新加坡02 中继E | 1.5x'
+      - '新加坡04 中继A | NF 1.5x'
+      - '新加坡04 中继B | NF 1.5x'
+      - '新加坡04 中继C | NF 1.5x'
+      - '新加坡04 中继D | NF 1.5x'
+      - '新加坡04 中继E | NF 1.5x'
+      - '新加坡11 AWS直连 速度随缘 0.5x'
+      - "新加坡11 AWS直连AGA 速度随缘 0.5x\t"
+      - '日本01 中继A | NF 1.5x'
+      - '日本01 中继B | NF 1.5x'
+      - '日本01 中继C | NF 1.5x'
+      - '日本01 中继D | NF 1.5x'
+      - '日本01 中继E | NF 1.5x'
+      - '日本02 中继A | NF 1.5x'
+      - '日本02 中继B | NF 1.5x'
+      - '日本02 中继C | NF 1.5x'
+      - '日本02 中继D | NF 1.5x'
+      - '日本02 中继E | NF 1.5x'
+      - '日本03 中继A | NF 1.5x'
+      - '日本03 中继B | NF 1.5x'
+      - '日本03 中继C | NF 1.5x'
+      - '日本03 中继D | NF 1.5x'
+      - '日本03 中继E | NF 1.5x'
+      - '波兰01 中继A | 冷门 1.2x'
+      - '波兰01 中继B | 冷门 1.2x'
+      - '波兰01 中继C | 冷门 1.2x'
+      - '波兰01 中继D | 冷门 1.2x'
       - '波兰01 香港转发 | 冷门 1.2x'
-      - '澳洲01 广州移动1 | 冷门 1.5x'
-      - '澳洲01 广州移动2 | 冷门 1.5x'
-      - '澳洲01 杭州联通 | 冷门 1.5x'
-      - '澳洲01 江西电信CN2 | 冷门 1.5x'
+      - '澳洲01 中继A | 冷门 1.5x'
+      - '澳洲01 中继B | 冷门 1.5x'
+      - '澳洲01 中继C | 冷门 1.5x'
+      - '澳洲01 中继E | 冷门 1.5x'
       - '澳洲01 香港转发 | 冷门 1.5x'
-      - '美国01 广州移动1 | NF 1.5x'
-      - '美国01 广州移动2 | NF 1.5x'
-      - '美国01 杭州联通 | NF 1.5x'
-      - '美国01 江西电信CN2 | NF 1.5x'
-      - '美国01 镇江联通| NF 1.5x'
-      - '美国03 广州移动1 | 原生 1.5x'
-      - '美国03 广州移动2 | 原生 1.5x'
-      - '美国03 杭州联通 | 原生 1.5x'
-      - '美国03 香港转发 | 原生 1.5x'
-      - '美国04 广州移动1 | 备用 1.3x'
-      - '美国04 广州移动2 | 备用 1.3x'
-      - '美国04 江西电信CN2 | 备用 1.3x'
-      - '美国04 镇江联通 | 备用 1.3x'
-      - '英国01 广州移动1 | NF BBC Chan4 1.5x'
-      - '英国01 广州移动2 | NF BBC Chan4 1.5x'
-      - '英国01 江西电信CN2 | NF BBC Chan4 1.5x'
-      - '英国01 镇江联通 | NF BBC Chan4 1.5x'
+      - '美国01 中继A | NF 1.5x'
+      - '美国01 中继B | NF 1.5x'
+      - '美国01 中继C | NF 1.5x'
+      - '美国01 中继D| NF 1.5x'
+      - '美国01 中继E | NF 1.5x'
+      - '美国03 中继A | 1.5x'
+      - '美国03 中继B | 1.5x'
+      - '美国03 中继C | 1.5x'
+      - '美国03 中继D | 1.5x'
+      - '美国03 中继E | 1.5x'
+      - '美国03 香港转发 | 1.5x'
+      - '美国04 中继A | 备用 1.3x'
+      - '美国04 中继B | 备用 1.3x'
+      - '美国04 中继C | 备用 1.3x'
+      - '美国04 中继D | 备用 1.3x'
+      - '英国01 中继A | NF BBC Chan4 1.5x'
+      - '英国01 中继B | NF BBC Chan4 1.5x'
+      - '英国01 中继C | NF BBC Chan4 1.5x'
+      - '英国01 中继D | NF BBC Chan4 1.5x'
       - '英国01 香港转发 | NF BBC Chan4 1.5x'
-      - '荷兰01 广州移动1 | 冷门 1.2x'
-      - '荷兰01 广州移动2 | 冷门 1.2x'
-      - '荷兰01 杭州联通 | 冷门 1.2x'
-      - '荷兰01 江西电信CN2 | 冷门 1.2x'
+      - '荷兰01 中继A | 冷门 1.2x'
+      - '荷兰01 中继B | 冷门 1.2x'
+      - '荷兰01 中继C | 冷门 1.2x'
+      - '荷兰01 中继E | 冷门 1.2x'
       - '荷兰01 香港转发 | 冷门 1.2x'
-      - '韩国01 广州移动1 | 1.5x'
-      - '韩国01 广州移动2 | 1.5x'
-      - '韩国01 杭州联通 | 1.5x'
-      - '韩国01 镇江联通 | 1.5x'
-      - '韩国01 香港转发 | 1.5x'
-      - '香港01 广州移动1 | NF 1.5x'
-      - '香港01 广州移动2 | NF 1.5x'
-      - '香港01 杭州联通 | NF 1.5x'
-      - '香港01 江西电信CN2 | NF 1.5x'
-      - '香港01 镇江联通 | NF 1.5x'
-      - '香港02 广州移动1 | NF 1.5x'
-      - '香港02 广州移动2 | NF 1.5x'
-      - '香港02 杭州联通 | NF 1.5x'
-      - '香港02 江西电信CN2 | NF 1.5x'
-      - '香港02 镇江联通 | NF 1.5x'
-      - '香港03 广州移动1 | NF 1.5x'
-      - '香港03 广州移动2 | NF 1.5x'
-      - '香港03 杭州联通 | NF 1.5x'
-      - '香港03 江西电信CN2 | NF 1.5x'
-      - '香港03 镇江联通 | NF 1.5x'
-      - '香港HGC01 广州移动1 | 原生 1.5x'
-      - '香港HGC01 广州移动2 | 原生 1.5x'
-      - '香港HGC01 杭州联通 | 原生 1.5x'
-      - '香港HGC01 江西电信CN2 | 原生 1.5x'
-      - '香港HGC01 镇江联通 | 原生 1.5x'
+      - '韩国01 中继A | 1.5x'
+      - '韩国01 中继B | 1.5x'
+      - '韩国01 中继D | 1.5x'
+      - '韩国01 中继E | 1.5x'
+      - '韩国11 AWS直连 速度随缘 0.5x'
+      - '韩国11 AWS直连AGA 速度随缘 0.5x'
+      - '香港01 中继A | NF 1.5x '
+      - '香港01 中继B | NF 1.5x '
+      - '香港01 中继C | NF 1.5x '
+      - '香港01 中继D | NF 1.5x '
+      - '香港01 中继E | NF 1.5x '
+      - '香港02 中继A | NF 1.5x '
+      - '香港02 中继B | NF 1.5x '
+      - '香港02 中继C | NF 1.5x '
+      - '香港02 中继D | NF 1.5x '
+      - '香港02 中继E | NF 1.5x '
+      - '香港03 中继A | NF 1.5x'
+      - '香港03 中继B | NF 1.5x'
+      - '香港03 中继C | NF 1.5x'
+      - '香港03 中继D | NF 1.5x'
+      - '香港03 中继E | NF 1.5x'
+      - '香港04 中继A | NF 1.5x'
+      - '香港04 中继B | NF 1.5x'
+      - '香港04 中继C | NF 1.5x'
+      - '香港04 中继D | NF 1.5x'
+      - '香港04 中继E | NF 1.5x'
+      - '香港11 AWS直连 速度随缘 0.5x'
+      - '香港11 AWS直连AGA 速度随缘 0.5x'
+      - '香港12 AWS直连 速度随缘'
+      - '香港12 AWS直连AGA 速度随缘 0.5x'
+      - '香港HGC01 中继A | 原生 1.5x'
+      - '香港HGC01 中继B | 原生 1.5x'
+      - '香港HGC01 中继C | 原生 1.5x'
+      - '香港HGC01 中继D | 原生 1.5x'
+      - '香港HGC01 中继E | 原生 1.5x'
       - '香港HGC01 香港转发 | 原生 1.5x'
-      - '香港HKT01 广州移动1 | 原生 1.5x'
-      - '香港HKT01 广州移动2 | 原生 1.5x'
-      - '香港HKT01 杭州联通 | 原生 1.5x'
-      - '香港HKT01 江西电信CN2 | 原生 1.5x'
+      - '香港HKT01 中继A | 原生 1.5x'
+      - '香港HKT01 中继B | 原生 1.5x'
+      - '香港HKT01 中继C | 原生 1.5x'
+      - '香港HKT01 中继E | 原生 1.5x'
       - '香港HKT01 香港转发 | 原生 1.5x'
-      - '马来西亚01 广州移动1 | 原生 1.5x'
-      - '马来西亚01 广州移动2 | 原生 1.5x'
-      - '马来西亚01 杭州联通 | 原生 1.5x'
-      - '马来西亚01 江西电信CN2 | 原生 1.5x'
+      - '马来西亚01 中继A | 原生 1.5x'
+      - '马来西亚01 中继B | 原生 1.5x'
+      - '马来西亚01 中继C | 原生 1.5x'
+      - '马来西亚01 中继E | 原生 1.5x'
       - '马来西亚01 香港转发 | 原生 1.5x'
     url: 'http://www.gstatic.com/generate_204'
     interval: '3600'
