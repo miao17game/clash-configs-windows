@@ -1,36 +1,18 @@
 #!MANAGED-CONFIG https://www.jinkela.site/link/PyGoQIzZBf5SP2S1?clash=1
 
 #---------------------------------------------------#
-## 上次更新于：2021-06-12 03:14:24
+## 上次更新于：2021-08-01 06:47:02
 #---------------------------------------------------#
 
-port: 7890
-socks-port: 7891
-redir-port: 7892
-allow-lan: false
+mixed-port: 7890
+allow-lan: true
 mode: rule
-log-level: silent
+log-level: info
 external-controller: '0.0.0.0:9090'
 secret: ''
-dns:
-  enable: true
-  ipv6: false
-  listen: '0.0.0.0:53'
-  enhanced-mode: fake-ip
-  fake-ip-range: 198.18.0.1/16
-  nameserver:
-    - 119.29.29.29
-    - 'tcp://223.5.5.5'
-  fallback:
-    - 'tls://223.5.5.5:853'
-    - 'https://223.5.5.5/dns-query'
-  fallback-filter:
-    geoip: true
-    ipcidr:
-      - 240.0.0.0/4
 proxies:
   -
-    name: 'IEPL专线 粤新03 | 4x NF'
+    name: 'IEPL专线 新加坡03 | 4x NF'
     type: vmess
     server: iplc01.ddns168.com
     port: 3041
@@ -39,7 +21,16 @@ proxies:
     cipher: auto
     udp: true
   -
-    name: 'IEPL专线 粤日04 | 4x NF'
+    name: 'IEPL专线 新加坡05 | 4x 原生IP'
+    type: vmess
+    server: iplc01.ddns168.com
+    port: 3051
+    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
+    alterId: 2
+    cipher: auto
+    udp: true
+  -
+    name: 'IEPL专线 日本04 | 4x NF'
     type: vmess
     server: iplc01.ddns168.com
     port: 3011
@@ -48,16 +39,7 @@ proxies:
     cipher: auto
     udp: true
   -
-    name: 'IEPL专线 粤港03 | 4x NF'
-    type: vmess
-    server: iplc01.ddns168.com
-    port: 3021
-    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
-    cipher: auto
-    udp: true
-  -
-    name: 'IEPL专线 粤美02 | 4x NF'
+    name: 'IEPL专线 美国02 | 4x NF'
     type: vmess
     server: iplc01.ddns168.com
     port: 3031
@@ -66,122 +48,98 @@ proxies:
     cipher: auto
     udp: true
   -
-    name: '俄罗斯01 中继B | 冷门 1.5x'
+    name: 'IEPL专线 香港HGC02 | 4x 原生IP'
     type: vmess
-    server: in02.ddns168.com
-    port: 61019
+    server: iplc01.ddns168.com
+    port: 3021
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
     cipher: auto
     udp: true
-    network: ws
-    ws-path: /hls
-    ws-headers:
-      Host: cdn.bootcdn.net
   -
-    name: '俄罗斯01 中继C | 冷门 1.5x'
+    name: 'IEPL专线 马来西亚01 | 4x 原生IP'
     type: vmess
-    server: in03.ddns168.com
-    port: 61019
+    server: iplc01.ddns168.com
+    port: 3061
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
+    alterId: 1
     cipher: auto
     udp: true
-    network: ws
-    ws-path: /hls
-    ws-headers:
-      Host: cdn.bootcdn.net
   -
-    name: '俄罗斯01 中继D | 冷门 1.5x'
-    type: vmess
-    server: in04.ddns168.com
-    port: 61019
-    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /hls
-    ws-headers:
-      Host: cdn.bootcdn.net
-  -
-    name: '俄罗斯01 中继E | 冷门 1.5x'
-    type: vmess
-    server: in05.ddns168.com
-    port: 61019
-    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /hls
-    ws-headers:
-      Host: cdn.bootcdn.net
-  -
-    name: '俄罗斯04 中继A | 冷门 1.3x'
+    name: '俄罗斯01 中继A | 冷门 1.2x'
     type: vmess
     server: in01.ddns168.com
-    port: 61048
+    port: 61001
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
+    alterId: 1
     cipher: auto
     udp: true
     network: ws
-    ws-path: /hls
+    ws-path: /jkl
     ws-headers:
-      Host: cdn.bootcdn.net
+      Host: jkl-ru01.covid19.rip
+    tls: true
+    skip-cert-verify: true
   -
-    name: '俄罗斯04 中继B | 冷门 1.3x'
+    name: '俄罗斯01 中继B | 冷门 1.2x'
     type: vmess
     server: in02.ddns168.com
-    port: 61048
+    port: 61001
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
+    alterId: 1
     cipher: auto
     udp: true
     network: ws
-    ws-path: /hls
+    ws-path: /jkl
     ws-headers:
-      Host: cdn.bootcdn.net
+      Host: jkl-ru01.covid19.rip
+    tls: true
+    skip-cert-verify: true
   -
-    name: '俄罗斯04 中继C | 冷门 1.3x'
+    name: '俄罗斯01 中继C | 冷门 1.2x'
     type: vmess
     server: in03.ddns168.com
-    port: 61048
+    port: 61001
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
+    alterId: 1
     cipher: auto
     udp: true
     network: ws
-    ws-path: /hls
+    ws-path: /jkl
     ws-headers:
-      Host: cdn.bootcdn.net
+      Host: jkl-ru01.covid19.rip
+    tls: true
+    skip-cert-verify: true
   -
-    name: '俄罗斯04 中继D | 冷门 1.3x'
+    name: '俄罗斯01 中继D | 冷门 1.2x'
     type: vmess
     server: in04.ddns168.com
-    port: 61048
+    port: 61001
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
+    alterId: 1
     cipher: auto
     udp: true
     network: ws
-    ws-path: /hls
+    ws-path: /jkl
     ws-headers:
-      Host: cdn.bootcdn.net
+      Host: jkl-ru01.covid19.rip
+    tls: true
+    skip-cert-verify: true
   -
-    name: '俄罗斯04 中继E | 冷门 1.3x'
+    name: '俄罗斯01 中继E | 冷门 1.2x'
     type: vmess
     server: in05.ddns168.com
-    port: 61048
+    port: 61001
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
+    alterId: 1
     cipher: auto
     udp: true
     network: ws
-    ws-path: /hls
+    ws-path: /jkl
     ws-headers:
-      Host: cdn.bootcdn.net
+      Host: jkl-ru01.covid19.rip
+    tls: true
+    skip-cert-verify: true
   -
     name: '印度01 中继A | 1.5x'
     type: vmess
@@ -248,23 +206,10 @@ proxies:
     ws-headers:
       Host: in01.li.jinkela.icu
   -
-    name: '印度01 香港转发 | 1.5x'
-    type: vmess
-    server: hk02.az.lay168.net
-    port: 61051
-    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /hls
-    ws-headers:
-      Host: cdn.bootcdn.net
-  -
     name: '台湾01 中继A | 原生 1.5x'
     type: vmess
     server: in01.ddns168.com
-    port: 61054
+    port: 61002
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
     cipher: auto
@@ -277,7 +222,7 @@ proxies:
     name: '台湾01 中继B | 原生 1.5x'
     type: vmess
     server: in02.ddns168.com
-    port: 61054
+    port: 61002
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
     cipher: auto
@@ -290,7 +235,7 @@ proxies:
     name: '台湾01 中继C | 原生 1.5x'
     type: vmess
     server: in03.ddns168.com
-    port: 61054
+    port: 61002
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
     cipher: auto
@@ -303,7 +248,7 @@ proxies:
     name: '台湾01 中继D | 原生 1.5x'
     type: vmess
     server: in04.ddns168.com
-    port: 61054
+    port: 61002
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
     cipher: auto
@@ -316,7 +261,7 @@ proxies:
     name: '台湾01 中继E | 原生 1.5x'
     type: vmess
     server: in05.ddns168.com
-    port: 61054
+    port: 61002
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
     cipher: auto
@@ -329,7 +274,7 @@ proxies:
     name: '台湾02 中继A | 原生 1.5x'
     type: vmess
     server: in01.ddns168.com
-    port: 61025
+    port: 61057
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
     cipher: auto
@@ -342,7 +287,7 @@ proxies:
     name: '台湾02 中继B | 原生 1.5x'
     type: vmess
     server: in02.ddns168.com
-    port: 61025
+    port: 61057
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
     cipher: auto
@@ -355,7 +300,7 @@ proxies:
     name: '台湾02 中继C | 原生 1.5x'
     type: vmess
     server: in03.ddns168.com
-    port: 61025
+    port: 61057
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
     cipher: auto
@@ -368,7 +313,7 @@ proxies:
     name: '台湾02 中继D | 原生 1.5x'
     type: vmess
     server: in04.ddns168.com
-    port: 61025
+    port: 61057
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
     cipher: auto
@@ -381,7 +326,7 @@ proxies:
     name: '台湾02 中继E | 原生 1.5x'
     type: vmess
     server: in05.ddns168.com
-    port: 61025
+    port: 61057
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
     cipher: auto
@@ -393,8 +338,8 @@ proxies:
   -
     name: '台湾02 香港转发 | 原生 1.5x'
     type: vmess
-    server: hk02.az.lay168.net
-    port: 61025
+    server: hk-routing.in168.net
+    port: 61057
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
     cipher: auto
@@ -409,117 +354,135 @@ proxies:
     server: in01.ddns168.com
     port: 61028
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
+    alterId: 1
     cipher: auto
     udp: true
     network: ws
-    ws-path: /hls
+    ws-path: /jkl
     ws-headers:
-      Host: cdn.bootcdn.net
+      Host: jkl-tr01.covid19.rip
+    tls: true
+    skip-cert-verify: true
   -
     name: '土耳其01 中继B | 冷门 2.0x'
     type: vmess
     server: in02.ddns168.com
     port: 61028
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
+    alterId: 1
     cipher: auto
     udp: true
     network: ws
-    ws-path: /hls
+    ws-path: /jkl
     ws-headers:
-      Host: cdn.bootcdn.net
+      Host: jkl-tr01.covid19.rip
+    tls: true
+    skip-cert-verify: true
   -
     name: '土耳其01 中继C | 冷门 2.0x'
     type: vmess
     server: in03.ddns168.com
     port: 61028
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
+    alterId: 1
     cipher: auto
     udp: true
     network: ws
-    ws-path: /hls
+    ws-path: /jkl
     ws-headers:
-      Host: cdn.bootcdn.net
+      Host: jkl-tr01.covid19.rip
+    tls: true
+    skip-cert-verify: true
   -
     name: '土耳其01 中继D | 冷门 2.0x'
     type: vmess
     server: in04.ddns168.com
     port: 61028
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
+    alterId: 1
     cipher: auto
     udp: true
     network: ws
-    ws-path: /hls
+    ws-path: /jkl
     ws-headers:
-      Host: cdn.bootcdn.net
+      Host: jkl-tr01.covid19.rip
+    tls: true
+    skip-cert-verify: true
   -
-    name: '土耳其01 香港转发 | 冷门 2.0x'
-    type: vmess
-    server: hk02.az.lay168.net
-    port: 61028
-    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /hls
-    ws-headers:
-      Host: cdn.bootcdn.net
-  -
-    name: '巴西01 中继A | 冷门 3.0x'
+    name: '巴西01 中继A | 冷门 2.0x'
     type: vmess
     server: in01.ddns168.com
     port: 61041
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 3
+    alterId: 1
     cipher: auto
     udp: true
     network: ws
-    ws-path: /hls
+    ws-path: /jkl
     ws-headers:
-      Host: cdn.bootcdn.net
+      Host: jkl-br01.covid19.rip
+    tls: true
+    skip-cert-verify: true
   -
-    name: '巴西01 中继B | 冷门 3.0x'
+    name: '巴西01 中继B | 冷门 2.0x'
     type: vmess
     server: in02.ddns168.com
     port: 61041
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 3
+    alterId: 1
     cipher: auto
     udp: true
     network: ws
-    ws-path: /hls
+    ws-path: /jkl
     ws-headers:
-      Host: cdn.bootcdn.net
+      Host: jkl-br01.covid19.rip
+    tls: true
+    skip-cert-verify: true
   -
-    name: '巴西01 中继C | 冷门 3.0x'
+    name: '巴西01 中继C | 冷门 2.0x'
     type: vmess
     server: in03.ddns168.com
     port: 61041
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 3
+    alterId: 1
     cipher: auto
     udp: true
     network: ws
-    ws-path: /hls
+    ws-path: /jkl
     ws-headers:
-      Host: cdn.bootcdn.net
+      Host: jkl-br01.covid19.rip
+    tls: true
+    skip-cert-verify: true
   -
-    name: '巴西01 香港转发 | 冷门 3.0x'
+    name: '巴西01 中继D | 冷门 2.0x'
     type: vmess
-    server: hk02.az.lay168.net
+    server: in04.ddns168.com
     port: 61041
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 3
+    alterId: 1
     cipher: auto
     udp: true
     network: ws
-    ws-path: /hls
+    ws-path: /jkl
     ws-headers:
-      Host: cdn.bootcdn.net
+      Host: jkl-br01.covid19.rip
+    tls: true
+    skip-cert-verify: true
+  -
+    name: '巴西01 中继E | 冷门 2.0x'
+    type: vmess
+    server: in05.ddns168.com
+    port: 61041
+    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
+    alterId: 1
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /jkl
+    ws-headers:
+      Host: jkl-br01.covid19.rip
+    tls: true
+    skip-cert-verify: true
   -
     name: '德国01 中继A | 冷门 1.2x'
     type: vmess
@@ -575,7 +538,7 @@ proxies:
   -
     name: '德国01 香港转发 | 冷门 1.2x'
     type: vmess
-    server: hk02.az.lay168.net
+    server: hk-routing.in168.net
     port: 61008
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -591,78 +554,75 @@ proxies:
     server: in01.ddns168.com
     port: 61013
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
+    alterId: 1
     cipher: auto
     udp: true
     network: ws
-    ws-path: /hls
+    ws-path: /jkl
     ws-headers:
-      Host: cdn.bootcdn.net
+      Host: jkl-sg01.covid19.rip
+    tls: true
+    skip-cert-verify: true
   -
     name: '新加坡01 中继B | 原生 1.5x'
     type: vmess
     server: in02.ddns168.com
     port: 61013
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
+    alterId: 1
     cipher: auto
     udp: true
     network: ws
-    ws-path: /hls
+    ws-path: /jkl
     ws-headers:
-      Host: cdn.bootcdn.net
+      Host: jkl-sg01.covid19.rip
+    tls: true
+    skip-cert-verify: true
   -
     name: '新加坡01 中继C | 原生 1.5x'
     type: vmess
     server: in03.ddns168.com
     port: 61013
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
+    alterId: 1
     cipher: auto
     udp: true
     network: ws
-    ws-path: /hls
+    ws-path: /jkl
     ws-headers:
-      Host: cdn.bootcdn.net
+      Host: jkl-sg01.covid19.rip
+    tls: true
+    skip-cert-verify: true
   -
     name: '新加坡01 中继D | 原生 1.5x'
     type: vmess
     server: in04.ddns168.com
     port: 61013
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
+    alterId: 1
     cipher: auto
     udp: true
     network: ws
-    ws-path: /hls
+    ws-path: /jkl
     ws-headers:
-      Host: cdn.bootcdn.net
+      Host: jkl-sg01.covid19.rip
+    tls: true
+    skip-cert-verify: true
   -
     name: '新加坡01 中继E | 原生 1.5x'
     type: vmess
     server: in05.ddns168.com
     port: 61013
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
+    alterId: 1
     cipher: auto
     udp: true
     network: ws
-    ws-path: /hls
+    ws-path: /jkl
     ws-headers:
-      Host: cdn.bootcdn.net
-  -
-    name: '新加坡01 香港转发 | 原生 1.5x'
-    type: vmess
-    server: hk02.az.lay168.net
-    port: 61013
-    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /hls
-    ws-headers:
-      Host: cdn.bootcdn.net
+      Host: jkl-sg01.covid19.rip
+    tls: true
+    skip-cert-verify: true
   -
     name: '新加坡02 中继A | 1.5x'
     type: vmess
@@ -809,7 +769,7 @@ proxies:
   -
     name: "新加坡11 AWS直连AGA 速度随缘 0.5x\t"
     type: vmess
-    server: ab4eb394af0bc9e4a.awsglobalaccelerator.com
+    server: sg11-aga.node168.com
     port: 443
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -825,65 +785,75 @@ proxies:
     server: in01.ddns168.com
     port: 61012
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
+    alterId: 1
     cipher: auto
     udp: true
     network: ws
-    ws-path: /hls
+    ws-path: /jkl
     ws-headers:
-      Host: cdn.bootcdn.net
+      Host: jkl-jp01.covid19.rip
+    tls: true
+    skip-cert-verify: true
   -
     name: '日本01 中继B | NF 1.5x'
     type: vmess
     server: in02.ddns168.com
     port: 61012
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
+    alterId: 1
     cipher: auto
     udp: true
     network: ws
-    ws-path: /hls
+    ws-path: /jkl
     ws-headers:
-      Host: cdn.bootcdn.net
+      Host: jkl-jp01.covid19.rip
+    tls: true
+    skip-cert-verify: true
   -
     name: '日本01 中继C | NF 1.5x'
     type: vmess
     server: in03.ddns168.com
     port: 61012
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
+    alterId: 1
     cipher: auto
     udp: true
     network: ws
-    ws-path: /hls
+    ws-path: /jkl
     ws-headers:
-      Host: cdn.bootcdn.net
+      Host: jkl-jp01.covid19.rip
+    tls: true
+    skip-cert-verify: true
   -
     name: '日本01 中继D | NF 1.5x'
     type: vmess
     server: in04.ddns168.com
     port: 61012
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
+    alterId: 1
     cipher: auto
     udp: true
     network: ws
-    ws-path: /hls
+    ws-path: /jkl
     ws-headers:
-      Host: cdn.bootcdn.net
+      Host: jkl-jp01.covid19.rip
+    tls: true
+    skip-cert-verify: true
   -
     name: '日本01 中继E | NF 1.5x'
     type: vmess
     server: in05.ddns168.com
     port: 61012
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
+    alterId: 1
     cipher: auto
     udp: true
     network: ws
-    ws-path: /hls
+    ws-path: /jkl
     ws-headers:
-      Host: cdn.bootcdn.net
+      Host: jkl-jp01.covid19.rip
+    tls: true
+    skip-cert-verify: true
   -
     name: '日本02 中继A | NF 1.5x'
     type: vmess
@@ -953,59 +923,82 @@ proxies:
     name: '日本03 中继A | NF 1.5x'
     type: vmess
     server: in01.ddns168.com
-    port: 61038
+    port: 61005
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
+    alterId: 1
     cipher: auto
     udp: true
     network: ws
-    ws-path: /hls
+    ws-path: /jkl
     ws-headers:
-      Host: cdn.bootcdn.net
+      Host: jkl-jp03.covid19.rip
+    tls: true
+    skip-cert-verify: true
   -
     name: '日本03 中继B | NF 1.5x'
     type: vmess
     server: in02.ddns168.com
-    port: 61038
+    port: 61005
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
+    alterId: 1
     cipher: auto
     udp: true
     network: ws
-    ws-path: /hls
+    ws-path: /jkl
     ws-headers:
-      Host: cdn.bootcdn.net
+      Host: jkl-jp03.covid19.rip
+    tls: true
+    skip-cert-verify: true
   -
     name: '日本03 中继C | NF 1.5x'
     type: vmess
     server: in03.ddns168.com
-    port: 61038
+    port: 61005
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
+    alterId: 1
     cipher: auto
     udp: true
     network: ws
-    ws-path: /hls
+    ws-path: /jkl
     ws-headers:
-      Host: cdn.bootcdn.net
+      Host: jkl-jp03.covid19.rip
+    tls: true
+    skip-cert-verify: true
   -
     name: '日本03 中继D | NF 1.5x'
     type: vmess
     server: in04.ddns168.com
-    port: 61038
+    port: 61005
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
+    alterId: 1
     cipher: auto
     udp: true
     network: ws
-    ws-path: /hls
+    ws-path: /jkl
     ws-headers:
-      Host: cdn.bootcdn.net
+      Host: jkl-jp03.covid19.rip
+    tls: true
+    skip-cert-verify: true
   -
     name: '日本03 中继E | NF 1.5x'
     type: vmess
     server: in05.ddns168.com
-    port: 61038
+    port: 61005
+    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
+    alterId: 1
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /jkl
+    ws-headers:
+      Host: jkl-jp03.covid19.rip
+    tls: true
+    skip-cert-verify: true
+  -
+    name: '日本11 AWS直连 速度随缘 0.5x'
+    type: vmess
+    server: mugua-jp11-direct.node168.com
+    port: 443
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
     cipher: auto
@@ -1013,72 +1006,95 @@ proxies:
     network: ws
     ws-path: /hls
     ws-headers:
-      Host: cdn.bootcdn.net
+      Host: new.vip.weibo.cn
+  -
+    name: '日本11 AWS直连AGA 速度随缘 0.5x'
+    type: vmess
+    server: jp11-aga.node168.com
+    port: 443
+    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
+    alterId: 2
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /hls
+    ws-headers:
+      Host: new.vip.weibo.cn
   -
     name: '波兰01 中继A | 冷门 1.2x'
     type: vmess
     server: in01.ddns168.com
     port: 61039
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
+    alterId: 1
     cipher: auto
     udp: true
     network: ws
-    ws-path: /hls
+    ws-path: /jkl
     ws-headers:
-      Host: cdn.bootcdn.net
+      Host: jkl-pl01.covid19.rip
+    tls: true
+    skip-cert-verify: true
   -
     name: '波兰01 中继B | 冷门 1.2x'
     type: vmess
     server: in02.ddns168.com
     port: 61039
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
+    alterId: 1
     cipher: auto
     udp: true
     network: ws
-    ws-path: /hls
+    ws-path: /jkl
     ws-headers:
-      Host: cdn.bootcdn.net
+      Host: jkl-pl01.covid19.rip
+    tls: true
+    skip-cert-verify: true
   -
     name: '波兰01 中继C | 冷门 1.2x'
     type: vmess
     server: in03.ddns168.com
     port: 61039
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
+    alterId: 1
     cipher: auto
     udp: true
     network: ws
-    ws-path: /hls
+    ws-path: /jkl
     ws-headers:
-      Host: cdn.bootcdn.net
+      Host: jkl-pl01.covid19.rip
+    tls: true
+    skip-cert-verify: true
   -
     name: '波兰01 中继D | 冷门 1.2x'
     type: vmess
     server: in04.ddns168.com
     port: 61039
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
+    alterId: 1
     cipher: auto
     udp: true
     network: ws
-    ws-path: /hls
+    ws-path: /jkl
     ws-headers:
-      Host: cdn.bootcdn.net
+      Host: jkl-pl01.covid19.rip
+    tls: true
+    skip-cert-verify: true
   -
-    name: '波兰01 香港转发 | 冷门 1.2x'
+    name: '波兰01 中继E | 冷门 1.2x'
     type: vmess
-    server: hk02.az.lay168.net
+    server: in05.ddns168.com
     port: 61039
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
+    alterId: 1
     cipher: auto
     udp: true
     network: ws
-    ws-path: /hls
+    ws-path: /jkl
     ws-headers:
-      Host: cdn.bootcdn.net
+      Host: jkl-pl01.covid19.rip
+    tls: true
+    skip-cert-verify: true
   -
     name: '澳洲01 中继A | 冷门 1.5x'
     type: vmess
@@ -1134,7 +1150,7 @@ proxies:
   -
     name: '澳洲01 香港转发 | 冷门 1.5x'
     type: vmess
-    server: hk02.az.lay168.net
+    server: hk-routing.in168.net
     port: 61035
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -1144,6 +1160,32 @@ proxies:
     ws-path: /hls
     ws-headers:
       Host: cdn.bootcdn.net
+  -
+    name: '澳洲11 AWS直连 速度随缘 0.5x'
+    type: vmess
+    server: mugua-au11-direct.node168.com
+    port: 443
+    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
+    alterId: 2
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /hls
+    ws-headers:
+      Host: new.vip.weibo.cn
+  -
+    name: '澳洲11 AWS直连AGA 速度随缘 0.5x'
+    type: vmess
+    server: au11-aga.node168.com
+    port: 443
+    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
+    alterId: 2
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /hls
+    ws-headers:
+      Host: new.vip.weibo.cn
   -
     name: '美国01 中继A | NF 1.5x'
     type: vmess
@@ -1215,78 +1257,75 @@ proxies:
     server: in01.ddns168.com
     port: 61018
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
+    alterId: 1
     cipher: auto
     udp: true
     network: ws
-    ws-path: /hls
+    ws-path: /jkl
     ws-headers:
-      Host: cdn.bootcdn.net
+      Host: jkl-us03.covid19.rip
+    tls: true
+    skip-cert-verify: true
   -
     name: '美国03 中继B | 1.5x'
     type: vmess
     server: in02.ddns168.com
     port: 61018
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
+    alterId: 1
     cipher: auto
     udp: true
     network: ws
-    ws-path: /hls
+    ws-path: /jkl
     ws-headers:
-      Host: cdn.bootcdn.net
+      Host: jkl-us03.covid19.rip
+    tls: true
+    skip-cert-verify: true
   -
     name: '美国03 中继C | 1.5x'
     type: vmess
     server: in03.ddns168.com
     port: 61018
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
+    alterId: 1
     cipher: auto
     udp: true
     network: ws
-    ws-path: /hls
+    ws-path: /jkl
     ws-headers:
-      Host: cdn.bootcdn.net
+      Host: jkl-us03.covid19.rip
+    tls: true
+    skip-cert-verify: true
   -
     name: '美国03 中继D | 1.5x'
     type: vmess
     server: in04.ddns168.com
     port: 61018
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
+    alterId: 1
     cipher: auto
     udp: true
     network: ws
-    ws-path: /hls
+    ws-path: /jkl
     ws-headers:
-      Host: cdn.bootcdn.net
+      Host: jkl-us03.covid19.rip
+    tls: true
+    skip-cert-verify: true
   -
     name: '美国03 中继E | 1.5x'
     type: vmess
     server: in05.ddns168.com
     port: 61018
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
+    alterId: 1
     cipher: auto
     udp: true
     network: ws
-    ws-path: /hls
+    ws-path: /jkl
     ws-headers:
-      Host: cdn.bootcdn.net
-  -
-    name: '美国03 香港转发 | 1.5x'
-    type: vmess
-    server: hk02.az.lay168.net
-    port: 61018
-    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /hls
-    ws-headers:
-      Host: cdn.bootcdn.net
+      Host: jkl-us03.covid19.rip
+    tls: true
+    skip-cert-verify: true
   -
     name: '美国04 中继A | 备用 1.3x'
     type: vmess
@@ -1394,7 +1433,7 @@ proxies:
   -
     name: '英国01 香港转发 | NF BBC Chan4 1.5x'
     type: vmess
-    server: hk02.az.lay168.net
+    server: hk-routing.in168.net
     port: 61021
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -1408,67 +1447,62 @@ proxies:
     name: '荷兰01 中继A | 冷门 1.2x'
     type: vmess
     server: in01.ddns168.com
-    port: 61037
+    port: 61010
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
+    alterId: 1
     cipher: auto
     udp: true
     network: ws
-    ws-path: /hls
+    ws-path: /jkl
     ws-headers:
-      Host: cdn.bootcdn.net
+      Host: jkl-nl01.covid19.rip
+    tls: true
+    skip-cert-verify: true
   -
     name: '荷兰01 中继B | 冷门 1.2x'
     type: vmess
     server: in02.ddns168.com
-    port: 61037
+    port: 61010
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
+    alterId: 1
     cipher: auto
     udp: true
     network: ws
-    ws-path: /hls
+    ws-path: /jkl
     ws-headers:
-      Host: cdn.bootcdn.net
+      Host: jkl-nl01.covid19.rip
+    tls: true
+    skip-cert-verify: true
   -
     name: '荷兰01 中继C | 冷门 1.2x'
     type: vmess
     server: in03.ddns168.com
-    port: 61037
+    port: 61010
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
+    alterId: 1
     cipher: auto
     udp: true
     network: ws
-    ws-path: /hls
+    ws-path: /jkl
     ws-headers:
-      Host: cdn.bootcdn.net
+      Host: jkl-nl01.covid19.rip
+    tls: true
+    skip-cert-verify: true
   -
     name: '荷兰01 中继E | 冷门 1.2x'
     type: vmess
     server: in05.ddns168.com
-    port: 61037
+    port: 61010
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
+    alterId: 1
     cipher: auto
     udp: true
     network: ws
-    ws-path: /hls
+    ws-path: /jkl
     ws-headers:
-      Host: cdn.bootcdn.net
-  -
-    name: '荷兰01 香港转发 | 冷门 1.2x'
-    type: vmess
-    server: hk02.az.lay168.net
-    port: 61037
-    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /hls
-    ws-headers:
-      Host: cdn.bootcdn.net
+      Host: jkl-nl01.covid19.rip
+    tls: true
+    skip-cert-verify: true
   -
     name: '阿根廷01 中继A | 冷门 低速 5.0x'
     type: vmess
@@ -1511,7 +1545,7 @@ proxies:
   -
     name: '阿根廷01 香港转发 | 冷门 低速 5.0x'
     type: vmess
-    server: hk02.az.lay168.net
+    server: hk-routing.in168.net
     port: 61029
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -1525,54 +1559,62 @@ proxies:
     name: '韩国01 中继A | 1.5x'
     type: vmess
     server: in01.ddns168.com
-    port: 61056
+    port: 61004
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
+    alterId: 1
     cipher: auto
     udp: true
     network: ws
-    ws-path: /hls
+    ws-path: /jkl
     ws-headers:
-      Host: cdn.bootcdn.net
+      Host: jkl-kr01.covid19.rip
+    tls: true
+    skip-cert-verify: true
   -
     name: '韩国01 中继B | 1.5x'
     type: vmess
     server: in02.ddns168.com
-    port: 61056
+    port: 61004
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
+    alterId: 1
     cipher: auto
     udp: true
     network: ws
-    ws-path: /hls
+    ws-path: /jkl
     ws-headers:
-      Host: cdn.bootcdn.net
+      Host: jkl-kr01.covid19.rip
+    tls: true
+    skip-cert-verify: true
   -
     name: '韩国01 中继D | 1.5x'
     type: vmess
     server: in04.ddns168.com
-    port: 61056
+    port: 61004
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
+    alterId: 1
     cipher: auto
     udp: true
     network: ws
-    ws-path: /hls
+    ws-path: /jkl
     ws-headers:
-      Host: cdn.bootcdn.net
+      Host: jkl-kr01.covid19.rip
+    tls: true
+    skip-cert-verify: true
   -
     name: '韩国01 中继E | 1.5x'
     type: vmess
     server: in05.ddns168.com
-    port: 61056
+    port: 61004
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
+    alterId: 1
     cipher: auto
     udp: true
     network: ws
-    ws-path: /hls
+    ws-path: /jkl
     ws-headers:
-      Host: cdn.bootcdn.net
+      Host: jkl-kr01.covid19.rip
+    tls: true
+    skip-cert-verify: true
   -
     name: '韩国11 AWS直连 速度随缘 0.5x'
     type: vmess
@@ -1589,7 +1631,7 @@ proxies:
   -
     name: '韩国11 AWS直连AGA 速度随缘 0.5x'
     type: vmess
-    server: a3030a4d1e9e724d6.awsglobalaccelerator.com
+    server: kr11-aga.node168.com
     port: 443
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -1603,132 +1645,152 @@ proxies:
     name: '香港01 中继A | NF 1.5x '
     type: vmess
     server: in01.ddns168.com
-    port: 61055
+    port: 61006
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
+    alterId: 1
     cipher: auto
     udp: true
     network: ws
-    ws-path: /cctv
+    ws-path: /jkl
     ws-headers:
-      Host: cdn.bootcdn.net
+      Host: jkl-hk01.covid19.rip
+    tls: true
+    skip-cert-verify: true
   -
     name: '香港01 中继B | NF 1.5x '
     type: vmess
     server: in02.ddns168.com
-    port: 61055
+    port: 61006
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
+    alterId: 1
     cipher: auto
     udp: true
     network: ws
-    ws-path: /cctv
+    ws-path: /jkl
     ws-headers:
-      Host: cdn.bootcdn.net
+      Host: jkl-hk01.covid19.rip
+    tls: true
+    skip-cert-verify: true
   -
     name: '香港01 中继C | NF 1.5x '
     type: vmess
     server: in03.ddns168.com
-    port: 61055
+    port: 61006
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
+    alterId: 1
     cipher: auto
     udp: true
     network: ws
-    ws-path: /cctv
+    ws-path: /jkl
     ws-headers:
-      Host: cdn.bootcdn.net
+      Host: jkl-hk01.covid19.rip
+    tls: true
+    skip-cert-verify: true
   -
     name: '香港01 中继D | NF 1.5x '
     type: vmess
     server: in04.ddns168.com
-    port: 61055
+    port: 61006
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
+    alterId: 1
     cipher: auto
     udp: true
     network: ws
-    ws-path: /cctv
+    ws-path: /jkl
     ws-headers:
-      Host: cdn.bootcdn.net
+      Host: jkl-hk01.covid19.rip
+    tls: true
+    skip-cert-verify: true
   -
     name: '香港01 中继E | NF 1.5x '
     type: vmess
     server: in05.ddns168.com
-    port: 61055
+    port: 61006
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
+    alterId: 1
     cipher: auto
     udp: true
     network: ws
-    ws-path: /cctv
+    ws-path: /jkl
     ws-headers:
-      Host: cdn.bootcdn.net
+      Host: jkl-hk01.covid19.rip
+    tls: true
+    skip-cert-verify: true
   -
     name: '香港02 中继A | NF 1.5x '
     type: vmess
     server: in01.ddns168.com
-    port: 61050
+    port: 61003
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 3
+    alterId: 1
     cipher: auto
     udp: true
     network: ws
-    ws-path: /hls
+    ws-path: /jkl
     ws-headers:
-      Host: cdn.bootcdn.net
+      Host: jkl-hk02.covid19.rip
+    tls: true
+    skip-cert-verify: true
   -
     name: '香港02 中继B | NF 1.5x '
     type: vmess
     server: in02.ddns168.com
-    port: 61050
+    port: 61003
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 3
+    alterId: 1
     cipher: auto
     udp: true
     network: ws
-    ws-path: /hls
+    ws-path: /jkl
     ws-headers:
-      Host: cdn.bootcdn.net
+      Host: jkl-hk02.covid19.rip
+    tls: true
+    skip-cert-verify: true
   -
     name: '香港02 中继C | NF 1.5x '
     type: vmess
     server: in03.ddns168.com
-    port: 61050
+    port: 61003
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 3
+    alterId: 1
     cipher: auto
     udp: true
     network: ws
-    ws-path: /hls
+    ws-path: /jkl
     ws-headers:
-      Host: cdn.bootcdn.net
+      Host: jkl-hk02.covid19.rip
+    tls: true
+    skip-cert-verify: true
   -
     name: '香港02 中继D | NF 1.5x '
     type: vmess
     server: in04.ddns168.com
-    port: 61050
+    port: 61003
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 3
+    alterId: 1
     cipher: auto
     udp: true
     network: ws
-    ws-path: /hls
+    ws-path: /jkl
     ws-headers:
-      Host: cdn.bootcdn.net
+      Host: jkl-hk02.covid19.rip
+    tls: true
+    skip-cert-verify: true
   -
     name: '香港02 中继E | NF 1.5x '
     type: vmess
     server: in05.ddns168.com
-    port: 61050
+    port: 61003
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 3
+    alterId: 1
     cipher: auto
     udp: true
     network: ws
-    ws-path: /hls
+    ws-path: /jkl
     ws-headers:
-      Host: cdn.bootcdn.net
+      Host: jkl-hk02.covid19.rip
+    tls: true
+    skip-cert-verify: true
   -
     name: '香港03 中继A | NF 1.5x'
     type: vmess
@@ -1800,65 +1862,75 @@ proxies:
     server: in01.ddns168.com
     port: 61053
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
+    alterId: 1
     cipher: auto
     udp: true
     network: ws
-    ws-path: /hls
+    ws-path: /jkl
     ws-headers:
-      Host: host=cdn.bootcdn.net
+      Host: jkl-hk04.covid19.rip
+    tls: true
+    skip-cert-verify: true
   -
     name: '香港04 中继B | NF 1.5x'
     type: vmess
     server: in02.ddns168.com
     port: 61053
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
+    alterId: 1
     cipher: auto
     udp: true
     network: ws
-    ws-path: /hls
+    ws-path: /jkl
     ws-headers:
-      Host: host=cdn.bootcdn.net
+      Host: jkl-hk04.covid19.rip
+    tls: true
+    skip-cert-verify: true
   -
     name: '香港04 中继C | NF 1.5x'
     type: vmess
     server: in03.ddns168.com
     port: 61053
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
+    alterId: 1
     cipher: auto
     udp: true
     network: ws
-    ws-path: /hls
+    ws-path: /jkl
     ws-headers:
-      Host: host=cdn.bootcdn.net
+      Host: jkl-hk04.covid19.rip
+    tls: true
+    skip-cert-verify: true
   -
     name: '香港04 中继D | NF 1.5x'
     type: vmess
     server: in04.ddns168.com
     port: 61053
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
+    alterId: 1
     cipher: auto
     udp: true
     network: ws
-    ws-path: /hls
+    ws-path: /jkl
     ws-headers:
-      Host: host=cdn.bootcdn.net
+      Host: jkl-hk04.covid19.rip
+    tls: true
+    skip-cert-verify: true
   -
     name: '香港04 中继E | NF 1.5x'
     type: vmess
     server: in05.ddns168.com
     port: 61053
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
+    alterId: 1
     cipher: auto
     udp: true
     network: ws
-    ws-path: /hls
+    ws-path: /jkl
     ws-headers:
-      Host: host=cdn.bootcdn.net
+      Host: jkl-hk04.covid19.rip
+    tls: true
+    skip-cert-verify: true
   -
     name: '香港11 AWS直连 速度随缘 0.5x'
     type: vmess
@@ -1875,7 +1947,7 @@ proxies:
   -
     name: '香港11 AWS直连AGA 速度随缘 0.5x'
     type: vmess
-    server: a07a2eb82cfe636d2.awsglobalaccelerator.com
+    server: hk11-aga.node168.com
     port: 443
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -1886,7 +1958,7 @@ proxies:
     ws-headers:
       Host: mon.snssdk.com
   -
-    name: '香港12 AWS直连 速度随缘'
+    name: '香港12 AWS直连 速度随缘 0.5x'
     type: vmess
     server: mugua-hk12-direct.node168.com
     port: 443
@@ -1901,7 +1973,7 @@ proxies:
   -
     name: '香港12 AWS直连AGA 速度随缘 0.5x'
     type: vmess
-    server: afe6a6c642a63c2b7.awsglobalaccelerator.com
+    server: hk12-aga.node168.com
     port: 443
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -1979,7 +2051,7 @@ proxies:
   -
     name: '香港HGC01 香港转发 | 原生 1.5x'
     type: vmess
-    server: hk02.az.lay168.net
+    server: hk-routing.in168.net
     port: 61027
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
@@ -2044,73 +2116,8 @@ proxies:
   -
     name: '香港HKT01 香港转发 | 原生 1.5x'
     type: vmess
-    server: hk02.az.lay168.net
+    server: hk-routing.in168.net
     port: 61033
-    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /hls
-    ws-headers:
-      Host: cdn.bootcdn.net
-  -
-    name: '马来西亚01 中继A | 原生 1.5x'
-    type: vmess
-    server: in01.ddns168.com
-    port: 61040
-    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /hls
-    ws-headers:
-      Host: cdn.bootcdn.net
-  -
-    name: '马来西亚01 中继B | 原生 1.5x'
-    type: vmess
-    server: in02.ddns168.com
-    port: 61040
-    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /hls
-    ws-headers:
-      Host: cdn.bootcdn.net
-  -
-    name: '马来西亚01 中继C | 原生 1.5x'
-    type: vmess
-    server: in03.ddns168.com
-    port: 61040
-    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /hls
-    ws-headers:
-      Host: cdn.bootcdn.net
-  -
-    name: '马来西亚01 中继E | 原生 1.5x'
-    type: vmess
-    server: in05.ddns168.com
-    port: 61040
-    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /hls
-    ws-headers:
-      Host: cdn.bootcdn.net
-  -
-    name: '马来西亚01 香港转发 | 原生 1.5x'
-    type: vmess
-    server: hk02.az.lay168.net
-    port: 61040
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
     cipher: auto
@@ -2121,29 +2128,26 @@ proxies:
       Host: cdn.bootcdn.net
 proxy-groups:
   -
-    name: '🍃 JINKELA'
+    name: '🍃 Proxies'
     type: select
     proxies:
-      - '⭐️ 自动选择'
-      - 'IEPL专线 粤新03 | 4x NF'
-      - 'IEPL专线 粤日04 | 4x NF'
-      - 'IEPL专线 粤港03 | 4x NF'
-      - 'IEPL专线 粤美02 | 4x NF'
-      - '俄罗斯01 中继B | 冷门 1.5x'
-      - '俄罗斯01 中继C | 冷门 1.5x'
-      - '俄罗斯01 中继D | 冷门 1.5x'
-      - '俄罗斯01 中继E | 冷门 1.5x'
-      - '俄罗斯04 中继A | 冷门 1.3x'
-      - '俄罗斯04 中继B | 冷门 1.3x'
-      - '俄罗斯04 中继C | 冷门 1.3x'
-      - '俄罗斯04 中继D | 冷门 1.3x'
-      - '俄罗斯04 中继E | 冷门 1.3x'
+      - '⭐️ Auto'
+      - 'IEPL专线 新加坡03 | 4x NF'
+      - 'IEPL专线 新加坡05 | 4x 原生IP'
+      - 'IEPL专线 日本04 | 4x NF'
+      - 'IEPL专线 美国02 | 4x NF'
+      - 'IEPL专线 香港HGC02 | 4x 原生IP'
+      - 'IEPL专线 马来西亚01 | 4x 原生IP'
+      - '俄罗斯01 中继A | 冷门 1.2x'
+      - '俄罗斯01 中继B | 冷门 1.2x'
+      - '俄罗斯01 中继C | 冷门 1.2x'
+      - '俄罗斯01 中继D | 冷门 1.2x'
+      - '俄罗斯01 中继E | 冷门 1.2x'
       - '印度01 中继A | 1.5x'
       - '印度01 中继B | 1.5x'
       - '印度01 中继C | 1.5x'
       - '印度01 中继D | 1.5x'
       - '印度01 中继E | 1.5x'
-      - '印度01 香港转发 | 1.5x'
       - '台湾01 中继A | 原生 1.5x'
       - '台湾01 中继B | 原生 1.5x'
       - '台湾01 中继C | 原生 1.5x'
@@ -2159,11 +2163,11 @@ proxy-groups:
       - '土耳其01 中继B | 冷门 2.0x'
       - '土耳其01 中继C | 冷门 2.0x'
       - '土耳其01 中继D | 冷门 2.0x'
-      - '土耳其01 香港转发 | 冷门 2.0x'
-      - '巴西01 中继A | 冷门 3.0x'
-      - '巴西01 中继B | 冷门 3.0x'
-      - '巴西01 中继C | 冷门 3.0x'
-      - '巴西01 香港转发 | 冷门 3.0x'
+      - '巴西01 中继A | 冷门 2.0x'
+      - '巴西01 中继B | 冷门 2.0x'
+      - '巴西01 中继C | 冷门 2.0x'
+      - '巴西01 中继D | 冷门 2.0x'
+      - '巴西01 中继E | 冷门 2.0x'
       - '德国01 中继A | 冷门 1.2x'
       - '德国01 中继B | 冷门 1.2x'
       - '德国01 中继C | 冷门 1.2x'
@@ -2174,7 +2178,6 @@ proxy-groups:
       - '新加坡01 中继C | 原生 1.5x'
       - '新加坡01 中继D | 原生 1.5x'
       - '新加坡01 中继E | 原生 1.5x'
-      - '新加坡01 香港转发 | 原生 1.5x'
       - '新加坡02 中继A | 1.5x'
       - '新加坡02 中继B | 1.5x'
       - '新加坡02 中继C | 1.5x'
@@ -2202,16 +2205,20 @@ proxy-groups:
       - '日本03 中继C | NF 1.5x'
       - '日本03 中继D | NF 1.5x'
       - '日本03 中继E | NF 1.5x'
+      - '日本11 AWS直连 速度随缘 0.5x'
+      - '日本11 AWS直连AGA 速度随缘 0.5x'
       - '波兰01 中继A | 冷门 1.2x'
       - '波兰01 中继B | 冷门 1.2x'
       - '波兰01 中继C | 冷门 1.2x'
       - '波兰01 中继D | 冷门 1.2x'
-      - '波兰01 香港转发 | 冷门 1.2x'
+      - '波兰01 中继E | 冷门 1.2x'
       - '澳洲01 中继A | 冷门 1.5x'
       - '澳洲01 中继B | 冷门 1.5x'
       - '澳洲01 中继C | 冷门 1.5x'
       - '澳洲01 中继E | 冷门 1.5x'
       - '澳洲01 香港转发 | 冷门 1.5x'
+      - '澳洲11 AWS直连 速度随缘 0.5x'
+      - '澳洲11 AWS直连AGA 速度随缘 0.5x'
       - '美国01 中继A | NF 1.5x'
       - '美国01 中继B | NF 1.5x'
       - '美国01 中继C | NF 1.5x'
@@ -2222,7 +2229,6 @@ proxy-groups:
       - '美国03 中继C | 1.5x'
       - '美国03 中继D | 1.5x'
       - '美国03 中继E | 1.5x'
-      - '美国03 香港转发 | 1.5x'
       - '美国04 中继A | 备用 1.3x'
       - '美国04 中继B | 备用 1.3x'
       - '美国04 中继C | 备用 1.3x'
@@ -2236,7 +2242,6 @@ proxy-groups:
       - '荷兰01 中继B | 冷门 1.2x'
       - '荷兰01 中继C | 冷门 1.2x'
       - '荷兰01 中继E | 冷门 1.2x'
-      - '荷兰01 香港转发 | 冷门 1.2x'
       - '阿根廷01 中继A | 冷门 低速 5.0x'
       - '阿根廷01 中继B | 冷门 低速 5.0x'
       - '阿根廷01 中继C | 冷门 低速 5.0x'
@@ -2269,7 +2274,7 @@ proxy-groups:
       - '香港04 中继E | NF 1.5x'
       - '香港11 AWS直连 速度随缘 0.5x'
       - '香港11 AWS直连AGA 速度随缘 0.5x'
-      - '香港12 AWS直连 速度随缘'
+      - '香港12 AWS直连 速度随缘 0.5x'
       - '香港12 AWS直连AGA 速度随缘 0.5x'
       - '香港HGC01 中继A | 原生 1.5x'
       - '香港HGC01 中继B | 原生 1.5x'
@@ -2282,42 +2287,32 @@ proxy-groups:
       - '香港HKT01 中继C | 原生 1.5x'
       - '香港HKT01 中继E | 原生 1.5x'
       - '香港HKT01 香港转发 | 原生 1.5x'
-      - '马来西亚01 中继A | 原生 1.5x'
-      - '马来西亚01 中继B | 原生 1.5x'
-      - '马来西亚01 中继C | 原生 1.5x'
-      - '马来西亚01 中继E | 原生 1.5x'
-      - '马来西亚01 香港转发 | 原生 1.5x'
   -
-    name: '🍂 国内网络'
+    name: '🍂 Domestic'
     type: select
     proxies:
-      - '🚀 绕过代理'
-      - '🍃 JINKELA'
+      - DIRECT
+      - '🍃 Proxies'
   -
-    name: '☁️ 其他流量'
+    name: '☁️ Others'
     type: select
     proxies:
-      - '🍃 JINKELA'
-      - '🍂 国内网络'
+      - '🍃 Proxies'
+      - '🍂 Domestic'
   -
-    name: '⭐️ 自动选择'
+    name: '⭐️ Auto'
     type: url-test
     proxies:
-      - '俄罗斯01 中继B | 冷门 1.5x'
-      - '俄罗斯01 中继C | 冷门 1.5x'
-      - '俄罗斯01 中继D | 冷门 1.5x'
-      - '俄罗斯01 中继E | 冷门 1.5x'
-      - '俄罗斯04 中继A | 冷门 1.3x'
-      - '俄罗斯04 中继B | 冷门 1.3x'
-      - '俄罗斯04 中继C | 冷门 1.3x'
-      - '俄罗斯04 中继D | 冷门 1.3x'
-      - '俄罗斯04 中继E | 冷门 1.3x'
+      - '俄罗斯01 中继A | 冷门 1.2x'
+      - '俄罗斯01 中继B | 冷门 1.2x'
+      - '俄罗斯01 中继C | 冷门 1.2x'
+      - '俄罗斯01 中继D | 冷门 1.2x'
+      - '俄罗斯01 中继E | 冷门 1.2x'
       - '印度01 中继A | 1.5x'
       - '印度01 中继B | 1.5x'
       - '印度01 中继C | 1.5x'
       - '印度01 中继D | 1.5x'
       - '印度01 中继E | 1.5x'
-      - '印度01 香港转发 | 1.5x'
       - '台湾01 中继A | 原生 1.5x'
       - '台湾01 中继B | 原生 1.5x'
       - '台湾01 中继C | 原生 1.5x'
@@ -2339,7 +2334,6 @@ proxy-groups:
       - '新加坡01 中继C | 原生 1.5x'
       - '新加坡01 中继D | 原生 1.5x'
       - '新加坡01 中继E | 原生 1.5x'
-      - '新加坡01 香港转发 | 原生 1.5x'
       - '新加坡02 中继A | 1.5x'
       - '新加坡02 中继B | 1.5x'
       - '新加坡02 中继C | 1.5x'
@@ -2350,8 +2344,6 @@ proxy-groups:
       - '新加坡04 中继C | NF 1.5x'
       - '新加坡04 中继D | NF 1.5x'
       - '新加坡04 中继E | NF 1.5x'
-      - '新加坡11 AWS直连 速度随缘 0.5x'
-      - "新加坡11 AWS直连AGA 速度随缘 0.5x\t"
       - '日本01 中继A | NF 1.5x'
       - '日本01 中继B | NF 1.5x'
       - '日本01 中继C | NF 1.5x'
@@ -2371,7 +2363,7 @@ proxy-groups:
       - '波兰01 中继B | 冷门 1.2x'
       - '波兰01 中继C | 冷门 1.2x'
       - '波兰01 中继D | 冷门 1.2x'
-      - '波兰01 香港转发 | 冷门 1.2x'
+      - '波兰01 中继E | 冷门 1.2x'
       - '澳洲01 中继A | 冷门 1.5x'
       - '澳洲01 中继B | 冷门 1.5x'
       - '澳洲01 中继C | 冷门 1.5x'
@@ -2387,7 +2379,6 @@ proxy-groups:
       - '美国03 中继C | 1.5x'
       - '美国03 中继D | 1.5x'
       - '美国03 中继E | 1.5x'
-      - '美国03 香港转发 | 1.5x'
       - '美国04 中继A | 备用 1.3x'
       - '美国04 中继B | 备用 1.3x'
       - '美国04 中继C | 备用 1.3x'
@@ -2401,13 +2392,10 @@ proxy-groups:
       - '荷兰01 中继B | 冷门 1.2x'
       - '荷兰01 中继C | 冷门 1.2x'
       - '荷兰01 中继E | 冷门 1.2x'
-      - '荷兰01 香港转发 | 冷门 1.2x'
       - '韩国01 中继A | 1.5x'
       - '韩国01 中继B | 1.5x'
       - '韩国01 中继D | 1.5x'
       - '韩国01 中继E | 1.5x'
-      - '韩国11 AWS直连 速度随缘 0.5x'
-      - '韩国11 AWS直连AGA 速度随缘 0.5x'
       - '香港01 中继A | NF 1.5x '
       - '香港01 中继B | NF 1.5x '
       - '香港01 中继C | NF 1.5x '
@@ -2428,10 +2416,6 @@ proxy-groups:
       - '香港04 中继C | NF 1.5x'
       - '香港04 中继D | NF 1.5x'
       - '香港04 中继E | NF 1.5x'
-      - '香港11 AWS直连 速度随缘 0.5x'
-      - '香港11 AWS直连AGA 速度随缘 0.5x'
-      - '香港12 AWS直连 速度随缘'
-      - '香港12 AWS直连AGA 速度随缘 0.5x'
       - '香港HGC01 中继A | 原生 1.5x'
       - '香港HGC01 中继B | 原生 1.5x'
       - '香港HGC01 中继C | 原生 1.5x'
@@ -2443,747 +2427,734 @@ proxy-groups:
       - '香港HKT01 中继C | 原生 1.5x'
       - '香港HKT01 中继E | 原生 1.5x'
       - '香港HKT01 香港转发 | 原生 1.5x'
-      - '马来西亚01 中继A | 原生 1.5x'
-      - '马来西亚01 中继B | 原生 1.5x'
-      - '马来西亚01 中继C | 原生 1.5x'
-      - '马来西亚01 中继E | 原生 1.5x'
-      - '马来西亚01 香港转发 | 原生 1.5x'
     url: 'http://www.gstatic.com/generate_204'
-    interval: '3600'
-  -
-    name: '🚀 绕过代理'
-    type: fallback
-    proxies:
-      - DIRECT
-    url: 'http://www.gstatic.com/generate_204'
-    interval: '259200'
+    interval: '28800'
 
 
 rules:
-- DOMAIN,www.jinkela.site,DIRECT
-- DOMAIN-KEYWORD,jinkela,🍃 JINKELA
-
+# MUGUA
+- DOMAIN-KEYWORD,mugua,🍃 Proxies
 
 # (Global_TV)
 # > ABC
-- DOMAIN-SUFFIX,edgedatg.com,🍃 JINKELA
-- DOMAIN-SUFFIX,go.com,🍃 JINKELA
+- DOMAIN-SUFFIX,edgedatg.com,🍃 Proxies
+- DOMAIN-SUFFIX,go.com,🍃 Proxies
 
 # > AbemaTV
-- DOMAIN,linear-abematv.akamaized.net,🍃 JINKELA
-- DOMAIN-SUFFIX,abema.io,🍃 JINKELA
-- DOMAIN-SUFFIX,abema.tv,🍃 JINKELA
-- DOMAIN-SUFFIX,akamaized.net,🍃 JINKELA
-- DOMAIN-SUFFIX,ameba.jp,🍃 JINKELA
-- DOMAIN-SUFFIX,hayabusa.io,🍃 JINKELA
+- DOMAIN,linear-abematv.akamaized.net,🍃 Proxies
+- DOMAIN-SUFFIX,abema.io,🍃 Proxies
+- DOMAIN-SUFFIX,abema.tv,🍃 Proxies
+- DOMAIN-SUFFIX,akamaized.net,🍃 Proxies
+- DOMAIN-SUFFIX,ameba.jp,🍃 Proxies
+- DOMAIN-SUFFIX,hayabusa.io,🍃 Proxies
 
 # > Amazon Prime Video
-- DOMAIN-SUFFIX,aiv-cdn.net,🍃 JINKELA
-- DOMAIN-SUFFIX,amazonaws.com,🍃 JINKELA
-- DOMAIN-SUFFIX,amazonvideo.com,🍃 JINKELA
-- DOMAIN-SUFFIX,llnwd.net,🍃 JINKELA
+- DOMAIN-SUFFIX,aiv-cdn.net,🍃 Proxies
+- DOMAIN-SUFFIX,amazonaws.com,🍃 Proxies
+- DOMAIN-SUFFIX,amazonvideo.com,🍃 Proxies
+- DOMAIN-SUFFIX,llnwd.net,🍃 Proxies
 
 # > Bahamut
-- DOMAIN-SUFFIX,bahamut.com.tw,🍃 JINKELA
-- DOMAIN-SUFFIX,gamer.com.tw,🍃 JINKELA
-- DOMAIN-SUFFIX,hinet.net,🍃 JINKELA
+- DOMAIN-SUFFIX,bahamut.com.tw,🍃 Proxies
+- DOMAIN-SUFFIX,gamer.com.tw,🍃 Proxies
+- DOMAIN-SUFFIX,hinet.net,🍃 Proxies
 
 # > BBC
-- DOMAIN-KEYWORD,bbcfmt,🍃 JINKELA
-- DOMAIN-KEYWORD,co.uk,🍃 JINKELA
-- DOMAIN-KEYWORD,uk-live,🍃 JINKELA
-- DOMAIN-SUFFIX,bbc.co,🍃 JINKELA
-- DOMAIN-SUFFIX,bbc.co.uk,🍃 JINKELA
-- DOMAIN-SUFFIX,bbc.com,🍃 JINKELA
-- DOMAIN-SUFFIX,bbci.co,🍃 JINKELA
-- DOMAIN-SUFFIX,bbci.co.uk,🍃 JINKELA
+- DOMAIN-KEYWORD,bbcfmt,🍃 Proxies
+- DOMAIN-KEYWORD,co.uk,🍃 Proxies
+- DOMAIN-KEYWORD,uk-live,🍃 Proxies
+- DOMAIN-SUFFIX,bbc.co,🍃 Proxies
+- DOMAIN-SUFFIX,bbc.co.uk,🍃 Proxies
+- DOMAIN-SUFFIX,bbc.com,🍃 Proxies
+- DOMAIN-SUFFIX,bbci.co,🍃 Proxies
+- DOMAIN-SUFFIX,bbci.co.uk,🍃 Proxies
 
 # > CHOCO TV
-- DOMAIN-SUFFIX,chocotv.com.tw,🍃 JINKELA
+- DOMAIN-SUFFIX,chocotv.com.tw,🍃 Proxies
 
 # > Epicgames
-- DOMAIN-KEYWORD,epicgames,🍃 JINKELA
-- DOMAIN-SUFFIX,helpshift.com,🍃 JINKELA
+- DOMAIN-KEYWORD,epicgames,🍃 Proxies
+- DOMAIN-SUFFIX,helpshift.com,🍃 Proxies
 
 # > Fox+
-- DOMAIN-KEYWORD,foxplus,🍃 JINKELA
-- DOMAIN-SUFFIX,config.fox.com,🍃 JINKELA
-- DOMAIN-SUFFIX,emome.net,🍃 JINKELA
-- DOMAIN-SUFFIX,fox.com,🍃 JINKELA
-- DOMAIN-SUFFIX,foxdcg.com,🍃 JINKELA
-- DOMAIN-SUFFIX,foxnow.com,🍃 JINKELA
-- DOMAIN-SUFFIX,foxplus.com,🍃 JINKELA
-- DOMAIN-SUFFIX,foxplay.com,🍃 JINKELA
-- DOMAIN-SUFFIX,ipinfo.io,🍃 JINKELA
-- DOMAIN-SUFFIX,mstage.io,🍃 JINKELA
-- DOMAIN-SUFFIX,now.com,🍃 JINKELA
-- DOMAIN-SUFFIX,theplatform.com,🍃 JINKELA
-- DOMAIN-SUFFIX,urlload.net,🍃 JINKELA
+- DOMAIN-KEYWORD,foxplus,🍃 Proxies
+- DOMAIN-SUFFIX,config.fox.com,🍃 Proxies
+- DOMAIN-SUFFIX,emome.net,🍃 Proxies
+- DOMAIN-SUFFIX,fox.com,🍃 Proxies
+- DOMAIN-SUFFIX,foxdcg.com,🍃 Proxies
+- DOMAIN-SUFFIX,foxnow.com,🍃 Proxies
+- DOMAIN-SUFFIX,foxplus.com,🍃 Proxies
+- DOMAIN-SUFFIX,foxplay.com,🍃 Proxies
+- DOMAIN-SUFFIX,ipinfo.io,🍃 Proxies
+- DOMAIN-SUFFIX,mstage.io,🍃 Proxies
+- DOMAIN-SUFFIX,now.com,🍃 Proxies
+- DOMAIN-SUFFIX,theplatform.com,🍃 Proxies
+- DOMAIN-SUFFIX,urlload.net,🍃 Proxies
 
 # > HBO && HBO Go
-- DOMAIN-SUFFIX,execute-api.ap-southeast-1.amazonaws.com,🍃 JINKELA
-- DOMAIN-SUFFIX,hbo.com,🍃 JINKELA
-- DOMAIN-SUFFIX,hboasia.com,🍃 JINKELA
-- DOMAIN-SUFFIX,hbogo.com,🍃 JINKELA
-- DOMAIN-SUFFIX,hbogoasia.hk,🍃 JINKELA
+- DOMAIN-SUFFIX,execute-api.ap-southeast-1.amazonaws.com,🍃 Proxies
+- DOMAIN-SUFFIX,hbo.com,🍃 Proxies
+- DOMAIN-SUFFIX,hboasia.com,🍃 Proxies
+- DOMAIN-SUFFIX,hbogo.com,🍃 Proxies
+- DOMAIN-SUFFIX,hbogoasia.hk,🍃 Proxies
 
 # > Hulu
-- DOMAIN-SUFFIX,happyon.jp,🍃 JINKELA
-- DOMAIN-SUFFIX,hulu.com,🍃 JINKELA
-- DOMAIN-SUFFIX,huluim.com,🍃 JINKELA
-- DOMAIN-SUFFIX,hulustream.com,🍃 JINKELA
+- DOMAIN-SUFFIX,happyon.jp,🍃 Proxies
+- DOMAIN-SUFFIX,hulu.com,🍃 Proxies
+- DOMAIN-SUFFIX,huluim.com,🍃 Proxies
+- DOMAIN-SUFFIX,hulustream.com,🍃 Proxies
 
 # > Imkan
-- DOMAIN-SUFFIX,imkan.tv,🍃 JINKELA
+- DOMAIN-SUFFIX,imkan.tv,🍃 Proxies
 
 # > JOOX
-- DOMAIN-SUFFIX,joox.com,🍃 JINKELA
+- DOMAIN-SUFFIX,joox.com,🍃 Proxies
 
 # > MytvSUPER
-- DOMAIN-KEYWORD,nowtv100,🍃 JINKELA
-- DOMAIN-KEYWORD,rthklive,🍃 JINKELA
-- DOMAIN-SUFFIX,mytvsuper.com,🍃 JINKELA
-- DOMAIN-SUFFIX,tvb.com,🍃 JINKELA
+- DOMAIN-KEYWORD,nowtv100,🍃 Proxies
+- DOMAIN-KEYWORD,rthklive,🍃 Proxies
+- DOMAIN-SUFFIX,mytvsuper.com,🍃 Proxies
+- DOMAIN-SUFFIX,tvb.com,🍃 Proxies
 
 # > Netflix
-- DOMAIN-SUFFIX,netflix.com,🍃 JINKELA
-- DOMAIN-SUFFIX,netflix.net,🍃 JINKELA
-- DOMAIN-SUFFIX,nflxext.com,🍃 JINKELA
-- DOMAIN-SUFFIX,nflximg.com,🍃 JINKELA
-- DOMAIN-SUFFIX,nflximg.net,🍃 JINKELA
-- DOMAIN-SUFFIX,nflxso.net,🍃 JINKELA
-- DOMAIN-SUFFIX,nflxvideo.net,🍃 JINKELA
+- DOMAIN-SUFFIX,netflix.com,🍃 Proxies
+- DOMAIN-SUFFIX,netflix.net,🍃 Proxies
+- DOMAIN-SUFFIX,nflxext.com,🍃 Proxies
+- DOMAIN-SUFFIX,nflximg.com,🍃 Proxies
+- DOMAIN-SUFFIX,nflximg.net,🍃 Proxies
+- DOMAIN-SUFFIX,nflxso.net,🍃 Proxies
+- DOMAIN-SUFFIX,nflxvideo.net,🍃 Proxies
 
 # > Pandora
-- DOMAIN-SUFFIX,pandora.com,🍃 JINKELA
+- DOMAIN-SUFFIX,pandora.com,🍃 Proxies
 
 # > Sky GO
-- DOMAIN-SUFFIX,sky.com,🍃 JINKELA
-- DOMAIN-SUFFIX,skygo.co.nz,🍃 JINKELA
+- DOMAIN-SUFFIX,sky.com,🍃 Proxies
+- DOMAIN-SUFFIX,skygo.co.nz,🍃 Proxies
 
 # > Spotify
-- DOMAIN-KEYWORD,spotify,🍃 JINKELA
-- DOMAIN-SUFFIX,scdn.co,🍃 JINKELA
-- DOMAIN-SUFFIX,spoti.fi,🍃 JINKELA
+- DOMAIN-KEYWORD,spotify,🍃 Proxies
+- DOMAIN-SUFFIX,scdn.co,🍃 Proxies
+- DOMAIN-SUFFIX,spoti.fi,🍃 Proxies
 
 # > viuTV
-- DOMAIN-SUFFIX,viu.tv,🍃 JINKELA
+- DOMAIN-SUFFIX,viu.tv,🍃 Proxies
 
 # > Youtube
-- DOMAIN-KEYWORD,youtube,🍃 JINKELA
-- DOMAIN-SUFFIX,googlevideo.com,🍃 JINKELA
-- DOMAIN-SUFFIX,gvt2.com,🍃 JINKELA
-- DOMAIN-SUFFIX,youtu.be,🍃 JINKELA
+- DOMAIN-KEYWORD,youtube,🍃 Proxies
+- DOMAIN-SUFFIX,googlevideo.com,🍃 Proxies
+- DOMAIN-SUFFIX,gvt2.com,🍃 Proxies
+- DOMAIN-SUFFIX,youtu.be,🍃 Proxies
 
 # (Asian_TV)
 # > Bilibili
-- DOMAIN-KEYWORD,bilibili,🍂 国内网络
-- DOMAIN-SUFFIX,acg.tv,🍂 国内网络
-- DOMAIN-SUFFIX,acgvideo.com,🍂 国内网络
-- DOMAIN-SUFFIX,b23.tv,🍂 国内网络
-- DOMAIN-SUFFIX,biliapi.com,🍂 国内网络
-- DOMAIN-SUFFIX,biliapi.net,🍂 国内网络
-- DOMAIN-SUFFIX,bilibili.com,🍂 国内网络
-- DOMAIN-SUFFIX,biligame.com,🍂 国内网络
-- DOMAIN-SUFFIX,biligame.net,🍂 国内网络
-- DOMAIN-SUFFIX,hdslb.com,🍂 国内网络
-- DOMAIN-SUFFIX,im9.com,🍂 国内网络
+- DOMAIN-KEYWORD,bilibili,🍂 Domestic
+- DOMAIN-SUFFIX,acg.tv,🍂 Domestic
+- DOMAIN-SUFFIX,acgvideo.com,🍂 Domestic
+- DOMAIN-SUFFIX,b23.tv,🍂 Domestic
+- DOMAIN-SUFFIX,biliapi.com,🍂 Domestic
+- DOMAIN-SUFFIX,biliapi.net,🍂 Domestic
+- DOMAIN-SUFFIX,bilibili.com,🍂 Domestic
+- DOMAIN-SUFFIX,biligame.com,🍂 Domestic
+- DOMAIN-SUFFIX,biligame.net,🍂 Domestic
+- DOMAIN-SUFFIX,hdslb.com,🍂 Domestic
+- DOMAIN-SUFFIX,im9.com,🍂 Domestic
 
 # > IQIYI
-- DOMAIN-KEYWORD,qiyi,🍂 国内网络
-- DOMAIN-SUFFIX,qy.net,🍂 国内网络
+- DOMAIN-KEYWORD,qiyi,🍂 Domestic
+- DOMAIN-SUFFIX,qy.net,🍂 Domestic
 
 # > letv
-- DOMAIN-SUFFIX,api.mob.app.letv.com,🍂 国内网络
+- DOMAIN-SUFFIX,api.mob.app.letv.com,🍂 Domestic
 
 # > NeteaseMusic
-- DOMAIN-SUFFIX,163yun.com,🍂 国内网络
-- DOMAIN-SUFFIX,music.126.net,🍂 国内网络
-- DOMAIN-SUFFIX,music.163.com,🍂 国内网络
+- DOMAIN-SUFFIX,163yun.com,🍂 Domestic
+- DOMAIN-SUFFIX,music.126.net,🍂 Domestic
+- DOMAIN-SUFFIX,music.163.com,🍂 Domestic
 
 # > Tencent Video
-- DOMAIN-SUFFIX,vv.video.qq.com,🍂 国内网络
+- DOMAIN-SUFFIX,vv.video.qq.com,🍂 Domestic
 
 # China Area Network
 # > Microsoft
-- DOMAIN-SUFFIX,microsoft.com,🍂 国内网络
-- DOMAIN-SUFFIX,windows.net,🍂 国内网络
-- DOMAIN-SUFFIX,sfx.ms,🍂 国内网络
-- DOMAIN-SUFFIX,sharepoint.com,🍂 国内网络
-- DOMAIN-KEYWORD,officecdn,🍂 国内网络
+- DOMAIN-SUFFIX,microsoft.com,🍂 Domestic
+- DOMAIN-SUFFIX,windows.net,🍂 Domestic
+- DOMAIN-SUFFIX,sfx.ms,🍂 Domestic
+- DOMAIN-SUFFIX,sharepoint.com,🍂 Domestic
+- DOMAIN-KEYWORD,officecdn,🍂 Domestic
 # > Blizzard
-- DOMAIN-SUFFIX,blizzard.com,🍂 国内网络
-- DOMAIN-SUFFIX,battle.net,🍂 国内网络
-- DOMAIN,blzddist1-a.akamaihd.net,🍂 国内网络
+- DOMAIN-SUFFIX,blizzard.com,🍂 Domestic
+- DOMAIN-SUFFIX,battle.net,🍂 Domestic
+- DOMAIN,blzddist1-a.akamaihd.net,🍂 Domestic
 # > Steam
-- DOMAIN-SUFFIX,steampowered.com,🍂 国内网络
-- DOMAIN-SUFFIX,steam-chat.com,🍂 国内网络
-- DOMAIN-KEYWORD,steamcdn,🍂 国内网络
-- DOMAIN-KEYWORD,steamstore,🍂 国内网络
-- DOMAIN-KEYWORD,steamuserimages,🍂 国内网络
-- DOMAIN-KEYWORD,steambroadcast,🍂 国内网络
+- DOMAIN-SUFFIX,steampowered.com,🍂 Domestic
+- DOMAIN-SUFFIX,steam-chat.com,🍂 Domestic
+- DOMAIN-KEYWORD,steamcdn,🍂 Domestic
+- DOMAIN-KEYWORD,steamstore,🍂 Domestic
+- DOMAIN-KEYWORD,steamuserimages,🍂 Domestic
+- DOMAIN-KEYWORD,steambroadcast,🍂 Domestic
 # > Tencent
-#USER-AGENT,MicroMessenger%20Client,🍂 国内网络
-#USER-AGENT,WeChat*,🍂 国内网络
-- DOMAIN-SUFFIX,qq.com,🍂 国内网络
-- DOMAIN-SUFFIX,qpic.cn,🍂 国内网络
-- DOMAIN-SUFFIX,tencent.com,🍂 国内网络
+#USER-AGENT,MicroMessenger%20Client,🍂 Domestic
+#USER-AGENT,WeChat*,🍂 Domestic
+- DOMAIN-SUFFIX,qq.com,🍂 Domestic
+- DOMAIN-SUFFIX,qpic.cn,🍂 Domestic
+- DOMAIN-SUFFIX,tencent.com,🍂 Domestic
 # > Alibaba
-- DOMAIN-SUFFIX,alibaba.com,🍂 国内网络
-- DOMAIN-SUFFIX,alicdn.com,🍂 国内网络
-- DOMAIN-SUFFIX,amap.com,🍂 国内网络
-- DOMAIN-SUFFIX,dingtalk.com,🍂 国内网络
-- DOMAIN-SUFFIX,taobao.com,🍂 国内网络
-- DOMAIN-SUFFIX,tmall.com,🍂 国内网络
-- DOMAIN-SUFFIX,ykimg.com,🍂 国内网络
-- DOMAIN-SUFFIX,youku.com,🍂 国内网络
-- DOMAIN-SUFFIX,xiami.com,🍂 国内网络
-- DOMAIN-SUFFIX,xiami.net,🍂 国内网络
+- DOMAIN-SUFFIX,alibaba.com,🍂 Domestic
+- DOMAIN-SUFFIX,alicdn.com,🍂 Domestic
+- DOMAIN-SUFFIX,amap.com,🍂 Domestic
+- DOMAIN-SUFFIX,dingtalk.com,🍂 Domestic
+- DOMAIN-SUFFIX,taobao.com,🍂 Domestic
+- DOMAIN-SUFFIX,tmall.com,🍂 Domestic
+- DOMAIN-SUFFIX,ykimg.com,🍂 Domestic
+- DOMAIN-SUFFIX,youku.com,🍂 Domestic
+- DOMAIN-SUFFIX,xiami.com,🍂 Domestic
+- DOMAIN-SUFFIX,xiami.net,🍂 Domestic
 # > NetEase
-- DOMAIN-SUFFIX,163.com,🍂 国内网络
-- DOMAIN-SUFFIX,126.net,🍂 国内网络
-- DOMAIN-SUFFIX,163yun.com,🍂 国内网络
+- DOMAIN-SUFFIX,163.com,🍂 Domestic
+- DOMAIN-SUFFIX,126.net,🍂 Domestic
+- DOMAIN-SUFFIX,163yun.com,🍂 Domestic
 # > Sohu
-- DOMAIN-SUFFIX,sohu.com.cn,🍂 国内网络
-- DOMAIN-SUFFIX,itc.cn,🍂 国内网络
-- DOMAIN-SUFFIX,sohu.com,🍂 国内网络
-- DOMAIN-SUFFIX,v-56.com,🍂 国内网络
+- DOMAIN-SUFFIX,sohu.com.cn,🍂 Domestic
+- DOMAIN-SUFFIX,itc.cn,🍂 Domestic
+- DOMAIN-SUFFIX,sohu.com,🍂 Domestic
+- DOMAIN-SUFFIX,v-56.com,🍂 Domestic
 # > Sina
-- DOMAIN-SUFFIX,weibo.com,🍂 国内网络
-- DOMAIN-SUFFIX,weibo.cn,🍂 国内网络
+- DOMAIN-SUFFIX,weibo.com,🍂 Domestic
+- DOMAIN-SUFFIX,weibo.cn,🍂 Domestic
 # > JD
-- DOMAIN-SUFFIX,jd.com,🍂 国内网络
-- DOMAIN-SUFFIX,jd.hk,🍂 国内网络
-- DOMAIN-SUFFIX,360buyimg.com,🍂 国内网络
+- DOMAIN-SUFFIX,jd.com,🍂 Domestic
+- DOMAIN-SUFFIX,jd.hk,🍂 Domestic
+- DOMAIN-SUFFIX,360buyimg.com,🍂 Domestic
 # > MI
-- DOMAIN-SUFFIX,duokan.com,🍂 国内网络
-- DOMAIN-SUFFIX,mi-img.com,🍂 国内网络
-- DOMAIN-SUFFIX,mifile.cn,🍂 国内网络
-- DOMAIN-SUFFIX,xiaomi.com,🍂 国内网络
+- DOMAIN-SUFFIX,duokan.com,🍂 Domestic
+- DOMAIN-SUFFIX,mi-img.com,🍂 Domestic
+- DOMAIN-SUFFIX,mifile.cn,🍂 Domestic
+- DOMAIN-SUFFIX,xiaomi.com,🍂 Domestic
 # > bilibili
-- DOMAIN-SUFFIX,acgvideo.com,🍂 国内网络
-- DOMAIN-SUFFIX,bilibili.com,🍂 国内网络
-- DOMAIN-SUFFIX,hdslb.com,🍂 国内网络
+- DOMAIN-SUFFIX,acgvideo.com,🍂 Domestic
+- DOMAIN-SUFFIX,bilibili.com,🍂 Domestic
+- DOMAIN-SUFFIX,hdslb.com,🍂 Domestic
 # > iQiyi
-- DOMAIN-SUFFIX,iqiyi.com,🍂 国内网络
-- DOMAIN-SUFFIX,iqiyipic.com,🍂 国内网络
-- DOMAIN-SUFFIX,71.am.com,🍂 国内网络
+- DOMAIN-SUFFIX,iqiyi.com,🍂 Domestic
+- DOMAIN-SUFFIX,iqiyipic.com,🍂 Domestic
+- DOMAIN-SUFFIX,71.am.com,🍂 Domestic
 # > HunanTV
-- DOMAIN-SUFFIX,hitv.com,🍂 国内网络
-- DOMAIN-SUFFIX,mgtv.com,🍂 国内网络
+- DOMAIN-SUFFIX,hitv.com,🍂 Domestic
+- DOMAIN-SUFFIX,mgtv.com,🍂 Domestic
 # > Meitu
-- DOMAIN-SUFFIX,meitu.com,🍂 国内网络
-- DOMAIN-SUFFIX,meitudata.com,🍂 国内网络
-- DOMAIN-SUFFIX,meipai.com,🍂 国内网络
+- DOMAIN-SUFFIX,meitu.com,🍂 Domestic
+- DOMAIN-SUFFIX,meitudata.com,🍂 Domestic
+- DOMAIN-SUFFIX,meipai.com,🍂 Domestic
 # > YYeTs
-- DOMAIN-SUFFIX,zmzapi.com,🍂 国内网络
-- DOMAIN-SUFFIX,zimuzu.tv,🍂 国内网络
-- DOMAIN-SUFFIX,zmzfile.com,🍂 国内网络
-- DOMAIN-SUFFIX,zmzapi.net,🍂 国内网络
+- DOMAIN-SUFFIX,zmzapi.com,🍂 Domestic
+- DOMAIN-SUFFIX,zimuzu.tv,🍂 Domestic
+- DOMAIN-SUFFIX,zmzfile.com,🍂 Domestic
+- DOMAIN-SUFFIX,zmzapi.net,🍂 Domestic
 # > 蛋蛋赞
-- DOMAIN-SUFFIX,baduziyuan.com,🍂 国内网络
-- DOMAIN-SUFFIX,com-hs-hkdy.com,🍂 国内网络
-- DOMAIN-SUFFIX,czybjz.com,🍂 国内网络
-- DOMAIN-SUFFIX,dandanzan.com,🍂 国内网络
-- DOMAIN-SUFFIX,fjhps.com,🍂 国内网络
-- DOMAIN-SUFFIX,kuyunbo.club,🍂 国内网络
+- DOMAIN-SUFFIX,baduziyuan.com,🍂 Domestic
+- DOMAIN-SUFFIX,com-hs-hkdy.com,🍂 Domestic
+- DOMAIN-SUFFIX,czybjz.com,🍂 Domestic
+- DOMAIN-SUFFIX,dandanzan.com,🍂 Domestic
+- DOMAIN-SUFFIX,fjhps.com,🍂 Domestic
+- DOMAIN-SUFFIX,kuyunbo.club,🍂 Domestic
 # > Baidu
-- DOMAIN-SUFFIX,baidu.com,🍂 国内网络
-- DOMAIN-SUFFIX,baidubcr.com,🍂 国内网络
-- DOMAIN-SUFFIX,bdstatic.com,🍂 国内网络
+- DOMAIN-SUFFIX,baidu.com,🍂 Domestic
+- DOMAIN-SUFFIX,baidubcr.com,🍂 Domestic
+- DOMAIN-SUFFIX,bdstatic.com,🍂 Domestic
 # > ChinaNet
-- DOMAIN-SUFFIX,189.cn,🍂 国内网络
-- DOMAIN-SUFFIX,21cn.com,🍂 国内网络
+- DOMAIN-SUFFIX,189.cn,🍂 Domestic
+- DOMAIN-SUFFIX,21cn.com,🍂 Domestic
 # > ByteDance
-- DOMAIN-SUFFIX,bytecdn.cn,🍂 国内网络
-- DOMAIN-SUFFIX,pstatp.com,🍂 国内网络
-- DOMAIN-SUFFIX,snssdk.com,🍂 国内网络
-- DOMAIN-SUFFIX,toutiao.com,🍂 国内网络
+- DOMAIN-SUFFIX,bytecdn.cn,🍂 Domestic
+- DOMAIN-SUFFIX,pstatp.com,🍂 Domestic
+- DOMAIN-SUFFIX,snssdk.com,🍂 Domestic
+- DOMAIN-SUFFIX,toutiao.com,🍂 Domestic
 # > Content Delivery Network
 # > Akamai
-- DOMAIN-SUFFIX,akadns.net,🍂 国内网络
-# - DOMAIN-SUFFIX,akamai.net,🍂 国内网络
-# - DOMAIN-SUFFIX,akamaiedge.net,🍂 国内网络
-# - DOMAIN-SUFFIX,akamaihd.net,🍂 国内网络
-# - DOMAIN-SUFFIX,akamaistream.net,🍂 国内网络
-# - DOMAIN-SUFFIX,akamaized.net,🍂 国内网络
+- DOMAIN-SUFFIX,akadns.net,🍂 Domestic
+# - DOMAIN-SUFFIX,akamai.net,🍂 Domestic
+# - DOMAIN-SUFFIX,akamaiedge.net,🍂 Domestic
+# - DOMAIN-SUFFIX,akamaihd.net,🍂 Domestic
+# - DOMAIN-SUFFIX,akamaistream.net,🍂 Domestic
+# - DOMAIN-SUFFIX,akamaized.net,🍂 Domestic
 # > ChinaNetCenter
-- DOMAIN-SUFFIX,chinanetcenter.com,🍂 国内网络
-- DOMAIN-SUFFIX,wangsu.com,🍂 国内网络
+- DOMAIN-SUFFIX,chinanetcenter.com,🍂 Domestic
+- DOMAIN-SUFFIX,wangsu.com,🍂 Domestic
 # > IP Query
-- DOMAIN-SUFFIX,ipip.net,🍂 国内网络
-- DOMAIN-SUFFIX,ip.cn,🍂 国内网络
-- DOMAIN-SUFFIX,ip.la,🍂 国内网络
-- DOMAIN-SUFFIX,ip-cdn.com,🍂 国内网络
-- DOMAIN-SUFFIX,ipv6-test.com,🍂 国内网络
-- DOMAIN-SUFFIX,test-ipv6.com,🍂 国内网络
-- DOMAIN-SUFFIX,whatismyip.com,🍂 国内网络
-- DOMAIN,ip.bjango.com,🍂 国内网络
+- DOMAIN-SUFFIX,ipip.net,🍂 Domestic
+- DOMAIN-SUFFIX,ip.cn,🍂 Domestic
+- DOMAIN-SUFFIX,ip.la,🍂 Domestic
+- DOMAIN-SUFFIX,ip-cdn.com,🍂 Domestic
+- DOMAIN-SUFFIX,ipv6-test.com,🍂 Domestic
+- DOMAIN-SUFFIX,test-ipv6.com,🍂 Domestic
+- DOMAIN-SUFFIX,whatismyip.com,🍂 Domestic
+- DOMAIN,ip.bjango.com,🍂 Domestic
 # > Other
-- DOMAIN-SUFFIX,40017.cn,🍂 国内网络
-- DOMAIN-SUFFIX,broadcasthe.net,🍂 国内网络
-- DOMAIN-SUFFIX,cailianpress.com,🍂 国内网络
-- DOMAIN-SUFFIX,chdbits.co,🍂 国内网络
-- DOMAIN-SUFFIX,chushou.tv,🍂 国内网络
-- DOMAIN-SUFFIX,cmbchina.com,🍂 国内网络
-- DOMAIN-SUFFIX,cmbimg.com,🍂 国内网络
-- DOMAIN-SUFFIX,cmct.tv,🍂 国内网络
-- DOMAIN-SUFFIX,cmvideo.cn,🍂 国内网络
-- DOMAIN-SUFFIX,cnlang.org,🍂 国内网络
-- DOMAIN-SUFFIX,doubanio.com,🍂 国内网络
-- DOMAIN-SUFFIX,douyu.com,🍂 国内网络
-- DOMAIN-SUFFIX,douyucdn.cn,🍂 国内网络
-- DOMAIN-SUFFIX,dxycdn.com,🍂 国内网络
-- DOMAIN-SUFFIX,hicloud.com,🍂 国内网络
-- DOMAIN-SUFFIX,hdchina.org,🍂 国内网络
-- DOMAIN-SUFFIX,hdcmct.org,🍂 国内网络
-- DOMAIN-SUFFIX,ithome.com,🍂 国内网络
-- DOMAIN-SUFFIX,kkmh.com,🍂 国内网络
-- DOMAIN-SUFFIX,ksosoft.com,🍂 国内网络
-- DOMAIN-SUFFIX,maoyun.tv,🍂 国内网络
-- DOMAIN-SUFFIX,meituan.net,🍂 国内网络
-- DOMAIN-SUFFIX,mobike.com,🍂 国内网络
-- DOMAIN-SUFFIX,mubu.com,🍂 国内网络
-- DOMAIN-SUFFIX,myzaker.com,🍂 国内网络
-- DOMAIN-SUFFIX,ourbits.club,🍂 国内网络
-- DOMAIN-SUFFIX,passthepopcorn.me,🍂 国内网络
-- DOMAIN-SUFFIX,paypal.com,🍂 国内网络
-- DOMAIN-SUFFIX,paypalobjects.com,🍂 国内网络
-- DOMAIN-SUFFIX,privatehd.to,🍂 国内网络
-- DOMAIN-SUFFIX,redacted.ch,🍂 国内网络
-- DOMAIN-SUFFIX,ruguoapp.com,🍂 国内网络
-- DOMAIN-SUFFIX,smzdm.com,🍂 国内网络
-- DOMAIN-SUFFIX,sogou.com,🍂 国内网络
-- DOMAIN-SUFFIX,teamviewer.com,🍂 国内网络
-- DOMAIN-SUFFIX,totheglory.im,🍂 国内网络
-- DOMAIN-SUFFIX,udacity.com,🍂 国内网络
-- DOMAIN-SUFFIX,xmcdn.com,🍂 国内网络
-- DOMAIN-SUFFIX,yangkeduo.com,🍂 国内网络
-- DOMAIN-SUFFIX,zhihu.com,🍂 国内网络
-- DOMAIN-SUFFIX,zhimg.com,🍂 国内网络
-#USER-AGENT,NeteaseMusic*,🍂 国内网络
-#USER-AGENT,%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90*,🍂 国内网络
+- DOMAIN-SUFFIX,40017.cn,🍂 Domestic
+- DOMAIN-SUFFIX,broadcasthe.net,🍂 Domestic
+- DOMAIN-SUFFIX,cailianpress.com,🍂 Domestic
+- DOMAIN-SUFFIX,chdbits.co,🍂 Domestic
+- DOMAIN-SUFFIX,chushou.tv,🍂 Domestic
+- DOMAIN-SUFFIX,cmbchina.com,🍂 Domestic
+- DOMAIN-SUFFIX,cmbimg.com,🍂 Domestic
+- DOMAIN-SUFFIX,cmct.tv,🍂 Domestic
+- DOMAIN-SUFFIX,cmvideo.cn,🍂 Domestic
+- DOMAIN-SUFFIX,cnlang.org,🍂 Domestic
+- DOMAIN-SUFFIX,doubanio.com,🍂 Domestic
+- DOMAIN-SUFFIX,douyu.com,🍂 Domestic
+- DOMAIN-SUFFIX,douyucdn.cn,🍂 Domestic
+- DOMAIN-SUFFIX,dxycdn.com,🍂 Domestic
+- DOMAIN-SUFFIX,hicloud.com,🍂 Domestic
+- DOMAIN-SUFFIX,hdchina.org,🍂 Domestic
+- DOMAIN-SUFFIX,hdcmct.org,🍂 Domestic
+- DOMAIN-SUFFIX,ithome.com,🍂 Domestic
+- DOMAIN-SUFFIX,kkmh.com,🍂 Domestic
+- DOMAIN-SUFFIX,ksosoft.com,🍂 Domestic
+- DOMAIN-SUFFIX,maoyun.tv,🍂 Domestic
+- DOMAIN-SUFFIX,meituan.net,🍂 Domestic
+- DOMAIN-SUFFIX,mobike.com,🍂 Domestic
+- DOMAIN-SUFFIX,mubu.com,🍂 Domestic
+- DOMAIN-SUFFIX,myzaker.com,🍂 Domestic
+- DOMAIN-SUFFIX,ourbits.club,🍂 Domestic
+- DOMAIN-SUFFIX,passthepopcorn.me,🍂 Domestic
+- DOMAIN-SUFFIX,paypal.com,🍂 Domestic
+- DOMAIN-SUFFIX,paypalobjects.com,🍂 Domestic
+- DOMAIN-SUFFIX,privatehd.to,🍂 Domestic
+- DOMAIN-SUFFIX,redacted.ch,🍂 Domestic
+- DOMAIN-SUFFIX,ruguoapp.com,🍂 Domestic
+- DOMAIN-SUFFIX,smzdm.com,🍂 Domestic
+- DOMAIN-SUFFIX,sogou.com,🍂 Domestic
+- DOMAIN-SUFFIX,teamviewer.com,🍂 Domestic
+- DOMAIN-SUFFIX,totheglory.im,🍂 Domestic
+- DOMAIN-SUFFIX,udacity.com,🍂 Domestic
+- DOMAIN-SUFFIX,xmcdn.com,🍂 Domestic
+- DOMAIN-SUFFIX,yangkeduo.com,🍂 Domestic
+- DOMAIN-SUFFIX,zhihu.com,🍂 Domestic
+- DOMAIN-SUFFIX,zhimg.com,🍂 Domestic
+#USER-AGENT,NeteaseMusic*,🍂 Domestic
+#USER-AGENT,%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90*,🍂 Domestic
 
 # (DNS Cache Pollution Protection)
 # > Google
-- DOMAIN-SUFFIX,appspot.com,🍃 JINKELA
-- DOMAIN-SUFFIX,blogger.com,🍃 JINKELA
-- DOMAIN-SUFFIX,getoutline.org,🍃 JINKELA
-- DOMAIN-SUFFIX,gvt0.com,🍃 JINKELA
-- DOMAIN-SUFFIX,gvt1.com,🍃 JINKELA
-- DOMAIN-SUFFIX,gvt3.com,🍃 JINKELA
-- DOMAIN-SUFFIX,xn--ngstr-lra8j.com,🍃 JINKELA
-- DOMAIN-KEYWORD,google,🍃 JINKELA
-- DOMAIN-KEYWORD,blogspot,🍃 JINKELA
+- DOMAIN-SUFFIX,appspot.com,🍃 Proxies
+- DOMAIN-SUFFIX,blogger.com,🍃 Proxies
+- DOMAIN-SUFFIX,getoutline.org,🍃 Proxies
+- DOMAIN-SUFFIX,gvt0.com,🍃 Proxies
+- DOMAIN-SUFFIX,gvt1.com,🍃 Proxies
+- DOMAIN-SUFFIX,gvt3.com,🍃 Proxies
+- DOMAIN-SUFFIX,xn--ngstr-lra8j.com,🍃 Proxies
+- DOMAIN-KEYWORD,google,🍃 Proxies
+- DOMAIN-KEYWORD,blogspot,🍃 Proxies
 # > Facebook
-- DOMAIN-SUFFIX,cdninstagram.com,🍃 JINKELA
-- DOMAIN-SUFFIX,fb.com,🍃 JINKELA
-- DOMAIN-SUFFIX,fb.me,🍃 JINKELA
-- DOMAIN-SUFFIX,fbaddins.com,🍃 JINKELA
-- DOMAIN-SUFFIX,fbcdn.net,🍃 JINKELA
-- DOMAIN-SUFFIX,fbsbx.com,🍃 JINKELA
-- DOMAIN-SUFFIX,fbworkmail.com,🍃 JINKELA
-- DOMAIN-SUFFIX,instagram.com,🍃 JINKELA
-- DOMAIN-SUFFIX,m.me,🍃 JINKELA
-- DOMAIN-SUFFIX,messenger.com,🍃 JINKELA
-- DOMAIN-SUFFIX,oculus.com,🍃 JINKELA
-- DOMAIN-SUFFIX,oculuscdn.com,🍃 JINKELA
-- DOMAIN-SUFFIX,rocksdb.org,🍃 JINKELA
-- DOMAIN-SUFFIX,whatsapp.com,🍃 JINKELA
-- DOMAIN-SUFFIX,whatsapp.net,🍃 JINKELA
-- DOMAIN-KEYWORD,facebook,🍃 JINKELA
+- DOMAIN-SUFFIX,cdninstagram.com,🍃 Proxies
+- DOMAIN-SUFFIX,fb.com,🍃 Proxies
+- DOMAIN-SUFFIX,fb.me,🍃 Proxies
+- DOMAIN-SUFFIX,fbaddins.com,🍃 Proxies
+- DOMAIN-SUFFIX,fbcdn.net,🍃 Proxies
+- DOMAIN-SUFFIX,fbsbx.com,🍃 Proxies
+- DOMAIN-SUFFIX,fbworkmail.com,🍃 Proxies
+- DOMAIN-SUFFIX,instagram.com,🍃 Proxies
+- DOMAIN-SUFFIX,m.me,🍃 Proxies
+- DOMAIN-SUFFIX,messenger.com,🍃 Proxies
+- DOMAIN-SUFFIX,oculus.com,🍃 Proxies
+- DOMAIN-SUFFIX,oculuscdn.com,🍃 Proxies
+- DOMAIN-SUFFIX,rocksdb.org,🍃 Proxies
+- DOMAIN-SUFFIX,whatsapp.com,🍃 Proxies
+- DOMAIN-SUFFIX,whatsapp.net,🍃 Proxies
+- DOMAIN-KEYWORD,facebook,🍃 Proxies
 # > Twitter
-- DOMAIN-SUFFIX,pscp.tv,🍃 JINKELA
-- DOMAIN-SUFFIX,periscope.tv,🍃 JINKELA
-- DOMAIN-SUFFIX,t.co,🍃 JINKELA
-- DOMAIN-SUFFIX,twimg.co,🍃 JINKELA
-- DOMAIN-SUFFIX,twimg.com,🍃 JINKELA
-- DOMAIN-SUFFIX,twitpic.com,🍃 JINKELA
-- DOMAIN-SUFFIX,vine.co,🍃 JINKELA
-- DOMAIN-KEYWORD,twitter,🍃 JINKELA
+- DOMAIN-SUFFIX,pscp.tv,🍃 Proxies
+- DOMAIN-SUFFIX,periscope.tv,🍃 Proxies
+- DOMAIN-SUFFIX,t.co,🍃 Proxies
+- DOMAIN-SUFFIX,twimg.co,🍃 Proxies
+- DOMAIN-SUFFIX,twimg.com,🍃 Proxies
+- DOMAIN-SUFFIX,twitpic.com,🍃 Proxies
+- DOMAIN-SUFFIX,vine.co,🍃 Proxies
+- DOMAIN-KEYWORD,twitter,🍃 Proxies
 # > Telegram
-- DOMAIN-SUFFIX,t.me,🍃 JINKELA
-- DOMAIN-SUFFIX,tdesktop.com,🍃 JINKELA
-- DOMAIN-SUFFIX,telegra.ph,🍃 JINKELA
-- DOMAIN-SUFFIX,telegram.me,🍃 JINKELA
-- DOMAIN-SUFFIX,telegram.org,🍃 JINKELA
+- DOMAIN-SUFFIX,t.me,🍃 Proxies
+- DOMAIN-SUFFIX,tdesktop.com,🍃 Proxies
+- DOMAIN-SUFFIX,telegra.ph,🍃 Proxies
+- DOMAIN-SUFFIX,telegram.me,🍃 Proxies
+- DOMAIN-SUFFIX,telegram.org,🍃 Proxies
 # > Line
-- DOMAIN-SUFFIX,line.me,🍃 JINKELA
-- DOMAIN-SUFFIX,line-apps.com,🍃 JINKELA
-- DOMAIN-SUFFIX,line-scdn.net,🍃 JINKELA
-- DOMAIN-SUFFIX,naver.jp,🍃 JINKELA
+- DOMAIN-SUFFIX,line.me,🍃 Proxies
+- DOMAIN-SUFFIX,line-apps.com,🍃 Proxies
+- DOMAIN-SUFFIX,line-scdn.net,🍃 Proxies
+- DOMAIN-SUFFIX,naver.jp,🍃 Proxies
 # > Other
-- DOMAIN-SUFFIX,4shared.com,🍃 JINKELA
-- DOMAIN-SUFFIX,881903.com,🍃 JINKELA
-- DOMAIN-SUFFIX,abc.net.au,🍃 JINKELA
-- DOMAIN-SUFFIX,abebooks.com,🍃 JINKELA
-- DOMAIN-SUFFIX,amazon.co.jp,🍃 JINKELA
-- DOMAIN-SUFFIX,apigee.com,🍃 JINKELA
-- DOMAIN-SUFFIX,apk-dl.com,🍃 JINKELA
-- DOMAIN-SUFFIX,apkmirror.com,🍃 JINKELA
-- DOMAIN-SUFFIX,apkmonk.com,🍃 JINKELA
-- DOMAIN-SUFFIX,apkpure.com,🍃 JINKELA
-- DOMAIN-SUFFIX,aptoide.com,🍃 JINKELA
-- DOMAIN-SUFFIX,archive.is,🍃 JINKELA
-- DOMAIN-SUFFIX,archive.org,🍃 JINKELA
-- DOMAIN-SUFFIX,arte.tv,🍃 JINKELA
-- DOMAIN-SUFFIX,ask.com,🍃 JINKELA
-- DOMAIN-SUFFIX,avgle.com,🍃 JINKELA
-- DOMAIN-SUFFIX,badoo.com,🍃 JINKELA
-- DOMAIN-SUFFIX,bandwagonhost.com,🍃 JINKELA
-- DOMAIN-SUFFIX,bbc.com,🍃 JINKELA
-- DOMAIN-SUFFIX,behance.net,🍃 JINKELA
-- DOMAIN-SUFFIX,bibox.com,🍃 JINKELA
-- DOMAIN-SUFFIX,biggo.com.tw,🍃 JINKELA
-- DOMAIN-SUFFIX,binance.com,🍃 JINKELA
-- DOMAIN-SUFFIX,bitcointalk.org,🍃 JINKELA
-- DOMAIN-SUFFIX,bitfinex.com,🍃 JINKELA
-- DOMAIN-SUFFIX,bitmex.com,🍃 JINKELA
-- DOMAIN-SUFFIX,bit-z.com,🍃 JINKELA
-- DOMAIN-SUFFIX,bloglovin.com,🍃 JINKELA
-- DOMAIN-SUFFIX,bloomberg.cn,🍃 JINKELA
-- DOMAIN-SUFFIX,bloomberg.com,🍃 JINKELA
-- DOMAIN-SUFFIX,book.com.tw,🍃 JINKELA
-- DOMAIN-SUFFIX,booklive.jp,🍃 JINKELA
-- DOMAIN-SUFFIX,books.com.tw,🍃 JINKELA
-- DOMAIN-SUFFIX,box.com,🍃 JINKELA
-- DOMAIN-SUFFIX,brookings.edu,🍃 JINKELA
-- DOMAIN-SUFFIX,businessinsider.com,🍃 JINKELA
-- DOMAIN-SUFFIX,bwh1.net,🍃 JINKELA
-- DOMAIN-SUFFIX,castbox.fm,🍃 JINKELA
-- DOMAIN-SUFFIX,cbc.ca,🍃 JINKELA
-- DOMAIN-SUFFIX,cdw.com,🍃 JINKELA
-- DOMAIN-SUFFIX,change.org,🍃 JINKELA
-- DOMAIN-SUFFIX,ck101.com,🍃 JINKELA
-- DOMAIN-SUFFIX,clarionproject.org,🍃 JINKELA
-- DOMAIN-SUFFIX,clyp.it,🍃 JINKELA
-- DOMAIN-SUFFIX,cna.com.tw,🍃 JINKELA
-- DOMAIN-SUFFIX,comparitech.com,🍃 JINKELA
-- DOMAIN-SUFFIX,conoha.jp,🍃 JINKELA
-- DOMAIN-SUFFIX,crucial.com,🍃 JINKELA
-- DOMAIN-SUFFIX,cts.com.tw,🍃 JINKELA
-- DOMAIN-SUFFIX,cw.com.tw,🍃 JINKELA
-- DOMAIN-SUFFIX,cyberctm.com,🍃 JINKELA
-- DOMAIN-SUFFIX,dailymotion.com,🍃 JINKELA
-- DOMAIN-SUFFIX,dailyview.tw,🍃 JINKELA
-- DOMAIN-SUFFIX,daum.net,🍃 JINKELA
-- DOMAIN-SUFFIX,daumcdn.net,🍃 JINKELA
-- DOMAIN-SUFFIX,dcard.tw,🍃 JINKELA
-- DOMAIN-SUFFIX,deepdiscount.com,🍃 JINKELA
-- DOMAIN-SUFFIX,deezer.com,🍃 JINKELA
-- DOMAIN-SUFFIX,depositphotos.com,🍃 JINKELA
-- DOMAIN-SUFFIX,disconnect.me,🍃 JINKELA
-- DOMAIN-SUFFIX,discordapp.com,🍃 JINKELA
-- DOMAIN-SUFFIX,discordapp.net,🍃 JINKELA
-- DOMAIN-SUFFIX,disqus.com,🍃 JINKELA
-- DOMAIN-SUFFIX,dns2go.com,🍃 JINKELA
-- DOMAIN-SUFFIX,dropbox.com,🍃 JINKELA
-- DOMAIN-SUFFIX,dropboxusercontent.com,🍃 JINKELA
-- DOMAIN-SUFFIX,duckduckgo.com,🍃 JINKELA
-- DOMAIN-SUFFIX,dw.com,🍃 JINKELA
-- DOMAIN-SUFFIX,dynu.com,🍃 JINKELA
-- DOMAIN-SUFFIX,earthcam.com,🍃 JINKELA
-- DOMAIN-SUFFIX,ebookservice.tw,🍃 JINKELA
-- DOMAIN-SUFFIX,economist.com,🍃 JINKELA
-- DOMAIN-SUFFIX,edgecastcdn.net,🍃 JINKELA
-- DOMAIN-SUFFIX,edu,🍃 JINKELA
-- DOMAIN-SUFFIX,elpais.com,🍃 JINKELA
-- DOMAIN-SUFFIX,enanyang.my,🍃 JINKELA
-- DOMAIN-SUFFIX,euronews.com,🍃 JINKELA
-- DOMAIN-SUFFIX,feedly.com,🍃 JINKELA
-- DOMAIN-SUFFIX,files.wordpress.com,🍃 JINKELA
-- DOMAIN-SUFFIX,flickr.com,🍃 JINKELA
-- DOMAIN-SUFFIX,flitto.com,🍃 JINKELA
-- DOMAIN-SUFFIX,foreignpolicy.com,🍃 JINKELA
-- DOMAIN-SUFFIX,friday.tw,🍃 JINKELA
-- DOMAIN-SUFFIX,gate.io,🍃 JINKELA
-- DOMAIN-SUFFIX,getlantern.org,🍃 JINKELA
-- DOMAIN-SUFFIX,getsync.com,🍃 JINKELA
-- DOMAIN-SUFFIX,🍃 JINKELAvoices.org,🍃 JINKELA
-- DOMAIN-SUFFIX,goo.ne.jp,🍃 JINKELA
-- DOMAIN-SUFFIX,goodreads.com,🍃 JINKELA
-- DOMAIN-SUFFIX,gov.tw,🍃 JINKELA
-- DOMAIN-SUFFIX,gumroad.com,🍃 JINKELA
-- DOMAIN-SUFFIX,hbg.com,🍃 JINKELA
-- DOMAIN-SUFFIX,hightail.com,🍃 JINKELA
-- DOMAIN-SUFFIX,hk01.com,🍃 JINKELA
-- DOMAIN-SUFFIX,hkbf.org,🍃 JINKELA
-- DOMAIN-SUFFIX,hkbookcity.com,🍃 JINKELA
-- DOMAIN-SUFFIX,hkej.com,🍃 JINKELA
-- DOMAIN-SUFFIX,hket.com,🍃 JINKELA
-- DOMAIN-SUFFIX,hkgolden.com,🍃 JINKELA
-- DOMAIN-SUFFIX,hootsuite.com,🍃 JINKELA
-- DOMAIN-SUFFIX,hudson.org,🍃 JINKELA
-- DOMAIN-SUFFIX,huobi.pro,🍃 JINKELA
-- DOMAIN-SUFFIX,initiummall.com,🍃 JINKELA
-- DOMAIN-SUFFIX,ipfs.io,🍃 JINKELA
-- DOMAIN-SUFFIX,issuu.com,🍃 JINKELA
-- DOMAIN-SUFFIX,japantimes.co.jp,🍃 JINKELA
-- DOMAIN-SUFFIX,jiji.com,🍃 JINKELA
-- DOMAIN-SUFFIX,jinx.com,🍃 JINKELA
-- DOMAIN-SUFFIX,jkforum.net,🍃 JINKELA
-- DOMAIN-SUFFIX,joinmastodon.org,🍃 JINKELA
-- DOMAIN-SUFFIX,kakao.com,🍃 JINKELA
-- DOMAIN-SUFFIX,lihkg.com,🍃 JINKELA
-- DOMAIN-SUFFIX,live.com,🍃 JINKELA
-- DOMAIN-SUFFIX,mail.ru,🍃 JINKELA
-- DOMAIN-SUFFIX,matters.news,🍃 JINKELA
-- DOMAIN-SUFFIX,medium.com,🍃 JINKELA
-- DOMAIN-SUFFIX,mega.nz,🍃 JINKELA
-- DOMAIN-SUFFIX,mil,🍃 JINKELA
-- DOMAIN-SUFFIX,mobile01.com,🍃 JINKELA
-- DOMAIN-SUFFIX,naver.com,🍃 JINKELA
-- DOMAIN-SUFFIX,nikkei.com,🍃 JINKELA
-- DOMAIN-SUFFIX,nofile.io,🍃 JINKELA
-- DOMAIN-SUFFIX,now.com,🍃 JINKELA
-- DOMAIN-SUFFIX,nyt.com,🍃 JINKELA
-- DOMAIN-SUFFIX,nytchina.com,🍃 JINKELA
-- DOMAIN-SUFFIX,nytcn.me,🍃 JINKELA
-- DOMAIN-SUFFIX,nytco.com,🍃 JINKELA
-- DOMAIN-SUFFIX,nytimes.com,🍃 JINKELA
-- DOMAIN-SUFFIX,nytimg.com,🍃 JINKELA
-- DOMAIN-SUFFIX,nytlog.com,🍃 JINKELA
-- DOMAIN-SUFFIX,nytstyle.com,🍃 JINKELA
-- DOMAIN-SUFFIX,ok.ru,🍃 JINKELA
-- DOMAIN-SUFFIX,okex.com,🍃 JINKELA
-- DOMAIN-SUFFIX,pcloud.com,🍃 JINKELA
-- DOMAIN-SUFFIX,pinimg.com,🍃 JINKELA
-- DOMAIN-SUFFIX,pixiv.net,🍃 JINKELA
-- DOMAIN-SUFFIX,pornhub.com,🍃 JINKELA
-- DOMAIN-SUFFIX,pureapk.com,🍃 JINKELA
-- DOMAIN-SUFFIX,quora.com,🍃 JINKELA
-- DOMAIN-SUFFIX,quoracdn.net,🍃 JINKELA
-- DOMAIN-SUFFIX,rakuten.co.jp,🍃 JINKELA
-- DOMAIN-SUFFIX,reddit.com,🍃 JINKELA
-- DOMAIN-SUFFIX,redditmedia.com,🍃 JINKELA
-- DOMAIN-SUFFIX,resilio.com,🍃 JINKELA
-- DOMAIN-SUFFIX,reuters.com,🍃 JINKELA
-- DOMAIN-SUFFIX,scmp.com,🍃 JINKELA
-- DOMAIN-SUFFIX,scribd.com,🍃 JINKELA
-- DOMAIN-SUFFIX,seatguru.com,🍃 JINKELA
-- DOMAIN-SUFFIX,shadowsocks.org,🍃 JINKELA
-- DOMAIN-SUFFIX,slideshare.net,🍃 JINKELA
-- DOMAIN-SUFFIX,soundcloud.com,🍃 JINKELA
-- DOMAIN-SUFFIX,startpage.com,🍃 JINKELA
-- DOMAIN-SUFFIX,steamcommunity.com,🍃 JINKELA
-- DOMAIN-SUFFIX,steemit.com,🍃 JINKELA
-- DOMAIN-SUFFIX,t66y.com,🍃 JINKELA
-- DOMAIN-SUFFIX,teco-hk.org,🍃 JINKELA
-- DOMAIN-SUFFIX,teco-mo.org,🍃 JINKELA
-- DOMAIN-SUFFIX,teddysun.com,🍃 JINKELA
-- DOMAIN-SUFFIX,theinitium.com,🍃 JINKELA
-- DOMAIN-SUFFIX,tineye.com,🍃 JINKELA
-- DOMAIN-SUFFIX,torproject.org,🍃 JINKELA
-- DOMAIN-SUFFIX,tumblr.com,🍃 JINKELA
-- DOMAIN-SUFFIX,turbobit.net,🍃 JINKELA
-- DOMAIN-SUFFIX,twitch.tv,🍃 JINKELA
-- DOMAIN-SUFFIX,udn.com,🍃 JINKELA
-- DOMAIN-SUFFIX,unseen.is,🍃 JINKELA
-- DOMAIN-SUFFIX,upmedia.mg,🍃 JINKELA
-- DOMAIN-SUFFIX,uptodown.com,🍃 JINKELA
-- DOMAIN-SUFFIX,ustream.tv,🍃 JINKELA
-- DOMAIN-SUFFIX,uwants.com,🍃 JINKELA
-- DOMAIN-SUFFIX,v2ray.com,🍃 JINKELA
-- DOMAIN-SUFFIX,viber.com,🍃 JINKELA
-- DOMAIN-SUFFIX,videopress.com,🍃 JINKELA
-- DOMAIN-SUFFIX,vimeo.com,🍃 JINKELA
-- DOMAIN-SUFFIX,voxer.com,🍃 JINKELA
-- DOMAIN-SUFFIX,vzw.com,🍃 JINKELA
-- DOMAIN-SUFFIX,w3schools.com,🍃 JINKELA
-- DOMAIN-SUFFIX,wattpad.com,🍃 JINKELA
-- DOMAIN-SUFFIX,whoer.net,🍃 JINKELA
-- DOMAIN-SUFFIX,wikimapia.org,🍃 JINKELA
-- DOMAIN-SUFFIX,wikipedia.org,🍃 JINKELA
-- DOMAIN-SUFFIX,wire.com,🍃 JINKELA
-- DOMAIN-SUFFIX,worldcat.org,🍃 JINKELA
-- DOMAIN-SUFFIX,wsj.com,🍃 JINKELA
-- DOMAIN-SUFFIX,wsj.net,🍃 JINKELA
-- DOMAIN-SUFFIX,xboxlive.com,🍃 JINKELA
-- DOMAIN-SUFFIX,xvideos.com,🍃 JINKELA
-- DOMAIN-SUFFIX,yahoo.com,🍃 JINKELA
-- DOMAIN-SUFFIX,yesasia.com,🍃 JINKELA
-- DOMAIN-SUFFIX,yes-news.com,🍃 JINKELA
-- DOMAIN-SUFFIX,yomiuri.co.jp,🍃 JINKELA
-- DOMAIN-SUFFIX,you-get.org,🍃 JINKELA
-- DOMAIN-SUFFIX,zb.com,🍃 JINKELA
-- DOMAIN-SUFFIX,zello.com,🍃 JINKELA
-- DOMAIN-SUFFIX,zeronet.io,🍃 JINKELA
-- DOMAIN,cdn-images.mailchimp.com,🍃 JINKELA
-- DOMAIN,id.heroku.com,🍃 JINKELA
-- DOMAIN-KEYWORD,github,🍃 JINKELA
-- DOMAIN-KEYWORD,jav,🍃 JINKELA
-- DOMAIN-KEYWORD,pinterest,🍃 JINKELA
-- DOMAIN-KEYWORD,porn,🍃 JINKELA
-- DOMAIN-KEYWORD,wikileaks,🍃 JINKELA
+- DOMAIN-SUFFIX,4shared.com,🍃 Proxies
+- DOMAIN-SUFFIX,881903.com,🍃 Proxies
+- DOMAIN-SUFFIX,abc.net.au,🍃 Proxies
+- DOMAIN-SUFFIX,abebooks.com,🍃 Proxies
+- DOMAIN-SUFFIX,amazon.co.jp,🍃 Proxies
+- DOMAIN-SUFFIX,apigee.com,🍃 Proxies
+- DOMAIN-SUFFIX,apk-dl.com,🍃 Proxies
+- DOMAIN-SUFFIX,apkmirror.com,🍃 Proxies
+- DOMAIN-SUFFIX,apkmonk.com,🍃 Proxies
+- DOMAIN-SUFFIX,apkpure.com,🍃 Proxies
+- DOMAIN-SUFFIX,aptoide.com,🍃 Proxies
+- DOMAIN-SUFFIX,archive.is,🍃 Proxies
+- DOMAIN-SUFFIX,archive.org,🍃 Proxies
+- DOMAIN-SUFFIX,arte.tv,🍃 Proxies
+- DOMAIN-SUFFIX,ask.com,🍃 Proxies
+- DOMAIN-SUFFIX,avgle.com,🍃 Proxies
+- DOMAIN-SUFFIX,badoo.com,🍃 Proxies
+- DOMAIN-SUFFIX,bandwagonhost.com,🍃 Proxies
+- DOMAIN-SUFFIX,bbc.com,🍃 Proxies
+- DOMAIN-SUFFIX,behance.net,🍃 Proxies
+- DOMAIN-SUFFIX,bibox.com,🍃 Proxies
+- DOMAIN-SUFFIX,biggo.com.tw,🍃 Proxies
+- DOMAIN-SUFFIX,binance.com,🍃 Proxies
+- DOMAIN-SUFFIX,bitcointalk.org,🍃 Proxies
+- DOMAIN-SUFFIX,bitfinex.com,🍃 Proxies
+- DOMAIN-SUFFIX,bitmex.com,🍃 Proxies
+- DOMAIN-SUFFIX,bit-z.com,🍃 Proxies
+- DOMAIN-SUFFIX,bloglovin.com,🍃 Proxies
+- DOMAIN-SUFFIX,bloomberg.cn,🍃 Proxies
+- DOMAIN-SUFFIX,bloomberg.com,🍃 Proxies
+- DOMAIN-SUFFIX,book.com.tw,🍃 Proxies
+- DOMAIN-SUFFIX,booklive.jp,🍃 Proxies
+- DOMAIN-SUFFIX,books.com.tw,🍃 Proxies
+- DOMAIN-SUFFIX,box.com,🍃 Proxies
+- DOMAIN-SUFFIX,brookings.edu,🍃 Proxies
+- DOMAIN-SUFFIX,businessinsider.com,🍃 Proxies
+- DOMAIN-SUFFIX,bwh1.net,🍃 Proxies
+- DOMAIN-SUFFIX,castbox.fm,🍃 Proxies
+- DOMAIN-SUFFIX,cbc.ca,🍃 Proxies
+- DOMAIN-SUFFIX,cdw.com,🍃 Proxies
+- DOMAIN-SUFFIX,change.org,🍃 Proxies
+- DOMAIN-SUFFIX,ck101.com,🍃 Proxies
+- DOMAIN-SUFFIX,clarionproject.org,🍃 Proxies
+- DOMAIN-SUFFIX,clyp.it,🍃 Proxies
+- DOMAIN-SUFFIX,cna.com.tw,🍃 Proxies
+- DOMAIN-SUFFIX,comparitech.com,🍃 Proxies
+- DOMAIN-SUFFIX,conoha.jp,🍃 Proxies
+- DOMAIN-SUFFIX,crucial.com,🍃 Proxies
+- DOMAIN-SUFFIX,cts.com.tw,🍃 Proxies
+- DOMAIN-SUFFIX,cw.com.tw,🍃 Proxies
+- DOMAIN-SUFFIX,cyberctm.com,🍃 Proxies
+- DOMAIN-SUFFIX,dailymotion.com,🍃 Proxies
+- DOMAIN-SUFFIX,dailyview.tw,🍃 Proxies
+- DOMAIN-SUFFIX,daum.net,🍃 Proxies
+- DOMAIN-SUFFIX,daumcdn.net,🍃 Proxies
+- DOMAIN-SUFFIX,dcard.tw,🍃 Proxies
+- DOMAIN-SUFFIX,deepdiscount.com,🍃 Proxies
+- DOMAIN-SUFFIX,deezer.com,🍃 Proxies
+- DOMAIN-SUFFIX,depositphotos.com,🍃 Proxies
+- DOMAIN-SUFFIX,disconnect.me,🍃 Proxies
+- DOMAIN-SUFFIX,discordapp.com,🍃 Proxies
+- DOMAIN-SUFFIX,discordapp.net,🍃 Proxies
+- DOMAIN-SUFFIX,disqus.com,🍃 Proxies
+- DOMAIN-SUFFIX,dns2go.com,🍃 Proxies
+- DOMAIN-SUFFIX,dropbox.com,🍃 Proxies
+- DOMAIN-SUFFIX,dropboxusercontent.com,🍃 Proxies
+- DOMAIN-SUFFIX,duckduckgo.com,🍃 Proxies
+- DOMAIN-SUFFIX,dw.com,🍃 Proxies
+- DOMAIN-SUFFIX,dynu.com,🍃 Proxies
+- DOMAIN-SUFFIX,earthcam.com,🍃 Proxies
+- DOMAIN-SUFFIX,ebookservice.tw,🍃 Proxies
+- DOMAIN-SUFFIX,economist.com,🍃 Proxies
+- DOMAIN-SUFFIX,edgecastcdn.net,🍃 Proxies
+- DOMAIN-SUFFIX,edu,🍃 Proxies
+- DOMAIN-SUFFIX,elpais.com,🍃 Proxies
+- DOMAIN-SUFFIX,enanyang.my,🍃 Proxies
+- DOMAIN-SUFFIX,euronews.com,🍃 Proxies
+- DOMAIN-SUFFIX,feedly.com,🍃 Proxies
+- DOMAIN-SUFFIX,files.wordpress.com,🍃 Proxies
+- DOMAIN-SUFFIX,flickr.com,🍃 Proxies
+- DOMAIN-SUFFIX,flitto.com,🍃 Proxies
+- DOMAIN-SUFFIX,foreignpolicy.com,🍃 Proxies
+- DOMAIN-SUFFIX,friday.tw,🍃 Proxies
+- DOMAIN-SUFFIX,gate.io,🍃 Proxies
+- DOMAIN-SUFFIX,getlantern.org,🍃 Proxies
+- DOMAIN-SUFFIX,getsync.com,🍃 Proxies
+- DOMAIN-SUFFIX,🍃 Proxiesvoices.org,🍃 Proxies
+- DOMAIN-SUFFIX,goo.ne.jp,🍃 Proxies
+- DOMAIN-SUFFIX,goodreads.com,🍃 Proxies
+- DOMAIN-SUFFIX,gov.tw,🍃 Proxies
+- DOMAIN-SUFFIX,gumroad.com,🍃 Proxies
+- DOMAIN-SUFFIX,hbg.com,🍃 Proxies
+- DOMAIN-SUFFIX,hightail.com,🍃 Proxies
+- DOMAIN-SUFFIX,hk01.com,🍃 Proxies
+- DOMAIN-SUFFIX,hkbf.org,🍃 Proxies
+- DOMAIN-SUFFIX,hkbookcity.com,🍃 Proxies
+- DOMAIN-SUFFIX,hkej.com,🍃 Proxies
+- DOMAIN-SUFFIX,hket.com,🍃 Proxies
+- DOMAIN-SUFFIX,hkgolden.com,🍃 Proxies
+- DOMAIN-SUFFIX,hootsuite.com,🍃 Proxies
+- DOMAIN-SUFFIX,hudson.org,🍃 Proxies
+- DOMAIN-SUFFIX,huobi.pro,🍃 Proxies
+- DOMAIN-SUFFIX,initiummall.com,🍃 Proxies
+- DOMAIN-SUFFIX,ipfs.io,🍃 Proxies
+- DOMAIN-SUFFIX,issuu.com,🍃 Proxies
+- DOMAIN-SUFFIX,japantimes.co.jp,🍃 Proxies
+- DOMAIN-SUFFIX,jiji.com,🍃 Proxies
+- DOMAIN-SUFFIX,jinx.com,🍃 Proxies
+- DOMAIN-SUFFIX,jkforum.net,🍃 Proxies
+- DOMAIN-SUFFIX,joinmastodon.org,🍃 Proxies
+- DOMAIN-SUFFIX,kakao.com,🍃 Proxies
+- DOMAIN-SUFFIX,lihkg.com,🍃 Proxies
+- DOMAIN-SUFFIX,live.com,🍃 Proxies
+- DOMAIN-SUFFIX,mail.ru,🍃 Proxies
+- DOMAIN-SUFFIX,matters.news,🍃 Proxies
+- DOMAIN-SUFFIX,medium.com,🍃 Proxies
+- DOMAIN-SUFFIX,mega.nz,🍃 Proxies
+- DOMAIN-SUFFIX,mil,🍃 Proxies
+- DOMAIN-SUFFIX,mobile01.com,🍃 Proxies
+- DOMAIN-SUFFIX,naver.com,🍃 Proxies
+- DOMAIN-SUFFIX,nikkei.com,🍃 Proxies
+- DOMAIN-SUFFIX,nofile.io,🍃 Proxies
+- DOMAIN-SUFFIX,now.com,🍃 Proxies
+- DOMAIN-SUFFIX,nyt.com,🍃 Proxies
+- DOMAIN-SUFFIX,nytchina.com,🍃 Proxies
+- DOMAIN-SUFFIX,nytcn.me,🍃 Proxies
+- DOMAIN-SUFFIX,nytco.com,🍃 Proxies
+- DOMAIN-SUFFIX,nytimes.com,🍃 Proxies
+- DOMAIN-SUFFIX,nytimg.com,🍃 Proxies
+- DOMAIN-SUFFIX,nytlog.com,🍃 Proxies
+- DOMAIN-SUFFIX,nytstyle.com,🍃 Proxies
+- DOMAIN-SUFFIX,ok.ru,🍃 Proxies
+- DOMAIN-SUFFIX,okex.com,🍃 Proxies
+- DOMAIN-SUFFIX,pcloud.com,🍃 Proxies
+- DOMAIN-SUFFIX,pinimg.com,🍃 Proxies
+- DOMAIN-SUFFIX,pixiv.net,🍃 Proxies
+- DOMAIN-SUFFIX,pornhub.com,🍃 Proxies
+- DOMAIN-SUFFIX,pureapk.com,🍃 Proxies
+- DOMAIN-SUFFIX,quora.com,🍃 Proxies
+- DOMAIN-SUFFIX,quoracdn.net,🍃 Proxies
+- DOMAIN-SUFFIX,rakuten.co.jp,🍃 Proxies
+- DOMAIN-SUFFIX,reddit.com,🍃 Proxies
+- DOMAIN-SUFFIX,redditmedia.com,🍃 Proxies
+- DOMAIN-SUFFIX,resilio.com,🍃 Proxies
+- DOMAIN-SUFFIX,reuters.com,🍃 Proxies
+- DOMAIN-SUFFIX,scmp.com,🍃 Proxies
+- DOMAIN-SUFFIX,scribd.com,🍃 Proxies
+- DOMAIN-SUFFIX,seatguru.com,🍃 Proxies
+- DOMAIN-SUFFIX,shadowsocks.org,🍃 Proxies
+- DOMAIN-SUFFIX,slideshare.net,🍃 Proxies
+- DOMAIN-SUFFIX,soundcloud.com,🍃 Proxies
+- DOMAIN-SUFFIX,startpage.com,🍃 Proxies
+- DOMAIN-SUFFIX,steamcommunity.com,🍃 Proxies
+- DOMAIN-SUFFIX,steemit.com,🍃 Proxies
+- DOMAIN-SUFFIX,t66y.com,🍃 Proxies
+- DOMAIN-SUFFIX,teco-hk.org,🍃 Proxies
+- DOMAIN-SUFFIX,teco-mo.org,🍃 Proxies
+- DOMAIN-SUFFIX,teddysun.com,🍃 Proxies
+- DOMAIN-SUFFIX,theinitium.com,🍃 Proxies
+- DOMAIN-SUFFIX,tineye.com,🍃 Proxies
+- DOMAIN-SUFFIX,torproject.org,🍃 Proxies
+- DOMAIN-SUFFIX,tumblr.com,🍃 Proxies
+- DOMAIN-SUFFIX,turbobit.net,🍃 Proxies
+- DOMAIN-SUFFIX,twitch.tv,🍃 Proxies
+- DOMAIN-SUFFIX,udn.com,🍃 Proxies
+- DOMAIN-SUFFIX,unseen.is,🍃 Proxies
+- DOMAIN-SUFFIX,upmedia.mg,🍃 Proxies
+- DOMAIN-SUFFIX,uptodown.com,🍃 Proxies
+- DOMAIN-SUFFIX,ustream.tv,🍃 Proxies
+- DOMAIN-SUFFIX,uwants.com,🍃 Proxies
+- DOMAIN-SUFFIX,v2ray.com,🍃 Proxies
+- DOMAIN-SUFFIX,viber.com,🍃 Proxies
+- DOMAIN-SUFFIX,videopress.com,🍃 Proxies
+- DOMAIN-SUFFIX,vimeo.com,🍃 Proxies
+- DOMAIN-SUFFIX,voxer.com,🍃 Proxies
+- DOMAIN-SUFFIX,vzw.com,🍃 Proxies
+- DOMAIN-SUFFIX,w3schools.com,🍃 Proxies
+- DOMAIN-SUFFIX,wattpad.com,🍃 Proxies
+- DOMAIN-SUFFIX,whoer.net,🍃 Proxies
+- DOMAIN-SUFFIX,wikimapia.org,🍃 Proxies
+- DOMAIN-SUFFIX,wikipedia.org,🍃 Proxies
+- DOMAIN-SUFFIX,wire.com,🍃 Proxies
+- DOMAIN-SUFFIX,worldcat.org,🍃 Proxies
+- DOMAIN-SUFFIX,wsj.com,🍃 Proxies
+- DOMAIN-SUFFIX,wsj.net,🍃 Proxies
+- DOMAIN-SUFFIX,xboxlive.com,🍃 Proxies
+- DOMAIN-SUFFIX,xvideos.com,🍃 Proxies
+- DOMAIN-SUFFIX,yahoo.com,🍃 Proxies
+- DOMAIN-SUFFIX,yesasia.com,🍃 Proxies
+- DOMAIN-SUFFIX,yes-news.com,🍃 Proxies
+- DOMAIN-SUFFIX,yomiuri.co.jp,🍃 Proxies
+- DOMAIN-SUFFIX,you-get.org,🍃 Proxies
+- DOMAIN-SUFFIX,zb.com,🍃 Proxies
+- DOMAIN-SUFFIX,zello.com,🍃 Proxies
+- DOMAIN-SUFFIX,zeronet.io,🍃 Proxies
+- DOMAIN,cdn-images.mailchimp.com,🍃 Proxies
+- DOMAIN,id.heroku.com,🍃 Proxies
+- DOMAIN-KEYWORD,github,🍃 Proxies
+- DOMAIN-KEYWORD,jav,🍃 Proxies
+- DOMAIN-KEYWORD,pinterest,🍃 Proxies
+- DOMAIN-KEYWORD,porn,🍃 Proxies
+- DOMAIN-KEYWORD,wikileaks,🍃 Proxies
 
 # (Region-Restricted Access Denied)
-- DOMAIN-SUFFIX,apartmentratings.com,🍃 JINKELA
-- DOMAIN-SUFFIX,apartments.com,🍃 JINKELA
-- DOMAIN-SUFFIX,bankmobilevibe.com,🍃 JINKELA
-- DOMAIN-SUFFIX,bing.com,🍃 JINKELA
-- DOMAIN-SUFFIX,booktopia.com.au,🍃 JINKELA
-- DOMAIN-SUFFIX,centauro.com.br,🍃 JINKELA
-- DOMAIN-SUFFIX,clearsurance.com,🍃 JINKELA
-- DOMAIN-SUFFIX,costco.com,🍃 JINKELA
-- DOMAIN-SUFFIX,crackle.com,🍃 JINKELA
-- DOMAIN-SUFFIX,depositphotos.cn,🍃 JINKELA
-- DOMAIN-SUFFIX,dish.com,🍃 JINKELA
-- DOMAIN-SUFFIX,dmm.co.jp,🍃 JINKELA
-- DOMAIN-SUFFIX,dmm.com,🍃 JINKELA
-- DOMAIN-SUFFIX,dnvod.tv,🍃 JINKELA
-- DOMAIN-SUFFIX,esurance.com,🍃 JINKELA
-- DOMAIN-SUFFIX,extmatrix.com,🍃 JINKELA
-- DOMAIN-SUFFIX,fastpic.ru,🍃 JINKELA
-- DOMAIN-SUFFIX,flipboard.com,🍃 JINKELA
-- DOMAIN-SUFFIX,fnac.be,🍃 JINKELA
-- DOMAIN-SUFFIX,fnac.com,🍃 JINKELA
-- DOMAIN-SUFFIX,funkyimg.com,🍃 JINKELA
-- DOMAIN-SUFFIX,fxnetworks.com,🍃 JINKELA
-- DOMAIN-SUFFIX,gettyimages.com,🍃 JINKELA
-- DOMAIN-SUFFIX,jcpenney.com,🍃 JINKELA
-- DOMAIN-SUFFIX,kknews.cc,🍃 JINKELA
-- DOMAIN-SUFFIX,nationwide.com,🍃 JINKELA
-- DOMAIN-SUFFIX,nbc.com,🍃 JINKELA
-- DOMAIN-SUFFIX,nordstrom.com,🍃 JINKELA
-- DOMAIN-SUFFIX,nordstromimage.com,🍃 JINKELA
-- DOMAIN-SUFFIX,nordstromrack.com,🍃 JINKELA
-- DOMAIN-SUFFIX,read01.com,🍃 JINKELA
-- DOMAIN-SUFFIX,superpages.com,🍃 JINKELA
-- DOMAIN-SUFFIX,target.com,🍃 JINKELA
-- DOMAIN-SUFFIX,thinkgeek.com,🍃 JINKELA
-- DOMAIN-SUFFIX,tracfone.com,🍃 JINKELA
-- DOMAIN-SUFFIX,uploader.jp,🍃 JINKELA
-- DOMAIN-SUFFIX,vevo.com,🍃 JINKELA
-- DOMAIN-SUFFIX,viu.tv,🍃 JINKELA
-- DOMAIN-SUFFIX,vk.com,🍃 JINKELA
-- DOMAIN-SUFFIX,vsco.co,🍃 JINKELA
-- DOMAIN-SUFFIX,xfinity.com,🍃 JINKELA
-- DOMAIN-SUFFIX,zattoo.com,🍃 JINKELA
-- DOMAIN,abc.com,🍃 JINKELA
-- DOMAIN,abc.go.com,🍃 JINKELA
-- DOMAIN,abc.net.au,🍃 JINKELA
-- DOMAIN,wego.here.com,🍃 JINKELA
-#USER-AGENT,Roam*,🍃 JINKELA
+- DOMAIN-SUFFIX,apartmentratings.com,🍃 Proxies
+- DOMAIN-SUFFIX,apartments.com,🍃 Proxies
+- DOMAIN-SUFFIX,bankmobilevibe.com,🍃 Proxies
+- DOMAIN-SUFFIX,bing.com,🍃 Proxies
+- DOMAIN-SUFFIX,booktopia.com.au,🍃 Proxies
+- DOMAIN-SUFFIX,centauro.com.br,🍃 Proxies
+- DOMAIN-SUFFIX,clearsurance.com,🍃 Proxies
+- DOMAIN-SUFFIX,costco.com,🍃 Proxies
+- DOMAIN-SUFFIX,crackle.com,🍃 Proxies
+- DOMAIN-SUFFIX,depositphotos.cn,🍃 Proxies
+- DOMAIN-SUFFIX,dish.com,🍃 Proxies
+- DOMAIN-SUFFIX,dmm.co.jp,🍃 Proxies
+- DOMAIN-SUFFIX,dmm.com,🍃 Proxies
+- DOMAIN-SUFFIX,dnvod.tv,🍃 Proxies
+- DOMAIN-SUFFIX,esurance.com,🍃 Proxies
+- DOMAIN-SUFFIX,extmatrix.com,🍃 Proxies
+- DOMAIN-SUFFIX,fastpic.ru,🍃 Proxies
+- DOMAIN-SUFFIX,flipboard.com,🍃 Proxies
+- DOMAIN-SUFFIX,fnac.be,🍃 Proxies
+- DOMAIN-SUFFIX,fnac.com,🍃 Proxies
+- DOMAIN-SUFFIX,funkyimg.com,🍃 Proxies
+- DOMAIN-SUFFIX,fxnetworks.com,🍃 Proxies
+- DOMAIN-SUFFIX,gettyimages.com,🍃 Proxies
+- DOMAIN-SUFFIX,jcpenney.com,🍃 Proxies
+- DOMAIN-SUFFIX,kknews.cc,🍃 Proxies
+- DOMAIN-SUFFIX,nationwide.com,🍃 Proxies
+- DOMAIN-SUFFIX,nbc.com,🍃 Proxies
+- DOMAIN-SUFFIX,nordstrom.com,🍃 Proxies
+- DOMAIN-SUFFIX,nordstromimage.com,🍃 Proxies
+- DOMAIN-SUFFIX,nordstromrack.com,🍃 Proxies
+- DOMAIN-SUFFIX,read01.com,🍃 Proxies
+- DOMAIN-SUFFIX,superpages.com,🍃 Proxies
+- DOMAIN-SUFFIX,target.com,🍃 Proxies
+- DOMAIN-SUFFIX,thinkgeek.com,🍃 Proxies
+- DOMAIN-SUFFIX,tracfone.com,🍃 Proxies
+- DOMAIN-SUFFIX,uploader.jp,🍃 Proxies
+- DOMAIN-SUFFIX,vevo.com,🍃 Proxies
+- DOMAIN-SUFFIX,viu.tv,🍃 Proxies
+- DOMAIN-SUFFIX,vk.com,🍃 Proxies
+- DOMAIN-SUFFIX,vsco.co,🍃 Proxies
+- DOMAIN-SUFFIX,xfinity.com,🍃 Proxies
+- DOMAIN-SUFFIX,zattoo.com,🍃 Proxies
+- DOMAIN,abc.com,🍃 Proxies
+- DOMAIN,abc.go.com,🍃 Proxies
+- DOMAIN,abc.net.au,🍃 Proxies
+- DOMAIN,wego.here.com,🍃 Proxies
+#USER-AGENT,Roam*,🍃 Proxies
 
 # (The Most Popular Sites)
 # > Apple
 # > Apple URL Shortener
-- DOMAIN-SUFFIX,appsto.re,🍃 JINKELA
+- DOMAIN-SUFFIX,appsto.re,🍃 Proxies
 # > TestFlight
-- DOMAIN,beta.itunes.apple.com,🍃 JINKELA
+- DOMAIN,beta.itunes.apple.com,🍃 Proxies
 # > iBooks Store download
-- DOMAIN,books.itunes.apple.com,🍃 JINKELA
+- DOMAIN,books.itunes.apple.com,🍃 Proxies
 # > iTunes Store Moveis Trailers
-- DOMAIN,hls.itunes.apple.com,🍃 JINKELA
+- DOMAIN,hls.itunes.apple.com,🍃 Proxies
 # App Store Preview
-- DOMAIN,itunes.apple.com,🍃 JINKELA
+- DOMAIN,itunes.apple.com,🍃 Proxies
 # > Spotlight
-- DOMAIN,api-glb-sea.smoot.apple.com,🍃 JINKELA
+- DOMAIN,api-glb-sea.smoot.apple.com,🍃 Proxies
 # > Dictionary
-- DOMAIN,lookup-api.apple.com,🍃 JINKELA
-#PROCESS-NAME,LookupViewService,🍃 JINKELA
+- DOMAIN,lookup-api.apple.com,🍃 Proxies
+#PROCESS-NAME,LookupViewService,🍃 Proxies
 # > Google
-- DOMAIN-SUFFIX,abc.xyz,🍃 JINKELA
-- DOMAIN-SUFFIX,android.com,🍃 JINKELA
-- DOMAIN-SUFFIX,androidify.com,🍃 JINKELA
-- DOMAIN-SUFFIX,dialogflow.com,🍃 JINKELA
-- DOMAIN-SUFFIX,autodraw.com,🍃 JINKELA
-- DOMAIN-SUFFIX,capitalg.com,🍃 JINKELA
-- DOMAIN-SUFFIX,certificate-transparency.org,🍃 JINKELA
-- DOMAIN-SUFFIX,chrome.com,🍃 JINKELA
-- DOMAIN-SUFFIX,chromeexperiments.com,🍃 JINKELA
-- DOMAIN-SUFFIX,chromestatus.com,🍃 JINKELA
-- DOMAIN-SUFFIX,chromium.org,🍃 JINKELA
-- DOMAIN-SUFFIX,creativelab5.com,🍃 JINKELA
-- DOMAIN-SUFFIX,debug.com,🍃 JINKELA
-- DOMAIN-SUFFIX,deepmind.com,🍃 JINKELA
-- DOMAIN-SUFFIX,firebaseio.com,🍃 JINKELA
-- DOMAIN-SUFFIX,getmdl.io,🍃 JINKELA
-- DOMAIN-SUFFIX,ggpht.com,🍃 JINKELA
-- DOMAIN-SUFFIX,gmail.com,🍃 JINKELA
-- DOMAIN-SUFFIX,gmodules.com,🍃 JINKELA
-- DOMAIN-SUFFIX,godoc.org,🍃 JINKELA
-- DOMAIN-SUFFIX,golang.org,🍃 JINKELA
-- DOMAIN-SUFFIX,gstatic.com,🍃 JINKELA
-- DOMAIN-SUFFIX,gv.com,🍃 JINKELA
-- DOMAIN-SUFFIX,gwtproject.org,🍃 JINKELA
-- DOMAIN-SUFFIX,itasoftware.com,🍃 JINKELA
-- DOMAIN-SUFFIX,madewithcode.com,🍃 JINKELA
-- DOMAIN-SUFFIX,material.io,🍃 JINKELA
-- DOMAIN-SUFFIX,polymer-project.org,🍃 JINKELA
-- DOMAIN-SUFFIX,admin.recaptcha.net,🍃 JINKELA
-- DOMAIN-SUFFIX,recaptcha.net,🍃 JINKELA
-- DOMAIN-SUFFIX,shattered.io,🍃 JINKELA
-- DOMAIN-SUFFIX,synergyse.com,🍃 JINKELA
-- DOMAIN-SUFFIX,tensorflow.org,🍃 JINKELA
-- DOMAIN-SUFFIX,tiltbrush.com,🍃 JINKELA
-- DOMAIN-SUFFIX,waveprotocol.org,🍃 JINKELA
-- DOMAIN-SUFFIX,waymo.com,🍃 JINKELA
-- DOMAIN-SUFFIX,webmproject.org,🍃 JINKELA
-- DOMAIN-SUFFIX,webrtc.org,🍃 JINKELA
-- DOMAIN-SUFFIX,whatbrowser.org,🍃 JINKELA
-- DOMAIN-SUFFIX,widevine.com,🍃 JINKELA
-- DOMAIN-SUFFIX,x.company,🍃 JINKELA
-- DOMAIN-SUFFIX,youtu.be,🍃 JINKELA
-- DOMAIN-SUFFIX,yt.be,🍃 JINKELA
-- DOMAIN-SUFFIX,ytimg.com,🍃 JINKELA
+- DOMAIN-SUFFIX,abc.xyz,🍃 Proxies
+- DOMAIN-SUFFIX,android.com,🍃 Proxies
+- DOMAIN-SUFFIX,androidify.com,🍃 Proxies
+- DOMAIN-SUFFIX,dialogflow.com,🍃 Proxies
+- DOMAIN-SUFFIX,autodraw.com,🍃 Proxies
+- DOMAIN-SUFFIX,capitalg.com,🍃 Proxies
+- DOMAIN-SUFFIX,certificate-transparency.org,🍃 Proxies
+- DOMAIN-SUFFIX,chrome.com,🍃 Proxies
+- DOMAIN-SUFFIX,chromeexperiments.com,🍃 Proxies
+- DOMAIN-SUFFIX,chromestatus.com,🍃 Proxies
+- DOMAIN-SUFFIX,chromium.org,🍃 Proxies
+- DOMAIN-SUFFIX,creativelab5.com,🍃 Proxies
+- DOMAIN-SUFFIX,debug.com,🍃 Proxies
+- DOMAIN-SUFFIX,deepmind.com,🍃 Proxies
+- DOMAIN-SUFFIX,firebaseio.com,🍃 Proxies
+- DOMAIN-SUFFIX,getmdl.io,🍃 Proxies
+- DOMAIN-SUFFIX,ggpht.com,🍃 Proxies
+- DOMAIN-SUFFIX,gmail.com,🍃 Proxies
+- DOMAIN-SUFFIX,gmodules.com,🍃 Proxies
+- DOMAIN-SUFFIX,godoc.org,🍃 Proxies
+- DOMAIN-SUFFIX,golang.org,🍃 Proxies
+- DOMAIN-SUFFIX,gstatic.com,🍃 Proxies
+- DOMAIN-SUFFIX,gv.com,🍃 Proxies
+- DOMAIN-SUFFIX,gwtproject.org,🍃 Proxies
+- DOMAIN-SUFFIX,itasoftware.com,🍃 Proxies
+- DOMAIN-SUFFIX,madewithcode.com,🍃 Proxies
+- DOMAIN-SUFFIX,material.io,🍃 Proxies
+- DOMAIN-SUFFIX,polymer-project.org,🍃 Proxies
+- DOMAIN-SUFFIX,admin.recaptcha.net,🍃 Proxies
+- DOMAIN-SUFFIX,recaptcha.net,🍃 Proxies
+- DOMAIN-SUFFIX,shattered.io,🍃 Proxies
+- DOMAIN-SUFFIX,synergyse.com,🍃 Proxies
+- DOMAIN-SUFFIX,tensorflow.org,🍃 Proxies
+- DOMAIN-SUFFIX,tiltbrush.com,🍃 Proxies
+- DOMAIN-SUFFIX,waveprotocol.org,🍃 Proxies
+- DOMAIN-SUFFIX,waymo.com,🍃 Proxies
+- DOMAIN-SUFFIX,webmproject.org,🍃 Proxies
+- DOMAIN-SUFFIX,webrtc.org,🍃 Proxies
+- DOMAIN-SUFFIX,whatbrowser.org,🍃 Proxies
+- DOMAIN-SUFFIX,widevine.com,🍃 Proxies
+- DOMAIN-SUFFIX,x.company,🍃 Proxies
+- DOMAIN-SUFFIX,youtu.be,🍃 Proxies
+- DOMAIN-SUFFIX,yt.be,🍃 Proxies
+- DOMAIN-SUFFIX,ytimg.com,🍃 Proxies
 # > Steam
-- DOMAIN,media.steampowered.com,🍃 JINKELA
-- DOMAIN,store.steampowered.com,🍃 JINKELA
+- DOMAIN,media.steampowered.com,🍃 Proxies
+- DOMAIN,store.steampowered.com,🍃 Proxies
 # > Other
-- DOMAIN-SUFFIX,0rz.tw,🍃 JINKELA
-- DOMAIN-SUFFIX,4bluestones.biz,🍃 JINKELA
-- DOMAIN-SUFFIX,9bis.net,🍃 JINKELA
-- DOMAIN-SUFFIX,allconnected.co,🍃 JINKELA
-- DOMAIN-SUFFIX,amazonaws.com,🍃 JINKELA
-- DOMAIN-SUFFIX,aol.com,🍃 JINKELA
-- DOMAIN-SUFFIX,bcc.com.tw,🍃 JINKELA
-- DOMAIN-SUFFIX,bit.ly,🍃 JINKELA
-- DOMAIN-SUFFIX,bitshare.com,🍃 JINKELA
-- DOMAIN-SUFFIX,blog.jp,🍃 JINKELA
-- DOMAIN-SUFFIX,blogimg.jp,🍃 JINKELA
-- DOMAIN-SUFFIX,blogtd.org,🍃 JINKELA
-- DOMAIN-SUFFIX,broadcast.co.nz,🍃 JINKELA
-- DOMAIN-SUFFIX,camfrog.com,🍃 JINKELA
-- DOMAIN-SUFFIX,cfos.de,🍃 JINKELA
-- DOMAIN-SUFFIX,citypopulation.de,🍃 JINKELA
-- DOMAIN-SUFFIX,cloudfront.net,🍃 JINKELA
-- DOMAIN-SUFFIX,ctitv.com.tw,🍃 JINKELA
-- DOMAIN-SUFFIX,cuhk.edu.hk,🍃 JINKELA
-- DOMAIN-SUFFIX,cusu.hk,🍃 JINKELA
-- DOMAIN-SUFFIX,discuss.com.hk,🍃 JINKELA
-- DOMAIN-SUFFIX,dropboxapi.com,🍃 JINKELA
-- DOMAIN-SUFFIX,edditstatic.com,🍃 JINKELA
-- DOMAIN-SUFFIX,flickriver.com,🍃 JINKELA
-- DOMAIN-SUFFIX,focustaiwan.tw,🍃 JINKELA
-- DOMAIN-SUFFIX,free.fr,🍃 JINKELA
-- DOMAIN-SUFFIX,ftchinese.com,🍃 JINKELA
-- DOMAIN-SUFFIX,gigacircle.com,🍃 JINKELA
-- DOMAIN-SUFFIX,gov,🍃 JINKELA
-- DOMAIN-SUFFIX,hk-pub.com,🍃 JINKELA
-- DOMAIN-SUFFIX,hosting.co.uk,🍃 JINKELA
-- DOMAIN-SUFFIX,hwcdn.net,🍃 JINKELA
-- DOMAIN-SUFFIX,jtvnw.net,🍃 JINKELA
-- DOMAIN-SUFFIX,linksalpha.com,🍃 JINKELA
-- DOMAIN-SUFFIX,manyvids.com,🍃 JINKELA
-- DOMAIN-SUFFIX,myactimes.com,🍃 JINKELA
-- DOMAIN-SUFFIX,newsblur.com,🍃 JINKELA
-- DOMAIN-SUFFIX,now.im,🍃 JINKELA
-- DOMAIN-SUFFIX,redditlist.com,🍃 JINKELA
-- DOMAIN-SUFFIX,signal.org,🍃 JINKELA
-- DOMAIN-SUFFIX,sparknotes.com,🍃 JINKELA
-- DOMAIN-SUFFIX,streetvoice.com,🍃 JINKELA
-- DOMAIN-SUFFIX,ttvnw.net,🍃 JINKELA
-- DOMAIN-SUFFIX,tv.com,🍃 JINKELA
-- DOMAIN-SUFFIX,twitchcdn.net,🍃 JINKELA
-- DOMAIN-SUFFIX,typepad.com,🍃 JINKELA
-- DOMAIN-SUFFIX,udnbkk.com,🍃 JINKELA
-- DOMAIN-SUFFIX,whispersystems.org,🍃 JINKELA
-- DOMAIN-SUFFIX,wikia.com,🍃 JINKELA
-- DOMAIN-SUFFIX,wn.com,🍃 JINKELA
-- DOMAIN-SUFFIX,wolframalpha.com,🍃 JINKELA
-- DOMAIN-SUFFIX,x-art.com,🍃 JINKELA
-- DOMAIN-SUFFIX,yimg.com,🍃 JINKELA
+- DOMAIN-SUFFIX,0rz.tw,🍃 Proxies
+- DOMAIN-SUFFIX,4bluestones.biz,🍃 Proxies
+- DOMAIN-SUFFIX,9bis.net,🍃 Proxies
+- DOMAIN-SUFFIX,allconnected.co,🍃 Proxies
+- DOMAIN-SUFFIX,amazonaws.com,🍃 Proxies
+- DOMAIN-SUFFIX,aol.com,🍃 Proxies
+- DOMAIN-SUFFIX,bcc.com.tw,🍃 Proxies
+- DOMAIN-SUFFIX,bit.ly,🍃 Proxies
+- DOMAIN-SUFFIX,bitshare.com,🍃 Proxies
+- DOMAIN-SUFFIX,blog.jp,🍃 Proxies
+- DOMAIN-SUFFIX,blogimg.jp,🍃 Proxies
+- DOMAIN-SUFFIX,blogtd.org,🍃 Proxies
+- DOMAIN-SUFFIX,broadcast.co.nz,🍃 Proxies
+- DOMAIN-SUFFIX,camfrog.com,🍃 Proxies
+- DOMAIN-SUFFIX,cfos.de,🍃 Proxies
+- DOMAIN-SUFFIX,citypopulation.de,🍃 Proxies
+- DOMAIN-SUFFIX,cloudfront.net,🍃 Proxies
+- DOMAIN-SUFFIX,ctitv.com.tw,🍃 Proxies
+- DOMAIN-SUFFIX,cuhk.edu.hk,🍃 Proxies
+- DOMAIN-SUFFIX,cusu.hk,🍃 Proxies
+- DOMAIN-SUFFIX,discuss.com.hk,🍃 Proxies
+- DOMAIN-SUFFIX,dropboxapi.com,🍃 Proxies
+- DOMAIN-SUFFIX,edditstatic.com,🍃 Proxies
+- DOMAIN-SUFFIX,flickriver.com,🍃 Proxies
+- DOMAIN-SUFFIX,focustaiwan.tw,🍃 Proxies
+- DOMAIN-SUFFIX,free.fr,🍃 Proxies
+- DOMAIN-SUFFIX,ftchinese.com,🍃 Proxies
+- DOMAIN-SUFFIX,gigacircle.com,🍃 Proxies
+- DOMAIN-SUFFIX,gov,🍃 Proxies
+- DOMAIN-SUFFIX,hk-pub.com,🍃 Proxies
+- DOMAIN-SUFFIX,hosting.co.uk,🍃 Proxies
+- DOMAIN-SUFFIX,hwcdn.net,🍃 Proxies
+- DOMAIN-SUFFIX,jtvnw.net,🍃 Proxies
+- DOMAIN-SUFFIX,linksalpha.com,🍃 Proxies
+- DOMAIN-SUFFIX,manyvids.com,🍃 Proxies
+- DOMAIN-SUFFIX,myactimes.com,🍃 Proxies
+- DOMAIN-SUFFIX,newsblur.com,🍃 Proxies
+- DOMAIN-SUFFIX,now.im,🍃 Proxies
+- DOMAIN-SUFFIX,redditlist.com,🍃 Proxies
+- DOMAIN-SUFFIX,signal.org,🍃 Proxies
+- DOMAIN-SUFFIX,sparknotes.com,🍃 Proxies
+- DOMAIN-SUFFIX,streetvoice.com,🍃 Proxies
+- DOMAIN-SUFFIX,ttvnw.net,🍃 Proxies
+- DOMAIN-SUFFIX,tv.com,🍃 Proxies
+- DOMAIN-SUFFIX,twitchcdn.net,🍃 Proxies
+- DOMAIN-SUFFIX,typepad.com,🍃 Proxies
+- DOMAIN-SUFFIX,udnbkk.com,🍃 Proxies
+- DOMAIN-SUFFIX,whispersystems.org,🍃 Proxies
+- DOMAIN-SUFFIX,wikia.com,🍃 Proxies
+- DOMAIN-SUFFIX,wn.com,🍃 Proxies
+- DOMAIN-SUFFIX,wolframalpha.com,🍃 Proxies
+- DOMAIN-SUFFIX,x-art.com,🍃 Proxies
+- DOMAIN-SUFFIX,yimg.com,🍃 Proxies
 
 # Local Area Network
 - DOMAIN-KEYWORD,announce,DIRECT
@@ -3198,66 +3169,65 @@ rules:
 - IP-CIDR,100.64.0.0/10,DIRECT
 
 # > IQIYI
-- IP-CIDR,101.227.0.0/16,🍂 国内网络
-- IP-CIDR,101.224.0.0/13,🍂 国内网络
-- IP-CIDR,119.176.0.0/12,🍂 国内网络
+- IP-CIDR,101.227.0.0/16,🍂 Domestic
+- IP-CIDR,101.224.0.0/13,🍂 Domestic
+- IP-CIDR,119.176.0.0/12,🍂 Domestic
 
 # > Youku
-- IP-CIDR,106.11.0.0/16,🍂 国内网络
+- IP-CIDR,106.11.0.0/16,🍂 Domestic
 
 # > Telegram
-- IP-CIDR,67.198.55.0/24,🍃 JINKELA
-- IP-CIDR,91.108.4.0/22,🍃 JINKELA
-- IP-CIDR,91.108.8.0/22,🍃 JINKELA
-- IP-CIDR,91.108.12.0/22,🍃 JINKELA
-- IP-CIDR,91.108.16.0/22,🍃 JINKELA
-- IP-CIDR,91.108.56.0/22,🍃 JINKELA
-- IP-CIDR,109.239.140.0/24,🍃 JINKELA
-- IP-CIDR,149.154.160.0/20,🍃 JINKELA
-- IP-CIDR,205.172.60.0/22,🍃 JINKELA
+- IP-CIDR,67.198.55.0/24,🍃 Proxies
+- IP-CIDR,91.108.4.0/22,🍃 Proxies
+- IP-CIDR,91.108.8.0/22,🍃 Proxies
+- IP-CIDR,91.108.12.0/22,🍃 Proxies
+- IP-CIDR,91.108.16.0/22,🍃 Proxies
+- IP-CIDR,91.108.56.0/22,🍃 Proxies
+- IP-CIDR,109.239.140.0/24,🍃 Proxies
+- IP-CIDR,149.154.160.0/20,🍃 Proxies
+- IP-CIDR,205.172.60.0/22,🍃 Proxies
 
 # (Extra IP-CIRD)
 # > Google
-- IP-CIDR,35.190.247.0/24,🍃 JINKELA
-- IP-CIDR,64.233.160.0/19,🍃 JINKELA
-- IP-CIDR,66.102.0.0/20,🍃 JINKELA
-- IP-CIDR,66.249.80.0/20,🍃 JINKELA
-- IP-CIDR,72.14.192.0/18,🍃 JINKELA
-- IP-CIDR,74.125.0.0/16,🍃 JINKELA
-- IP-CIDR,108.177.8.0/21,🍃 JINKELA
-- IP-CIDR,172.217.0.0/16,🍃 JINKELA
-- IP-CIDR,173.194.0.0/16,🍃 JINKELA
-- IP-CIDR,209.85.128.0/17,🍃 JINKELA
-- IP-CIDR,216.58.192.0/19,🍃 JINKELA
-- IP-CIDR,216.239.32.0/19,🍃 JINKELA
+- IP-CIDR,35.190.247.0/24,🍃 Proxies
+- IP-CIDR,64.233.160.0/19,🍃 Proxies
+- IP-CIDR,66.102.0.0/20,🍃 Proxies
+- IP-CIDR,66.249.80.0/20,🍃 Proxies
+- IP-CIDR,72.14.192.0/18,🍃 Proxies
+- IP-CIDR,74.125.0.0/16,🍃 Proxies
+- IP-CIDR,108.177.8.0/21,🍃 Proxies
+- IP-CIDR,172.217.0.0/16,🍃 Proxies
+- IP-CIDR,173.194.0.0/16,🍃 Proxies
+- IP-CIDR,209.85.128.0/17,🍃 Proxies
+- IP-CIDR,216.58.192.0/19,🍃 Proxies
+- IP-CIDR,216.239.32.0/19,🍃 Proxies
 # > Facebook
-- IP-CIDR,31.13.24.0/21,🍃 JINKELA
-- IP-CIDR,31.13.64.0/18,🍃 JINKELA
-- IP-CIDR,45.64.40.0/22,🍃 JINKELA
-- IP-CIDR,66.220.144.0/20,🍃 JINKELA
-- IP-CIDR,69.63.176.0/20,🍃 JINKELA
-- IP-CIDR,69.171.224.0/19,🍃 JINKELA
-- IP-CIDR,74.119.76.0/22,🍃 JINKELA
-- IP-CIDR,103.4.96.0/22,🍃 JINKELA
-- IP-CIDR,129.134.0.0/17,🍃 JINKELA
-- IP-CIDR,157.240.0.0/17,🍃 JINKELA
-- IP-CIDR,173.252.64.0/19,🍃 JINKELA
-- IP-CIDR,173.252.96.0/19,🍃 JINKELA
-- IP-CIDR,179.60.192.0/22,🍃 JINKELA
-- IP-CIDR,185.60.216.0/22,🍃 JINKELA
-- IP-CIDR,204.15.20.0/22,🍃 JINKELA
+- IP-CIDR,31.13.24.0/21,🍃 Proxies
+- IP-CIDR,31.13.64.0/18,🍃 Proxies
+- IP-CIDR,45.64.40.0/22,🍃 Proxies
+- IP-CIDR,66.220.144.0/20,🍃 Proxies
+- IP-CIDR,69.63.176.0/20,🍃 Proxies
+- IP-CIDR,69.171.224.0/19,🍃 Proxies
+- IP-CIDR,74.119.76.0/22,🍃 Proxies
+- IP-CIDR,103.4.96.0/22,🍃 Proxies
+- IP-CIDR,129.134.0.0/17,🍃 Proxies
+- IP-CIDR,157.240.0.0/17,🍃 Proxies
+- IP-CIDR,173.252.64.0/19,🍃 Proxies
+- IP-CIDR,173.252.96.0/19,🍃 Proxies
+- IP-CIDR,179.60.192.0/22,🍃 Proxies
+- IP-CIDR,185.60.216.0/22,🍃 Proxies
+- IP-CIDR,204.15.20.0/22,🍃 Proxies
 # > Twitter
-- IP-CIDR,69.195.160.0/19,🍃 JINKELA
-- IP-CIDR,104.244.42.0/21,🍃 JINKELA
-- IP-CIDR,192.133.76.0/22,🍃 JINKELA
-- IP-CIDR,199.16.156.0/22,🍃 JINKELA
-- IP-CIDR,199.59.148.0/22,🍃 JINKELA
-- IP-CIDR,199.96.56.0/21,🍃 JINKELA
-- IP-CIDR,202.160.128.0/22,🍃 JINKELA
-- IP-CIDR,209.237.192.0/19,🍃 JINKELA
-
+- IP-CIDR,69.195.160.0/19,🍃 Proxies
+- IP-CIDR,104.244.42.0/21,🍃 Proxies
+- IP-CIDR,192.133.76.0/22,🍃 Proxies
+- IP-CIDR,199.16.156.0/22,🍃 Proxies
+- IP-CIDR,199.59.148.0/22,🍃 Proxies
+- IP-CIDR,199.96.56.0/21,🍃 Proxies
+- IP-CIDR,202.160.128.0/22,🍃 Proxies
+- IP-CIDR,209.237.192.0/19,🍃 Proxies
 
 # GeoIP China
-- GEOIP,CN,🍂 国内网络
+- GEOIP,CN,🍂 Domestic
 
-- MATCH,☁️ 其他流量
+- MATCH,☁️ Others

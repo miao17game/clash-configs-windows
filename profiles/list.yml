@@ -4,14 +4,19 @@ files:
     url: https://www.jinkela.site/link/PyGoQIzZBf5SP2S1?clash=1
     selected:
       - name: GLOBAL
-        now: DIRECT
+        now: 台湾01 中继D | 原生 1.5x
       - name: 🍃 JINKELA
         now: ⭐️ 自动选择
       - name: 🍂 国内网络
         now: 🚀 绕过代理
       - name: ☁️ 其他流量
         now: 🍃 JINKELA
-    interval: 0
+    interval: 24
     mode: rule
     m: rule
+    subInfo:
+      upload: 55903604963
+      download: 436456866139
+      total: 5387523719168
+      expire: 1650869411
 index: 0

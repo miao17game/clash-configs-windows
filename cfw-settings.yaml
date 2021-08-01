@@ -26,3 +26,4 @@ hideAfterStartup: true
 randomControllerPort: true
 mixinText: |
   mixin: # object
+runTimeFormat: "hh : mm : ss"
