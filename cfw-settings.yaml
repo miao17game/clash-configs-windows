@@ -2,20 +2,20 @@ theme: 2
 showNotifications: true
 fontFamily: TsangerJinKai01-27533
 mixinType: 1
-mixinCode: |
+mixinCode: >
   module.exports.parse = ({ content, name, url }, { yaml, axios, notify }) => {
     const rules = content.rules;
     rules.unshift(
       ...[
-        "DOMAIN-SUFFIX,qima-inc.com,🚀 绕过代理", // 公司内网
-        "DOMAIN-SUFFIX,delivery.mp.microsoft.com,🚀 绕过代理", // 应用商店智能分发
-        "DOMAIN-SUFFIX,xvcf1.xboxlive.com,🚀 绕过代理", // xbox下载
-        "DOMAIN-SUFFIX,jinkela.red,🚀 绕过代理", // 梯子
-        "DOMAIN-SUFFIX,epicgames-download1.akamaized.net,🚀 绕过代理", // epic games
-        "DOMAIN-SUFFIX,json.schemastore.org,☁️ 其他流量",
-        "DOMAIN-SUFFIX,reddit.com,☁️ 其他流量",
-        "DOMAIN-SUFFIX,redditstatic.com,☁️ 其他流量",
-        "DOMAIN-SUFFIX,redditmedia.com,☁️ 其他流量",
+        "DOMAIN-SUFFIX,qima-inc.com,🍂 Domestic", // 公司内网
+        "DOMAIN-SUFFIX,delivery.mp.microsoft.com,🍂 Domestic", // 应用商店智能分发
+        "DOMAIN-SUFFIX,xvcf1.xboxlive.com,🍂 Domestic", // xbox下载
+        "DOMAIN-SUFFIX,jinkela.red,🍂 Domestic", // 梯子
+        "DOMAIN-SUFFIX,epicgames-download1.akamaized.net,🍂 Domestic", // epic games
+        "DOMAIN-SUFFIX,json.schemastore.org,☁️ Others",
+        "DOMAIN-SUFFIX,reddit.com,☁️ Others",
+        "DOMAIN-SUFFIX,redditstatic.com,☁️ Others",
+        "DOMAIN-SUFFIX,redditmedia.com,☁️ Others",
       ]
     );
     return content;
