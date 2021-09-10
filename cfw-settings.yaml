@@ -11,6 +11,7 @@ mixinCode: >
         "DOMAIN-SUFFIX,delivery.mp.microsoft.com,🍂 Domestic", // 应用商店智能分发
         "DOMAIN-SUFFIX,xvcf1.xboxlive.com,🍂 Domestic", // xbox下载
         "DOMAIN-SUFFIX,jinkela.red,🍂 Domestic", // 梯子
+        "DOMAIN-SUFFIX,jinkela.site,🍂 Domestic", // 梯子
         "DOMAIN-SUFFIX,epicgames-download1.akamaized.net,🍂 Domestic", // epic games
         "DOMAIN-SUFFIX,json.schemastore.org,☁️ Others",
         "DOMAIN-SUFFIX,reddit.com,☁️ Others",
