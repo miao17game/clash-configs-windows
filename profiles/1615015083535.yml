@@ -1,7 +1,7 @@
 #!MANAGED-CONFIG https://www.jinkela.site/link/PyGoQIzZBf5SP2S1?clash=1
 
 #---------------------------------------------------#
-## 上次更新于：2021-08-01 06:47:02
+## 上次更新于：2021-10-07 04:33:57
 #---------------------------------------------------#
 
 mixed-port: 7890
@@ -11,6 +11,24 @@ log-level: info
 external-controller: '0.0.0.0:9090'
 secret: ''
 proxies:
+  -
+    name: 'IEPL专线 俄罗斯02 | 3x'
+    type: vmess
+    server: iplc01.ddns168.com
+    port: 3101
+    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
+    alterId: 0
+    cipher: auto
+    udp: true
+  -
+    name: 'IEPL专线 台湾03 Hinet | 3x 原生IP'
+    type: vmess
+    server: iplc01.ddns168.com
+    port: 3071
+    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
+    alterId: 0
+    cipher: auto
+    udp: true
   -
     name: 'IEPL专线 新加坡03 | 4x NF'
     type: vmess
@@ -26,7 +44,7 @@ proxies:
     server: iplc01.ddns168.com
     port: 3051
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
+    alterId: 1
     cipher: auto
     udp: true
   -
@@ -35,7 +53,7 @@ proxies:
     server: iplc01.ddns168.com
     port: 3011
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
+    alterId: 0
     cipher: auto
     udp: true
   -
@@ -48,12 +66,39 @@ proxies:
     cipher: auto
     udp: true
   -
+    name: 'IEPL专线 韩国02 | 4x NF'
+    type: vmess
+    server: iplc01.ddns168.com
+    port: 3091
+    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
+    alterId: 0
+    cipher: auto
+    udp: true
+  -
     name: 'IEPL专线 香港HGC02 | 4x 原生IP'
     type: vmess
     server: iplc01.ddns168.com
     port: 3021
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
+    cipher: auto
+    udp: true
+  -
+    name: 'IEPL专线 香港HKBGP01 | 3x NF'
+    type: vmess
+    server: iplc01.ddns168.com
+    port: 3081
+    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
+    alterId: 0
+    cipher: auto
+    udp: true
+  -
+    name: 'IEPL专线 香港HKG01 | 4x 原生IP'
+    type: vmess
+    server: iplc01.ddns168.com
+    port: 3111
+    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
+    alterId: 0
     cipher: auto
     udp: true
   -
@@ -694,65 +739,75 @@ proxies:
     server: in01.ddns168.com
     port: 61045
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
+    alterId: 1
     cipher: auto
     udp: true
     network: ws
-    ws-path: /hls
+    ws-path: /jkl
     ws-headers:
-      Host: cdn.bootcdn.net
+      Host: jkl-sg04.covid19.rip
+    tls: true
+    skip-cert-verify: true
   -
     name: '新加坡04 中继B | NF 1.5x'
     type: vmess
     server: in02.ddns168.com
     port: 61045
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
+    alterId: 1
     cipher: auto
     udp: true
     network: ws
-    ws-path: /hls
+    ws-path: /jkl
     ws-headers:
-      Host: cdn.bootcdn.net
+      Host: jkl-sg04.covid19.rip
+    tls: true
+    skip-cert-verify: true
   -
     name: '新加坡04 中继C | NF 1.5x'
     type: vmess
     server: in03.ddns168.com
     port: 61045
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
+    alterId: 1
     cipher: auto
     udp: true
     network: ws
-    ws-path: /hls
+    ws-path: /jkl
     ws-headers:
-      Host: cdn.bootcdn.net
+      Host: jkl-sg04.covid19.rip
+    tls: true
+    skip-cert-verify: true
   -
     name: '新加坡04 中继D | NF 1.5x'
     type: vmess
     server: in04.ddns168.com
     port: 61045
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
+    alterId: 1
     cipher: auto
     udp: true
     network: ws
-    ws-path: /hls
+    ws-path: /jkl
     ws-headers:
-      Host: cdn.bootcdn.net
+      Host: jkl-sg04.covid19.rip
+    tls: true
+    skip-cert-verify: true
   -
     name: '新加坡04 中继E | NF 1.5x'
     type: vmess
     server: in05.ddns168.com
     port: 61045
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
+    alterId: 1
     cipher: auto
     udp: true
     network: ws
-    ws-path: /hls
+    ws-path: /jkl
     ws-headers:
-      Host: cdn.bootcdn.net
+      Host: jkl-sg04.covid19.rip
+    tls: true
+    skip-cert-verify: true
   -
     name: '新加坡11 AWS直连 速度随缘 0.5x'
     type: vmess
@@ -858,7 +913,7 @@ proxies:
     name: '日本02 中继A | NF 1.5x'
     type: vmess
     server: in01.ddns168.com
-    port: 61017
+    port: 61058
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
     cipher: auto
@@ -871,7 +926,7 @@ proxies:
     name: '日本02 中继B | NF 1.5x'
     type: vmess
     server: in02.ddns168.com
-    port: 61017
+    port: 61058
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
     cipher: auto
@@ -884,7 +939,7 @@ proxies:
     name: '日本02 中继C | NF 1.5x'
     type: vmess
     server: in03.ddns168.com
-    port: 61017
+    port: 61058
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
     cipher: auto
@@ -897,7 +952,7 @@ proxies:
     name: '日本02 中继D | NF 1.5x'
     type: vmess
     server: in04.ddns168.com
-    port: 61017
+    port: 61058
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
     cipher: auto
@@ -910,7 +965,7 @@ proxies:
     name: '日本02 中继E | NF 1.5x'
     type: vmess
     server: in05.ddns168.com
-    port: 61017
+    port: 61058
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
     cipher: auto
@@ -1192,65 +1247,75 @@ proxies:
     server: in01.ddns168.com
     port: 61014
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
+    alterId: 1
     cipher: auto
     udp: true
     network: ws
-    ws-path: /hls
+    ws-path: /jkl
     ws-headers:
-      Host: cdn.bootcdn.net
+      Host: jkl-us01.covid19.rip
+    tls: true
+    skip-cert-verify: true
   -
     name: '美国01 中继B | NF 1.5x'
     type: vmess
     server: in02.ddns168.com
     port: 61014
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
+    alterId: 1
     cipher: auto
     udp: true
     network: ws
-    ws-path: /hls
+    ws-path: /jkl
     ws-headers:
-      Host: cdn.bootcdn.net
+      Host: jkl-us01.covid19.rip
+    tls: true
+    skip-cert-verify: true
   -
     name: '美国01 中继C | NF 1.5x'
     type: vmess
     server: in03.ddns168.com
     port: 61014
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
+    alterId: 1
     cipher: auto
     udp: true
     network: ws
-    ws-path: /hls
+    ws-path: /jkl
     ws-headers:
-      Host: cdn.bootcdn.net
+      Host: jkl-us01.covid19.rip
+    tls: true
+    skip-cert-verify: true
   -
     name: '美国01 中继D| NF 1.5x'
     type: vmess
     server: in04.ddns168.com
     port: 61014
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
+    alterId: 1
     cipher: auto
     udp: true
     network: ws
-    ws-path: /hls
+    ws-path: /jkl
     ws-headers:
-      Host: cdn.bootcdn.net
+      Host: jkl-us01.covid19.rip
+    tls: true
+    skip-cert-verify: true
   -
     name: '美国01 中继E | NF 1.5x'
     type: vmess
     server: in05.ddns168.com
     port: 61014
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
+    alterId: 1
     cipher: auto
     udp: true
     network: ws
-    ws-path: /hls
+    ws-path: /jkl
     ws-headers:
-      Host: cdn.bootcdn.net
+      Host: jkl-us01.covid19.rip
+    tls: true
+    skip-cert-verify: true
   -
     name: '美国03 中继A | 1.5x'
     type: vmess
@@ -1326,58 +1391,6 @@ proxies:
       Host: jkl-us03.covid19.rip
     tls: true
     skip-cert-verify: true
-  -
-    name: '美国04 中继A | 备用 1.3x'
-    type: vmess
-    server: in01.ddns168.com
-    port: 61043
-    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /hls
-    ws-headers:
-      Host: cdn.bootcdn.net
-  -
-    name: '美国04 中继B | 备用 1.3x'
-    type: vmess
-    server: in02.ddns168.com
-    port: 61043
-    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /hls
-    ws-headers:
-      Host: cdn.bootcdn.net
-  -
-    name: '美国04 中继C | 备用 1.3x'
-    type: vmess
-    server: in03.ddns168.com
-    port: 61043
-    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /hls
-    ws-headers:
-      Host: cdn.bootcdn.net
-  -
-    name: '美国04 中继D | 备用 1.3x'
-    type: vmess
-    server: in04.ddns168.com
-    port: 61043
-    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /hls
-    ws-headers:
-      Host: cdn.bootcdn.net
   -
     name: '英国01 中继A | NF BBC Chan4 1.5x'
     type: vmess
@@ -1987,7 +2000,7 @@ proxies:
     name: '香港HGC01 中继A | 原生 1.5x'
     type: vmess
     server: in01.ddns168.com
-    port: 61027
+    port: 61007
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
     cipher: auto
@@ -2000,7 +2013,7 @@ proxies:
     name: '香港HGC01 中继B | 原生 1.5x'
     type: vmess
     server: in02.ddns168.com
-    port: 61027
+    port: 61007
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
     cipher: auto
@@ -2013,7 +2026,7 @@ proxies:
     name: '香港HGC01 中继C | 原生 1.5x'
     type: vmess
     server: in03.ddns168.com
-    port: 61027
+    port: 61007
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
     cipher: auto
@@ -2026,7 +2039,7 @@ proxies:
     name: '香港HGC01 中继D | 原生 1.5x'
     type: vmess
     server: in04.ddns168.com
-    port: 61027
+    port: 61007
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
     cipher: auto
@@ -2039,7 +2052,7 @@ proxies:
     name: '香港HGC01 中继E | 原生 1.5x'
     type: vmess
     server: in05.ddns168.com
-    port: 61027
+    port: 61007
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
     cipher: auto
@@ -2052,7 +2065,7 @@ proxies:
     name: '香港HGC01 香港转发 | 原生 1.5x'
     type: vmess
     server: hk-routing.in168.net
-    port: 61027
+    port: 61007
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 2
     cipher: auto
@@ -2132,11 +2145,16 @@ proxy-groups:
     type: select
     proxies:
       - '⭐️ Auto'
+      - 'IEPL专线 俄罗斯02 | 3x'
+      - 'IEPL专线 台湾03 Hinet | 3x 原生IP'
       - 'IEPL专线 新加坡03 | 4x NF'
       - 'IEPL专线 新加坡05 | 4x 原生IP'
       - 'IEPL专线 日本04 | 4x NF'
       - 'IEPL专线 美国02 | 4x NF'
+      - 'IEPL专线 韩国02 | 4x NF'
       - 'IEPL专线 香港HGC02 | 4x 原生IP'
+      - 'IEPL专线 香港HKBGP01 | 3x NF'
+      - 'IEPL专线 香港HKG01 | 4x 原生IP'
       - 'IEPL专线 马来西亚01 | 4x 原生IP'
       - '俄罗斯01 中继A | 冷门 1.2x'
       - '俄罗斯01 中继B | 冷门 1.2x'
@@ -2229,10 +2247,6 @@ proxy-groups:
       - '美国03 中继C | 1.5x'
       - '美国03 中继D | 1.5x'
       - '美国03 中继E | 1.5x'
-      - '美国04 中继A | 备用 1.3x'
-      - '美国04 中继B | 备用 1.3x'
-      - '美国04 中继C | 备用 1.3x'
-      - '美国04 中继D | 备用 1.3x'
       - '英国01 中继A | NF BBC Chan4 1.5x'
       - '英国01 中继B | NF BBC Chan4 1.5x'
       - '英国01 中继C | NF BBC Chan4 1.5x'
@@ -2379,10 +2393,6 @@ proxy-groups:
       - '美国03 中继C | 1.5x'
       - '美国03 中继D | 1.5x'
       - '美国03 中继E | 1.5x'
-      - '美国04 中继A | 备用 1.3x'
-      - '美国04 中继B | 备用 1.3x'
-      - '美国04 中继C | 备用 1.3x'
-      - '美国04 中继D | 备用 1.3x'
       - '英国01 中继A | NF BBC Chan4 1.5x'
       - '英国01 中继B | NF BBC Chan4 1.5x'
       - '英国01 中继C | NF BBC Chan4 1.5x'
