@@ -4,19 +4,31 @@ files:
     url: https://www.jinkela.site/link/PyGoQIzZBf5SP2S1?clash=1
     selected:
       - name: GLOBAL
-        now: 台湾01 中继D | 原生 1.5x
-      - name: 🍃 JINKELA
-        now: ⭐️ 自动选择
-      - name: 🍂 国内网络
-        now: 🚀 绕过代理
-      - name: ☁️ 其他流量
-        now: 🍃 JINKELA
+        now: ⭐️ Auto
+      - name: 🍃 Proxies
+        now: IEPL专线 香港FDC01 | 2.5x
+      - name: 🍂 Domestic
+        now: DIRECT
+      - name: 💬 Telegram
+        now: 🍃 Proxies
+      - name: 👹 YouTube
+        now: 🍃 Proxies
+      - name: 🍿 Netflix
+        now: 🍃 Proxies
+      - name: 💳 PayPal
+        now: DIRECT
+      - name: 👔 LinkedIn
+        now: DIRECT
+      - name: 🍎 Apple Service
+        now: DIRECT
+      - name: ☁️ Others
+        now: 🍃 Proxies
     interval: 24
     mode: rule
     m: rule
     subInfo:
-      upload: 56804169372
-      download: 461630454752
-      total: 5405925179392
+      upload: 67322839865
+      download: 724796494759
+      total: 5428218953728
       expire: 1650869411
 index: 0

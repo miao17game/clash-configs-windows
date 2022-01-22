@@ -17,6 +17,7 @@ mixinCode: >
         "DOMAIN-SUFFIX,reddit.com,☁️ Others",
         "DOMAIN-SUFFIX,redditstatic.com,☁️ Others",
         "DOMAIN-SUFFIX,redditmedia.com,☁️ Others",
+        "DOMAIN-SUFFIX,steampowered.com,☁️ Others"
       ]
     );
     return content;
@@ -29,3 +30,9 @@ mixinText: |
   mixin: # object
 runTimeFormat: "hh : mm : ss"
 systemTheme: true
+trayOrders:
+  - - icon
+  - - status
+    - traffic
+    - text
+hideTrayIcon: false
