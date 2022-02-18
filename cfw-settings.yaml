@@ -17,7 +17,9 @@ mixinCode: >
         "DOMAIN-SUFFIX,reddit.com,☁️ Others",
         "DOMAIN-SUFFIX,redditstatic.com,☁️ Others",
         "DOMAIN-SUFFIX,redditmedia.com,☁️ Others",
-        "DOMAIN-SUFFIX,steampowered.com,☁️ Others"
+        "DOMAIN-SUFFIX,steampowered.com,☁️ Others",
+        "DOMAIN-SUFFIX,steam-chat.com,☁️ Others",
+        "DOMAIN-SUFFIX,steamcdn-a.akamaihd.net,☁️ Others"
       ]
     );
     return content;
@@ -36,3 +38,7 @@ trayOrders:
     - traffic
     - text
 hideTrayIcon: false
+trayColorTransparent: false
+trayScriptManualRunTime: 1645191482532
+useSystemEmoji: true
+trayText: ""
