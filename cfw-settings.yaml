@@ -19,7 +19,8 @@ mixinCode: >
         "DOMAIN-SUFFIX,redditmedia.com,☁️ Others",
         "DOMAIN-SUFFIX,steampowered.com,☁️ Others",
         "DOMAIN-SUFFIX,steam-chat.com,☁️ Others",
-        "DOMAIN-SUFFIX,steamcdn-a.akamaihd.net,☁️ Others"
+        "DOMAIN-SUFFIX,steamcdn-a.akamaihd.net,☁️ Others",
+        "DOMAIN-SUFFIX,rutracker.org,☁️ Others" // 俄罗斯盗版种子站
       ]
     );
     return content;

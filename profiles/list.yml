@@ -4,7 +4,7 @@ files:
     url: https://www.jinkela.site/link/PyGoQIzZBf5SP2S1?clash=1
     selected:
       - name: GLOBAL
-        now: IEPL专线 香港FDC01 | 2.5x
+        now: DIRECT
       - name: 🍃 Proxies
         now: IEPL专线 香港FDC01 | 2.5x
       - name: 🍂 Domestic
@@ -24,11 +24,11 @@ files:
       - name: ☁️ Others
         now: 🍃 Proxies
     interval: 24
-    mode: rule
+    mode: global
     m: rule
     subInfo:
-      upload: 75646855698
-      download: 791465066873
-      total: 10469063524352
+      upload: 76523784410
+      download: 811985325669
+      total: 10470553550848
       expire: 1682405411
 index: 0
