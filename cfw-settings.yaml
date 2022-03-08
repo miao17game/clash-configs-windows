@@ -13,6 +13,8 @@ mixinCode: >
         "DOMAIN-SUFFIX,jinkela.red,🍂 Domestic", // 梯子
         "DOMAIN-SUFFIX,jinkela.site,🍂 Domestic", // 梯子
         "DOMAIN-SUFFIX,epicgames-download1.akamaized.net,🍂 Domestic", // epic games
+        // "DOMAIN-SUFFIX,rutracker.org,🍂 Domestic" // 俄罗斯盗版种子站
+        "DOMAIN-SUFFIX,edge.microsoft.com,☁️ Others",
         "DOMAIN-SUFFIX,json.schemastore.org,☁️ Others",
         "DOMAIN-SUFFIX,reddit.com,☁️ Others",
         "DOMAIN-SUFFIX,redditstatic.com,☁️ Others",
@@ -20,7 +22,6 @@ mixinCode: >
         "DOMAIN-SUFFIX,steampowered.com,☁️ Others",
         "DOMAIN-SUFFIX,steam-chat.com,☁️ Others",
         "DOMAIN-SUFFIX,steamcdn-a.akamaihd.net,☁️ Others",
-        "DOMAIN-SUFFIX,rutracker.org,☁️ Others" // 俄罗斯盗版种子站
       ]
     );
     return content;

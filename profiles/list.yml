@@ -24,7 +24,7 @@ files:
       - name: ☁️ Others
         now: 🍃 Proxies
     interval: 24
-    mode: global
+    mode: rule
     m: rule
     subInfo:
       upload: 76523784410
