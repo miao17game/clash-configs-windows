@@ -1,7 +1,7 @@
 #!MANAGED-CONFIG https://rss.jkl-sub.com/link/PyGoQIzZBf5SP2S1?clash=1
 
 #---------------------------------------------------#
-## 上次更新于：2022-03-08 10:17:07
+## 上次更新于：2022-03-28 12:51:02
 #---------------------------------------------------#
 
 mixed-port: 7890
@@ -199,6 +199,15 @@ proxies:
     type: vmess
     server: iplc01.dns2333.xyz
     port: 3141
+    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
+    alterId: 0
+    cipher: auto
+    udp: true
+  -
+    name: 'IEPL专线 香港HKT04 | 3x 原生IP'
+    type: vmess
+    server: iplc01.dns2333.xyz
+    port: 3201
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 0
     cipher: auto
@@ -487,15 +496,15 @@ proxies:
     server: in01.dns2333.xyz
     port: 61028
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 1
+    alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /jkl
+    ws-path: /
     ws-headers:
       Host: jkl-tr01.covid19.rip
     ws-opts:
-      path: /jkl
+      path: /
       headers: { Host: jkl-tr01.covid19.rip }
     tls: true
     skip-cert-verify: true
@@ -505,15 +514,15 @@ proxies:
     server: in02.dns2333.xyz
     port: 61028
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 1
+    alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /jkl
+    ws-path: /
     ws-headers:
       Host: jkl-tr01.covid19.rip
     ws-opts:
-      path: /jkl
+      path: /
       headers: { Host: jkl-tr01.covid19.rip }
     tls: true
     skip-cert-verify: true
@@ -523,15 +532,15 @@ proxies:
     server: in03.dns2333.xyz
     port: 61028
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 1
+    alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /jkl
+    ws-path: /
     ws-headers:
       Host: jkl-tr01.covid19.rip
     ws-opts:
-      path: /jkl
+      path: /
       headers: { Host: jkl-tr01.covid19.rip }
     tls: true
     skip-cert-verify: true
@@ -541,15 +550,15 @@ proxies:
     server: in04.dns2333.xyz
     port: 61028
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 1
+    alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /jkl
+    ws-path: /
     ws-headers:
       Host: jkl-tr01.covid19.rip
     ws-opts:
-      path: /jkl
+      path: /
       headers: { Host: jkl-tr01.covid19.rip }
     tls: true
     skip-cert-verify: true
@@ -644,9 +653,9 @@ proxies:
     tls: true
     skip-cert-verify: true
   -
-    name: '德国01 CDN 中继B | 1.2x'
+    name: '德国01 CDN 中继 | 1.2x'
     type: vmess
-    server: in02.dns2333.xyz
+    server: in05.dns2333.xyz
     port: 61084
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 0
@@ -840,9 +849,9 @@ proxies:
     tls: true
     skip-cert-verify: true
   -
-    name: '日本03 CDN 中继B | 1.4x'
+    name: '日本03 CDN 中继 | 1.4x'
     type: vmess
-    server: in02.dns2333.xyz
+    server: in05.dns2333.xyz
     port: 61005
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 0
@@ -872,9 +881,9 @@ proxies:
       path: /
       headers: { Host: new.vip.weibo.cn }
   -
-    name: '波兰01 CDN 中继B | 1.2x'
+    name: '波兰01 CDN 中继 | 1.2x'
     type: vmess
-    server: in02.dns2333.xyz
+    server: in05.dns2333.xyz
     port: 61077
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 0
@@ -887,38 +896,6 @@ proxies:
     ws-opts:
       path: /
       headers: { Host: pl01-cdn.myn0des.com }
-  -
-    name: '澳洲11 AWS直连 速度随缘 0.5x'
-    type: vmess
-    server: mugua-au11-direct.node168.com
-    port: 443
-    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /hls
-    ws-headers:
-      Host: new.vip.weibo.cn
-    ws-opts:
-      path: /hls
-      headers: { Host: new.vip.weibo.cn }
-  -
-    name: '澳洲11 AWS直连AGA 速度随缘 0.5x'
-    type: vmess
-    server: au11-aga.node168.com
-    port: 443
-    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 2
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /hls
-    ws-headers:
-      Host: new.vip.weibo.cn
-    ws-opts:
-      path: /hls
-      headers: { Host: new.vip.weibo.cn }
   -
     name: '美国01 中继A |  1.5x'
     type: vmess
@@ -1100,9 +1077,9 @@ proxies:
     tls: true
     skip-cert-verify: true
   -
-    name: '英国01 CDN 中继B | 1.3'
+    name: '英国01 CDN 中继 | 1.3'
     type: vmess
-    server: in02.dns2333.xyz
+    server: in05.dns2333.xyz
     port: 61021
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 0
@@ -1116,9 +1093,9 @@ proxies:
       path: /
       headers: { Host: uk01-cdn.airport-v2.com }
   -
-    name: '荷兰01 CDN 中继B | 冷门 1.2x'
+    name: '荷兰01 CDN 中继 | 冷门 1.2x'
     type: vmess
-    server: in02.dns2333.xyz
+    server: in05.dns2333.xyz
     port: 61062
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 0
@@ -1132,9 +1109,9 @@ proxies:
       path: /
       headers: { Host: nl01-cdn.tencent.best }
   -
-    name: '阿根廷01 CDN 中继B 龟速1.5x'
+    name: '阿根廷01 CDN 中继 龟速1.5x'
     type: vmess
-    server: in02.dns2333.xyz
+    server: in05.dns2333.xyz
     port: 61072
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 0
@@ -1236,9 +1213,9 @@ proxies:
       path: /hls
       headers: { Host: new.vip.weibo.cn }
   -
-    name: '香港 HKT02 CDN 中继B | 1.3x'
+    name: '香港 HKT02 CDN 中继 | 1.3x'
     type: vmess
-    server: in02.dns2333.xyz
+    server: in05.dns2333.xyz
     port: 61081
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 0
@@ -1252,9 +1229,9 @@ proxies:
       path: /
       headers: { Host: hkt2-cdn.tencent.best }
   -
-    name: '香港 HKT03 CDN 中继B | 1.3x'
+    name: '香港 HKT03 CDN 中继 | 1.3x'
     type: vmess
-    server: in02.dns2333.xyz
+    server: in05.dns2333.xyz
     port: 61082
     uuid: a821299e-e717-3a43-8a11-649e8fa26b89
     alterId: 0
@@ -1267,22 +1244,6 @@ proxies:
     ws-opts:
       path: /
       headers: { Host: hkt3-cdn.tencent.best }
-  -
-    name: '香港 HKT04 中继D | 1.3x'
-    type: vmess
-    server: in04.dns2333.xyz
-    port: 61083
-    uuid: a821299e-e717-3a43-8a11-649e8fa26b89
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: cdn.bootcdn.net
-    ws-opts:
-      path: /
-      headers: { Host: cdn.bootcdn.net }
   -
     name: '香港 多台负载均衡 中继A | 1.5x'
     type: vmess
@@ -1396,6 +1357,7 @@ proxy-groups:
       - 'IEPL专线 香港HKBGP01 | 3x '
       - 'IEPL专线 香港HKG01 | 3x 原生IP'
       - 'IEPL专线 香港HKT01 | 3x 原生IP'
+      - 'IEPL专线 香港HKT04 | 3x 原生IP'
       - 'IEPL专线 马来西亚01 | 3x 原生IP'
       - 'IEPL专线 马来西亚02 | 3x 原生IP'
       - '俄罗斯01 中继A | 冷门 1.2x'
@@ -1422,7 +1384,7 @@ proxy-groups:
       - '巴西01 中继C | 冷门 2.0x'
       - '巴西01 中继D | 冷门 2.0x'
       - '巴西01 中继E | 冷门 2.0x'
-      - '德国01 CDN 中继B | 1.2x'
+      - '德国01 CDN 中继 | 1.2x'
       - '新加坡 多台负载均衡 中继A 1.5x'
       - '新加坡 多台负载均衡 中继B 1.5x'
       - '新加坡 多台负载均衡 中继C 1.5x'
@@ -1433,11 +1395,9 @@ proxy-groups:
       - '日本 多台负载均衡 中继C 1.5x'
       - '日本 多台负载均衡 中继D 1.5x'
       - "日本 多台负载均衡 中继E 1.5x\t"
-      - '日本03 CDN 中继B | 1.4x'
+      - '日本03 CDN 中继 | 1.4x'
       - '日本A组 直连 速度随缘 0.5x'
-      - '波兰01 CDN 中继B | 1.2x'
-      - '澳洲11 AWS直连 速度随缘 0.5x'
-      - '澳洲11 AWS直连AGA 速度随缘 0.5x'
+      - '波兰01 CDN 中继 | 1.2x'
       - '美国01 中继A |  1.5x'
       - '美国01 中继B |  1.5x'
       - '美国01 中继C |  1.5x'
@@ -1448,17 +1408,16 @@ proxy-groups:
       - '美国03 中继C | 1.5x'
       - '美国03 中继D | 1.5x'
       - '美国03 中继E | 1.5x'
-      - '英国01 CDN 中继B | 1.3'
-      - '荷兰01 CDN 中继B | 冷门 1.2x'
-      - '阿根廷01 CDN 中继B 龟速1.5x'
+      - '英国01 CDN 中继 | 1.3'
+      - '荷兰01 CDN 中继 | 冷门 1.2x'
+      - '阿根廷01 CDN 中继 龟速1.5x'
       - '韩国01 中继A | 1.5x'
       - '韩国01 中继B | 1.5x'
       - '韩国01 中继D | 1.5x'
       - '韩国01 中继E | 1.5x'
       - '韩国A组 直连 速度随缘 0.5x'
-      - '香港 HKT02 CDN 中继B | 1.3x'
-      - '香港 HKT03 CDN 中继B | 1.3x'
-      - '香港 HKT04 中继D | 1.3x'
+      - '香港 HKT02 CDN 中继 | 1.3x'
+      - '香港 HKT03 CDN 中继 | 1.3x'
       - '香港 多台负载均衡 中继A | 1.5x'
       - '香港 多台负载均衡 中继B | 1.5x'
       - '香港 多台负载均衡 中继C | 1.5x'
@@ -1492,6 +1451,7 @@ proxy-groups:
       - 'IEPL专线 香港HKBGP01 | 3x '
       - 'IEPL专线 香港HKG01 | 3x 原生IP'
       - 'IEPL专线 香港HKT01 | 3x 原生IP'
+      - 'IEPL专线 香港HKT04 | 3x 原生IP'
       - 'IEPL专线 马来西亚01 | 3x 原生IP'
       - 'IEPL专线 马来西亚02 | 3x 原生IP'
       - '俄罗斯01 中继A | 冷门 1.2x'
@@ -1518,7 +1478,7 @@ proxy-groups:
       - '巴西01 中继C | 冷门 2.0x'
       - '巴西01 中继D | 冷门 2.0x'
       - '巴西01 中继E | 冷门 2.0x'
-      - '德国01 CDN 中继B | 1.2x'
+      - '德国01 CDN 中继 | 1.2x'
       - '新加坡 多台负载均衡 中继A 1.5x'
       - '新加坡 多台负载均衡 中继B 1.5x'
       - '新加坡 多台负载均衡 中继C 1.5x'
@@ -1529,11 +1489,9 @@ proxy-groups:
       - '日本 多台负载均衡 中继C 1.5x'
       - '日本 多台负载均衡 中继D 1.5x'
       - "日本 多台负载均衡 中继E 1.5x\t"
-      - '日本03 CDN 中继B | 1.4x'
+      - '日本03 CDN 中继 | 1.4x'
       - '日本A组 直连 速度随缘 0.5x'
-      - '波兰01 CDN 中继B | 1.2x'
-      - '澳洲11 AWS直连 速度随缘 0.5x'
-      - '澳洲11 AWS直连AGA 速度随缘 0.5x'
+      - '波兰01 CDN 中继 | 1.2x'
       - '美国01 中继A |  1.5x'
       - '美国01 中继B |  1.5x'
       - '美国01 中继C |  1.5x'
@@ -1544,17 +1502,16 @@ proxy-groups:
       - '美国03 中继C | 1.5x'
       - '美国03 中继D | 1.5x'
       - '美国03 中继E | 1.5x'
-      - '英国01 CDN 中继B | 1.3'
-      - '荷兰01 CDN 中继B | 冷门 1.2x'
-      - '阿根廷01 CDN 中继B 龟速1.5x'
+      - '英国01 CDN 中继 | 1.3'
+      - '荷兰01 CDN 中继 | 冷门 1.2x'
+      - '阿根廷01 CDN 中继 龟速1.5x'
       - '韩国01 中继A | 1.5x'
       - '韩国01 中继B | 1.5x'
       - '韩国01 中继D | 1.5x'
       - '韩国01 中继E | 1.5x'
       - '韩国A组 直连 速度随缘 0.5x'
-      - '香港 HKT02 CDN 中继B | 1.3x'
-      - '香港 HKT03 CDN 中继B | 1.3x'
-      - '香港 HKT04 中继D | 1.3x'
+      - '香港 HKT02 CDN 中继 | 1.3x'
+      - '香港 HKT03 CDN 中继 | 1.3x'
       - '香港 多台负载均衡 中继A | 1.5x'
       - '香港 多台负载均衡 中继B | 1.5x'
       - '香港 多台负载均衡 中继C | 1.5x'
@@ -1582,6 +1539,7 @@ proxy-groups:
       - 'IEPL专线 香港HKBGP01 | 3x '
       - 'IEPL专线 香港HKG01 | 3x 原生IP'
       - 'IEPL专线 香港HKT01 | 3x 原生IP'
+      - 'IEPL专线 香港HKT04 | 3x 原生IP'
       - 'IEPL专线 马来西亚01 | 3x 原生IP'
       - 'IEPL专线 马来西亚02 | 3x 原生IP'
       - '俄罗斯01 中继A | 冷门 1.2x'
@@ -1608,7 +1566,7 @@ proxy-groups:
       - '巴西01 中继C | 冷门 2.0x'
       - '巴西01 中继D | 冷门 2.0x'
       - '巴西01 中继E | 冷门 2.0x'
-      - '德国01 CDN 中继B | 1.2x'
+      - '德国01 CDN 中继 | 1.2x'
       - '新加坡 多台负载均衡 中继A 1.5x'
       - '新加坡 多台负载均衡 中继B 1.5x'
       - '新加坡 多台负载均衡 中继C 1.5x'
@@ -1619,11 +1577,9 @@ proxy-groups:
       - '日本 多台负载均衡 中继C 1.5x'
       - '日本 多台负载均衡 中继D 1.5x'
       - "日本 多台负载均衡 中继E 1.5x\t"
-      - '日本03 CDN 中继B | 1.4x'
+      - '日本03 CDN 中继 | 1.4x'
       - '日本A组 直连 速度随缘 0.5x'
-      - '波兰01 CDN 中继B | 1.2x'
-      - '澳洲11 AWS直连 速度随缘 0.5x'
-      - '澳洲11 AWS直连AGA 速度随缘 0.5x'
+      - '波兰01 CDN 中继 | 1.2x'
       - '美国01 中继A |  1.5x'
       - '美国01 中继B |  1.5x'
       - '美国01 中继C |  1.5x'
@@ -1634,17 +1590,16 @@ proxy-groups:
       - '美国03 中继C | 1.5x'
       - '美国03 中继D | 1.5x'
       - '美国03 中继E | 1.5x'
-      - '英国01 CDN 中继B | 1.3'
-      - '荷兰01 CDN 中继B | 冷门 1.2x'
-      - '阿根廷01 CDN 中继B 龟速1.5x'
+      - '英国01 CDN 中继 | 1.3'
+      - '荷兰01 CDN 中继 | 冷门 1.2x'
+      - '阿根廷01 CDN 中继 龟速1.5x'
       - '韩国01 中继A | 1.5x'
       - '韩国01 中继B | 1.5x'
       - '韩国01 中继D | 1.5x'
       - '韩国01 中继E | 1.5x'
       - '韩国A组 直连 速度随缘 0.5x'
-      - '香港 HKT02 CDN 中继B | 1.3x'
-      - '香港 HKT03 CDN 中继B | 1.3x'
-      - '香港 HKT04 中继D | 1.3x'
+      - '香港 HKT02 CDN 中继 | 1.3x'
+      - '香港 HKT03 CDN 中继 | 1.3x'
       - '香港 多台负载均衡 中继A | 1.5x'
       - '香港 多台负载均衡 中继B | 1.5x'
       - '香港 多台负载均衡 中继C | 1.5x'
@@ -1672,6 +1627,7 @@ proxy-groups:
       - 'IEPL专线 香港HKBGP01 | 3x '
       - 'IEPL专线 香港HKG01 | 3x 原生IP'
       - 'IEPL专线 香港HKT01 | 3x 原生IP'
+      - 'IEPL专线 香港HKT04 | 3x 原生IP'
       - 'IEPL专线 马来西亚01 | 3x 原生IP'
       - 'IEPL专线 马来西亚02 | 3x 原生IP'
       - '俄罗斯01 中继A | 冷门 1.2x'
@@ -1698,7 +1654,7 @@ proxy-groups:
       - '巴西01 中继C | 冷门 2.0x'
       - '巴西01 中继D | 冷门 2.0x'
       - '巴西01 中继E | 冷门 2.0x'
-      - '德国01 CDN 中继B | 1.2x'
+      - '德国01 CDN 中继 | 1.2x'
       - '新加坡 多台负载均衡 中继A 1.5x'
       - '新加坡 多台负载均衡 中继B 1.5x'
       - '新加坡 多台负载均衡 中继C 1.5x'
@@ -1709,11 +1665,9 @@ proxy-groups:
       - '日本 多台负载均衡 中继C 1.5x'
       - '日本 多台负载均衡 中继D 1.5x'
       - "日本 多台负载均衡 中继E 1.5x\t"
-      - '日本03 CDN 中继B | 1.4x'
+      - '日本03 CDN 中继 | 1.4x'
       - '日本A组 直连 速度随缘 0.5x'
-      - '波兰01 CDN 中继B | 1.2x'
-      - '澳洲11 AWS直连 速度随缘 0.5x'
-      - '澳洲11 AWS直连AGA 速度随缘 0.5x'
+      - '波兰01 CDN 中继 | 1.2x'
       - '美国01 中继A |  1.5x'
       - '美国01 中继B |  1.5x'
       - '美国01 中继C |  1.5x'
@@ -1724,17 +1678,16 @@ proxy-groups:
       - '美国03 中继C | 1.5x'
       - '美国03 中继D | 1.5x'
       - '美国03 中继E | 1.5x'
-      - '英国01 CDN 中继B | 1.3'
-      - '荷兰01 CDN 中继B | 冷门 1.2x'
-      - '阿根廷01 CDN 中继B 龟速1.5x'
+      - '英国01 CDN 中继 | 1.3'
+      - '荷兰01 CDN 中继 | 冷门 1.2x'
+      - '阿根廷01 CDN 中继 龟速1.5x'
       - '韩国01 中继A | 1.5x'
       - '韩国01 中继B | 1.5x'
       - '韩国01 中继D | 1.5x'
       - '韩国01 中继E | 1.5x'
       - '韩国A组 直连 速度随缘 0.5x'
-      - '香港 HKT02 CDN 中继B | 1.3x'
-      - '香港 HKT03 CDN 中继B | 1.3x'
-      - '香港 HKT04 中继D | 1.3x'
+      - '香港 HKT02 CDN 中继 | 1.3x'
+      - '香港 HKT03 CDN 中继 | 1.3x'
       - '香港 多台负载均衡 中继A | 1.5x'
       - '香港 多台负载均衡 中继B | 1.5x'
       - '香港 多台负载均衡 中继C | 1.5x'
@@ -1763,6 +1716,7 @@ proxy-groups:
       - 'IEPL专线 香港HKBGP01 | 3x '
       - 'IEPL专线 香港HKG01 | 3x 原生IP'
       - 'IEPL专线 香港HKT01 | 3x 原生IP'
+      - 'IEPL专线 香港HKT04 | 3x 原生IP'
       - 'IEPL专线 马来西亚01 | 3x 原生IP'
       - 'IEPL专线 马来西亚02 | 3x 原生IP'
       - '俄罗斯01 中继A | 冷门 1.2x'
@@ -1789,7 +1743,7 @@ proxy-groups:
       - '巴西01 中继C | 冷门 2.0x'
       - '巴西01 中继D | 冷门 2.0x'
       - '巴西01 中继E | 冷门 2.0x'
-      - '德国01 CDN 中继B | 1.2x'
+      - '德国01 CDN 中继 | 1.2x'
       - '新加坡 多台负载均衡 中继A 1.5x'
       - '新加坡 多台负载均衡 中继B 1.5x'
       - '新加坡 多台负载均衡 中继C 1.5x'
@@ -1800,11 +1754,9 @@ proxy-groups:
       - '日本 多台负载均衡 中继C 1.5x'
       - '日本 多台负载均衡 中继D 1.5x'
       - "日本 多台负载均衡 中继E 1.5x\t"
-      - '日本03 CDN 中继B | 1.4x'
+      - '日本03 CDN 中继 | 1.4x'
       - '日本A组 直连 速度随缘 0.5x'
-      - '波兰01 CDN 中继B | 1.2x'
-      - '澳洲11 AWS直连 速度随缘 0.5x'
-      - '澳洲11 AWS直连AGA 速度随缘 0.5x'
+      - '波兰01 CDN 中继 | 1.2x'
       - '美国01 中继A |  1.5x'
       - '美国01 中继B |  1.5x'
       - '美国01 中继C |  1.5x'
@@ -1815,17 +1767,16 @@ proxy-groups:
       - '美国03 中继C | 1.5x'
       - '美国03 中继D | 1.5x'
       - '美国03 中继E | 1.5x'
-      - '英国01 CDN 中继B | 1.3'
-      - '荷兰01 CDN 中继B | 冷门 1.2x'
-      - '阿根廷01 CDN 中继B 龟速1.5x'
+      - '英国01 CDN 中继 | 1.3'
+      - '荷兰01 CDN 中继 | 冷门 1.2x'
+      - '阿根廷01 CDN 中继 龟速1.5x'
       - '韩国01 中继A | 1.5x'
       - '韩国01 中继B | 1.5x'
       - '韩国01 中继D | 1.5x'
       - '韩国01 中继E | 1.5x'
       - '韩国A组 直连 速度随缘 0.5x'
-      - '香港 HKT02 CDN 中继B | 1.3x'
-      - '香港 HKT03 CDN 中继B | 1.3x'
-      - '香港 HKT04 中继D | 1.3x'
+      - '香港 HKT02 CDN 中继 | 1.3x'
+      - '香港 HKT03 CDN 中继 | 1.3x'
       - '香港 多台负载均衡 中继A | 1.5x'
       - '香港 多台负载均衡 中继B | 1.5x'
       - '香港 多台负载均衡 中继C | 1.5x'
@@ -1854,6 +1805,7 @@ proxy-groups:
       - 'IEPL专线 香港HKBGP01 | 3x '
       - 'IEPL专线 香港HKG01 | 3x 原生IP'
       - 'IEPL专线 香港HKT01 | 3x 原生IP'
+      - 'IEPL专线 香港HKT04 | 3x 原生IP'
       - 'IEPL专线 马来西亚01 | 3x 原生IP'
       - 'IEPL专线 马来西亚02 | 3x 原生IP'
       - '俄罗斯01 中继A | 冷门 1.2x'
@@ -1880,7 +1832,7 @@ proxy-groups:
       - '巴西01 中继C | 冷门 2.0x'
       - '巴西01 中继D | 冷门 2.0x'
       - '巴西01 中继E | 冷门 2.0x'
-      - '德国01 CDN 中继B | 1.2x'
+      - '德国01 CDN 中继 | 1.2x'
       - '新加坡 多台负载均衡 中继A 1.5x'
       - '新加坡 多台负载均衡 中继B 1.5x'
       - '新加坡 多台负载均衡 中继C 1.5x'
@@ -1891,11 +1843,9 @@ proxy-groups:
       - '日本 多台负载均衡 中继C 1.5x'
       - '日本 多台负载均衡 中继D 1.5x'
       - "日本 多台负载均衡 中继E 1.5x\t"
-      - '日本03 CDN 中继B | 1.4x'
+      - '日本03 CDN 中继 | 1.4x'
       - '日本A组 直连 速度随缘 0.5x'
-      - '波兰01 CDN 中继B | 1.2x'
-      - '澳洲11 AWS直连 速度随缘 0.5x'
-      - '澳洲11 AWS直连AGA 速度随缘 0.5x'
+      - '波兰01 CDN 中继 | 1.2x'
       - '美国01 中继A |  1.5x'
       - '美国01 中继B |  1.5x'
       - '美国01 中继C |  1.5x'
@@ -1906,17 +1856,16 @@ proxy-groups:
       - '美国03 中继C | 1.5x'
       - '美国03 中继D | 1.5x'
       - '美国03 中继E | 1.5x'
-      - '英国01 CDN 中继B | 1.3'
-      - '荷兰01 CDN 中继B | 冷门 1.2x'
-      - '阿根廷01 CDN 中继B 龟速1.5x'
+      - '英国01 CDN 中继 | 1.3'
+      - '荷兰01 CDN 中继 | 冷门 1.2x'
+      - '阿根廷01 CDN 中继 龟速1.5x'
       - '韩国01 中继A | 1.5x'
       - '韩国01 中继B | 1.5x'
       - '韩国01 中继D | 1.5x'
       - '韩国01 中继E | 1.5x'
       - '韩国A组 直连 速度随缘 0.5x'
-      - '香港 HKT02 CDN 中继B | 1.3x'
-      - '香港 HKT03 CDN 中继B | 1.3x'
-      - '香港 HKT04 中继D | 1.3x'
+      - '香港 HKT02 CDN 中继 | 1.3x'
+      - '香港 HKT03 CDN 中继 | 1.3x'
       - '香港 多台负载均衡 中继A | 1.5x'
       - '香港 多台负载均衡 中继B | 1.5x'
       - '香港 多台负载均衡 中继C | 1.5x'
@@ -1945,6 +1894,7 @@ proxy-groups:
       - 'IEPL专线 香港HKBGP01 | 3x '
       - 'IEPL专线 香港HKG01 | 3x 原生IP'
       - 'IEPL专线 香港HKT01 | 3x 原生IP'
+      - 'IEPL专线 香港HKT04 | 3x 原生IP'
       - 'IEPL专线 马来西亚01 | 3x 原生IP'
       - 'IEPL专线 马来西亚02 | 3x 原生IP'
       - '俄罗斯01 中继A | 冷门 1.2x'
@@ -1971,7 +1921,7 @@ proxy-groups:
       - '巴西01 中继C | 冷门 2.0x'
       - '巴西01 中继D | 冷门 2.0x'
       - '巴西01 中继E | 冷门 2.0x'
-      - '德国01 CDN 中继B | 1.2x'
+      - '德国01 CDN 中继 | 1.2x'
       - '新加坡 多台负载均衡 中继A 1.5x'
       - '新加坡 多台负载均衡 中继B 1.5x'
       - '新加坡 多台负载均衡 中继C 1.5x'
@@ -1982,11 +1932,9 @@ proxy-groups:
       - '日本 多台负载均衡 中继C 1.5x'
       - '日本 多台负载均衡 中继D 1.5x'
       - "日本 多台负载均衡 中继E 1.5x\t"
-      - '日本03 CDN 中继B | 1.4x'
+      - '日本03 CDN 中继 | 1.4x'
       - '日本A组 直连 速度随缘 0.5x'
-      - '波兰01 CDN 中继B | 1.2x'
-      - '澳洲11 AWS直连 速度随缘 0.5x'
-      - '澳洲11 AWS直连AGA 速度随缘 0.5x'
+      - '波兰01 CDN 中继 | 1.2x'
       - '美国01 中继A |  1.5x'
       - '美国01 中继B |  1.5x'
       - '美国01 中继C |  1.5x'
@@ -1997,17 +1945,16 @@ proxy-groups:
       - '美国03 中继C | 1.5x'
       - '美国03 中继D | 1.5x'
       - '美国03 中继E | 1.5x'
-      - '英国01 CDN 中继B | 1.3'
-      - '荷兰01 CDN 中继B | 冷门 1.2x'
-      - '阿根廷01 CDN 中继B 龟速1.5x'
+      - '英国01 CDN 中继 | 1.3'
+      - '荷兰01 CDN 中继 | 冷门 1.2x'
+      - '阿根廷01 CDN 中继 龟速1.5x'
       - '韩国01 中继A | 1.5x'
       - '韩国01 中继B | 1.5x'
       - '韩国01 中继D | 1.5x'
       - '韩国01 中继E | 1.5x'
       - '韩国A组 直连 速度随缘 0.5x'
-      - '香港 HKT02 CDN 中继B | 1.3x'
-      - '香港 HKT03 CDN 中继B | 1.3x'
-      - '香港 HKT04 中继D | 1.3x'
+      - '香港 HKT02 CDN 中继 | 1.3x'
+      - '香港 HKT03 CDN 中继 | 1.3x'
       - '香港 多台负载均衡 中继A | 1.5x'
       - '香港 多台负载均衡 中继B | 1.5x'
       - '香港 多台负载均衡 中继C | 1.5x'
@@ -2038,7 +1985,7 @@ proxy-groups:
       - '台湾 多台负载均衡 中继C 1.5x'
       - '台湾 多台负载均衡 中继D 1.5x'
       - '台湾 多台负载均衡 中继E 1.5x'
-      - '德国01 CDN 中继B | 1.2x'
+      - '德国01 CDN 中继 | 1.2x'
       - '新加坡 多台负载均衡 中继A 1.5x'
       - '新加坡 多台负载均衡 中继B 1.5x'
       - '新加坡 多台负载均衡 中继C 1.5x'
@@ -2049,8 +1996,8 @@ proxy-groups:
       - '日本 多台负载均衡 中继C 1.5x'
       - '日本 多台负载均衡 中继D 1.5x'
       - "日本 多台负载均衡 中继E 1.5x\t"
-      - '日本03 CDN 中继B | 1.4x'
-      - '波兰01 CDN 中继B | 1.2x'
+      - '日本03 CDN 中继 | 1.4x'
+      - '波兰01 CDN 中继 | 1.2x'
       - '美国01 中继A |  1.5x'
       - '美国01 中继B |  1.5x'
       - '美国01 中继C |  1.5x'
@@ -2061,16 +2008,15 @@ proxy-groups:
       - '美国03 中继C | 1.5x'
       - '美国03 中继D | 1.5x'
       - '美国03 中继E | 1.5x'
-      - '英国01 CDN 中继B | 1.3'
-      - '荷兰01 CDN 中继B | 冷门 1.2x'
-      - '阿根廷01 CDN 中继B 龟速1.5x'
+      - '英国01 CDN 中继 | 1.3'
+      - '荷兰01 CDN 中继 | 冷门 1.2x'
+      - '阿根廷01 CDN 中继 龟速1.5x'
       - '韩国01 中继A | 1.5x'
       - '韩国01 中继B | 1.5x'
       - '韩国01 中继D | 1.5x'
       - '韩国01 中继E | 1.5x'
-      - '香港 HKT02 CDN 中继B | 1.3x'
-      - '香港 HKT03 CDN 中继B | 1.3x'
-      - '香港 HKT04 中继D | 1.3x'
+      - '香港 HKT02 CDN 中继 | 1.3x'
+      - '香港 HKT03 CDN 中继 | 1.3x'
       - '香港 多台负载均衡 中继A | 1.5x'
       - '香港 多台负载均衡 中继B | 1.5x'
       - '香港 多台负载均衡 中继C | 1.5x'

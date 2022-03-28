@@ -2,17 +2,18 @@ theme: 2
 showNotifications: true
 fontFamily: TsangerJinKai01-27533
 mixinType: 1
-mixinCode: >
+mixinCode: |
   module.exports.parse = ({ content, name, url }, { yaml, axios, notify }) => {
     const rules = content.rules;
     rules.unshift(
       ...[
-        "DOMAIN-SUFFIX,qima-inc.com,🍂 Domestic", // 公司内网
-        "DOMAIN-SUFFIX,delivery.mp.microsoft.com,🍂 Domestic", // 应用商店智能分发
-        "DOMAIN-SUFFIX,xvcf1.xboxlive.com,🍂 Domestic", // xbox下载
-        "DOMAIN-SUFFIX,jinkela.red,🍂 Domestic", // 梯子
-        "DOMAIN-SUFFIX,jinkela.site,🍂 Domestic", // 梯子
-        "DOMAIN-SUFFIX,epicgames-download1.akamaized.net,🍂 Domestic", // epic games
+        "DOMAIN-SUFFIX,qima-inc.com,DIRECT", // 公司内网
+        "DOMAIN-SUFFIX,fin.qima-inc.com,DIRECT", // 公司内网
+        "DOMAIN-SUFFIX,delivery.mp.microsoft.com,DIRECT", // 应用商店智能分发
+        "DOMAIN-SUFFIX,xvcf1.xboxlive.com,DIRECT", // xbox下载
+        "DOMAIN-SUFFIX,jinkela.red,DIRECT", // 梯子
+        "DOMAIN-SUFFIX,jinkela.site,DIRECT", // 梯子
+        "DOMAIN-SUFFIX,epicgames-download1.akamaized.net,DIRECT", // epic games
         "DOMAIN-SUFFIX,rutracker.org,☁️ Others", // 俄罗斯盗版种子站
         "DOMAIN-SUFFIX,static.t-ru.org,☁️ Others", // 俄罗斯盗版种子站
         "DOMAIN-SUFFIX,edge.microsoft.com,☁️ Others",
@@ -45,3 +46,8 @@ trayColorTransparent: false
 trayScriptManualRunTime: 1645191482532
 useSystemEmoji: true
 trayText: ""
+systemProxyTypeIndex: 1
+pacContentText: >-
+  function FindProxyForURL(url, host) {
+    return "PROXY 127.0.0.1:%mixed-port%; SOCKS5 127.0.0.1:%mixed-port%; DIRECT;"
+  }

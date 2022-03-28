@@ -1,7 +1,7 @@
 files:
   - time: 1615015083535.yml
     name: JINKELA.clash
-    url: https://www.jinkela.site/link/PyGoQIzZBf5SP2S1?clash=1
+    url: https://rss.jkl-sub.com/link/PyGoQIzZBf5SP2S1?clash=1
     selected:
       - name: GLOBAL
         now: DIRECT
@@ -23,12 +23,14 @@ files:
         now: DIRECT
       - name: ☁️ Others
         now: 🍃 Proxies
-    interval: 24
+    interval: 12
     mode: rule
     m: rule
     subInfo:
-      upload: 76523784410
-      download: 811985325669
-      total: 10470553550848
+      upload: 77460350920
+      download: 830328197872
+      total: 10474478370816
       expire: 1682405411
+    cron: ""
+    headers: ""
 index: 0
