@@ -3,7 +3,8 @@ showNotifications: true
 fontFamily: TsangerJinKai01-27533
 mixinType: 1
 mixinCode: >
-  module.exports.parse = ({ content, name, url }, { yaml, axios, notify }) => {
+  module.exports.parse = ({ content, name, url }, { yaml, axios, notify
+  }) => {
     const rules = content.rules;
     rules.unshift(
       ...[
@@ -42,3 +43,5 @@ trayColorTransparent: false
 trayScriptManualRunTime: 1645191482532
 useSystemEmoji: true
 trayText: ""
+connShowProcess: true
+showTrayProxyDelayIndicator: true
