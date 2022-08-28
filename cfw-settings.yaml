@@ -14,6 +14,8 @@ mixinCode: >
         "DOMAIN-SUFFIX,jinkela.red,🍂 Domestic", // 梯子
         "DOMAIN-SUFFIX,jinkela.site,🍂 Domestic", // 梯子
         "DOMAIN-SUFFIX,epicgames-download1.akamaized.net,🍂 Domestic", // epic games
+        "DOMAIN-SUFFIX,cdn.winget.microsoft.com,☁️ Others", // winget
+        "DOMAIN-SUFFIX,self.events.data.microsoft.com,☁️ Others", // winget
         "DOMAIN-SUFFIX,json.schemastore.org,☁️ Others",
         "DOMAIN-SUFFIX,reddit.com,☁️ Others",
         "DOMAIN-SUFFIX,redditstatic.com,☁️ Others",
@@ -26,7 +28,7 @@ mixinCode: >
     return content;
   };
 showNewVersionIcon: true
-editor: 1
+editor: 0
 hideAfterStartup: true
 randomControllerPort: true
 mixinText: |
