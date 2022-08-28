@@ -14,15 +14,15 @@ mixinCode: >
         "DOMAIN-SUFFIX,jinkela.red,🍂 Domestic", // 梯子
         "DOMAIN-SUFFIX,jinkela.site,🍂 Domestic", // 梯子
         "DOMAIN-SUFFIX,epicgames-download1.akamaized.net,🍂 Domestic", // epic games
-        "DOMAIN-SUFFIX,cdn.winget.microsoft.com,☁️ Others", // winget
-        "DOMAIN-SUFFIX,self.events.data.microsoft.com,☁️ Others", // winget
-        "DOMAIN-SUFFIX,json.schemastore.org,☁️ Others",
-        "DOMAIN-SUFFIX,reddit.com,☁️ Others",
-        "DOMAIN-SUFFIX,redditstatic.com,☁️ Others",
-        "DOMAIN-SUFFIX,redditmedia.com,☁️ Others",
-        "DOMAIN-SUFFIX,steampowered.com,☁️ Others",
-        "DOMAIN-SUFFIX,steam-chat.com,☁️ Others",
-        "DOMAIN-SUFFIX,steamcdn-a.akamaihd.net,☁️ Others"
+        "DOMAIN-SUFFIX,cdn.winget.microsoft.com,🍃 Proxies", // winget
+        "DOMAIN-SUFFIX,self.events.data.microsoft.com,🍃 Proxies", // winget
+        "DOMAIN-SUFFIX,json.schemastore.org,🍃 Proxies",
+        "DOMAIN-SUFFIX,reddit.com,🍃 Proxies",
+        "DOMAIN-SUFFIX,redditstatic.com,🍃 Proxies",
+        "DOMAIN-SUFFIX,redditmedia.com,🍃 Proxies",
+        "DOMAIN-SUFFIX,steampowered.com,🍃 Proxies",
+        "DOMAIN-SUFFIX,steam-chat.com,🍃 Proxies",
+        "DOMAIN-SUFFIX,steamcdn-a.akamaihd.net,🍃 Proxies"
       ]
     );
     return content;
