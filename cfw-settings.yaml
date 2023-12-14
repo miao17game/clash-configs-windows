@@ -8,13 +8,6 @@ mixinCode: >
     const rules = content.rules;
     rules.unshift(
       ...[
-        "DOMAIN-SUFFIX,qima-inc.com,🍂 Domestic", // 公司内网
-        "DOMAIN-SUFFIX,delivery.mp.microsoft.com,🍂 Domestic", // 应用商店智能分发
-        "DOMAIN-SUFFIX,xvcf1.xboxlive.com,🍂 Domestic", // xbox下载
-        "DOMAIN-SUFFIX,jinkela.red,🍂 Domestic", // 梯子
-        "DOMAIN-SUFFIX,jinkela.site,🍂 Domestic", // 梯子
-        "DOMAIN-SUFFIX,epicgames-download1.akamaized.net,🍂 Domestic", // epic games
-        "DOMAIN-SUFFIX,steamcontent.com,🍂 Domestic", // steam download
         "DOMAIN-SUFFIX,cdn.winget.microsoft.com,🍃 Proxies", // winget
         "DOMAIN-SUFFIX,self.events.data.microsoft.com,🍃 Proxies", // winget
         "DOMAIN-SUFFIX,json.schemastore.org,🍃 Proxies",
@@ -23,7 +16,16 @@ mixinCode: >
         "DOMAIN-SUFFIX,redditmedia.com,🍃 Proxies",
         "DOMAIN-SUFFIX,steampowered.com,🍃 Proxies",
         "DOMAIN-SUFFIX,steam-chat.com,🍃 Proxies",
-        "DOMAIN-SUFFIX,steamcdn-a.akamaihd.net,🍃 Proxies"
+        "DOMAIN-SUFFIX,api.epicgames.com,🍃 Proxies",
+        "DOMAIN-SUFFIX,steamcdn-a.akamaihd.net,🍃 Proxies",
+        "DOMAIN-SUFFIX,delivery.mp.microsoft.com,🍂 Domestic", // 应用商店智能分发
+        "DOMAIN-SUFFIX,xvcf1.xboxlive.com,🍂 Domestic", // xbox下载
+        "DOMAIN-SUFFIX,jinkela.red,🍂 Domestic", // 梯子
+        "DOMAIN-SUFFIX,jinkela.site,🍂 Domestic", // 梯子
+        "DOMAIN-SUFFIX,epicgames-download1.akamaized.net,🍂 Domestic", // epic games
+        "DOMAIN-SUFFIX,file.myqcloud.com,🍂 Domestic", // epic games
+        "DOMAIN-SUFFIX,epicgames.com,🍂 Domestic", // epic games
+        "DOMAIN-SUFFIX,steamcontent.com,🍂 Domestic", // steam download
       ]
     );
     return content;
