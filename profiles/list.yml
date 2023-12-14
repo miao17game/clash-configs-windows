@@ -1,34 +1,41 @@
 files:
-  - time: 1615015083535.yml
-    name: JINKELA.clash
-    url: https://www.jinkela.site/link/PyGoQIzZBf5SP2S1?clash=1
+  - time: 1662046995112.yml
+    name: Clash_1662046999.yaml
+    url: https://rss.jkl-sub.com/link/PyGoQIzZBf5SP2S1?clash=1
     selected:
       - name: GLOBAL
-        now: IEPL专线 香港FDC01 | 2.5x
-      - name: 🍃 Proxies
-        now: ⭐️ Auto
-      - name: 🍂 Domestic
-        now: DIRECT
-      - name: 💬 Telegram
-        now: 🍃 Proxies
-      - name: 👹 YouTube
-        now: 🍃 Proxies
-      - name: 🍿 Netflix
-        now: 🍃 Proxies
-      - name: 💳 PayPal
-        now: DIRECT
-      - name: 👔 LinkedIn
-        now: DIRECT
-      - name: 🍎 Apple Service
         now: DIRECT
       - name: ☁️ Others
         now: 🍃 Proxies
-    interval: 24
-    mode: rule
-    m: rule
+      - name: 🍂 Domestic
+        now: DIRECT
+      - name: 🍃 Proxies
+        now: ⭐️ Auto
+      - name: 🍎 Apple Service
+        now: DIRECT
+      - name: 🍿 Netflix
+        now: 🍃 Proxies
+      - name: 👔 LinkedIn
+        now: DIRECT
+      - name: 👹 YouTube
+        now: 🍃 Proxies
+      - name: 💬 Telegram
+        now: 🍃 Proxies
+      - name: 💳 PayPal
+        now: DIRECT
+    interval: 0
     subInfo:
-      upload: 75646855698
-      download: 791465066873
-      total: 10469063524352
-      expire: 1682405411
+      upload: 103623307837
+      download: 1435312966765
+      total: 15816108015616
+      expire: 1714805411
+    mode: rule
+    homeWeb: ""
+  - time: 1700119742728.yml
+    name: clash.yaml
+    url: https://sub.pmsub.me/clash.yaml
+    selected: []
+    interval: 0
+    subInfo: {}
+    homeWeb: ""
 index: 0

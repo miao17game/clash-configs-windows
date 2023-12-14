@@ -1,9 +1,9 @@
 mixed-port: 7890
 allow-lan: true
 log-level: info
-external-controller: 127.0.0.1:59374
-secret: ''
-ipv6: false
+external-controller: 127.0.0.1:50912
+secret: 'b8b3a0d6-0c3c-44d2-8f80-0c0f699abf99'
+ipv6: true
 
 # Will be ignored after profile selection
 proxies:

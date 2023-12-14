@@ -14,6 +14,7 @@ mixinCode: >
         "DOMAIN-SUFFIX,jinkela.red,🍂 Domestic", // 梯子
         "DOMAIN-SUFFIX,jinkela.site,🍂 Domestic", // 梯子
         "DOMAIN-SUFFIX,epicgames-download1.akamaized.net,🍂 Domestic", // epic games
+        "DOMAIN-SUFFIX,steamcontent.com,🍂 Domestic", // steam download
         "DOMAIN-SUFFIX,cdn.winget.microsoft.com,🍃 Proxies", // winget
         "DOMAIN-SUFFIX,self.events.data.microsoft.com,🍃 Proxies", // winget
         "DOMAIN-SUFFIX,json.schemastore.org,🍃 Proxies",
@@ -47,3 +48,4 @@ useSystemEmoji: true
 trayText: ""
 connShowProcess: true
 showTrayProxyDelayIndicator: true
+randomMixedPort: false
